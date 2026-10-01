@@ -19,6 +19,7 @@ export interface Question {
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
 export type PeriodFilter = '6m' | '2026.1' | '2026.2' | '30d' | 'all';
+export type ActiveTab = 'home' | 'banco' | 'listas' | 'simulados' | 'stats' | 'ranking';
 
 export interface PerformanceFilterState {
   institutions: string[]; // multi-seleção
@@ -83,4 +84,24 @@ export interface FilterState {
   year: string;
   difficulty: string;
   search: string;
+}
+
+// Estrutura de Listas, Pastas e Subpastas
+export interface QuestionList {
+  id: string;
+  title: string;
+  folderId?: string; // id da pasta pai se houver
+  questionIds: string[];
+  totalQuestions: number;
+  completedQuestions: number;
+  lastStudiedAt: string;
+  inProgress: boolean;
+  progressPercentage: number;
+}
+
+export interface Folder {
+  id: string;
+  name: string;
+  parentId?: string | null; // null = pasta raiz, string = subpasta
+  color?: string;
 }

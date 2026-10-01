@@ -2,18 +2,44 @@
 
 import React, { useState, useMemo } from 'react';
 import { mockQuestions } from '@/data/mockQuestions';
+import { initialFolders, initialLists } from '@/data/mockLists';
 import { QuestionFilters } from '@/components/QuestionFilters';
 import { QuestionCard } from '@/components/QuestionCard';
 import { StatsDashboard } from '@/components/StatsDashboard';
-import { FilterState, UserStats, PerformanceFilterState } from '@/types';
-import { calculatePercentile } from '@/utils/percentile';
-import { GraduationCap, BarChart2, BookOpenCheck, Stethoscope } from 'lucide-react';
+import { StudentHomeDashboard } from '@/components/StudentHomeDashboard';
+import { ListManager } from '@/components/ListManager';
+import { MockExams } from '@/components/MockExams';
+import { OfficialRanking } from '@/components/OfficialRanking';
+import { Sidebar } from '@/components/Sidebar';
+import {
+  FilterState,
+  UserStats,
+  PerformanceFilterState,
+  ActiveTab,
+  Folder,
+  QuestionList,
+  Modalidade
+} from '@/types';
+import { calculatePercentile, getOfficialRanking } from '@/utils/percentile';
+import { Stethoscope, Menu, X, ArrowLeft } from 'lucide-react';
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<'practice' | 'stats'>('practice');
+  const [activeTab, setActiveTab] = useState<ActiveTab>('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Perfil do Aluno e Metas
+  const studentName = 'Dr. Lucas Rocha';
+  const [dailyGoal, setDailyGoal] = useState<number>(30);
+
+  // Pastas e Listas de Questões
+  const [folders, setFolders] = useState<Folder[]>(initialFolders);
+  const [lists, setLists] = useState<QuestionList[]>(initialLists);
+  const [activeListId, setActiveListId] = useState<string | null>(null);
+
+  // Respostas do Usuário
   const [userAnswers, setUserAnswers] = useState<Record<string, { letter: 'A' | 'B' | 'C' | 'D' | 'E'; isCorrect: boolean }>>({});
 
-  // Simulação de questões extras para testes práticos de percentil (100+ ou 500+)
+  // Simulação de questões extras
   const [simulatedExtraAnswers, setSimulatedExtraAnswers] = useState<{ total: number; correct: number; unique: number; reviews: number; repeated: number }>({
     total: 0,
     correct: 0,
@@ -22,7 +48,7 @@ export default function Home() {
     repeated: 0
   });
 
-  // Filtros de Questões para Prática
+  // Filtros de Prática do Banco de Questões
   const [practiceFilters, setPracticeFilters] = useState<FilterState>({
     specialty: 'Todas',
     institution: 'Todas',
@@ -31,7 +57,7 @@ export default function Home() {
     search: ''
   });
 
-  // Filtros de Desempenho e Ranking (Padrão: últimos 6 meses e modalidade Residência)
+  // Filtros de Desempenho e Ranking (Padrão: 6 meses e Residência)
   const [performanceFilters, setPerformanceFilters] = useState<PerformanceFilterState>({
     modalidade: 'Residência',
     period: '6m',
@@ -80,13 +106,29 @@ export default function Home() {
       ...prev,
       [questionId]: { letter: selectedLetter, isCorrect }
     }));
+
+    // Se estiver respondendo dentro de uma lista ativa, atualiza progresso
+    if (activeListId) {
+      setLists((prev) =>
+        prev.map((l) => {
+          if (l.id === activeListId) {
+            const nextCompleted = Math.min(l.totalQuestions, l.completedQuestions + 1);
+            return {
+              ...l,
+              completedQuestions: nextCompleted,
+              progressPercentage: Math.round((nextCompleted / l.totalQuestions) * 100),
+              lastStudiedAt: 'Agora mesmo'
+            };
+          }
+          return l;
+        })
+      );
+    }
   };
 
-  // Botão de simulação rápida para testar percentil aproximado (100+) e oficial (500+)
   const handleSimulateDemoQuestions = (amount: number) => {
     setSimulatedExtraAnswers((prev) => {
       const nextTotal = prev.total + amount;
-      // Taxa simulada de ~78% de acertos para ilustrar com fidelidade o exemplo do usuário
       const addedCorrect = Math.round(amount * 0.78);
       const nextCorrect = prev.correct + addedCorrect;
       const nextUnique = prev.unique + Math.round(amount * 0.75);
@@ -103,6 +145,37 @@ export default function Home() {
     });
   };
 
+  // Gerenciamento de Pastas e Listas
+  const handleCreateFolder = (name: string, parentId: string | null) => {
+    const newFolder: Folder = {
+      id: `f-${Date.now()}`,
+      name,
+      parentId,
+      color: parentId ? '#10b981' : '#3b82f6'
+    };
+    setFolders((prev) => [...prev, newFolder]);
+  };
+
+  const handleCreateList = (title: string, folderId: string | null, totalQuestions: number) => {
+    const newList: QuestionList = {
+      id: `list-${Date.now()}`,
+      title,
+      folderId: folderId || undefined,
+      questionIds: ['q-1', 'q-2'],
+      totalQuestions,
+      completedQuestions: 0,
+      lastStudiedAt: 'Criada recentemente',
+      inProgress: false,
+      progressPercentage: 0
+    };
+    setLists((prev) => [newList, ...prev]);
+  };
+
+  const handleContinueList = (list: QuestionList) => {
+    setActiveListId(list.id);
+    setActiveTab('banco');
+  };
+
   // Cálculo das estatísticas em tempo real
   const stats: UserStats = useMemo(() => {
     const rawAnswered = Object.keys(userAnswers).length;
@@ -115,19 +188,16 @@ export default function Home() {
 
     const accuracyRate = totalAnswered > 0 ? (totalCorrect / totalAnswered) * 100 : 0;
 
-    // Métricas de Únicas, Revisões e Repetidas
     const uniqueAnswered = Math.max(rawAnswered, 0) + simulatedExtraAnswers.unique;
     const reviews = simulatedExtraAnswers.reviews;
     const repeated = simulatedExtraAnswers.repeated;
 
-    // Cálculo do Percentil com a fórmula ajustada solicitada
     const percentileInfo = calculatePercentile({
       totalAnswered,
       totalCorrect,
       filters: performanceFilters
     });
 
-    // Estatísticas por especialidade
     const specialtyMap: Record<string, { total: number; correct: number }> = {};
     mockQuestions.forEach((q) => {
       if (userAnswers[q.id]) {
@@ -141,7 +211,6 @@ export default function Home() {
       }
     });
 
-    // Adiciona volume proporcional caso haja simulação
     if (simulatedExtraAnswers.total > 0) {
       const specs = [
         'Clínica Médica',
@@ -175,8 +244,8 @@ export default function Home() {
       totalCorrect,
       totalIncorrect,
       accuracyRate,
-      daysOnPlatform: 42, // Exemplo de usuário ativo há 42 dias na plataforma
-      streakDays: totalAnswered > 0 ? 7 : 0,
+      daysOnPlatform: 42,
+      streakDays: 7,
       studyTimeMinutes: Math.round(totalAnswered * 1.8),
       percentileInfo,
       historyByDay: [
@@ -186,118 +255,232 @@ export default function Home() {
         { date: 'Qui', answered: 35, correct: 28 },
         { date: 'Sex', answered: 40, correct: 33 },
         { date: 'Sáb', answered: 18, correct: 14 },
-        { date: 'Hoje', answered: Math.max(12, rawAnswered), correct: Math.max(9, rawCorrect) }
+        { date: 'Hoje', answered: Math.max(16, rawAnswered), correct: Math.max(13, rawCorrect) }
       ],
       bySpecialty
     };
   }, [userAnswers, simulatedExtraAnswers, performanceFilters]);
 
+  // Lista recente em andamento para continuar na home
+  const recentList = lists.find((l) => l.inProgress && l.completedQuestions < l.totalQuestions) || lists[0];
+
+  // Ranking para a aba dedicada de Ranking
+  const officialRanking = getOfficialRanking(performanceFilters, {
+    answered: stats.totalAnswered,
+    correct: stats.totalCorrect,
+    name: studentName
+  });
+
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
-      {/* Barra de Navegação Superior */}
-      <header className="sticky top-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
-              <Stethoscope className="w-6 h-6" />
-            </div>
-            <div>
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex font-sans">
+      {/* 1. Barra Lateral de Navegação (Sidebar) */}
+      <Sidebar
+        activeTab={activeTab}
+        onNavigate={(tab) => {
+          setActiveTab(tab);
+          setMobileMenuOpen(false);
+        }}
+        modalidade={performanceFilters.modalidade}
+        streakDays={stats.streakDays}
+      />
+
+      {/* Conteúdo Principal à Direita da Sidebar */}
+      <div className="flex-1 flex flex-col min-w-0">
+        {/* Barra Superior Mobile e Header Geral */}
+        <header className="sticky top-0 z-30 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            {/* Logo e Botão Mobile */}
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden text-slate-400 hover:text-white p-1 rounded-lg border border-slate-800"
+              >
+                {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              </button>
+
               <div className="flex items-center gap-2">
-                <h1 className="text-base font-bold leading-none text-white tracking-tight">Banco Residência</h1>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold border border-emerald-500/20">
+                <div className="md:hidden w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+                  <Stethoscope className="w-4 h-4" />
+                </div>
+                <h1 className="text-base font-bold text-white tracking-tight">Banco Residência</h1>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold border border-emerald-500/20 hidden sm:inline">
                   {performanceFilters.modalidade}
                 </span>
               </div>
-              <p className="text-xs text-slate-400 mt-1">Estatísticas, Percentil & Ranking Semestral</p>
             </div>
+
+            {/* Abas Superiores no Desktop */}
+            <nav className="hidden lg:flex items-center gap-1 bg-slate-900 border border-slate-800 p-1 rounded-xl">
+              {[
+                { id: 'home', label: 'Início' },
+                { id: 'banco', label: 'Banco de Questões' },
+                { id: 'listas', label: 'Listas' },
+                { id: 'simulados', label: 'Simulados' },
+                { id: 'stats', label: 'Meu Desempenho' },
+                { id: 'ranking', label: 'Ranking' }
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => setActiveTab(item.id as ActiveTab)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                    activeTab === item.id
+                      ? 'bg-blue-600 text-white shadow-sm'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
           </div>
 
-          {/* Alternador de Modos */}
-          <nav className="flex items-center gap-1 bg-slate-900 border border-slate-800 p-1 rounded-xl">
-            <button
-              onClick={() => setActiveTab('practice')}
-              className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                activeTab === 'practice'
-                  ? 'bg-blue-600 text-white shadow-sm'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-            >
-              <BookOpenCheck className="w-4 h-4" />
-              <span>Questões</span>
-            </button>
-            <button
-              onClick={() => setActiveTab('stats')}
-              className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                activeTab === 'stats'
-                  ? 'bg-blue-600 text-white shadow-sm'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-            >
-              <BarChart2 className="w-4 h-4" />
-              <span>Meu Desempenho</span>
-              {stats.percentileInfo.status !== 'locked' && (
-                <span className="px-1.5 py-0.2 rounded bg-emerald-500 text-[10px] text-slate-950 font-bold">
-                  P{stats.percentileInfo.percentile}
-                </span>
-              )}
-            </button>
-          </nav>
-        </div>
-      </header>
+          {/* Menu Mobile Expandido */}
+          {mobileMenuOpen && (
+            <div className="md:hidden border-b border-slate-800 bg-slate-900 px-4 py-3 space-y-1">
+              {[
+                { id: 'home', label: 'Início' },
+                { id: 'banco', label: 'Banco de Questões' },
+                { id: 'listas', label: 'Listas & Pastas' },
+                { id: 'simulados', label: 'Simulados' },
+                { id: 'stats', label: 'Meu Desempenho' },
+                { id: 'ranking', label: 'Ranking Oficial' }
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => {
+                    setActiveTab(item.id as ActiveTab);
+                    setMobileMenuOpen(false);
+                  }}
+                  className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold ${
+                    activeTab === item.id ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          )}
+        </header>
 
-      {/* Conteúdo Principal */}
-      <main className="max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 flex-1 space-y-6">
-        {activeTab === 'practice' ? (
-          <>
-            {/* Filtros de Prática */}
-            <QuestionFilters
-              filters={practiceFilters}
-              onFilterChange={setPracticeFilters}
-              onReset={handleResetPracticeFilters}
-              totalFiltered={filteredQuestions.length}
+        {/* Corpo Principal da Aplicação */}
+        <main className="max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 flex-1 space-y-6">
+          {/* ABA 1: INÍCIO (TELA INICIAL DO ALUNO) */}
+          {activeTab === 'home' && (
+            <StudentHomeDashboard
+              studentName={studentName}
+              stats={stats}
+              dailyGoal={dailyGoal}
+              onUpdateDailyGoal={setDailyGoal}
+              recentList={recentList}
+              allLists={lists}
+              onNavigate={setActiveTab}
+              onContinueList={handleContinueList}
+              modalidade={performanceFilters.modalidade}
             />
+          )}
 
-            {/* Lista de Questões */}
+          {/* ABA 2: BANCO DE QUESTÕES */}
+          {activeTab === 'banco' && (
             <div className="space-y-4">
-              {filteredQuestions.length > 0 ? (
-                filteredQuestions.map((question, idx) => (
-                  <QuestionCard
-                    key={question.id}
-                    question={question}
-                    index={idx}
-                    total={filteredQuestions.length}
-                    onAnswer={handleAnswer}
-                    userAnswer={userAnswers[question.id]?.letter}
-                  />
-                ))
-              ) : (
-                <div className="text-center py-16 bg-slate-900/50 border border-slate-800 rounded-xl">
-                  <p className="text-slate-400 text-sm">Nenhuma questão encontrada com os filtros selecionados.</p>
+              {activeListId && (
+                <div className="bg-blue-950/40 border border-blue-500/40 p-3 rounded-xl flex items-center justify-between text-xs text-blue-300">
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold">Resolvendo Lista:</span>
+                    <span>{lists.find((l) => l.id === activeListId)?.title}</span>
+                  </div>
                   <button
-                    onClick={handleResetPracticeFilters}
-                    className="mt-3 text-xs font-medium text-blue-400 hover:text-blue-300 underline cursor-pointer"
+                    onClick={() => setActiveListId(null)}
+                    className="flex items-center gap-1 text-slate-400 hover:text-white underline cursor-pointer"
                   >
-                    Redefinir filtros
+                    <ArrowLeft className="w-3.5 h-3.5" />
+                    Voltar para o Banco Geral
                   </button>
                 </div>
               )}
-            </div>
-          </>
-        ) : (
-          <StatsDashboard
-            stats={stats}
-            filters={performanceFilters}
-            onFilterChange={setPerformanceFilters}
-            onResetFilters={handleResetPerformanceFilters}
-            onSimulateDemoQuestions={handleSimulateDemoQuestions}
-          />
-        )}
-      </main>
 
-      {/* Rodapé */}
-      <footer className="border-t border-slate-800/80 bg-slate-950 py-4 text-center text-xs text-slate-400">
-        <p>© 2026 Banco Residência • Semestre 2026.1 / 2026.2 • Estatísticas com Score Ajustado</p>
-      </footer>
+              <QuestionFilters
+                filters={practiceFilters}
+                onFilterChange={setPracticeFilters}
+                onReset={handleResetPracticeFilters}
+                totalFiltered={filteredQuestions.length}
+              />
+
+              <div className="space-y-4">
+                {filteredQuestions.length > 0 ? (
+                  filteredQuestions.map((question, idx) => (
+                    <QuestionCard
+                      key={question.id}
+                      question={question}
+                      index={idx}
+                      total={filteredQuestions.length}
+                      onAnswer={handleAnswer}
+                      userAnswer={userAnswers[question.id]?.letter}
+                    />
+                  ))
+                ) : (
+                  <div className="text-center py-16 bg-slate-900/50 border border-slate-800 rounded-xl">
+                    <p className="text-slate-400 text-sm">Nenhuma questão encontrada com os filtros selecionados.</p>
+                    <button
+                      onClick={handleResetPracticeFilters}
+                      className="mt-3 text-xs font-medium text-blue-400 hover:text-blue-300 underline cursor-pointer"
+                    >
+                      Redefinir filtros
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* ABA 3: LISTAS DE QUESTÕES & PASTAS */}
+          {activeTab === 'listas' && (
+            <ListManager
+              folders={folders}
+              lists={lists}
+              onCreateFolder={handleCreateFolder}
+              onCreateList={handleCreateList}
+              onContinueList={handleContinueList}
+            />
+          )}
+
+          {/* ABA 4: SIMULADOS */}
+          {activeTab === 'simulados' && (
+            <MockExams
+              onStartExam={(title) => {
+                setActiveTab('banco');
+              }}
+            />
+          )}
+
+          {/* ABA 5: MEU DESEMPENHO */}
+          {activeTab === 'stats' && (
+            <StatsDashboard
+              stats={stats}
+              filters={performanceFilters}
+              onFilterChange={setPerformanceFilters}
+              onResetFilters={handleResetPerformanceFilters}
+              onSimulateDemoQuestions={handleSimulateDemoQuestions}
+            />
+          )}
+
+          {/* ABA 6: RANKING */}
+          {activeTab === 'ranking' && (
+            <div className="space-y-6">
+              <OfficialRanking
+                ranking={officialRanking}
+                filters={performanceFilters}
+                userQuestions={stats.totalAnswered}
+              />
+            </div>
+          )}
+        </main>
+
+        {/* Rodapé */}
+        <footer className="border-t border-slate-800/80 bg-slate-950 py-4 text-center text-xs text-slate-400">
+          <p>© 2026 Banco Residência • Semestre 2026.1 / 2026.2 • Plataforma Completa de Residência Médica</p>
+        </footer>
+      </div>
     </div>
   );
 }
