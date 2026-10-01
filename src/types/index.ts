@@ -1,12 +1,73 @@
+export type StudyModalidade =
+  | 'Residência Médica'
+  | 'Revalida'
+  | 'Ciclo Básico'
+  | 'R+ Clínica Médica'
+  | 'R+ Pediatria'
+  | 'R+ Cirurgia'
+  | 'R+ Ginecologia e Obstetrícia'
+  | 'R+ Neuropediatria'
+  | 'Título de Oftalmologia (CBO)'
+  | 'Título Clínica Médica (TECM)';
+
+export type QuestionStatus =
+  | 'Todas'
+  | 'Não vistas'
+  | 'Resolvidas'
+  | 'Acertadas'
+  | 'Erradas'
+  | 'Ainda não acertadas';
+
+export type QuestionDifficulty = 'Todas' | 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
+
+export type QuestionType = 'Todas' | 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
+
+export interface SpecialtyHierarchy {
+  especialidade: string;
+  temas: {
+    tema: string;
+    focos: {
+      foco: string;
+      subfocos: string[];
+    }[];
+  }[];
+}
+
+export interface AdvancedFilterState {
+  search: string;
+  modalidades: StudyModalidade[];
+  especialidades: string[];
+  temas: string[];
+  focos: string[];
+  subfocos: string[];
+  instituicoes: string[];
+  anos: number[];
+  tipoProva: string[];
+  status: QuestionStatus;
+  dificuldade: QuestionDifficulty;
+  tipoQuestao: QuestionType;
+  ocultarAnuladasErro: boolean;
+  ocultarRevisadas: boolean;
+  ultimos5Anos: boolean;
+}
+
 export interface Question {
   id: string;
   code: string;
   institution: string;
   banca: string;
   year: number;
-  specialty: 'Clínica Médica' | 'Cirurgia Geral' | 'Pediatria' | 'Ginecologia e Obstetrícia' | 'Medicina Preventiva e Social';
-  subtheme: string;
-  difficulty: 'Fácil' | 'Média' | 'Difícil';
+  tipoProva?: string;
+  modalidade: StudyModalidade;
+  especialidade: string;
+  specialty?: string;
+  tema: string;
+  foco: string;
+  subfoco: string;
+  subtheme?: string;
+  difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
+  type: 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
+  isAnulada: boolean;
   statement: string;
   options: {
     letter: 'A' | 'B' | 'C' | 'D' | 'E';
@@ -22,9 +83,9 @@ export type PeriodFilter = '6m' | '2026.1' | '2026.2' | '30d' | 'all';
 export type ActiveTab = 'home' | 'banco' | 'listas' | 'simulados' | 'stats' | 'ranking';
 
 export interface PerformanceFilterState {
-  institutions: string[]; // multi-seleção
-  banca: string;          // banca específica ou 'Todas'
-  period: PeriodFilter;   // '6m', '2026.1', '2026.2', etc.
+  institutions: string[];
+  banca: string;
+  period: PeriodFilter;
   modalidade: Modalidade;
 }
 
@@ -86,11 +147,10 @@ export interface FilterState {
   search: string;
 }
 
-// Estrutura de Listas, Pastas e Subpastas
 export interface QuestionList {
   id: string;
   title: string;
-  folderId?: string; // id da pasta pai se houver
+  folderId?: string;
   questionIds: string[];
   totalQuestions: number;
   completedQuestions: number;
@@ -102,6 +162,6 @@ export interface QuestionList {
 export interface Folder {
   id: string;
   name: string;
-  parentId?: string | null; // null = pasta raiz, string = subpasta
+  parentId?: string | null;
   color?: string;
 }

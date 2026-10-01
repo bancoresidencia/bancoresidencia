@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { mockQuestions } from '@/data/mockQuestions';
 import { initialFolders, initialLists } from '@/data/mockLists';
-import { QuestionFilters } from '@/components/QuestionFilters';
+import { AdvancedQuestionFilters } from '@/components/AdvancedQuestionFilters';
 import { QuestionCard } from '@/components/QuestionCard';
 import { StatsDashboard } from '@/components/StatsDashboard';
 import { StudentHomeDashboard } from '@/components/StudentHomeDashboard';
@@ -12,16 +12,16 @@ import { MockExams } from '@/components/MockExams';
 import { OfficialRanking } from '@/components/OfficialRanking';
 import { Sidebar } from '@/components/Sidebar';
 import {
-  FilterState,
   UserStats,
   PerformanceFilterState,
+  AdvancedFilterState,
   ActiveTab,
   Folder,
   QuestionList,
   Modalidade
 } from '@/types';
 import { calculatePercentile, getOfficialRanking } from '@/utils/percentile';
-import { Stethoscope, Menu, X, ArrowLeft } from 'lucide-react';
+import { Stethoscope, Menu, X, ArrowLeft, BookOpen, Layers } from 'lucide-react';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
@@ -48,13 +48,23 @@ export default function Home() {
     repeated: 0
   });
 
-  // Filtros de Prática do Banco de Questões
-  const [practiceFilters, setPracticeFilters] = useState<FilterState>({
-    specialty: 'Todas',
-    institution: 'Todas',
-    year: 'Todos',
-    difficulty: 'Todas',
-    search: ''
+  // Filtros Avançados extraídos do MedEvo
+  const [advancedFilters, setAdvancedFilters] = useState<AdvancedFilterState>({
+    search: '',
+    modalidades: ['Residência Médica'],
+    especialidades: [],
+    temas: [],
+    focos: [],
+    subfocos: [],
+    instituicoes: [],
+    anos: [],
+    tipoProva: [],
+    status: 'Todas',
+    dificuldade: 'Todas',
+    tipoQuestao: 'Todas',
+    ocultarAnuladasErro: false,
+    ocultarRevisadas: false,
+    ultimos5Anos: false
   });
 
   // Filtros de Desempenho e Ranking (Padrão: 6 meses e Residência)
@@ -65,13 +75,23 @@ export default function Home() {
     banca: 'Todas'
   });
 
-  const handleResetPracticeFilters = () => {
-    setPracticeFilters({
-      specialty: 'Todas',
-      institution: 'Todas',
-      year: 'Todos',
-      difficulty: 'Todas',
-      search: ''
+  const handleResetAdvancedFilters = () => {
+    setAdvancedFilters({
+      search: '',
+      modalidades: ['Residência Médica'],
+      especialidades: [],
+      temas: [],
+      focos: [],
+      subfocos: [],
+      instituicoes: [],
+      anos: [],
+      tipoProva: [],
+      status: 'Todas',
+      dificuldade: 'Todas',
+      tipoQuestao: 'Todas',
+      ocultarAnuladasErro: false,
+      ocultarRevisadas: false,
+      ultimos5Anos: false
     });
   };
 
@@ -84,22 +104,89 @@ export default function Home() {
     });
   };
 
+  // Filtragem completa com todas as regras do MedEvo
   const filteredQuestions = useMemo(() => {
     return mockQuestions.filter((q) => {
-      if (practiceFilters.specialty !== 'Todas' && q.specialty !== practiceFilters.specialty) return false;
-      if (practiceFilters.institution !== 'Todas' && q.institution !== practiceFilters.institution) return false;
-      if (practiceFilters.year !== 'Todos' && q.year.toString() !== practiceFilters.year) return false;
-      if (practiceFilters.difficulty !== 'Todas' && q.difficulty !== practiceFilters.difficulty) return false;
-      if (practiceFilters.search.trim()) {
-        const query = practiceFilters.search.toLowerCase();
+      // 1. Busca textual
+      if (advancedFilters.search.trim()) {
+        const query = advancedFilters.search.toLowerCase();
         const matchesStatement = q.statement.toLowerCase().includes(query);
-        const matchesSubtheme = q.subtheme.toLowerCase().includes(query);
+        const matchesSubfoco = q.subfoco?.toLowerCase().includes(query);
+        const matchesFoco = q.foco?.toLowerCase().includes(query);
+        const matchesTema = q.tema?.toLowerCase().includes(query);
         const matchesCode = q.code.toLowerCase().includes(query);
-        if (!matchesStatement && !matchesSubtheme && !matchesCode) return false;
+        if (!matchesStatement && !matchesSubfoco && !matchesFoco && !matchesTema && !matchesCode) {
+          return false;
+        }
       }
+
+      // 2. Modalidades de Estudo
+      if (advancedFilters.modalidades.length > 0 && !advancedFilters.modalidades.includes(q.modalidade)) {
+        return false;
+      }
+
+      // 3. Hierarquia Clínica: Especialidades, Temas, Focos e Subfocos
+      if (advancedFilters.especialidades.length > 0 && !advancedFilters.especialidades.includes(q.especialidade)) {
+        return false;
+      }
+      if (advancedFilters.temas.length > 0 && !advancedFilters.temas.includes(q.tema)) {
+        return false;
+      }
+      if (advancedFilters.focos.length > 0 && !advancedFilters.focos.includes(q.foco)) {
+        return false;
+      }
+      if (advancedFilters.subfocos.length > 0 && !advancedFilters.subfocos.includes(q.subfoco)) {
+        return false;
+      }
+
+      // 4. Instituições
+      if (advancedFilters.instituicoes.length > 0 && !advancedFilters.instituicoes.includes(q.institution)) {
+        return false;
+      }
+
+      // 5. Anos de Aplicação
+      if (advancedFilters.anos.length > 0 && !advancedFilters.anos.includes(q.year)) {
+        return false;
+      }
+
+      // 6. Tipo de Prova
+      if (advancedFilters.tipoProva.length > 0 && (!q.tipoProva || !advancedFilters.tipoProva.includes(q.tipoProva))) {
+        return false;
+      }
+
+      // 7. Status da Questão (Todas, Não vistas, Resolvidas, Acertadas, Erradas, Ainda não acertadas)
+      const answer = userAnswers[q.id];
+      const isResolved = !!answer;
+      const isCorrect = answer?.isCorrect === true;
+      const isWrong = isResolved && !isCorrect;
+
+      if (advancedFilters.status === 'Não vistas' && isResolved) return false;
+      if (advancedFilters.status === 'Resolvidas' && !isResolved) return false;
+      if (advancedFilters.status === 'Acertadas' && !isCorrect) return false;
+      if (advancedFilters.status === 'Erradas' && !isWrong) return false;
+      if (advancedFilters.status === 'Ainda não acertadas' && isCorrect) return false; // Inclui não vistas e erradas
+
+      // 8. Nível de Dificuldade (Fácil, Médio, Difícil, Desconhecido)
+      if (advancedFilters.dificuldade !== 'Todas' && q.difficulty !== advancedFilters.dificuldade) {
+        return false;
+      }
+
+      // 9. Tipo de Questão (Múltipla escolha, Discursiva, Verdadeiro ou falso)
+      if (advancedFilters.tipoQuestao !== 'Todas' && q.type !== advancedFilters.tipoQuestao) {
+        return false;
+      }
+
+      // 10. Switches adicionais
+      if (advancedFilters.ocultarAnuladasErro && q.isAnulada) {
+        return false;
+      }
+      if (advancedFilters.ultimos5Anos && q.year < 2020) {
+        return false;
+      }
+
       return true;
     });
-  }, [practiceFilters]);
+  }, [advancedFilters, userAnswers]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     setUserAnswers((prev) => ({
@@ -107,7 +194,6 @@ export default function Home() {
       [questionId]: { letter: selectedLetter, isCorrect }
     }));
 
-    // Se estiver respondendo dentro de uma lista ativa, atualiza progresso
     if (activeListId) {
       setLists((prev) =>
         prev.map((l) => {
@@ -145,7 +231,25 @@ export default function Home() {
     });
   };
 
-  // Gerenciamento de Pastas e Listas
+  // Criar nova lista diretamente a partir do filtro configurado
+  const handleCreateListFromFilter = () => {
+    const title = advancedFilters.temas[0] || advancedFilters.especialidades[0] || 'Lista Personalizada de Estudos';
+    const newList: QuestionList = {
+      id: `list-${Date.now()}`,
+      title: `${title} (${filteredQuestions.length} questões)`,
+      folderId: undefined,
+      questionIds: filteredQuestions.map((q) => q.id),
+      totalQuestions: Math.max(filteredQuestions.length, 10),
+      completedQuestions: 0,
+      lastStudiedAt: 'Criada agora',
+      inProgress: false,
+      progressPercentage: 0
+    };
+    setLists((prev) => [newList, ...prev]);
+    setActiveListId(newList.id);
+    setActiveTab('listas');
+  };
+
   const handleCreateFolder = (name: string, parentId: string | null) => {
     const newFolder: Folder = {
       id: `f-${Date.now()}`,
@@ -201,12 +305,12 @@ export default function Home() {
     const specialtyMap: Record<string, { total: number; correct: number }> = {};
     mockQuestions.forEach((q) => {
       if (userAnswers[q.id]) {
-        if (!specialtyMap[q.specialty]) {
-          specialtyMap[q.specialty] = { total: 0, correct: 0 };
+        if (!specialtyMap[q.especialidade]) {
+          specialtyMap[q.especialidade] = { total: 0, correct: 0 };
         }
-        specialtyMap[q.specialty].total += 1;
+        specialtyMap[q.especialidade].total += 1;
         if (userAnswers[q.id].isCorrect) {
-          specialtyMap[q.specialty].correct += 1;
+          specialtyMap[q.especialidade].correct += 1;
         }
       }
     });
@@ -261,10 +365,8 @@ export default function Home() {
     };
   }, [userAnswers, simulatedExtraAnswers, performanceFilters]);
 
-  // Lista recente em andamento para continuar na home
   const recentList = lists.find((l) => l.inProgress && l.completedQuestions < l.totalQuestions) || lists[0];
 
-  // Ranking para a aba dedicada de Ranking
   const officialRanking = getOfficialRanking(performanceFilters, {
     answered: stats.totalAnswered,
     correct: stats.totalCorrect,
@@ -289,12 +391,11 @@ export default function Home() {
         {/* Barra Superior Mobile e Header Geral */}
         <header className="sticky top-0 z-30 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-            {/* Logo e Botão Mobile */}
             <div className="flex items-center gap-3">
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden text-slate-400 hover:text-white p-1 rounded-lg border border-slate-800"
+                className="md:hidden text-slate-400 hover:text-white p-1 rounded-lg border border-slate-800 cursor-pointer"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -380,33 +481,41 @@ export default function Home() {
             />
           )}
 
-          {/* ABA 2: BANCO DE QUESTÕES */}
+          {/* ABA 2: BANCO DE QUESTÕES (RESOLUÇÃO AVULSA OU EM LISTA COM FILTROS MEDEVO) */}
           {activeTab === 'banco' && (
-            <div className="space-y-4">
+            <div className="space-y-5">
               {activeListId && (
-                <div className="bg-blue-950/40 border border-blue-500/40 p-3 rounded-xl flex items-center justify-between text-xs text-blue-300">
+                <div className="bg-blue-950/40 border border-blue-500/40 p-4 rounded-xl flex items-center justify-between text-xs text-blue-300">
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold">Resolvendo Lista:</span>
-                    <span>{lists.find((l) => l.id === activeListId)?.title}</span>
+                    <span className="font-semibold">Resolvendo Lista Personalizada:</span>
+                    <strong className="text-white">{lists.find((l) => l.id === activeListId)?.title}</strong>
                   </div>
                   <button
                     onClick={() => setActiveListId(null)}
-                    className="flex items-center gap-1 text-slate-400 hover:text-white underline cursor-pointer"
+                    className="flex items-center gap-1 text-slate-300 hover:text-white underline cursor-pointer"
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
-                    Voltar para o Banco Geral
+                    Voltar para Questões Avulsas
                   </button>
                 </div>
               )}
 
-              <QuestionFilters
-                filters={practiceFilters}
-                onFilterChange={setPracticeFilters}
-                onReset={handleResetPracticeFilters}
+              {/* Filtros Avançados Completos Extraídos do MedEvo */}
+              <AdvancedQuestionFilters
+                filters={advancedFilters}
+                onChange={setAdvancedFilters}
+                onReset={handleResetAdvancedFilters}
+                totalAvailable={mockQuestions.length}
                 totalFiltered={filteredQuestions.length}
+                onCreateListFromFilter={handleCreateListFromFilter}
               />
 
+              {/* Lista de Questões Filtradas */}
               <div className="space-y-4">
+                <div className="flex items-center justify-between text-xs text-slate-400 px-1">
+                  <span>Exibindo {filteredQuestions.length} {filteredQuestions.length === 1 ? 'questão' : 'questões'}</span>
+                </div>
+
                 {filteredQuestions.length > 0 ? (
                   filteredQuestions.map((question, idx) => (
                     <QuestionCard
@@ -419,13 +528,16 @@ export default function Home() {
                     />
                   ))
                 ) : (
-                  <div className="text-center py-16 bg-slate-900/50 border border-slate-800 rounded-xl">
-                    <p className="text-slate-400 text-sm">Nenhuma questão encontrada com os filtros selecionados.</p>
+                  <div className="text-center py-16 bg-slate-900/50 border border-slate-800 rounded-xl space-y-3">
+                    <p className="text-slate-300 text-sm font-semibold">Nenhuma questão encontrada com os filtros selecionados.</p>
+                    <p className="text-slate-500 text-xs max-w-md mx-auto">
+                      Experimente desmarcar alguns filtros de tema/subfoco ou alterar o status da questão para visualizar mais questões.
+                    </p>
                     <button
-                      onClick={handleResetPracticeFilters}
-                      className="mt-3 text-xs font-medium text-blue-400 hover:text-blue-300 underline cursor-pointer"
+                      onClick={handleResetAdvancedFilters}
+                      className="mt-2 text-xs font-semibold px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white cursor-pointer"
                     >
-                      Redefinir filtros
+                      Redefinir Filtros Padrões
                     </button>
                   </div>
                 )}

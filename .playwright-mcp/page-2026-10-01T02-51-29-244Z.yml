@@ -1,0 +1,152 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Banco Residência
+        - generic [ref=e12]: Residência
+      - generic [ref=e13]:
+        - generic [ref=e14]: Menu Principal
+        - button "Início" [ref=e15] [cursor=pointer]
+        - button "Banco de Questões" [ref=e23] [cursor=pointer]
+        - button "Listas de Questões" [ref=e30] [cursor=pointer]
+        - button "Simulados" [ref=e34] [cursor=pointer]
+        - button "Meu Desempenho" [ref=e41] [cursor=pointer]
+        - button "Ranking" [ref=e45] [cursor=pointer]
+      - generic [ref=e55]:
+        - generic [ref=e56]: LR
+        - generic [ref=e57]:
+          - generic [ref=e58]: Dr. Lucas Rocha
+          - generic [ref=e59]: 7 dias de sequência
+    - generic [ref=e63]:
+      - banner [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e67]:
+            - heading "Banco Residência" [level=1] [ref=e68]
+            - generic [ref=e69]: Residência
+          - navigation [ref=e70]:
+            - button "Início" [ref=e71] [cursor=pointer]
+            - button "Banco de Questões" [ref=e72] [cursor=pointer]
+            - button "Listas" [ref=e73] [cursor=pointer]
+            - button "Simulados" [ref=e74] [cursor=pointer]
+            - button "Meu Desempenho" [ref=e75] [cursor=pointer]
+            - button "Ranking" [ref=e76] [cursor=pointer]
+      - main [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]: Boa noite,
+              - heading "Dr. Lucas Rocha" [level=1] [ref=e86]
+              - paragraph [ref=e87]:
+                - text: "Modalidade ativa:"
+                - strong [ref=e88]: Residência
+                - text: • Foco no Semestre 2026.1
+            - generic [ref=e93]:
+              - generic [ref=e94]: 7 dias
+              - generic [ref=e95]: de sequência de estudos
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e99]: Meta do Dia
+                - generic [ref=e105]:
+                  - generic [ref=e106]: "Meta:"
+                  - combobox "Meta:" [ref=e107] [cursor=pointer]:
+                    - option "10 quest."
+                    - option "20 quest."
+                    - option "30 quest." [selected]
+                    - option "50 quest."
+                    - option "100 quest."
+              - generic [ref=e108]:
+                - generic [ref=e109]:
+                  - text: "16"
+                  - generic [ref=e110]: / 30
+                - generic [ref=e111]: 53% concluída
+              - generic [ref=e114]: Faltam 14 questões para atingir sua meta de hoje.
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - generic [ref=e117]: Aproveitamento Global
+                - generic [ref=e122]: Geral
+              - generic [ref=e123]:
+                - generic [ref=e124]: 0%
+                - generic [ref=e125]: taxa de acertos
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - strong [ref=e128]: "0"
+                  - text: questões resolvidas
+                - generic [ref=e129]: (0 certas)
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - generic [ref=e132]: Percentil (Residência)
+                - generic [ref=e137]: Calibrando
+              - generic [ref=e138]:
+                - generic [ref=e139]: Em Calibração
+                - generic [ref=e140]:
+                  - text: Faltam
+                  - strong [ref=e141]: 100 questões
+                  - text: para revelar seu percentil aproximado.
+              - button "Ver detalhes do percentil →" [ref=e143] [cursor=pointer]
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - generic [ref=e147]: Continuar de Onde Parou
+                - generic [ref=e148]: • Estudado Hoje às 21:30
+              - heading "Síndromes Coronarianas e Eletrocardiograma" [level=3] [ref=e149]
+              - generic [ref=e150]: 18 de 25 resolvidas (72%)
+            - button "Continuar Lista" [ref=e154] [cursor=pointer]
+          - generic [ref=e158]:
+            - heading "Acesso Rápido" [level=3] [ref=e159]
+            - generic [ref=e160]:
+              - button "Prática Banco de Questões Acessar" [ref=e161] [cursor=pointer]:
+                - generic [ref=e162]:
+                  - generic [ref=e163]: Prática
+                  - heading "Banco de Questões" [level=4] [ref=e170]
+                - generic [ref=e171]: Acessar
+              - button "Organização Listas de Questões Acessar" [ref=e175] [cursor=pointer]:
+                - generic [ref=e176]:
+                  - generic [ref=e177]: Organização
+                  - heading "Listas de Questões" [level=4] [ref=e181]
+                - generic [ref=e182]: Acessar
+              - button "Avaliação Simulados Acessar" [ref=e186] [cursor=pointer]:
+                - generic [ref=e187]:
+                  - generic [ref=e188]: Avaliação
+                  - heading "Simulados" [level=4] [ref=e195]
+                - generic [ref=e196]: Acessar
+              - button "Métricas Meu Desempenho Acessar" [ref=e200] [cursor=pointer]:
+                - generic [ref=e201]:
+                  - generic [ref=e202]: Métricas
+                  - heading "Meu Desempenho" [level=4] [ref=e206]
+                - generic [ref=e207]: Acessar
+              - button "Competitivo Ranking da Plataforma Acessar" [ref=e211] [cursor=pointer]:
+                - generic [ref=e212]:
+                  - generic [ref=e213]: Competitivo
+                  - heading "Ranking da Plataforma" [level=4] [ref=e222]
+                - generic [ref=e223]: Acessar
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - generic [ref=e232]:
+                - heading "Minhas Listas & Pastas Recentes" [level=3] [ref=e233]
+                - paragraph [ref=e234]: Cadernos de questões organizados por tema clínico
+              - button "Gerenciar Todas as Pastas & Listas →" [ref=e235] [cursor=pointer]
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - generic [ref=e239]: Síndromes Coronarianas e Eletrocardiograma
+                  - generic [ref=e240]: 18 / 25 questões • 72%
+                - button "Continuar" [ref=e241] [cursor=pointer]
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - generic [ref=e244]: Abdome Agudo Inflamatório (Apendicite e Diverticulite)
+                  - generic [ref=e245]: 12 / 30 questões • 40%
+                - button "Continuar" [ref=e246] [cursor=pointer]
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - generic [ref=e249]: Exantemas Febris na Infância
+                  - generic [ref=e250]: 15 / 15 questões • 100%
+                - button "Continuar" [ref=e251] [cursor=pointer]
+              - generic [ref=e252]:
+                - generic [ref=e253]:
+                  - generic [ref=e254]: DHEG e Emergências Hipertensivas no Parto
+                  - generic [ref=e255]: 5 / 20 questões • 25%
+                - button "Continuar" [ref=e256] [cursor=pointer]
+      - contentinfo [ref=e257]:
+        - paragraph [ref=e258]: © 2026 Banco Residência • Semestre 2026.1 / 2026.2 • Plataforma Completa de Residência Médica
+  - button "Open Next.js Dev Tools" [ref=e264] [cursor=pointer]

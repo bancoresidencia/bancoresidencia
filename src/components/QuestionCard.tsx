@@ -41,7 +41,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             {question.institution} • {question.year}
           </span>
           <span className="text-xs px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 font-medium">
-            {question.specialty}
+            {question.especialidade || question.specialty}
           </span>
           <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300">
             {question.difficulty}
@@ -54,7 +54,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
       {/* Subtema */}
       <div className="text-xs font-medium text-slate-400">
-        Tema: <span className="text-slate-200">{question.subtheme}</span>
+        Tema: <span className="text-slate-200">{question.subtheme || `${question.tema} > ${question.foco}`}</span>
       </div>
 
       {/* Enunciado */}
