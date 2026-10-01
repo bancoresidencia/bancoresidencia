@@ -11,15 +11,25 @@ import {
   ChevronDown,
   ChevronRight,
   BookOpen,
-  ArrowRight
+  ArrowRight,
+  Filter,
+  SlidersHorizontal,
+  X
 } from 'lucide-react';
-import { Folder, QuestionList } from '@/types';
+import { Folder, QuestionList, AdvancedFilterState } from '@/types';
+import { AdvancedQuestionFilters } from './AdvancedQuestionFilters';
+import { mockQuestions } from '@/data/mockQuestions';
 
 interface ListManagerProps {
   folders: Folder[];
   lists: QuestionList[];
   onCreateFolder: (name: string, parentId: string | null) => void;
-  onCreateList: (title: string, folderId: string | null, totalQuestions: number) => void;
+  onCreateListWithFilters: (
+    title: string,
+    folderId: string | null,
+    totalQuestions: number,
+    appliedFilters: AdvancedFilterState
+  ) => void;
   onContinueList: (list: QuestionList) => void;
 }
 
@@ -27,7 +37,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
   folders,
   lists,
   onCreateFolder,
-  onCreateList,
+  onCreateListWithFilters,
   onContinueList
 }) => {
   const [selectedFolderId, setSelectedFolderId] = useState<string | null>(null);
@@ -36,15 +46,36 @@ export const ListManager: React.FC<ListManagerProps> = ({
     'f-cirurgia': true
   });
 
-  // Modal / Inputs de Criação
+  // Modal / Inputs de Criação de Pasta
   const [isCreatingFolder, setIsCreatingFolder] = useState(false);
   const [newFolderName, setNewFolderName] = useState('');
   const [folderParentId, setFolderParentId] = useState<string | null>(null);
 
+  // Modal / Fluxo de Criação de Lista com Filtros Obrigatórios
   const [isCreatingList, setIsCreatingList] = useState(false);
   const [newListTitle, setNewListTitle] = useState('');
   const [listFolderId, setListFolderId] = useState<string | null>(null);
   const [listQuestionCount, setListQuestionCount] = useState<number>(20);
+
+  // Estado dos filtros obrigatórios dentro do modal de criação de lista
+  const [listFilters, setListFilters] = useState<AdvancedFilterState>({
+    search: '',
+    modalidades: ['Residência Médica'],
+    especialidades: [],
+    temas: [],
+    focos: [],
+    subfocos: [],
+    instituicoes: [],
+    anos: [],
+    tipoProva: [],
+    status: 'Todas',
+    dificuldade: 'Todas',
+    tipoQuestao: 'Todas',
+    ocultarAnuladasErro: false,
+    ocultarRevisadas: false,
+    ultimos5Anos: false
+  });
+  const [filterError, setFilterError] = useState<string | null>(null);
 
   const toggleFolder = (folderId: string) => {
     setOpenFolderIds((prev) => ({
@@ -64,16 +95,35 @@ export const ListManager: React.FC<ListManagerProps> = ({
   const handleSaveList = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newListTitle.trim()) return;
-    onCreateList(newListTitle.trim(), listFolderId, listQuestionCount);
+
+    // Validação obrigatória de filtros: o usuário deve ter ao menos um critério selecionado
+    const hasSelection =
+      listFilters.especialidades.length > 0 ||
+      listFilters.temas.length > 0 ||
+      listFilters.focos.length > 0 ||
+      listFilters.subfocos.length > 0 ||
+      listFilters.instituicoes.length > 0 ||
+      listFilters.anos.length > 0 ||
+      listFilters.tipoProva.length > 0 ||
+      listFilters.dificuldade !== 'Todas' ||
+      listFilters.tipoQuestao !== 'Todas' ||
+      listFilters.status !== 'Todas' ||
+      listFilters.search.trim().length > 0;
+
+    if (!hasSelection) {
+      setFilterError('Obrigatório selecionar ao menos um filtro (Especialidade, Tema, Foco, Subfoco, Instituição ou Ano) para criar a lista.');
+      return;
+    }
+
+    setFilterError(null);
+    onCreateListWithFilters(newListTitle.trim(), listFolderId, listQuestionCount, listFilters);
     setNewListTitle('');
     setIsCreatingList(false);
   };
 
-  // Pastas raiz e mapeamento de subpastas
   const rootFolders = folders.filter((f) => !f.parentId);
   const getSubfolders = (parentId: string) => folders.filter((f) => f.parentId === parentId);
 
-  // Filtragem de listas pela pasta selecionada ou todas
   const filteredLists = selectedFolderId
     ? lists.filter((l) => l.folderId === selectedFolderId)
     : lists;
@@ -85,7 +135,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
         <div>
           <h2 className="text-base font-bold text-white">Minhas Listas & Pastas de Questões</h2>
           <p className="text-xs text-slate-400">
-            Organize seus cadernos de estudo em pastas e subpastas por assunto clínico
+            Cadernos de questões personalizados com filtros obrigatórios por assunto, banca e dificuldade
           </p>
         </div>
 
@@ -108,7 +158,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-colors cursor-pointer shadow"
           >
             <Plus className="w-4 h-4" />
-            <span>Criar Nova Lista</span>
+            <span>Criar Nova Lista (com Filtros)</span>
           </button>
         </div>
       </div>
@@ -149,13 +199,13 @@ export const ListManager: React.FC<ListManagerProps> = ({
             <button
               type="button"
               onClick={() => setIsCreatingFolder(false)}
-              className="px-3 py-1.5 rounded text-xs text-slate-400 hover:text-white"
+              className="px-3 py-1.5 rounded text-xs text-slate-400 hover:text-white cursor-pointer"
             >
               Cancelar
             </button>
             <button
               type="submit"
-              className="px-4 py-1.5 rounded text-xs font-semibold bg-blue-600 text-white hover:bg-blue-500"
+              className="px-4 py-1.5 rounded text-xs font-semibold bg-blue-600 text-white hover:bg-blue-500 cursor-pointer"
             >
               Salvar Pasta
             </button>
@@ -163,26 +213,43 @@ export const ListManager: React.FC<ListManagerProps> = ({
         </form>
       )}
 
-      {/* Modal / Formulário: Nova Lista */}
+      {/* Modal / Formulário Completo: Criar Nova Lista COM FILTROS OBRIGATÓRIOS */}
       {isCreatingList && (
-        <form onSubmit={handleSaveList} className="bg-slate-900 border border-blue-500/40 p-4 rounded-xl space-y-3">
-          <div className="text-xs font-bold text-blue-400 uppercase tracking-wider">
-            Criar Nova Lista de Questões
+        <form onSubmit={handleSaveList} className="bg-slate-900 border-2 border-blue-500/60 p-5 rounded-xl space-y-5 shadow-2xl">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div className="flex items-center gap-2">
+              <SlidersHorizontal className="w-5 h-5 text-blue-400" />
+              <div>
+                <h3 className="text-sm md:text-base font-bold text-white">Criar Nova Lista de Questões</h3>
+                <p className="text-xs text-slate-400">
+                  Defina os filtros obrigatórios (especialidade, tema, foco, subfoco, banca e status) para gerar a lista
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setIsCreatingList(false)}
+              className="p-1.5 text-slate-400 hover:text-white rounded-lg border border-slate-800"
+            >
+              <X className="w-4 h-4" />
+            </button>
           </div>
+
+          {/* Dados Gerais da Lista */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
-              <label className="block text-xs text-slate-400 mb-1">Título da Lista</label>
+              <label className="block text-xs text-slate-300 font-semibold mb-1">Título da Lista *</label>
               <input
                 type="text"
                 required
-                placeholder="Ex: Simulado Rápido de Trauma..."
+                placeholder="Ex: Treino Intenso de Cardiologia e HAS..."
                 value={newListTitle}
                 onChange={(e) => setNewListTitle(e.target.value)}
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
               />
             </div>
             <div>
-              <label className="block text-xs text-slate-400 mb-1">Salvar na Pasta</label>
+              <label className="block text-xs text-slate-300 font-semibold mb-1">Pasta de Destino</label>
               <select
                 value={listFolderId || ''}
                 onChange={(e) => setListFolderId(e.target.value ? e.target.value : null)}
@@ -195,30 +262,76 @@ export const ListManager: React.FC<ListManagerProps> = ({
               </select>
             </div>
             <div>
-              <label className="block text-xs text-slate-400 mb-1">Quantidade de Questões</label>
+              <label className="block text-xs text-slate-300 font-semibold mb-1">Meta de Questões</label>
               <input
                 type="number"
                 min={5}
-                max={100}
+                max={200}
                 value={listQuestionCount}
                 onChange={(e) => setListQuestionCount(Number(e.target.value))}
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
               />
             </div>
           </div>
-          <div className="flex justify-end gap-2 pt-1">
+
+          {/* FILTROS OBRIGATÓRIOS EMBUTIDOS NA CRIAÇÃO DA LISTA */}
+          <div className="pt-2">
+            <div className="flex items-center gap-2 mb-2 text-xs font-bold text-amber-400 uppercase tracking-wider">
+              <Filter className="w-3.5 h-3.5" />
+              <span>Selecione os Filtros da Lista (Obrigatório)</span>
+            </div>
+
+            <AdvancedQuestionFilters
+              filters={listFilters}
+              onChange={setListFilters}
+              onReset={() =>
+                setListFilters({
+                  search: '',
+                  modalidades: ['Residência Médica'],
+                  especialidades: ['Clínica Médica'],
+                  temas: [],
+                  focos: [],
+                  subfocos: [],
+                  instituicoes: [],
+                  anos: [],
+                  tipoProva: [],
+                  status: 'Todas',
+                  dificuldade: 'Todas',
+                  tipoQuestao: 'Todas',
+                  ocultarAnuladasErro: false,
+                  ocultarRevisadas: false,
+                  ultimos5Anos: false
+                })
+              }
+              totalAvailable={mockQuestions.length}
+              totalFiltered={mockQuestions.length}
+              onCreateListFromFilter={() => {}}
+            />
+          </div>
+
+          {filterError && (
+            <div className="p-3 bg-red-950/60 border border-red-500/80 rounded-lg text-xs text-red-200 font-semibold flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+              <span>{filterError}</span>
+            </div>
+          )}
+
+          <div className="flex justify-end gap-3 pt-3 border-t border-slate-800">
             <button
               type="button"
-              onClick={() => setIsCreatingList(false)}
-              className="px-3 py-1.5 rounded text-xs text-slate-400 hover:text-white"
+              onClick={() => {
+                setFilterError(null);
+                setIsCreatingList(false);
+              }}
+              className="px-4 py-2 rounded-lg text-xs font-semibold text-slate-400 hover:text-white bg-slate-800 cursor-pointer"
             >
               Cancelar
             </button>
             <button
               type="submit"
-              className="px-4 py-1.5 rounded text-xs font-semibold bg-blue-600 text-white hover:bg-blue-500"
+              className="px-5 py-2 rounded-lg text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 shadow-md shadow-blue-600/30 cursor-pointer"
             >
-              Criar Lista
+              Confirmar e Criar Lista
             </button>
           </div>
         </form>

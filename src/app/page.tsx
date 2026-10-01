@@ -260,13 +260,38 @@ export default function Home() {
     setFolders((prev) => [...prev, newFolder]);
   };
 
-  const handleCreateList = (title: string, folderId: string | null, totalQuestions: number) => {
+  const handleCreateListWithFilters = (
+    title: string,
+    folderId: string | null,
+    totalQuestions: number,
+    appliedFilters: AdvancedFilterState
+  ) => {
+    // Filtrar questões no mock com base nos filtros selecionados na criação da lista
+    const matched = mockQuestions.filter((q) => {
+      if (appliedFilters.modalidades?.length > 0 && !appliedFilters.modalidades.includes(q.modalidade)) return false;
+      if (appliedFilters.especialidades?.length > 0 && !appliedFilters.especialidades.includes(q.especialidade)) return false;
+      if (appliedFilters.temas?.length > 0 && !appliedFilters.temas.includes(q.tema)) return false;
+      if (appliedFilters.focos?.length > 0 && !appliedFilters.focos.includes(q.foco)) return false;
+      if (appliedFilters.subfocos?.length > 0 && !appliedFilters.subfocos.includes(q.subfoco)) return false;
+      if (appliedFilters.instituicoes?.length > 0 && !appliedFilters.instituicoes.includes(q.institution)) return false;
+      if (appliedFilters.anos?.length > 0 && !appliedFilters.anos.includes(q.year)) return false;
+      if (appliedFilters.dificuldade !== 'Todas' && q.difficulty !== appliedFilters.dificuldade) return false;
+      if (appliedFilters.tipoQuestao !== 'Todas' && q.type !== appliedFilters.tipoQuestao) return false;
+      if (appliedFilters.ocultarAnuladasErro && q.isAnulada) return false;
+      if (appliedFilters.ultimos5Anos && q.year < 2020) return false;
+      return true;
+    });
+
+    const chosenIds = matched.length > 0
+      ? matched.slice(0, totalQuestions).map((q) => q.id)
+      : mockQuestions.slice(0, Math.min(totalQuestions, mockQuestions.length)).map((q) => q.id);
+
     const newList: QuestionList = {
       id: `list-${Date.now()}`,
       title,
       folderId: folderId || undefined,
-      questionIds: ['q-1', 'q-2'],
-      totalQuestions,
+      questionIds: chosenIds,
+      totalQuestions: Math.max(totalQuestions, chosenIds.length),
       completedQuestions: 0,
       lastStudiedAt: 'Criada recentemente',
       inProgress: false,
@@ -551,7 +576,7 @@ export default function Home() {
               folders={folders}
               lists={lists}
               onCreateFolder={handleCreateFolder}
-              onCreateList={handleCreateList}
+              onCreateListWithFilters={handleCreateListWithFilters}
               onContinueList={handleContinueList}
             />
           )}

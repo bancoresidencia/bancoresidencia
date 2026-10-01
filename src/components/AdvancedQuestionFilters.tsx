@@ -53,25 +53,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   totalFiltered,
   onCreateListFromFilter
 }) => {
-  // Estados de acordeões abertos
+  // Estados de acordeões abertos (iniciam fechados para ficar compacto e expandir apenas ao apertar)
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
     modalidade: false,
-    especialidades: true,
+    especialidades: false,
     instituicoes: false,
     anos: false,
     tipoProva: false
   });
 
   // Estados de expansão na árvore hierárquica (especialidade -> tema -> foco)
-  const [expandedEspec, setExpandedEspec] = useState<Record<string, boolean>>({
-    'Clínica Médica': true
-  });
-  const [expandedTema, setExpandedTema] = useState<Record<string, boolean>>({
-    'Cardiologia': true
-  });
-  const [expandedFoco, setExpandedFoco] = useState<Record<string, boolean>>({
-    'Hipertensão Arterial Sistêmica': true
-  });
+  const [expandedEspec, setExpandedEspec] = useState<Record<string, boolean>>({});
+  const [expandedTema, setExpandedTema] = useState<Record<string, boolean>>({});
+  const [expandedFoco, setExpandedFoco] = useState<Record<string, boolean>>({});
+
 
   const toggleSection = (section: string) => {
     setOpenSections((prev) => ({ ...prev, [section]: !prev[section] }));
