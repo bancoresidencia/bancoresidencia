@@ -5,6 +5,7 @@ export const mockQuestions: Question[] = [
     id: 'q-1',
     code: 'ENARE-2024-01',
     institution: 'ENARE',
+    banca: 'FGV',
     year: 2024,
     specialty: 'Clínica Médica',
     subtheme: 'Cardiologia / Síndrome Coronariana Aguda',
@@ -24,6 +25,7 @@ export const mockQuestions: Question[] = [
     id: 'q-2',
     code: 'USP-SP-2024-15',
     institution: 'USP-SP',
+    banca: 'FUVEST',
     year: 2024,
     specialty: 'Cirurgia Geral',
     subtheme: 'Abdome Agudo / Apendicite Aguda',
@@ -43,6 +45,7 @@ export const mockQuestions: Question[] = [
     id: 'q-3',
     code: 'UNIFESP-2023-44',
     institution: 'UNIFESP',
+    banca: 'VUNESP',
     year: 2023,
     specialty: 'Pediatria',
     subtheme: 'Infectologia / Doenças Exantemáticas',
@@ -62,6 +65,7 @@ export const mockQuestions: Question[] = [
     id: 'q-4',
     code: 'UERJ-2024-32',
     institution: 'UERJ',
+    banca: 'CEPUERJ',
     year: 2024,
     specialty: 'Ginecologia e Obstetrícia',
     subtheme: 'Obstetrícia / Doença Hipertensiva Específica da Gravidez',
@@ -81,6 +85,7 @@ export const mockQuestions: Question[] = [
     id: 'q-5',
     code: 'UNICAMP-2023-18',
     institution: 'UNICAMP',
+    banca: 'FCM/UNICAMP',
     year: 2023,
     specialty: 'Medicina Preventiva e Social',
     subtheme: 'Epidemiologia / Testes Diagnósticos',
@@ -98,7 +103,32 @@ export const mockQuestions: Question[] = [
   }
 ];
 
-export const mockInstitutions = ['Todas', 'ENARE', 'USP-SP', 'UNIFESP', 'UNICAMP', 'UERJ', 'SUS-SP'];
+export const mockInstitutionsList = [
+  'ENARE',
+  'USP-SP',
+  'UNIFESP',
+  'UNICAMP',
+  'UERJ',
+  'SUS-SP',
+  'UFRJ',
+  'UFMG',
+  'SCMSP'
+];
+
+export const mockInstitutions = ['Todas', ...mockInstitutionsList];
+
+
+export const mockBancas = [
+  'Todas',
+  'FGV',
+  'FUVEST',
+  'VUNESP',
+  'CEPUERJ',
+  'FCM/UNICAMP',
+  'IBFC',
+  'CESPE/Cebraspe'
+];
+
 export const mockSpecialties = [
   'Todas',
   'Clínica Médica',
@@ -107,5 +137,6 @@ export const mockSpecialties = [
   'Ginecologia e Obstetrícia',
   'Medicina Preventiva e Social'
 ];
+
 export const mockYears = ['Todos', '2024', '2023', '2022', '2021'];
 export const mockDifficulties = ['Todas', 'Fácil', 'Média', 'Difícil'];

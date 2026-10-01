@@ -5,14 +5,25 @@ import { mockQuestions } from '@/data/mockQuestions';
 import { QuestionFilters } from '@/components/QuestionFilters';
 import { QuestionCard } from '@/components/QuestionCard';
 import { StatsDashboard } from '@/components/StatsDashboard';
-import { FilterState, UserStats } from '@/types';
-import { GraduationCap, BarChart2, BookOpenCheck } from 'lucide-react';
+import { FilterState, UserStats, PerformanceFilterState } from '@/types';
+import { calculatePercentile } from '@/utils/percentile';
+import { GraduationCap, BarChart2, BookOpenCheck, Stethoscope } from 'lucide-react';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'practice' | 'stats'>('practice');
   const [userAnswers, setUserAnswers] = useState<Record<string, { letter: 'A' | 'B' | 'C' | 'D' | 'E'; isCorrect: boolean }>>({});
 
-  const [filters, setFilters] = useState<FilterState>({
+  // Simulação de questões extras para testes práticos de percentil (100+ ou 500+)
+  const [simulatedExtraAnswers, setSimulatedExtraAnswers] = useState<{ total: number; correct: number; unique: number; reviews: number; repeated: number }>({
+    total: 0,
+    correct: 0,
+    unique: 0,
+    reviews: 0,
+    repeated: 0
+  });
+
+  // Filtros de Questões para Prática
+  const [practiceFilters, setPracticeFilters] = useState<FilterState>({
     specialty: 'Todas',
     institution: 'Todas',
     year: 'Todos',
@@ -20,8 +31,16 @@ export default function Home() {
     search: ''
   });
 
-  const handleResetFilters = () => {
-    setFilters({
+  // Filtros de Desempenho e Ranking (Padrão: últimos 6 meses e modalidade Residência)
+  const [performanceFilters, setPerformanceFilters] = useState<PerformanceFilterState>({
+    modalidade: 'Residência',
+    period: '6m',
+    institutions: [],
+    banca: 'Todas'
+  });
+
+  const handleResetPracticeFilters = () => {
+    setPracticeFilters({
       specialty: 'Todas',
       institution: 'Todas',
       year: 'Todos',
@@ -30,14 +49,23 @@ export default function Home() {
     });
   };
 
+  const handleResetPerformanceFilters = () => {
+    setPerformanceFilters({
+      modalidade: 'Residência',
+      period: '6m',
+      institutions: [],
+      banca: 'Todas'
+    });
+  };
+
   const filteredQuestions = useMemo(() => {
     return mockQuestions.filter((q) => {
-      if (filters.specialty !== 'Todas' && q.specialty !== filters.specialty) return false;
-      if (filters.institution !== 'Todas' && q.institution !== filters.institution) return false;
-      if (filters.year !== 'Todos' && q.year.toString() !== filters.year) return false;
-      if (filters.difficulty !== 'Todas' && q.difficulty !== filters.difficulty) return false;
-      if (filters.search.trim()) {
-        const query = filters.search.toLowerCase();
+      if (practiceFilters.specialty !== 'Todas' && q.specialty !== practiceFilters.specialty) return false;
+      if (practiceFilters.institution !== 'Todas' && q.institution !== practiceFilters.institution) return false;
+      if (practiceFilters.year !== 'Todos' && q.year.toString() !== practiceFilters.year) return false;
+      if (practiceFilters.difficulty !== 'Todas' && q.difficulty !== practiceFilters.difficulty) return false;
+      if (practiceFilters.search.trim()) {
+        const query = practiceFilters.search.toLowerCase();
         const matchesStatement = q.statement.toLowerCase().includes(query);
         const matchesSubtheme = q.subtheme.toLowerCase().includes(query);
         const matchesCode = q.code.toLowerCase().includes(query);
@@ -45,7 +73,7 @@ export default function Home() {
       }
       return true;
     });
-  }, [filters]);
+  }, [practiceFilters]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     setUserAnswers((prev) => ({
@@ -54,12 +82,50 @@ export default function Home() {
     }));
   };
 
+  // Botão de simulação rápida para testar percentil aproximado (100+) e oficial (500+)
+  const handleSimulateDemoQuestions = (amount: number) => {
+    setSimulatedExtraAnswers((prev) => {
+      const nextTotal = prev.total + amount;
+      // Taxa simulada de ~78% de acertos para ilustrar com fidelidade o exemplo do usuário
+      const addedCorrect = Math.round(amount * 0.78);
+      const nextCorrect = prev.correct + addedCorrect;
+      const nextUnique = prev.unique + Math.round(amount * 0.75);
+      const nextReviews = prev.reviews + Math.round(amount * 0.15);
+      const nextRepeated = prev.repeated + (amount - Math.round(amount * 0.75) - Math.round(amount * 0.15));
+
+      return {
+        total: nextTotal,
+        correct: nextCorrect,
+        unique: nextUnique,
+        reviews: nextReviews,
+        repeated: nextRepeated
+      };
+    });
+  };
+
   // Cálculo das estatísticas em tempo real
   const stats: UserStats = useMemo(() => {
-    const totalAnswered = Object.keys(userAnswers).length;
-    const totalCorrect = Object.values(userAnswers).filter((a) => a.isCorrect).length;
-    const totalIncorrect = totalAnswered - totalCorrect;
+    const rawAnswered = Object.keys(userAnswers).length;
+    const rawCorrect = Object.values(userAnswers).filter((a) => a.isCorrect).length;
+    const rawIncorrect = rawAnswered - rawCorrect;
+
+    const totalAnswered = rawAnswered + simulatedExtraAnswers.total;
+    const totalCorrect = rawCorrect + simulatedExtraAnswers.correct;
+    const totalIncorrect = rawIncorrect + (simulatedExtraAnswers.total - simulatedExtraAnswers.correct);
+
     const accuracyRate = totalAnswered > 0 ? (totalCorrect / totalAnswered) * 100 : 0;
+
+    // Métricas de Únicas, Revisões e Repetidas
+    const uniqueAnswered = Math.max(rawAnswered, 0) + simulatedExtraAnswers.unique;
+    const reviews = simulatedExtraAnswers.reviews;
+    const repeated = simulatedExtraAnswers.repeated;
+
+    // Cálculo do Percentil com a fórmula ajustada solicitada
+    const percentileInfo = calculatePercentile({
+      totalAnswered,
+      totalCorrect,
+      filters: performanceFilters
+    });
 
     // Estatísticas por especialidade
     const specialtyMap: Record<string, { total: number; correct: number }> = {};
@@ -75,6 +141,25 @@ export default function Home() {
       }
     });
 
+    // Adiciona volume proporcional caso haja simulação
+    if (simulatedExtraAnswers.total > 0) {
+      const specs = [
+        'Clínica Médica',
+        'Cirurgia Geral',
+        'Pediatria',
+        'Ginecologia e Obstetrícia',
+        'Medicina Preventiva e Social'
+      ];
+      const perSpec = Math.floor(simulatedExtraAnswers.total / specs.length);
+      specs.forEach((sp) => {
+        if (!specialtyMap[sp]) {
+          specialtyMap[sp] = { total: 0, correct: 0 };
+        }
+        specialtyMap[sp].total += perSpec;
+        specialtyMap[sp].correct += Math.round(perSpec * 0.78);
+      });
+    }
+
     const bySpecialty = Object.entries(specialtyMap).map(([specialty, val]) => ({
       specialty,
       total: val.total,
@@ -84,33 +169,46 @@ export default function Home() {
 
     return {
       totalAnswered,
+      uniqueAnswered,
+      reviews,
+      repeated,
       totalCorrect,
       totalIncorrect,
       accuracyRate,
-      streakDays: totalAnswered > 0 ? 3 : 0,
-      studyTimeMinutes: totalAnswered * 2,
+      daysOnPlatform: 42, // Exemplo de usuário ativo há 42 dias na plataforma
+      streakDays: totalAnswered > 0 ? 7 : 0,
+      studyTimeMinutes: Math.round(totalAnswered * 1.8),
+      percentileInfo,
       historyByDay: [
-        { date: 'Seg', answered: 12, correct: 9 },
-        { date: 'Ter', answered: 18, correct: 14 },
-        { date: 'Qua', answered: 15, correct: 11 },
-        { date: 'Hoje', answered: totalAnswered, correct: totalCorrect }
+        { date: 'Seg', answered: 25, correct: 20 },
+        { date: 'Ter', answered: 32, correct: 26 },
+        { date: 'Qua', answered: 28, correct: 22 },
+        { date: 'Qui', answered: 35, correct: 28 },
+        { date: 'Sex', answered: 40, correct: 33 },
+        { date: 'Sáb', answered: 18, correct: 14 },
+        { date: 'Hoje', answered: Math.max(12, rawAnswered), correct: Math.max(9, rawCorrect) }
       ],
       bySpecialty
     };
-  }, [userAnswers]);
+  }, [userAnswers, simulatedExtraAnswers, performanceFilters]);
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
       {/* Barra de Navegação Superior */}
-      <header className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+      <header className="sticky top-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
-              <GraduationCap className="w-6 h-6" />
+              <Stethoscope className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="text-base font-bold leading-none text-white tracking-tight">Banco Residência</h1>
-              <p className="text-xs text-slate-400 mt-0.5">Preparatório Médico de Alta Performance</p>
+              <div className="flex items-center gap-2">
+                <h1 className="text-base font-bold leading-none text-white tracking-tight">Banco Residência</h1>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold border border-emerald-500/20">
+                  {performanceFilters.modalidade}
+                </span>
+              </div>
+              <p className="text-xs text-slate-400 mt-1">Estatísticas, Percentil & Ranking Semestral</p>
             </div>
           </div>
 
@@ -136,7 +234,12 @@ export default function Home() {
               }`}
             >
               <BarChart2 className="w-4 h-4" />
-              <span>Estatísticas & Gráficos</span>
+              <span>Meu Desempenho</span>
+              {stats.percentileInfo.status !== 'locked' && (
+                <span className="px-1.5 py-0.2 rounded bg-emerald-500 text-[10px] text-slate-950 font-bold">
+                  P{stats.percentileInfo.percentile}
+                </span>
+              )}
             </button>
           </nav>
         </div>
@@ -146,11 +249,11 @@ export default function Home() {
       <main className="max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 flex-1 space-y-6">
         {activeTab === 'practice' ? (
           <>
-            {/* Filtros */}
+            {/* Filtros de Prática */}
             <QuestionFilters
-              filters={filters}
-              onFilterChange={setFilters}
-              onReset={handleResetFilters}
+              filters={practiceFilters}
+              onFilterChange={setPracticeFilters}
+              onReset={handleResetPracticeFilters}
               totalFiltered={filteredQuestions.length}
             />
 
@@ -171,8 +274,8 @@ export default function Home() {
                 <div className="text-center py-16 bg-slate-900/50 border border-slate-800 rounded-xl">
                   <p className="text-slate-400 text-sm">Nenhuma questão encontrada com os filtros selecionados.</p>
                   <button
-                    onClick={handleResetFilters}
-                    className="mt-3 text-xs font-medium text-blue-400 hover:text-blue-300 underline"
+                    onClick={handleResetPracticeFilters}
+                    className="mt-3 text-xs font-medium text-blue-400 hover:text-blue-300 underline cursor-pointer"
                   >
                     Redefinir filtros
                   </button>
@@ -181,13 +284,19 @@ export default function Home() {
             </div>
           </>
         ) : (
-          <StatsDashboard stats={stats} />
+          <StatsDashboard
+            stats={stats}
+            filters={performanceFilters}
+            onFilterChange={setPerformanceFilters}
+            onResetFilters={handleResetPerformanceFilters}
+            onSimulateDemoQuestions={handleSimulateDemoQuestions}
+          />
         )}
       </main>
 
       {/* Rodapé */}
       <footer className="border-t border-slate-800/80 bg-slate-950 py-4 text-center text-xs text-slate-400">
-        <p>© 2026 Banco Residência • Plataforma Otimizada para Estudantes e Médicos</p>
+        <p>© 2026 Banco Residência • Semestre 2026.1 / 2026.2 • Estatísticas com Score Ajustado</p>
       </footer>
     </div>
   );

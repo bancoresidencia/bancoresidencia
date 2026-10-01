@@ -2,6 +2,7 @@ export interface Question {
   id: string;
   code: string;
   institution: string;
+  banca: string;
   year: number;
   specialty: 'Clínica Médica' | 'Cirurgia Geral' | 'Pediatria' | 'Ginecologia e Obstetrícia' | 'Medicina Preventiva e Social';
   subtheme: string;
@@ -16,13 +17,53 @@ export interface Question {
   references?: string[];
 }
 
+export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
+export type PeriodFilter = '6m' | '2026.1' | '2026.2' | '30d' | 'all';
+
+export interface PerformanceFilterState {
+  institutions: string[]; // multi-seleção
+  banca: string;          // banca específica ou 'Todas'
+  period: PeriodFilter;   // '6m', '2026.1', '2026.2', etc.
+  modalidade: Modalidade;
+}
+
+export interface StudentProfile {
+  id: string;
+  name: string;
+  avatar?: string;
+  modalidade: Modalidade;
+  institution: string;
+  banca: string;
+  answered: number;
+  correct: number;
+  uniqueAnswered: number;
+  reviews: number;
+  repeated: number;
+  semester: '2026.1' | '2026.2';
+}
+
+export interface PercentileResult {
+  percentile: number | null;
+  status: 'locked' | 'approximate' | 'official';
+  missingForApprox: number;
+  missingForOfficial: number;
+  adjustedScore: number;
+  eligibleTotalStudents: number;
+  rankPosition?: number;
+}
+
 export interface UserStats {
   totalAnswered: number;
+  uniqueAnswered: number;
+  reviews: number;
+  repeated: number;
   totalCorrect: number;
   totalIncorrect: number;
   accuracyRate: number;
+  daysOnPlatform: number;
   streakDays: number;
   studyTimeMinutes: number;
+  percentileInfo: PercentileResult;
   historyByDay: {
     date: string;
     answered: number;
