@@ -50,44 +50,14 @@ export const medevoInstituicoes = [
 ];
 
 import { clinicaMedicaHierarchy } from './clinicaMedicaData';
+import { cirurgiaHierarchy } from './cirurgiaData';
 import { pediatriaHierarchy } from './pediatriaData';
 import { extractedMedEvoQuestions } from './extractedMedEvoQuestions';
 
 // Hierarquia completa extraída com Especialidade, Tema, Foco e Subfoco
 export const medevoHierarchy: SpecialtyHierarchy[] = [
   clinicaMedicaHierarchy,
-  {
-    especialidade: 'Cirurgia Geral',
-    temas: [
-      {
-        tema: 'Trauma e Emergência Cirúrgica',
-        focos: [
-          {
-            foco: 'Atendimento Inicial ao Politraumatizado (ATLS 10ª Ed)',
-            subfocos: [
-              'Vias Aéreas no Trauma e Intubação de Sequência Rápida',
-              'Pneumotórax Hipertensivo, Aberto e Tórax Instável',
-              'Choque Hemorrágico no Trauma e Protocolo de Transfusão Maciça',
-              'FAST e e-FAST: Janelas Pericárdica, Hepatorrenal e Esplenorrenal'
-            ]
-          }
-        ]
-      },
-      {
-        tema: 'Abdome Agudo',
-        focos: [
-          {
-            foco: 'Abdome Agudo Inflamatório e Obstrutivo',
-            subfocos: [
-              'Apendicite Aguda: Escore de Alvarado e Tratamento Cirúrgico',
-              'Colecistite Aguda e Coledocolitíase: Critérios de Tóquio',
-              'Obstrução Intestinal: Bridas, Volvo de Sigmoide e Hérnias Encarceradas'
-            ]
-          }
-        ]
-      }
-    ]
-  },
+  cirurgiaHierarchy,
   pediatriaHierarchy,
   {
     especialidade: 'Ginecologia e Obstetrícia',

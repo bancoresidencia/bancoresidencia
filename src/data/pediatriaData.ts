@@ -1162,7 +1162,145 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
           ]
         }
       ]
+    },
+    {
+      tema: 'Imunologia e Alergia Pediátrica',
+      focos: [
+        {
+          foco: 'Erros Inatos da Imunidade (Imunodeficiências Primárias)',
+          subfocos: [
+            'Imunodeficiência Comum Variável (IDCV)',
+            'Imunodeficiências Combinadas Graves (SCID)',
+            'Defeitos de Fagócitos (Doença Granulomatosa Crônica)',
+            'Deficiência Seletiva de IgA',
+            'Defeitos do Complemento e Angioedema Hereditário'
+          ]
+        },
+        {
+          foco: 'Alergia Alimentar em Pediatria (Exceto APLV)',
+          subfocos: [
+            'Quadro Clínico e Apresentações Clínicas',
+            'Diagnóstico e Investigação de Alergias Alimentares',
+            'Epidemiologia e Principais Alérgenos Alimentares',
+            'Prevenção e Janela Imunológica',
+            'Tratamento e Dieta de Exclusão'
+          ]
+        },
+        {
+          foco: 'Anafilaxia na Infância: Reconhecimento e Manejo',
+          subfocos: [
+            'Tratamento Imediato: Adrenalina IM e Vias Aéreas',
+            'Critérios Diagnósticos e Reconhecimento Clínico',
+            'Prescrição de Autoinjetor de Adrenalina e Prevenção',
+            'Etiologias e Fatores Desencadeantes Comuns'
+          ]
+        },
+        {
+          foco: 'Rinite Alérgica na Infância',
+          subfocos: [
+            'Tratamento: Corticoide Intranasal e Anti-histamínicos',
+            'Quadro Clínico e Sinais Físicos Clássicos',
+            'Diagnóstico Clínico e Diferencial',
+            'Classificação ARIA e Impacto na Asma'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Maus Tratos à Criança e Adolescente',
+      focos: [
+        {
+          foco: 'Abuso Físico: Lesões Sentinela e Fraturas Suspeitas',
+          subfocos: [
+            'Lesões Cutâneas Suspeitas (Hematomas, Mordeduras)',
+            'Fraturas Altamente Específicas de Abuso (Metáfise, Costela)',
+            'Notificação Obrigatória e Fluxo de Proteção',
+            'Diagnóstico Diferencial (Osteogênese Imperfeita, Coagulopatias)'
+          ]
+        },
+        {
+          foco: 'Abuso Sexual na Infância: Diagnóstico e Profilaxias',
+          subfocos: [
+            'Profilaxia de ISTs, HIV e Gravidez Pós-Abuso',
+            'Exame Físico Genital e Lesões Anogenitais',
+            'Sinais Comportamentais e Psicológicos de Alerta',
+            'Notificação e Atendimento em Rede de Proteção'
+          ]
+        },
+        {
+          foco: 'Síndrome do Bebê Sacudido (Trauma Craniano Abusivo)',
+          subfocos: [
+            'Tríade Clássica: Hematoma Subdural, Hemorragia Retiniana, Encefalopatia',
+            'Neuroimagem: TC/RM e Diagnóstico de Fraturas Ocultas',
+            'Mecanismo do Trauma e Fisiopatologia',
+            'Prognóstico Neurológico e Sequelas a Longo Prazo'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Cirurgia Pediátrica',
+      focos: [
+        {
+          foco: 'Hérnias Inguinais, Umbilicais e Hidrocele na Criança',
+          subfocos: [
+            'Hérnia Inguinal: Conduta Cirúrgica e Risco de Encarceramento',
+            'Hérnia Umbilical: Indicação Cirúrgica vs Expectante',
+            'Hidrocele Comunicante vs Não Comunicante'
+          ]
+        },
+        {
+          foco: 'Afecções da Genitália Externa Masculina (Fimose e Criptorquidia)',
+          subfocos: [
+            'Criptorquidia: Diagnóstico, Complicações e Timing Cirúrgico',
+            'Fimose Fisiológica vs Patológica e Tratamento Tópico'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Ortopedia Pediátrica',
+      focos: [
+        {
+          foco: 'Displasia do Desenvolvimento do Quadril (DDQ)',
+          subfocos: [
+            'Manobras de Ortolani e Barlow no Exame Neonatal',
+            'Ultrassonografia de Quadril e Radiografia: Idades e Indicações',
+            'Tratamento: Suspensório de Pavlik e Manejo'
+          ]
+        },
+        {
+          foco: 'Deformidades Ortopédicas Comuns (Pé Torto, Deformidades Angulares)',
+          subfocos: [
+            'Joelho Varo e Joelho Valgo: Fisiológico vs Patológico',
+            'Pé Torto Congênito (PTC): Método de Ponseti',
+            'Marcha com Rotação Interna: Marcha em Adução'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Oncologia Pediátrica',
+      focos: [
+        {
+          foco: 'Tumores Abdominais Pediátricos (Neuroblastoma e Tumor de Wilms)',
+          subfocos: [
+            'Neuroblastoma: Origem na Crista Neural e Metástases',
+            'Diagnóstico Diferencial: Wilms (Nefroblastoma) vs Neuroblastoma',
+            'Tumor de Wilms: Quadro Clínico, Hematúria e HAS'
+          ]
+        },
+        {
+          foco: 'Tumores do Sistema Nervoso Central na Criança',
+          subfocos: [
+            'Meduloblastoma: Tumor Maligno Mais Comum em Fossa Posterior',
+            'Sinais de Hipertensão Intracraniana e Fossa Posterior',
+            'Astrocitoma Pilosítico: Tumor Cerebral Mais Frequente'
+          ]
+        }
+      ]
     }
   ]
 };
+
 
