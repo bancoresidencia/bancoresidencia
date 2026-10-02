@@ -82,7 +82,7 @@ export interface Question {
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
 export type PeriodFilter = '7d' | '30d' | 'mes' | '6m' | '2026.1' | '2026.2' | 'all';
-export type ActiveTab = 'home' | 'banco' | 'listas' | 'simulados' | 'stats' | 'ranking';
+export type ActiveTab = 'home' | 'banco' | 'listas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes';
 
 export interface PerformanceFilterState {
   institutions: string[];

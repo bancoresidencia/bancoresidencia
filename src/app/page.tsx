@@ -13,7 +13,10 @@ import { OfficialRanking } from '@/components/OfficialRanking';
 import { Sidebar } from '@/components/Sidebar';
 import { PercentileColorTester } from '@/components/PercentileColorTester';
 import { ThemeSelector } from '@/components/ThemeSelector';
+import { AuthScreen } from '@/components/AuthScreen';
+import { StudentProfileSettings } from '@/components/StudentProfileSettings';
 import { useTheme } from '@/context/ThemeContext';
+import { useAuth } from '@/context/AuthContext';
 import {
   UserStats,
   PerformanceFilterState,
@@ -28,12 +31,14 @@ import { Stethoscope, Menu, X, ArrowLeft, HelpCircle } from 'lucide-react';
 
 export default function Home() {
   const { accentConfig } = useTheme();
+  const { user, isAuthenticated, isLoading, logout } = useAuth();
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Perfil do Aluno e Metas
-  const studentName = 'Dr. Lucas Rocha';
-  const [dailyGoal, setDailyGoal] = useState<number>(30);
+  // Perfil do Aluno e Metas dinâmicas
+  const studentName = user?.name || 'Dr. Lucas Rocha';
+  const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
+  const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
 
   // Pastas e Listas de Questões
   const [folders, setFolders] = useState<Folder[]>(initialFolders);
@@ -493,6 +498,30 @@ export default function Home() {
     return item;
   });
 
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-[#070b14]">
+        <div className="flex flex-col items-center gap-3">
+          <div
+            className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg animate-pulse"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+          >
+            <Stethoscope className="w-6 h-6" />
+          </div>
+          <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Carregando Banco Residência...</span>
+        </div>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated || !user) {
+    return (
+      <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 flex flex-col justify-center">
+        <AuthScreen />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 flex font-sans transition-colors duration-200">
       {/* 1. Barra Lateral de Navegação (Sidebar) */}
@@ -554,14 +583,15 @@ export default function Home() {
                 { id: 'listas', label: 'Cadernos' },
                 { id: 'simulados', label: 'Simulados' },
                 { id: 'stats', label: 'Meu Desempenho' },
-                { id: 'ranking', label: 'Ranking Oficial' }
+                { id: 'ranking', label: 'Ranking Oficial' },
+                { id: 'configuracoes', label: 'Meu Perfil' }
               ].map((item) => {
                 const isActive = activeTab === item.id;
                 return (
                   <button
                     key={item.id}
                     onClick={() => setActiveTab(item.id as ActiveTab)}
-                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                    className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                       isActive
                         ? 'text-white shadow-md'
                         : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/70 dark:hover:bg-slate-800'
@@ -577,9 +607,41 @@ export default function Home() {
               })}
             </nav>
 
-            {/* Seletor Compacto de Tema no Header */}
-            <div className="flex items-center gap-2">
+            {/* Controles do Topo: Tema + Avatar do Usuário */}
+            <div className="flex items-center gap-2.5">
               <ThemeSelector compact={true} />
+
+              {/* Botão de Perfil do Aluno */}
+              <button
+                type="button"
+                onClick={() => setActiveTab('configuracoes')}
+                title="Meu Perfil e Configurações"
+                className={`flex items-center gap-2 p-1.5 pr-3 rounded-2xl border transition-all cursor-pointer ${
+                  activeTab === 'configuracoes'
+                    ? 'border-blue-500 bg-blue-50/80 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300'
+                    : 'border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300'
+                }`}
+              >
+                {user.avatarUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={user.avatarUrl}
+                    alt={user.name}
+                    className="w-7 h-7 rounded-xl object-cover border"
+                    style={{ borderColor: accentConfig.primaryHex }}
+                  />
+                ) : (
+                  <div
+                    className="w-7 h-7 rounded-xl flex items-center justify-center font-extrabold text-[11px] text-white shadow-xs"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                  >
+                    {user.name.split(' ').map((n) => n[0]).slice(0, 2).join('').toUpperCase()}
+                  </div>
+                )}
+                <span className="text-xs font-bold hidden sm:inline max-w-[100px] truncate">
+                  {user.name.split(' ')[0]}
+                </span>
+              </button>
             </div>
           </div>
 
@@ -592,7 +654,8 @@ export default function Home() {
                 { id: 'listas', label: 'Cadernos & Pastas' },
                 { id: 'simulados', label: 'Simulados' },
                 { id: 'stats', label: 'Meu Desempenho' },
-                { id: 'ranking', label: 'Ranking Oficial' }
+                { id: 'ranking', label: 'Ranking Oficial' },
+                { id: 'configuracoes', label: 'Meu Perfil & Ajustes' }
               ].map((item) => (
                 <button
                   key={item.id}
@@ -624,7 +687,7 @@ export default function Home() {
               studentName={studentName}
               stats={stats}
               dailyGoal={dailyGoal}
-              onUpdateDailyGoal={setDailyGoal}
+              onUpdateDailyGoal={(goal) => setCustomDailyGoal(goal)}
               recentList={recentList}
               allLists={lists}
               onNavigate={setActiveTab}
@@ -803,6 +866,15 @@ export default function Home() {
                 userQuestions={stats.totalAnswered}
               />
             </div>
+          )}
+
+          {/* ABA 7: CONFIGURAÇÕES E PERFIL DO ALUNO */}
+          {activeTab === 'configuracoes' && (
+            <StudentProfileSettings
+              fontSize={fontSize}
+              onChangeFontSize={handleFontSizeChange}
+              onLogout={logout}
+            />
           )}
         </main>
 

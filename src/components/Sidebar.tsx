@@ -10,10 +10,13 @@ import {
   Trophy,
   Stethoscope,
   ChevronRight,
-  Flame
+  Flame,
+  Settings,
+  LogOut
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { useAuth } from '@/context/AuthContext';
 import { ThemeSelector } from './ThemeSelector';
 
 interface SidebarProps {
@@ -30,6 +33,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   streakDays
 }) => {
   const { accentConfig } = useTheme();
+  const { user, logout } = useAuth();
 
   const menuItems = [
     { id: 'home', label: 'Início', icon: Home, badge: undefined },
@@ -37,7 +41,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'listas', label: 'Listas & Pastas', icon: ListFilter, badge: undefined },
     { id: 'simulados', label: 'Simulados', icon: FileCheck2, badge: 'Oficial' },
     { id: 'stats', label: 'Meu Desempenho', icon: BarChart2, badge: undefined },
-    { id: 'ranking', label: 'Ranking Oficial', icon: Trophy, badge: '2026.1' }
+    { id: 'ranking', label: 'Ranking Oficial', icon: Trophy, badge: '2026.1' },
+    { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Settings, badge: undefined }
   ];
 
   return (
@@ -131,21 +136,41 @@ export const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* Perfil do Aluno e Sequência de Estudos */}
-      <div className="p-4 m-3 bg-slate-50 dark:bg-[#0c1424] rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm">
-        <div className="flex items-center gap-3">
-          <div
-            className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-xs shadow-sm transition-transform hover:scale-105"
-            style={{
-              backgroundColor: accentConfig.bgRgba,
-              color: accentConfig.primaryHex,
-              border: `1.5px solid ${accentConfig.primaryHex}`
-            }}
-          >
-            LR
-          </div>
+      <div className="p-3 m-3 bg-slate-50 dark:bg-[#0c1424] rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm space-y-2.5">
+        <button
+          type="button"
+          onClick={() => onNavigate('configuracoes')}
+          className="w-full flex items-center gap-3 text-left cursor-pointer group"
+          title="Ver Meu Perfil e Configurações"
+        >
+          {user?.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={user.avatarUrl}
+              alt={user.name}
+              className="w-10 h-10 rounded-xl object-cover border shadow-xs transition-transform group-hover:scale-105"
+              style={{ borderColor: accentConfig.primaryHex }}
+            />
+          ) : (
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-xs shadow-xs transition-transform group-hover:scale-105"
+              style={{
+                backgroundColor: accentConfig.bgRgba,
+                color: accentConfig.primaryHex,
+                border: `1.5px solid ${accentConfig.primaryHex}`
+              }}
+            >
+              {(user?.name || 'Lucas Rocha')
+                .split(' ')
+                .filter(Boolean)
+                .slice(0, 2)
+                .map((w) => w[0].toUpperCase())
+                .join('')}
+            </div>
+          )}
           <div className="flex-1 min-w-0">
-            <div className="text-xs font-extrabold text-slate-900 dark:text-white truncate">
-              Dr. Lucas Rocha
+            <div className="text-xs font-extrabold text-slate-900 dark:text-white truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              {user?.name || 'Dr. Lucas Rocha'}
             </div>
             <div className="flex items-center gap-1.5 mt-0.5">
               <span className="flex items-center gap-1 text-[11px] font-bold text-amber-700 dark:text-amber-400">
@@ -154,6 +179,24 @@ export const Sidebar: React.FC<SidebarProps> = ({
               </span>
             </div>
           </div>
+        </button>
+
+        <div className="pt-1.5 border-t border-slate-200/60 dark:border-slate-800/80 flex items-center justify-between text-[11px]">
+          <button
+            type="button"
+            onClick={() => onNavigate('configuracoes')}
+            className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-semibold cursor-pointer"
+          >
+            Ajustar Perfil
+          </button>
+          <button
+            type="button"
+            onClick={logout}
+            className="text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 font-bold flex items-center gap-1 cursor-pointer"
+          >
+            <LogOut className="w-3 h-3" />
+            <span>Sair</span>
+          </button>
         </div>
       </div>
     </aside>

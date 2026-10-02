@@ -360,6 +360,108 @@ export const mockQuestions: Question[] = [
     ],
     correctAnswer: 'A',
     commentary: 'Trata-se de pneumotórax hipertensivo, uma emergência clínica diagnosticada pelo exame físico (hipotensão, turgência jugular, murmúrio abolido e hipertimpanismo). A conduta imediata de alívio segundo o ATLS 10ª edição é toracocentese com agulha calibrosa no 4º/5º EIC entre a linha axilar anterior e média.'
+  },
+  {
+    id: 'q-8',
+    code: 'USP-SP-2025-EMERG-01',
+    institution: 'USP-SP',
+    banca: 'FUVEST',
+    year: 2025,
+    tipoProva: 'Prova 1',
+    modalidade: 'Residência Médica',
+    especialidade: 'Clínica Médica',
+    tema: 'Medicina de Emergência',
+    foco: 'Parada Cardiorrespiratória no Adulto',
+    subfoco: 'SAV: Algoritmos, Desfibrilação e Via Aérea Avançada',
+    difficulty: 'Médio',
+    type: 'Múltipla escolha',
+    isAnulada: false,
+    statement: 'Homem de 62 anos sofre PCR presenciada em sala de emergência. A monitorização cardíaca revela Fibrilação Ventricular (FV). Foi aplicado o primeiro choque com desfibrilador bifásico (200 J) e reiniciadas imediatamente as compressões torácicas de alta qualidade. Durante o segundo ciclo de 2 minutos de RCP, qual deve ser a conduta farmacológica prioritária segundo as diretrizes do ACLS?',
+    options: [
+      { letter: 'A', text: 'Administrar Amiodarona 300 mg em bolus imediatamente após o primeiro choque.' },
+      { letter: 'B', text: 'Administrar Epinefrina 1 mg por via intravenosa/intraóssea a cada 3 a 5 minutos, após a segunda checagem de ritmo/segundo choque.' },
+      { letter: 'C', text: 'Administrar Atropina 1 mg em bolus e Bicarbonato de Sódio a 8,4%.' },
+      { letter: 'D', text: 'Interromper as compressões torácicas para realizar intubação orotraqueal imediata com capnografia.' },
+      { letter: 'E', text: 'Administrar Sulfato de Magnésio 2g IV antes de qualquer vasopressor.' }
+    ],
+    correctAnswer: 'B',
+    commentary: 'No algoritmo de PCR para ritmos chocáveis (FV/TV sem pulso), a prioridade absoluta após a desfibrilação é a retomada contínua das compressões. A epinefrina (1 mg IV/IO a cada 3-5 min) é introduzida após o segundo choque caso o ritmo persista chocável. A amiodarona (300 mg primeiro bolus, 150 mg segundo bolus) é recomendada a partir do terceiro choque em casos refratários.'
+  },
+  {
+    id: 'q-9',
+    code: 'UNIFESP-2025-GERIAT-02',
+    institution: 'UNIFESP',
+    banca: 'VUNESP',
+    year: 2025,
+    tipoProva: 'Prova 1',
+    modalidade: 'Residência Médica',
+    especialidade: 'Clínica Médica',
+    tema: 'Geriatria',
+    foco: 'Delirium',
+    subfoco: 'Identificação e Critérios Diagnósticos de Delirium',
+    difficulty: 'Fácil',
+    type: 'Múltipla escolha',
+    isAnulada: false,
+    statement: 'Mulher de 82 anos, internada na enfermaria de clínica médica no 3º dia de tratamento de pneumonia comunitária, passa a apresentar no período noturno flutuação do nível de consciência, agitação psicomotora, desorientação temporal e alucinações visuais. Durante a manhã, alternou com períodos de sonolência excessiva e desatenção. Pela ferramenta CAM (Confusion Assessment Method), quais são os critérios obrigatórios presentes?',
+    options: [
+      { letter: 'A', text: 'Apenas déficit cognitivo crônico e afasia motora.' },
+      { letter: 'B', text: 'Início agudo e curso flutuante + déficit de atenção (critérios 1 e 2 obrigatórios).' },
+      { letter: 'C', text: 'Necessidade obrigatória de punção lombar e eletroencefalograma para confirmação.' },
+      { letter: 'D', text: 'Depressão maior com sintomas psicóticos induzidos por antimicrobianos.' },
+      { letter: 'E', text: 'Demência de Alzheimer avançada de instalação fulminante.' }
+    ],
+    correctAnswer: 'B',
+    commentary: 'O diagnóstico de delirium pelo CAM requer a presença simultânea do critério 1 (início agudo e curso flutuante) e do critério 2 (desatenção), somados a pelo menos um entre pensamento desorganizado (critério 3) ou nível alterado de consciência (critério 4).'
+  },
+  {
+    id: 'q-10',
+    code: 'UNICAMP-2025-UTI-03',
+    institution: 'UNICAMP',
+    banca: 'FCM/UNICAMP',
+    year: 2025,
+    tipoProva: 'Prova 1',
+    modalidade: 'Residência Médica',
+    especialidade: 'Clínica Médica',
+    tema: 'Terapia Intensiva',
+    foco: 'Sepse e Choque Séptico: Bundles de 1 e 3 Horas, Fonte e Metas',
+    subfoco: 'Bundle de 1 Hora: Avaliação e Intervenção Inicial',
+    difficulty: 'Difícil',
+    type: 'Múltipla escolha',
+    isAnulada: false,
+    statement: 'Paciente de 68 anos dá entrada em sala de emergência com tosse produtiva, dispneia, taquipneia (FR 28 irpm), sonolência e hipotensão (PA 82/46 mmHg, PAM 58 mmHg). O lactato arterial sérico de entrada é de 4,2 mmol/L. Segundo a diretriz da Surviving Sepsis Campaign (Bundle de 1 hora), qual conduta deve ser implementada de forma imediata na primeira hora?',
+    options: [
+      { letter: 'A', text: 'Coleta de hemoculturas antes do início dos antibióticos, início de antimicrobiano de amplo espectro na 1ª hora e ressuscitação volêmica com cristaloide a 30 mL/kg para PAM < 65 ou lactato ≥ 4 mmol/L.' },
+      { letter: 'B', text: 'Iniciar apenas reposição de albumina a 20% e aguardar o resultado das culturas em 48h antes de prescrever antibióticos.' },
+      { letter: 'C', text: 'Iniciar dobutamina em alta dose antes de qualquer infusão de líquidos e sem necessidade de culturas.' },
+      { letter: 'D', text: 'Prescrever apenas corticoterapia em altas doses e manter o paciente sob observação sem ressuscitação hídrica.' }
+    ],
+    correctAnswer: 'A',
+    commentary: 'O Bundle de 1 hora da Surviving Sepsis Campaign preconiza: 1) Dosar lactato; 2) Coletar hemoculturas antes de iniciar antimicrobianos; 3) Administrar antibióticos de amplo espectro; 4) Iniciar ressuscitação com 30 mL/kg de cristaloides para hipotensão ou lactato ≥ 4 mmol/L; 5) Iniciar vasopressores (noradrenalina como primeira escolha) se hipotenso durante ou após a ressuscitação volêmica para manter PAM ≥ 65 mmHg.'
+  },
+  {
+    id: 'q-11',
+    code: 'SUS-SP-2025-PALIAT-04',
+    institution: 'SUS-SP',
+    banca: 'VUNESP',
+    year: 2025,
+    tipoProva: 'Prova 1',
+    modalidade: 'Residência Médica',
+    especialidade: 'Clínica Médica',
+    tema: 'Cuidados Paliativos',
+    foco: 'Cuidados de Fim de Vida',
+    subfoco: 'Comunicação de Más Notícias (SPIKES)',
+    difficulty: 'Fácil',
+    type: 'Múltipla escolha',
+    isAnulada: false,
+    statement: 'Durante a comunicação de notícias difíceis a familiares de um paciente com neoplasia metastática sem proposta curativa, o médico aplica o protocolo SPIKES. Na etapa "P" (Perception / Percepção), qual é a atitude médica recomendada?',
+    options: [
+      { letter: 'A', text: 'Entregar imediatamente o laudo anatomopatológico detalhado com jargões técnicos para a família ler.' },
+      { letter: 'B', text: 'Fazer perguntas abertas para avaliar o que o paciente ou a família já compreendem sobre o quadro clínico e suas expectativas ("O que os outros médicos já explicaram até agora?").' },
+      { letter: 'C', text: 'Prescrever sedativos profiláticos para evitar que a família expresse emoções.' },
+      { letter: 'D', text: 'Informar que não há mais nada a ser feito e encerrar a conversa em 2 minutos.' }
+    ],
+    correctAnswer: 'B',
+    commentary: 'No protocolo SPIKES: S (Setting - Preparar o ambiente), P (Perception - Avaliar a percepção do paciente/família sobre a doença), I (Invitation - Convidar e perguntar se desejam saber os detalhes), K (Knowledge - Transmitir o conhecimento em linguagem clara), E (Emotions - Acolher as emoções com empatia), S (Strategy/Summary - Definir estratégia compartilhada e resumir os próximos passos).'
   }
 ];
 

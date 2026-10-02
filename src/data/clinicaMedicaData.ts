@@ -1061,6 +1061,626 @@ export const clinicaMedicaHierarchy: SpecialtyHierarchy = {
           ]
         }
       ]
+    },
+    {
+      tema: 'Medicina de Emergência',
+      focos: [
+        {
+          foco: 'Parada Cardiorrespiratória no Adulto',
+          subfocos: [
+            'SAV: Algoritmos, Desfibrilação e Via Aérea Avançada',
+            'SBV: Cadeia de Sobrevivência, Compressões e DEA',
+            'Causas Reversíveis (5H5T) e Farmacoterapia na PCR',
+            'Ritmos de PCR: Chocáveis vs Não Chocáveis',
+            'Cuidados Pós-PCR: Hipotermia Terapêutica e Neuroproteção'
+          ]
+        },
+        {
+          foco: 'Choque: Reconhecimento e Protocolo Inicial',
+          subfocos: [
+            'Choque: Reconhecimento, Classificação e Monitorização Hemodinâmica',
+            'Choque: Manejo Inicial, Fluidoterapia e Vasopressores',
+            'Choque Hipovolêmico, Neurogênico e Distributivo',
+            'Choque Séptico: Diagnóstico, Focos Infecciosos e Protocolo',
+            'Choque Cardiogênico e Obstrutivo: Causas e Manejo',
+            'Emergências Neurológicas, Hipertensivas e Situações Especiais'
+          ]
+        },
+        {
+          foco: 'Trauma: Avaliação Inicial e ATLS',
+          subfocos: [
+            'TCE: Avaliação, Glasgow, Lesões Específicas e HIC',
+            'Avaliação Primária (ABCDE), Triagem e Classificação de Risco',
+            'Trauma Torácico, Abdominal e Pélvico: Diagnóstico e Conduta',
+            'Hipertermia Maligna, Lesões Tardias e Complicações do Trauma',
+            'Queimaduras, Ferimentos e Traumas em Populações Especiais'
+          ]
+        },
+        {
+          foco: 'Intoxicações: Estabilização Inicial e Antídotos de Primeira Hora',
+          subfocos: [
+            'Opioides, CO e Agentes Químicos: Reconhecimento e Tratamento',
+            'Paracetamol, Organofosforados e Antídotos Específicos',
+            'Intoxicações Agudas: Diagnóstico Diferencial e Descontaminação',
+            'Abstinência Alcoólica: Clínica e Manejo',
+            'Lavagem Gástrica e Carvão Ativado'
+          ]
+        },
+        {
+          foco: 'POCUS: Point-of-Care Ultrasound na Emergência',
+          subfocos: [
+            'Avaliação Pulmonar (Pneumotórax, Derrame)',
+            'Acesso Vascular Guiado por USG',
+            'Avaliação Cardíaca Rápida (USG à beira-leito)'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Geriatria',
+      focos: [
+        {
+          foco: 'Síndromes Geriátricas',
+          subfocos: [
+            'Polifarmácia, Iatrogenia e Prescrição em Cascata',
+            'Quedas, Instabilidade e Úlceras por Pressão',
+            'Fragilidade e Sarcopenia Geriátrica, Diagnóstico e Manejo',
+            'Alterações Fisiológicas do Envelhecimento',
+            'Incontinência Urinária, Envelhecimento e Abordagem Integrada'
+          ]
+        },
+        {
+          foco: 'Delirium',
+          subfocos: [
+            'Identificação e Critérios Diagnósticos de Delirium',
+            'Fatores Desencadeantes e Causas Precipitantes de Delirium',
+            'Delirium Hipoativo vs Hiperativo',
+            'Manejo Não Farmacológico do Delirium',
+            'Delirium: Fisiopatologia e Mecanismos Celulares'
+          ]
+        },
+        {
+          foco: 'Avaliação Geriátrica Ampla',
+          subfocos: [
+            'Fragilidade, Nutrição e Escalas Geriátricas',
+            'AVD Básicas e Instrumentais: Escalas e Aplicação',
+            'Avaliação Cognitiva, Humor e Testes de Rastreio',
+            'Avaliação de Humor e Depressão Geriátrica',
+            'Avaliação de Risco de Quedas e Marcha'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Toxicologia Clínica',
+      focos: [
+        {
+          foco: 'Intoxicação por Medicamentos',
+          subfocos: [
+            'Isoniazida e Anti-infecciosos: Neurotoxicidade e Antídotos Específicos',
+            'Digoxina, Metformina, Estatinas e Outros: Toxicidade Sistêmica',
+            'Princípios de Toxicocinética: Farmacocinética, Cinética e Descontaminação',
+            'Paracetamol e Salicilatos: Hepatotoxicidade, Acidose e Antídotos',
+            'Antidepressivos Tricíclicos e Lítio: Cardiotoxicidade e Manejo',
+            'Benzodiazepínicos, Anticonvulsivantes e Síndromes de Abstinência'
+          ]
+        },
+        {
+          foco: 'Envenenamentos',
+          subfocos: [
+            'Acidentes Ofídicos: Botrópico, Crotálico, Laquético e Elapídico',
+            'Intoxicação por Organofosforados, Carbamatos e Clorados',
+            'Intoxicação por Metais Pesados: Chumbo, Mercúrio e Outros',
+            'Acidentes por Escorpiões, Lagartas e Outros Animais Peçonhentos',
+            'Acidentes por Aranhas: Phoneutria, Loxosceles e Outras'
+          ]
+        },
+        {
+          foco: 'Intoxicação por Drogas de Abuso',
+          subfocos: [
+            'Cocaína e Anfetaminas: Toxicidade Cardiovascular, Neurológica e Sistêmica',
+            'Opioides: Intoxicação Aguda, Abstinência e Naloxona',
+            'Toxidromes e Sinais Clínicos: Serotoninérgica, Pupilar e Emese',
+            'Sedativos, Hipnóticos e Anticolinérgicos: Intoxicação e Manejo',
+            'Cannabis, Alucinógenos, Nicotina e Drogas Diversas'
+          ]
+        },
+        {
+          foco: 'Intoxicação por Agrotóxicos',
+          subfocos: [
+            'Organofosforados: Clínica, Diagnóstico e Síndrome Colinérgica',
+            'Intoxicações por Agrotóxicos: Aspectos Gerais e Ocupacionais',
+            'Pralidoxima e Atropina',
+            'Paraquat, Herbicidas e Intoxicações Diversas por Agrotóxicos',
+            'Organofosforados: Tratamento, Antídotos e Efeitos Tardios'
+          ]
+        },
+        {
+          foco: 'Intoxicação Alcoólica',
+          subfocos: [
+            'Síndrome de Abstinência Alcoólica e Delirium Tremens',
+            'Intoxicação por Metanol e Etilenoglicol',
+            'Encefalopatia de Wernicke-Korsakoff',
+            'Diagnóstico e Manejo de Intoxicação Alcoólica Aguda',
+            'Complicações Neurológicas da Abstinência Alcoólica'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Nutrologia',
+      focos: [
+        {
+          foco: 'Deficiências Vitamínicas',
+          subfocos: [
+            'Vitamina B12: Anemia Megaloblástica, Neurológica e Absorção',
+            'Tiamina (B1): Beribéri, Wernicke-Korsakoff e Pós-Bariátrica',
+            'Niacina, Complexo B e Outras Deficiências Vitamínicas',
+            'Vitamina A e D: Manifestações e Metabolismo Ósseo',
+            'Vitamina C, Ferro e Outros Micronutrientes'
+          ]
+        },
+        {
+          foco: 'Terapia Nutricional e Suporte',
+          subfocos: [
+            'Nutrição Enteral: Indicações, Vias e Formulações',
+            'Nutrição Parenteral: Indicações, Complicações e Componentes',
+            'Nutrição em Condições Específicas: Oncologia, Hepatopatia, DRC e Celíaca',
+            'Nutrição no Paciente Crítico, Perioperatório e Fístulas',
+            'Pós-Cirurgia Bariátrica e Avaliação de Necessidades Energéticas'
+          ]
+        },
+        {
+          foco: 'Obesidade',
+          subfocos: [
+            'Fisiopatologia, Síndromes Genéticas e Comorbidades',
+            'Tratamento Farmacológico e Não Farmacológico da Obesidade',
+            'Classificação e Diagnóstico por IMC e Circunferência Abdominal',
+            'Medicamentos Antiobesidade (GLP-1, Orlistat)',
+            'Cirurgia Bariátrica: Indicações, Técnicas e Populações Especiais'
+          ]
+        },
+        {
+          foco: 'Desnutrição',
+          subfocos: [
+            'Avaliação Nutricional: Marcadores, Antropometria e Triagem',
+            'Desnutrição Proteico-Energética: Kwashiorkor e Marasmo',
+            'Metabolismo, Adaptação à Inanição e Sarcopenia',
+            'Nutrição em Doenças Crônicas, Cirurgias e Condições Específicas',
+            'Terapia Nutricional: Suporte Oral e Enteral'
+          ]
+        },
+        {
+          foco: 'Síndrome de Realimentação: Identificação de Risco e Prevenção',
+          subfocos: [
+            'Fisiopatologia e Manifestações Clínicas da SR',
+            'Identificação de Pacientes de Risco para SR',
+            'Monitorização e Progressão Calórica',
+            'Prevenção e Manejo Inicial da SR',
+            'Reposição de Fósforo e Eletrólitos'
+          ]
+        },
+        {
+          foco: 'Transtornos Alimentares no Adulto',
+          subfocos: [
+            'Anorexia Nervosa: Diagnóstico, Fisiopatologia e Achados',
+            'Bulimia Nervosa: Diagnóstico e Sinais',
+            'Anorexia Nervosa: Manejo Clínico e Complicações',
+            'Bulimia Nervosa: Abordagem Terapêutica'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Terapia Intensiva',
+      focos: [
+        {
+          foco: 'Sepse e Choque Séptico: Bundles de 1 e 3 Horas, Fonte e Metas',
+          subfocos: [
+            'Bundle de 1 Hora: Avaliação e Intervenção Inicial',
+            'Definição e Critérios Diagnósticos (Sepsis-3)',
+            'Bundle de 3 Horas: Ressuscitação Volêmica e Hemodinâmica',
+            'Sepse: Avaliação Distúrbios Ácido-Básicos',
+            'Controle de Fonte Infecciosa'
+          ]
+        },
+        {
+          foco: 'Ventilação Mecânica',
+          subfocos: [
+            'Desmame Ventilatório e Falência Respiratória',
+            'Indicações de IOT e Modos Ventilatórios Básicos',
+            'PEEP, FiO2 e Monitorização de Curvas/Gasometria',
+            'Modos Avançados: PSV, SIMV e Outros',
+            'Complicações da Ventilação Mecânica'
+          ]
+        },
+        {
+          foco: 'Choque: Vasopressores, Monitorização Avançada e Metas Hemodinâmicas',
+          subfocos: [
+            'Metas de Ressuscitação e Vasopressores',
+            'Choque Cardiogênico e Distributivo: Causas e Abordagem',
+            'Monitorização Hemodinâmica: PAI, POCUS e Parâmetros',
+            'Choque Hipovolêmico e Cenários Específicos de Choque',
+            'Choque Séptico: Diagnóstico, Manejo Inicial e IRA'
+          ]
+        },
+        {
+          foco: 'Síndrome do Desconforto Respiratório Agudo (SDRA)',
+          subfocos: [
+            'Manejo Ventilatório Protetor na SDRA',
+            'Critérios Diagnósticos e Classificação da SDRA (Berlin)',
+            'Fisiopatologia da SDRA',
+            'Ventilação Protetora e Prona',
+            'ECMO e Terapias de Resgate'
+          ]
+        },
+        {
+          foco: 'Suporte Hemodinâmico',
+          subfocos: [
+            'Avaliação e Reposição Volêmica',
+            'Manejo de Choque Séptico e Vasopressores',
+            'Suporte Inotrópico e Vasodilatador',
+            'Hipertensão Intra-abdominal: Diagnóstico e Tratamento',
+            'PAM Alvo e Lactato'
+          ]
+        },
+        {
+          foco: 'Sedação e Analgesia',
+          subfocos: [
+            'Farmacologia e Uso de Sedativos',
+            'Escalas de Avaliação de Sedação e Consciência',
+            'RASS e BPS'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Psiquiatria',
+      focos: [
+        {
+          foco: 'Transtornos de Humor',
+          subfocos: [
+            'Antidepressivos: ISRS, Outros Fármacos e Manejo de Efeitos Adversos',
+            'Depressão Maior: Diagnóstico, Distimia e Critérios',
+            'Transtorno Bipolar: Diagnóstico, Mania e Diferencial',
+            'Estabilizadores de Humor e Tratamento do Bipolar',
+            'Transtornos de Personalidade e Outros Transtornos de Humor'
+          ]
+        },
+        {
+          foco: 'Transtornos de Ansiedade',
+          subfocos: [
+            'Transtorno do Pânico, Fobias e Agorafobia',
+            'TOC e TEPT: Diagnóstico e Tratamento',
+            'TAG: Diagnóstico, Critérios e Apresentação',
+            'Transtornos Somáticos, Burnout e Insônia',
+            'TAG e Ansiedade: Tratamento Farmacológico e BZDs'
+          ]
+        },
+        {
+          foco: 'Dependência Química',
+          subfocos: [
+            'Alcoolismo: Síndrome de Abstinência e Tratamento',
+            'Dependência de Álcool: Diagnóstico e Critérios',
+            'Dependência de Estimulantes, Maconha e Outras Substâncias',
+            'Tabagismo: Avaliação, Cessação e Farmacoterapia',
+            'Dependência de Benzodiazepínicos: Clínica e Abstinência'
+          ]
+        },
+        {
+          foco: 'Esquizofrenia e Transtornos Psicóticos',
+          subfocos: [
+            'Esquizofrenia: Diagnóstico, Sintomas e Critérios DSM-5',
+            'Antipsicóticos: Típicos, Atípicos e Escolha Terapêutica',
+            'Síndrome Neuroléptica Maligna, Discinesia Tardia e Efeitos Adversos',
+            'Primeiro Episódio Psicótico, Catatonia e Outros Transtornos',
+            'Sintomas Negativos e Reabilitação'
+          ]
+        },
+        {
+          foco: 'Risco de Suicídio e Manejo de Crise: Avaliação e Medidas de Segurança',
+          subfocos: [
+            'Avaliação de Risco Suicida: Fatores e Métodos',
+            'Manejo de Crise Suicida: Medidas de Segurança',
+            'Internação Psiquiátrica para Risco Suicida'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Cuidados Paliativos',
+      focos: [
+        {
+          foco: 'Cuidados de Fim de Vida',
+          subfocos: [
+            'Identificação e Indicação de Cuidados Paliativos',
+            'Controle de Sintomas (Dor, Dispneia, Náusea)',
+            'Sedação Paliativa',
+            'Diretivas Antecipadas de Vontade',
+            'Comunicação de Más Notícias (SPIKES)'
+          ]
+        },
+        {
+          foco: 'Controle de Sintomas',
+          subfocos: [
+            'Manejo da Dispneia em Doenças Avançadas',
+            'Cuidados Paliativos Pediátricos e Familiares',
+            'Manejo da Constipação e Obstrução Intestinal',
+            'Manejo de Náuseas e Vômitos',
+            'Avaliação e Manejo do Delirium'
+          ]
+        },
+        {
+          foco: 'Controle da Dor',
+          subfocos: [
+            'Manejo de Opioides: Uso, Titulação e Toxicidade',
+            'Escada Analgésica da OMS: Princípios e Aplicação',
+            'Dor Neuropática: Fisiopatologia e Tratamento',
+            'Escalas de Dor e Avaliação',
+            'Adjuvantes Analgésicos'
+          ]
+        },
+        {
+          foco: 'Comunicação e Aspectos Éticos',
+          subfocos: [
+            'Tomada de Decisão Compartilhada e Autonomia do Paciente',
+            'Comunicação de Más Notícias: Protocolo SPIKES',
+            'Princípios Éticos e Filosóficos dos Cuidados Paliativos',
+            'Diretivas Antecipadas de Vontade e Testamento Vital',
+            'Conferência Familiar'
+          ]
+        },
+        {
+          foco: 'Suporte à Família e Luto',
+          subfocos: [
+            'Suporte à Família e Rede Social',
+            'Fases e Tipos de Luto',
+            'Luto Complicado'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Alergia e Imunologia',
+      focos: [
+        {
+          foco: 'Anafilaxia e Manejo Agudo: Adrenalina IM e Alta Segura',
+          subfocos: [
+            'Adrenalina IM: Primeira Linha no Manejo Agudo',
+            'Critérios Diagnósticos e Reconhecimento da Anafilaxia',
+            'Tratamento Adjuvante: Corticoides e Anti-histamínicos',
+            'Dessensibilização'
+          ]
+        },
+        {
+          foco: 'Reações de Hipersensibilidade (Tipos I a IV)',
+          subfocos: [
+            'Reações de Hipersensibilidade Tipo I: Anafilaxia e Alergias Agudas',
+            'Reações de Hipersensibilidade Tipo IV: Tardias e Celulares',
+            'Alergias Alimentares Específicas',
+            'Reações de Hipersensibilidade Tipo III: Imunocomplexos',
+            'Reações de Hipersensibilidade Tipo II: Citotóxicas'
+          ]
+        },
+        {
+          foco: 'Imunodeficiências e Imunologia Básica',
+          subfocos: [
+            'Imunologia Geral: Células, Citocinas e Respostas Imunes',
+            'Imunodeficiências Primárias: Sinais de Alerta e Classificação',
+            'HIV/AIDS: Diagnóstico, Manifestações, Tratamento e Profilaxia',
+            'Imunodeficiências Primárias: Autoimunidade, Tratamento e TMO'
+          ]
+        },
+        {
+          foco: 'Rinite Alérgica',
+          subfocos: [
+            'Diagnóstico e Classificação da Rinite Alérgica',
+            'Tratamento Farmacológico da Rinite Alérgica',
+            'Prevenção e Controle de Doenças Alérgicas'
+          ]
+        },
+        {
+          foco: 'Urticária e Angioedema no Adulto',
+          subfocos: [
+            'Angioedema Adquirido: Causas e Manejo',
+            'Tratamento Farmacológico de Urticária e Angioedema',
+            'Urticária e Angioedema: Manifestações e Diagnóstico',
+            'Angioedema Hereditário: Fisiopatologia e Subtipos',
+            'Urticária Crônica: Diagnóstico e Classificação',
+            'Urticária Aguda: Etiologia e Desencadeantes'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Ética e Bioética',
+      focos: [
+        {
+          foco: 'Bioética Clínica: Autonomia, Beneficência e Dilemas',
+          subfocos: [
+            'Recusa de Tratamento e Autonomia',
+            'Alocação de Recursos e Equidade em Saúde',
+            'Comunicação do Diagnóstico e Autonomia do Paciente',
+            'Objeção de Consciência',
+            'Negociação de Exames e Medo do Paciente'
+          ]
+        },
+        {
+          foco: 'Consentimento Informado',
+          subfocos: [
+            'Princípios do Consentimento Informado e Autonomia',
+            'Recusa de Tratamento: Autonomia e Convicções Religiosas',
+            'Comunicação de Diagnóstico, Prognóstico e Modelos de Relação',
+            'Capacidade Civil e Decisória',
+            'Recusa de Tratamento em Pacientes Incapazes ou Vulneráveis'
+          ]
+        },
+        {
+          foco: 'Código de Ética Médica: Aplicação na Prática Clínica',
+          subfocos: [
+            'Princípios Éticos: Autonomia, Consentimento e Deveres Médicos',
+            'Morte Encefálica, Cuidados Paliativos e Terminalidade',
+            'Prescrição, Atestados, Erros e Uso Indevido de Substâncias',
+            'Sigilo, Confidencialidade e Processo Ético-Profissional',
+            'Relação Médico-Paciente: Comunicação, Vínculo e Limites'
+          ]
+        },
+        {
+          foco: 'Sigilo e Confidencialidade',
+          subfocos: [
+            'Sigilo Médico: Situações Específicas',
+            'Sigilo Médico em Pacientes Maiores de Idade',
+            'Sigilo Médico em Pacientes Menores de Idade',
+            'Prontuário Médico: Acesso e Conteúdo',
+            'Notificação Compulsória e Exceções'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Otorrinolaringologia',
+      focos: [
+        {
+          foco: 'Vertigem e Doenças do Labirinto',
+          subfocos: [
+            'Vertigem Posicional Paroxística Benigna (VPPB): Diagnóstico e Manobras',
+            'Vertigem Aguda: Diagnóstico Diferencial (Periférica vs. Central)',
+            'Doença de Ménière: Clínica e Diagnóstico',
+            'Tratamento Sintomático e Farmacológico da Vertigem',
+            'Manobra de Epley'
+          ]
+        },
+        {
+          foco: 'Otites e Infecções do Ouvido',
+          subfocos: [
+            'Audiologia: Testes, Hipoacusia e PAIR',
+            'Otite Externa, Cerúmen e Lesões Auriculares',
+            'Otite Média Aguda: Diagnóstico, Etiologia e Tratamento',
+            'Otite Média com Efusão e Complicações',
+            'Paralisia Facial, Glândula Parótida e Manifestações Atípicas'
+          ]
+        },
+        {
+          foco: 'Rinossinusites',
+          subfocos: [
+            'Rinossinusite Aguda: Diagnóstico, Etiologia e Antibioticoterapia',
+            'Patologia Nasossinusal, Sinusal e Otalgia Referida',
+            'Complicações da Rinossinusite e Diagnóstico por Imagem',
+            'Rinossinusite Fúngica'
+          ]
+        },
+        {
+          foco: 'Faringoamigdalites',
+          subfocos: [
+            'Faringite Viral e Diagnóstico Diferencial',
+            'Amigdalite Bacteriana: Tratamento e Falha Terapêutica',
+            'Abscesso Periamigdaliano',
+            'Apneia Obstrutiva do Sono e Otorrino',
+            'Faringite Bacteriana Aguda: Diagnóstico e Critérios'
+          ]
+        },
+        {
+          foco: 'Epistaxe',
+          subfocos: [
+            'Epistaxe: Tamponamento Nasal',
+            'Cauterização e Tamponamento',
+            'Epistaxe: Etiologia e Classificação',
+            'Epistaxe: Manejo Inicial e Urgência'
+          ]
+        },
+        {
+          foco: 'Corpos Estranhos em Vias Aéreas',
+          subfocos: [
+            'Corpo Estranho em Vias Aéreas Superiores: Causas e Diagnóstico',
+            'Corpo Estranho em Esôfago: Conduta e Remoção'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Oftalmologia',
+      focos: [
+        {
+          foco: 'Retinopatias e Doenças da Retina',
+          subfocos: [
+            'Retinopatia Diabética: Achados e Classificação',
+            'Retinopatias Infecciosas e Inflamatórias',
+            'Oclusão da Artéria Central da Retina',
+            'Oftalmopercepção: Etiologia e Diagnóstico',
+            'Oclusão de Veia Central da Retina'
+          ]
+        },
+        {
+          foco: 'Glaucoma',
+          subfocos: [
+            'Glaucoma Agudo de Ângulo Fechado: Apresentação Clínica e Emergência',
+            'Tonometria e Diagnóstico',
+            'Glaucoma Primário de Ângulo Aberto: Fatores de Risco e Epidemiologia',
+            'Tratamento Medicamentoso (Colírios)'
+          ]
+        },
+        {
+          foco: 'Traumas Oculares',
+          subfocos: [
+            'Queimadura Química Ocular',
+            'Trauma Contuso e Perfurante',
+            'Exposição a \'Flash\' de Solda',
+            'Corpo Estranho Ocular (Não Químico)'
+          ]
+        },
+        {
+          foco: 'Olho Vermelho e Conjuntivites',
+          subfocos: [
+            'Conjuntivite: Diagnóstico Diferencial e Agentes Etiológicos',
+            'Olho Vermelho: Sintomas Inespecíficos e Avaliação Inicial',
+            'Conjuntivite Viral: Quadro Clínico e Complicações',
+            'Conjuntivite Bacteriana: Tratamento',
+            'Conjuntivite Alérgica: Etiologia e Clínica',
+            'Conjuntivite Crônica e Trauma'
+          ]
+        },
+        {
+          foco: 'Catarata e Cristalino',
+          subfocos: [
+            'Causas de Visão Turva',
+            'Indicação e Técnica de Facectomia',
+            'Exames e Manifestações de Doenças Lacrimais'
+          ]
+        },
+        {
+          foco: 'Uveítes e Doenças Inflamatórias',
+          subfocos: [
+            'Uveíte Anterior: Etiologia e Diagnóstico',
+            'Uveíte e Doenças Sistêmicas',
+            'Doenças Inflamatórias Palpebrais',
+            'Tratamento Imunossupressor em Uveítes'
+          ]
+        }
+      ]
+    },
+    {
+      tema: 'Medicina Esportiva',
+      focos: [
+        {
+          foco: 'Avaliação do Atleta',
+          subfocos: [
+            'Avaliação Pré-Participação: Esportes Críticos e Liberação',
+            'Fisiologia do Exercício: VO2 max e Resposta Cardiovascular',
+            'Eletrocardiograma (ECG) no Atleta: Achados Normais e Patológicos',
+            'Condições Específicas em Mulheres Atletas',
+            'Teste Ergométrico (TE): Indicações e Interpretação'
+          ]
+        },
+        {
+          foco: 'Lesões Esportivas',
+          subfocos: [
+            'Lesões Ligamentares e Tendíneas',
+            'Lesões Musculares Induzidas por Exercício',
+            'Radiculopatia e Compressão Nervosa',
+            'Fraturas por Estresse e Baixa Densidade Óssea'
+          ]
+        }
+      ]
     }
   ]
 };

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 };
 
 import { ThemeProvider } from "@/context/ThemeContext";
+import { AuthProvider } from "@/context/AuthContext";
 
 export default function RootLayout({
   children,
@@ -33,7 +34,9 @@ export default function RootLayout({
       className={`${inter.variable} ${figtree.variable} font-sans h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col font-sans transition-colors duration-200">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <AuthProvider>{children}</AuthProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
