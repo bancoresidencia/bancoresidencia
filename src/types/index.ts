@@ -76,10 +76,12 @@ export interface Question {
   correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E';
   commentary: string;
   references?: string[];
+  imageUrl?: string;
+  images?: string[];
 }
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
-export type PeriodFilter = '6m' | '2026.1' | '2026.2' | '30d' | 'all';
+export type PeriodFilter = '7d' | '30d' | 'mes' | '6m' | '2026.1' | '2026.2' | 'all';
 export type ActiveTab = 'home' | 'banco' | 'listas' | 'simulados' | 'stats' | 'ranking';
 
 export interface PerformanceFilterState {
@@ -104,14 +106,56 @@ export interface StudentProfile {
   semester: '2026.1' | '2026.2';
 }
 
+export type RankingStatus = 'locked' | 'approximate' | 'official' | 'unranked' | 'provisional';
+
 export interface PercentileResult {
   percentile: number | null;
-  status: 'locked' | 'approximate' | 'official';
+  status: RankingStatus;
   missingForApprox: number;
   missingForOfficial: number;
+  missingForNextTier?: number;
   adjustedScore: number;
   eligibleTotalStudents: number;
   rankPosition?: number;
+  // Métricas do modelo estatístico IRT
+  theta?: number;
+  standard_error?: number;
+  reliability?: number;
+  validQuestionsCount?: number;
+  easyCount?: number;
+  mediumCount?: number;
+  hardCount?: number;
+  formattedPercentile?: string;
+  statusLabel?: string;
+  isOfficial?: boolean;
+}
+
+export interface UserAttempt {
+  question_id: string;
+  difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
+  correct: boolean;
+  user_id: string;
+  timestamp: number;
+  selectedLetter?: 'A' | 'B' | 'C' | 'D' | 'E';
+  specialty?: string;
+  tema?: string;
+  foco?: string;
+  subfoco?: string;
+}
+
+export interface DetailedHierarchyStats {
+  specialty: string;
+  tema: string;
+  foco: string;
+  subfoco: string;
+  total: number;
+  correct: number;
+  accuracy: number;
+  difficultyDistribution?: {
+    facil: number;
+    medio: number;
+    dificil: number;
+  };
 }
 
 export interface UserStats {
@@ -131,12 +175,36 @@ export interface UserStats {
     answered: number;
     correct: number;
   }[];
+  historyByWeek?: {
+    id: string;
+    label: string;
+    periodRange: string;
+    answered: number;
+    correct: number;
+    accuracy: number;
+  }[];
+  historyByMonth?: {
+    id: string;
+    label: string;
+    year: number;
+    answered: number;
+    correct: number;
+    accuracy: number;
+  }[];
   bySpecialty: {
     specialty: string;
     total: number;
     correct: number;
     accuracy: number;
   }[];
+  byTheme?: {
+    specialty: string;
+    tema: string;
+    total: number;
+    correct: number;
+    accuracy: number;
+  }[];
+  byFocus?: DetailedHierarchyStats[];
 }
 
 export interface FilterState {

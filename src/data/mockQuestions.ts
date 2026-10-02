@@ -40,10 +40,17 @@ export const medevoInstituicoes = [
   'AMRIGS',
   'PSU-MG',
   'SES-DF',
-  'SURCE'
+  'SURCE',
+  'HSI',
+  'HEVV',
+  'HST',
+  'SUS-RR',
+  'Hospital São Marcos',
+  'Hospital Policlin'
 ];
 
 import { clinicaMedicaHierarchy } from './clinicaMedicaData';
+import { extractedMedEvoQuestions } from './extractedMedEvoQuestions';
 
 // Hierarquia completa extraída com Especialidade, Tema, Foco e Subfoco
 export const medevoHierarchy: SpecialtyHierarchy[] = [
@@ -173,6 +180,7 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
 ];
 
 export const mockQuestions: Question[] = [
+  ...extractedMedEvoQuestions,
   {
     id: 'q-1',
     code: 'ENARE-2024-01',

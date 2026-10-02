@@ -5,12 +5,10 @@ import {
   Folder as FolderIcon,
   FolderPlus,
   Plus,
-  Play,
   CheckCircle2,
   Clock,
   ChevronDown,
   ChevronRight,
-  BookOpen,
   ArrowRight,
   Filter,
   SlidersHorizontal,
@@ -19,6 +17,7 @@ import {
 import { Folder, QuestionList, AdvancedFilterState } from '@/types';
 import { AdvancedQuestionFilters } from './AdvancedQuestionFilters';
 import { mockQuestions } from '@/data/mockQuestions';
+import { useTheme } from '@/context/ThemeContext';
 
 interface ListManagerProps {
   folders: Folder[];
@@ -40,6 +39,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
   onCreateListWithFilters,
   onContinueList
 }) => {
+  const { accentConfig } = useTheme();
   const [selectedFolderId, setSelectedFolderId] = useState<string | null>(null);
   const [openFolderIds, setOpenFolderIds] = useState<Record<string, boolean>>({
     'f-clinica': true,
@@ -96,7 +96,6 @@ export const ListManager: React.FC<ListManagerProps> = ({
     e.preventDefault();
     if (!newListTitle.trim()) return;
 
-    // Validação obrigatória de filtros: o usuário deve ter ao menos um critério selecionado
     const hasSelection =
       listFilters.especialidades.length > 0 ||
       listFilters.temas.length > 0 ||
@@ -111,7 +110,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
       listFilters.search.trim().length > 0;
 
     if (!hasSelection) {
-      setFilterError('Obrigatório selecionar ao menos um filtro (Especialidade, Tema, Foco, Subfoco, Instituição ou Ano) para criar a lista.');
+      setFilterError('Obrigatório selecionar ao menos um filtro clínico para gerar as questões da lista.');
       return;
     }
 
@@ -131,23 +130,25 @@ export const ListManager: React.FC<ListManagerProps> = ({
   return (
     <div className="space-y-6">
       {/* Barra de Título e Botões de Ação */}
-      <div className="flex flex-wrap items-center justify-between gap-3 bg-slate-900 border border-slate-800 p-4 rounded-xl">
+      <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 p-6 rounded-3xl shadow-sm flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h2 className="text-base font-bold text-white">Minhas Listas & Pastas de Questões</h2>
-          <p className="text-xs text-slate-400">
-            Cadernos de questões personalizados com filtros obrigatórios por assunto, banca e dificuldade
+          <h2 className="font-heading text-lg font-bold text-slate-900 dark:text-white">
+            Cadernos de Questões & Árvore de Pastas
+          </h2>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Organize seus cadernos clínicos por temas, bancas de residência e prioridade
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
           <button
             onClick={() => {
               setFolderParentId(selectedFolderId);
               setIsCreatingFolder(true);
             }}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-bold transition-all cursor-pointer shadow-xs"
           >
-            <FolderPlus className="w-4 h-4 text-blue-400" />
+            <FolderPlus className="w-4 h-4 text-blue-500" />
             <span>Nova Pasta</span>
           </button>
           <button
@@ -155,38 +156,46 @@ export const ListManager: React.FC<ListManagerProps> = ({
               setListFolderId(selectedFolderId);
               setIsCreatingList(true);
             }}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-colors cursor-pointer shadow"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:scale-102 active:scale-98"
+            style={{
+              backgroundColor: accentConfig.primaryHex,
+              boxShadow: `0 6px 15px -3px ${accentConfig.bgRgba}`
+            }}
           >
             <Plus className="w-4 h-4" />
-            <span>Criar Nova Lista (com Filtros)</span>
+            <span>Criar Nova Lista</span>
           </button>
         </div>
       </div>
 
       {/* Modal / Formulário: Nova Pasta */}
       {isCreatingFolder && (
-        <form onSubmit={handleSaveFolder} className="bg-slate-900 border border-blue-500/40 p-4 rounded-xl space-y-3">
-          <div className="text-xs font-bold text-blue-400 uppercase tracking-wider">
-            Criar Pasta / Subpasta
+        <form onSubmit={handleSaveFolder} className="bg-white dark:bg-[#0d1527] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg">
+          <div className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+            Criar Nova Pasta de Estudos
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs text-slate-400 mb-1">Nome da Pasta ou Assunto</label>
+              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                Nome da Pasta ou Assunto *
+              </label>
               <input
                 type="text"
                 required
-                placeholder="Ex: Infectologia, UTI, Doenças Valvares..."
+                placeholder="Ex: Cardiologia, UTI, Doenças Valvares..."
                 value={newFolderName}
                 onChange={(e) => setNewFolderName(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label className="block text-xs text-slate-400 mb-1">Pasta Pai (Opcional para Subpasta)</label>
+              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                Pasta Pai (Opcional para Subpasta)
+              </label>
               <select
                 value={folderParentId || ''}
                 onChange={(e) => setFolderParentId(e.target.value ? e.target.value : null)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500 cursor-pointer"
+                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
                 <option value="">Pasta Raiz (Principal)</option>
                 {folders.map((f) => (
@@ -195,17 +204,17 @@ export const ListManager: React.FC<ListManagerProps> = ({
               </select>
             </div>
           </div>
-          <div className="flex justify-end gap-2 pt-1">
+          <div className="flex justify-end gap-2.5 pt-2">
             <button
               type="button"
               onClick={() => setIsCreatingFolder(false)}
-              className="px-3 py-1.5 rounded text-xs text-slate-400 hover:text-white cursor-pointer"
+              className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-white cursor-pointer"
             >
               Cancelar
             </button>
             <button
               type="submit"
-              className="px-4 py-1.5 rounded text-xs font-semibold bg-blue-600 text-white hover:bg-blue-500 cursor-pointer"
+              className="px-5 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 cursor-pointer shadow-sm"
             >
               Salvar Pasta
             </button>
@@ -215,45 +224,53 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
       {/* Modal / Formulário Completo: Criar Nova Lista COM FILTROS OBRIGATÓRIOS */}
       {isCreatingList && (
-        <form onSubmit={handleSaveList} className="bg-slate-900 border-2 border-blue-500/60 p-5 rounded-xl space-y-5 shadow-2xl">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-            <div className="flex items-center gap-2">
-              <SlidersHorizontal className="w-5 h-5 text-blue-400" />
+        <form onSubmit={handleSaveList} className="bg-white dark:bg-[#0d1527] border-2 border-blue-500/70 p-6 sm:p-7 rounded-3xl space-y-5 shadow-2xl">
+          <div className="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center">
+                <SlidersHorizontal className="w-5 h-5" />
+              </div>
               <div>
-                <h3 className="text-sm md:text-base font-bold text-white">Criar Nova Lista de Questões</h3>
-                <p className="text-xs text-slate-400">
-                  Defina os filtros obrigatórios (especialidade, tema, foco, subfoco, banca e status) para gerar a lista
+                <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white">
+                  Criar Caderno de Questões com Filtros Clínicos
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400">
+                  Selecione especialidade, tema, subfoco e banco de questões para alimentar seu caderno
                 </p>
               </div>
             </div>
             <button
               type="button"
               onClick={() => setIsCreatingList(false)}
-              className="p-1.5 text-slate-400 hover:text-white rounded-lg border border-slate-800"
+              className="p-2 text-slate-400 hover:text-slate-700 dark:hover:text-white rounded-xl border border-slate-200 dark:border-slate-800 cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
           </div>
 
           {/* Dados Gerais da Lista */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs text-slate-300 font-semibold mb-1">Título da Lista *</label>
+              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                Título do Caderno *
+              </label>
               <input
                 type="text"
                 required
                 placeholder="Ex: Treino Intenso de Cardiologia e HAS..."
                 value={newListTitle}
                 onChange={(e) => setNewListTitle(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
-              <label className="block text-xs text-slate-300 font-semibold mb-1">Pasta de Destino</label>
+              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                Pasta de Destino
+              </label>
               <select
                 value={listFolderId || ''}
                 onChange={(e) => setListFolderId(e.target.value ? e.target.value : null)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500 cursor-pointer"
+                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
                 <option value="">Sem pasta (Geral)</option>
                 {folders.map((f) => (
@@ -262,23 +279,25 @@ export const ListManager: React.FC<ListManagerProps> = ({
               </select>
             </div>
             <div>
-              <label className="block text-xs text-slate-300 font-semibold mb-1">Meta de Questões</label>
+              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                Meta de Questões
+              </label>
               <input
                 type="number"
                 min={5}
                 max={200}
                 value={listQuestionCount}
                 onChange={(e) => setListQuestionCount(Number(e.target.value))}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>
 
-          {/* FILTROS OBRIGATÓRIOS EMBUTIDOS NA CRIAÇÃO DA LISTA */}
+          {/* Filtros Clínicos Embutidos */}
           <div className="pt-2">
-            <div className="flex items-center gap-2 mb-2 text-xs font-bold text-amber-400 uppercase tracking-wider">
+            <div className="flex items-center gap-2 mb-2.5 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
               <Filter className="w-3.5 h-3.5" />
-              <span>Selecione os Filtros da Lista (Obrigatório)</span>
+              <span>Selecione os Critérios do Caderno (Obrigatório)</span>
             </div>
 
             <AdvancedQuestionFilters
@@ -310,50 +329,50 @@ export const ListManager: React.FC<ListManagerProps> = ({
           </div>
 
           {filterError && (
-            <div className="p-3 bg-red-950/60 border border-red-500/80 rounded-lg text-xs text-red-200 font-semibold flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+            <div className="p-3.5 bg-rose-50 dark:bg-rose-950/60 border border-rose-300 dark:border-rose-500/80 rounded-xl text-xs text-rose-700 dark:text-rose-200 font-semibold flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
               <span>{filterError}</span>
             </div>
           )}
 
-          <div className="flex justify-end gap-3 pt-3 border-t border-slate-800">
+          <div className="flex justify-end gap-3 pt-3 border-t border-slate-100 dark:border-slate-800">
             <button
               type="button"
               onClick={() => {
                 setFilterError(null);
                 setIsCreatingList(false);
               }}
-              className="px-4 py-2 rounded-lg text-xs font-semibold text-slate-400 hover:text-white bg-slate-800 cursor-pointer"
+              className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-white cursor-pointer"
             >
               Cancelar
             </button>
             <button
               type="submit"
-              className="px-5 py-2 rounded-lg text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 shadow-md shadow-blue-600/30 cursor-pointer"
+              className="px-5 py-2.5 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 shadow-md shadow-blue-600/30 cursor-pointer"
             >
-              Confirmar e Criar Lista
+              Confirmar e Criar Caderno
             </button>
           </div>
         </form>
       )}
 
-      {/* Estrutura de Navegação: Pastas e Subpastas na Esquerda, Listas na Direita */}
+      {/* Estrutura: Pastas e Subpastas na Esquerda, Listas na Direita */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Painel de Pastas e Subpastas */}
-        <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-2">
-          <div className="flex items-center justify-between pb-2 border-b border-slate-800 text-xs font-semibold text-slate-300">
+        <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-5 space-y-3 shadow-sm h-fit">
+          <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300">
             <span>Árvore de Assuntos</span>
             <button
               onClick={() => setSelectedFolderId(null)}
-              className={`text-[11px] hover:underline cursor-pointer ${
-                selectedFolderId === null ? 'text-blue-400 font-bold' : 'text-slate-400'
+              className={`text-xs hover:underline cursor-pointer ${
+                selectedFolderId === null ? 'text-blue-600 dark:text-blue-400 font-bold' : 'text-slate-400'
               }`}
             >
               Ver Todas
             </button>
           </div>
 
-          <div className="space-y-1 pt-1">
+          <div className="space-y-1">
             {rootFolders.map((root) => {
               const subfolders = getSubfolders(root.id);
               const isOpen = openFolderIds[root.id];
@@ -363,10 +382,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 <div key={root.id} className="space-y-1">
                   <div
                     onClick={() => setSelectedFolderId(root.id)}
-                    className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs cursor-pointer transition-colors ${
+                    className={`flex items-center justify-between px-3 py-2 rounded-xl text-xs cursor-pointer transition-colors ${
                       isSelected
-                        ? 'bg-blue-600/20 text-blue-300 border border-blue-500/30'
-                        : 'text-slate-300 hover:bg-slate-800'
+                        ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-500/40 font-bold'
+                        : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900 font-medium'
                     }`}
                   >
                     <div className="flex items-center gap-2">
@@ -377,41 +396,41 @@ export const ListManager: React.FC<ListManagerProps> = ({
                             e.stopPropagation();
                             toggleFolder(root.id);
                           }}
-                          className="text-slate-400 hover:text-white"
+                          className="text-slate-400 hover:text-slate-700 dark:hover:text-white"
                         >
                           {isOpen ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
                         </button>
                       ) : (
                         <span className="w-3.5" />
                       )}
-                      <FolderIcon className="w-4 h-4 text-blue-400" />
-                      <span className="font-medium">{root.name}</span>
+                      <FolderIcon className="w-4 h-4 text-blue-500" />
+                      <span className="truncate">{root.name}</span>
                     </div>
-                    <span className="text-[10px] text-slate-500">
+                    <span className="text-[10px] text-slate-400 font-mono font-semibold">
                       {lists.filter((l) => l.folderId === root.id).length}
                     </span>
                   </div>
 
                   {/* Subpastas */}
                   {isOpen && subfolders.length > 0 && (
-                    <div className="pl-6 space-y-1 border-l border-slate-800/80 ml-3">
+                    <div className="pl-6 space-y-1 border-l-2 border-slate-100 dark:border-slate-800 ml-3">
                       {subfolders.map((sub) => {
                         const isSubSelected = selectedFolderId === sub.id;
                         return (
                           <div
                             key={sub.id}
                             onClick={() => setSelectedFolderId(sub.id)}
-                            className={`flex items-center justify-between px-2 py-1.5 rounded-md text-xs cursor-pointer transition-colors ${
+                            className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs cursor-pointer transition-colors ${
                               isSubSelected
-                                ? 'bg-blue-600/20 text-blue-300 border border-blue-500/30'
-                                : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                                ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-bold'
+                                : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
                             }`}
                           >
                             <div className="flex items-center gap-2">
-                              <FolderIcon className="w-3.5 h-3.5 text-emerald-400" />
+                              <FolderIcon className="w-3.5 h-3.5 text-emerald-500" />
                               <span>{sub.name}</span>
                             </div>
-                            <span className="text-[10px] text-slate-500">
+                            <span className="text-[10px] text-slate-400 font-mono">
                               {lists.filter((l) => l.folderId === sub.id).length}
                             </span>
                           </div>
@@ -427,60 +446,68 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
         {/* Grade de Listas de Questões */}
         <div className="md:col-span-2 space-y-3">
-          <div className="flex items-center justify-between text-xs text-slate-400 px-1">
+          <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-1">
             <span>
-              {filteredLists.length} {filteredLists.length === 1 ? 'lista encontrada' : 'listas encontradas'}
+              {filteredLists.length} {filteredLists.length === 1 ? 'caderno encontrado' : 'cadernos encontrados'}
             </span>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-3.5">
             {filteredLists.map((list) => {
               const folderObj = folders.find((f) => f.id === list.folderId);
               return (
                 <div
                   key={list.id}
-                  className="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl p-4 transition-all shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+                  className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 rounded-2xl p-5 transition-all shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
                 >
-                  <div className="space-y-1.5 flex-1 min-w-0">
+                  <div className="space-y-2 flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       {folderObj && (
-                        <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-blue-500/10 text-blue-400">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/40">
                           {folderObj.name}
                         </span>
                       )}
                       {list.progressPercentage === 100 ? (
-                        <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 flex items-center gap-1">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1">
                           <CheckCircle2 className="w-3 h-3" /> Concluída
                         </span>
                       ) : (
-                        <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 flex items-center gap-1">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800 flex items-center gap-1">
                           <Clock className="w-3 h-3" /> Em Andamento
                         </span>
                       )}
                     </div>
 
-                    <h4 className="text-sm font-semibold text-white truncate">{list.title}</h4>
+                    <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate">
+                      {list.title}
+                    </h4>
 
-                    <div className="flex items-center gap-3 text-xs text-slate-400">
-                      <span>{list.completedQuestions} de {list.totalQuestions} resolvidas ({list.progressPercentage}%)</span>
+                    <div className="flex items-center gap-2.5 text-xs text-slate-500 dark:text-slate-400 font-medium">
+                      <span>{list.completedQuestions} de {list.totalQuestions} questões resolvidas</span>
+                      <span>•</span>
+                      <span className="font-bold text-slate-700 dark:text-slate-300">{list.progressPercentage}%</span>
                       <span>•</span>
                       <span>{list.lastStudiedAt}</span>
                     </div>
 
                     {/* Barra de Progresso */}
-                    <div className="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden">
+                    <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800">
                       <div
-                        className="bg-blue-600 h-1.5 rounded-full transition-all duration-300"
-                        style={{ width: `${list.progressPercentage}%` }}
+                        className="h-2 rounded-full transition-all duration-300"
+                        style={{
+                          width: `${list.progressPercentage}%`,
+                          backgroundColor: accentConfig.primaryHex
+                        }}
                       />
                     </div>
                   </div>
 
                   <button
                     onClick={() => onContinueList(list)}
-                    className="shrink-0 flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all cursor-pointer shadow-sm"
+                    className="shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:scale-102"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
                   >
-                    <span>{list.completedQuestions > 0 && list.completedQuestions < list.totalQuestions ? 'Continuar Lista' : 'Resolver'}</span>
+                    <span>{list.completedQuestions > 0 && list.completedQuestions < list.totalQuestions ? 'Continuar' : 'Resolver'}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
                 </div>

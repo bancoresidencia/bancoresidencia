@@ -1,0 +1,538 @@
+[
+  {
+    "id": "9fc73fef-ae2a-4891-80c5-814532de3691",
+    "numero_ordem": 1,
+    "enunciado": "Paciente de 48 anos, branco, encontra-se no quinto dia de internação hospitalar, em função de ter sido politraumatizado em acidente automobilístico, no qual sofreu traumatismo cranioencefálico que resultou em lesão axonal difusa; trauma torácico com contusões pulmonares bilaterais; hemopneumotórax à direita, que foi drenado em selo d&#39;água; e fratura exposta no Membro Inferior Direito (MID), que foi submetido à fixação transesquelética. Ele encontra-se intubado, sob ventilação mecânica protetora, com acesso venoso profundo na veia subclávia direita e cateter vesical de demora. A despeito da antibioticoprofilaxia com cefazolina e gentamicina, o paciente continua apresentando alguns picos febris diários, além de possuir critérios sugestivos da síndrome da resposta inflamatória sistêmica (taquicárdico, febril e com leucocitose no hemograma). Atualmente, os dados que mais chamam atenção são: significativa elevação das escórias nitrogenadas (ureia = 122 mg/dl; creatinina = 3,2 mg/dl), hipercalemia (K+ sérico = 6,3 mEq/L) e acidose metabólica moderada. Segundo o registro da enfermagem, o paciente encontra-se anúrico nas últimas 12 horas, tendo apresentado diurese total de 150 ml no dia anterior. Ao exame, o paciente encontra-se sedado, em classificação RASS - 5, Ramsay 6, hipocorado 2+/4+, hipo-hidratado (2+/4+), acianótico, anictérico, febril (38,2ºC), com perfusão capilar periférica normal; PA = 100 x 78 mmHg; FC = 112 bpm; FR = 16 irpm (ventilação mecânica controlada, sob sedação); ausculta do precárdio com bulhas normofonéticas e presença de ruído rude sisto-diastólico, sem sopros; ausculta pulmonar com MV diminuído à direita, além de estertores bolhosos e roncos esparsos; abdome plano, flácido, depressível, com peristalse diminuída e aparentemente indolor; MID com fixação transesquelética na região infrapatelar; MIE sem alterações. Revendo o prontuário e a prescrição médica em curso, há registro de que o paciente é portador de Hipertensão Arterial Sistêmica (HAS) de longa data, fazendo uso regular de hidroclorotiazida e losartana. Desde a internação, vem em infusão contínua de midazolam e fentanil, além dos fármacos já listados, e está fazendo dieta enteral e hidratação venosa. Foi submetido a duas tomografias computadorizadas de crânio e uma de tórax com contraste venoso. O diagnóstico de Injúria Renal Aguda (IRA) já foi estabelecido. Com base no caso clínico apresentado: identifique a indicação de diálise presente no caso.",
+    "formato": "DISSERTATIVA",
+    "dificuldade": "facil",
+    "ano": 2016,
+    "anulada": false,
+    "alternativas": [],
+    "gabarito": {
+      "indice": 0,
+      "letra": "A",
+      "texto": null
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "3d13fb69-ce8e-48a8-a685-c28102b3d35a",
+        "nome": "UERJ/HUPE - Hospital Universitário Pedro Ernesto (RJ)"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [],
+    "curtidas": 0
+  },
+  {
+    "id": "4dcd57b4-bd2d-42c5-ac14-1914025d5c9b",
+    "numero_ordem": 2,
+    "enunciado": "Paciente admitido sem familiares que pudessem fornecer dados de história. O exame físico revela um paciente torporoso, taquipneico, jugulares túrgidas, PA= 230/120 mmHg, pupilas isocóricas, sem rigidez de nuca, ausculta cardíaca regular com taquicardia, pulmões com estertores em bases bilateralmente, hepatomegalia (6 cm do rebordo costal), edema de membros inferiores (3+/4+). Os primeiros exames revelam creatinina= 12,7 mg/dL, uréia= 260 mg/dL, potássio= 6,7 mEq/L, bicarbonato= 5 mEq/L. Qual a conduta mais adequada?",
+    "formato": "ALTERNATIVAS",
+    "dificuldade": "medio",
+    "ano": 2017,
+    "anulada": false,
+    "alternativas": [
+      {
+        "letra": "A",
+        "indice": 0,
+        "texto": "Realizar ultrassonografia abdominal de emergência. ",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "indice": 1,
+        "texto": "Iniciar nitroprussiato venoso, diurético tiazídico e morfina, ambos por via oral.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "indice": 2,
+        "texto": "Hidratação venosa vigorosa. ",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "indice": 3,
+        "texto": "Monitorar diurese nas primeiras 24 h após introdução de altas doses de diurético de alça.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "indice": 4,
+        "texto": "Iniciar tratamento dialítico.",
+        "correta": true
+      }
+    ],
+    "gabarito": {
+      "indice": 4,
+      "letra": "E",
+      "texto": "Iniciar tratamento dialítico."
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "fbc861e4-c6e4-4379-aea5-4396070471cb",
+        "nome": "HSI - Hospital Santa Isabel (SE)"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [],
+    "curtidas": 0
+  },
+  {
+    "id": "69fcb340-40ea-43fd-8ee1-b4d2f16fddb9",
+    "numero_ordem": 3,
+    "enunciado": "Um paciente de 75 anos de idade procurou atendimento por diminuição do volume urinário e intolerância aos esforços, associada a dor torácica ventilatório-dependente e a dor lombar de forte intensidade. Realizou exames de laboratório, que evidenciaram: hemoglobina = 8,6 g/dL, hematócrito = 25%, leucócitos = 6.600/mm3, sem particularidades no diferencial, plaquetas = 190 mil/mm3, creatinina = 4,51 mg/dL, potássio = 6,3 mEq/L, cálcio sérico corrigido = 13 mg/dL, ureia = 109 mg/dL, reserva alcalina = 12 U/L. Ao exame físico, o paciente encontrava-se em regular estado geral, hipocorado, com presença de sopro sistodiastólico 2+/4+, murmúrio vesicular reduzido em 1/3 inferior direito, edema em membros inferiores 3+/4+, abdome sem particularidades e percussão-punho-lombar (PPL) negativo, PA = 180 mmHg X 90 mmHg, FC = 97 bpm, SatO2 = 92% em ar ambiente. Considerando esse caso clínico e os conhecimentos médicos correlatos, julgue o item a seguir. Com base nos dados clínicos, há indicação de hemodiálise para esse paciente.",
+    "formato": "VERDADEIRO_FALSO",
+    "dificuldade": "medio",
+    "ano": 2020,
+    "anulada": false,
+    "alternativas": [
+      {
+        "letra": "A",
+        "indice": 0,
+        "texto": "Certo.",
+        "correta": true
+      },
+      {
+        "letra": "B",
+        "indice": 1,
+        "texto": "Errado.",
+        "correta": false
+      }
+    ],
+    "gabarito": {
+      "indice": 0,
+      "letra": "A",
+      "texto": "Certo."
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "1fca5339-40b5-49a5-9e18-968cf5848388",
+        "nome": "SES-DF - Secretaria de Estado de Saúde do Distrito Federal"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [],
+    "curtidas": 1
+  },
+  {
+    "id": "8cc5c47b-eb33-4c70-9a17-f8a825cd7506",
+    "numero_ordem": 4,
+    "enunciado": "Paciente de 60 anos, hipertenso e diabético, em uso de losartan 50 mg 12/12 horas iniciado recentemente pelo cardiologista, vem ao pronto-socorro com quadro de edema de membros inferiores e dispneia leve. Refere volume urinário > 2 L/24 horas. Na investigação laboratorial foi detectado creatinina 2 mg/dl, ureia 70 mg/dl, potássio 7,0 mEq/L. Qual seria a conduta mais CORRETA, referente a condução do caso?",
+    "formato": "ALTERNATIVAS",
+    "dificuldade": "medio",
+    "ano": 2019,
+    "anulada": false,
+    "alternativas": [
+      {
+        "letra": "A",
+        "indice": 0,
+        "texto": "Hemodiálise de urgência.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "indice": 1,
+        "texto": "Gluconato de cálcio IV apenas se houver alteração eletrocardiográfica. ",
+        "correta": true
+      },
+      {
+        "letra": "C",
+        "indice": 2,
+        "texto": "Manter a medicação em uso e prescrever solução de glicose e insulina.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "indice": 3,
+        "texto": "Administração de bicarbonato de sódio 8,4% IV.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "indice": 4,
+        "texto": "Furosemida IV isoladamente.",
+        "correta": false
+      }
+    ],
+    "gabarito": {
+      "indice": 1,
+      "letra": "B",
+      "texto": "Gluconato de cálcio IV apenas se houver alteração eletrocardiográfica. "
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "5e24c4c1-9330-48fc-8b88-da762dd33324",
+        "nome": "HEVV - Hospital Evangélico de Vila Velha (ES)"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [
+      {
+        "id": "eb3cf34c-bca1-416a-8fb8-64ec3c3e2f28",
+        "text": "O uso de Gluconato de Cálcio já deve ser usado em casos de potássio acima de 6,5 mEq/L, mesmo sem a presença de sinais clínicos ou sintomas. Nesse caso, por ter um potássio de 7.0 mEq/L, o uso do Gluconato já está indicado, mesmo sem alteração eletrocardiográfica!\n\n- Mount DB. Treatment and prevention of hyperkalemia in adults. In: UpToDate [Internet]. Waltham (MA): UpToDate; 2024 [cited 2026 Apr 1]. Available from: https://www.uptodate.com",
+        "user": "63a92b71-c4e0-45e0-895b-fe2100470d5e",
+        "likes": 0,
+        "likedBy": [],
+        "replies": [],
+        "dislikes": 0,
+        "timestamp": "2026-04-01T15:50:12.985Z",
+        "dislikedBy": []
+      }
+    ],
+    "curtidas": 1
+  },
+  {
+    "id": "61dd319c-4a3c-4b47-88ad-8d75cff10f21",
+    "numero_ordem": 5,
+    "enunciado": "Paciente S.R., 37 anos, procura o pronto atendimento por dor abdominal em pontada em hipogástrio e queda do estado geral. FC de 140 BPM rítmica, FR de 30 e febril com 37,9°C. Abdômen distendido e doloroso à palpação profunda. TC com líquido livre na cavidade e presença de ar no peritônio. Cirurgia com ressecção de parte do segmento do colo, que se encontra perfurado. Evolui com instabilidade hemodinâmica, sendo iniciada Noradrenalina. No pós-operatório, aumento da dose da mesma. Antibióticos ceftriaxone e metronidazol. Ur35 mg/dL; Cr 0,9 mg/dL; Hb 10,0 mg/dL; leucócitos de 12000 sem desvio, Na 140 mEq/L e K 3,8 mEq/L. Urina 1200 ml em 24 h. Após três dias, melhora do choque séptico. No exame está edemaciada e com aumento de 12 Kg em relação ao seu peso basal de 70 Kg. Balanço hídrico de +5800 ml em 24 h. Nas últimas 12 horas, apresentou somente 200 ml de diurese. Ur 78 mg/dL; Cr de 1,5 mg/dL; Hb 8,5 mg/dL; leucócitos de 18300, Na 140 mEq/L e K 3,8 mEq/L. Qual seria a estratégia para uso de estímulo diurético nesta paciente?",
+    "formato": "DISSERTATIVA",
+    "dificuldade": "dificil",
+    "ano": 2019,
+    "anulada": false,
+    "alternativas": [],
+    "gabarito": {
+      "indice": 0,
+      "letra": "A",
+      "texto": null
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "e7c11511-8f56-4901-b103-bf4e219e654b",
+        "nome": "HST - Hospital Santa Teresa (RJ)"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [],
+    "curtidas": 0
+  },
+  {
+    "id": "9c7945e8-0153-405e-9f5e-30b4ddbcaa7c",
+    "numero_ordem": 6,
+    "enunciado": "Um homem de 65 anos de idade chega ao consultório com queixa de anúria há 24 horas e hipertensão de longa data. Está em uso de enalapril e apresenta dispnéia e dor abdominal. Os exames mostraram creatinina igual a10mg/dL, uréia 180mg/dL, cálcio 5,9mg/dL, fósforo 7,9mg/dL, bicarbonato 11 mEq/L, hematócrito 23%, hemoglobina 7g/dL e potássio 6,5mEq/L. A ultrassonografia mostrou rins diminuídos de tamanho e hiperecogênicos, bexigosa e próstata de 1 35g de peso. Pressão arterial igual a 160/100mmHg. Ao ser passada sonda vesical, o paciente eliminou 1100ml de urina. Nesse caso, qual a conduta imediata mais adequada?",
+    "formato": "ALTERNATIVAS",
+    "dificuldade": "facil",
+    "ano": 2016,
+    "anulada": false,
+    "alternativas": [
+      {
+        "letra": "A",
+        "indice": 0,
+        "texto": "Corrigir o bicarbonato, trocar o enalapril por bloqueador do canal de cálcio e prescrever hemodiálise.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "indice": 1,
+        "texto": "Corrigir o bicarbonato e prescrever duas unidades de concentrado de hemácias.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "indice": 2,
+        "texto": "Prescrever diurético, trocar o enalapril por lorazepan e providenciar fístula arteriovenosa.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "indice": 3,
+        "texto": "Corrigir o bicarbonato, fazer furosemida e prescrever hemodiálise.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "indice": 4,
+        "texto": "Trocar o enalapril por anlodipina, dar gluconato de cálcio, fazer furosemida e solução glicoinsulina.",
+        "correta": true
+      }
+    ],
+    "gabarito": {
+      "indice": 4,
+      "letra": "E",
+      "texto": "Trocar o enalapril por anlodipina, dar gluconato de cálcio, fazer furosemida e solução glicoinsulina."
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "f0d6d81c-3481-48aa-8f83-e2a6ba9157cd",
+        "nome": "SUS-RR - Sistema Único de Saúde de Roraima"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [],
+    "curtidas": 0
+  },
+  {
+    "id": "856aad49-629d-48cf-9300-be4611df19f2",
+    "numero_ordem": 7,
+    "enunciado": "Homem de 65 anos com choque séptico de foco pulmonar há 4 dias, está em uso de antibióticos de amplo espectro, solução cristalóide, droga vasoativa, medidas para hiperpotassemia, diurético de alça, entre outros. apresenta evolução clínica e laboratorial conforme o demonstrado na tabela abaixo: Considerando-se o quadro do paciente, o tratamento adequado da disfunção renal é:",
+    "formato": "ALTERNATIVAS",
+    "dificuldade": "facil",
+    "ano": 2016,
+    "anulada": false,
+    "alternativas": [
+      {
+        "letra": "A",
+        "indice": 0,
+        "texto": "Restrição da ingestão de proteína na dieta, restrição da ingestão de sódio, potássio e água, aumento de Furosemida e bicarbonato. ",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "indice": 1,
+        "texto": "Restrição da ingestão de sódio, potássio e água, aumento de furosemida e bicarbonato. ",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "indice": 2,
+        "texto": "Teste terapêutico com 500 a 1000 ml de solução cristalóide e diurético de alça em altas doses.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "indice": 3,
+        "texto": "Administração contínua de altas doses de diuréticos e, se ausência de resposta, indicação dialítica.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "indice": 4,
+        "texto": "Diálise, devido à acidose metabólica, ao balanço hídrico cumulativo positivo, à hiperpotassemia refratária e à piora da oxigenação pulmonar. ",
+        "correta": true
+      }
+    ],
+    "gabarito": {
+      "indice": 4,
+      "letra": "E",
+      "texto": "Diálise, devido à acidose metabólica, ao balanço hídrico cumulativo positivo, à hiperpotassemia refratária e à piora da oxigenação pulmonar. "
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [
+      {
+        "original_url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/homem-de-65-anos-com-choque-septico-de-foco-pulmonar-ha-4-di-01.webp",
+        "local_filename": "856aad49-629d-48cf-9300-be4611df19f2_1.webp",
+        "local_path": "data/images/856aad49-629d-48cf-9300-be4611df19f2_1.webp"
+      }
+    ],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "a9e25eb3-4c0f-4cab-b7aa-2de1529ea23e",
+        "nome": "Hospital São Marcos - Teresina (PI)"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [],
+    "curtidas": 1
+  },
+  {
+    "id": "a44be381-b359-455a-8707-9bb7f0c9f6f7",
+    "numero_ordem": 8,
+    "enunciado": "Uma paciente de 53 anos, com doença renal crônica em tratamento conservador, dá entrada no Pronto Socorro queixando-se de há 5 dias estar apresentando náuseas e vômitos (2x/dia), além de fraqueza, anorexia e redução do débito urinário. Refere-se uso de anti-inflamatório (Diclofenaco) diariamente há 1 mês devido à dor lombar intermitente. Ao exame físico apresenta-se hipocorada ++/4, hidratada. RCR, 2 tempos, atrito pericárdico; PA = 150/100mmHg. MV Fisiológico, crepitações finas e bases pulmonares. Abdome livre, sem alterações. Edema membros inferiores ++/4. Exames Laboratoriais: Qual a terapêutica de escolha?",
+    "formato": "ALTERNATIVAS",
+    "dificuldade": "medio",
+    "ano": 2018,
+    "anulada": false,
+    "alternativas": [
+      {
+        "letra": "A",
+        "indice": 0,
+        "texto": "Gluconato de cálcio + Bicarbonato de Sódio + Furosemida;",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "indice": 1,
+        "texto": "Gluconato de cálcio + Glicose e Insulina + Furosemida;",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "indice": 2,
+        "texto": "Diálise;",
+        "correta": true
+      },
+      {
+        "letra": "D",
+        "indice": 3,
+        "texto": "Bicarbonato de sódio + Furosemida e Sorcal;",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "indice": 4,
+        "texto": "As opções C e D estão corretas.",
+        "correta": false
+      }
+    ],
+    "gabarito": {
+      "indice": 2,
+      "letra": "C",
+      "texto": "Diálise;"
+    },
+    "resolucao_ia": null,
+    "passos_raciocinio": null,
+    "imagens": [
+      {
+        "original_url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/uma-paciente-de-53-anos-com-doenca-renal-cronica-em-tratamen-01.webp",
+        "local_filename": "a44be381-b359-455a-8707-9bb7f0c9f6f7_1.webp",
+        "local_path": "data/images/a44be381-b359-455a-8707-9bb7f0c9f6f7_1.webp"
+      }
+    ],
+    "categorizacao": {
+      "especialidade": {
+        "id": "27fb949f-5751-42ee-a39d-d1f72bcadf98",
+        "nome": "Clínica Médica"
+      },
+      "tema": {
+        "id": "b5bf90b6-1176-4e74-ab6b-2d8083c0d386",
+        "nome": "Nefrologia"
+      },
+      "foco": {
+        "id": "31cb68be-7085-497d-b16d-9946fc88ab40",
+        "nome": "Insuficiência Renal Aguda"
+      },
+      "subfoco": {
+        "id": "39dde69c-91d3-40b0-98f7-cde8ec360827",
+        "nome": "Indicações de Diálise de Urgência"
+      },
+      "instituicao": {
+        "id": "f1acbd3d-be91-4dae-922d-2dd8f838181e",
+        "nome": "Hospital Policlin - São José dos Campos (SP)"
+      },
+      "dominio": "residencia"
+    },
+    "comentarios_comunidade": [],
+    "curtidas": 1
+  }
+]
