@@ -52,6 +52,7 @@ export const medevoInstituicoes = [
 import { clinicaMedicaHierarchy } from './clinicaMedicaData';
 import { cirurgiaHierarchy } from './cirurgiaData';
 import { pediatriaHierarchy } from './pediatriaData';
+import { preventivaHierarchy } from './preventivaData';
 import { extractedMedEvoQuestions } from './extractedMedEvoQuestions';
 
 // Hierarquia completa extraída com Especialidade, Tema, Foco e Subfoco
@@ -89,37 +90,7 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
       }
     ]
   },
-  {
-    especialidade: 'Medicina Preventiva e Social',
-    temas: [
-      {
-        tema: 'Epidemiologia e Bioestatística',
-        focos: [
-          {
-            foco: 'Delineamento de Estudos e Medidas de Associação',
-            subfocos: [
-              'Estudos de Coorte, Caso-Controle, Transversal e Ensaio Clínico',
-              'Risco Relativo, Odds Ratio e Risco Atribuível',
-              'Sensibilidade, Especificidade, VPP, VPN e Acurácia'
-            ]
-          }
-        ]
-      },
-      {
-        tema: 'Sistema Único de Saúde (SUS)',
-        focos: [
-          {
-            foco: 'Legislação e Princípios do SUS',
-            subfocos: [
-              'Leis Orgânicas 8.080/90 e 8.142/90',
-              'Princípios Doutrinários: Universalidade, Integralidade e Equidade',
-              'Vigilância em Saúde e Notificação Compulsória'
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  preventivaHierarchy
 ];
 
 export const mockQuestions: Question[] = [
