@@ -59,6 +59,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const mainSpecialties = [
     'Clínica Médica',
     'Cirurgia Geral',
+    'Obstetrícia',
     'Ginecologia e Obstetrícia',
     'Pediatria',
     'Medicina Preventiva e Social'

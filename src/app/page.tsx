@@ -165,9 +165,12 @@ export default function Home() {
         return false;
       }
 
-      // 3. Hierarquia Clínica: Especialidades, Temas, Focos e Subfocos
-      if (advancedFilters.especialidades.length > 0 && !advancedFilters.especialidades.includes(q.especialidade)) {
-        return false;
+      if (advancedFilters.especialidades.length > 0) {
+        const matchesSpec =
+          advancedFilters.especialidades.includes(q.especialidade) ||
+          (advancedFilters.especialidades.includes('Ginecologia e Obstetrícia') && (q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia')) ||
+          (advancedFilters.especialidades.includes('Obstetrícia') && q.especialidade === 'Ginecologia e Obstetrícia');
+        if (!matchesSpec) return false;
       }
       if (advancedFilters.temas.length > 0 && !advancedFilters.temas.includes(q.tema)) {
         return false;
@@ -319,7 +322,13 @@ export default function Home() {
   ) => {
     const matched = mockQuestions.filter((q) => {
       if (appliedFilters.modalidades?.length > 0 && !appliedFilters.modalidades.includes(q.modalidade)) return false;
-      if (appliedFilters.especialidades?.length > 0 && !appliedFilters.especialidades.includes(q.especialidade)) return false;
+      if (appliedFilters.especialidades?.length > 0) {
+        const matchesSpec =
+          appliedFilters.especialidades.includes(q.especialidade) ||
+          (appliedFilters.especialidades.includes('Ginecologia e Obstetrícia') && (q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia')) ||
+          (appliedFilters.especialidades.includes('Obstetrícia') && q.especialidade === 'Ginecologia e Obstetrícia');
+        if (!matchesSpec) return false;
+      }
       if (appliedFilters.temas?.length > 0 && !appliedFilters.temas.includes(q.tema)) return false;
       if (appliedFilters.focos?.length > 0 && !appliedFilters.focos.includes(q.foco)) return false;
       if (appliedFilters.subfocos?.length > 0 && !appliedFilters.subfocos.includes(q.subfoco)) return false;
@@ -435,6 +444,7 @@ export default function Home() {
         'Clínica Médica',
         'Cirurgia Geral',
         'Pediatria',
+        'Obstetrícia',
         'Ginecologia e Obstetrícia',
         'Medicina Preventiva e Social'
       ];

@@ -52,6 +52,7 @@ export const medevoInstituicoes = [
 import { clinicaMedicaHierarchy } from './clinicaMedicaData';
 import { cirurgiaHierarchy } from './cirurgiaData';
 import { pediatriaHierarchy } from './pediatriaData';
+import { obstetriciaHierarchy } from './obstetriciaData';
 import { preventivaHierarchy } from './preventivaData';
 import { extractedMedEvoQuestions } from './extractedMedEvoQuestions';
 
@@ -60,24 +61,12 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
   clinicaMedicaHierarchy,
   cirurgiaHierarchy,
   pediatriaHierarchy,
+  obstetriciaHierarchy,
   {
-    especialidade: 'Ginecologia e Obstetrícia',
+    especialidade: 'Ginecologia',
     temas: [
       {
-        tema: 'Obstetrícia',
-        focos: [
-          {
-            foco: 'Síndromes Hipertensivas e Hemorragias da Gestação',
-            subfocos: [
-              'Pré-Eclâmpsia com Sinais de Gravidade e Manejo com Sulfato de Magnésio',
-              'Descolamento Prematuro de Placenta e Placenta Prévia',
-              'Hemorragia Pós-Parto: Conduta e Drogas Uterotônicas'
-            ]
-          }
-        ]
-      },
-      {
-        tema: 'Ginecologia',
+        tema: 'Ginecologia Geral',
         focos: [
           {
             foco: 'Rastreamento Oncológico e Sangramento Uterino Anormal',
@@ -181,10 +170,10 @@ export const mockQuestions: Question[] = [
     year: 2024,
     tipoProva: 'Prova 1',
     modalidade: 'Residência Médica',
-    especialidade: 'Ginecologia e Obstetrícia',
-    tema: 'Obstetrícia',
-    foco: 'Síndromes Hipertensivas e Hemorragias da Gestação',
-    subfoco: 'Pré-Eclâmpsia com Sinais de Gravidade e Manejo com Sulfato de Magnésio',
+    especialidade: 'Obstetrícia',
+    tema: 'Doenças Hipertensivas na Gestação',
+    foco: 'Pré-eclâmpsia e Eclâmpsia',
+    subfoco: 'Sulfato de Magnésio: Uso e Toxicidade',
     difficulty: 'Difícil',
     type: 'Múltipla escolha',
     isAnulada: false,
@@ -382,6 +371,6 @@ export const mockQuestions: Question[] = [
 export const mockInstitutionsList = medevoInstituicoes;
 export const mockInstitutions = ['Todas', ...mockInstitutionsList];
 export const mockBancas = ['Todas', 'FGV', 'FUVEST', 'VUNESP', 'CEPUERJ', 'FCM/UNICAMP', 'IBFC', 'CESPE/Cebraspe'];
-export const mockSpecialties = ['Todas', 'Clínica Médica', 'Cirurgia Geral', 'Pediatria', 'Ginecologia e Obstetrícia', 'Medicina Preventiva e Social'];
+export const mockSpecialties = ['Todas', 'Clínica Médica', 'Cirurgia Geral', 'Pediatria', 'Obstetrícia', 'Ginecologia e Obstetrícia', 'Medicina Preventiva e Social'];
 export const mockYears = ['Todos', '2027', '2026', '2025', '2024', '2023', '2022', '2021', '2020'];
 export const mockDifficulties = ['Todas', 'Fácil', 'Médio', 'Difícil', 'Desconhecido'];
