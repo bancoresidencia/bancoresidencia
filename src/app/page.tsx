@@ -165,11 +165,18 @@ export default function Home() {
         return false;
       }
 
+      // 3. Hierarquia Clínica: Especialidades, Temas, Focos e Subfocos
       if (advancedFilters.especialidades.length > 0) {
-        const matchesSpec =
-          advancedFilters.especialidades.includes(q.especialidade) ||
-          (advancedFilters.especialidades.includes('Ginecologia e Obstetrícia') && (q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia')) ||
-          (advancedFilters.especialidades.includes('Obstetrícia') && q.especialidade === 'Ginecologia e Obstetrícia');
+        const matchesSpec = advancedFilters.especialidades.some((spec) => {
+          if (spec === q.especialidade) return true;
+          if (
+            (spec === 'Ginecologia' || spec === 'Obstetrícia' || spec === 'Ginecologia e Obstetrícia') &&
+            (q.especialidade === 'Ginecologia' || q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia e Obstetrícia')
+          ) {
+            return true;
+          }
+          return false;
+        });
         if (!matchesSpec) return false;
       }
       if (advancedFilters.temas.length > 0 && !advancedFilters.temas.includes(q.tema)) {
@@ -323,10 +330,16 @@ export default function Home() {
     const matched = mockQuestions.filter((q) => {
       if (appliedFilters.modalidades?.length > 0 && !appliedFilters.modalidades.includes(q.modalidade)) return false;
       if (appliedFilters.especialidades?.length > 0) {
-        const matchesSpec =
-          appliedFilters.especialidades.includes(q.especialidade) ||
-          (appliedFilters.especialidades.includes('Ginecologia e Obstetrícia') && (q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia')) ||
-          (appliedFilters.especialidades.includes('Obstetrícia') && q.especialidade === 'Ginecologia e Obstetrícia');
+        const matchesSpec = appliedFilters.especialidades.some((spec: string) => {
+          if (spec === q.especialidade) return true;
+          if (
+            (spec === 'Ginecologia' || spec === 'Obstetrícia' || spec === 'Ginecologia e Obstetrícia') &&
+            (q.especialidade === 'Ginecologia' || q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia e Obstetrícia')
+          ) {
+            return true;
+          }
+          return false;
+        });
         if (!matchesSpec) return false;
       }
       if (appliedFilters.temas?.length > 0 && !appliedFilters.temas.includes(q.tema)) return false;
