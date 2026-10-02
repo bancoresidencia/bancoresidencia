@@ -50,6 +50,7 @@ export const medevoInstituicoes = [
 ];
 
 import { clinicaMedicaHierarchy } from './clinicaMedicaData';
+import { pediatriaHierarchy } from './pediatriaData';
 import { extractedMedEvoQuestions } from './extractedMedEvoQuestions';
 
 // Hierarquia completa extraída com Especialidade, Tema, Foco e Subfoco
@@ -87,35 +88,7 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
       }
     ]
   },
-  {
-    especialidade: 'Pediatria',
-    temas: [
-      {
-        tema: 'Neonatologia',
-        focos: [
-          {
-            foco: 'Reanimação Neonatal em Sala de Parto (SBP)',
-            subfocos: [
-              'Passos Iniciais e Ventilação com Pressão Positiva (VPP)',
-              'Prematuridade e Síndrome do Desconforto Respiratório (Doença da Membrana Hialina)'
-            ]
-          }
-        ]
-      },
-      {
-        tema: 'Doenças Exantemáticas e Respiratórias',
-        focos: [
-          {
-            foco: 'Exantemas na Infância',
-            subfocos: [
-              'Sarampo, Rubéola, Exantema Súbito e Escarlatina',
-              'Bronquiolite Viral Aguda e Manejo Clínico'
-            ]
-          }
-        ]
-      }
-    ]
-  },
+  pediatriaHierarchy,
   {
     especialidade: 'Ginecologia e Obstetrícia',
     temas: [
