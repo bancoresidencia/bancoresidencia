@@ -30,7 +30,9 @@ import {
   medevoHierarchy,
   medevoInstituicoes,
   medevoAnos,
-  medevoTiposProva
+  medevoTiposProva,
+  medicalInstitutionsDirectory,
+  bancasExaminadorasOficiais
 } from '@/data/mockQuestions';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -79,6 +81,63 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [expandedEspec, setExpandedEspec] = useState<Record<string, boolean>>({});
   const [expandedTema, setExpandedTema] = useState<Record<string, boolean>>({});
   const [expandedFoco, setExpandedFoco] = useState<Record<string, boolean>>({});
+
+  // Estados e lógica para o filtro de Instituições e Bancas Oficiais
+  const [instSearch, setInstSearch] = useState<string>('');
+  const [instCategory, setInstCategory] = useState<'todas' | 'populares' | 'bancas'>('todas');
+
+  const popularSiglas = [
+    'ENARE / ENAMED',
+    'ENARE',
+    'SUS-SP',
+    'USP-SP',
+    'HCFMUSP',
+    'HCFMRP-USP',
+    'UNIFESP/EPM',
+    'HC-UNICAMP',
+    'AMRIGS',
+    'PSU-MG',
+    'SURCE',
+    'SES-DF',
+    'SES-RJ',
+    'SES-PE',
+    'SUS-BA',
+    'Santa Casa SP',
+    'Revalida / Inep',
+    'Einstein',
+    'HCPA',
+    'UFCSPA',
+    'FHEMIG'
+  ];
+
+  const filteredInstituicoes = React.useMemo(() => {
+    let list: { sigla: string; nome: string; isBanca?: boolean }[] = [];
+
+    if (instCategory === 'bancas') {
+      list = bancasExaminadorasOficiais.map((banca) => ({
+        sigla: banca.split(' (')[0],
+        nome: banca,
+        isBanca: true
+      }));
+    } else if (instCategory === 'populares') {
+      list = medicalInstitutionsDirectory.filter((inst) =>
+        popularSiglas.includes(inst.sigla)
+      );
+    } else {
+      list = medicalInstitutionsDirectory;
+    }
+
+    if (instSearch.trim()) {
+      const q = instSearch.toLowerCase().trim();
+      return list.filter(
+        (item) =>
+          item.sigla.toLowerCase().includes(q) ||
+          item.nome.toLowerCase().includes(q)
+      );
+    }
+
+    return list;
+  }, [instCategory, instSearch]);
 
   const toggleSection = (section: string) => {
     setOpenSections((prev) => ({ ...prev, [section]: !prev[section] }));
@@ -619,6 +678,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="flex items-center gap-2">
               <Building2 className="w-4 h-4 text-purple-500" />
               <span>Instituições e Bancas Oficiais</span>
+              <span className="text-[10px] text-slate-400 font-normal">
+                ({medicalInstitutionsDirectory.length} instituições + bancas examinadoras)
+              </span>
               {filters.instituicoes.length > 0 && (
                 <span className="text-[10px] px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 font-bold">
                   {filters.instituicoes.length} selecionadas
@@ -629,31 +691,153 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           </button>
 
           {openSections.instituicoes && (
-            <div className="p-4 pt-1 border-t border-slate-200 dark:border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2">
-              {medevoInstituicoes.map((inst) => {
-                const isSelected = filters.instituicoes.includes(inst);
-                return (
+            <div className="p-4 pt-2 border-t border-slate-200 dark:border-slate-800/80 space-y-3">
+              {/* Barra de controle: Busca, Categorias e Ações Rápidas */}
+              <div className="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center justify-between">
+                {/* Campo de Busca Rápida */}
+                <div className="relative flex-1">
+                  <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    type="text"
+                    value={instSearch}
+                    onChange={(e) => setInstSearch(e.target.value)}
+                    placeholder="Buscar por sigla ou nome (ex: ENARE, USP, Santa Casa, VUNESP, Revalida)..."
+                    className="w-full pl-9 pr-8 py-1.5 text-xs rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:border-purple-500 transition-colors"
+                  />
+                  {instSearch && (
+                    <button
+                      type="button"
+                      onClick={() => setInstSearch('')}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                    >
+                      <X className="w-3.5 h-3.5" />
+                    </button>
+                  )}
+                </div>
+
+                {/* Abas de Filtro / Categorias */}
+                <div className="flex items-center gap-1 bg-slate-200/60 dark:bg-slate-900 p-1 rounded-xl text-[11px] font-semibold">
                   <button
-                    key={inst}
                     type="button"
-                    onClick={() => toggleInstituicao(inst)}
-                    className={`flex items-center gap-2 p-2 rounded-xl text-xs font-medium transition-colors cursor-pointer border ${
-                      isSelected
-                        ? 'bg-purple-50 dark:bg-purple-950/50 border-purple-500 text-purple-700 dark:text-purple-200 font-bold'
-                        : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
+                    onClick={() => setInstCategory('todas')}
+                    className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
+                      instCategory === 'todas'
+                        ? 'bg-white dark:bg-slate-800 text-purple-600 dark:text-purple-300 shadow-xs'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   >
-                    <div
-                      className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 ${
-                        isSelected ? 'bg-purple-600 border-purple-600 text-white' : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
-                      }`}
-                    >
-                      {isSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
-                    </div>
-                    <span className="truncate">{inst}</span>
+                    Todas ({medicalInstitutionsDirectory.length})
                   </button>
-                );
-              })}
+                  <button
+                    type="button"
+                    onClick={() => setInstCategory('populares')}
+                    className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
+                      instCategory === 'populares'
+                        ? 'bg-white dark:bg-slate-800 text-purple-600 dark:text-purple-300 shadow-xs'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                  >
+                    Mais Buscadas
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setInstCategory('bancas')}
+                    className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
+                      instCategory === 'bancas'
+                        ? 'bg-white dark:bg-slate-800 text-purple-600 dark:text-purple-300 shadow-xs'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                  >
+                    Bancas Oficiais
+                  </button>
+                </div>
+
+                {/* Botões de Ação Rápida */}
+                {filters.instituicoes.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => onChange({ ...filters, instituicoes: [] })}
+                    className="flex items-center gap-1 px-3 py-1.5 rounded-xl text-[11px] font-semibold text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 cursor-pointer transition-colors"
+                  >
+                    <RotateCcw className="w-3 h-3" />
+                    <span>Desmarcar Todas ({filters.instituicoes.length})</span>
+                  </button>
+                )}
+              </div>
+
+              {/* Chips das Instituições Selecionadas Atualmente */}
+              {filters.instituicoes.length > 0 && (
+                <div className="flex flex-wrap items-center gap-1.5 p-2 bg-purple-50/60 dark:bg-purple-950/30 border border-purple-200/60 dark:border-purple-900/40 rounded-xl">
+                  <span className="text-[10px] font-bold text-purple-700 dark:text-purple-300 uppercase tracking-wider mr-1">
+                    Selecionadas:
+                  </span>
+                  {filters.instituicoes.map((sigla) => (
+                    <span
+                      key={sigla}
+                      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-white dark:bg-slate-900 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800 shadow-2xs"
+                    >
+                      <span>{sigla}</span>
+                      <button
+                        type="button"
+                        onClick={() => toggleInstituicao(sigla)}
+                        className="hover:text-rose-500 transition-colors cursor-pointer"
+                        title="Remover"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {/* Grid Scrollável com Sigla + Nome Completo */}
+              <div className="max-h-80 overflow-y-auto pr-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+                {filteredInstituicoes.length === 0 ? (
+                  <div className="col-span-full py-8 text-center text-xs text-slate-500 dark:text-slate-400">
+                    Nenhuma instituição ou banca encontrada para &ldquo;{instSearch}&rdquo;.
+                  </div>
+                ) : (
+                  filteredInstituicoes.map((item) => {
+                    const isSelected = filters.instituicoes.includes(item.sigla);
+                    return (
+                      <button
+                        key={item.sigla}
+                        type="button"
+                        onClick={() => toggleInstituicao(item.sigla)}
+                        title={`${item.sigla} - ${item.nome}`}
+                        className={`flex items-start gap-2.5 p-2.5 rounded-xl text-left transition-all cursor-pointer border ${
+                          isSelected
+                            ? 'bg-purple-50 dark:bg-purple-950/50 border-purple-500 text-purple-900 dark:text-purple-100 font-bold shadow-xs'
+                            : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700'
+                        }`}
+                      >
+                        <div
+                          className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 mt-0.5 ${
+                            isSelected ? 'bg-purple-600 border-purple-600 text-white' : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
+                          }`}
+                        >
+                          {isSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <div className="text-xs font-bold truncate flex items-center gap-1.5">
+                            <span className={isSelected ? 'text-purple-700 dark:text-purple-300' : 'text-slate-800 dark:text-slate-200'}>
+                              {item.sigla}
+                            </span>
+                            {item.isBanca && (
+                              <span className="text-[9px] px-1.5 py-0.2 rounded bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 font-medium">
+                                Banca
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5 font-normal">
+                            {item.nome}
+                          </p>
+                        </div>
+                      </button>
+                    );
+                  })
+                )}
+              </div>
             </div>
           )}
         </div>

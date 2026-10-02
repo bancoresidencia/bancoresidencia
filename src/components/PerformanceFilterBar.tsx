@@ -19,6 +19,14 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
 }) => {
   const { accentConfig } = useTheme();
   const [isOpenInstitutions, setIsOpenInstitutions] = useState(false);
+  const [instSearch, setInstSearch] = useState('');
+
+  const filteredInstitutions = React.useMemo(() => {
+    if (!instSearch.trim()) return mockInstitutionsList;
+    return mockInstitutionsList.filter((inst) =>
+      inst.toLowerCase().includes(instSearch.toLowerCase().trim())
+    );
+  }, [instSearch]);
 
   const toggleInstitution = (inst: string) => {
     let next: string[];
@@ -146,28 +154,40 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
 
           {/* Dropdown com checkboxes */}
           {isOpenInstitutions && (
-            <div className="absolute z-30 mt-1 w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 max-h-56 overflow-y-auto space-y-1">
-              {mockInstitutionsList.map((inst) => {
-                const isChecked = filters.institutions.includes(inst);
-                return (
-                  <label
-                    key={inst}
-                    onClick={() => toggleInstitution(inst)}
-                    className="flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer text-xs text-slate-700 dark:text-slate-200 transition-colors"
-                  >
-                    <div
-                      className={`w-4 h-4 rounded-md border flex items-center justify-center transition-colors ${
-                        isChecked
-                          ? 'bg-blue-600 border-blue-600 text-white'
-                          : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800'
-                      }`}
+            <div className="absolute z-30 mt-1 w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 max-h-64 overflow-y-auto space-y-1">
+              <input
+                type="text"
+                value={instSearch}
+                onChange={(e) => setInstSearch(e.target.value)}
+                placeholder="Filtrar instituição..."
+                className="w-full px-2.5 py-1 text-xs rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 focus:outline-none focus:border-blue-500 mb-1"
+                onClick={(e) => e.stopPropagation()}
+              />
+              {filteredInstitutions.length === 0 ? (
+                <div className="p-2 text-center text-xs text-slate-400">Nenhuma encontrada</div>
+              ) : (
+                filteredInstitutions.map((inst) => {
+                  const isChecked = filters.institutions.includes(inst);
+                  return (
+                    <label
+                      key={inst}
+                      onClick={() => toggleInstitution(inst)}
+                      className="flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer text-xs text-slate-700 dark:text-slate-200 transition-colors"
                     >
-                      {isChecked && <Check className="w-3 h-3 stroke-[3]" />}
-                    </div>
-                    <span>{inst}</span>
-                  </label>
-                );
-              })}
+                      <div
+                        className={`w-4 h-4 rounded-md border flex items-center justify-center transition-colors ${
+                          isChecked
+                            ? 'bg-blue-600 border-blue-600 text-white'
+                            : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800'
+                        }`}
+                      >
+                        {isChecked && <Check className="w-3 h-3 stroke-[3]" />}
+                      </div>
+                      <span className="truncate">{inst}</span>
+                    </label>
+                  );
+                })
+              )}
             </div>
           )}
         </div>

@@ -189,9 +189,23 @@ export default function Home() {
         return false;
       }
 
-      // 4. Instituições
-      if (advancedFilters.instituicoes.length > 0 && !advancedFilters.instituicoes.includes(q.institution)) {
-        return false;
+      // 4. Instituições e Bancas Oficiais
+      if (advancedFilters.instituicoes.length > 0) {
+        const matchesInstitution = advancedFilters.instituicoes.some((filterInst) => {
+          if (!q.institution) return false;
+          if (q.institution === filterInst) return true;
+          const lowerQInst = q.institution.toLowerCase();
+          const lowerFilter = filterInst.toLowerCase();
+          if (lowerQInst.includes(lowerFilter) || lowerFilter.includes(lowerQInst)) return true;
+          if (q.banca) {
+            const lowerQBanca = q.banca.toLowerCase();
+            if (lowerQBanca.includes(lowerFilter) || lowerFilter.includes(lowerQBanca)) return true;
+          }
+          return false;
+        });
+        if (!matchesInstitution) {
+          return false;
+        }
       }
 
       // 5. Anos de Aplicação

@@ -24,30 +24,10 @@ export const medevoTiposProva = [
 
 export const medevoAnos = Array.from({ length: 18 }, (_, i) => 2027 - i); // 2027 até 2010
 
-export const medevoInstituicoes = [
-  'ENARE',
-  'USP-SP',
-  'UNIFESP',
-  'UNICAMP',
-  'UERJ',
-  'SUS-SP',
-  'UFRJ',
-  'UFMG',
-  'SCMSP',
-  'IAMSPE',
-  'UFRGS',
-  'UFPR',
-  'AMRIGS',
-  'PSU-MG',
-  'SES-DF',
-  'SURCE',
-  'HSI',
-  'HEVV',
-  'HST',
-  'SUS-RR',
-  'Hospital São Marcos',
-  'Hospital Policlin'
-];
+import { allInstituicoesSiglas, medicalInstitutionsDirectory, bancasExaminadorasOficiais } from './instituicoesData';
+
+export const medevoInstituicoes: string[] = allInstituicoesSiglas;
+export { medicalInstitutionsDirectory, bancasExaminadorasOficiais };
 
 import { clinicaMedicaHierarchy } from './clinicaMedicaData';
 import { cirurgiaHierarchy } from './cirurgiaData';
