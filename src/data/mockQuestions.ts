@@ -53,6 +53,7 @@ import { clinicaMedicaHierarchy } from './clinicaMedicaData';
 import { cirurgiaHierarchy } from './cirurgiaData';
 import { pediatriaHierarchy } from './pediatriaData';
 import { preventivaHierarchy } from './preventivaData';
+import { ginecologiaHierarchy, ginecologiaTemas } from './ginecologiaData';
 import { extractedMedEvoQuestions } from './extractedMedEvoQuestions';
 
 // Hierarquia completa extraída com Especialidade, Tema, Foco e Subfoco
@@ -60,6 +61,7 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
   clinicaMedicaHierarchy,
   cirurgiaHierarchy,
   pediatriaHierarchy,
+  ginecologiaHierarchy,
   {
     especialidade: 'Ginecologia e Obstetrícia',
     temas: [
@@ -76,18 +78,7 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
           }
         ]
       },
-      {
-        tema: 'Ginecologia',
-        focos: [
-          {
-            foco: 'Rastreamento Oncológico e Sangramento Uterino Anormal',
-            subfocos: [
-              'Diretrizes Brasileiras para Rastreamento do Câncer do Colo Uterino',
-              'Classificação PALM-COEIN para SUA'
-            ]
-          }
-        ]
-      }
+      ...ginecologiaTemas
     ]
   },
   preventivaHierarchy
@@ -198,6 +189,58 @@ export const mockQuestions: Question[] = [
     ],
     correctAnswer: 'A',
     commentary: 'O Sulfato de Magnésio é a droga de escolha comprovada para prevenção e controle de convulsões na pré-eclâmpsia grave. O esquema de Pritchard preconiza 4 g IV lento + 10 g IM profundo (5 g em cada nádega).'
+  },
+  {
+    id: 'q-gin-1',
+    code: 'USP-SP-2024-GIN-01',
+    institution: 'USP-SP',
+    banca: 'FUVEST',
+    year: 2024,
+    tipoProva: 'Prova 1',
+    modalidade: 'Residência Médica',
+    especialidade: 'Ginecologia',
+    tema: 'Oncologia Ginecológica',
+    foco: 'Rastreamento do Colo do Útero, HPV, NIC e Colposcopia',
+    subfoco: 'Lesões Intraepiteliais: LSIL, HSIL e Atipias',
+    difficulty: 'Médio',
+    type: 'Múltipla escolha',
+    isAnulada: false,
+    statement: 'Mulher de 32 anos realiza colpocitologia oncótica de rotina na atenção primária com resultado de lesão intraepitelial de alto grau (HSIL). Segundo as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero do Ministério da Saúde/INCA, qual é a conduta imediata preconizada?',
+    options: [
+      { letter: 'A', text: 'Encaminhamento para colposcopia imediata.' },
+      { letter: 'B', text: 'Repetir a colpocitologia em 6 meses na unidade básica.' },
+      { letter: 'C', text: 'Realizar conização ambulatorial direta sem necessidade de colposcopia prévia.' },
+      { letter: 'D', text: 'Pesquisa de DNA-HPV oncogênico e aguardar 1 ano se negativo.' },
+      { letter: 'E', text: 'Prescrever estrogenioterapia tópica por 21 dias e repetir a citologia.' }
+    ],
+    correctAnswer: 'A',
+    commentary: 'Para laudos citológicos de lesão intraepitelial de alto grau (HSIL) em mulheres a partir de 25 anos, a conduta recomendada pelo Ministério da Saúde/INCA é o encaminhamento imediato para colposcopia.'
+  },
+  {
+    id: 'q-gin-2',
+    code: 'ENARE-2024-GIN-02',
+    institution: 'ENARE',
+    banca: 'FGV',
+    year: 2024,
+    tipoProva: 'Prova 1',
+    modalidade: 'Residência Médica',
+    especialidade: 'Ginecologia',
+    tema: 'Mastologia',
+    foco: 'Rastreamento do Câncer de Mama',
+    subfoco: 'BI-RADS: Interpretação e Conduta (Categorias 0-6)',
+    difficulty: 'Fácil',
+    type: 'Múltipla escolha',
+    isAnulada: false,
+    statement: 'Mulher de 52 anos realiza mamografia de rastreamento com laudo conclusivo de categoria BI-RADS 0 devido à alta densidade mamária com assimetria focal não elucidada. Qual a conduta recomendada?',
+    options: [
+      { letter: 'A', text: 'Avaliação por imagem complementar (ultrassonografia mamária e/ou compressão localizada).' },
+      { letter: 'B', text: 'Repetição da mamografia em 1 ano para acompanhamento anual regular.' },
+      { letter: 'C', text: 'Encaminhamento imediato para biópsia cirúrgica por suspeita de malignidade.' },
+      { letter: 'D', text: 'Controle radiológico estrito em 6 meses com mamografia bilateral.' },
+      { letter: 'E', text: 'Ressonância magnética de mamas obrigatória antes de qualquer outro método.' }
+    ],
+    correctAnswer: 'A',
+    commentary: 'A categoria BI-RADS 0 é um achado incompleto que exige avaliação por exames de imagem adicionais (como incidências mamográficas adicionais, compressão/magnificação ou ultrassonografia).'
   },
   {
     id: 'q-5',
@@ -382,6 +425,6 @@ export const mockQuestions: Question[] = [
 export const mockInstitutionsList = medevoInstituicoes;
 export const mockInstitutions = ['Todas', ...mockInstitutionsList];
 export const mockBancas = ['Todas', 'FGV', 'FUVEST', 'VUNESP', 'CEPUERJ', 'FCM/UNICAMP', 'IBFC', 'CESPE/Cebraspe'];
-export const mockSpecialties = ['Todas', 'Clínica Médica', 'Cirurgia Geral', 'Pediatria', 'Ginecologia e Obstetrícia', 'Medicina Preventiva e Social'];
+export const mockSpecialties = ['Todas', 'Clínica Médica', 'Cirurgia Geral', 'Pediatria', 'Ginecologia', 'Ginecologia e Obstetrícia', 'Medicina Preventiva e Social'];
 export const mockYears = ['Todos', '2027', '2026', '2025', '2024', '2023', '2022', '2021', '2020'];
 export const mockDifficulties = ['Todas', 'Fácil', 'Médio', 'Difícil', 'Desconhecido'];
