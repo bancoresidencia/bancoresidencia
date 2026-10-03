@@ -17,13 +17,11 @@ import {
   Sunset,
   Moon,
   FolderOpen,
-  Palette,
-  ChevronDown,
-  ChevronUp
+  Clock,
+  Medal
 } from 'lucide-react';
 import { UserStats, QuestionList, ActiveTab, Modalidade } from '@/types';
 import { getPercentileColor } from '@/utils/percentile';
-import { PercentileColorTester } from './PercentileColorTester';
 import { useTheme } from '@/context/ThemeContext';
 
 interface StudentHomeDashboardProps {
@@ -48,11 +46,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   allLists,
   onNavigate,
   onContinueList,
-  modalidade,
-  onSimulatePercentile
+  modalidade
 }) => {
   const { accentConfig, mode } = useTheme();
-  const [showColorTester, setShowColorTester] = useState(false);
 
   // Saudação dinâmica com base no horário
   const getGreeting = () => {
@@ -72,67 +68,63 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const todayAnswered = stats.historyByDay[stats.historyByDay.length - 1]?.answered || 0;
   const goalPercentage = Math.min(100, Math.round((todayAnswered / (dailyGoal || 1)) * 100));
 
+  // Meta Diária de Tempo de Estudo (em minutos)
+  const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(120);
+  const todayStudyMinutes = Math.round(todayAnswered * 2.5);
+  const timeGoalPercentage = Math.min(100, Math.round((todayStudyMinutes / (dailyTimeGoal || 1)) * 100));
+
   // Tier cromático rigoroso do percentil
   const percentileTier = getPercentileColor(stats.percentileInfo.percentile);
 
+  // Cartões limpos de Acesso Direto (Apenas Ícone e Título Principal)
   const quickNavCards = [
     {
       tab: 'banco',
       title: 'Banco de Questões',
-      desc: 'Pratique questões filtrando por instituição, banca e subfoco clínico.',
       icon: Database,
-      tag: 'Prática',
       accentColor: accentConfig.primaryHex
     },
     {
       tab: 'listas',
       title: 'Listas & Pastas',
-      desc: 'Crie cadernos personalizados de revisão com filtros inteligentes.',
       icon: ListFilter,
-      tag: 'Organização',
       accentColor: '#059669'
     },
     {
       tab: 'simulados',
       title: 'Simulados Oficiais',
-      desc: 'Provas na íntegra das principais bancas de residência do país.',
       icon: FileCheck2,
-      tag: 'Avaliação',
       accentColor: '#7c3aed'
     },
     {
       tab: 'stats',
       title: 'Meu Desempenho',
-      desc: 'Métricas profundas, taxa de acerto por especialidade e evolução.',
       icon: BarChart2,
-      tag: 'Métricas',
       accentColor: '#ea580c'
     },
     {
       tab: 'ranking',
       title: 'Ranking Oficial',
-      desc: 'Classificação semestral homologada pelo percentil oficial.',
       icon: Trophy,
-      tag: 'Competitivo',
       accentColor: '#eab308'
     }
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-9 sm:space-y-11">
       {/* 1. Hero Bento Card: Boas-Vindas & Status do Aluno */}
-      <div className="relative overflow-hidden bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-sm">
+      <section className="relative overflow-hidden bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-7 sm:p-9 shadow-xs">
         {/* Glow de fundo sutil */}
         <div
-          className="absolute -right-20 -top-20 w-80 h-80 rounded-full blur-3xl opacity-20 pointer-events-none"
+          className="absolute -right-20 -top-20 w-80 h-80 rounded-full blur-3xl opacity-15 pointer-events-none"
           style={{ backgroundColor: accentConfig.primaryHex }}
         />
 
         <div className="relative flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="space-y-2">
+          <div className="space-y-2.5">
             <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400 font-semibold text-xs uppercase tracking-wider">
               <GreetingIcon className={`w-4 h-4 ${greeting.color}`} />
-              <span>{greeting.text}, Dr(a).</span>
+              <span>{greeting.text}</span>
             </div>
 
             <h1 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
@@ -157,246 +149,280 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
-            {/* Botão Interativo de Teste de Cores */}
-            <button
-              onClick={() => setShowColorTester(!showColorTester)}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 text-xs sm:text-sm font-semibold hover:border-slate-300 dark:hover:border-slate-700 transition-all cursor-pointer shadow-sm hover:scale-102"
-            >
-              <Palette className="w-4 h-4 text-amber-500" />
-              <span>Testar Cores do Percentil</span>
-              {showColorTester ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
-            </button>
-
+          <div className="flex items-center gap-4">
             {/* Destaque de Sequência de Dias com Micro-Animação */}
-            <div className="flex items-center gap-3 bg-amber-50 dark:bg-amber-950/30 border border-amber-300/80 dark:border-amber-500/30 px-4 py-2.5 rounded-2xl shadow-sm">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-600 dark:text-amber-400 shadow-inner">
+            <div className="flex items-center gap-3.5 bg-amber-50/80 dark:bg-amber-950/20 border border-amber-300/60 dark:border-amber-500/30 px-5 py-3 rounded-2xl shadow-xs">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-600 dark:text-amber-400 shadow-inner shrink-0">
                 <Flame className="w-5 h-5 fill-amber-500 dark:fill-amber-400 animate-pulse" />
               </div>
               <div>
-                <div className="text-xl font-black text-amber-600 dark:text-amber-400 font-mono tracking-tight leading-none">
+                <div className="text-2xl font-black text-amber-600 dark:text-amber-400 font-mono tracking-tight leading-none">
                   {stats.streakDays} dias
                 </div>
-                <div className="text-[11px] text-amber-700 dark:text-amber-300/80 font-medium mt-0.5">
+                <div className="text-[11px] text-amber-700 dark:text-amber-300/80 font-medium mt-1">
                   de constância diária
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Painel Interativo de Teste de Cores (se ativado) */}
-      {showColorTester && (
-        <PercentileColorTester
-          currentPercentile={stats.percentileInfo.percentile ?? 78}
-          onSelectTestPercentile={onSimulatePercentile}
-        />
-      )}
+      </section>
 
       {/* 2. Grid de Resumo Diário Bento: Meta Diária + % Aproveitamento + Percentil Rigoroso */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {/* Card 1: Meta Diária de Questões */}
-        <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 shadow-sm flex flex-col justify-between space-y-4">
-          <div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <div
-                  className="w-9 h-9 rounded-xl flex items-center justify-center shadow-sm"
-                  style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
-                >
-                  <Target className="w-4.5 h-4.5" />
+      <section>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7">
+          {/* Card 1: Meta Diária (Questões + Tempo de Estudo) */}
+          <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-xs flex flex-col justify-between space-y-4">
+            <div>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <div
+                    className="w-9 h-9 rounded-xl flex items-center justify-center shadow-xs"
+                    style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
+                  >
+                    <Target className="w-4.5 h-4.5" />
+                  </div>
+                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                    Meta Diária
+                  </span>
                 </div>
-                <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                  Meta Diária
-                </span>
+
+                {/* Seletores Rápidos de Meta (Questões & Tempo) */}
+                <div className="flex items-center gap-1.5 text-xs">
+                  <select
+                    id="goal-input"
+                    value={dailyGoal}
+                    onChange={(e) => onUpdateDailyGoal(Number(e.target.value))}
+                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 rounded-xl px-2 py-1 text-[11px] focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer font-semibold"
+                    title="Meta de Questões"
+                  >
+                    <option value={10}>10 quest.</option>
+                    <option value={20}>20 quest.</option>
+                    <option value={30}>30 quest.</option>
+                    <option value={50}>50 quest.</option>
+                    <option value={100}>100 quest.</option>
+                  </select>
+
+                  <select
+                    value={dailyTimeGoal}
+                    onChange={(e) => setDailyTimeGoal(Number(e.target.value))}
+                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 rounded-xl px-2 py-1 text-[11px] focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer font-semibold"
+                    title="Meta de Tempo Diário"
+                  >
+                    <option value={30}>30 min</option>
+                    <option value={60}>60 min</option>
+                    <option value={90}>90 min</option>
+                    <option value={120}>120 min</option>
+                    <option value={180}>180 min</option>
+                  </select>
+                </div>
               </div>
 
-              {/* Seletor Rápido de Meta */}
-              <div className="flex items-center gap-1.5 text-xs">
-                <select
-                  id="goal-input"
-                  value={dailyGoal}
-                  onChange={(e) => onUpdateDailyGoal(Number(e.target.value))}
-                  className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 rounded-xl px-2.5 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer font-semibold"
-                >
-                  <option value={10}>10 quest.</option>
-                  <option value={20}>20 quest.</option>
-                  <option value={30}>30 quest.</option>
-                  <option value={50}>50 quest.</option>
-                  <option value={100}>100 quest.</option>
-                </select>
+              {/* Duas Metas: Questões e Tempo Lado a Lado */}
+              <div className="pt-3 grid grid-cols-2 gap-3 divide-x divide-slate-100 dark:divide-slate-800/80">
+                <div className="pr-1">
+                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                    <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+                    <span>Questões</span>
+                  </div>
+                  <div className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-mono tracking-tight mt-1">
+                    {todayAnswered}{' '}
+                    <span className="text-xs font-semibold text-slate-400 dark:text-slate-500 font-sans">
+                      / {dailyGoal}
+                    </span>
+                  </div>
+                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800 mt-2">
+                    <div
+                      className="h-2 rounded-full transition-all duration-500 ease-out"
+                      style={{
+                        width: `${goalPercentage}%`,
+                        backgroundColor: accentConfig.primaryHex
+                      }}
+                    />
+                  </div>
+                  <div className="text-[10px] text-slate-500 dark:text-slate-400 font-medium mt-1">
+                    {todayAnswered >= dailyGoal
+                      ? 'Meta batida! 🎉'
+                      : `Faltam ${Math.max(0, dailyGoal - todayAnswered)} quest.`}
+                  </div>
+                </div>
+
+                <div className="pl-3">
+                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                    <Clock className="w-3.5 h-3.5 text-sky-500" />
+                    <span>Tempo</span>
+                  </div>
+                  <div className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-mono tracking-tight mt-1">
+                    {todayStudyMinutes}m{' '}
+                    <span className="text-xs font-semibold text-slate-400 dark:text-slate-500 font-sans">
+                      / {dailyTimeGoal}m
+                    </span>
+                  </div>
+                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800 mt-2">
+                    <div
+                      className="h-2 rounded-full bg-sky-500 transition-all duration-500 ease-out"
+                      style={{
+                        width: `${timeGoalPercentage}%`
+                      }}
+                    />
+                  </div>
+                  <div className="text-[10px] text-slate-500 dark:text-slate-400 font-medium mt-1">
+                    {todayStudyMinutes >= dailyTimeGoal
+                      ? 'Tempo atingido! ⏱️'
+                      : `Faltam ${Math.max(0, dailyTimeGoal - todayStudyMinutes)} min`}
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-baseline justify-between pt-4">
-              <div className="text-3xl font-black text-slate-900 dark:text-white font-mono tracking-tight">
-                {todayAnswered}{' '}
-                <span className="text-sm font-semibold text-slate-400 dark:text-slate-500 font-sans">
-                  / {dailyGoal}
-                </span>
-              </div>
-              <span
-                className="text-xs font-extrabold px-2.5 py-1 rounded-full border"
-                style={{
-                  backgroundColor: accentConfig.bgRgba,
-                  borderColor: accentConfig.borderRgba,
-                  color: accentConfig.primaryHex
-                }}
-              >
-                {goalPercentage}% concluída
+            <div className="pt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80">
+              <span>Progresso geral diário</span>
+              <span className="font-semibold text-slate-700 dark:text-slate-300">
+                {Math.round((goalPercentage + timeGoalPercentage) / 2)}% concluído
               </span>
             </div>
           </div>
 
-          <div className="space-y-2">
-            <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-200 dark:border-slate-800">
-              <div
-                className="h-2.5 rounded-full transition-all duration-500 ease-out"
-                style={{
-                  width: `${goalPercentage}%`,
-                  backgroundColor: accentConfig.primaryHex
-                }}
-              />
-            </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              {todayAnswered >= dailyGoal
-                ? '🎉 Parabéns! Meta de hoje batida com sucesso!'
-                : `Faltam ${Math.max(0, dailyGoal - todayAnswered)} questões para alcançar a meta.`}
-            </p>
-          </div>
-        </div>
-
-        {/* Card 2: Taxa de Acerto Global */}
-        <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 shadow-sm flex flex-col justify-between space-y-4">
-          <div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shadow-sm">
-                  <Award className="w-4.5 h-4.5" />
+          {/* Card 2: Taxa de Acerto Global */}
+          <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-xs flex flex-col justify-between space-y-5">
+            <div>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shadow-xs">
+                    <Award className="w-4.5 h-4.5" />
+                  </div>
+                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                    Aproveitamento
+                  </span>
                 </div>
-                <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                  Aproveitamento
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
+                  Geral
                 </span>
               </div>
-              <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
-                Geral
-              </span>
+
+              <div className="flex items-baseline gap-2 pt-4">
+                <span className="text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400 font-mono tracking-tight">
+                  {stats.totalAnswered > 0 ? `${stats.accuracyRate.toFixed(1)}%` : '0.0%'}
+                </span>
+                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">acertos brutos</span>
+              </div>
             </div>
 
-            <div className="flex items-baseline gap-2 pt-4">
-              <span className="text-3xl font-black text-emerald-600 dark:text-emerald-400 font-mono tracking-tight">
-                {stats.totalAnswered > 0 ? `${stats.accuracyRate.toFixed(1)}%` : '0.0%'}
+            <div className="pt-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80">
+              <span><strong>{stats.totalAnswered}</strong> resolvidas</span>
+              <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                {stats.totalCorrect} corretas
               </span>
-              <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">acertos brutos</span>
             </div>
           </div>
 
-          <div className="pt-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80">
-            <span><strong>{stats.totalAnswered}</strong> resolvidas</span>
-            <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-              {stats.totalCorrect} corretas
-            </span>
-          </div>
-        </div>
-
-        {/* Card 3: Percentil Rigoroso com Cores Oficiais Solicitadas */}
-        <div
-          className="bento-card bg-white dark:bg-[#0d1527] rounded-3xl p-6 shadow-sm flex flex-col justify-between space-y-4 border transition-all duration-300"
-          style={{
-            borderColor: stats.percentileInfo.status !== 'locked' ? percentileTier.borderRgba : undefined
-          }}
-        >
-          <div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <div
-                  className="w-9 h-9 rounded-xl flex items-center justify-center shadow-sm"
-                  style={{
-                    backgroundColor: percentileTier.bgRgba,
-                    color: percentileTier.textContrast
-                  }}
-                >
-                  <Sparkles className="w-4.5 h-4.5" />
+          {/* Card 3: Percentil Oficial (Medalha e Nível Evidente, P78 reduzido no rodapé) */}
+          <div
+            className="bento-card bg-white dark:bg-[#0d1527] rounded-3xl p-6 sm:p-7 shadow-xs flex flex-col justify-between space-y-4 border transition-all duration-300"
+            style={{
+              borderColor: stats.percentileInfo.status !== 'locked' ? percentileTier.borderRgba : undefined
+            }}
+          >
+            <div>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                    Percentil Oficial
+                  </span>
                 </div>
-                <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                  Percentil Oficial
+
+                <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 font-semibold">
+                  Faixa {percentileTier.rangeLabel}
                 </span>
               </div>
 
               {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
-                <span
-                  className="text-[11px] font-mono px-2.5 py-0.5 rounded-full font-bold border tracking-wide shadow-sm"
-                  style={{
-                    backgroundColor: percentileTier.bgRgba,
-                    borderColor: percentileTier.borderRgba,
-                    color: mode === 'light' ? percentileTier.textLight : percentileTier.textDark
-                  }}
-                >
-                  {percentileTier.name}
-                </span>
+                <div className="space-y-3 pt-3">
+                  {/* Nível do Aluno Evidente com Simbologia de Medalha */}
+                  <div className="flex items-center gap-3.5">
+                    <div
+                      className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border shadow-md transition-transform hover:scale-105"
+                      style={{
+                        backgroundColor: percentileTier.bgRgba,
+                        borderColor: percentileTier.borderRgba,
+                        color: mode === 'light' ? percentileTier.textLight : percentileTier.color,
+                        boxShadow: `0 4px 14px ${percentileTier.glowRgba || 'rgba(0,0,0,0.1)'}`
+                      }}
+                    >
+                      <Medal className="w-6 h-6 stroke-[2.2]" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                        Nível Atual
+                      </div>
+                      <div
+                        className="text-2xl sm:text-3xl font-black tracking-tight truncate"
+                        style={{ color: mode === 'light' ? percentileTier.textLight : percentileTier.textDark }}
+                      >
+                        Nível {percentileTier.name}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Barra de Progresso do Percentil */}
+                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800">
+                    <div
+                      className="h-2 rounded-full transition-all duration-500"
+                      style={{
+                        width: `${Math.max(5, stats.percentileInfo.percentile || 0)}%`,
+                        backgroundColor: percentileTier.color
+                      }}
+                    />
+                  </div>
+                </div>
               ) : (
-                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-semibold">
-                  Calibrando
-                </span>
+                <div className="pt-3 space-y-1">
+                  <div className="text-base font-bold text-slate-800 dark:text-slate-200">Em Calibração</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">
+                    Faltam <strong>{stats.percentileInfo.missingForApprox} questões</strong> para homologação.
+                  </div>
+                </div>
               )}
             </div>
 
-            {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
-              <div className="space-y-2 pt-4">
-                <div className="flex items-baseline gap-3">
+            {/* Borda Inferior: P78 reduzido com à frente dos concorrentes + Ver detalhes */}
+            <div className="pt-3 flex flex-wrap items-center justify-between gap-2 text-xs border-t border-slate-100 dark:border-slate-800/80">
+              {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
+                <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 font-medium text-[11px]">
                   <span
-                    className="text-4xl font-black font-mono tracking-tight"
-                    style={{ color: mode === 'light' ? percentileTier.textLight : percentileTier.textDark }}
+                    className="font-bold font-mono px-1.5 py-0.5 rounded-md text-[11px] border"
+                    style={{
+                      backgroundColor: percentileTier.bgRgba,
+                      borderColor: percentileTier.borderRgba,
+                      color: mode === 'light' ? percentileTier.textLight : percentileTier.textDark
+                    }}
                   >
                     P{stats.percentileInfo.percentile}
                   </span>
-                  <span className="text-xs text-slate-600 dark:text-slate-300 font-medium">
-                    À frente de <strong>{stats.percentileInfo.percentile}%</strong> dos concorrentes.
-                  </span>
+                  <span>À frente de <strong>{stats.percentileInfo.percentile}%</strong> dos concorrentes</span>
                 </div>
+              ) : (
+                <span className="text-[11px] text-slate-400">Status não calibrado</span>
+              )}
 
-                <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800">
-                  <div
-                    className="h-2 rounded-full transition-all duration-500"
-                    style={{
-                      width: `${Math.max(5, stats.percentileInfo.percentile || 0)}%`,
-                      backgroundColor: percentileTier.color
-                    }}
-                  />
-                </div>
-              </div>
-            ) : (
-              <div className="pt-4 space-y-1">
-                <div className="text-base font-bold text-slate-800 dark:text-slate-200">Em Calibração</div>
-                <div className="text-xs text-slate-500 dark:text-slate-400">
-                  Faltam <strong>{stats.percentileInfo.missingForApprox} questões</strong> para homologação.
-                </div>
-              </div>
-            )}
-          </div>
-
-          <div className="pt-3 flex items-center justify-between text-xs border-t border-slate-100 dark:border-slate-800/80">
-            <button
-              onClick={() => onNavigate('stats')}
-              className="text-xs font-bold hover:underline cursor-pointer flex items-center gap-1"
-              style={{ color: accentConfig.primaryHex }}
-            >
-              <span>Ver detalhes</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-            {stats.percentileInfo.status !== 'locked' && (
-              <span className="text-[11px] font-mono text-slate-500 font-semibold">
-                Faixa {percentileTier.rangeLabel}
-              </span>
-            )}
+              <button
+                type="button"
+                onClick={() => onNavigate('ranking')}
+                className="text-xs font-bold hover:underline cursor-pointer flex items-center gap-1 shrink-0 ml-auto"
+                style={{ color: accentConfig.primaryHex }}
+                title="Ver detalhes do seu percentil e ranking oficial"
+              >
+                <span>Ver detalhes</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* 3. Hero Action Card: Continuar Lista de Questões em Andamento */}
+      {/* 3. Hero Action Card: Continuar Caderno Ativo (Ação Principal com Botão Vermelho Sólido) */}
       {recentList && (
-        <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <section className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-7 sm:p-8 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div className="space-y-3 flex-1 min-w-0">
             <div className="flex items-center gap-2">
               <span
@@ -433,6 +459,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             </div>
           </div>
 
+          {/* O ÚNICO BOTÃO VERMELHO SÓLIDO PRIMÁRIO DA TELA */}
           <button
             onClick={() => onContinueList(recentList)}
             className="shrink-0 flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl text-white text-sm font-bold transition-all cursor-pointer shadow-md hover:scale-102 active:scale-98"
@@ -444,63 +471,48 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             <Play className="w-4 h-4 fill-white" />
             <span>Continuar Resolvendo</span>
           </button>
-        </div>
+        </section>
       )}
 
-      {/* 4. Navegação Rápida Bento */}
-      <div>
-        <h3 className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3.5 px-1">
+      {/* 4. Acesso Direto Limpo: Apenas Ícone + Título (Cartões Inteiros Clicáveis) */}
+      <section className="space-y-4">
+        <h3 className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest px-1">
           Acesso Direto às Áreas da Plataforma
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4">
           {quickNavCards.map((card) => {
             const Icon = card.icon;
             return (
               <button
                 key={card.tab}
                 onClick={() => onNavigate(card.tab as ActiveTab)}
-                className="bento-card text-left bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 p-5 rounded-2xl transition-all cursor-pointer flex flex-col justify-between h-44 group shadow-sm"
+                className="bento-card text-left bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 p-5 rounded-2xl transition-all cursor-pointer flex flex-col justify-between h-32 group shadow-xs hover:shadow-md hover:-translate-y-0.5"
               >
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center shadow-sm transition-transform group-hover:scale-110"
-                      style={{
-                        backgroundColor: `${card.accentColor}18`,
-                        color: card.accentColor
-                      }}
-                    >
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <span className="text-[10px] font-extrabold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-                      {card.tag}
-                    </span>
-                  </div>
-
-                  <h4 className="font-heading text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
-                    {card.title}
-                  </h4>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 line-clamp-2 leading-relaxed">
-                    {card.desc}
-                  </p>
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center shadow-xs transition-transform group-hover:scale-110"
+                  style={{
+                    backgroundColor: `${card.accentColor}18`,
+                    color: card.accentColor
+                  }}
+                >
+                  <Icon className="w-5 h-5" />
                 </div>
 
-                <div className="flex items-center justify-between text-xs font-bold pt-3 border-t border-slate-100 dark:border-slate-800/80 text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white">
-                  <span>Abrir</span>
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-                </div>
+                <h4 className="font-heading text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors leading-snug">
+                  {card.title}
+                </h4>
               </button>
             );
           })}
         </div>
-      </div>
+      </section>
 
-      {/* 5. Seção de Listas & Cadernos Recentes */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
+      {/* 5. Seção de Listas & Cadernos Recentes (Botões Secundários Limpos, Sem Vermelho Intenso) */}
+      <section className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-7 sm:p-8 shadow-xs space-y-5">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800/80 gap-3">
           <div className="flex items-center gap-3">
             <div
-              className="w-10 h-10 rounded-2xl flex items-center justify-center shadow-sm"
+              className="w-10 h-10 rounded-2xl flex items-center justify-center shadow-xs"
               style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
             >
               <FolderOpen className="w-5 h-5" />
@@ -516,7 +528,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           </div>
           <button
             onClick={() => onNavigate('listas')}
-            className="text-xs font-bold hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto"
+            className="text-xs font-bold hover:underline cursor-pointer flex items-center gap-1 self-start sm:self-auto transition-colors"
             style={{ color: accentConfig.primaryHex }}
           >
             <span>Gerenciar Todas as Listas</span>
@@ -524,7 +536,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {allLists.slice(0, 4).map((list) => (
             <div
               key={list.id}
@@ -540,21 +552,21 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   <span className="font-semibold text-slate-700 dark:text-slate-300">{list.progressPercentage}%</span>
                 </div>
               </div>
+
+              {/* Botão Vermelho Sólido Continuar conforme Modelo Anterior (Imagem 3) */}
               <button
                 onClick={() => onContinueList(list)}
-                className="shrink-0 text-xs px-3.5 py-2 rounded-xl font-bold transition-all cursor-pointer hover:scale-105 active:scale-95"
+                className="shrink-0 text-xs px-4 py-2 rounded-xl font-bold transition-all cursor-pointer hover:scale-105 active:scale-95 text-white shadow-xs"
                 style={{
-                  backgroundColor: list.completedQuestions > 0 ? accentConfig.primaryHex : undefined,
-                  color: list.completedQuestions > 0 ? '#ffffff' : accentConfig.primaryHex,
-                  border: list.completedQuestions === 0 ? `1px solid ${accentConfig.borderRgba}` : undefined
+                  backgroundColor: accentConfig.primaryHex
                 }}
               >
-                {list.completedQuestions > 0 ? 'Continuar' : 'Iniciar'}
+                Continuar
               </button>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };

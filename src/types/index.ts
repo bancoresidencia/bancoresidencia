@@ -59,6 +59,7 @@ export interface Question {
   year: number;
   tipoProva?: string;
   modalidade: StudyModalidade;
+  modalidades?: StudyModalidade[];
   especialidade: string;
   specialty?: string;
   tema: string;
@@ -82,7 +83,7 @@ export interface Question {
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
 export type PeriodFilter = '7d' | '30d' | 'mes' | '6m' | '2026.1' | '2026.2' | 'all';
-export type ActiveTab = 'home' | 'banco' | 'listas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes';
+export type ActiveTab = 'home' | 'banco' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes';
 
 export interface PerformanceFilterState {
   institutions: string[];

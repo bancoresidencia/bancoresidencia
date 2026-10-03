@@ -26,15 +26,20 @@ import {
   FileText,
   CheckCircle2,
   Gauge,
-  Sliders
+  Sliders,
+  ArrowRight,
+  Target,
+  Key
 } from 'lucide-react';
 import {
   medevoHierarchy,
   medevoModalidades,
   medevoAnos,
   medicalInstitutionsDirectory,
-  bancasExaminadorasOficiais
+  bancasExaminadorasOficiais,
+  mockQuestions
 } from '@/data/mockQuestions';
+import { matchesStudyModalidades } from '@/utils/modalidades';
 import { useTheme } from '@/context/ThemeContext';
 
 interface AdvancedQuestionFiltersProps {
@@ -44,6 +49,8 @@ interface AdvancedQuestionFiltersProps {
   totalAvailable: number;
   totalFiltered: number;
   onCreateListFromFilter: () => void;
+  onSelectDirectQuestion?: (questionId: string) => void;
+  onStartSequentialSolving?: () => void;
 }
 
 // Normalização para busca sem acentos e minúsculas
@@ -106,9 +113,66 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   onReset,
   totalAvailable,
   totalFiltered,
-  onCreateListFromFilter
+  onCreateListFromFilter,
+  onSelectDirectQuestion
 }) => {
   const { accentConfig } = useTheme();
+
+  // Sub-abas no topo dos filtros (Filtrar questões | Encontrar questão)
+  const [filterSubTab, setFilterSubTab] = useState<'filtrar' | 'encontrar'>('filtrar');
+  const [directSearchText, setDirectSearchText] = useState<string>('');
+  const [directSearchMode, setDirectSearchMode] = useState<'questao' | 'palavras'>('questao');
+  const [directSearchResults, setDirectSearchResults] = useState<typeof mockQuestions>([]);
+  const [hasSearchedDirect, setHasSearchedDirect] = useState<boolean>(false);
+
+  // Executa busca direta de questão por texto ou termos
+  const handleSearchDirect = () => {
+    setHasSearchedDirect(true);
+    const query = directSearchText.trim();
+    if (!query) {
+      setDirectSearchResults([]);
+      return;
+    }
+
+    const normQuery = normalizeText(query);
+    const queryWords = normQuery
+      .split(/[\s,.;:!?\n\r\(\)]+/)
+      .filter(
+        (w) =>
+          w.length >= 3 &&
+          !['com', 'para', 'uma', 'por', 'sobre', 'que', 'dos', 'das', 'nas', 'nos', 'tem', 'foi', 'qual', 'como', 'mais'].includes(w)
+      );
+
+    const matched = mockQuestions.filter((q) => {
+      const normStatement = normalizeText(q.statement);
+      const normCode = normalizeText(q.code);
+      const normInst = normalizeText(q.institution || '');
+      const normBanca = normalizeText(q.banca || '');
+
+      // Substring direta em enunciado ou código
+      if (normStatement.includes(normQuery) || normCode.includes(normQuery)) {
+        return true;
+      }
+
+      // Substring em opções
+      const matchesOption = q.options.some((opt) => normalizeText(opt.text).includes(normQuery));
+      if (matchesOption) return true;
+
+      // Palavras-chave clínicas relevantes
+      if (queryWords.length > 0) {
+        const matchingWordCount = queryWords.filter(
+          (w) => normStatement.includes(w) || normInst.includes(w) || normBanca.includes(w)
+        ).length;
+        if (matchingWordCount >= Math.min(2, queryWords.length)) {
+          return true;
+        }
+      }
+
+      return false;
+    });
+
+    setDirectSearchResults(matched);
+  };
 
   // Estados de acordeões abertos
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
@@ -353,7 +417,230 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     filters.subfocos.length;
 
   return (
-    <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-5 sm:p-7 shadow-xs space-y-4">
+    <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-5 sm:p-7 shadow-xs space-y-5">
+      {/* 1. Header estilo Plataforma (Imagem 3) com 3 Sub-abas */}
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800/80 pb-4">
+        <div className="flex items-center gap-3">
+          <div
+            className="w-10 h-10 rounded-2xl flex items-center justify-center shadow-xs shrink-0"
+            style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
+          >
+            <BookOpenCheck className="w-5 h-5" />
+          </div>
+          <div>
+            <h2 className="font-heading text-base sm:text-lg font-black text-slate-900 dark:text-white">
+              Banco de Questões e Pesquisa
+            </h2>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              Treine por especialidade e tema ou encontre uma questão específica pelo enunciado.
+            </p>
+          </div>
+        </div>
+
+        {/* 2 Sub-abas: Filtrar questões | Encontrar questão */}
+        <div className="flex items-center p-1 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-bold shadow-xs">
+          <button
+            type="button"
+            onClick={() => setFilterSubTab('filtrar')}
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl transition-all cursor-pointer ${
+              filterSubTab === 'filtrar'
+                ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-black'
+                : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'
+            }`}
+          >
+            <SlidersHorizontal className="w-3.5 h-3.5" />
+            <span>Filtrar questões</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setFilterSubTab('encontrar')}
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl transition-all cursor-pointer ${
+              filterSubTab === 'encontrar'
+                ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-black'
+                : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'
+            }`}
+          >
+            <Search className="w-3.5 h-3.5" />
+            <span>Encontrar questão</span>
+          </button>
+        </div>
+      </div>
+
+      {/* SUB-ABA 2: ENCONTRAR QUESTÃO DIRETAMENTE (ESTRUTURA DA IMAGEM 3) */}
+      {filterSubTab === 'encontrar' && (
+        <div className="space-y-4 pt-1 animate-in fade-in duration-200">
+          <div className="flex items-center gap-3 pb-2">
+            <div className="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+              <Search className="w-4.5 h-4.5" />
+            </div>
+            <div>
+              <h3 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-white">
+                Encontrar questão
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Cole o enunciado ou pesquise por termos clínicos para localizar a questão exata.
+              </p>
+            </div>
+          </div>
+
+          {/* Banner de Escopo Completo */}
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div className="flex items-center gap-2.5">
+              <div className="w-7 h-7 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0">
+                <Target className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="font-extrabold text-[10px] uppercase tracking-wider text-slate-400 block">ESCOPO</span>
+                <span className="font-bold text-slate-800 dark:text-slate-200">Banco completo</span>
+                <span className="text-slate-500 dark:text-slate-400"> — Pesquise em todo o acervo ou filtre por termos clínicos.</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Modos: Tenho a questão vs Palavras-chave */}
+          <div className="flex items-center gap-2 text-xs">
+            <button
+              type="button"
+              onClick={() => setDirectSearchMode('questao')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border transition-all cursor-pointer font-bold ${
+                directSearchMode === 'questao'
+                  ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-500 text-blue-700 dark:text-blue-300 shadow-xs'
+                  : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900'
+              }`}
+            >
+              <FileText className="w-3.5 h-3.5" />
+              <span>Tenho a questão</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setDirectSearchMode('palavras')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border transition-all cursor-pointer font-bold ${
+                directSearchMode === 'palavras'
+                  ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-500 text-blue-700 dark:text-blue-300 shadow-xs'
+                  : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900'
+              }`}
+            >
+              <Key className="w-3.5 h-3.5" />
+              <span>Palavras-chave</span>
+            </button>
+          </div>
+
+          {/* Caixa de Entrada: Questão 1 (Textarea com enunciado como na Imagem 3) */}
+          <div className="space-y-2 p-4 rounded-2xl bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800 shadow-xs">
+            <div className="flex items-center justify-between text-xs">
+              <label htmlFor="direct-search-input" className="font-extrabold text-slate-800 dark:text-slate-200">
+                {directSearchMode === 'questao' ? 'Questão 1: Cole o enunciado e as alternativas' : 'Termos Clínicos e Palavras-chave'}
+              </label>
+              <span className="text-[11px] text-slate-400">
+                {directSearchMode === 'questao' ? 'Cole trecho do enunciado ou alternativas' : 'Ex: apendicite, laparoscopia, refluxo'}
+              </span>
+            </div>
+
+            <textarea
+              id="direct-search-input"
+              rows={5}
+              value={directSearchText}
+              onChange={(e) => setDirectSearchText(e.target.value)}
+              placeholder={
+                directSearchMode === 'questao'
+                  ? 'Ex.: Mulher de 58 anos, com dor abdominal aguda em fossa ilíaca direita...\nA) Apendicite aguda\nB) Diverticulite de Meckel...'
+                  : 'Digite termos clínicos, nomes de exames, medicamentos, síndromes ou doenças...'
+              }
+              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white rounded-xl p-3.5 focus:outline-none focus:ring-2 focus:ring-blue-500 font-sans leading-relaxed"
+            />
+
+            <div className="flex items-center justify-between pt-2">
+              {directSearchText ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setDirectSearchText('');
+                    setDirectSearchResults([]);
+                    setHasSearchedDirect(false);
+                  }}
+                  className="text-xs text-rose-500 hover:underline cursor-pointer"
+                >
+                  Limpar texto
+                </button>
+              ) : <div />}
+
+              <button
+                type="button"
+                onClick={handleSearchDirect}
+                disabled={!directSearchText.trim()}
+                className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-extrabold text-white shadow-md transition-all cursor-pointer hover:scale-102 disabled:opacity-40 disabled:cursor-not-allowed"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                <Search className="w-3.5 h-3.5" />
+                <span>Buscar questões</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Lista de Resultados Encontrados */}
+          {hasSearchedDirect && (
+            <div className="space-y-3 pt-2">
+              <div className="flex items-center justify-between text-xs">
+                <span className="font-bold text-slate-700 dark:text-slate-300">
+                  {directSearchResults.length === 1
+                    ? '1 questão encontrada:'
+                    : `${directSearchResults.length} questões encontradas:`}
+                </span>
+              </div>
+
+              {directSearchResults.length > 0 ? (
+                <div className="space-y-3">
+                  {directSearchResults.map((q) => (
+                    <div
+                      key={q.id}
+                      className="p-4 rounded-2xl bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all shadow-xs space-y-3"
+                    >
+                      <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono font-bold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-900 border text-slate-700 dark:text-slate-300 text-[11px]">
+                            {q.code}
+                          </span>
+                          <span className="font-semibold text-slate-600 dark:text-slate-400">
+                            {q.institution} • {q.year}
+                          </span>
+                          <span className="px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-bold text-[11px]">
+                            {q.especialidade}
+                          </span>
+                        </div>
+
+                        <button
+                          type="button"
+                          onClick={() => onSelectDirectQuestion?.(q.id)}
+                          className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-xs transition-transform hover:scale-105 cursor-pointer ml-auto"
+                          style={{ backgroundColor: accentConfig.primaryHex }}
+                        >
+                          <span>Resolver esta questão</span>
+                          <ArrowRight className="w-3 h-3" />
+                        </button>
+                      </div>
+
+                      <p className="text-xs text-slate-800 dark:text-slate-200 line-clamp-3 leading-relaxed">
+                        {q.statement}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-8 rounded-2xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 p-4">
+                  Nenhuma questão encontrada com o texto inserido. Experimente buscar por termos clínicos específicos.
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+
+
+      {/* SUB-ABA 1: FILTRAR QUESTÕES (FILTROS COMPLETOS EXISTENTES) */}
+      {filterSubTab === 'filtrar' && (
+        <div className="space-y-4">
       {/* Topo: Busca Textual + Contadores + Limpar + Criar Lista */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800/80 pb-4">
         <div>
@@ -932,27 +1219,33 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="p-4 pt-1 border-t border-slate-200 dark:border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
               {medevoModalidades.map((mod) => {
                 const isSelected = filters.modalidades.includes(mod);
+                const countForMod = mockQuestions.filter((q) => matchesStudyModalidades(q, [mod])).length;
                 return (
                   <button
                     key={mod}
                     type="button"
                     onClick={() => toggleModalidade(mod)}
-                    className={`flex items-center gap-2 p-2.5 rounded-xl text-xs font-medium text-left transition-colors cursor-pointer border ${
+                    className={`flex items-center justify-between p-2.5 rounded-xl text-xs font-medium text-left transition-colors cursor-pointer border ${
                       isSelected
                         ? 'bg-blue-50 dark:bg-blue-950/50 border-blue-500 text-blue-700 dark:text-blue-200 font-bold shadow-xs'
                         : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
                     }`}
                   >
-                    <div
-                      className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 transition-colors ${
-                        isSelected
-                          ? 'bg-blue-600 border-blue-600 text-white'
-                          : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
-                      }`}
-                    >
-                      {isSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                    <div className="flex items-center gap-2 min-w-0">
+                      <div
+                        className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 transition-colors ${
+                          isSelected
+                            ? 'bg-blue-600 border-blue-600 text-white'
+                            : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
+                        }`}
+                      >
+                        {isSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                      </div>
+                      <span className="truncate">{mod}</span>
                     </div>
-                    <span className="truncate">{mod}</span>
+                    <span className="text-[10px] font-mono font-bold text-slate-400 dark:text-slate-500 shrink-0 ml-1">
+                      {countForMod}
+                    </span>
                   </button>
                 );
               })}
@@ -1250,6 +1543,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           )}
         </div>
       </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -16,13 +16,17 @@ import {
   LogOut,
   Phone,
   Trash2,
-  Save
+  Save,
+  Palette
 } from 'lucide-react';
+import { PercentileColorTester } from './PercentileColorTester';
 
 interface StudentProfileSettingsProps {
   fontSize: 'sm' | 'base' | 'lg';
   onChangeFontSize: (size: 'sm' | 'base' | 'lg') => void;
   onLogout: () => void;
+  simulatedPercentile?: number;
+  onSimulatePercentile?: (percentile: number) => void;
 }
 
 // Avatares médicos pré-configurados
@@ -37,13 +41,15 @@ const PRESET_AVATARS = [
 export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   fontSize,
   onChangeFontSize,
-  onLogout
+  onLogout,
+  simulatedPercentile,
+  onSimulatePercentile
 }) => {
   const { user, updateProfile, updatePassword, updateAvatar } = useAuth();
   const { accentConfig } = useTheme();
 
   // Abas de Configurações
-  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study'>('profile');
+  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'percentile'>('profile');
 
   // Estado dos campos de Perfil
   const [name, setName] = useState(user?.name || '');
@@ -294,6 +300,22 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
         >
           <Target className="w-3.5 h-3.5" />
           <span>Metas & Estudo</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => {
+            setActiveTab('percentile');
+            clearStatus();
+          }}
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+            activeTab === 'percentile'
+              ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+          }`}
+        >
+          <Palette className="w-3.5 h-3.5 text-amber-500" />
+          <span>Cores do Percentil</span>
         </button>
       </div>
 
@@ -712,6 +734,32 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* ================= ABA 4: AJUSTES DE PERCENTIL & TESTE DE CORES ================= */}
+      {activeTab === 'percentile' && (
+        <div className="space-y-6">
+          <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 sm:p-7 rounded-3xl shadow-xs space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center">
+                <Palette className="w-5 h-5" />
+              </div>
+              <div>
+                <h2 className="text-sm font-extrabold text-slate-900 dark:text-white">
+                  Ajustes e Simulação de Cores do Percentil
+                </h2>
+                <p className="text-xs text-slate-500 dark:text-slate-400">
+                  Configure e visualize como as diferentes faixas de percentil homologado são exibidas na plataforma
+                </p>
+              </div>
+            </div>
+
+            <PercentileColorTester
+              currentPercentile={simulatedPercentile ?? 78}
+              onSelectTestPercentile={onSimulatePercentile}
+            />
           </div>
         </div>
       )}

@@ -46,8 +46,8 @@ export interface PercentileTier {
 
 /**
  * Cores e Tiers de Percentil:
- * - 0 a 30: #603027 (Bronze Escuro)
- * - 30 a 50: #CE8946 (Cobre / Bronze)
+ * - 0 a 30: #603027 (Bronze)
+ * - 30 a 50: #CE8946 (Cobre)
  * - 50 a 70: #94A3B8 (Prata) - Alto contraste no modo claro garantido com #334155!
  * - 70 a 85: #EAB308 (Ouro)
  * - 85 a 90: #10B981 (Esmeralda)
@@ -59,7 +59,7 @@ export const PERCENTILE_TIERS: PercentileTier[] = [
     min: 0,
     max: 30,
     color: '#603027',
-    name: 'Bronze Escuro',
+    name: 'Bronze',
     rangeLabel: '0 - 30',
     bgRgba: 'rgba(96, 48, 39, 0.16)',
     borderRgba: 'rgba(96, 48, 39, 0.55)',
@@ -72,7 +72,7 @@ export const PERCENTILE_TIERS: PercentileTier[] = [
     min: 30,
     max: 50,
     color: '#CE8946',
-    name: 'Cobre / Bronze',
+    name: 'Cobre',
     rangeLabel: '30 - 50',
     bgRgba: 'rgba(206, 137, 70, 0.16)',
     borderRgba: 'rgba(206, 137, 70, 0.55)',

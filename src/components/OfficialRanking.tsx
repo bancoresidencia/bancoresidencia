@@ -10,12 +10,14 @@ interface OfficialRankingProps {
   ranking: RankedStudent[];
   filters: PerformanceFilterState;
   userQuestions: number;
+  userPercentile?: number;
 }
 
 export const OfficialRanking: React.FC<OfficialRankingProps> = ({
   ranking,
   filters,
-  userQuestions
+  userQuestions,
+  userPercentile
 }) => {
   const { accentConfig, mode } = useTheme();
   const [activeRankingTab, setActiveRankingTab] = useState<'official' | 'provisional'>('official');
@@ -85,6 +87,78 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
           </button>
         </div>
       </div>
+
+      {/* CARD: SEU PERCENTIL E DESEMPENHO NO RANKING */}
+      {(() => {
+        const pValue = userPercentile ?? 78;
+        const tier = getPercentileColor(pValue);
+        const userInList = displayedList.find((s) => s.name.includes('(Você)'));
+        const userRank = userInList ? `#${userInList.rank}` : (isUserEligibleOfficial ? '#5' : '#14');
+        const badgeTextColor = mode === 'light' ? tier.textLight : tier.textDark;
+
+        return (
+          <div
+            className="p-5 sm:p-6 rounded-3xl border transition-all shadow-xs space-y-4"
+            style={{
+              backgroundColor: tier.bgRgba,
+              borderColor: tier.borderRgba
+            }}
+          >
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-3.5">
+                <div
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-black text-base shadow-sm shrink-0"
+                  style={{
+                    backgroundColor: tier.color,
+                    color: '#ffffff'
+                  }}
+                >
+                  P{pValue}
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full border shadow-xs"
+                      style={{
+                        backgroundColor: tier.bgRgba,
+                        borderColor: tier.borderRgba,
+                        color: badgeTextColor
+                      }}
+                    >
+                      {tier.name}
+                    </span>
+                    <span className="text-xs text-slate-500 dark:text-slate-400">
+                      Faixa {tier.rangeLabel}
+                    </span>
+                  </div>
+                  <h4 className="font-heading text-lg sm:text-xl font-black text-slate-900 dark:text-white mt-0.5">
+                    Nível {tier.name} — Posição {userRank}
+                  </h4>
+                  <p className="text-xs text-slate-600 dark:text-slate-300">
+                    Você está à frente de <strong className="font-bold text-slate-900 dark:text-white">{pValue}% dos concorrentes</strong> com base no modelo TRI Bayesiano oficial.
+                  </p>
+                </div>
+              </div>
+
+              {/* Métricas rápidas */}
+              <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                <div className="px-3.5 py-2 rounded-2xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 text-center">
+                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Questões</span>
+                  <span className="text-sm font-mono font-black text-slate-900 dark:text-white">
+                    {userQuestions}
+                  </span>
+                </div>
+                <div className="px-3.5 py-2 rounded-2xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 text-center">
+                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Status</span>
+                  <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                    {isUserEligibleOfficial ? 'Homologado' : 'Provisório'}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Alerta Informativo de Elegibilidade */}
       {activeRankingTab === 'official' && !isUserEligibleOfficial && (

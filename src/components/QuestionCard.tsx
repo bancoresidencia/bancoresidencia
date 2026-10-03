@@ -14,7 +14,9 @@ import {
   Eraser,
   Strikethrough,
   Send,
-  HelpCircle
+  HelpCircle,
+  Eye,
+  EyeOff
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -56,13 +58,58 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   // Estados de Marcador de Texto (Highlight)
   const [highlights, setHighlights] = useState<TextHighlight[]>([]);
   const [activeHighlighterColor, setActiveHighlighterColor] = useState<'yellow' | 'green' | 'pink'>('yellow');
-  const [floatingSelection, setFloatingSelection] = useState<{
-    text: string;
-    x: number;
-    y: number;
-  } | null>(null);
 
   const statementRef = useRef<HTMLDivElement>(null);
+
+  // Estados de visibilidade dos detalhes da questão (Nível, Banca/Prova, Tema e Especialidade)
+  const [detailsVisibility, setDetailsVisibility] = useState<{
+    exam: boolean; // Instituição, Ano, Tipo de Prova
+    specialty: boolean; // Especialidade
+    difficulty: boolean; // Nível / Dificuldade
+    theme: boolean; // Tema, Foco, Subfoco
+  }>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('medevo_question_details_visibility');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch {}
+      }
+    }
+    return { exam: true, specialty: true, difficulty: true, theme: true };
+  });
+
+  const [isVisibilityMenuOpen, setIsVisibilityMenuOpen] = useState(false);
+
+  const updateVisibility = (key: 'exam' | 'specialty' | 'difficulty' | 'theme', value: boolean) => {
+    setDetailsVisibility((prev) => {
+      const next = { ...prev, [key]: value };
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('medevo_question_details_visibility', JSON.stringify(next));
+      }
+      return next;
+    });
+  };
+
+  const allDetailsHidden =
+    !detailsVisibility.exam &&
+    !detailsVisibility.specialty &&
+    !detailsVisibility.difficulty &&
+    !detailsVisibility.theme;
+
+  const toggleAllDetails = () => {
+    const nextVal = allDetailsHidden;
+    const next = {
+      exam: nextVal,
+      specialty: nextVal,
+      difficulty: nextVal,
+      theme: nextVal
+    };
+    setDetailsVisibility(next);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('medevo_question_details_visibility', JSON.stringify(next));
+    }
+  };
 
   // Sincroniza estado de forma limpa durante a renderização quando a questão ou a resposta mudam
   const currentKey = `${question.id}-${userAnswer || ''}`;
@@ -76,29 +123,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setHighlights([]);
   }
 
-  // Captura seleção de texto dentro do enunciado para destacar
+  // Captura seleção de texto dentro do enunciado e destaca automaticamente com a cor ativa
   const handleStatementMouseUp = () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) {
-      setFloatingSelection(null);
       return;
     }
 
     const selectedText = selection.toString().trim();
     if (selectedText.length >= 2) {
-      // Posição para o menu flutuante de marca-texto
-      const rect = selection.getRangeAt(0).getBoundingClientRect();
-      const containerRect = statementRef.current?.getBoundingClientRect();
-
-      if (containerRect) {
-        setFloatingSelection({
-          text: selectedText,
-          x: Math.max(10, rect.left - containerRect.left + rect.width / 2 - 80),
-          y: Math.max(0, rect.top - containerRect.top - 42)
-        });
-      }
-    } else {
-      setFloatingSelection(null);
+      addHighlight(selectedText, activeHighlighterColor);
     }
   };
 
@@ -114,7 +148,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       };
       setHighlights((prev) => [...prev, newHighlight]);
     }
-    setFloatingSelection(null);
     window.getSelection()?.removeAllRanges();
   };
 
@@ -124,7 +157,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   const clearAllHighlights = () => {
     setHighlights([]);
-    setFloatingSelection(null);
   };
 
   // Alterna o corte/risco de uma alternativa (eliminar distrator)
@@ -209,17 +241,17 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           if (matchedHl) {
             const colorClasses =
               matchedHl.color === 'yellow'
-                ? 'bg-amber-200/90 dark:bg-amber-400/35 text-slate-950 dark:text-amber-100 border-b-2 border-amber-400'
+                ? 'bg-amber-300 dark:bg-amber-400 text-black dark:text-black font-semibold border-b-2 border-amber-500'
                 : matchedHl.color === 'green'
-                ? 'bg-emerald-200/90 dark:bg-emerald-400/35 text-slate-950 dark:text-emerald-100 border-b-2 border-emerald-400'
-                : 'bg-pink-200/90 dark:bg-pink-400/35 text-slate-950 dark:text-pink-100 border-b-2 border-pink-400';
+                ? 'bg-emerald-300 dark:bg-emerald-400 text-black dark:text-black font-semibold border-b-2 border-emerald-500'
+                : 'bg-pink-300 dark:bg-pink-400 text-black dark:text-black font-semibold border-b-2 border-pink-500';
 
             return (
               <mark
                 key={i}
                 onClick={() => removeHighlight(matchedHl.id)}
                 title="Clique para remover este destaque"
-                className={`cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-75 font-medium ${colorClasses}`}
+                className={`cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-85 ${colorClasses}`}
               >
                 {part}
               </mark>
@@ -238,35 +270,137 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       {/* Header com Badges Médicos & Ferramentas da Questão */}
       <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100 dark:border-slate-800/80">
         <div className="flex flex-wrap items-center gap-2">
-          {/* Instituição & Ano */}
-          <span className="text-xs font-bold px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 flex items-center gap-1.5 shadow-xs">
-            <Building className="w-3.5 h-3.5 text-blue-500" />
-            <span>{question.institution}</span>
-            <span className="text-slate-400">•</span>
-            <span>{question.year}</span>
-          </span>
+          {/* Botão de Controle de Visibilidade de Detalhes (Banca, Nível, Prova, Tema) */}
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setIsVisibilityMenuOpen(!isVisibilityMenuOpen)}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
+                allDetailsHidden
+                  ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-300 dark:border-amber-700/60 text-amber-800 dark:text-amber-300'
+                  : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+              }`}
+              title="Personalizar visibilidade de Banca, Nível, Prova e Tema"
+            >
+              {allDetailsHidden ? (
+                <EyeOff className="w-3.5 h-3.5 text-amber-500" />
+              ) : (
+                <Eye className="w-3.5 h-3.5 text-blue-500" />
+              )}
+              <span>{allDetailsHidden ? 'Detalhes Ocultos' : 'Detalhes'}</span>
+              <ChevronDown className="w-3 h-3 text-slate-400" />
+            </button>
 
-          {/* Especialidade */}
-          <span className="text-xs font-bold px-3 py-1 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60 shadow-xs">
-            {question.especialidade || question.specialty}
-          </span>
+            {/* Menu Popover com Opções Individuais e Master Toggle */}
+            {isVisibilityMenuOpen && (
+              <>
+                <div
+                  className="fixed inset-0 z-20 cursor-default"
+                  onClick={() => setIsVisibilityMenuOpen(false)}
+                />
+                <div className="absolute left-0 top-full mt-2 w-64 p-3.5 bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl z-30 space-y-2.5 animate-in fade-in duration-150">
+                  <div className="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-800">
+                    <span className="text-[10px] font-black text-slate-800 dark:text-slate-200 uppercase tracking-wider">
+                      Exibição na Questão
+                    </span>
+                    <button
+                      type="button"
+                      onClick={toggleAllDetails}
+                      className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                    >
+                      {allDetailsHidden ? 'Mostrar todos' : 'Ocultar todos'}
+                    </button>
+                  </div>
 
-          {/* Dificuldade */}
-          <span
-            className={`text-xs font-semibold px-2.5 py-1 rounded-xl border shadow-xs ${
-              question.difficulty === 'Fácil'
-                ? 'bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/50'
-                : question.difficulty === 'Médio'
-                ? 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800/50'
-                : 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800/50'
-            }`}
-          >
-            {question.difficulty}
-          </span>
+                  <div className="space-y-1.5 text-xs">
+                    {/* Toggle Nível / Dificuldade */}
+                    <label className="flex items-center justify-between p-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/60 cursor-pointer">
+                      <span className="font-medium text-slate-700 dark:text-slate-300">Nível (Dificuldade)</span>
+                      <input
+                        type="checkbox"
+                        checked={detailsVisibility.difficulty}
+                        onChange={(e) => updateVisibility('difficulty', e.target.checked)}
+                        className="rounded accent-blue-600 w-3.5 h-3.5 cursor-pointer"
+                      />
+                    </label>
 
-          {question.tipoProva && (
+                    {/* Toggle Instituição e Prova */}
+                    <label className="flex items-center justify-between p-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/60 cursor-pointer">
+                      <span className="font-medium text-slate-700 dark:text-slate-300">Instituição e Prova</span>
+                      <input
+                        type="checkbox"
+                        checked={detailsVisibility.exam}
+                        onChange={(e) => updateVisibility('exam', e.target.checked)}
+                        className="rounded accent-blue-600 w-3.5 h-3.5 cursor-pointer"
+                      />
+                    </label>
+
+                    {/* Toggle Especialidade */}
+                    <label className="flex items-center justify-between p-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/60 cursor-pointer">
+                      <span className="font-medium text-slate-700 dark:text-slate-300">Especialidade</span>
+                      <input
+                        type="checkbox"
+                        checked={detailsVisibility.specialty}
+                        onChange={(e) => updateVisibility('specialty', e.target.checked)}
+                        className="rounded accent-blue-600 w-3.5 h-3.5 cursor-pointer"
+                      />
+                    </label>
+
+                    {/* Toggle Tema e Foco */}
+                    <label className="flex items-center justify-between p-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/60 cursor-pointer">
+                      <span className="font-medium text-slate-700 dark:text-slate-300">Tema e Foco Clínico</span>
+                      <input
+                        type="checkbox"
+                        checked={detailsVisibility.theme}
+                        onChange={(e) => updateVisibility('theme', e.target.checked)}
+                        className="rounded accent-blue-600 w-3.5 h-3.5 cursor-pointer"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Badges Condicionais de Detalhes */}
+          {detailsVisibility.exam && (
+            <span className="text-xs font-bold px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 flex items-center gap-1.5 shadow-xs">
+              <Building className="w-3.5 h-3.5 text-blue-500" />
+              <span>{question.institution}</span>
+              <span className="text-slate-400">•</span>
+              <span>{question.year}</span>
+            </span>
+          )}
+
+          {detailsVisibility.specialty && (
+            <span className="text-xs font-bold px-3 py-1 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60 shadow-xs">
+              {question.especialidade || question.specialty}
+            </span>
+          )}
+
+          {detailsVisibility.difficulty && (
+            <span
+              className={`text-xs font-semibold px-2.5 py-1 rounded-xl border shadow-xs ${
+                question.difficulty === 'Fácil'
+                  ? 'bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/50'
+                  : question.difficulty === 'Médio'
+                  ? 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800/50'
+                  : 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800/50'
+              }`}
+            >
+              {question.difficulty}
+            </span>
+          )}
+
+          {detailsVisibility.exam && question.tipoProva && (
             <span className="text-xs px-2.5 py-1 rounded-xl bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 font-medium border border-slate-200 dark:border-slate-800">
               {question.tipoProva}
+            </span>
+          )}
+
+          {allDetailsHidden && (
+            <span className="text-xs italic text-slate-400 dark:text-slate-500 py-1">
+              (Modo Prova Cega ativo — dados de banca, nível e tema ocultados)
             </span>
           )}
         </div>
@@ -371,31 +505,45 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         </div>
       </div>
 
-      {/* Tema, Foco e Subfoco Clínico */}
+      {/* Tema, Foco e Subfoco Clínico (Ocultável conforme preferência do usuário) */}
       {(question.subtheme || question.tema) && (
-        <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
-          <Layers className="w-3.5 h-3.5 text-blue-500" />
-          <span className="font-semibold">Tema:</span>
-          <span className="text-slate-900 dark:text-slate-200 font-bold">
-            {question.subtheme || question.tema}
-          </span>
-          {question.foco && (
-            <>
-              <span className="text-slate-300 dark:text-slate-700">•</span>
-              <span className="text-purple-600 dark:text-purple-400 font-medium">
-                {question.foco}
-              </span>
-            </>
-          )}
-          {question.subfoco && (
-            <>
-              <span className="text-slate-300 dark:text-slate-700">•</span>
-              <span className="text-slate-600 dark:text-slate-400 italic">
-                {question.subfoco}
-              </span>
-            </>
-          )}
-        </div>
+        detailsVisibility.theme ? (
+          <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
+            <Layers className="w-3.5 h-3.5 text-blue-500" />
+            <span className="font-semibold">Tema:</span>
+            <span className="text-slate-900 dark:text-slate-200 font-bold">
+              {question.subtheme || question.tema}
+            </span>
+            {question.foco && (
+              <>
+                <span className="text-slate-300 dark:text-slate-700">•</span>
+                <span className="text-purple-600 dark:text-purple-400 font-medium">
+                  {question.foco}
+                </span>
+              </>
+            )}
+            {question.subfoco && (
+              <>
+                <span className="text-slate-300 dark:text-slate-700">•</span>
+                <span className="text-slate-600 dark:text-slate-400 italic">
+                  {question.subfoco}
+                </span>
+              </>
+            )}
+          </div>
+        ) : (
+          <div className="flex items-center gap-2 text-xs text-slate-400 italic">
+            <EyeOff className="w-3 h-3 text-slate-400 shrink-0" />
+            <span>Tema clínico ocultado (Modo Prova)</span>
+            <button
+              type="button"
+              onClick={() => updateVisibility('theme', true)}
+              className="text-blue-600 dark:text-blue-400 hover:underline font-bold not-italic cursor-pointer ml-1"
+            >
+              Revelar
+            </button>
+          </div>
+        )
       )}
 
       {/* Enunciado Clínico com Marcador de Texto Ativo */}
@@ -404,59 +552,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           ref={statementRef}
           onMouseUp={handleStatementMouseUp}
           onTouchEnd={handleStatementMouseUp}
-          className={`${statementSizeClass} text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line tracking-tight select-text selection:bg-amber-200 dark:selection:bg-amber-500/40`}
+          className={`${statementSizeClass} text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line tracking-tight select-text selection:bg-amber-300 selection:text-black dark:selection:bg-amber-400 dark:selection:text-black`}
         >
           {renderHighlightedStatement(question.statement)}
         </div>
-
-        {/* Toolbar Flutuante de Highlight ao Selecionar Texto */}
-        {floatingSelection && (
-          <div
-            style={{
-              position: 'absolute',
-              left: `${floatingSelection.x}px`,
-              top: `${floatingSelection.y}px`
-            }}
-            className="z-30 flex items-center gap-1.5 bg-slate-900 text-white px-2.5 py-1.5 rounded-xl shadow-xl border border-slate-700 text-xs animate-in fade-in zoom-in-95 duration-150"
-          >
-            <span className="text-[10px] font-bold text-slate-300 pr-1 flex items-center gap-1">
-              <Highlighter className="w-3 h-3 text-amber-400" />
-              Destacar:
-            </span>
-            <button
-              type="button"
-              onClick={() => addHighlight(floatingSelection.text, 'yellow')}
-              className="w-5 h-5 rounded-md bg-amber-300 hover:bg-amber-200 text-slate-950 font-bold flex items-center justify-center text-[10px] transition-transform hover:scale-110 cursor-pointer shadow-xs"
-              title="Destacar Amarelo"
-            >
-              A
-            </button>
-            <button
-              type="button"
-              onClick={() => addHighlight(floatingSelection.text, 'green')}
-              className="w-5 h-5 rounded-md bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold flex items-center justify-center text-[10px] transition-transform hover:scale-110 cursor-pointer shadow-xs"
-              title="Destacar Verde"
-            >
-              V
-            </button>
-            <button
-              type="button"
-              onClick={() => addHighlight(floatingSelection.text, 'pink')}
-              className="w-5 h-5 rounded-md bg-pink-400 hover:bg-pink-300 text-slate-950 font-bold flex items-center justify-center text-[10px] transition-transform hover:scale-110 cursor-pointer shadow-xs"
-              title="Destacar Rosa"
-            >
-              R
-            </button>
-            <button
-              type="button"
-              onClick={() => setFloatingSelection(null)}
-              className="text-slate-400 hover:text-white text-xs pl-1 cursor-pointer"
-              title="Fechar"
-            >
-              ✕
-            </button>
-          </div>
-        )}
       </div>
 
       {/* Imagens Anexadas */}
@@ -630,7 +729,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>
-                  {pendingSelected ? `Resolver Questão (Letra ${pendingSelected})` : 'Selecione uma Alternativa'}
+                  {pendingSelected ? 'Resolver Questão' : 'Selecione uma Alternativa'}
                 </span>
               </button>
             </div>
