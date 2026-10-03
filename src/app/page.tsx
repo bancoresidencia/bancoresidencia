@@ -59,7 +59,23 @@ export default function Home() {
   const { user, isAuthenticated, isLoading, logout } = useAuth();
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bancoresidencia_sidebar_collapsed');
+      if (saved !== null) return saved === 'true';
+    }
+    return true; // Padrão: recolhido (apenas ícones), com expansão para nomes
+  });
+
+  const handleToggleSidebar = () => {
+    setSidebarCollapsed((prev) => {
+      const next = !prev;
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_sidebar_collapsed', String(next));
+      }
+      return next;
+    });
+  };
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
   const profileRef = useRef<HTMLDivElement>(null);
 
@@ -75,7 +91,13 @@ export default function Home() {
 
   // Perfil do Aluno e Metas dinâmicas
   const studentName = user?.name || 'Dr. Lucas Rocha';
-  const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
+  const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bancoresidencia_custom_daily_goal');
+      if (saved) return Number(saved);
+    }
+    return null;
+  });
   const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
 
   // Pastas e Listas de Questões
@@ -682,7 +704,7 @@ export default function Home() {
         modalidade={performanceFilters.modalidade}
         streakDays={stats.streakDays}
         isCollapsed={sidebarCollapsed}
-        onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
+        onToggleCollapse={handleToggleSidebar}
       />
 
       {/* Conteúdo Principal à Direita da Sidebar */}
@@ -690,38 +712,16 @@ export default function Home() {
         {/* Barra Superior Mobile e Header Geral com Glassmorphism */}
         <header className="sticky top-0 z-30 bg-white/85 dark:bg-[#070b14]/85 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/80 transition-colors duration-200">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-3">
-            {/* Esquerda: Menu Mobile e Título da Seção (Sem botões extras da Imagem 1) */}
-            <div className="flex items-center gap-3 shrink-0">
+            {/* Botão Mobile para abrir navegação quando em telas pequenas */}
+            <div className="md:hidden flex items-center shrink-0">
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white p-2 rounded-xl border border-slate-200 dark:border-slate-800 cursor-pointer"
+                className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white p-2 rounded-xl border border-slate-200 dark:border-slate-800 cursor-pointer"
                 aria-label="Abrir menu de navegação"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
-
-              <div className="hidden sm:flex items-center gap-2">
-                <span className="font-heading text-sm font-extrabold text-slate-800 dark:text-slate-200 tracking-tight">
-                  {activeTab === 'home' && 'Início'}
-                  {activeTab === 'banco' && 'Banco de Questões'}
-                  {activeTab === 'listas' && 'Cadernos & Pastas'}
-                  {activeTab === 'simulados' && 'Simulados Oficiais'}
-                  {activeTab === 'stats' && 'Meu Desempenho'}
-                  {activeTab === 'ranking' && 'Ranking Oficial'}
-                  {activeTab === 'configuracoes' && 'Perfil & Ajustes'}
-                </span>
-                <span
-                  className="text-[10px] font-bold px-2 py-0.5 rounded-full border hidden md:inline-block"
-                  style={{
-                    backgroundColor: accentConfig.bgRgba,
-                    borderColor: accentConfig.borderRgba,
-                    color: accentConfig.primaryHex
-                  }}
-                >
-                  {performanceFilters.modalidade}
-                </span>
-              </div>
             </div>
 
             {/* Barra de Pesquisa Geral no Topo */}
@@ -904,7 +904,12 @@ export default function Home() {
               studentName={studentName}
               stats={stats}
               dailyGoal={dailyGoal}
-              onUpdateDailyGoal={(goal) => setCustomDailyGoal(goal)}
+              onUpdateDailyGoal={(goal) => {
+                setCustomDailyGoal(goal);
+                if (typeof window !== 'undefined') {
+                  localStorage.setItem('bancoresidencia_custom_daily_goal', String(goal));
+                }
+              }}
               recentList={recentList}
               allLists={lists}
               onNavigate={setActiveTab}
@@ -1112,7 +1117,7 @@ export default function Home() {
                           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
                             <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-1">
                               <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 block">Total de Questões</span>
-                              <span className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white">
+                              <span className="text-2xl sm:text-3xl font-black font-sans text-slate-900 dark:text-white">
                                 {sessionQuestions.length}
                               </span>
                               <span className="text-[10px] text-slate-400 block">no lote selecionado</span>
@@ -1120,7 +1125,7 @@ export default function Home() {
 
                             <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-1">
                               <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 block">Respondidas</span>
-                              <span className="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white">
+                              <span className="text-2xl sm:text-3xl font-black font-sans text-slate-900 dark:text-white">
                                 {answeredCount}
                               </span>
                               <span className="text-[10px] text-slate-400 block">
@@ -1133,10 +1138,10 @@ export default function Home() {
                                 <CheckCircle2 className="w-3.5 h-3.5" /> Acertos
                               </span>
                               <div className="flex items-baseline gap-2">
-                                <span className="text-2xl sm:text-3xl font-black font-mono text-emerald-600 dark:text-emerald-400">
+                                <span className="text-2xl sm:text-3xl font-black font-sans text-emerald-600 dark:text-emerald-400">
                                   {correctCount}
                                 </span>
-                                <span className="text-xs font-bold text-emerald-600/80 dark:text-emerald-400/80">
+                                <span className="text-xs font-bold text-emerald-600/80 dark:text-emerald-400/80 font-sans">
                                   ({accuracyRate}%)
                                 </span>
                               </div>
@@ -1148,10 +1153,10 @@ export default function Home() {
                                 <XCircle className="w-3.5 h-3.5" /> Erros
                               </span>
                               <div className="flex items-baseline gap-2">
-                                <span className="text-2xl sm:text-3xl font-black font-mono text-rose-600 dark:text-rose-400">
+                                <span className="text-2xl sm:text-3xl font-black font-sans text-rose-600 dark:text-rose-400">
                                   {incorrectCount}
                                 </span>
-                                <span className="text-xs font-bold text-rose-600/80 dark:text-rose-400/80">
+                                <span className="text-xs font-bold text-rose-600/80 dark:text-rose-400/80 font-sans">
                                   ({answeredCount > 0 ? 100 - accuracyRate : 0}%)
                                 </span>
                               </div>

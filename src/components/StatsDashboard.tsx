@@ -24,7 +24,11 @@ import {
   Search,
   BookOpen,
   ArrowRight,
-  Filter
+  Filter,
+  AlertTriangle,
+  AlertCircle,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import { UserStats, PerformanceFilterState, PeriodFilter } from '@/types';
 import { PerformanceFilterBar } from './PerformanceFilterBar';
@@ -138,10 +142,14 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   const [selectedWeekId, setSelectedWeekId] = useState<string>('w-current');
   const [selectedMonthId, setSelectedMonthId] = useState<string>('m-10-2026');
 
-  // Filtros da Análise Profunda de Especialidades/Temas/Focos/Subfocos
+  // Filtros e Ordenação da Análise Profunda de Especialidades/Temas/Focos/Subfocos
   const [selectedSpecialtyTab, setSelectedSpecialtyTab] = useState<string>('Todas');
   const [selectedTemaFilter, setSelectedTemaFilter] = useState<string>('Todos');
   const [hierarchySearch, setHierarchySearch] = useState<string>('');
+  const [hierarchySortBy, setHierarchySortBy] = useState<'errors' | 'accuracy_asc' | 'accuracy_desc' | 'total'>('errors');
+  const [masteryFilter, setMasteryFilter] = useState<'todos' | 'criticos' | 'atencao' | 'dominados'>('todos');
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const itemsPerPage = 12;
 
   // Cálculo das métricas ativas de acordo com a visão selecionada (Rápida, Semana ou Mês)
   const activeMetrics = useMemo(() => {
@@ -205,7 +213,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     return ['Todos', ...found.temas.map((t) => t.tema)];
   }, [selectedSpecialtyTab]);
 
-  // Dados consolidados e detalhados de Focos e Subfocos
+  // Dados consolidados e detalhados de Focos e Subfocos com ordenação pelo que mais errou
   const hierarchyDetailedStats = useMemo(() => {
     interface SubfocoPerformance {
       specialty: string;
@@ -214,9 +222,11 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       subfoco: string;
       total: number;
       correct: number;
+      errors: number;
       accuracy: number;
       dominantDifficulty: 'Fácil' | 'Médio' | 'Difícil';
       masteryStatus: 'Excelente' | 'Bom' | 'Atenção' | 'Crítico';
+      priority: 'Alta' | 'Média' | 'Baixa';
     }
 
     const result: SubfocoPerformance[] = [];
@@ -249,6 +259,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             const subfocoAccuracyRaw = 55 + (baseMultiplier * 3.1) % 43; // entre 55% e 96%
             const subfocoAccuracy = Math.min(97.5, Math.max(42.0, subfocoAccuracyRaw));
             const subfocoCorrect = Math.round((subfocoTotal * subfocoAccuracy) / 100);
+            const subfocoErrors = Math.max(0, subfocoTotal - subfocoCorrect);
 
             let dominantDifficulty: 'Fácil' | 'Médio' | 'Difícil' = 'Médio';
             if (baseMultiplier % 3 === 0) dominantDifficulty = 'Difícil';
@@ -260,6 +271,13 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             else if (subfocoAccuracy >= 50) masteryStatus = 'Atenção';
             else masteryStatus = 'Crítico';
 
+            let priority: 'Alta' | 'Média' | 'Baixa' = 'Baixa';
+            if (masteryStatus === 'Crítico' || subfocoErrors >= 5) {
+              priority = 'Alta';
+            } else if (masteryStatus === 'Atenção' || subfocoErrors >= 3) {
+              priority = 'Média';
+            }
+
             result.push({
               specialty: h.especialidade,
               tema: t.tema,
@@ -267,17 +285,71 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               subfoco: sf,
               total: subfocoTotal,
               correct: subfocoCorrect,
+              errors: subfocoErrors,
               accuracy: subfocoAccuracy,
               dominantDifficulty,
-              masteryStatus
+              masteryStatus,
+              priority
             });
           });
         });
       });
     });
 
-    return result;
-  }, [selectedSpecialtyTab, selectedTemaFilter, hierarchySearch]);
+    // Filtro por Nível de Domínio / Classificação de Rendimento
+    let filtered = result;
+    if (masteryFilter === 'criticos') {
+      filtered = filtered.filter((r) => r.masteryStatus === 'Crítico' || r.accuracy < 60);
+    } else if (masteryFilter === 'atencao') {
+      filtered = filtered.filter((r) => r.masteryStatus === 'Atenção' || (r.accuracy >= 60 && r.accuracy < 75));
+    } else if (masteryFilter === 'dominados') {
+      filtered = filtered.filter((r) => r.accuracy >= 75);
+    }
+
+    // Ordenação com prioridade absoluta para o que mais errou por padrão
+    filtered.sort((a, b) => {
+      if (hierarchySortBy === 'errors') {
+        if (b.errors !== a.errors) return b.errors - a.errors;
+        return a.accuracy - b.accuracy;
+      }
+      if (hierarchySortBy === 'accuracy_asc') {
+        return a.accuracy - b.accuracy;
+      }
+      if (hierarchySortBy === 'accuracy_desc') {
+        return b.accuracy - a.accuracy;
+      }
+      if (hierarchySortBy === 'total') {
+        return b.total - a.total;
+      }
+      return 0;
+    });
+
+    return filtered;
+  }, [selectedSpecialtyTab, selectedTemaFilter, hierarchySearch, masteryFilter, hierarchySortBy]);
+
+  // Resumo diagnóstico dos subfocos filtrados
+  const diagnosticSummary = useMemo(() => {
+    const totalSubfocos = hierarchyDetailedStats.length;
+    const criticalCount = hierarchyDetailedStats.filter((s) => s.priority === 'Alta' || s.accuracy < 60).length;
+    const totalErrors = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.errors, 0);
+    const totalQuestions = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.total, 0);
+    const totalCorrect = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.correct, 0);
+    const averageAccuracy = totalQuestions > 0 ? (totalCorrect / totalQuestions) * 100 : 0;
+
+    return {
+      totalSubfocos,
+      criticalCount,
+      totalErrors,
+      averageAccuracy
+    };
+  }, [hierarchyDetailedStats]);
+
+  // Paginação dos subfocos
+  const totalPages = Math.max(1, Math.ceil(hierarchyDetailedStats.length / itemsPerPage));
+  const paginatedHierarchyStats = useMemo(() => {
+    const start = (currentPage - 1) * itemsPerPage;
+    return hierarchyDetailedStats.slice(start, start + itemsPerPage);
+  }, [hierarchyDetailedStats, currentPage, itemsPerPage]);
 
   const officialRanking = getOfficialRanking(filters, {
     answered: stats.totalAnswered,
@@ -457,7 +529,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
             </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-4xl font-black font-mono tracking-tight text-slate-900 dark:text-white">
+              <span className="text-4xl font-black font-sans tracking-tight text-slate-900 dark:text-white">
                 {activeMetrics.answered}
               </span>
               <span className="text-xs text-slate-500 font-medium">questões</span>
@@ -490,7 +562,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
             </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-4xl font-black font-mono tracking-tight text-emerald-600 dark:text-emerald-400">
+              <span className="text-4xl font-black font-sans tracking-tight text-emerald-600 dark:text-emerald-400">
                 {activeMetrics.correct}
               </span>
               <span className="text-xs text-slate-500">acertos</span>
@@ -520,7 +592,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
             </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-4xl font-black font-mono tracking-tight text-slate-900 dark:text-white">
+              <span className="text-4xl font-black font-sans tracking-tight text-slate-900 dark:text-white">
                 {activeMetrics.accuracy.toFixed(1)}%
               </span>
               <span className="text-xs text-slate-500">aproveitamento</span>
@@ -621,7 +693,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-baseline gap-4">
                 <span
-                  className="text-5xl sm:text-6xl font-black font-mono tracking-tight flex items-center gap-3"
+                  className="text-5xl sm:text-6xl font-black font-sans tracking-tight flex items-center gap-3"
                   style={{ color: tierTextColor }}
                 >
                   <span className="w-4 h-4 rounded-full shadow-xs" style={{ backgroundColor: tier.color }} />
@@ -653,7 +725,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
                 <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
                   <div className="text-[10px] font-bold text-slate-500 uppercase">Habilidade (θ)</div>
-                  <div className="text-base font-extrabold font-mono text-slate-900 dark:text-white">
+                  <div className="text-base font-extrabold font-sans text-slate-900 dark:text-white">
                     {percentileInfo.theta !== undefined ? (percentileInfo.theta > 0 ? `+${percentileInfo.theta.toFixed(2)}` : percentileInfo.theta.toFixed(2)) : '+1.42'}
                   </div>
                   <div className="text-[10px] text-slate-500">Escala z latente</div>
@@ -661,7 +733,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
                 <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
                   <div className="text-[10px] font-bold text-slate-500 uppercase">Incerteza (SE)</div>
-                  <div className="text-base font-extrabold font-mono text-slate-900 dark:text-white">
+                  <div className="text-base font-extrabold font-sans text-slate-900 dark:text-white">
                     ±{percentileInfo.standard_error !== undefined ? percentileInfo.standard_error.toFixed(2) : '0.12'}
                   </div>
                   <div className="text-[10px] text-slate-500">Erro padrão Fisher</div>
@@ -669,7 +741,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
                 <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
                   <div className="text-[10px] font-bold text-slate-500 uppercase">Confiabilidade</div>
-                  <div className="text-base font-extrabold font-mono text-emerald-600 dark:text-emerald-400">
+                  <div className="text-base font-extrabold font-sans text-emerald-600 dark:text-emerald-400">
                     {percentileInfo.reliability !== undefined ? `${(percentileInfo.reliability * 100).toFixed(1)}%` : '88.5%'}
                   </div>
                   <div className="text-[10px] text-slate-500">Precisão de teste</div>
@@ -677,7 +749,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
                 <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
                   <div className="text-[10px] font-bold text-slate-500 uppercase">Score Ajustado</div>
-                  <div className="text-base font-extrabold font-mono text-blue-600 dark:text-blue-400">
+                  <div className="text-base font-extrabold font-sans text-blue-600 dark:text-blue-400">
                     {percentileInfo.adjustedScore.toFixed(2)}
                   </div>
                   <div className="text-[10px] text-slate-500">Shrinkage + volume</div>
@@ -696,7 +768,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                 Elegibilidade do Ranking
               </div>
-              <div className="text-xl font-black text-slate-900 dark:text-white font-mono flex items-center gap-2">
+              <div className="text-xl font-black text-slate-900 dark:text-white font-sans flex items-center gap-2">
                 {percentileInfo.status === 'official' ? (
                   <>
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
@@ -730,47 +802,85 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         )}
       </div>
 
-      {/* 3. ANÁLISE ALTAMENTE DETALHADA: GRANDES ÁREAS, TEMAS, FOCOS E SUBFOCOS */}
+      {/* 3. ANÁLISE DETALHADA POR FOCO E SUBFOCO (PRIORIZADO PELO QUE MAIS ERROU) */}
       <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-xs space-y-6">
+        {/* Cabeçalho da Seção */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3.5">
             <div className="w-10 h-10 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 shadow-xs">
               <BookOpen className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
-                Diagnóstico Detalhado por Foco e Subfoco
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-                Acompanhamento minucioso de acertos, domínio e prioridade de estudo em cada subtema
+              <div className="flex items-center gap-2">
+                <h3 className="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+                  Diagnóstico Detalhado por Foco e Subfoco
+                </h3>
+                <span className="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border border-rose-200 dark:border-rose-900/60">
+                  Prioridade por Erros
+                </span>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-0.5">
+                Classificação por maior volume de erros e menor rendimento para direcionar revisões estratégicas
               </p>
             </div>
           </div>
 
-          {/* Busca rápida de subfoco */}
-          <div className="relative w-full md:w-64">
-            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              value={hierarchySearch}
-              onChange={(e) => setHierarchySearch(e.target.value)}
-              placeholder="Buscar subfoco ou tema..."
-              className="w-full pl-9 pr-4 py-2 rounded-xl text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+          <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 shrink-0">
+            <span className="font-sans font-bold text-slate-700 dark:text-slate-200">{hierarchyDetailedStats.length}</span> subfocos encontrados
           </div>
         </div>
 
-        {/* Seletor de Grande Área */}
-        <div className="space-y-3">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
-              <Filter className="w-3.5 h-3.5" />
-              Filtrar por Grande Área
-            </span>
-            <span className="text-xs text-slate-500">
-              {hierarchyDetailedStats.length} subfocos mapeados
-            </span>
+        {/* 3 Cards de Resumo Diagnóstico */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="bg-rose-50/60 dark:bg-rose-950/20 border border-rose-200/70 dark:border-rose-900/40 rounded-2xl p-4 flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
+              <AlertTriangle className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-2xl font-black font-sans text-rose-700 dark:text-rose-300 leading-tight">
+                {diagnosticSummary.criticalCount}
+              </div>
+              <div className="text-[11px] font-bold text-rose-800/80 dark:text-rose-400 uppercase tracking-wider mt-0.5">
+                Pontos Fracos Prioritários
+              </div>
+            </div>
           </div>
+
+          <div className="bg-amber-50/60 dark:bg-amber-950/20 border border-amber-200/70 dark:border-amber-900/40 rounded-2xl p-4 flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+              <AlertCircle className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-2xl font-black font-sans text-amber-700 dark:text-amber-300 leading-tight">
+                {diagnosticSummary.totalErrors}
+              </div>
+              <div className="text-[11px] font-bold text-amber-800/80 dark:text-amber-400 uppercase tracking-wider mt-0.5">
+                Total de Erros Mapeados
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/70 dark:border-blue-900/40 rounded-2xl p-4 flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
+              <TrendingUp className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-2xl font-black font-sans text-blue-700 dark:text-blue-300 leading-tight">
+                {diagnosticSummary.averageAccuracy.toFixed(1)}%
+              </div>
+              <div className="text-[11px] font-bold text-blue-800/80 dark:text-blue-400 uppercase tracking-wider mt-0.5">
+                Rendimento Médio no Filtro
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Barra de Filtro por Grande Área (Pills Horizontais Limpos) */}
+        <div className="space-y-2">
+          <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+            <Filter className="w-3.5 h-3.5" />
+            Grande Área Médica
+          </span>
 
           <div className="flex flex-wrap items-center gap-1.5">
             {specialtiesList.map((spec) => {
@@ -782,8 +892,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   onClick={() => {
                     setSelectedSpecialtyTab(spec);
                     setSelectedTemaFilter('Todos');
+                    setCurrentPage(1);
                   }}
-                  className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                     isSelected
                       ? 'bg-indigo-600 text-white shadow-xs font-extrabold scale-102'
                       : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
@@ -796,117 +907,244 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           </div>
         </div>
 
-        {/* Seletor de Tema dentro da Grande Área */}
-        {availableTemas.length > 2 && (
-          <div className="flex flex-wrap items-center gap-1.5 pt-2 border-t border-slate-100 dark:border-slate-800">
-            <span className="text-xs font-bold text-slate-500 mr-1">Tema:</span>
-            {availableTemas.map((tema) => {
-              const isSelected = selectedTemaFilter === tema;
-              return (
-                <button
-                  key={tema}
-                  type="button"
-                  onClick={() => setSelectedTemaFilter(tema)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
-                    isSelected
-                      ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold shadow-xs'
-                      : 'bg-slate-50 dark:bg-slate-900/60 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200/80 dark:border-slate-800'
-                  }`}
-                >
+        {/* Filtros Funcionais e Seletores Compactos (Sem Avalanche de Chips) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+          {/* Seletor Elegante de Tema */}
+          <div>
+            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
+              Tema Clínico
+            </label>
+            <select
+              value={selectedTemaFilter}
+              onChange={(e) => {
+                setSelectedTemaFilter(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            >
+              <option value="Todos">Todos os Temas ({availableTemas.length - 1} disponíveis)</option>
+              {availableTemas.filter((t) => t !== 'Todos').map((tema) => (
+                <option key={tema} value={tema}>
                   {tema}
-                </button>
-              );
-            })}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Filtro por Classificação de Rendimento */}
+          <div>
+            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
+              Classificação / Domínio
+            </label>
+            <select
+              value={masteryFilter}
+              onChange={(e) => {
+                setMasteryFilter(e.target.value as 'todos' | 'criticos' | 'atencao' | 'dominados');
+                setCurrentPage(1);
+              }}
+              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            >
+              <option value="todos">Todos os Níveis</option>
+              <option value="criticos">🔴 Críticos (&lt; 60% acertos)</option>
+              <option value="atencao">🟡 Em Atenção (60% a 74%)</option>
+              <option value="dominados">🟢 Dominados (≥ 75%)</option>
+            </select>
+          </div>
+
+          {/* Ordenação por Prioridade (O que mais errou por padrão) */}
+          <div>
+            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
+              Ordenar Lista
+            </label>
+            <select
+              value={hierarchySortBy}
+              onChange={(e) => {
+                setHierarchySortBy(e.target.value as 'errors' | 'accuracy_asc' | 'accuracy_desc' | 'total');
+                setCurrentPage(1);
+              }}
+              className="w-full px-3 py-2 rounded-xl text-xs font-bold bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            >
+              <option value="errors">🚨 O que Mais Errou (Prioridade)</option>
+              <option value="accuracy_asc">📉 Menor Rendimento (% Acerto)</option>
+              <option value="accuracy_desc">📈 Maior Rendimento (% Acerto)</option>
+              <option value="total">📚 Mais Questões Resolvidas</option>
+            </select>
+          </div>
+
+          {/* Busca textual de Subfoco */}
+          <div>
+            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
+              Buscar Subfoco ou Foco
+            </label>
+            <div className="relative">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                value={hierarchySearch}
+                onChange={(e) => {
+                  setHierarchySearch(e.target.value);
+                  setCurrentPage(1);
+                }}
+                placeholder="Ex: Apendicite, IAM..."
+                className="w-full pl-8 pr-3 py-2 rounded-xl text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Tabela de Alto Desempenho e Rendimento */}
+        {paginatedHierarchyStats.length > 0 ? (
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+            <table className="w-full text-left text-sm text-slate-800 dark:text-slate-200">
+              <thead>
+                <tr className="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-400 uppercase tracking-wider font-extrabold text-[11px]">
+                  <th className="py-3 px-4">Prioridade</th>
+                  <th className="py-3 px-4">Subfoco & Foco</th>
+                  <th className="py-3 px-4">Grande Área / Tema</th>
+                  <th className="py-3 px-4 text-center">Questões & Erros</th>
+                  <th className="py-3 px-4 text-center">Rendimento</th>
+                  <th className="py-3 px-4 text-right">Ação</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
+                {paginatedHierarchyStats.map((row, index) => {
+                  const priorityBadge = {
+                    Alta: 'bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border-rose-300 dark:border-rose-800',
+                    Média: 'bg-amber-50 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300 border-amber-300 dark:border-amber-800',
+                    Baixa: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800'
+                  }[row.priority];
+
+                  return (
+                    <tr
+                      key={`${row.subfoco}-${index}`}
+                      className="hover:bg-slate-50/70 dark:hover:bg-slate-900/50 transition-colors"
+                    >
+                      {/* 1. Prioridade e Status */}
+                      <td className="py-3.5 px-4 whitespace-nowrap">
+                        <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider border ${priorityBadge}`}>
+                          {row.priority === 'Alta' && <AlertTriangle className="w-3 h-3 text-rose-500" />}
+                          {row.priority === 'Alta' ? 'Prioridade Alta' : row.priority === 'Média' ? 'Atenção' : 'Consolidado'}
+                        </span>
+                      </td>
+
+                      {/* 2. Subfoco & Foco */}
+                      <td className="py-3.5 px-4">
+                        <div className="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">
+                          {row.subfoco}
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          {row.foco}
+                        </div>
+                      </td>
+
+                      {/* 3. Área & Tema */}
+                      <td className="py-3.5 px-4">
+                        <span className="text-[11px] font-bold text-indigo-700 dark:text-indigo-400 block">
+                          {row.specialty}
+                        </span>
+                        <span className="text-xs text-slate-600 dark:text-slate-400 font-medium truncate max-w-[180px] block">
+                          {row.tema}
+                        </span>
+                      </td>
+
+                      {/* 4. Questões & Erros (Destaque em Vermelho nos Erros com Fonte Inter) */}
+                      <td className="py-3.5 px-4 text-center whitespace-nowrap">
+                        <div className="flex items-center justify-center gap-1 font-sans font-bold text-xs text-rose-600 dark:text-rose-400">
+                          <span>{row.errors} erros</span>
+                        </div>
+                        <div className="text-[10px] font-sans text-slate-500 font-normal">
+                          {row.correct} acertos de {row.total} q.
+                        </div>
+                      </td>
+
+                      {/* 5. Rendimento com Barra de Progresso e Fonte Inter */}
+                      <td className="py-3.5 px-4 text-center min-w-[120px]">
+                        <span className="font-sans font-black text-xs text-slate-900 dark:text-white block">
+                          {row.accuracy.toFixed(1)}%
+                        </span>
+                        <div className="w-24 mx-auto bg-slate-100 dark:bg-slate-800 rounded-full h-1.5 mt-1.5 overflow-hidden">
+                          <div
+                            className={`h-1.5 rounded-full transition-all ${
+                              row.accuracy >= 75
+                                ? 'bg-emerald-500'
+                                : row.accuracy >= 60
+                                ? 'bg-amber-500'
+                                : 'bg-rose-500'
+                            }`}
+                            style={{ width: `${row.accuracy}%` }}
+                          />
+                        </div>
+                      </td>
+
+                      {/* 6. Ação: Treinar Subfoco */}
+                      <td className="py-3.5 px-4 text-right whitespace-nowrap">
+                        {onNavigateToBancoWithSubfoco ? (
+                          <button
+                            type="button"
+                            onClick={() => onNavigateToBancoWithSubfoco(row.specialty, row.tema, row.subfoco)}
+                            className="px-3 py-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-white hover:bg-blue-600 dark:hover:bg-blue-600 border border-blue-200 dark:border-blue-800 rounded-xl transition-all inline-flex items-center gap-1.5 cursor-pointer shadow-2xs"
+                          >
+                            <span>Treinar</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
+                        ) : (
+                          <span className="text-[11px] text-slate-400 font-medium">Mapeado</span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <div className="text-center py-12 border border-dashed border-slate-200 dark:border-slate-800 rounded-2xl">
+            <BookOpen className="w-10 h-10 text-slate-300 dark:text-slate-600 mx-auto mb-2" />
+            <p className="text-sm font-bold text-slate-700 dark:text-slate-300">
+              Nenhum subfoco encontrado com os filtros selecionados
+            </p>
+            <p className="text-xs text-slate-500 mt-1">
+              Tente alterar a grande área, o tema ou o nível de domínio.
+            </p>
           </div>
         )}
 
-        {/* Tabela / Cards de Subfocos Detalhados */}
-        <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
-          <table className="w-full text-left text-sm text-slate-800 dark:text-slate-200">
-            <thead>
-              <tr className="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-400 uppercase tracking-wider font-extrabold text-[11px]">
-                <th className="py-3 px-4">Grande Área / Tema</th>
-                <th className="py-3 px-4">Foco & Subfoco</th>
-                <th className="py-3 px-4 text-center">Questões</th>
-                <th className="py-3 px-4 text-center">Taxa de Acerto</th>
-                <th className="py-3 px-4 text-center">Nível de Domínio</th>
-                <th className="py-3 px-4 text-right">Ação</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
-              {hierarchyDetailedStats.slice(0, 15).map((row, index) => {
-                const masteryBadge = {
-                  Excelente: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800',
-                  Bom: 'bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 border-blue-300 dark:border-blue-800',
-                  Atenção: 'bg-amber-50 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300 border-amber-300 dark:border-amber-800',
-                  Crítico: 'bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border-rose-300 dark:border-rose-800'
-                }[row.masteryStatus];
+        {/* Paginação e Contador */}
+        {totalPages > 1 && (
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+            <div className="text-xs text-slate-500 dark:text-slate-400">
+              Mostrando <strong className="text-slate-700 dark:text-slate-200 font-sans">{((currentPage - 1) * itemsPerPage) + 1}</strong> a{' '}
+              <strong className="text-slate-700 dark:text-slate-200 font-sans">
+                {Math.min(currentPage * itemsPerPage, hierarchyDetailedStats.length)}
+              </strong>{' '}
+              de <strong className="text-slate-700 dark:text-slate-200 font-sans">{hierarchyDetailedStats.length}</strong> subfocos
+            </div>
 
-                return (
-                  <tr
-                    key={`${row.subfoco}-${index}`}
-                    className="hover:bg-slate-50/70 dark:hover:bg-slate-900/50 transition-colors"
-                  >
-                    <td className="py-3 px-4">
-                      <span className="text-[11px] font-bold text-indigo-700 dark:text-indigo-400 block">
-                        {row.specialty}
-                      </span>
-                      <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">
-                        {row.tema}
-                      </span>
-                    </td>
-                    <td className="py-3 px-4">
-                      <div className="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">
-                        {row.subfoco}
-                      </div>
-                      <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                        {row.foco}
-                      </div>
-                    </td>
-                    <td className="py-3 px-4 text-center font-mono font-bold text-xs text-slate-900 dark:text-white">
-                      <span>{row.total}</span>
-                      <span className="text-[10px] text-slate-500 font-normal block">
-                        ({row.correct} acertos)
-                      </span>
-                    </td>
-                    <td className="py-3 px-4 text-center">
-                      <span className="font-mono font-extrabold text-xs text-slate-900 dark:text-white block">
-                        {row.accuracy.toFixed(1)}%
-                      </span>
-                      <div className="w-20 mx-auto bg-slate-100 dark:bg-slate-800 rounded-full h-1.5 mt-1 overflow-hidden">
-                        <div
-                          className={`h-1.5 rounded-full ${
-                            row.accuracy >= 80 ? 'bg-emerald-500' : row.accuracy >= 70 ? 'bg-blue-500' : row.accuracy >= 50 ? 'bg-amber-500' : 'bg-rose-500'
-                          }`}
-                          style={{ width: `${row.accuracy}%` }}
-                        />
-                      </div>
-                    </td>
-                    <td className="py-3 px-4 text-center">
-                      <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider border ${masteryBadge}`}>
-                        {row.masteryStatus}
-                      </span>
-                    </td>
-                    <td className="py-3 px-4 text-right">
-                      {onNavigateToBancoWithSubfoco ? (
-                        <button
-                          type="button"
-                          onClick={() => onNavigateToBancoWithSubfoco(row.specialty, row.tema, row.subfoco)}
-                          className="px-2.5 py-1 text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-950/50 rounded-lg transition-all inline-flex items-center gap-1 cursor-pointer"
-                        >
-                          Treinar
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </button>
-                      ) : (
-                        <span className="text-[11px] text-slate-500">Mapeado</span>
-                      )}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+            <div className="flex items-center gap-1.5">
+              <button
+                type="button"
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="p-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-850 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                title="Página Anterior"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <span className="text-xs font-bold text-slate-700 dark:text-slate-300 px-2 font-sans">
+                {currentPage} / {totalPages}
+              </span>
+              <button
+                type="button"
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+                className="p-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-850 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                title="Próxima Página"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* 4. GRÁFICOS DE EVOLUÇÃO E DISTRIBUIÇÃO */}

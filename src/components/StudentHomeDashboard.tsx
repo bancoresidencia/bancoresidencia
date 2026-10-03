@@ -5,7 +5,7 @@ import {
   Flame,
   Target,
   Award,
-  Database,
+  FileQuestion,
   ListFilter,
   FileCheck2,
   BarChart2,
@@ -18,7 +18,12 @@ import {
   Moon,
   FolderOpen,
   Clock,
-  Medal
+  Medal,
+  SlidersHorizontal,
+  Check,
+  X,
+  GraduationCap,
+  CalendarDays
 } from 'lucide-react';
 import { UserStats, QuestionList, ActiveTab, Modalidade } from '@/types';
 import { getPercentileColor } from '@/utils/percentile';
@@ -68,10 +73,101 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const todayAnswered = stats.historyByDay[stats.historyByDay.length - 1]?.answered || 0;
   const goalPercentage = Math.min(100, Math.round((todayAnswered / (dailyGoal || 1)) * 100));
 
-  // Meta Diária de Tempo de Estudo (em minutos)
-  const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(120);
+  // Meta Diária de Tempo de Estudo personalizada pelo aluno (em minutos)
+  const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bancoresidencia_daily_time_goal');
+      if (saved) return Number(saved);
+    }
+    return 120;
+  });
+
+  // Modal / Edição de Metas sem valores pré-definidos (escolha livre do aluno)
+  const [isEditingGoals, setIsEditingGoals] = useState(false);
+  const [customGoalQuestions, setCustomGoalQuestions] = useState<number>(dailyGoal);
+  const [customGoalTime, setCustomGoalTime] = useState<number>(dailyTimeGoal);
+
+  const handleToggleEditGoals = () => {
+    if (!isEditingGoals) {
+      setCustomGoalQuestions(dailyGoal);
+      setCustomGoalTime(dailyTimeGoal);
+    }
+    setIsEditingGoals((prev) => !prev);
+  };
+
+  const handleSaveCustomGoals = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    const q = Math.max(1, Number(customGoalQuestions) || 1);
+    const t = Math.max(1, Number(customGoalTime) || 1);
+    onUpdateDailyGoal(q);
+    setDailyTimeGoal(t);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('bancoresidencia_custom_daily_goal', String(q));
+      localStorage.setItem('bancoresidencia_daily_time_goal', String(t));
+    }
+    setIsEditingGoals(false);
+  };
   const todayStudyMinutes = Math.round(todayAnswered * 2.5);
   const timeGoalPercentage = Math.min(100, Math.round((todayStudyMinutes / (dailyTimeGoal || 1)) * 100));
+
+  // Contagem Regressiva para a Prova da Residência Médica
+  const [examName, setExamName] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bancoresidencia_countdown_exam_name');
+      if (saved) return saved;
+    }
+    return 'ENARE 2026';
+  });
+
+  const [examDateStr, setExamDateStr] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bancoresidencia_countdown_exam_date');
+      if (saved) return saved;
+    }
+    return '2026-11-01';
+  });
+
+  const [isEditingCountdown, setIsEditingCountdown] = useState<boolean>(false);
+  const [editExamName, setEditExamName] = useState<string>(examName);
+  const [editExamDateStr, setEditExamDateStr] = useState<string>(examDateStr);
+
+  const handleSaveCountdown = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    const cleanName = editExamName.trim() || 'Prova de Residência';
+    const cleanDate = editExamDateStr || '2026-11-01';
+    setExamName(cleanName);
+    setExamDateStr(cleanDate);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('bancoresidencia_countdown_exam_name', cleanName);
+      localStorage.setItem('bancoresidencia_countdown_exam_date', cleanDate);
+    }
+    setIsEditingCountdown(false);
+  };
+
+  // Cálculo de dias restantes para a prova
+  const countdownStats = React.useMemo(() => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const target = new Date(examDateStr + 'T00:00:00');
+    const diffTime = target.getTime() - today.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const daysRemaining = Math.max(0, diffDays);
+    const weeksRemaining = Math.floor(daysRemaining / 7);
+    const monthsRemaining = (daysRemaining / 30.4).toFixed(1);
+
+    const formattedDate = !isNaN(target.getTime())
+      ? target.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+      : examDateStr;
+
+    return {
+      daysRemaining,
+      weeksRemaining,
+      monthsRemaining,
+      formattedDate,
+      isToday: diffDays === 0,
+      isPassed: diffDays < 0
+    };
+  }, [examDateStr]);
 
   // Tier cromático rigoroso do percentil
   const percentileTier = getPercentileColor(stats.percentileInfo.percentile);
@@ -81,7 +177,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     {
       tab: 'banco',
       title: 'Banco de Questões',
-      icon: Database,
+      icon: FileQuestion,
       accentColor: accentConfig.primaryHex
     },
     {
@@ -156,7 +252,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 <Flame className="w-5 h-5 fill-amber-500 dark:fill-amber-400 animate-pulse" />
               </div>
               <div>
-                <div className="text-2xl font-black text-amber-600 dark:text-amber-400 font-mono tracking-tight leading-none">
+                <div className="text-2xl font-black text-amber-600 dark:text-amber-400 font-sans tracking-tight leading-none">
                   {stats.streakDays} dias
                 </div>
                 <div className="text-[11px] text-amber-700 dark:text-amber-300/80 font-medium mt-1">
@@ -168,195 +264,352 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         </div>
       </section>
 
-      {/* 2. Grid de Resumo Diário Bento: Meta Diária + % Aproveitamento + Percentil Rigoroso */}
+      {/* 1.5. Card de Contagem Regressiva para a Prova da Residência */}
+      <section className="bg-white dark:bg-[#0d1527] border border-blue-200/90 dark:border-blue-900/60 rounded-3xl p-5 sm:p-6 shadow-xs relative overflow-hidden transition-all">
+        {/* Glow de fundo */}
+        <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 relative z-10">
+          {/* Informações da Prova */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="px-2.5 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 border border-blue-200 dark:border-blue-800 flex items-center gap-1.5 shadow-2xs">
+                <CalendarDays className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+                Reta Final para a Residência
+              </span>
+              <button
+                type="button"
+                onClick={() => setIsEditingCountdown(!isEditingCountdown)}
+                className="text-[11px] font-bold text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 underline underline-offset-2 transition-colors cursor-pointer"
+              >
+                {isEditingCountdown ? 'Cancelar' : 'Alterar Prova ou Data'}
+              </button>
+            </div>
+
+            {isEditingCountdown ? (
+              <form onSubmit={handleSaveCountdown} className="pt-2 space-y-3 max-w-lg">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">
+                      Nome da Prova / Concurso
+                    </label>
+                    <input
+                      type="text"
+                      value={editExamName}
+                      onChange={(e) => setEditExamName(e.target.value)}
+                      placeholder="Ex: ENARE 2026, USP-SP, SUS-SP..."
+                      className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">
+                      Data da Prova
+                    </label>
+                    <input
+                      type="date"
+                      value={editExamDateStr}
+                      onChange={(e) => setEditExamDateStr(e.target.value)}
+                      className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="submit"
+                    className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 transition-colors cursor-pointer shadow-xs"
+                  >
+                    Salvar Contagem
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsEditingCountdown(false)}
+                    className="px-3 py-2 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+                  >
+                    Fechar
+                  </button>
+                </div>
+              </form>
+            ) : (
+              <div>
+                <h2 className="font-heading text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+                  <GraduationCap className="w-5 h-5 text-blue-600 dark:text-blue-400 shrink-0" />
+                  <span>{examName}</span>
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-1">
+                  Data prevista: <strong className="text-slate-700 dark:text-slate-200">{countdownStats.formattedDate}</strong>
+                  {countdownStats.daysRemaining > 0 && (
+                    <span className="text-slate-400 dark:text-slate-500"> • Foco em resolução diária e revisão de pontos críticos</span>
+                  )}
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Destaque Numérico da Contagem Regressiva com Fonte Inter */}
+          <div className="flex items-center gap-4 bg-blue-50/70 dark:bg-blue-950/30 border border-blue-200/80 dark:border-blue-900/40 px-6 py-4 rounded-2xl shrink-0">
+            <div className="text-center sm:text-right">
+              <div className="flex items-baseline justify-center sm:justify-end gap-1.5">
+                <span className="text-4xl sm:text-5xl font-black font-sans tracking-tight text-blue-600 dark:text-blue-400">
+                  {countdownStats.daysRemaining}
+                </span>
+                <span className="text-xs uppercase font-extrabold tracking-wider text-blue-800 dark:text-blue-300">
+                  dias
+                </span>
+              </div>
+              <div className="flex items-center justify-center sm:justify-end gap-2 text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
+                <span>~{countdownStats.weeksRemaining} semanas</span>
+                <span>•</span>
+                <span>~{countdownStats.monthsRemaining} meses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Grid de Resumo Diário Bento: Meta Diária + % Aproveitamento + Percentil Rigoroso (Cards Menores e Mais Compactos) */}
       <section>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7">
-          {/* Card 1: Meta Diária (Questões + Tempo de Estudo) */}
-          <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-xs flex flex-col justify-between space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+          {/* Card 1: Meta Diária Personalizada (Questões + Tempo de Estudo sem valores predefinidos) */}
+          <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3.5">
             <div>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
+                <div className="flex items-center gap-2">
                   <div
-                    className="w-9 h-9 rounded-xl flex items-center justify-center shadow-xs"
+                    className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs"
                     style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
                   >
-                    <Target className="w-4.5 h-4.5" />
+                    <Target className="w-4 h-4" />
                   </div>
-                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                    Meta Diária
+                  <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                    Metas Diárias
                   </span>
                 </div>
 
-                {/* Seletores Rápidos de Meta (Questões & Tempo) */}
-                <div className="flex items-center gap-1.5 text-xs">
-                  <select
-                    id="goal-input"
-                    value={dailyGoal}
-                    onChange={(e) => onUpdateDailyGoal(Number(e.target.value))}
-                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 rounded-xl px-2 py-1 text-[11px] focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer font-semibold"
-                    title="Meta de Questões"
-                  >
-                    <option value={10}>10 quest.</option>
-                    <option value={20}>20 quest.</option>
-                    <option value={30}>30 quest.</option>
-                    <option value={50}>50 quest.</option>
-                    <option value={100}>100 quest.</option>
-                  </select>
-
-                  <select
-                    value={dailyTimeGoal}
-                    onChange={(e) => setDailyTimeGoal(Number(e.target.value))}
-                    className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 rounded-xl px-2 py-1 text-[11px] focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer font-semibold"
-                    title="Meta de Tempo Diário"
-                  >
-                    <option value={30}>30 min</option>
-                    <option value={60}>60 min</option>
-                    <option value={90}>90 min</option>
-                    <option value={120}>120 min</option>
-                    <option value={180}>180 min</option>
-                  </select>
-                </div>
+                {/* Botão de Ajustar Metas (Permite ao aluno digitar o valor que quiser, sem opções predefinidas) */}
+                <button
+                  type="button"
+                  onClick={handleToggleEditGoals}
+                  className="flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-bold border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer shadow-xs"
+                  title="Definir metas personalizadas de questões e tempo"
+                >
+                  <SlidersHorizontal className="w-3 h-3 text-blue-500" />
+                  <span>{isEditingGoals ? 'Fechar' : 'Ajustar'}</span>
+                </button>
               </div>
 
-              {/* Duas Metas: Questões e Tempo Lado a Lado */}
-              <div className="pt-3 grid grid-cols-2 gap-3 divide-x divide-slate-100 dark:divide-slate-800/80">
-                <div className="pr-1">
-                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-                    <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-                    <span>Questões</span>
+              {/* Modo de Edição Livre de Metas */}
+              {isEditingGoals ? (
+                <form onSubmit={handleSaveCustomGoals} className="pt-2.5 space-y-2.5 animate-in fade-in duration-150">
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 block mb-1">
+                        Meta Questões
+                      </label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="1000"
+                        value={customGoalQuestions}
+                        onChange={(e) => setCustomGoalQuestions(Number(e.target.value))}
+                        className="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-sans font-bold text-xs focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        placeholder="Ex: 25"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 block mb-1">
+                        Tempo (min)
+                      </label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="1440"
+                        value={customGoalTime}
+                        onChange={(e) => setCustomGoalTime(Number(e.target.value))}
+                        className="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-sans font-bold text-xs focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        placeholder="Ex: 90"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-mono tracking-tight mt-1">
-                    {todayAnswered}{' '}
-                    <span className="text-xs font-semibold text-slate-400 dark:text-slate-500 font-sans">
-                      / {dailyGoal}
-                    </span>
-                  </div>
-                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800 mt-2">
-                    <div
-                      className="h-2 rounded-full transition-all duration-500 ease-out"
-                      style={{
-                        width: `${goalPercentage}%`,
-                        backgroundColor: accentConfig.primaryHex
-                      }}
-                    />
-                  </div>
-                  <div className="text-[10px] text-slate-500 dark:text-slate-400 font-medium mt-1">
-                    {todayAnswered >= dailyGoal
-                      ? 'Meta batida! 🎉'
-                      : `Faltam ${Math.max(0, dailyGoal - todayAnswered)} quest.`}
-                  </div>
-                </div>
 
-                <div className="pl-3">
-                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-                    <Clock className="w-3.5 h-3.5 text-sky-500" />
-                    <span>Tempo</span>
+                  <div className="flex items-center gap-1.5 pt-1">
+                    <button
+                      type="submit"
+                      className="flex-1 flex items-center justify-center gap-1 py-1.5 px-3 rounded-lg text-xs font-extrabold text-white shadow-xs transition-transform hover:scale-102 cursor-pointer"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                    >
+                      <Check className="w-3.5 h-3.5" />
+                      <span>Salvar Metas</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setIsEditingGoals(false)}
+                      className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+                      title="Cancelar"
+                    >
+                      <X className="w-3.5 h-3.5" />
+                    </button>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-mono tracking-tight mt-1">
-                    {todayStudyMinutes}m{' '}
-                    <span className="text-xs font-semibold text-slate-400 dark:text-slate-500 font-sans">
-                      / {dailyTimeGoal}m
-                    </span>
+                </form>
+              ) : (
+                /* Exibição das Duas Metas: Questões e Tempo com Fonte Inter */
+                <div className="pt-2.5 grid grid-cols-2 gap-2.5 divide-x divide-slate-100 dark:divide-slate-800/80">
+                  <div className="pr-1">
+                    <div className="flex items-center gap-1 text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                      <Target className="w-3 h-3" style={{ color: accentConfig.primaryHex }} />
+                      <span>Questões</span>
+                    </div>
+                    <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-sans tracking-tight mt-0.5">
+                      {todayAnswered}{' '}
+                      <span className="text-[11px] font-semibold text-slate-400 dark:text-slate-500 font-sans">
+                        / {dailyGoal}
+                      </span>
+                    </div>
+                    <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-1.5 overflow-hidden border border-slate-200 dark:border-slate-800 mt-1.5">
+                      <div
+                        className="h-1.5 rounded-full transition-all duration-500 ease-out"
+                        style={{
+                          width: `${goalPercentage}%`,
+                          backgroundColor: accentConfig.primaryHex
+                        }}
+                      />
+                    </div>
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-medium mt-1">
+                      {todayAnswered >= dailyGoal
+                        ? 'Meta batida! 🎉'
+                        : `Faltam ${Math.max(0, dailyGoal - todayAnswered)} quest.`}
+                    </div>
                   </div>
-                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800 mt-2">
-                    <div
-                      className="h-2 rounded-full bg-sky-500 transition-all duration-500 ease-out"
-                      style={{
-                        width: `${timeGoalPercentage}%`
-                      }}
-                    />
-                  </div>
-                  <div className="text-[10px] text-slate-500 dark:text-slate-400 font-medium mt-1">
-                    {todayStudyMinutes >= dailyTimeGoal
-                      ? 'Tempo atingido! ⏱️'
-                      : `Faltam ${Math.max(0, dailyTimeGoal - todayStudyMinutes)} min`}
+
+                  <div className="pl-2.5">
+                    <div className="flex items-center gap-1 text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                      <Clock className="w-3 h-3 text-sky-500" />
+                      <span>Tempo</span>
+                    </div>
+                    <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-sans tracking-tight mt-0.5">
+                      {todayStudyMinutes}m{' '}
+                      <span className="text-[11px] font-semibold text-slate-400 dark:text-slate-500 font-sans">
+                        / {dailyTimeGoal}m
+                      </span>
+                    </div>
+                    <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-1.5 overflow-hidden border border-slate-200 dark:border-slate-800 mt-1.5">
+                      <div
+                        className="h-1.5 rounded-full bg-sky-500 transition-all duration-500 ease-out"
+                        style={{
+                          width: `${timeGoalPercentage}%`
+                        }}
+                      />
+                    </div>
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400 font-medium mt-1">
+                      {todayStudyMinutes >= dailyTimeGoal
+                        ? 'Tempo atingido! ⏱️'
+                        : `Faltam ${Math.max(0, dailyTimeGoal - todayStudyMinutes)} min`}
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
 
-            <div className="pt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80">
+            <div className="pt-2 flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80">
               <span>Progresso geral diário</span>
-              <span className="font-semibold text-slate-700 dark:text-slate-300">
+              <span className="font-bold text-slate-700 dark:text-slate-300 font-sans">
                 {Math.round((goalPercentage + timeGoalPercentage) / 2)}% concluído
               </span>
             </div>
           </div>
 
-          {/* Card 2: Taxa de Acerto Global */}
-          <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-xs flex flex-col justify-between space-y-5">
+          {/* Card 2: Aproveitamento com Barra de Rendimento e Valores em Inter */}
+          <div className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3.5">
             <div>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shadow-xs">
-                    <Award className="w-4.5 h-4.5" />
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shadow-xs">
+                    <Award className="w-4 h-4" />
                   </div>
-                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                  <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                     Aproveitamento
                   </span>
                 </div>
-                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
                   Geral
                 </span>
               </div>
 
-              <div className="flex items-baseline gap-2 pt-4">
-                <span className="text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400 font-mono tracking-tight">
+              {/* Valor de Rendimento em Fonte Inter */}
+              <div className="flex items-baseline gap-2 pt-2.5">
+                <span className="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400 font-sans tracking-tight">
                   {stats.totalAnswered > 0 ? `${stats.accuracyRate.toFixed(1)}%` : '0.0%'}
                 </span>
                 <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">acertos brutos</span>
               </div>
+
+              {/* Barra para mostrar o rendimento solicitada pelo usuário */}
+              <div className="space-y-1 pt-2">
+                <div className="flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400 font-semibold">
+                  <span>Rendimento</span>
+                  <span className="text-emerald-600 dark:text-emerald-400 font-bold font-sans">
+                    {stats.totalAnswered > 0 ? `${stats.accuracyRate.toFixed(1)}%` : '0%'}
+                  </span>
+                </div>
+                <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800">
+                  <div
+                    className="h-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-700 ease-out"
+                    style={{ width: `${Math.min(100, Math.max(0, stats.accuracyRate))}%` }}
+                  />
+                </div>
+              </div>
             </div>
 
-            <div className="pt-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80">
-              <span><strong>{stats.totalAnswered}</strong> resolvidas</span>
-              <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+            <div className="pt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80">
+              <span><strong className="font-sans font-bold text-slate-700 dark:text-slate-300">{stats.totalAnswered}</strong> resolvidas</span>
+              <span className="font-bold text-emerald-600 dark:text-emerald-400 font-sans">
                 {stats.totalCorrect} corretas
               </span>
             </div>
           </div>
 
-          {/* Card 3: Percentil Oficial (Medalha e Nível Evidente, P78 reduzido no rodapé) */}
+          {/* Card 3: Percentil Oficial com Valores em Fonte Inter */}
           <div
-            className="bento-card bg-white dark:bg-[#0d1527] rounded-3xl p-6 sm:p-7 shadow-xs flex flex-col justify-between space-y-4 border transition-all duration-300"
+            className="bento-card bg-white dark:bg-[#0d1527] rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3.5 border transition-all duration-300"
             style={{
               borderColor: stats.percentileInfo.status !== 'locked' ? percentileTier.borderRgba : undefined
             }}
           >
             <div>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                     Percentil Oficial
                   </span>
                 </div>
 
-                <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 font-semibold">
+                <span className="text-[10px] font-sans text-slate-500 dark:text-slate-400 font-bold">
                   Faixa {percentileTier.rangeLabel}
                 </span>
               </div>
 
               {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
-                <div className="space-y-3 pt-3">
+                <div className="space-y-2.5 pt-2.5">
                   {/* Nível do Aluno Evidente com Simbologia de Medalha */}
-                  <div className="flex items-center gap-3.5">
+                  <div className="flex items-center gap-3">
                     <div
-                      className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border shadow-md transition-transform hover:scale-105"
+                      className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border shadow-md transition-transform hover:scale-105"
                       style={{
                         backgroundColor: percentileTier.bgRgba,
                         borderColor: percentileTier.borderRgba,
                         color: mode === 'light' ? percentileTier.textLight : percentileTier.color,
-                        boxShadow: `0 4px 14px ${percentileTier.glowRgba || 'rgba(0,0,0,0.1)'}`
+                        boxShadow: `0 3px 12px ${percentileTier.glowRgba || 'rgba(0,0,0,0.1)'}`
                       }}
                     >
-                      <Medal className="w-6 h-6 stroke-[2.2]" />
+                      <Medal className="w-5 h-5 stroke-[2.2]" />
                     </div>
                     <div className="min-w-0">
-                      <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                      <div className="text-[9px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
                         Nível Atual
                       </div>
                       <div
-                        className="text-2xl sm:text-3xl font-black tracking-tight truncate"
+                        className="text-xl sm:text-2xl font-black tracking-tight truncate font-sans"
                         style={{ color: mode === 'light' ? percentileTier.textLight : percentileTier.textDark }}
                       >
                         Nível {percentileTier.name}
@@ -365,9 +618,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* Barra de Progresso do Percentil */}
-                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-200 dark:border-slate-800">
+                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-1.5 overflow-hidden border border-slate-200 dark:border-slate-800">
                     <div
-                      className="h-2 rounded-full transition-all duration-500"
+                      className="h-1.5 rounded-full transition-all duration-500"
                       style={{
                         width: `${Math.max(5, stats.percentileInfo.percentile || 0)}%`,
                         backgroundColor: percentileTier.color
@@ -376,21 +629,21 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
                 </div>
               ) : (
-                <div className="pt-3 space-y-1">
-                  <div className="text-base font-bold text-slate-800 dark:text-slate-200">Em Calibração</div>
+                <div className="pt-2.5 space-y-1">
+                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200">Em Calibração</div>
                   <div className="text-xs text-slate-500 dark:text-slate-400">
-                    Faltam <strong>{stats.percentileInfo.missingForApprox} questões</strong> para homologação.
+                    Faltam <strong className="font-sans font-bold">{stats.percentileInfo.missingForApprox} questões</strong> para homologação.
                   </div>
                 </div>
               )}
             </div>
 
             {/* Borda Inferior: P78 reduzido com à frente dos concorrentes + Ver detalhes */}
-            <div className="pt-3 flex flex-wrap items-center justify-between gap-2 text-xs border-t border-slate-100 dark:border-slate-800/80">
+            <div className="pt-2 flex flex-wrap items-center justify-between gap-2 text-xs border-t border-slate-100 dark:border-slate-800/80">
               {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
-                <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 font-medium text-[11px]">
+                <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 font-medium text-[10px]">
                   <span
-                    className="font-bold font-mono px-1.5 py-0.5 rounded-md text-[11px] border"
+                    className="font-bold font-sans px-1.5 py-0.5 rounded-md text-[10px] border"
                     style={{
                       backgroundColor: percentileTier.bgRgba,
                       borderColor: percentileTier.borderRgba,
@@ -399,21 +652,21 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   >
                     P{stats.percentileInfo.percentile}
                   </span>
-                  <span>À frente de <strong>{stats.percentileInfo.percentile}%</strong> dos concorrentes</span>
+                  <span>À frente de <strong className="font-sans font-bold">{stats.percentileInfo.percentile}%</strong></span>
                 </div>
               ) : (
-                <span className="text-[11px] text-slate-400">Status não calibrado</span>
+                <span className="text-[10px] text-slate-400">Status não calibrado</span>
               )}
 
               <button
                 type="button"
                 onClick={() => onNavigate('ranking')}
-                className="text-xs font-bold hover:underline cursor-pointer flex items-center gap-1 shrink-0 ml-auto"
+                className="text-[11px] font-bold hover:underline cursor-pointer flex items-center gap-1 shrink-0 ml-auto"
                 style={{ color: accentConfig.primaryHex }}
                 title="Ver detalhes do seu percentil e ranking oficial"
               >
                 <span>Ver detalhes</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <ArrowRight className="w-3 h-3" />
               </button>
             </div>
           </div>
