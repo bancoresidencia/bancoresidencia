@@ -26,8 +26,10 @@ import {
   ActiveTab,
   Folder,
   QuestionList,
-  UserAttempt
+  UserAttempt,
+  Question
 } from '@/types';
+import { fetchQuestionsFromSupabase } from '@/services/questionService';
 import { calculatePercentile, getOfficialRanking } from '@/utils/percentile';
 import { matchesStudyModalidades } from '@/utils/modalidades';
 import {
@@ -257,90 +259,69 @@ export default function Home() {
     return count;
   }, [advancedFilters]);
 
-  // Filtragem completa com todas as regras
+  const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(14233);
+  const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
+  const [questionsPage, setQuestionsPage] = useState<number>(1);
+
+  // Carregamento de questões do Supabase com paginação e filtros
+  useEffect(() => {
+    let isCancelled = false;
+    const loadQuestions = async () => {
+      setIsLoadingSupabase(true);
+      try {
+        let questionIds: string[] | undefined;
+        if (activeListId) {
+          const currentList = lists.find((l) => l.id === activeListId);
+          if (currentList) {
+            questionIds = currentList.questionIds;
+          }
+        }
+
+        const res = await fetchQuestionsFromSupabase(
+          advancedFilters,
+          questionsPage,
+          50,
+          questionIds
+        );
+        if (!isCancelled) {
+          if (questionsPage === 1) {
+            setSupabaseQuestions(res.questions);
+          } else {
+            setSupabaseQuestions((prev) => {
+              const existingIds = new Set(prev.map((q) => q.id));
+              const newItems = res.questions.filter((q) => !existingIds.has(q.id));
+              return [...prev, ...newItems];
+            });
+          }
+          setTotalSupabaseCount(res.total);
+        }
+      } catch (err) {
+        console.error('Erro ao buscar questões do Supabase:', err);
+      } finally {
+        if (!isCancelled) {
+          setIsLoadingSupabase(false);
+        }
+      }
+    };
+
+    const timer = setTimeout(() => {
+      loadQuestions();
+    }, 200);
+
+    return () => {
+      isCancelled = true;
+      clearTimeout(timer);
+    };
+  }, [advancedFilters, activeListId, lists, questionsPage]);
+
+
+  // Filtragem local complementar para status (resolvidas/não vistas) e fallback
   const filteredQuestions = useMemo(() => {
-    return mockQuestions.filter((q) => {
-      // 0. Caderno Ativo (se estiver resolvendo um caderno específico)
-      if (activeListId) {
-        const currentList = lists.find((l) => l.id === activeListId);
-        if (currentList && !currentList.questionIds.includes(q.id)) {
-          return false;
-        }
-      }
+    const list = supabaseQuestions.length > 0 ? supabaseQuestions : mockQuestions;
+    if (advancedFilters.status === 'Todas') return list;
 
-      // 1. Busca textual
-      if (advancedFilters.search.trim()) {
-        const query = advancedFilters.search.toLowerCase();
-        const matchesStatement = q.statement.toLowerCase().includes(query);
-        const matchesSubfoco = q.subfoco?.toLowerCase().includes(query);
-        const matchesFoco = q.foco?.toLowerCase().includes(query);
-        const matchesTema = q.tema?.toLowerCase().includes(query);
-        const matchesCode = q.code.toLowerCase().includes(query);
-        const matchesInstitution = q.institution?.toLowerCase().includes(query) || q.banca?.toLowerCase().includes(query);
-        if (!matchesStatement && !matchesSubfoco && !matchesFoco && !matchesTema && !matchesCode && !matchesInstitution) {
-          return false;
-        }
-      }
-
-      // 2. Modalidades de Estudo: Direcionamento Preciso para Todas as Modalidades
-      if (advancedFilters.modalidades.length > 0 && !matchesStudyModalidades(q, advancedFilters.modalidades)) {
-        return false;
-      }
-
-      // 3. Hierarquia Clínica: Especialidades, Temas, Focos e Subfocos
-      if (advancedFilters.especialidades.length > 0) {
-        const matchesSpec = advancedFilters.especialidades.some((spec) => {
-          if (spec === q.especialidade) return true;
-          if (
-            (spec === 'Ginecologia' || spec === 'Obstetrícia' || spec === 'Ginecologia e Obstetrícia') &&
-            (q.especialidade === 'Ginecologia' || q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia e Obstetrícia')
-          ) {
-            return true;
-          }
-          return false;
-        });
-        if (!matchesSpec) return false;
-      }
-      if (advancedFilters.temas.length > 0 && !advancedFilters.temas.includes(q.tema)) {
-        return false;
-      }
-      if (advancedFilters.focos.length > 0 && !advancedFilters.focos.includes(q.foco)) {
-        return false;
-      }
-      if (advancedFilters.subfocos.length > 0 && !advancedFilters.subfocos.includes(q.subfoco)) {
-        return false;
-      }
-
-      // 4. Instituições e Bancas Oficiais
-      if (advancedFilters.instituicoes.length > 0) {
-        const matchesInstitution = advancedFilters.instituicoes.some((filterInst) => {
-          if (!q.institution) return false;
-          if (q.institution === filterInst) return true;
-          const lowerQInst = q.institution.toLowerCase();
-          const lowerFilter = filterInst.toLowerCase();
-          if (lowerQInst.includes(lowerFilter) || lowerFilter.includes(lowerQInst)) return true;
-          if (q.banca) {
-            const lowerQBanca = q.banca.toLowerCase();
-            if (lowerQBanca.includes(lowerFilter) || lowerFilter.includes(lowerQBanca)) return true;
-          }
-          return false;
-        });
-        if (!matchesInstitution) {
-          return false;
-        }
-      }
-
-      // 5. Anos de Aplicação
-      if (advancedFilters.anos.length > 0 && !advancedFilters.anos.includes(q.year)) {
-        return false;
-      }
-
-      // 6. Tipo de Prova
-      if (advancedFilters.tipoProva.length > 0 && (!q.tipoProva || !advancedFilters.tipoProva.includes(q.tipoProva))) {
-        return false;
-      }
-
-      // 7. Status da Questão
+    return list.filter((q) => {
       const answer = userAnswers[q.id];
       const isResolved = !!answer;
       const isCorrect = answer?.isCorrect === true;
@@ -351,31 +332,12 @@ export default function Home() {
       if (advancedFilters.status === 'Acertadas' && !isCorrect) return false;
       if (advancedFilters.status === 'Erradas' && !isWrong) return false;
       if (advancedFilters.status === 'Ainda não acertadas' && isCorrect) return false;
-
-      // 8. Nível de Dificuldade
-      if (advancedFilters.dificuldade !== 'Todas' && q.difficulty !== advancedFilters.dificuldade) {
-        return false;
-      }
-
-      // 9. Tipo de Questão
-      if (advancedFilters.tipoQuestao !== 'Todas' && q.type !== advancedFilters.tipoQuestao) {
-        return false;
-      }
-
-      // 10. Switches adicionais
-      if (advancedFilters.ocultarAnuladasErro && q.isAnulada) {
-        return false;
-      }
-      if (advancedFilters.ultimos5Anos && q.year < 2020) {
-        return false;
-      }
-
       return true;
     });
-  }, [advancedFilters, userAnswers, activeListId, lists]);
+  }, [supabaseQuestions, advancedFilters.status, userAnswers]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
-    const q = mockQuestions.find((item) => item.id === questionId);
+    const q = supabaseQuestions.find((item) => item.id === questionId) || mockQuestions.find((item) => item.id === questionId);
     setUserAnswers((prev) => ({
       ...prev,
       [questionId]: {
@@ -998,8 +960,10 @@ export default function Home() {
                         )}
                         <span>
                           {shouldCreateCadernoOnSolve
-                            ? `Criar Caderno e Resolver (${filteredQuestions.length})`
-                            : `Resolver Questões (${filteredQuestions.length})`}
+                            ? `Criar Caderno e Resolver (${totalSupabaseCount.toLocaleString('pt-BR')})`
+                            : isLoadingSupabase
+                            ? 'Carregando questões...'
+                            : `Resolver Questões (${totalSupabaseCount.toLocaleString('pt-BR')})`}
                         </span>
                       </button>
                     </div>
@@ -1008,17 +972,25 @@ export default function Home() {
                   {/* Componente Completo de Filtros Avançados */}
                   <AdvancedQuestionFilters
                     filters={advancedFilters}
-                    onChange={setAdvancedFilters}
-                    onReset={handleResetAdvancedFilters}
-                    totalAvailable={mockQuestions.length}
-                    totalFiltered={filteredQuestions.length}
+                    onChange={(newFilters) => {
+                      setAdvancedFilters(newFilters);
+                      setQuestionsPage(1);
+                      setCurrentQuestionIndex(0);
+                    }}
+                    onReset={() => {
+                      handleResetAdvancedFilters();
+                      setQuestionsPage(1);
+                      setCurrentQuestionIndex(0);
+                    }}
+                    totalAvailable={14233}
+                    totalFiltered={totalSupabaseCount}
                     onCreateListFromFilter={handleCreateListFromFilter}
                     onSelectDirectQuestion={(questionId) => {
                       const idx = filteredQuestions.findIndex((q) => q.id === questionId);
                       if (idx !== -1) {
                         setCurrentQuestionIndex(idx);
                       } else {
-                        const targetQ = mockQuestions.find((q) => q.id === questionId);
+                        const targetQ = supabaseQuestions.find((q) => q.id === questionId) || mockQuestions.find((q) => q.id === questionId);
                         if (targetQ) {
                           setAdvancedFilters((prev) => ({
                             ...prev,
@@ -1073,8 +1045,8 @@ export default function Home() {
                       )}
                       <span>
                         {shouldCreateCadernoOnSolve
-                          ? `Criar Caderno e Iniciar (${filteredQuestions.length} questões) →`
-                          : `Iniciar Resolução (${filteredQuestions.length} questões) →`}
+                          ? `Criar Caderno e Iniciar (${totalSupabaseCount.toLocaleString('pt-BR')} questões) →`
+                          : `Iniciar Resolução (${totalSupabaseCount.toLocaleString('pt-BR')} questões) →`}
                       </span>
                     </button>
                   </div>
@@ -1100,7 +1072,7 @@ export default function Home() {
                         tema: string;
                         count: number;
                         focos: string[];
-                        questions: typeof mockQuestions;
+                        questions: Question[];
                       }
                     >();
 
@@ -1431,10 +1403,19 @@ export default function Home() {
                           {/* Seta Próxima */}
                           <button
                             type="button"
-                            disabled={Math.min(currentQuestionIndex, filteredQuestions.length - 1) >= filteredQuestions.length - 1}
+                            disabled={
+                              currentQuestionIndex >= filteredQuestions.length - 1 &&
+                              filteredQuestions.length >= totalSupabaseCount
+                            }
                             onClick={() => {
-                              setCurrentQuestionIndex((prev) => Math.min(filteredQuestions.length - 1, prev + 1));
-                              setQuestionTimer(0);
+                              if (currentQuestionIndex + 1 < filteredQuestions.length) {
+                                setCurrentQuestionIndex((prev) => prev + 1);
+                                setQuestionTimer(0);
+                              } else if (filteredQuestions.length < totalSupabaseCount) {
+                                setQuestionsPage((prev) => prev + 1);
+                                setCurrentQuestionIndex((prev) => prev + 1);
+                                setQuestionTimer(0);
+                              }
                             }}
                             className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed shrink-0 transition-colors cursor-pointer"
                             title="Próxima questão"
