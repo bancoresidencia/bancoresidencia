@@ -90,6 +90,15 @@ html.light ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
 
+/* Utilitário para ocultar barras de rolagem mantendo a navegação ativa */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Micro-animações e utilitários de polimento visual */
 .glow-sm {
   box-shadow: 0 0 15px -3px var(--glow-color, rgba(37, 99, 235, 0.25));

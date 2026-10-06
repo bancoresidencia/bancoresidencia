@@ -229,34 +229,34 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setShowCommentary(true);
   };
 
-  // Mapeamento dinâmico de fontes ergonômicas
+  // Mapeamento dinâmico de fontes ergonômicas com alta visibilidade médica
   const statementSizeClass =
     fontSize === 'sm'
-      ? 'text-[13.5px] sm:text-[14px] leading-relaxed'
+      ? 'text-[15px] sm:text-[15.5px] leading-[1.75]'
       : fontSize === 'lg'
-      ? 'text-base sm:text-lg leading-relaxed'
-      : 'text-sm sm:text-base leading-relaxed';
+      ? 'text-[18px] sm:text-[19px] leading-[1.85]'
+      : 'text-[16.5px] sm:text-[17px] leading-[1.8]';
 
   const optionSizeClass =
     fontSize === 'sm'
-      ? 'text-[12.5px] sm:text-[13px] leading-relaxed'
+      ? 'text-[13.5px] sm:text-[14px] leading-relaxed'
       : fontSize === 'lg'
-      ? 'text-sm sm:text-base leading-relaxed'
-      : 'text-xs sm:text-sm leading-relaxed';
+      ? 'text-[16px] sm:text-[17px] leading-relaxed'
+      : 'text-[14.5px] sm:text-[15px] leading-relaxed';
 
   const optionPaddingClass =
     fontSize === 'sm'
-      ? 'p-3 sm:p-3.5 rounded-xl gap-3'
+      ? 'p-3.5 sm:p-4 rounded-xl gap-3.5'
       : fontSize === 'lg'
-      ? 'p-4 sm:p-5 rounded-2xl gap-4'
-      : 'p-3.5 sm:p-4 rounded-xl gap-3.5';
+      ? 'p-4.5 sm:p-5.5 rounded-2xl gap-4.5'
+      : 'p-4 sm:p-4.5 rounded-xl gap-4';
 
   const badgeSizeClass =
     fontSize === 'sm'
-      ? 'w-6.5 h-6.5 text-[11px]'
+      ? 'w-7 h-7 text-xs font-black'
       : fontSize === 'lg'
-      ? 'w-8 h-8 text-xs'
-      : 'w-7 h-7 text-xs';
+      ? 'w-9 h-9 text-sm font-black'
+      : 'w-8 h-8 text-xs sm:text-sm font-black';
 
   // Renderizador do enunciado com suporte a destaques múltiplos do marca-texto
   const renderHighlightedStatement = (statement: string) => {
@@ -508,7 +508,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           ref={statementRef}
           onMouseUp={handleStatementMouseUp}
           onTouchEnd={handleStatementMouseUp}
-          className={`${statementSizeClass} text-slate-900 dark:text-slate-100 leading-relaxed font-normal whitespace-pre-line tracking-tight select-text text-justify selection:bg-amber-300 selection:text-black dark:selection:bg-amber-400 dark:selection:text-black`}
+          className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-justify selection:bg-amber-300 selection:text-black dark:selection:bg-amber-400 dark:selection:text-black`}
           style={{ textAlign: 'justify', textJustify: 'inter-word' }}
         >
           {renderHighlightedStatement(question.statement)}

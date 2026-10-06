@@ -78,7 +78,14 @@ export async function fetchQuestionsFromSupabase(
 
   // 2. Especialidades
   if (filters.especialidades && filters.especialidades.length > 0) {
-    query = query.in('especialidade', filters.especialidades);
+    const specs = new Set<string>();
+    filters.especialidades.forEach((sp) => {
+      specs.add(sp);
+      if (sp.includes('Ginecologia') || sp.includes('Obstetrícia')) {
+        specs.add('Ginecologia');
+      }
+    });
+    query = query.in('especialidade', Array.from(specs));
   }
 
   // 3. Temas
@@ -96,9 +103,22 @@ export async function fetchQuestionsFromSupabase(
     query = query.in('subfoco', filters.subfocos);
   }
 
-  // 6. Instituições / Bancas
+  // 6. Instituições / Bancas (casamento robusto por banca ou instituição completa)
   if (filters.instituicoes && filters.instituicoes.length > 0) {
-    query = query.in('institution', filters.instituicoes);
+    const orParts: string[] = [];
+    filters.instituicoes.forEach((inst) => {
+      const trimmed = inst.trim();
+      orParts.push(`banca.ilike.%${trimmed}%`, `institution.ilike.%${trimmed}%`);
+      const cleanParts = trimmed
+        .replace(/[\/\(\)\-]/g, ' ')
+        .split(/\s+/)
+        .filter((p) => p.length >= 3 && p !== 'SMS' && p !== 'SES' && p !== 'HOSPITAL');
+      cleanParts.forEach((p) => {
+        orParts.push(`banca.ilike.%${p}%`, `institution.ilike.%${p}%`);
+      });
+    });
+    const uniqueConditions = Array.from(new Set(orParts)).join(',');
+    query = query.or(uniqueConditions);
   }
 
   // 7. Anos

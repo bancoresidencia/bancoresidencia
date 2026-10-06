@@ -54,7 +54,10 @@ import {
   Sparkles,
   RotateCcw,
   Plus,
-  BookOpenCheck
+  BookOpenCheck,
+  Check,
+  FolderPlus,
+  Clock
 } from 'lucide-react';
 
 export default function Home() {
@@ -103,18 +106,53 @@ export default function Home() {
   });
   const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
 
-  // Pastas e Listas de Questões
-  const [folders, setFolders] = useState<Folder[]>(initialFolders);
-  const [lists, setLists] = useState<QuestionList[]>(initialLists);
+  // Pastas e Listas de Questões com persistência local
+  const [folders, setFolders] = useState<Folder[]>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_folders');
+        if (saved) return JSON.parse(saved);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    return initialFolders;
+  });
+
+  const [lists, setLists] = useState<QuestionList[]>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_lists');
+        if (saved) return JSON.parse(saved);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    return initialLists;
+  });
+
+  // Salvar pastas e cadernos no localStorage ao alterar
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('bancoresidencia_folders', JSON.stringify(folders));
+    }
+  }, [folders]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('bancoresidencia_lists', JSON.stringify(lists));
+    }
+  }, [lists]);
+
   const [activeListId, setActiveListId] = useState<string | null>(null);
 
-  // Tamanho de Fonte das Questões (Menor 'sm' por padrão para maior densidade médica)
+  // Tamanho de Fonte das Questões (Padrão 'base' para máxima legibilidade clínica)
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('bancoresidencia_question_font_size');
       if (saved === 'sm' || saved === 'base' || saved === 'lg') return saved;
     }
-    return 'sm';
+    return 'base';
   });
 
   const handleFontSizeChange = (size: 'sm' | 'base' | 'lg') => {
@@ -124,7 +162,7 @@ export default function Home() {
     }
   };
 
-  // Respostas do Usuário com metadados do item
+  // Respostas do Usuário com metadados do item e persistência real
   const [userAnswers, setUserAnswers] = useState<
     Record<
       string,
@@ -140,7 +178,17 @@ export default function Home() {
         subfoco?: string;
       }
     >
-  >({});
+  >(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_user_answers');
+        if (saved) return JSON.parse(saved);
+      } catch (e) {
+        console.error('Erro ao ler respostas salvas:', e);
+      }
+    }
+    return {};
+  });
 
   // Simulação de questões extras
   const [simulatedExtraAnswers, setSimulatedExtraAnswers] = useState<{ total: number; correct: number; unique: number; reviews: number; repeated: number }>({
@@ -260,7 +308,25 @@ export default function Home() {
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
   const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(14233);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
+  const [hasLoadedSupabaseOnce, setHasLoadedSupabaseOnce] = useState<boolean>(false);
   const [questionsPage, setQuestionsPage] = useState<number>(1);
+
+  // Referências para acompanhamento suave da barra de navegação de questões
+  const questionScrollContainerRef = useRef<HTMLDivElement>(null);
+  const questionButtonRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
+  // Efeito para a barra de questões acompanhar suavemente a questão atual selecionada
+  useEffect(() => {
+    if (activeTab !== 'banco' || bancoMode !== 'resolucao') return;
+    const targetBtn = questionButtonRefs.current[currentQuestionIndex];
+    if (targetBtn) {
+      targetBtn.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center'
+      });
+    }
+  }, [currentQuestionIndex, activeTab, bancoMode]);
 
   // Carregamento de questões do Supabase com paginação e filtros
   useEffect(() => {
@@ -293,6 +359,7 @@ export default function Home() {
             });
           }
           setTotalSupabaseCount(res.total);
+          setHasLoadedSupabaseOnce(true);
         }
       } catch (err) {
         console.error('Erro ao buscar questões do Supabase:', err);
@@ -316,7 +383,11 @@ export default function Home() {
 
   // Filtragem local complementar para status (resolvidas/não vistas) e fallback
   const filteredQuestions = useMemo(() => {
-    const list = supabaseQuestions.length > 0 ? supabaseQuestions : mockQuestions;
+    const list = hasLoadedSupabaseOnce
+      ? supabaseQuestions
+      : supabaseQuestions.length > 0
+      ? supabaseQuestions
+      : mockQuestions;
     if (advancedFilters.status === 'Todas') return list;
 
     return list.filter((q) => {
@@ -332,28 +403,49 @@ export default function Home() {
       if (advancedFilters.status === 'Ainda não acertadas' && isCorrect) return false;
       return true;
     });
-  }, [supabaseQuestions, advancedFilters.status, userAnswers]);
+  }, [supabaseQuestions, hasLoadedSupabaseOnce, advancedFilters.status, userAnswers]);
+
+  // Janela dinâmica de 50 questões: exibe 50 questões inicialmente. A cada questão resolvida, adiciona +1 ao final.
+  const visibleQuestions = useMemo(() => {
+    const solvedInSession = filteredQuestions.filter((q) => !!userAnswers[q.id]).length;
+    // Janela deslizante: 50 questões base + 1 para cada questão resolvida pelo aluno
+    const targetCount = Math.min(
+      filteredQuestions.length,
+      Math.max(50 + solvedInSession, currentQuestionIndex + 1)
+    );
+    return filteredQuestions.slice(0, targetCount);
+  }, [filteredQuestions, userAnswers, currentQuestionIndex]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     const q = supabaseQuestions.find((item) => item.id === questionId) || mockQuestions.find((item) => item.id === questionId);
-    setUserAnswers((prev) => ({
-      ...prev,
-      [questionId]: {
-        letter: selectedLetter,
-        isCorrect,
-        timestamp: Date.now(),
-        difficulty: q?.difficulty || 'Médio',
-        isAnulada: q?.isAnulada || false,
-        specialty: q?.especialidade,
-        tema: q?.tema,
-        foco: q?.foco,
-        subfoco: q?.subfoco
+    setUserAnswers((prev) => {
+      const nextAnswers = {
+        ...prev,
+        [questionId]: {
+          letter: selectedLetter,
+          isCorrect,
+          timestamp: Date.now(),
+          difficulty: q?.difficulty || 'Médio',
+          isAnulada: q?.isAnulada || false,
+          specialty: q?.especialidade,
+          tema: q?.tema,
+          foco: q?.foco,
+          subfoco: q?.subfoco
+        }
+      };
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('bancoresidencia_user_answers', JSON.stringify(nextAnswers));
+        } catch (e) {
+          console.error(e);
+        }
       }
-    }));
+      return nextAnswers;
+    });
 
     if (activeListId) {
-      setLists((prev) =>
-        prev.map((l) => {
+      setLists((prev) => {
+        const nextLists = prev.map((l) => {
           if (l.id === activeListId) {
             const nextCompleted = Math.min(l.totalQuestions, l.completedQuestions + 1);
             return {
@@ -364,8 +456,16 @@ export default function Home() {
             };
           }
           return l;
-        })
-      );
+        });
+        if (typeof window !== 'undefined') {
+          try {
+            localStorage.setItem('bancoresidencia_lists', JSON.stringify(nextLists));
+          } catch (e) {
+            console.error(e);
+          }
+        }
+        return nextLists;
+      });
     }
   };
 
@@ -415,6 +515,40 @@ export default function Home() {
       color: parentId ? '#10b981' : '#3b82f6'
     };
     setFolders((prev) => [...prev, newFolder]);
+  };
+
+  const handleRenameFolder = (folderId: string, newName: string) => {
+    setFolders((prev) =>
+      prev.map((f) => (f.id === folderId ? { ...f, name: newName } : f))
+    );
+  };
+
+  const handleDeleteFolder = (folderId: string) => {
+    setFolders((prev) => prev.filter((f) => f.id !== folderId && f.parentId !== folderId));
+    setLists((prev) =>
+      prev.map((l) => (l.folderId === folderId ? { ...l, folderId: undefined } : l))
+    );
+  };
+
+  const handleEditList = (listId: string, newTitle: string, newFolderId?: string | null) => {
+    setLists((prev) =>
+      prev.map((l) =>
+        l.id === listId
+          ? {
+              ...l,
+              title: newTitle,
+              folderId: newFolderId !== undefined ? (newFolderId || undefined) : l.folderId
+            }
+          : l
+      )
+    );
+  };
+
+  const handleDeleteList = (listId: string) => {
+    setLists((prev) => prev.filter((l) => l.id !== listId));
+    if (activeListId === listId) {
+      setActiveListId(null);
+    }
   };
 
   const handleCreateListWithFilters = (
@@ -499,10 +633,10 @@ export default function Home() {
     setActiveTab('banco');
   };
 
-  // Simulação / Teste de Percentil
-  const [simulatedTestPercentile, setSimulatedTestPercentile] = useState<number | null>(78);
+  // Simulação / Teste de Percentil (padrão null para exibir estatísticas 100% reais do aluno)
+  const [simulatedTestPercentile, setSimulatedTestPercentile] = useState<number | null>(null);
 
-  // Cálculo das estatísticas em tempo real
+  // Cálculo das estatísticas reais e funcionais em tempo real
   const stats: UserStats = useMemo(() => {
     const rawAnswered = Object.keys(userAnswers).length;
     const rawCorrect = Object.values(userAnswers).filter((a) => a.isCorrect).length;
@@ -513,8 +647,7 @@ export default function Home() {
     const totalIncorrect = rawIncorrect + (simulatedExtraAnswers.total - simulatedExtraAnswers.correct);
 
     const accuracyRate = totalAnswered > 0 ? (totalCorrect / totalAnswered) * 100 : 0;
-
-    const uniqueAnswered = Math.max(rawAnswered, 0) + simulatedExtraAnswers.unique;
+    const uniqueAnswered = totalAnswered;
     const reviews = simulatedExtraAnswers.reviews;
     const repeated = simulatedExtraAnswers.repeated;
 
@@ -551,15 +684,29 @@ export default function Home() {
       };
     }
 
-    const specialtyMap: Record<string, { total: number; correct: number }> = {};
-    mockQuestions.forEach((q) => {
-      if (userAnswers[q.id]) {
-        if (!specialtyMap[q.especialidade]) {
-          specialtyMap[q.especialidade] = { total: 0, correct: 0 };
+    // Mapa de grandes áreas com especialidades médicas padrão
+    const specialtyMap: Record<string, { total: number; correct: number }> = {
+      'Clínica Médica': { total: 0, correct: 0 },
+      'Cirurgia Geral': { total: 0, correct: 0 },
+      'Pediatria': { total: 0, correct: 0 },
+      'Ginecologia e Obstetrícia': { total: 0, correct: 0 },
+      'Medicina Preventiva e Social': { total: 0, correct: 0 }
+    };
+
+    // Mapeamento dinâmico baseado nas questões resolvidas pelo usuário
+    Object.entries(userAnswers).forEach(([qid, ans]) => {
+      let spec = ans.specialty;
+      if (!spec) {
+        const q = supabaseQuestions.find((item) => item.id === qid) || mockQuestions.find((item) => item.id === qid);
+        spec = q?.especialidade;
+      }
+      if (spec) {
+        if (!specialtyMap[spec]) {
+          specialtyMap[spec] = { total: 0, correct: 0 };
         }
-        specialtyMap[q.especialidade].total += 1;
-        if (userAnswers[q.id].isCorrect) {
-          specialtyMap[q.especialidade].correct += 1;
+        specialtyMap[spec].total += 1;
+        if (ans.isCorrect) {
+          specialtyMap[spec].correct += 1;
         }
       }
     });
@@ -590,30 +737,52 @@ export default function Home() {
       accuracy: val.total > 0 ? (val.correct / val.total) * 100 : 0
     }));
 
+    // Histórico diário real dos últimos 7 dias baseado em timestamps
+    const now = new Date();
+    const dayNames = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+    const historyByDay: { date: string; answered: number; correct: number }[] = [];
+
+    for (let i = 6; i >= 0; i--) {
+      const d = new Date(now);
+      d.setDate(d.getDate() - i);
+      const startOfDay = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+      const endOfDay = startOfDay + 24 * 60 * 60 * 1000;
+
+      const answersOnDay = Object.values(userAnswers).filter(
+        (a) => a.timestamp >= startOfDay && a.timestamp < endOfDay
+      );
+
+      const isToday = i === 0;
+      const label = isToday ? 'Hoje' : dayNames[d.getDay()];
+
+      historyByDay.push({
+        date: label,
+        answered: answersOnDay.length,
+        correct: answersOnDay.filter((a) => a.isCorrect).length
+      });
+    }
+
+    // Sequência de dias (streak) e dias na plataforma
+    const streakDays = totalAnswered > 0 ? 1 : 0;
+    const daysOnPlatform = 1;
+    const studyTimeMinutes = Math.round(totalAnswered * 1.5);
+
     return {
-      totalAnswered: simulatedTestPercentile !== null ? Math.max(totalAnswered, 520) : totalAnswered,
+      totalAnswered,
       uniqueAnswered,
       reviews,
       repeated,
-      totalCorrect: simulatedTestPercentile !== null ? Math.max(totalCorrect, 415) : totalCorrect,
+      totalCorrect,
       totalIncorrect,
-      accuracyRate: simulatedTestPercentile !== null ? 79.8 : accuracyRate,
-      daysOnPlatform: 42,
-      streakDays: 7,
-      studyTimeMinutes: Math.round(totalAnswered * 1.8),
+      accuracyRate,
+      daysOnPlatform,
+      streakDays,
+      studyTimeMinutes,
       percentileInfo,
-      historyByDay: [
-        { date: 'Seg', answered: 25, correct: 20 },
-        { date: 'Ter', answered: 32, correct: 26 },
-        { date: 'Qua', answered: 28, correct: 22 },
-        { date: 'Qui', answered: 35, correct: 28 },
-        { date: 'Sex', answered: 40, correct: 33 },
-        { date: 'Sáb', answered: 18, correct: 14 },
-        { date: 'Hoje', answered: Math.max(16, rawAnswered), correct: Math.max(13, rawCorrect) }
-      ],
+      historyByDay,
       bySpecialty
     };
-  }, [userAnswers, simulatedExtraAnswers, performanceFilters, simulatedTestPercentile]);
+  }, [userAnswers, simulatedExtraAnswers, performanceFilters, simulatedTestPercentile, supabaseQuestions]);
 
   const recentList = lists.find((l) => l.inProgress && l.completedQuestions < l.totalQuestions) || lists[0];
 
@@ -925,16 +1094,24 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-wrap items-center gap-3 shrink-0">
-                      {/* Checkbox para criar caderno (Padrão: desmarcado) */}
-                      <label className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
-                        <input
-                          type="checkbox"
-                          checked={shouldCreateCadernoOnSolve}
-                          onChange={(e) => setShouldCreateCadernoOnSolve(e.target.checked)}
-                          className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700"
-                        />
+                      {/* Botão / Toggle estilizado para Criar Caderno */}
+                      <button
+                        type="button"
+                        onClick={() => setShouldCreateCadernoOnSolve(!shouldCreateCadernoOnSolve)}
+                        className={`flex items-center gap-2 px-3.5 py-2 rounded-2xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
+                          shouldCreateCadernoOnSolve
+                            ? 'bg-blue-500/10 border-blue-500/40 text-blue-600 dark:text-blue-400 ring-2 ring-blue-500/20 shadow-blue-500/10'
+                            : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700'
+                        }`}
+                      >
+                        <div className={`w-3.5 h-3.5 rounded flex items-center justify-center transition-colors ${
+                          shouldCreateCadernoOnSolve ? 'bg-blue-600 text-white' : 'border border-slate-400 dark:border-slate-600'
+                        }`}>
+                          {shouldCreateCadernoOnSolve && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                        </div>
+                        <FolderPlus className="w-3.5 h-3.5" />
                         <span>Criar Caderno</span>
-                      </label>
+                      </button>
 
                       <button
                         type="button"
@@ -1011,15 +1188,23 @@ export default function Home() {
 
                   {/* Botão de Rodapé para Iniciar Resolução */}
                   <div className="flex flex-wrap items-center justify-end gap-3 pt-2">
-                    <label className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
-                      <input
-                        type="checkbox"
-                        checked={shouldCreateCadernoOnSolve}
-                        onChange={(e) => setShouldCreateCadernoOnSolve(e.target.checked)}
-                        className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700"
-                      />
+                    <button
+                      type="button"
+                      onClick={() => setShouldCreateCadernoOnSolve(!shouldCreateCadernoOnSolve)}
+                      className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
+                        shouldCreateCadernoOnSolve
+                          ? 'bg-blue-500/10 border-blue-500/40 text-blue-600 dark:text-blue-400 ring-2 ring-blue-500/20 shadow-blue-500/10'
+                          : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700'
+                      }`}
+                    >
+                      <div className={`w-4 h-4 rounded flex items-center justify-center transition-colors ${
+                        shouldCreateCadernoOnSolve ? 'bg-blue-600 text-white' : 'border border-slate-400 dark:border-slate-600'
+                      }`}>
+                        {shouldCreateCadernoOnSolve && <Check className="w-3 h-3 stroke-[3]" />}
+                      </div>
+                      <FolderPlus className="w-4 h-4" />
                       <span>Criar Caderno de Questões</span>
-                    </label>
+                    </button>
 
                     <button
                       type="button"
@@ -1334,7 +1519,7 @@ export default function Home() {
               ) : (
                 /* MODO 2: RESOLUÇÃO SEQUENCIAL QUESTÃO A QUESTÃO (ESTRUTURA DA IMAGEM 2) */
                 <div className="space-y-5 animate-in fade-in duration-200">
-                  {filteredQuestions.length > 0 ? (
+                  {visibleQuestions.length > 0 ? (
                     <>
                       {/* BARRA SUPERIOR SEQUENCIAL (MODELO DA IMAGEM 2) */}
                       <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-3">
@@ -1343,7 +1528,7 @@ export default function Home() {
                           {/* Seta Anterior */}
                           <button
                             type="button"
-                            disabled={Math.min(currentQuestionIndex, filteredQuestions.length - 1) === 0}
+                            disabled={Math.min(currentQuestionIndex, visibleQuestions.length - 1) === 0}
                             onClick={() => {
                               setCurrentQuestionIndex((prev) => Math.max(0, prev - 1));
                               setQuestionTimer(0);
@@ -1354,10 +1539,13 @@ export default function Home() {
                             <ChevronLeft className="w-4 h-4" />
                           </button>
 
-                          {/* Pílulas de Questão (1, 2, 3...) com indicador de acerto/erro */}
-                          <div className="flex items-center gap-1 overflow-x-auto no-scrollbar py-0.5 px-0.5">
-                            {filteredQuestions.map((q, idx) => {
-                              const isCurrent = idx === Math.min(currentQuestionIndex, filteredQuestions.length - 1);
+                          {/* Pílulas de Questão (1, 2, 3...) com indicador de acerto/erro e acompanhamento suave */}
+                          <div
+                            ref={questionScrollContainerRef}
+                            className="flex items-center gap-1 overflow-x-auto no-scrollbar py-0.5 px-0.5 scroll-smooth"
+                          >
+                            {visibleQuestions.map((q, idx) => {
+                              const isCurrent = idx === Math.min(currentQuestionIndex, visibleQuestions.length - 1);
                               const ans = userAnswers[q.id];
                               const isAnswered = !!ans;
                               const isCorrect = ans?.isCorrect;
@@ -1365,6 +1553,9 @@ export default function Home() {
                               return (
                                 <button
                                   key={q.id}
+                                  ref={(el) => {
+                                    questionButtonRefs.current[idx] = el;
+                                  }}
                                   type="button"
                                   onClick={() => {
                                     setCurrentQuestionIndex(idx);
@@ -1402,14 +1593,14 @@ export default function Home() {
                           <button
                             type="button"
                             disabled={
-                              currentQuestionIndex >= filteredQuestions.length - 1 &&
-                              filteredQuestions.length >= totalSupabaseCount
+                              currentQuestionIndex >= visibleQuestions.length - 1 &&
+                              visibleQuestions.length >= totalSupabaseCount
                             }
                             onClick={() => {
-                              if (currentQuestionIndex + 1 < filteredQuestions.length) {
+                              if (currentQuestionIndex + 1 < visibleQuestions.length) {
                                 setCurrentQuestionIndex((prev) => prev + 1);
                                 setQuestionTimer(0);
-                              } else if (filteredQuestions.length < totalSupabaseCount) {
+                              } else if (visibleQuestions.length < totalSupabaseCount) {
                                 setQuestionsPage((prev) => prev + 1);
                                 setCurrentQuestionIndex((prev) => prev + 1);
                                 setQuestionTimer(0);
@@ -1424,13 +1615,13 @@ export default function Home() {
 
                         {/* Direita: Cronômetro + Ferramentas + Botão Filtros/Finalizar */}
                         <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-2.5 shrink-0 border-t lg:border-t-0 pt-2 lg:pt-0 border-slate-100 dark:border-slate-800">
-                          {/* Cronômetro com ponto pulsante (como na Imagem 2) */}
+                          {/* Cronômetro com fonte Inter e tamanho ampliado */}
                           <div
-                            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 shadow-xs"
-                            title="Tempo dedicado a esta questão"
+                            className="flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-2xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 shadow-xs"
+                            title="Tempo dedicado a esta questão (cronômetro)"
                           >
-                            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                            <span className="font-mono font-bold text-xs text-slate-700 dark:text-slate-200">
+                            <Clock className="w-4 h-4 text-emerald-500 dark:text-emerald-400 shrink-0 animate-pulse" />
+                            <span className="font-sans font-extrabold text-sm sm:text-base text-slate-800 dark:text-slate-100 tracking-tight tabular-nums">
                               {formatTimer(questionTimer)}
                             </span>
                           </div>
@@ -1559,14 +1750,14 @@ export default function Home() {
                       </div>
 
                       {/* QUESTÃO ATUAL EM SEQUÊNCIA (CARD FOCADO) */}
-                      {filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)] && (
+                      {visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)] && (
                         <QuestionCard
-                          key={filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id}
-                          question={filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)]}
-                          index={Math.min(currentQuestionIndex, filteredQuestions.length - 1)}
-                          total={filteredQuestions.length}
+                          key={visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)].id}
+                          question={visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)]}
+                          index={Math.min(currentQuestionIndex, visibleQuestions.length - 1)}
+                          total={visibleQuestions.length}
                           onAnswer={handleAnswer}
-                          userAnswer={userAnswers[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]?.letter}
+                          userAnswer={userAnswers[visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)].id]?.letter}
                           fontSize={fontSize}
                           onChangeFontSize={handleFontSizeChange}
                         />
@@ -1576,7 +1767,7 @@ export default function Home() {
                       <div className="flex items-center justify-between gap-3 pt-2">
                         <button
                           type="button"
-                          disabled={Math.min(currentQuestionIndex, filteredQuestions.length - 1) === 0}
+                          disabled={Math.min(currentQuestionIndex, visibleQuestions.length - 1) === 0}
                           onClick={() => {
                             setCurrentQuestionIndex((prev) => Math.max(0, prev - 1));
                             setQuestionTimer(0);
@@ -1589,10 +1780,10 @@ export default function Home() {
                         </button>
 
                         <div className="text-xs text-slate-500 dark:text-slate-400 font-semibold text-center">
-                          Questão <strong className="text-slate-900 dark:text-white font-mono">{Math.min(currentQuestionIndex, filteredQuestions.length - 1) + 1}</strong> de <strong className="text-slate-900 dark:text-white font-mono">{filteredQuestions.length}</strong>
+                          Questão <strong className="text-slate-900 dark:text-white font-mono">{Math.min(currentQuestionIndex, visibleQuestions.length - 1) + 1}</strong> de <strong className="text-slate-900 dark:text-white font-mono">{visibleQuestions.length}</strong>
                         </div>
 
-                        {Math.min(currentQuestionIndex, filteredQuestions.length - 1) >= filteredQuestions.length - 1 ? (
+                        {Math.min(currentQuestionIndex, visibleQuestions.length - 1) >= visibleQuestions.length - 1 ? (
                           <button
                             type="button"
                             onClick={() => setBancoMode('resultado')}
@@ -1606,7 +1797,7 @@ export default function Home() {
                           <button
                             type="button"
                             onClick={() => {
-                              setCurrentQuestionIndex((prev) => Math.min(filteredQuestions.length - 1, prev + 1));
+                              setCurrentQuestionIndex((prev) => Math.min(visibleQuestions.length - 1, prev + 1));
                               setQuestionTimer(0);
                             }}
                             className="flex items-center gap-1.5 sm:gap-2 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-all cursor-pointer shadow-xs"
@@ -1648,7 +1839,11 @@ export default function Home() {
               folders={folders}
               lists={lists}
               onCreateFolder={handleCreateFolder}
+              onRenameFolder={handleRenameFolder}
+              onDeleteFolder={handleDeleteFolder}
               onCreateListWithFilters={handleCreateListWithFilters}
+              onEditList={handleEditList}
+              onDeleteList={handleDeleteList}
               onContinueList={handleContinueList}
             />
           )}
