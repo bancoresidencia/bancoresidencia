@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Question } from '@/types';
 import {
   CheckCircle2,
@@ -65,15 +65,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   const statementRef = useRef<HTMLDivElement>(null);
 
   // Visibilidade dos detalhes extras da questão (Banca e Ano aparecem por padrão; demais detalhes apenas se o aluno apertar)
-  const [showDetails, setShowDetails] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
+  const [showDetails, setShowDetails] = useState<boolean>(false);
+
+  useEffect(() => {
+    try {
       const saved = localStorage.getItem('medevo_question_show_details');
       if (saved !== null) {
-        return saved === 'true';
+        setShowDetails(saved === 'true');
       }
+    } catch {
+      // ignore
     }
-    return false; // Padrão: oculto
-  });
+  }, []);
 
   const toggleShowDetails = () => {
     setShowDetails((prev) => {

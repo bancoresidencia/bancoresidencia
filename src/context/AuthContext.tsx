@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { UserAccount, UpdateProfileData } from '@/types/auth';
 
 const STORAGE_USERS_KEY = 'bancoresidencia_registered_users';
@@ -44,8 +44,10 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<UserAccount | null>(() => {
-    if (typeof window === 'undefined') return DEFAULT_DEMO_USER;
+  const [user, setUser] = useState<UserAccount | null>(DEFAULT_DEMO_USER);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
     try {
       const storedUsersRaw = localStorage.getItem(STORAGE_USERS_KEY);
       let usersList: UserAccount[] = [];
@@ -59,15 +61,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const savedUserRaw = localStorage.getItem(STORAGE_CURRENT_USER_KEY);
       if (savedUserRaw) {
         const savedUser = JSON.parse(savedUserRaw);
-        return usersList.find((u) => u.id === savedUser.id) || savedUser;
+        setUser(usersList.find((u) => u.id === savedUser.id) || savedUser);
+      } else {
+        setUser(DEFAULT_DEMO_USER);
       }
-      return DEFAULT_DEMO_USER;
     } catch {
-      return DEFAULT_DEMO_USER;
+      setUser(DEFAULT_DEMO_USER);
+    } finally {
+      setIsLoading(false);
     }
-  });
-
-  const [isLoading] = useState<boolean>(false);
+  }, []);
 
   const saveUsersList = (users: UserAccount[]) => {
     localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(users));

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Flame,
   Target,
@@ -74,18 +74,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const goalPercentage = Math.min(100, Math.round((todayAnswered / (dailyGoal || 1)) * 100));
 
   // Meta Diária de Tempo de Estudo personalizada pelo aluno (em minutos)
-  const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_daily_time_goal');
-      if (saved) return Number(saved);
-    }
-    return 120;
-  });
+  const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(120);
 
   // Modal / Edição de Metas sem valores pré-definidos (escolha livre do aluno)
   const [isEditingGoals, setIsEditingGoals] = useState(false);
   const [customGoalQuestions, setCustomGoalQuestions] = useState<number>(dailyGoal);
-  const [customGoalTime, setCustomGoalTime] = useState<number>(dailyTimeGoal);
+  const [customGoalTime, setCustomGoalTime] = useState<number>(120);
 
   const handleToggleEditGoals = () => {
     if (!isEditingGoals) {
@@ -111,21 +105,32 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const timeGoalPercentage = Math.min(100, Math.round((todayStudyMinutes / (dailyTimeGoal || 1)) * 100));
 
   // Contagem Regressiva para a Prova da Residência Médica
-  const [examName, setExamName] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_countdown_exam_name');
-      if (saved) return saved;
-    }
-    return 'ENARE 2026';
-  });
+  const [examName, setExamName] = useState<string>('ENARE 2026');
+  const [examDateStr, setExamDateStr] = useState<string>('2026-11-01');
 
-  const [examDateStr, setExamDateStr] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_countdown_exam_date');
-      if (saved) return saved;
+  // Sincroniza preferências do localStorage após montagem
+  useEffect(() => {
+    try {
+      const savedTime = localStorage.getItem('bancoresidencia_daily_time_goal');
+      if (savedTime) {
+        const parsedTime = Number(savedTime);
+        setDailyTimeGoal(parsedTime);
+        setCustomGoalTime(parsedTime);
+      }
+      const savedName = localStorage.getItem('bancoresidencia_countdown_exam_name');
+      if (savedName) {
+        setExamName(savedName);
+        setEditExamName(savedName);
+      }
+      const savedDate = localStorage.getItem('bancoresidencia_countdown_exam_date');
+      if (savedDate) {
+        setExamDateStr(savedDate);
+        setEditExamDateStr(savedDate);
+      }
+    } catch {
+      // ignore
     }
-    return '2026-11-01';
-  });
+  }, []);
 
   const [isEditingCountdown, setIsEditingCountdown] = useState<boolean>(false);
   const [editExamName, setEditExamName] = useState<string>(examName);

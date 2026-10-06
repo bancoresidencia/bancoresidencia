@@ -111,31 +111,28 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [mode, setModeState] = useState<ThemeMode>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
-        if (savedMode === 'dark' || savedMode === 'light') return savedMode;
-      } catch {
-        // ignore
-      }
-    }
-    return 'dark';
-  });
-
-  const [accent, setAccentState] = useState<AccentColor>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const savedAccent = localStorage.getItem('banco_accent_color') as AccentColor | null;
-        if (savedAccent && ACCENT_CONFIGS[savedAccent]) return savedAccent;
-      } catch {
-        // ignore
-      }
-    }
-    return 'blue';
-  });
+  const [mode, setModeState] = useState<ThemeMode>('dark');
+  const [accent, setAccentState] = useState<AccentColor>('blue');
+  const [isMounted, setIsMounted] = useState<boolean>(false);
 
   useEffect(() => {
+    try {
+      const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
+      if (savedMode === 'dark' || savedMode === 'light') {
+        setModeState(savedMode);
+      }
+      const savedAccent = localStorage.getItem('banco_accent_color') as AccentColor | null;
+      if (savedAccent && ACCENT_CONFIGS[savedAccent]) {
+        setAccentState(savedAccent);
+      }
+    } catch {
+      // ignore
+    }
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
     try {
       const root = document.documentElement;
       if (mode === 'dark') {
@@ -154,7 +151,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     } catch {
       // ignore
     }
-  }, [mode, accent]);
+  }, [mode, accent, isMounted]);
 
   const toggleMode = () => {
     setModeState((prev) => (prev === 'dark' ? 'light' : 'dark'));

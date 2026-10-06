@@ -60,13 +60,7 @@ export default function Home() {
   const { user, isAuthenticated, isLoading, logout } = useAuth();
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_sidebar_collapsed');
-      if (saved !== null) return saved === 'true';
-    }
-    return true; // Padrão: recolhido (apenas ícones), com expansão para nomes
-  });
+  const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);
 
   const handleToggleSidebar = () => {
     setSidebarCollapsed((prev) => {
@@ -92,13 +86,7 @@ export default function Home() {
 
   // Perfil do Aluno e Metas dinâmicas
   const studentName = user?.name || 'Dr. Lucas Rocha';
-  const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_custom_daily_goal');
-      if (saved) return Number(saved);
-    }
-    return null;
-  });
+  const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
   const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
 
   // Pastas e Listas de Questões
@@ -107,13 +95,27 @@ export default function Home() {
   const [activeListId, setActiveListId] = useState<string | null>(null);
 
   // Tamanho de Fonte das Questões (Menor 'sm' por padrão para maior densidade médica)
-  const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_question_font_size');
-      if (saved === 'sm' || saved === 'base' || saved === 'lg') return saved;
+  const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('sm');
+
+  // Sincroniza preferências do localStorage após a montagem para prevenir hydration mismatch
+  useEffect(() => {
+    try {
+      const savedSidebar = localStorage.getItem('bancoresidencia_sidebar_collapsed');
+      if (savedSidebar !== null) {
+        setSidebarCollapsed(savedSidebar === 'true');
+      }
+      const savedGoal = localStorage.getItem('bancoresidencia_custom_daily_goal');
+      if (savedGoal) {
+        setCustomDailyGoal(Number(savedGoal));
+      }
+      const savedFontSize = localStorage.getItem('bancoresidencia_question_font_size');
+      if (savedFontSize === 'sm' || savedFontSize === 'base' || savedFontSize === 'lg') {
+        setFontSize(savedFontSize);
+      }
+    } catch {
+      // ignore
     }
-    return 'sm';
-  });
+  }, []);
 
   const handleFontSizeChange = (size: 'sm' | 'base' | 'lg') => {
     setFontSize(size);
