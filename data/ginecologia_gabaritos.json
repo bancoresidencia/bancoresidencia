@@ -1,0 +1,1567 @@
+[
+  {
+    "id": "56c73c84-6bae-470f-937d-6b195acaad4e",
+    "correct_choice": "0",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK279045/table/premenstrual-syndrom.table1diag/",
+          "tipo": "livro_texto",
+          "titulo": "Table 1, Diagnostic Criteria for Premenstrual Dysphoric Disorder (PMDD) - Endotext - NCBI Bookshelf"
+        },
+        {
+          "url": "https://www.febrasgo.org.br/noticia/tensao-pre-menstrual-criterios-para-diagnostico/",
+          "tipo": "revisao_clinica",
+          "titulo": "Tensão Pré-Menstrual – Critérios para diagnóstico | FEBRASGO"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Labilidade afetiva reduzida.",
+          "correta": true,
+          "comentario": "<p>O termo que derruba a alternativa é <strong>reduzida</strong>. No DSM-5, o critério afetivo é labilidade afetiva acentuada, como mudanças bruscas de humor, tristeza ou choro fáceis e maior sensibilidade à rejeição. Como o comando pede a alternativa incorreta, esta é a opção a ser assinalada.</p>"
+        },
+        {
+          "texto": "Irritabilidade ou raiva acentuadas ou aumento nos conflitos interpessoais.",
+          "correta": false,
+          "comentario": "<p>Irritabilidade ou raiva acentuadas, assim como aumento de conflitos interpessoais, fazem parte do grupo de sintomas afetivos principais do transtorno disfórico pré-menstrual. Por isso, a afirmação corresponde a um critério previsto e não deve ser marcada como incorreta.</p>"
+        },
+        {
+          "texto": "Humor deprimido acentuado, sentimentos de desesperança ou pensamentos autodepreciativos.",
+          "correta": false,
+          "comentario": "<p>Humor deprimido acentuado, desesperança e pensamentos autodepreciativos também estão entre os sintomas afetivos nucleares do TDPM. O erro da questão não está nesta alternativa, pois ela reproduz um dos critérios sintomáticos.</p>"
+        },
+        {
+          "texto": "Ansiedade acentuada, tensão e/ou sentimentos de estar nervosa ou no limite.",
+          "correta": false,
+          "comentario": "<p>Ansiedade acentuada, tensão e sensação de estar nervosa ou no limite compõem outro sintoma afetivo aceito pelo DSM-5. A presença de um ou mais sintomas desse grupo é exigida dentro do conjunto diagnóstico, sempre respeitando o padrão cíclico pré-menstrual.</p>"
+        }
+      ],
+      "comentario_final": "<p>No transtorno disfórico pré-menstrual, o DSM-5 exige sintomas cíclicos que aparecem na fase final do ciclo, melhoram após o início da menstruação e ficam mínimos ou ausentes na semana pós-menstrual. Para o diagnóstico, devem existir pelo menos cinco sintomas no total, com sofrimento clinicamente significativo ou prejuízo funcional.</p><p>O ponto cobrado aqui é o grupo dos sintomas afetivos principais. Pelo menos um deles deve estar presente: <strong>labilidade afetiva acentuada</strong>, irritabilidade ou raiva acentuadas, humor deprimido ou desesperança, ou ansiedade/tensão acentuadas.</p><p>Assim, B, C e D descrevem sintomas previstos nos critérios. A alternativa A troca o sentido do critério ao afirmar “labilidade afetiva reduzida”. No TDPM, a labilidade afetiva é aumentada ou acentuada, não reduzida.</p>",
+      "eu_tenho_10_anos": "No TDPM, alguns sintomas emocionais ficam fortes antes da menstruação, como mudanças rápidas de humor, irritação, tristeza ou ansiedade. A alternativa A está errada porque diz que a mudança de humor fica reduzida. O critério é o contrário: a mudança de humor fica acentuada.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Registros prospectivos diários por pelo menos dois ciclos ajudam a distinguir TDPM de transtornos persistentes que apenas pioram no período pré-menstrual.",
+    "common_mistake": "Ler apenas a expressão “labilidade afetiva” e ignorar o modificador “reduzida”. O critério é labilidade acentuada, e o diagnóstico completo requer pelo menos cinco sintomas, padrão cíclico e repercussão clínica.",
+    "quick_takeaway": "No TDPM, pelo menos um dos quatro sintomas afetivos nucleares deve estar presente e a labilidade afetiva é acentuada, não reduzida; por isso, a alternativa A é a incorreta.",
+    "key_concepts": [
+      "Transtorno disfórico pré-menstrual",
+      "Critérios do DSM-5-TR",
+      "Sintomas afetivos nucleares",
+      "Labilidade afetiva acentuada",
+      "Padrão temporal pré-menstrual",
+      "Registro prospectivo de sintomas",
+      "Prejuízo funcional",
+      "Exacerbação pré-menstrual de outro transtorno"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 1,
+        "type": "command",
+        "skill": "Identificar que a questão solicita a alternativa incorreta",
+        "bloom_level": "compreender"
+      },
+      {
+        "step": 2,
+        "type": "recall",
+        "skill": "Recordar os quatro sintomas afetivos nucleares do TDPM",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 3,
+        "type": "comparison",
+        "skill": "Comparar a expressão 'labilidade afetiva reduzida' com o critério de labilidade acentuada",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 4,
+        "type": "validation",
+        "skill": "Confirmar que irritabilidade ou raiva acentuadas integram os critérios",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 5,
+        "type": "validation",
+        "skill": "Confirmar humor deprimido, desesperança ou autodepreciação como critério",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 6,
+        "type": "validation",
+        "skill": "Confirmar ansiedade, tensão ou sensação de estar no limite como critério",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 7,
+        "type": "conclusion",
+        "skill": "Assinalar a alternativa A sem confundir a correção da frase com a resposta ao comando negativo",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "83437934-34f9-44e0-a41f-7020a996f9a5",
+    "correct_choice": "3",
+    "ai_commentary": {
+      "referencias": [],
+      "alternativas": [
+        {
+          "texto": "indicar CUF com material enviando para histopatológico.",
+          "correta": false,
+          "comentario": "A curetagem uterina fracionada com envio para histopatologia já foi muito usada para investigar sangramento pós-menopausa, mas é um método cego e pode perder lesões focais, como pólipos e lesões submucosas. Em um quadro estável, de sangramento leve, a avaliação inicial costuma ser feita com ultrassonografia transvaginal para medir o eco endometrial; quando há indicação de amostra tecidual, métodos dirigidos, como histeroscopia com biópsia, são preferíveis à curetagem às cegas."
+        },
+        {
+          "texto": "indicar histeroscopia com biopsia de endométrio.",
+          "correta": false,
+          "comentario": "A histeroscopia com biópsia endometrial é um excelente método diagnóstico, especialmente quando há espessamento endometrial, lesão focal, endométrio mal avaliado ao ultrassom ou sangramento persistente/recorrente. No caso descrito, com primeiro episódio de sangramento pós-menopausa, exame especular normal e estabilidade clínica, a investigação inicial mais adequada é a ultrassonografia transvaginal, que define a necessidade de avaliação histológica."
+        },
+        {
+          "texto": "indicar estrogênioterapia tendo em vista atrofia como possível causa.",
+          "correta": false,
+          "comentario": "A atrofia endometrial ou vaginal é causa frequente de sangramento pós-menopausa, mas esse diagnóstico não deve ser presumido antes de excluir doença endometrial, principalmente hiperplasia e câncer de endométrio. Tratar empiricamente com estrogênio pode atrasar o diagnóstico de uma neoplasia; a prioridade é investigar a origem do sangramento."
+        },
+        {
+          "texto": "solicitar USG transvaginal. Se observado espessamento endometrial, indicar histeroscopia diagnostica.",
+          "correta": true,
+          "comentario": "Esta é a melhor conduta inicial. No sangramento pós-menopausa com exame especular sem lesão evidente, a ultrassonografia transvaginal avalia a espessura e o aspecto do endométrio. Endométrio fino, em geral até 4 mm em mulheres sem terapia hormonal, tem alto valor preditivo negativo para câncer endometrial quando o sangramento não persiste. Se houver espessamento, irregularidade, lesão focal ou avaliação inadequada, a investigação deve prosseguir com histeroscopia, idealmente com biópsia dirigida e histopatologia."
+        },
+        {
+          "texto": "leiomiomas uterinos podem ser a causa do sangramento.",
+          "correta": false,
+          "comentario": "Leiomiomas podem causar sangramento uterino anormal, sobretudo na menacme, e alguns miomas submucosos podem estar associados a sangramento. Porém, após a menopausa, os miomas tendem a regredir e um novo sangramento não deve ser atribuído a leiomioma sem investigação endometrial. A prioridade clínica é excluir hiperplasia e câncer de endométrio."
+        }
+      ],
+      "comentario_final": "Sangramento vaginal após a menopausa sempre exige investigação, mesmo quando é leve. Depois de 12 meses sem menstruar, qualquer sangramento deve ser considerado anormal até prova em contrário.\n\nNeste caso, o exame especular não mostrou lesões vaginais ou cervicais evidentes, e a paciente não usa terapia hormonal ou medicações que expliquem o sangramento. O próximo passo é avaliar o endométrio.\n\nA **ultrassonografia transvaginal** é o exame inicial mais útil em uma paciente estável com primeiro episódio de sangramento pós-menopausa. Ela mede o chamado **eco endometrial**:\n\n- **Endométrio fino**, geralmente ≤ 4 mm em mulheres sem terapia hormonal, torna câncer de endométrio pouco provável quando o sangramento é único e não persiste.\n- **Endométrio espessado**, irregular, com lesão focal, não visualizado adequadamente ou associado a sangramento persistente/recorrente exige avaliação histológica.\n- Quando há necessidade de investigar a cavidade uterina, a **histeroscopia com biópsia dirigida** é superior a métodos cegos, porque permite visualizar pólipos, miomas submucosos e áreas suspeitas, além de coletar material para histopatologia.\n\nA atrofia é uma causa comum de sangramento pós-menopausa, mas é um diagnóstico de exclusão. Antes de tratar como atrofia, é necessário afastar hiperplasia e câncer de endométrio.",
+      "eu_tenho_10_anos": "Depois que uma mulher entra na menopausa, ela não deve mais sangrar como se fosse menstruação. Se aparecer sangramento, mesmo pouco, o médico precisa olhar se está tudo bem dentro do útero.\n\nComo o exame por fora e pelo colo do útero está normal, o próximo passo é fazer um ultrassom pela vagina para medir a camada de dentro do útero, chamada endométrio. Se essa camada estiver grossa ou estranha, o médico olha por dentro do útero com um aparelho e tira um pedacinho para exame. Não é seguro dizer que é só ressecamento ou mioma sem investigar primeiro.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": ""
+    },
+    "clinical_pearl": "Sangramento pós-menopausa = Sempre investigar malignidade endometrial → USG transvaginal é 1ª linha.",
+    "common_mistake": "O erro comum é subestimar a importância do sangramento pós-menopausa, atribuindo-o à atrofia sem investigação adequada. Embora a atrofia seja uma causa comum, a exclusão de câncer de endométrio é prioritária e exige uma abordagem diagnóstica estruturada.",
+    "quick_takeaway": "Qualquer sangramento vaginal após a menopausa é um sinal de alerta e deve ser investigado para excluir malignidade endometrial, mesmo que leve. A ultrassonografia transvaginal é o exame de primeira linha para avaliar o espessamento endometrial. Se o endométrio estiver espessado (geralmente > 4-5 mm), a histeroscopia com biópsia é indicada para diagnóstico histopatológico.",
+    "key_concepts": [
+      "Sangramento Vaginal Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Ultrassonografia Transvaginal",
+      "Histeroscopia Diagnóstica",
+      "Biópsia de Endométrio"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer o sangramento vaginal na pós-menopausa como sinal de alerta para malignidade endometrial",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "investigation",
+        "skill": "Selecionar a ultrassonografia transvaginal como exame de triagem inicial para avaliação da espessura endometrial",
+        "bloom_level": "aplicar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Indicar a histeroscopia com biópsia como padrão-ouro para investigação de endométrio espessado (> 4-5 mm)",
+        "bloom_level": "analisar"
+      }
+    ]
+  },
+  {
+    "id": "01bdc2e2-d29b-4184-a105-cd38b5dbf98a",
+    "correct_choice": "2",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Protocolos Febrasgo nº 9: Hiperplasia endometrial e câncer do endométrio. 2021."
+        },
+        {
+          "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+          "tipo": "documento_oficial",
+          "titulo": "Instituto Nacional de Câncer (INCA). Câncer do corpo do útero: versão para profissionais de saúde."
+        },
+        {
+          "url": "https://www.febrasgo.org.br/noticia/histeroscopia-curetagem-ou-biopsia-endometrial-qual-a-melhor-estrategia-para-investigar-o-sangramento-uterino-anormal/",
+          "tipo": "revisao_clinica",
+          "titulo": "FEBRASGO. Histeroscopia, curetagem ou biópsia endometrial: qual a melhor estratégia para investigar o sangramento uterino anormal?"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "adotar conduta expectante e repetir ultrassonografia em 6 meses, uma vez que a principal causa de sangramento pós-menopausa é atrofia endometrial.",
+          "correta": false,
+          "comentario": "<p>A atrofia genital é uma causa frequente de sangramento após a menopausa, mas não autoriza observação quando há <strong>endométrio espessado</strong>. Nesta paciente, a ultrassonografia mostrou endométrio de 1,2 cm, ou seja, 12 mm, valor bem acima do ponto de corte usado na investigação do sangramento pós-menopausa. Além disso, obesidade, hipertensão e nuliparidade aumentam a suspeita de hiperplasia endometrial e câncer de endométrio. Portanto, repetir ultrassonografia em 6 meses atrasaria a confirmação histológica necessária.</p>"
+        },
+        {
+          "texto": "fazer teste de progesterona por 14 dias. Se o teste for positivo, realizar histeroscopia e biópsia endometrial.",
+          "correta": false,
+          "comentario": "<p>O teste com progesterona tem papel clássico na investigação de amenorreia secundária, não na avaliação de sangramento pós-menopausa com endométrio espessado. Nesta situação, a prioridade é excluir hiperplasia com atipia ou carcinoma por amostragem endometrial. Usar progesterona como etapa intermediária não esclarece a causa do sangramento e posterga o diagnóstico.</p>"
+        },
+        {
+          "texto": "realizar histeroscopia diagnóstica e biópsia de endométrio, de acordo com o resultado da histeroscopia.",
+          "correta": true,
+          "comentario": "<p>Esta é a melhor conduta entre as alternativas. Em mulher com sangramento pós-menopausa, endométrio de 12 mm e fatores de risco para câncer de endométrio, deve-se obter avaliação histológica. A histeroscopia permite visualizar a cavidade uterina e direcionar a biópsia para lesões suspeitas, como pólipos, áreas irregulares, espessamentos focais ou lesões vegetantes.</p>"
+        },
+        {
+          "texto": "realizar curetagem uterina semiótica, em centro cirúrgico e sob anestesia, que seria a melhor forma de obter amostra representativa de tecido endometrial.",
+          "correta": false,
+          "comentario": "<p>A curetagem uterina semiótica pode obter material endometrial, mas é um método cego e não é a melhor forma de avaliar a cavidade quando a histeroscopia está disponível. Lesões focais, como pólipos ou áreas neoplásicas pequenas, podem ser perdidas. Em uma paciente estável, a abordagem mais adequada é visualizar a cavidade e realizar biópsia dirigida.</p>"
+        },
+        {
+          "texto": "indicar histerectomia total abdominal com salpingectomia bilateral, diante da forte suspeita de câncer de endométrio.",
+          "correta": false,
+          "comentario": "<p>Apesar da suspeita clínica ser relevante, histerectomia não deve ser indicada antes de confirmação histológica. O diagnóstico pode ser pólipo, hiperplasia sem atipia, hiperplasia atípica ou câncer, e cada condição tem implicações terapêuticas diferentes. Mesmo quando há câncer, o planejamento cirúrgico depende do tipo histológico, grau tumoral, extensão da doença e necessidade de estadiamento.</p>"
+        }
+      ],
+      "comentario_final": "<p>O ponto central da questão é a investigação do <strong>sangramento pós-menopausa</strong>. Toda perda sanguínea uterina após 12 meses de amenorreia deve ser valorizada, especialmente quando associada a fatores de risco para câncer de endométrio, como obesidade, hipertensão e nuliparidade.</p><p>A ultrassonografia transvaginal é frequentemente usada como exame inicial. Em mulheres com sangramento pós-menopausa, endométrio igual ou maior que 4 mm deve ser investigado. Aqui, o endométrio mede 12 mm, portanto a paciente precisa de avaliação histológica. A presença de vaginite atrófica no exame especular pode coexistir com sangramento, mas não explica com segurança um endométrio tão espessado.</p><p>Entre as alternativas, a melhor conduta é realizar histeroscopia diagnóstica com biópsia endometrial orientada pelos achados. A histeroscopia é superior à curetagem cega porque permite identificar se o espessamento é focal ou difuso e coletar material da área mais suspeita. Conduta expectante, teste hormonal com progesterona e histerectomia sem diagnóstico prévio não são condutas adequadas neste momento.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, o útero não deveria mais sangrar. Se uma mulher volta a ter sangramento e o exame mostra que a camada de dentro do útero está grossa, o médico precisa investigar logo. Para isso, ele pode usar uma câmera pequena para olhar por dentro do útero e retirar um pedacinho do tecido para o laboratório analisar. Assim dá para saber se é algo benigno, uma alteração que pode virar câncer ou um câncer de verdade. Não se deve apenas esperar, nem fazer uma cirurgia grande sem antes ter certeza do diagnóstico.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa + endométrio > 4-5 mm (USG) = investigar câncer de endométrio com histeroscopia + biópsia.",
+    "common_mistake": "Subestimar a importância do sangramento pós-menopausa ou considerar a atrofia endometrial como a única causa sem investigação adequada. O erro é não prosseguir com a histeroscopia e biópsia diante de um endométrio espessado, o que pode atrasar o diagnóstico de câncer.",
+    "quick_takeaway": "Sangramento pós-menopausa é sempre um sinal de alerta para câncer de endométrio. Um endométrio com 1,2 cm (12 mm) na ultrassonografia transvaginal é significativamente espessado e exige investigação invasiva com histeroscopia e biópsia para descartar malignidade.",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Espessamento Endometrial",
+      "Histeroscopia Diagnóstica",
+      "Biópsia Endometrial"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer fatores de risco para câncer de endométrio (idade, obesidade, nuliparidade e hipertensão) em paciente com sangramento pós-menopausa",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 1,
+        "type": "investigation",
+        "skill": "Interpretar o espessamento endometrial de 1,2 cm na ultrassonografia como indicação mandatória de investigação histológica",
+        "bloom_level": "aplicar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Selecionar a histeroscopia com biópsia dirigida como padrão-ouro para avaliação da cavidade uterina e diagnóstico de malignidade",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "6584e94a-b03f-489a-892b-e69b1d89b0bb",
+    "correct_choice": "2",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Protocolos Febrasgo Ginecologia nº 9: Hiperplasia endometrial e câncer do endométrio, 2021"
+        },
+        {
+          "url": "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/ch-ufc/acesso-a-informacao/protocolos-e-pops/protocolos-meac/maternidade-escola-assis-chateaubriand/ginecologia/pro-med-gin-039-sangramento-uterino-anormal-classificacao-e-investigacao.pdf/%40%40download/file",
+          "tipo": "documento_oficial",
+          "titulo": "Hospital Universitário da UFC/EBSERH. Protocolo PRO.UGIN.019 V3: Sangramento uterino anormal: classificação e investigação, 2025"
+        },
+        {
+          "url": "https://www.febrasgo.org.br/noticia/histeroscopia-curetagem-ou-biopsia-endometrial-qual-a-melhor-estrategia-para-investigar-o-sangramento-uterino-anormal/",
+          "tipo": "consenso",
+          "titulo": "FEBRASGO. Histeroscopia, curetagem ou biópsia endometrial: qual a melhor estratégia para investigar o sangramento uterino anormal?, 2018"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Prescrever estrogênio vaginal.",
+          "correta": false,
+          "comentario": "<p>A atrofia da mucosa vaginal pode causar sangramento na pós-menopausa e o estrogênio vaginal pode ser útil para sintomas geniturinários da menopausa, como secura, ardor e dispareunia. Porém, nesta paciente há um dado que muda a prioridade: <strong>endométrio de 11 mm</strong> associado a sangramento pós-menopausa. Antes de atribuir o sangramento apenas à atrofia e tratar empiricamente, é necessário investigar doença endometrial, incluindo hiperplasia e câncer.</p>"
+        },
+        {
+          "texto": "Prescrever progesterona.",
+          "correta": false,
+          "comentario": "<p>Progestagênios podem fazer parte do tratamento de hiperplasia endometrial sem atipia, especialmente após confirmação histológica e estratificação adequada. Nesta situação, contudo, a paciente ainda não tem diagnóstico. Em sangramento pós-menopausa com endométrio espessado, iniciar progesterona sem biópsia pode atrasar o diagnóstico de hiperplasia com atipia ou carcinoma endometrial.</p>"
+        },
+        {
+          "texto": "Histeroscopia e biópsia dirigida.",
+          "correta": true,
+          "comentario": "<p>O sangramento após 12 meses de amenorreia é sangramento pós-menopausa e deve ser investigado. Em mulher sem terapia hormonal, a ultrassonografia transvaginal com espessura endometrial igual ou superior a 4 mm indica avaliação histológica. Como o endométrio mede 11 mm, a melhor opção oferecida é a <strong>histeroscopia com biópsia dirigida</strong>, que permite visualizar a cavidade uterina e colher material da área suspeita.</p>"
+        },
+        {
+          "texto": "Miomectomia.",
+          "correta": false,
+          "comentario": "<p>A miomectomia é tratamento cirúrgico de leiomiomas selecionados, principalmente quando submucosos e sintomáticos, ou quando há indicação reprodutiva específica. O enunciado não descreve mioma, aumento uterino ou lesão miometrial. O problema central é sangramento pós-menopausa com endométrio espessado, o que exige investigação endometrial, não cirurgia para mioma.</p>"
+        }
+      ],
+      "comentario_final": "<p>A questão aborda a conduta diante de <strong>sangramento pós-menopausa</strong>. Considera-se pós-menopausa a paciente que ficou pelo menos 12 meses sem menstruar; portanto, sangramento vaginal após esse período é sempre um sinal de alerta e não deve ser tratado empiricamente sem investigação.</p><p>A ultrassonografia transvaginal é um exame inicial importante. Em mulheres com sangramento pós-menopausa, sem uso de terapia hormonal, o endométrio fino reduz muito a probabilidade de câncer; já o espessamento endometrial, classicamente igual ou superior a 4 mm, exige avaliação histológica. Nesta paciente, o endométrio mede 11 mm, valor claramente alterado.</p><p>Embora a atrofia vaginal seja uma causa comum de sangramento na menopausa, ela não explica com segurança um endométrio espessado. A conduta adequada é obter tecido endometrial para anatomopatológico. Entre as opções, a histeroscopia com biópsia dirigida é a melhor, pois permite inspeção direta da cavidade uterina e amostragem de lesões focais, como pólipos, hiperplasia localizada ou áreas suspeitas de malignidade.</p><p>A mensagem prática para prova é: sangramento pós-menopausa + endométrio espessado = <strong>investigar o endométrio com biópsia</strong>. Não se deve iniciar estrogênio vaginal ou progesterona antes de excluir doença endometrial relevante.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, a mulher não deve mais menstruar. Se aparece sangue, mesmo pouquinho, o médico precisa investigar. No ultrassom, a parte de dentro do útero apareceu mais grossa do que deveria. Por isso, não basta passar pomada hormonal ou remédio: é preciso olhar dentro do útero com um aparelho e retirar um pedacinho para exame. Esse exame mostra se é algo simples ou se existe uma doença mais séria.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa + endométrio > 4-5mm (sem TH) → investigar câncer endometrial (histeroscopia + biópsia).",
+    "common_mistake": "Subestimar a importância do sangramento pós-menopausa, atribuindo-o apenas à atrofia vaginal, sem investigar adequadamente o endométrio. A atrofia pode coexistir, mas o espessamento endometrial exige exclusão de malignidade.",
+    "quick_takeaway": "Qualquer sangramento vaginal após a menopausa é um sinal de alerta e deve ser investigado para excluir malignidade endometrial, especialmente quando a ultrassonografia transvaginal revela espessamento endometrial significativo (geralmente > 4-5 mm em mulheres sem terapia hormonal).",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Espessamento Endometrial",
+      "Histeroscopia",
+      "Biópsia Endometrial"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Detectar sangramento uterino anormal em paciente na pós-menopausa como sinal de alerta para malignidade",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "investigation",
+        "skill": "Avaliar a espessura endometrial de 11 mm como critério para investigação histológica (ponto de corte > 4-5 mm)",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Indicar a histeroscopia com biópsia dirigida como padrão-ouro para diagnóstico de patologias endometriais",
+        "bloom_level": "aplicar"
+      }
+    ]
+  },
+  {
+    "id": "1e939ed6-4335-4b89-86cf-12fee3d8c5fa",
+    "correct_choice": "1",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Protocolos Febrasgo: Hiperplasia endometrial e câncer do endométrio. Nº 9, 2021."
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK562188/",
+          "tipo": "fonte_secundaria",
+          "titulo": "StatPearls. Postmenopausal Bleeding. NCBI Bookshelf, atualização 2026."
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Prescrever ácido tranexâmico e observação clínica devido a endométrio devido de espessura normal.",
+          "correta": false,
+          "comentario": "<p>O erro central é considerar normal um endométrio de 6 mm em paciente com <strong>sangramento pós-menopausa</strong>. Nessa situação, a meta não é apenas reduzir o fluxo, mas excluir lesão endometrial, como pólipo, hiperplasia ou carcinoma. Ácido tranexâmico pode ter papel em alguns contextos de sangramento uterino anormal, mas não substitui investigação endometrial em mulher pós-menopausada sintomática.</p>"
+        },
+        {
+          "texto": "Realizar histeroscopia para avaliação da cavidade endometrial.",
+          "correta": true,
+          "comentario": "<p>O achado decisivo é sangramento após 7 anos de menopausa associado a endométrio de 6 mm. Em mulher pós-menopausada com sangramento, espessamento endometrial igual ou superior a 4 mm deve ser investigado. A histeroscopia é adequada porque permite avaliar diretamente a cavidade uterina, identificar lesões focais e orientar biópsia quando necessária. Na prática, o ideal é que a avaliação resulte em amostra histológica quando houver suspeita endometrial.</p>"
+        },
+        {
+          "texto": "Iniciar terapia de reposição combinada com estrógeno e progesterona.",
+          "correta": false,
+          "comentario": "<p>O erro é tratar com hormônio um sangramento pós-menopausa ainda sem diagnóstico. A terapia hormonal da menopausa pode ser considerada em pacientes selecionadas com sintomas climatéricos, mas sangramento genital não esclarecido exige investigação antes de qualquer reposição, para não mascarar ou atrasar o diagnóstico de patologia endometrial.</p>"
+        },
+        {
+          "texto": "Iniciar terapia de reposição hormonal somente com estrógeno.",
+          "correta": false,
+          "comentario": "<p>Estrogênio isolado é inadequado em mulher com útero, pois estimula o endométrio sem oposição progestagênica e aumenta o risco de hiperplasia endometrial. Além disso, a queixa apresentada não é sintoma climatérico a ser tratado com reposição hormonal, mas sangramento pós-menopausa que precisa ser investigado.</p>"
+        },
+        {
+          "texto": "Indicar histerectomia.",
+          "correta": false,
+          "comentario": "<p>Histerectomia não é a primeira conduta sem diagnóstico histológico ou indicação cirúrgica definida. Ela pode ser tratamento em situações específicas, como câncer de endométrio confirmado ou hiperplasia atípica conforme o contexto, mas o caso ainda está na etapa de investigação da causa do sangramento.</p>"
+        }
+      ],
+      "comentario_final": "<p>O conceito central é simples: <strong>todo sangramento pós-menopausa deve ser investigado</strong>. A paciente está há 7 anos em menopausa, não usa terapia hormonal e apresenta sangramento saindo pelo orifício cervical. Isso direciona a avaliação para o trato genital, especialmente a cavidade uterina e o endométrio.</p><p>No ultrassom transvaginal, um endométrio fino pode ter valor tranquilizador em pacientes selecionadas. Porém, nesta questão, a espessura é de 6 mm. Em mulher pós-menopausada com sangramento, valores iguais ou superiores a 4 mm exigem investigação endometrial. A colpocitologia oncótica negativa há 1 ano não resolve o problema, porque o Papanicolau avalia principalmente lesões cervicais e não exclui pólipo, hiperplasia ou carcinoma de endométrio.</p><p>Entre as alternativas, a melhor conduta é realizar <strong>histeroscopia</strong> para avaliar a cavidade endometrial, preferencialmente com possibilidade de biópsia dirigida ou obtenção de material para histologia. As demais opções erram por tratar ou observar antes de investigar: ácido tranexâmico apenas reduziria o sangramento, terapia hormonal não deve ser iniciada diante de sangramento não esclarecido, estrogênio isolado é inadequado em mulher com útero e histerectomia é conduta definitiva sem diagnóstico prévio.</p><p>Para prova, pense assim: sangramento pós-menopausa + endométrio não fino = investigar cavidade/endometrio, não apenas medicar o sangramento.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, sangrar não é esperado. O médico precisa descobrir de onde vem o sangue e se há alguma alteração dentro do útero, como pólipo, crescimento exagerado do endométrio ou câncer. Neste caso, o endométrio mediu 6 mm, que é espesso demais para apenas observar em uma mulher que está sangrando. Por isso, o melhor é olhar por dentro do útero com histeroscopia e, se necessário, colher material para exame.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento na pós-menopausa + Endométrio > 4-5mm = Investigação Histológica (Histeroscopia).",
+    "common_mistake": "Ignorar sangramentos de pequeno volume ou considerar um endométrio de 6mm como normal na pós-menopausa sem terapia hormonal.",
+    "quick_takeaway": "Qualquer sangramento na pós-menopausa deve ser investigado. O ponto de corte de 4-5mm na USG serve para excluir malignidade com alto valor preditivo negativo.",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Hiperplasia Endometrial",
+      "Histeroscopia",
+      "Câncer de Endométrio"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Identificou o sangramento vaginal na pós-menopausa como um sinal de alerta para neoplasia endometrial",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Correlacionou a espessura endometrial de 6 mm com a necessidade de investigação adicional em pacientes sintomáticas",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Indicou a histeroscopia como o padrão-ouro para avaliação da cavidade endometrial e diagnóstico diferencial",
+        "bloom_level": "aplicar"
+      }
+    ]
+  },
+  {
+    "id": "9be5b508-e472-4054-a9fb-afee022686dc",
+    "correct_choice": "0",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual/violencia-sexual",
+          "tipo": "documento_oficial",
+          "titulo": "Ministério da Saúde. Violência sexual"
+        },
+        {
+          "url": "https://sbrh.org.br/comite/contracepcao/anticoncepcao-de-emergencia/",
+          "tipo": "consenso",
+          "titulo": "Sociedade Brasileira de Reprodução Humana. Anticoncepção de Emergência"
+        },
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/emergency-contraception",
+          "tipo": "documento_oficial",
+          "titulo": "World Health Organization. Emergency contraception"
+        },
+        {
+          "url": "https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html",
+          "tipo": "diretriz",
+          "titulo": "Centers for Disease Control and Prevention. Emergency Contraception: U.S. Selected Practice Recommendations for Contraceptive Use"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Levonorgestrel 0,75 mg, em 2 doses com intervalo de 12 horas",
+          "correta": true,
+          "comentario": "<p>O levonorgestrel em dose total de 1,5 mg é o esquema clássico de anticoncepção de emergência com progestagênio isolado. Pode ser feito como 1,5 mg em dose única ou como <strong>0,75 mg em duas tomadas com intervalo de 12 horas</strong>, preferencialmente o mais cedo possível após a violência sexual. Entre as alternativas apresentadas, é a opção adequada.</p>"
+        },
+        {
+          "texto": "Contraceptivos contendo etinilestradiol, na dose de 20 mcg/dia, por 21 dias",
+          "correta": false,
+          "comentario": "<p>O erro é confundir contracepção regular com anticoncepção de emergência. Etinilestradiol 20 mcg/dia por 21 dias corresponde a esquema de anticoncepcional combinado de uso cíclico, não a um esquema pós-coital para reduzir risco de gestação após violência sexual.</p>"
+        },
+        {
+          "texto": "Contraceptivos contendo etinilestradiol, na dose de 30 mcg associados ao gestodene",
+          "correta": false,
+          "comentario": "<p>A associação de etinilestradiol com gestodeno é formulação de anticoncepcional oral combinado para uso regular. O método de Yuzpe, quando usado como emergência, emprega doses específicas de etinilestradiol associadas a levonorgestrel, não simplesmente qualquer pílula combinada com gestodeno nessa apresentação.</p>"
+        },
+        {
+          "texto": "Acetato de medroxiprogesterona 10 mg/dia, por 10 dias consecutivos",
+          "correta": false,
+          "comentario": "<p>Medroxiprogesterona por 10 dias não é esquema validado de anticoncepção de emergência. Esse progestagênio pode aparecer em outros contextos ginecológicos, mas não é a conduta indicada para profilaxia de gestação após relação sexual desprotegida ou violência sexual.</p>"
+        },
+        {
+          "texto": "Todas as opções apresentadas acima",
+          "correta": false,
+          "comentario": "<p>Nem todas as opções são métodos corretos de anticoncepção de emergência. Apenas a alternativa com levonorgestrel apresenta dose e modo de uso compatíveis com a prevenção de gestação após violência sexual; as demais descrevem esquemas de contracepção regular ou medicamentos sem indicação adequada para essa finalidade.</p>"
+        }
+      ],
+      "comentario_final": "<p>Na vítima de violência sexual com risco de gestação, a anticoncepção de emergência deve ser oferecida o mais precocemente possível, junto às demais medidas do atendimento integral, como acolhimento, profilaxias de IST quando indicadas, vacinação/avaliação para hepatite B, notificação compulsória e seguimento.</p><p>O método hormonal mais cobrado em prova é o <strong>levonorgestrel</strong>, em dose total de 1,5 mg. Essa dose pode ser administrada como 1 comprimido de 1,5 mg em dose única ou como 2 comprimidos de 0,75 mg; no esquema clássico, faz-se 0,75 mg e repete-se 0,75 mg após 12 horas. Atua principalmente atrasando ou inibindo a ovulação e não interrompe gestação já estabelecida.</p><p>As alternativas com pílulas combinadas em dose habitual por 21 dias, gestodeno ou medroxiprogesterona não correspondem ao protocolo de emergência. O método de Yuzpe existe, mas usa doses específicas de etinilestradiol associadas a levonorgestrel e, em geral, é menos preferido que o levonorgestrel isolado por menor tolerabilidade e menor eficácia relativa. Assim, entre as opções listadas, a melhor resposta é o levonorgestrel 0,75 mg em duas doses com intervalo de 12 horas.</p>",
+      "eu_tenho_10_anos": "Depois de uma violência sexual, uma das coisas que os profissionais de saúde precisam fazer é tentar evitar uma gravidez que ainda não começou. Para isso, o remédio mais adequado entre as opções é o levonorgestrel. Ele funciona principalmente atrasando ou impedindo a saída do óvulo. A dose total é 1,5 mg, que pode ser tomada como dois comprimidos de 0,75 mg, separados por 12 horas. As outras opções são anticoncepcionais de uso comum ou remédios que não servem como método correto de emergência.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Violência sexual → contracepção de emergência com Levonorgestrel 0,75 mg em 2 doses (12h intervalo) ou dose única de 1,5 mg.",
+    "common_mistake": "Atrasar a administração da contracepção de emergência ou não oferecer todas as opções disponíveis (dose única vs. duas doses) à vítima de violência sexual, diminuindo a eficácia.",
+    "quick_takeaway": "No atendimento a vítimas de violência sexual, a contracepção de emergência é uma medida crucial. O Levonorgestrel é a opção mais comum e eficaz, podendo ser administrado em duas doses de 0,75 mg com 12 horas de intervalo ou em dose única de 1,5 mg, preferencialmente nas primeiras 72 horas após a relação sexual desprotegida.",
+    "key_concepts": [
+      "Contracepção de emergência",
+      "Levonorgestrel",
+      "Violência sexual",
+      "Atendimento pós-estupro",
+      "Profilaxia pós-exposição sexual"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Identificar o Levonorgestrel como o padrão-ouro para anticoncepção de emergência",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "treatment",
+        "skill": "Recordar a posologia clássica de 0,75 mg em duas doses com intervalo de 12 horas",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 2,
+        "type": "treatment",
+        "skill": "Diferenciar o Levonorgestrel de outros métodos hormonais contínuos ou de baixa dosagem",
+        "bloom_level": "analisar"
+      }
+    ]
+  },
+  {
+    "id": "44130efd-0499-45c1-95a2-ad96fe48507a",
+    "correct_choice": "1",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Hiperplasia endometrial e câncer do endométrio. Protocolos FEBRASGO, Nº 9, 2021"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Prescrever reposição hormonal estrogênica pela atrofia endometrial.",
+          "correta": false,
+          "comentario": "<p>O erro é tratar o sangramento antes de concluir a investigação. Sangramento na pós-menopausa deve ser avaliado para excluir lesões endometriais e neoplasia; além disso, em mulher com útero, estrogênio sistêmico isolado não é conduta adequada, pois pode estimular o endométrio. Atrofia pode ser causa de sangramento, mas não deve ser presumida como diagnóstico definitivo apenas pelo ultrassom.</p>"
+        },
+        {
+          "texto": "Solicitar uma histeroscopia com biópsia endometrial.",
+          "correta": true,
+          "comentario": "<p>Na pós-menopausa, sangramento vaginal é sinal de alerta e exige avaliação endometrial quando a espessura atinge o limiar de investigação. Em protocolos brasileiros, endométrio <strong>igual ou superior a 4 mm</strong> em paciente com sangramento pós-menopausa deve ser investigado. A histeroscopia com biópsia permite visualização da cavidade e obtenção de material para histologia, sendo a melhor alternativa disponível.</p>"
+        },
+        {
+          "texto": "Acompanhamento ultrassonográfico.",
+          "correta": false,
+          "comentario": "<p>O acompanhamento apenas por ultrassom não resolve o ponto principal: a necessidade de excluir doença endometrial por avaliação histológica quando há sangramento pós-menopausa com endométrio no limiar de investigação. O ultrassom é exame inicial útil, mas não substitui a biópsia quando há indicação de investigação.</p>"
+        },
+        {
+          "texto": "Observação clínica para avaliar novo episódio.",
+          "correta": false,
+          "comentario": "<p>A observação isolada é inadequada neste caso porque a paciente já apresenta sangramento pós-menopausa e endométrio de 4 mm. Em geral, a conduta expectante pode ser considerada em cenários selecionados de endométrio claramente inferior ao ponto de corte, sem irregularidades e com sangramento não recorrente; não é a melhor resposta para este enunciado.</p>"
+        }
+      ],
+      "comentario_final": "<p>A questão cobra a conduta diante de <strong>sangramento pós-menopausa</strong>. Após 12 meses sem menstruar, qualquer sangramento vaginal deve ser investigado, pois pode corresponder a causas benignas, como atrofia, pólipos e miomas submucosos, mas também pode ser manifestação inicial de hiperplasia endometrial ou câncer de endométrio.</p><p>O ultrassom transvaginal é um bom exame inicial porque mede a espessura endometrial e avalia a cavidade uterina e anexos. No entanto, a interpretação depende do contexto clínico. Em paciente com sangramento pós-menopausa, protocolos brasileiros consideram que endométrio <strong>igual ou superior a 4 mm</strong> deve ser investigado. Como a paciente do enunciado tem exatamente 4 mm, a alternativa que propõe histeroscopia com biópsia endometrial é a melhor escolha entre as opções.</p><p>A ideia central para prova é: sangramento pós-menopausa não deve ser tratado empiricamente como atrofia antes de excluir doença endometrial. O ultrassom faz a triagem, mas a confirmação diagnóstica das lesões endometriais depende de histologia. A histeroscopia tem a vantagem de permitir avaliação direta da cavidade e biópsia dirigida.</p>",
+      "eu_tenho_10_anos": "Depois que a mulher entra na menopausa, ela não deve mais sangrar como menstruação. Se aparece sangramento, o médico precisa investigar para ter certeza de que não existe uma alteração importante dentro do útero. O ultrassom mostrou que a camada interna do útero mede 4 mm, que já é um valor que precisa ser investigado nesse caso. Por isso, a melhor conduta é olhar por dentro do útero com histeroscopia e retirar um pedacinho para exame.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa SEMPRE exige investigação para excluir malignidade, mesmo com endométrio fino.",
+    "common_mistake": "Subestimar o sangramento pós-menopausa quando o endométrio é fino (≤ 4mm). Embora um endométrio fino reduza o risco de câncer, não o exclui completamente, e a biópsia ainda é necessária para confirmação diagnóstica em casos de sangramento.",
+    "quick_takeaway": "Qualquer sangramento transvaginal após a menopausa é um sinal de alerta e deve ser investigado ativamente para excluir causas malignas, como o câncer de endométrio, independentemente da espessura endometrial ao ultrassom. A histeroscopia com biópsia endometrial é o padrão-ouro para essa investigação, permitindo a visualização direta da cavidade uterina e a coleta de material para análise histopatológica.",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Histeroscopia com Biópsia",
+      "Espessura Endometrial",
+      "Ultrassom Transvaginal"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer o sangramento pós-menopausa como um sinal de alerta para malignidade endometrial",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Interpretar o achado de endométrio de 4mm no contexto de sangramento ativo",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Selecionar a histeroscopia com biópsia como padrão-ouro para investigação de sangramento uterino anormal na pós-menopausa",
+        "bloom_level": "aplicar"
+      }
+    ]
+  },
+  {
+    "id": "6972ee3a-56f5-4c2c-b6f9-60c3e591c148",
+    "correct_choice": "3",
+    "ai_commentary": {
+      "alternativas": [
+        {
+          "texto": "o aborto legal só poderá ser realizado se houver autorização de um juiz.",
+          "correta": false,
+          "comentario": "<p>A legislação brasileira, especificamente o <strong>Código Penal Brasileiro em seu Artigo 128, Inciso II</strong>, prevê o aborto como uma conduta permitida (excludente de ilicitude) quando a gravidez é resultado de estupro. O ponto crucial aqui é que <strong>não se exige autorização judicial prévia</strong> nem a notificação compulsória do crime para que o procedimento seja realizado por um médico. A palavra da gestante, assumindo a responsabilidade por sua declaração, é suficiente para que o profissional de saúde possa agir.</p>"
+        },
+        {
+          "texto": "o aborto legal deve ser realizado por um médico legista.",
+          "correta": false,
+          "comentario": "<p>Essa afirmação também não procede. O aborto legal em casos de estupro deve ser realizado por um <strong>médico</strong>, que pode ser um obstetra, ginecologista ou outro profissional habilitado. A função do <strong>médico legista</strong> é distinta; ele atua em perícias criminais e na constatação de lesões, mas não é ele quem executa o procedimento de interrupção da gravidez. Portanto, a exigência de que seja um legista é equivocada.</p>"
+        },
+        {
+          "texto": "o aborto legal deve ser realizado por um obstetra após a confirmação do estupro por um médico legista.",
+          "correta": false,
+          "comentario": "<p>Confunde papéis e requisitos. Embora um obstetra seja frequentemente o profissional que realiza o procedimento, a lei não exige a confirmação do estupro por um <strong>médico legista</strong>. Como vimos na alternativa anterior, o legista tem outra função. Para o aborto legal em decorrência de estupro, a <strong>declaração da vítima</strong> de que a gravidez foi resultado de violência sexual é o que fundamenta a conduta médica, sem a necessidade de perícia específica para esse fim.</p>"
+        },
+        {
+          "texto": "em casos de estupro, a justiça não exige a notificação do crime para a prática do aborto legal.",
+          "correta": true,
+          "comentario": "<p>Exatamente! Esta é a alternativa correta. A base legal para o aborto em casos de estupro está no <strong>Código Penal Brasileiro, Artigo 128, Inciso II</strong>. Ele estabelece que o aborto não é crime se a gravidez resulta de estupro e o procedimento é realizado com o consentimento da gestante. O ponto fundamental, e que muitas vezes gera dúvida, é que a lei <strong>não exige a notificação compulsória do crime</strong> para a justiça nem a <strong>autorização judicial</strong> para que o médico realize o procedimento. A declaração da própria gestante, de que a gravidez é fruto de violência sexual, é suficiente para que o médico possa proceder com o aborto legal, resguardando a dignidade e a saúde da mulher.</p>"
+        },
+        {
+          "texto": "se houver determinação judicial o médico não pode se recusar a realizar o aborto legal.",
+          "correta": false,
+          "comentario": "<p>Embora uma <strong>determinação judicial</strong> possa, em alguns contextos, agilizar ou formalizar o processo, ela <strong>não é um requisito obrigatório</strong> para a realização do aborto legal em casos de estupro. A lei, como vimos, permite o procedimento com base na declaração da vítima. Quanto à objeção de consciência do médico, ela existe, mas tem limites. O médico pode se recusar a realizar o procedimento, exceto em casos de risco de vida para a gestante. No entanto, a ausência de uma ordem judicial não impede a prática do aborto legal quando as condições do Art. 128, II do CP são atendidas.</p>"
+        }
+      ],
+      "comentario_final": "<p>Essa questão nos leva a um ponto crucial da legislação brasileira sobre saúde da mulher e direitos reprodutivos: o aborto legal em casos de estupro. A base legal para essa permissão está no <strong>Código Penal Brasileiro, Artigo 128, Inciso II</strong>. É fundamental entender que, diferentemente de outras situações médicas que podem exigir autorizações complexas, aqui a lei é clara: a gravidez resultante de violência sexual pode ser interrompida sem a necessidade de <strong>autorização judicial</strong> ou <strong>notificação compulsória do crime</strong>. A <strong>declaração da vítima</strong>, assumindo a responsabilidade pelo que afirma, é o suficiente para que o médico, agindo eticamente e dentro da lei, possa realizar o procedimento. Essa distinção é vital, pois diferencia o aborto por estupro de outras indicações legais para interrupção da gestação, como risco de vida para a mãe ou anencefalia fetal, que possuem requisitos distintos.</p><p><strong>Dica de prova:</strong> Ao se deparar com questões sobre aborto legal, sempre atente-se à indicação específica (estupro, risco de vida, anencefalia) e aos requisitos legais associados a cada uma delas. Para estupro, o foco é a declaração da gestante e a ausência de exigência de ordem judicial ou notificação.</p>",
+      "eu_tenho_10_anos": "Pense assim: o corpo da mamãe é como uma casa muito especial. Se um invasor entra nessa casa e causa algo muito triste, como uma gravidez que não foi planejada e que a mamãe não quer, a lei brasileira diz que ela pode pedir ajuda. Essa ajuda é para que a gravidez não continue, protegendo a mamãe de algo que aconteceu de ruim. O mais importante é que, para esse tipo de situação, a mamãe não precisa pedir permissão para um juiz, que é quem cuida das leis na justiça, nem precisa avisar a polícia sobre o que aconteceu. Ela pode simplesmente ir a um médico, contar o que houve, e ele poderá ajudá-la a interromper a gravidez, porque a lei entende que ela precisa de proteção e apoio nesse momento difícil.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": ""
+    },
+    "clinical_pearl": "Aborto legal por estupro no Brasil → Não exige B.O. ou autorização judicial; basta consentimento da mulher e avaliação médica.",
+    "common_mistake": "Um erro comum é acreditar que a mulher vítima de estupro precisa de autorização judicial ou de um boletim de ocorrência para realizar o aborto legal. A legislação brasileira não impõe essas exigências, bastando o relato da mulher e o consentimento informado.",
+    "quick_takeaway": "No Brasil, o aborto é legal em casos de estupro, risco de vida para a gestante e anencefalia fetal. Para o caso de estupro, a lei não exige boletim de ocorrência ou autorização judicial, apenas o consentimento da mulher e a avaliação médica que confirme a situação.",
+    "key_concepts": [
+      "Aborto Legal no Brasil",
+      "Interrupção da Gravidez por Estupro",
+      "Direitos da Mulher",
+      "Código Penal Brasileiro Art. 128",
+      "Violência Sexual"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer que a gravidez de 10 semanas resultante de estupro se enquadra nas permissões de aborto legal no Brasil",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Identificar que o Código Penal Brasileiro não exige autorização judicial para o aborto em caso de estupro",
+        "bloom_level": "compreender"
+      },
+      {
+        "step": 2,
+        "type": "diagnosis",
+        "skill": "Diferenciar a desnecessidade de notificação policial ou laudo do IML da autonomia da gestante para o procedimento",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 3,
+        "type": "treatment",
+        "skill": "Concluir que a palavra da gestante é suficiente para a realização do aborto legal por médico capacitado",
+        "bloom_level": "aplicar"
+      }
+    ]
+  },
+  {
+    "id": "05767eab-0c16-4e48-b9e5-00f45e276b16",
+    "correct_choice": "2",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/manual-de-diagnostico-precoce-em-oncologia-para-a-aps.pdf/@@download/file",
+          "tipo": "documento_oficial",
+          "titulo": "Ministério da Saúde. Manual de Diagnóstico Precoce (Alta Suspeição) em Oncologia para a Atenção Primária à Saúde. 2025"
+        },
+        {
+          "url": "https://portaldeboaspraticas.iff.fiocruz.br/wp-content/uploads/2019/03/manualendoscopiaginecologicafinal.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Manual de Orientação em Endoscopia Ginecológica. 2011"
+        },
+        {
+          "url": "https://www.gov.br/pt-br/servicos/realizar-exame-de-histeroscopia-diagnostica",
+          "tipo": "documento_oficial",
+          "titulo": "Governo Federal. Realizar exame de histeroscopia diagnóstica - Instituto Nacional de Saúde da Mulher, da Criança e do Adolescente Fernandes Figueira"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "repetir a ultrassonografia em seis meses.",
+          "correta": false,
+          "comentario": "<p>O erro é adiar a investigação de uma paciente sintomática. Sangramento na pós-menopausa associado a eco endometrial de 10 mm não deve ser apenas acompanhado com nova ultrassonografia, pois exige esclarecimento da cavidade uterina e obtenção de material para avaliação histológica.</p>"
+        },
+        {
+          "texto": "tranquilizar a paciente e orientá-la a manter rotina ginecológica anual.",
+          "correta": false,
+          "comentario": "<p>O erro é tratar como achado benigno de rotina. Todo sangramento após a menopausa deve ser investigado, mesmo que em pequena quantidade. Neste caso, o eco endometrial está espessado, o que reforça a necessidade de excluir pólipo, hiperplasia endometrial e câncer de endométrio.</p>"
+        },
+        {
+          "texto": "realizar histeroscopia diagnóstica.",
+          "correta": true,
+          "comentario": "<p>O quadro combina <strong>sangramento pós-menopausa</strong> e eco endometrial de 10 mm, portanto há indicação de investigação endometrial. A histeroscopia diagnóstica permite visualizar diretamente a cavidade uterina, identificar lesões focais e direcionar a biópsia quando necessária.</p>"
+        },
+        {
+          "texto": "indicar histerectomia total.",
+          "correta": false,
+          "comentario": "<p>O erro é pular a etapa diagnóstica. A histerectomia pode fazer parte do tratamento de algumas doenças confirmadas, como câncer de endométrio ou hiperplasia endometrial atípica, mas não é a conduta inicial diante de sangramento pós-menopausa sem diagnóstico histológico.</p>"
+        },
+        {
+          "texto": "realizar ablação endometrial para controle do sangramento.",
+          "correta": false,
+          "comentario": "<p>O erro é propor tratamento destrutivo antes de excluir malignidade. A ablação endometrial não é conduta inicial em sangramento pós-menopausa com endométrio espessado, pois o ponto central do caso é diagnosticar a causa do sangramento, não apenas controlar o sintoma.</p>"
+        }
+      ],
+      "comentario_final": "<p>A paciente tem 60 anos, está há anos na pós-menopausa e voltou a apresentar sangramento vaginal. Esse é um sinal de alerta clássico: a causa mais comum pode ser benigna, como atrofia ou pólipo, mas a prioridade da prova é <strong>excluir hiperplasia e câncer de endométrio</strong>.</p><p>A ultrassonografia transvaginal ajuda na triagem. Em mulheres na menopausa com sangramento, endométrio espessado, como 10 mm, não deve ser apenas observado. A conduta deve avançar para investigação da cavidade uterina e avaliação histológica.</p><p>Entre as alternativas, a melhor resposta é a <strong>histeroscopia diagnóstica</strong>, idealmente com possibilidade de biópsia dirigida. Ela é especialmente útil porque lesões focais, como pólipos ou áreas suspeitas, podem ser vistas diretamente. Repetir ultrassonografia, tranquilizar, indicar histerectomia ou fazer ablação endometrial são condutas inadequadas nesse momento.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, a mulher não deve mais sangrar como se fosse menstruação. Se isso acontece, o médico precisa investigar. No exame, a parte de dentro do útero apareceu mais grossa do que o esperado. Por isso, não basta esperar nem dizer que está tudo bem. O melhor é olhar por dentro do útero com uma câmera pequena, chamada histeroscopia, e retirar um pedacinho se for preciso para saber se é algo benigno ou algo mais sério.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa + eco endometrial > 4-5 mm → investigação com histeroscopia diagnóstica e biópsia.",
+    "common_mistake": "Subestimar a importância do sangramento pós-menopausa ou considerar um eco endometrial de 10 mm como normal. Em mulheres pós-menopausa, o limite para investigação é geralmente 4-5 mm.",
+    "quick_takeaway": "Qualquer sangramento vaginal após a menopausa é um sinal de alerta e deve ser investigado para excluir patologias endometriais, incluindo câncer. Um eco endometrial de 10 mm em uma mulher pós-menopausa é considerado espessado e requer avaliação invasiva.",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Espessamento Endometrial",
+      "Câncer de Endométrio",
+      "Histeroscopia Diagnóstica",
+      "Biópsia Endometrial"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Detectar sangramento vaginal na pós-menopausa como sinal de alerta para malignidade",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Aplicar o ponto de corte de 4-5mm para espessura endometrial em mulheres menopausadas",
+        "bloom_level": "aplicar"
+      },
+      {
+        "step": 2,
+        "type": "diagnosis",
+        "skill": "Concluir que um eco endometrial de 10mm exige investigação histopatológica obrigatória",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 3,
+        "type": "investigation",
+        "skill": "Selecionar a histeroscopia diagnóstica com biópsia como padrão-ouro para avaliação endometrial",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "582f9084-f021-48c5-a107-99a780eabaed",
+    "correct_choice": "1",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/manual-de-diagnostico-precoce-em-oncologia-para-a-aps.pdf/@@download/file",
+          "tipo": "documento_oficial",
+          "titulo": "Ministério da Saúde. Manual de Diagnóstico Precoce (Alta Suspeição) em Oncologia para a Atenção Primária à Saúde. 2025."
+        },
+        {
+          "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+          "tipo": "documento_oficial",
+          "titulo": "Instituto Nacional de Câncer. Câncer do corpo do útero: versão para profissionais de saúde."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29683909/",
+          "tipo": "diretriz",
+          "titulo": "ACOG Committee Opinion No. 734: The Role of Transvaginal Ultrasonography in Evaluating the Endometrium of Women With Postmenopausal Bleeding. Obstetrics & Gynecology. 2018."
+        },
+        {
+          "url": "https://www.febrasgo.org.br/noticia/histeroscopia-curetagem-ou-biopsia-endometrial-qual-a-melhor-estrategia-para-investigar-o-sangramento-uterino-anormal/",
+          "tipo": "fonte_secundaria",
+          "titulo": "FEBRASGO. Histeroscopia, curetagem ou biópsia endometrial: qual a melhor estratégia para investigar o sangramento uterino anormal?"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "aguardar e repetir a ultrassonografia em seis meses",
+          "correta": false,
+          "comentario": "<p>A observação isolada não é a melhor conduta. Sangramento uterino na pós-menopausa deve ser investigado para excluir hiperplasia endometrial e câncer de endométrio. Com endométrio de 5 mm, a espessura ultrapassa o limite de segurança usado na propedêutica do sangramento pós-menopausa, portanto a avaliação deve avançar para obtenção de tecido endometrial, e não ser adiada por seis meses.</p>"
+        },
+        {
+          "texto": "realizar uma biópsia endometrial, com histeroscopia",
+          "correta": true,
+          "comentario": "<p>Em mulher com sangramento pós-menopausa e endométrio de 5 mm à ultrassonografia transvaginal, o próximo passo é investigação histológica. A <strong>histeroscopia com biópsia dirigida</strong> permite visualizar a cavidade uterina e amostrar áreas suspeitas, sendo especialmente útil para lesões focais como pólipos, hiperplasia focal ou neoplasia inicial.</p>"
+        },
+        {
+          "texto": "iniciar terapia com progesterona",
+          "correta": false,
+          "comentario": "<p>Progestagênio pode ser tratamento em situações específicas, como hiperplasia endometrial sem atipia confirmada, mas não deve ser iniciado empiricamente antes do diagnóstico histopatológico. No sangramento pós-menopausa com endométrio espessado, a prioridade é excluir neoplasia endometrial.</p>"
+        },
+        {
+          "texto": "iniciar terapia com estrogênio",
+          "correta": false,
+          "comentario": "<p>Estrogênio não é conduta para sangramento pós-menopausa sem diagnóstico definido. Além de não investigar a causa do sangramento, o estrogênio sistêmico isolado em paciente com útero pode estimular proliferação endometrial e aumentar risco de hiperplasia e câncer de endométrio.</p>"
+        },
+        {
+          "texto": "solicitar RNM pélvica",
+          "correta": false,
+          "comentario": "<p>A ressonância magnética pélvica não substitui a biópsia endometrial na avaliação inicial de sangramento pós-menopausa com endométrio espessado. A RNM pode ter papel em estadiamento ou planejamento após diagnóstico de neoplasia, mas, neste momento, o exame necessário é o histopatológico.</p>"
+        }
+      ],
+      "comentario_final": "<p>O conceito central é: <strong>sangramento uterino pós-menopausa é sinal de alerta</strong> e deve ser investigado para excluir câncer de endométrio. A ultrassonografia transvaginal é exame inicial frequente porque mede a espessura endometrial e avalia a cavidade uterina.</p><p>Quando o endométrio é fino, a chance de câncer é baixa; nos referenciais clássicos, espessura de até 4 mm tem alto valor preditivo negativo. Já no contexto brasileiro de diagnóstico precoce em oncologia, mulher na menopausa com sangramento uterino anormal e espessura endometrial <strong>maior ou igual a 5 mm</strong> é considerada situação de alta suspeição e deve seguir para avaliação especializada e biópsia endometrial, conforme disponibilidade e fluxo local.</p><p>Nesta questão, a paciente tem sangramento pós-menopausa e endométrio de 5 mm. Portanto, não cabe apenas repetir ultrassom, nem iniciar hormônios empiricamente. A melhor alternativa é obter tecido para análise, preferencialmente por histeroscopia com biópsia dirigida quando disponível. Para prova, a sequência prática é: sangramento pós-menopausa → USTV → endométrio espessado ou sangramento persistente → biópsia endometrial.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, o útero normalmente não deve mais sangrar. Quando aparece sangramento, o médico precisa investigar com cuidado. O ultrassom mostrou que a camada interna do útero está com 5 mm, que é espessa para uma mulher com sangramento após a menopausa. Por isso, o próximo passo é tirar um pedacinho dessa camada para examinar no microscópio, de preferência olhando por dentro do útero com uma câmera pequena chamada histeroscopia.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa SEMPRE exige investigação, mesmo com endométrio < 4-5 mm, para excluir malignidade.",
+    "common_mistake": "Acreditar que um endométrio de 5 mm na pós-menopausa é sempre benigno e não requer investigação adicional. Embora o risco seja menor, a malignidade ainda é possível, e a biópsia é fundamental.",
+    "quick_takeaway": "Qualquer sangramento uterino pós-menopausa é considerado anormal e deve ser investigado para excluir malignidade, principalmente câncer de endométrio. Embora um endométrio fino (<4-5 mm) na USG transvaginal reduza o risco, não o exclui completamente, e a biópsia endometrial é o padrão-ouro para o diagnóstico histopatológico.",
+    "key_concepts": [
+      "Sangramento uterino pós-menopausa",
+      "Câncer de endométrio",
+      "Biópsia endometrial",
+      "Histeroscopia",
+      "Ultrassonografia transvaginal"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Identificar o sangramento pós-menopausa como sinal de alerta para neoplasia endometrial",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Aplicar o ponto de corte de 4 mm na ultrassonografia transvaginal para investigação de endométrio na pós-menopausa",
+        "bloom_level": "aplicar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Indicar a biópsia endometrial dirigida por histeroscopia como padrão-ouro para avaliação histológica",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "b509b4dd-6778-4dd0-9285-a3fe24080bc6",
+    "correct_choice": "3",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/noticia/histeroscopia-curetagem-ou-biopsia-endometrial-qual-a-melhor-estrategia-para-investigar-o-sangramento-uterino-anormal/",
+          "tipo": "revisao_clinica",
+          "titulo": "FEBRASGO. Histeroscopia, curetagem ou biópsia endometrial: qual a melhor estratégia para investigar o sangramento uterino anormal? (2018)"
+        },
+        {
+          "url": "https://www.acog.org/news/news-releases/2026/04/acog-publishes-updated-guidance-evaluation-postmenopausal-bleeding",
+          "tipo": "fonte_secundaria",
+          "titulo": "ACOG Publishes Updated Guidance on Evaluation of Postmenopausal Bleeding (2026)"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Não há necessidade de prossegui nenhuma investigação, já que a causa mais frequente de sangramento na pós-menopausa é a atrofia endometrial;",
+          "correta": false,
+          "comentario": "<p>A frequência da atrofia não dispensa investigação. Sangramento após dez anos de menopausa, obesidade e endométrio de 6 mm exigem avaliação endometrial; o exame normal da vulva, vagina e colo não exclui doença na cavidade uterina.</p>"
+        },
+        {
+          "texto": "A paciente apresenta fatores de risco para câncer de ovário, mas não de endométrio;",
+          "correta": false,
+          "comentario": "<p>A obesidade é fator de risco para câncer de endométrio, inclusive pelo aumento da produção periférica de estrogênios no tecido adiposo. Portanto, é inadequado negar risco endometrial nesta paciente.</p>"
+        },
+        {
+          "texto": "A curetagem mostra-se superior à histeroscopia, tendo em vista a quantidade maior de material obtido para o diagnóstico histopatológico;",
+          "correta": false,
+          "comentario": "<p>A quantidade de tecido não compensa a falta de visualização da lesão: a curetagem às cegas pode deixar de amostrar alterações focais. A histeroscopia permite identificar a área suspeita e direcionar a coleta para análise histológica.</p>"
+        },
+        {
+          "texto": "A histeroscopia deve ser realizada preferencialmente, devido a sua acuidade em localizar lesões intracavitárias e direcionar a biópsia;",
+          "correta": true,
+          "comentario": "<p>A <strong>visualização da cavidade com biópsia dirigida</strong> é a vantagem decisiva da histeroscopia, tornando esta a melhor opção apresentada. Isso não significa que toda investigação deva obrigatoriamente começar por ela: amostragem endometrial ambulatorial também pode ser apropriada, conforme os achados e o acesso ao procedimento.</p>"
+        },
+        {
+          "texto": "Em ordem decrescente de frequência, as causas para o sangramento na pós- menopuasa são: câncer de endométrio, atrofia endometrial, hiperplasias e pólipos;",
+          "correta": false,
+          "comentario": "<p>O câncer não é a causa mais frequente de sangramento pós-menopausa; causas benignas, especialmente atrofia, são comuns. Sua importância está na necessidade de excluí-lo, e não em colocá-lo no topo dessa ordem de frequência.</p>"
+        }
+      ],
+      "comentario_final": "<p>O problema central é o <strong>sangramento pós-menopausa que requer investigação endometrial</strong>. A paciente tem 63 anos, obesidade e eco endometrial de 6 mm. Nenhum desses elementos confirma câncer, mas o conjunto impede atribuir o episódio à atrofia sem avaliação adicional.</p><p>A ultrassonografia informa a espessura e a aparência do endométrio; a análise do tecido esclarece se há pólipo, hiperplasia ou neoplasia. A histeroscopia acrescenta visão direta da cavidade e permite colher material do local suspeito, vantagem importante sobre a curetagem às cegas.</p><p>Entre as opções, D descreve adequadamente essa vantagem. Na prática, a escolha entre biópsia ambulatorial e histeroscopia considera suspeita de lesão focal, qualidade de amostras anteriores, persistência do sangramento e disponibilidade. Não se deve atrasar uma amostragem necessária apenas para aguardar histeroscopia. A causa benigna mais comum não elimina a obrigação de investigar uma apresentação suspeita.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, um novo sangramento precisa ser investigado. O ultrassom mostra como está a camada interna do útero, mas examinar um pedacinho dela ajuda a descobrir a causa. A histeroscopia permite olhar dentro do útero e escolher o melhor lugar para retirar essa amostra.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa (SPM) sempre investigado. Histeroscopia com biópsia dirigida é padrão ouro para lesões intracavitárias.",
+    "common_mistake": "Um erro comum é negligenciar a investigação de sangramento pós-menopausa, atribuindo-o automaticamente à atrofia endometrial, mesmo em pacientes com fatores de risco ou eco endometrial limítrofe/aumentado. Todo SPM deve ser investigado até que a malignidade seja excluída.",
+    "quick_takeaway": "Sangramento pós-menopausa (SPM) é um sinal de alerta que exige investigação completa para excluir malignidade, especialmente em pacientes com fatores de risco como obesidade e hipertensão. A histeroscopia com biópsia dirigida é o método preferencial, pois permite visualizar e biopsiar lesões focais com alta acurácia, superando a curetagem às cegas.",
+    "key_concepts": [
+      "Sangramento pós-menopausa",
+      "Histeroscopia com biópsia",
+      "Câncer de endométrio",
+      "Eco endometrial",
+      "Fatores de risco para câncer de endométrio"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer o sangramento na pós-menopausa como sinal de alerta para neoplasia endometrial",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Correlacionar obesidade e hipertensão como fatores de risco para câncer de endométrio",
+        "bloom_level": "compreender"
+      },
+      {
+        "step": 2,
+        "type": "diagnosis",
+        "skill": "Interpretar o eco endometrial de 6 mm como espessamento patológico em paciente sem terapia hormonal",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 3,
+        "type": "investigation",
+        "skill": "Indicar a histeroscopia com biópsia dirigida como padrão-ouro superior à curetagem para investigação intracavitária",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "6c2515bd-816d-4115-acd9-9b1687a99010",
+    "correct_choice": "0",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Protocolos Febrasgo nº 9, 2021: Hiperplasia endometrial e câncer do endométrio"
+        },
+        {
+          "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+          "tipo": "documento_oficial",
+          "titulo": "Instituto Nacional de Câncer. Câncer do corpo do útero: versão para profissionais de saúde"
+        },
+        {
+          "url": "https://www.gov.br/pt-br/servicos/realizar-exame-de-histeroscopia-diagnostica",
+          "tipo": "documento_oficial",
+          "titulo": "Governo Federal. Realizar exame de histeroscopia diagnóstica - Fiocruz/RJ"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Realizar histeroscopia com biópsia endometrial.",
+          "correta": true,
+          "comentario": "<p>O sangramento pós-menopausa recorrente associado a endométrio de 9 mm exige investigação histológica. Em mulher sintomática, espessura endometrial igual ou superior a 4 mm deve ser investigada, pois a prioridade é excluir hiperplasia endometrial e câncer de endométrio.</p><p>A <strong>histeroscopia com biópsia</strong> permite visualizar diretamente a cavidade uterina e coletar material para anatomopatológico, sendo especialmente útil quando há sangramento recorrente ou suspeita de lesão focal. Embora a biópsia endometrial ambulatorial isolada possa ser uma estratégia inicial em alguns serviços, ela não aparece nas alternativas; entre as opções apresentadas, esta é a conduta mais adequada.</p>"
+        },
+        {
+          "texto": "Acompanhar com ultrassonografia semestral.",
+          "correta": false,
+          "comentario": "<p>O erro é propor observação para uma paciente sintomática. Sangramento após a menopausa não deve ser acompanhado apenas com imagem seriada quando há espessamento endometrial.</p><p>Com endométrio de 9 mm e sangramento recorrente, é necessária amostragem endometrial. A ultrassonografia já cumpriu o papel de detectar o espessamento; agora falta o diagnóstico histológico.</p>"
+        },
+        {
+          "texto": "Prescrever terapia hormonal isolada.",
+          "correta": false,
+          "comentario": "<p>O erro é tratar empiricamente o sangramento pós-menopausa antes de excluir doença endometrial. Terapia hormonal não substitui investigação de hiperplasia ou câncer.</p><p>Se “terapia hormonal isolada” significar estrogênio sem progestagênio em mulher com útero, a conduta é ainda mais inadequada, pois o estrogênio sem oposição estimula proliferação endometrial e aumenta risco de hiperplasia e neoplasia.</p>"
+        },
+        {
+          "texto": "Solicitar apenas dosagem de hormônios sexuais.",
+          "correta": false,
+          "comentario": "<p>A palavra “apenas” derruba a alternativa. Dosagens de FSH, LH ou estradiol não investigam adequadamente a causa do sangramento nem excluem doença endometrial.</p><p>A menopausa já está estabelecida clinicamente por três anos de amenorreia. O problema atual não é confirmar menopausa, mas investigar sangramento pós-menopausa com endométrio espessado.</p>"
+        }
+      ],
+      "comentario_final": "<p>Sangramento que ocorre após 12 meses de amenorreia é considerado <strong>sangramento pós-menopausa</strong> e sempre merece atenção. Embora a causa mais comum possa ser benigna, como atrofia genital, o raciocínio de prova é excluir hiperplasia endometrial e câncer de endométrio.</p><p>A avaliação inicial inclui anamnese, exame ginecológico e exame especular para confirmar a origem do sangramento, além da ultrassonografia transvaginal para medir o eco endometrial. Em mulheres com sangramento pós-menopausa, endométrio igual ou superior a 4 mm deve ser investigado. Nesta questão, o endométrio mede 9 mm e o sangramento é recorrente, portanto não cabe seguimento ultrassonográfico simples.</p><p>O diagnóstico definitivo das lesões endometriais depende de <strong>avaliação histológica</strong>. A amostra pode ser obtida por biópsia endometrial ambulatorial em alguns fluxos, mas a histeroscopia com biópsia tem a vantagem de visualizar a cavidade e direcionar a coleta, sendo muito útil diante de sangramento recorrente ou suspeita de lesões focais, como pólipos.</p><p>Assim, a melhor alternativa é realizar histeroscopia com biópsia endometrial. Não se deve tratar com hormônios, acompanhar apenas com ultrassonografia ou solicitar dosagens hormonais isoladas diante de sangramento pós-menopausa associado a endométrio espessado.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, a mulher não deve mais sangrar. Se ela volta a sangrar e o revestimento de dentro do útero está grosso no ultrassom, o médico precisa investigar. Para isso, ele pode olhar dentro do útero com uma câmera fina e retirar um pedacinho do tecido para examinar no microscópio. Assim dá para saber se é algo benigno ou uma alteração que precisa de tratamento rápido.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento na pós-menopausa + Endométrio > 4mm → Investigação histopatológica (Histeroscopia/Biópsia).",
+    "common_mistake": "Apenas observar ou repetir o ultrassom em pacientes com sangramento ativo e endométrio espessado, atrasando o diagnóstico de câncer de endométrio.",
+    "quick_takeaway": "Qualquer sangramento vaginal na pós-menopausa deve ser investigado. Um eco endometrial ≥ 4-5 mm na ultrassonografia transvaginal exige avaliação histológica para excluir malignidade.",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Histeroscopia Diagnóstica",
+      "Espessamento Endometrial"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Identificou o sangramento uterino na pós-menopausa como um sinal de alerta obrigatório para neoplasia de endométrio",
+        "bloom_level": "aplicar"
+      },
+      {
+        "step": 1,
+        "type": "investigation",
+        "skill": "Aplicou o critério de espessura endometrial de 9 mm como indicação formal para investigação histopatológica",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Selecionou a histeroscopia com biópsia como o método inicial mais adequado para avaliação da cavidade uterina",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "cf03fbf1-0f17-48ba-a315-87b35b2b0710",
+    "correct_choice": "1",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Protocolos FEBRASGO nº 9: Hiperplasia endometrial e câncer do endométrio. 2021."
+        },
+        {
+          "url": "https://amb.org.br/files/ans/carcioma_endometrial-diagnostico.pdf",
+          "tipo": "diretriz",
+          "titulo": "Associação Médica Brasileira. Projeto Diretrizes: Carcinoma Endometrial: Diagnóstico."
+        },
+        {
+          "url": "https://www.febrasgo.org.br/noticia/histeroscopia-curetagem-ou-biopsia-endometrial-qual-a-melhor-estrategia-para-investigar-o-sangramento-uterino-anormal/",
+          "tipo": "revisao_clinica",
+          "titulo": "FEBRASGO. Histeroscopia, curetagem ou biópsia endometrial: qual a melhor estratégia para investigar o sangramento uterino anormal?"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Indicado uma curetagem uterina, por provável câncer endometrial.",
+          "correta": false,
+          "comentario": "<p>A curetagem uterina pode obter material endometrial, mas não é a melhor alternativa quando há opção de avaliar a cavidade sob visão direta. Além disso, o achado de endométrio espessado em sangramento pós-menopausa indica investigação histológica, não permite afirmar, isoladamente, que se trata de <strong>provável câncer endometrial</strong>. Pólipo, hiperplasia e outras lesões benignas também podem cursar com espessamento.</p>"
+        },
+        {
+          "texto": "Indicado uma histeroscopia.",
+          "correta": true,
+          "comentario": "<p>O sangramento pós-menopausa associado a eco endometrial de 10 mm exige investigação da cavidade uterina. A histeroscopia é a opção mais adequada entre as apresentadas, pois permite visualizar o endométrio e direcionar biópsia de áreas suspeitas ou lesões focais, como pólipos e hiperplasia.</p>"
+        },
+        {
+          "texto": "Seguimento ecográfico, provável sangramento por atrofia endometrial.",
+          "correta": false,
+          "comentario": "<p>A atrofia endometrial é causa comum de sangramento pós-menopausa, mas costuma estar associada a endométrio fino. Em mulher sintomática, espessura endometrial igual ou superior a 4 mm deve ser investigada; portanto, um eco endometrial de 10 mm não deve ser apenas acompanhado por ultrassonografia.</p>"
+        },
+        {
+          "texto": "Indicado colposcopia com biópsia.",
+          "correta": false,
+          "comentario": "<p>A colposcopia com biópsia avalia principalmente colo uterino e vagina, sendo indicada diante de suspeita de lesão cervical ou alteração no rastreamento do câncer do colo. Neste caso, o dado decisivo é o espessamento endometrial no contexto de sangramento pós-menopausa, o que direciona a investigação para o endométrio.</p>"
+        }
+      ],
+      "comentario_final": "<p>O ponto central da questão é a abordagem do <strong>sangramento pós-menopausa</strong>. Após 12 meses de amenorreia, qualquer sangramento uterino deve ser valorizado, porque pode ser a manifestação inicial de hiperplasia endometrial ou câncer de endométrio, embora causas benignas também sejam frequentes.</p><p>A ultrassonografia transvaginal é exame inicial útil para medir a espessura endometrial. Em mulheres com sangramento pós-menopausa, o endométrio fino, em geral até 4 mm, tem alto valor preditivo negativo para câncer; já o espessamento igual ou superior a esse ponto de corte exige investigação do endométrio. Nesta paciente, o eco endometrial de 10 mm está claramente acima do limite de segurança.</p><p>A conduta adequada é obter avaliação histológica da cavidade uterina. Entre as alternativas disponíveis, a <strong>histeroscopia</strong> é a melhor escolha, pois permite inspeção direta da cavidade e biópsia dirigida. Curetagem uterina isolada é método menos dirigido e a afirmação de “provável câncer” é excessiva; seguimento ecográfico seria insuficiente; e colposcopia investiga colo uterino, não o endométrio.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, a mulher não deve mais sangrar. Se isso acontece e o ultrassom mostra que a camada de dentro do útero está grossa, como 10 mm, o médico precisa investigar melhor. O exame mais adequado entre as opções é a histeroscopia, que usa uma câmera fina para olhar dentro do útero e permitir retirar um pedacinho para análise. Assim é possível descobrir se é pólipo, hiperplasia ou câncer.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa + eco endometrial > 4-5 mm → Histeroscopia com biópsia para investigar malignidade.",
+    "common_mistake": "Subestimar a importância do sangramento pós-menopausa ou optar por seguimento ecográfico em vez de investigação invasiva, atrasando o diagnóstico de condições pré-malignas ou malignas do endométrio.",
+    "quick_takeaway": "Sangramento pós-menopausa com eco endometrial de 10 mm é um achado altamente suspeito que exige investigação. A histeroscopia com biópsia dirigida é a conduta mais adequada para visualizar a cavidade e obter material para análise histopatológica, descartando ou confirmando malignidade.",
+    "key_concepts": [
+      "Sangramento pós-menopausa",
+      "Espessamento endometrial",
+      "Histeroscopia",
+      "Câncer de endométrio",
+      "Ultrassonografia transvaginal"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer o sangramento pós-menopausa como sinal de alerta para neoplasia endometrial",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Interpretar o eco endometrial de 10 mm como espessamento patológico em paciente sintomática",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Indicar a histeroscopia com biópsia dirigida como padrão-ouro para avaliação da cavidade uterina",
+        "bloom_level": "aplicar"
+      }
+    ]
+  },
+  {
+    "id": "751a720e-a479-4052-a949-e5878500b845",
+    "correct_choice": "2",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "diretriz",
+          "titulo": "Federação Brasileira das Associações de Ginecologia e Obstetrícia. Hiperplasia endometrial e câncer do endométrio. Protocolos FEBRASGO - Ginecologia, nº 9, 2021"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK562188/",
+          "tipo": "fonte_secundaria",
+          "titulo": "StatPearls. Postmenopausal Bleeding. NCBI Bookshelf"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Aguardar e repetir ultrassonografia em seis meses.",
+          "correta": false,
+          "comentario": "<p>Sangramento uterino na pós-menopausa deve ser investigado, porque pode ser a primeira manifestação de hiperplasia ou câncer de endométrio. A conduta expectante só é considerada em situações bem selecionadas, especialmente quando o endométrio é fino e o sangramento não persiste. Nesta paciente, a espessura de <strong>5 mm</strong> ultrapassa o ponto de corte usado para investigação histológica.</p>"
+        },
+        {
+          "texto": "Iniciar terapia com progesterona.",
+          "correta": false,
+          "comentario": "<p>A progesterona pode ser usada no tratamento de algumas hiperplasias endometriais, sobretudo sem atipia, mas apenas após confirmação diagnóstica. Em uma paciente com sangramento pós-menopausa, iniciar hormônio antes de obter tecido endometrial seria inadequado, pois poderia atrasar o diagnóstico de lesão pré-maligna ou maligna.</p>"
+        },
+        {
+          "texto": "Realizar uma biópsia endometrial, com histeroscopia.",
+          "correta": true,
+          "comentario": "<p>Em paciente com sangramento pós-menopausa e endométrio com espessura igual ou superior a 4 mm, a investigação deve incluir avaliação anatomopatológica do endométrio. A histeroscopia permite visualizar a cavidade uterina e realizar biópsia dirigida, sendo especialmente útil para não perder lesões focais, como pólipos ou áreas suspeitas.</p>"
+        },
+        {
+          "texto": "Iniciar terapia estrogênica.",
+          "correta": false,
+          "comentario": "<p>Estrogênio, especialmente quando usado sem oposição progestagênica em paciente com útero, estimula proliferação endometrial e aumenta o risco de hiperplasia e câncer de endométrio. Em uma paciente já sintomática, com sangramento pós-menopausa e endométrio espessado, essa conduta é inadequada antes de excluir patologia endometrial.</p>"
+        },
+        {
+          "texto": "Solicitar ressonância pélvica.",
+          "correta": false,
+          "comentario": "<p>A ressonância magnética pode ter papel no estadiamento ou na avaliação complementar de doença pélvica específica, mas não substitui a amostra histológica na investigação inicial do sangramento pós-menopausa com endométrio espessado. O próximo passo é obter tecido endometrial para análise anatomopatológica.</p>"
+        }
+      ],
+      "comentario_final": "<p>O ponto central da questão é a avaliação do <strong>sangramento uterino pós-menopausa</strong>. Qualquer sangramento após a menopausa deve ser valorizado, porque a principal preocupação é excluir hiperplasia endometrial e câncer de endométrio.</p><p>A ultrassonografia transvaginal é útil para medir a espessura endometrial. No contexto brasileiro, protocolos da FEBRASGO indicam investigação quando há sangramento pós-menopausa associado a espessamento endometrial igual ou superior a <strong>4 mm</strong>. Como a paciente apresenta endométrio de 5 mm, não basta observar ou tratar empiricamente com hormônios: é necessário obter material endometrial para exame anatomopatológico.</p><p>A alternativa menciona biópsia endometrial com histeroscopia. A biópsia endometrial ambulatorial também pode ser uma forma de amostragem em muitos cenários, mas, entre as opções apresentadas, a conduta correta é a que oferece estudo histológico. A histeroscopia tem a vantagem adicional de permitir visão direta da cavidade uterina e biópsia dirigida, reduzindo o risco de perder lesões focais.</p><p>Assim, em prova, a associação que deve acender o alerta é: sangramento pós-menopausa + endométrio espessado = investigação histológica do endométrio.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, o útero não deve sangrar. Quando isso acontece, o médico precisa investigar para ter certeza de que não há uma alteração perigosa na parte de dentro do útero. O ultrassom mostrou que essa camada interna está com 5 mm, um pouco mais grossa do que o esperado para quem sangrou depois da menopausa. Por isso, o próximo passo é olhar melhor o útero e retirar um pedacinho dessa camada para examinar no microscópio.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento uterino pós-menopausa é sempre um sinal de alerta → Exige investigação para excluir câncer de endométrio, mesmo com endométrio fino.",
+    "common_mistake": "Desconsiderar a necessidade de biópsia endometrial em sangramento pós-menopausa quando a espessura endometrial é 'normal' (abaixo de 4-5 mm), pois malignidades podem ocorrer mesmo com endométrio fino.",
+    "quick_takeaway": "Qualquer sangramento uterino após a menopausa é considerado anormal e deve ser investigado para excluir malignidade, principalmente câncer de endométrio. Embora um endométrio < 4-5 mm na ultrassonografia transvaginal seja geralmente tranquilizador, a biópsia endometrial ainda é o padrão-ouro para afastar patologias malignas, especialmente se o sangramento persistir.",
+    "key_concepts": [
+      "Sangramento Uterino Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Hiperplasia Endometrial",
+      "Biópsia Endometrial",
+      "Histeroscopia",
+      "Ultrassonografia Transvaginal"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer o sangramento uterino pós-menopausa como sinal de alerta para neoplasia de endométrio",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "investigation",
+        "skill": "Aplicar o critério de espessura endometrial ≥ 5 mm na ultrassonografia como indicação de investigação histológica",
+        "bloom_level": "aplicar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Selecionar a histeroscopia com biópsia dirigida como o padrão-ouro para avaliação da cavidade uterina",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "85e6dc53-81b5-4404-b066-a7c57d32e2a0",
+    "correct_choice": "1",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/anticoncepcao/n9---G---Hiperplasia-endometrial-e-cncer-do-endomtrio.pdf",
+          "tipo": "consenso",
+          "titulo": "FEBRASGO. Protocolos FEBRASGO nº 9: Hiperplasia endometrial e câncer do endométrio. 2021."
+        },
+        {
+          "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/manual-de-diagnostico-precoce-em-oncologia-para-a-aps.pdf/@@download/file",
+          "tipo": "documento_oficial",
+          "titulo": "Ministério da Saúde. Manual de Diagnóstico Precoce (Alta Suspeição) em Oncologia para a Atenção Primária à Saúde. Versão preliminar. 2025."
+        },
+        {
+          "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/corpo-do-utero/versao-para-profissionais-de-saude",
+          "tipo": "documento_oficial",
+          "titulo": "Instituto Nacional de Câncer. Câncer do corpo do útero: versão para profissionais de saúde."
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Prescrever lubrificante à base de água, visto que o sangramento é devido à atrofia.",
+          "correta": false,
+          "comentario": "<p>A atrofia vaginal é causa comum de sangramento na pós-menopausa, mas não pode ser assumida neste caso. A paciente apresenta sangramento uterino após dois anos de amenorreia, diabetes, hipertensão e endométrio de 9 mm ao ultrassom transvaginal.</p><p>Lubrificante pode aliviar sintomas de ressecamento vaginal, mas não investiga espessamento endometrial nem exclui hiperplasia ou câncer de endométrio. A atrofia só deve ser aceita como explicação segura depois de afastadas causas endometriais relevantes.</p>"
+        },
+        {
+          "texto": "Realizar investigação com histeroscopia e biópsia dirigida.",
+          "correta": true,
+          "comentario": "<p>Trata-se de sangramento pós-menopausa com endométrio espessado. Em mulher na pós-menopausa com sangramento uterino anormal, o achado de endométrio acima dos pontos de corte usuais de investigação torna necessária a avaliação histopatológica.</p><p>A <strong>histeroscopia com biópsia dirigida</strong> permite visualizar a cavidade uterina, identificar lesões focais, como pólipos, e obter amostra da área suspeita. Entre as alternativas disponíveis, é a melhor conduta para descartar hiperplasia endometrial e câncer de endométrio.</p>"
+        },
+        {
+          "texto": "A provável causa do sangramento é um mioma submucoso. Indicar miomectomia.",
+          "correta": false,
+          "comentario": "<p>Mioma submucoso pode causar sangramento uterino anormal, mas o enunciado não informa imagem sugestiva de mioma. O dado fornecido é endométrio de 9 mm em paciente com sangramento pós-menopausa.</p><p>Nessa situação, a prioridade não é indicar miomectomia empírica, e sim investigar a cavidade uterina e obter amostra endometrial. A conduta terapêutica depende do diagnóstico histológico e dos achados intracavitários.</p>"
+        },
+        {
+          "texto": "Indicar histerectomia total abdominal por hiperplasia endometrial com atipia.",
+          "correta": false,
+          "comentario": "<p>Hiperplasia endometrial com atipia é diagnóstico histopatológico. O ultrassom mostrando endométrio espessado sugere necessidade de investigação, mas não permite afirmar que há atipia.</p><p>Antes de indicar histerectomia, é necessário confirmar o diagnóstico por biópsia. A histerectomia pode ser tratamento em cenários específicos, como hiperplasia atípica ou câncer inicial, mas não é a primeira conduta diante de sangramento pós-menopausa ainda sem laudo histológico.</p>"
+        },
+        {
+          "texto": "Prescrever noretisterona 0,35 mg por 12 meses e reavaliar em 1 ano.",
+          "correta": false,
+          "comentario": "<p>Progestagênios podem ter papel no tratamento de algumas hiperplasias endometriais sem atipia, mas isso pressupõe diagnóstico histológico. Não se deve tratar empiricamente sangramento pós-menopausa com endométrio espessado e adiar a investigação por um ano.</p><p>A conduta proposta atrasaria o diagnóstico de condições potencialmente graves, incluindo câncer de endométrio. O próximo passo adequado é investigação endometrial com biópsia.</p>"
+        }
+      ],
+      "comentario_final": "<p>O conceito central é o manejo do <strong>sangramento pós-menopausa</strong>. Qualquer sangramento após 12 meses de amenorreia deve ser valorizado, porque pode ser a primeira manifestação de hiperplasia endometrial ou câncer de endométrio, mesmo quando há achados vaginais compatíveis com atrofia.</p><p>A ultrassonografia transvaginal é exame inicial útil para avaliar a espessura endometrial. Em pacientes com sangramento pós-menopausa, endométrio espessado deve levar à investigação histológica. A FEBRASGO utiliza o ponto de corte de 4 mm para investigação; materiais recentes do Ministério da Saúde trabalham com alta suspeição quando há sangramento e espessura endometrial maior ou igual a 5 mm. Neste caso, 9 mm ultrapassa ambos os critérios.</p><p>Além disso, diabetes e hipertensão aumentam a preocupação clínica, especialmente quando associadas ao contexto metabólico de maior risco para doença endometrial. A discreta atrofia vaginal não basta para explicar o quadro sem investigar o endométrio.</p><p>Para prova, a sequência é: sangramento pós-menopausa + endométrio espessado = investigar endométrio. Entre as alternativas, a melhor conduta é <strong>histeroscopia com biópsia dirigida</strong>, pois permite inspeção direta da cavidade uterina e coleta de material para diagnóstico.</p>",
+      "eu_tenho_10_anos": "Depois da menopausa, a mulher não deve voltar a sangrar como menstruação. Se isso acontece, o médico precisa investigar. Nesse caso, o exame mostrou que a parte de dentro do útero está mais grossa do que deveria. Pode ser algo benigno, mas também pode ser uma doença séria. Por isso, não basta passar lubrificante ou hormônio e esperar. O melhor é olhar dentro do útero com uma câmera pequena e tirar um pedacinho para exame.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Sangramento pós-menopausa + endométrio > 4-5mm → histeroscopia + biópsia.",
+    "common_mistake": "Atribuir o sangramento pós-menopausa apenas à atrofia vaginal sem investigação adequada, especialmente quando há espessamento endometrial. A atrofia é um diagnóstico de exclusão após afastar causas mais graves.",
+    "quick_takeaway": "Qualquer sangramento pós-menopausa é um sinal de alerta e deve ser investigado para excluir malignidade, especialmente câncer de endométrio. Um endométrio de 9 mm no ultrassom transvaginal é espesso e indica a necessidade de biópsia dirigida, sendo a histeroscopia o método ideal para visualização e coleta de material.",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Histeroscopia Diagnóstica",
+      "Biópsia Endometrial Dirigida",
+      "Espessamento Endometrial"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Identificar o sangramento uterino anormal na pós-menopausa como sinal de alerta para malignidade",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Aplicar o critério de espessura endometrial (ponto de corte de 4 mm) para indicação de investigação invasiva",
+        "bloom_level": "aplicar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Selecionar a histeroscopia com biópsia dirigida como padrão-ouro para avaliação de endométrio de 9 mm",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "441f186d-4e5c-4866-8fb2-48d95b100c5e",
+    "correct_choice": "0",
+    "ai_commentary": {
+      "alternativas": [
+        {
+          "texto": "Levonorgestrel 0,75 mg, em 2 doses com intervalo de 12 horas",
+          "correta": true,
+          "comentario": "<p>Você acertou em cheio! O <strong>levonorgestrel</strong> é, sem dúvida, a nossa primeira escolha no atendimento à vítima de violência sexual e em qualquer situação de contracepção de emergência (CE). Ele é um progestógeno isolado que atua de forma brilhante inibindo ou retardando a <strong>ovulação</strong> ao impedir o pico do hormônio luteinizante (<strong>LH</strong>). </p><p>Embora a questão traga o esquema fracionado de <strong>0,75 mg</strong> em duas doses com intervalo de 12 horas, vale lembrar que a dose única de <strong>1,5 mg</strong> é atualmente a mais utilizada por facilitar a adesão, apresentando a mesma eficácia. O importante é que o início seja o mais precoce possível, preferencialmente nas primeiras <strong>72 horas</strong>, embora as diretrizes do Ministério da Saúde e da FEBRASGO indiquem que ainda há benefício até o 5º dia (<strong>120 horas</strong>).</p>"
+        },
+        {
+          "texto": "Contraceptivos contendo etinilestradiol, na dose de 20 mcg/dia, por 21 dias",
+          "correta": false,
+          "comentario": "<p>Cuidado para não confundir as coisas aqui! O que esta alternativa descreve é o uso de um anticoncepcional oral combinado de <strong>baixa dosagem</strong> para uso rotineiro. Prescrever <strong>etinilestradiol 20 mcg</strong> por 21 dias é o que fazemos no consultório para uma paciente que deseja planejar sua vida reprodutiva a longo prazo.</p><p>Em uma situação de emergência, essa dose é insuficiente para gerar o bloqueio hormonal necessário para impedir a ovulação imediata. Antigamente, usávamos o <strong>Método de Yuzpe</strong>, que utilizava pílulas combinadas em altas doses, mas ele causava muitos efeitos colaterais como <strong>náuseas e vômitos</strong>, sendo hoje amplamente substituído pelo levonorgestrel isolado.</p>"
+        },
+        {
+          "texto": "Contraceptivos contendo etinilestradiol, na dose de 30 mcg associados ao gestodene",
+          "correta": false,
+          "comentario": "<p>Mais uma pegadinha tentando te confundir com métodos de rotina. A associação de <strong>etinilestradiol 30 mcg</strong> com <strong>gestodene</strong> é uma das formulações mais comuns de pílulas combinadas modernas, excelente para o dia a dia, mas totalmente inadequada para o cenário de violência sexual.</p><p>Para que um anticoncepcional combinado funcione como emergência, precisaríamos de uma carga de <strong>etinilestradiol</strong> de pelo menos 100 mcg por dose (repetida em 12h), o que exigiria que a paciente tomasse várias pílulas de uma vez. Como o <strong>levonorgestrel</strong> isolado é mais eficaz e causa muito menos mal-estar, não faz sentido usar essas combinações de rotina.</p>"
+        },
+        {
+          "texto": "Acetato de medroxiprogesterona 10 mg/dia, por 10 dias consecutivos",
+          "correta": false,
+          "comentario": "<p>Essa alternativa está bem fora do contexto de emergência. O <strong>acetato de medroxiprogesterona</strong> de 10 mg por via oral é frequentemente utilizado na ginecologia para tratar sangramento uterino disfuncional ou para realizar o teste da progesterona em casos de <strong>amenorreia secundária</strong>.</p><p>Ele serve para estabilizar ou descamar o endométrio, mas não possui a capacidade de bloquear o pico de <strong>LH</strong> de forma aguda como o levonorgestrel faz. Além disso, o esquema de 10 dias não faz sentido para quem precisa de uma intervenção imediata após uma relação desprotegida ou violência. Lembre-se: na emergência, queremos ação rápida sobre a <strong>ovulação</strong>.</p>"
+        }
+      ],
+      "comentario_final": "<p>O atendimento à vítima de violência sexual é uma das situações mais delicadas na nossa prática médica e exige um protocolo rigoroso e humanizado. Além do acolhimento e do suporte psicológico, a profilaxia da gravidez é prioridade zero. O <strong>levonorgestrel</strong> é o padrão-ouro porque é extremamente eficaz em impedir a ovulação se administrado antes que ela ocorra. É importante destacar que ele <strong>não é abortivo</strong>; se a implantação já tiver ocorrido, o medicamento não interromperá a gestação.</p><p>No plantão, você deve se lembrar que o tempo é nosso inimigo: a eficácia da contracepção de emergência cai conforme as horas passam. O esquema de <strong>1,5 mg</strong> (seja em dose única ou fracionado em duas de <strong>0,75 mg</strong>) deve ser oferecido imediatamente. Além da parte hormonal, não esqueça que o protocolo de violência sexual inclui a profilaxia para <strong>HIV</strong> (preferencialmente em até 2 horas, limite de 72h), <strong>Hepatite B</strong>, <strong>Sífilis</strong> e outras ISTs como clamídia e gonorreia. </p><p>Uma dica valiosa para a prova e para a vida: se a paciente apresentar vômitos nas primeiras 2 horas após a ingestão do comprimido, a dose deve ser repetida. Na MedEvo, reforçamos que o domínio desses protocolos de emergência garante não apenas a nota na prova, mas a segurança e o respeito que essas pacientes tanto precisam no momento de maior vulnerabilidade.</p>",
+      "eu_tenho_10_anos": "Imagine que o corpo da mulher tem uma 'fábrica de bebês' que libera uma sementinha (o óvulo) uma vez por mês. Quando acontece uma violência sexual, precisamos agir rápido para que essa sementinha não seja liberada e não encontre o espermatozoide. O remédio de emergência, chamado levonorgestrel, funciona como um botão de 'pausa' nessa fábrica. Ele avisa o corpo para não soltar a sementinha agora, dando tempo para o perigo passar. Esse remédio deve ser tomado o mais rápido possível, de preferência logo depois do ocorrido. Ele pode ser tomado em um comprimido só ou em dois, com um intervalo de 12 horas entre eles. É uma proteção muito importante para garantir que a pessoa não passe por uma gravidez que ela não escolheu em um momento tão triste.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": ""
+    },
+    "clinical_pearl": "Contracepção de emergência pós-violência sexual → Levonorgestrel (dose única 1,5mg ou 2 doses 0,75mg).",
+    "common_mistake": "Oferecer contraceptivos hormonais combinados de uso contínuo como contracepção de emergência. O erro é não diferenciar a contracepção de emergência (que usa altas doses hormonais para inibir ou atrasar a ovulação) dos métodos contraceptivos regulares, que não são eficazes para essa finalidade.",
+    "quick_takeaway": "A contracepção de emergência após violência sexual é crucial e deve ser oferecida o mais rápido possível. O Levonorgestrel é a opção mais comum e eficaz, podendo ser administrado em dose única de 1,5 mg ou em duas doses de 0,75 mg com intervalo de 12 horas.",
+    "key_concepts": [
+      "Contracepção de emergência",
+      "Levonorgestrel",
+      "Violência sexual",
+      "Profilaxia pós-exposição",
+      "Pílula do dia seguinte"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Reconhecer a necessidade de anticoncepção de emergência em vítima de violência sexual",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Identificar o Levonorgestrel como o padrão-ouro para contracepção de emergência",
+        "bloom_level": "compreender"
+      },
+      {
+        "step": 2,
+        "type": "treatment",
+        "skill": "Selecionar a posologia correta do Levonorgestrel (0,75 mg em 2 doses com intervalo de 12h)",
+        "bloom_level": "aplicar"
+      }
+    ]
+  },
+  {
+    "id": "759a55b3-4166-4cd0-a50f-7b6f794575bd",
+    "correct_choice": "0",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.febrasgo.org.br/images/pec/Protocolos-assistenciais/n28---G---Abdome-agudo-em-ginecologia-2020.pdf",
+          "tipo": "diretriz",
+          "titulo": "FEBRASGO. Protocolo de Ginecologia nº 28: Abdome agudo em ginecologia, 2018"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK560675/",
+          "tipo": "revisao_clinica",
+          "titulo": "StatPearls. Ovarian Torsion, NCBI Bookshelf"
+        },
+        {
+          "url": "https://www.msdmanuals.com/professional/gynecology-and-obstetrics/miscellaneous-gynecologic-disorders/adnexal-torsion",
+          "tipo": "fonte_secundaria",
+          "titulo": "MSD Manual Professional Edition. Adnexal Torsion"
+        },
+        {
+          "url": "https://www.merckmanuals.com/professional/gynecology-and-obstetrics/symptoms-of-gynecologic-disorders/female-pelvic-pain",
+          "tipo": "fonte_secundaria",
+          "titulo": "Merck Manual Professional Edition. Female Pelvic Pain"
+        },
+        {
+          "url": "https://www.msdmanuals.com/professional/gynecology-and-obstetrics/vaginitis-cervicitis-and-pelvic-inflammatory-disease/pelvic-inflammatory-disease-pid",
+          "tipo": "fonte_secundaria",
+          "titulo": "MSD Manual Professional Edition. Pelvic Inflammatory Disease"
+        },
+        {
+          "url": "https://www.radiologyinfo.org/en/info/acs-acute-pelvic-pain-reproductive-age",
+          "tipo": "diretriz",
+          "titulo": "RadiologyInfo.org e American College of Radiology. Acute Pelvic Pain in the Reproductive Age Group"
+        },
+        {
+          "url": "https://www.merckmanuals.com/professional/oncology/gynecologic-tumors/ovarian-fallopian-tube-and-peritoneal-cancer",
+          "tipo": "fonte_secundaria",
+          "titulo": "Merck Manual Professional Edition. Ovarian, Fallopian Tube, and Peritoneal Cancer"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "torção de cisto anexial.",
+          "correta": true,
+          "comentario": "<p>O quadro combina os principais elementos de <strong>torção anexial</strong>: mulher jovem, dor abdominal/pélvica intensa de início súbito e massa anexial direita em torno de 5 cm. Massas ovarianas ou cistos a partir desse tamanho aumentam o risco de rotação do pedículo vascular. A ultrassonografia com imagem anexial complexa e pequena quantidade de líquido livre reforça uma complicação aguda do anexo, embora a confirmação definitiva seja cirúrgica.</p>"
+        },
+        {
+          "texto": "prenhez ectópica rota.",
+          "correta": false,
+          "comentario": "<p>Gestação ectópica sempre deve entrar no diagnóstico diferencial de dor pélvica aguda em mulher em idade reprodutiva, e um teste de gravidez deve ser solicitado mesmo quando a história não sugere gestação. No entanto, a alternativa fala em ectópica rota; nesse cenário, seriam mais esperados beta-hCG positivo, atraso menstrual ou sangramento vaginal, dor à mobilização cervical, sinais peritoneais ou instabilidade hemodinâmica. A paciente está estável e o achado dominante é uma massa anexial de 5 cm, o que favorece torção.</p>"
+        },
+        {
+          "texto": "cistoadenocarcinima de ovário.",
+          "correta": false,
+          "comentario": "<p>Neoplasia maligna epitelial de ovário é menos provável em uma paciente de 25 anos e, em geral, cursa com sintomas inespecíficos, progressivos ou achado de massa suspeita, não como primeira hipótese diante de dor súbita intensa. Uma imagem sólido-cística isolada em mulher jovem não basta para definir malignidade; no contexto agudo, sugere mais uma complicação de massa anexial benigna, como torção.</p>"
+        },
+        {
+          "texto": "tumor tubário.",
+          "correta": false,
+          "comentario": "<p>Tumor tubário primário é uma causa rara de massa anexial e não é a hipótese mais provável para dor súbita em uma mulher jovem com massa anexial de 5 cm. O quadro é mais compatível com evento mecânico agudo envolvendo ovário/anexo do que com neoplasia tubária.</p>"
+        },
+        {
+          "texto": "doença inflamatória pélvica.",
+          "correta": false,
+          "comentario": "<p>A doença inflamatória pélvica costuma ser sugerida por dor pélvica associada a dor à mobilização do colo, dor uterina ou anexial, secreção mucopurulenta, sangramento anormal e, às vezes, febre. Nesta paciente, o colo não é doloroso à mobilização, o exame especular não mostra sinais infecciosos relevantes, o pH vaginal é normal e o teste de Whiff é negativo. Esses achados tornam DIP menos provável do que torção anexial.</p>"
+        }
+      ],
+      "comentario_final": "<p>A hipótese mais provável é torção de cisto anexial. Em provas, o padrão clássico é dor pélvica ou abdominal <strong>súbita e intensa</strong> em mulher jovem, associada a aumento ovariano ou massa anexial. O risco aumenta quando há cisto ou massa ovariana, especialmente em torno de 5 cm ou mais, porque o ovário fica mais móvel e pode girar sobre o pedículo vascular.</p><p>A ultrassonografia transvaginal, idealmente com Doppler, ajuda ao mostrar ovário aumentado, massa anexial, edema, líquido livre ou alteração de fluxo. Porém, a presença de fluxo ao Doppler não exclui torção, porque o ovário tem suprimento arterial duplo e a torção pode ser parcial ou intermitente. Quando a suspeita clínica é alta, a confirmação e o tratamento são cirúrgicos, preferencialmente com abordagem conservadora para destorção e preservação ovariana em pacientes jovens.</p><p>Os principais distratores são gestação ectópica rota e DIP. A ectópica deve sempre ser investigada com beta-hCG em mulher em idade fértil, mas o quadro descrito não sugere ruptura, pois não há instabilidade, sangramento ou sinais peritoneais importantes. A DIP perde força pela ausência de dor à mobilização cervical, secreção purulenta e febre. Assim, a massa anexial de 5 cm com dor aguda direciona para torção.</p>",
+      "eu_tenho_10_anos": "O ovário pode ter um cisto, como se fosse uma bolinha presa por um cabinho. Quando essa bolinha fica maior, ela pode girar e torcer esse cabinho. Isso dói muito e começa de repente, porque o sangue passa com dificuldade. No caso da paciente, ela é jovem, teve dor forte de repente e o exame mostrou uma massa no lado direito com cerca de 5 cm. Por isso, a explicação que mais combina é torção do cisto no anexo.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": "",
+      "tipo_possivel_erro_gabarito": null
+    },
+    "clinical_pearl": "Dor abdominal súbita + massa anexial + líquido livre + USG complexa = Torção anexial até prova em contrário.",
+    "common_mistake": "Confundir torção anexial com prenhez ectópica rota apenas pela dor e líquido livre. A ausência de atraso menstrual e o uso de preservativo são cruciais para afastar ectópica rota como primeira hipótese, direcionando para outras causas de abdome agudo ginecológico.",
+    "quick_takeaway": "A torção de cisto anexial é uma emergência ginecológica que causa dor abdominal súbita e intensa. A presença de massa anexial complexa e líquido livre na ultrassonografia, mesmo sem sinais de peritonite franca, reforça a suspeita e exige intervenção rápida para preservar o ovário.",
+    "key_concepts": [
+      "Torção de Cisto Anexial",
+      "Dor Abdominal Aguda Ginecológica",
+      "Diagnóstico Ultrassonográfico Anexial",
+      "Emergências Ginecológicas",
+      "Manejo da Massa Anexial"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Identificar a tríade de dor abdominal súbita, massa anexial palpável e estabilidade hemodinâmica",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Associar o tamanho da massa anexial (5 cm) ao risco aumentado de torção por mobilidade do pedículo",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 2,
+        "type": "diagnosis",
+        "skill": "Diferenciar torção anexial de prenhez ectópica rota com base na estabilidade hemodinâmica e ausência de atraso menstrual",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 3,
+        "type": "diagnosis",
+        "skill": "Concluir o diagnóstico de torção de cisto anexial diante da imagem sólido-cística e quadro agudo",
+        "bloom_level": "avaliar"
+      }
+    ]
+  },
+  {
+    "id": "a25cd5ef-a993-4f4b-bb9d-ca94721381b1",
+    "correct_choice": "2",
+    "ai_commentary": {
+      "referencias": [],
+      "alternativas": [
+        {
+          "texto": "O diagnóstico é de câncer de endométrio, uma vez que o sangramento na pós- menopausa está associado a esta neoplasia na quase totalidade dos casos.",
+          "correta": false,
+          "comentario": "Sangramento uterino após a menopausa sempre exige investigação de neoplasia endometrial, especialmente na presença de obesidade e hipertensão, que aumentam o risco de hiperplasia e câncer de endométrio. Porém, ele não estabelece sozinho o diagnóstico de câncer. A causa mais comum de sangramento pós-menopausa é atrofia endometrial ou vaginal, e o câncer corresponde a uma parcela relevante, mas longe da “quase totalidade” dos casos. A espessura endometrial de 10 mm aumenta a suspeita e indica investigação histológica, não diagnóstico definitivo."
+        },
+        {
+          "texto": "O sangramento é devido a atrofia endometrial.",
+          "correta": false,
+          "comentario": "A atrofia endometrial é uma causa comum de sangramento pós-menopausa, mas costuma estar associada a endométrio fino na ultrassonografia. Neste caso, o endométrio mede 10 mm, valor aumentado para uma mulher sem menstruação há 3 anos. Com sangramento pós-menopausa e endométrio espessado, não é adequado atribuir o quadro diretamente à atrofia sem avaliação histopatológica."
+        },
+        {
+          "texto": "É necessário um estudo histopatológico do endométrio para afastar hiperplasia e câncer.",
+          "correta": true,
+          "comentario": "Esta é a conduta correta. Em sangramento pós-menopausa, a ultrassonografia transvaginal ajuda a estratificar risco: endométrio fino, em geral até 4 mm, tem alto valor preditivo negativo para câncer endometrial. Já espessura endometrial acima desse limite, especialmente 10 mm, requer amostragem endometrial, como biópsia endometrial, curetagem ou avaliação por histeroscopia com biópsia dirigida, para excluir hiperplasia endometrial e carcinoma. Obesidade e hipertensão reforçam a preocupação, pois se associam a maior exposição estrogênica relativa e maior risco de doença endometrial proliferativa."
+        },
+        {
+          "texto": "Deve-se iniciar terapia de reposição hormonal para controle do sangramento vaginal.",
+          "correta": false,
+          "comentario": "Terapia hormonal não deve ser iniciada para controlar sangramento pós-menopausa sem diagnóstico etiológico. Antes de qualquer tratamento hormonal, é obrigatório investigar a origem do sangramento e excluir lesões endometriais, sobretudo quando há endométrio espessado. Além disso, terapia estrogênica inadequada pode estimular o endométrio e agravar hiperplasia ou neoplasia não diagnosticada."
+        }
+      ],
+      "comentario_final": "Sangramento uterino após a menopausa é sempre um sinal clínico que exige investigação. A menopausa é definida retrospectivamente após 12 meses de amenorreia; portanto, uma mulher há 3 anos sem menstruar que volta a sangrar tem **sangramento pós-menopausa**.\n\nA ultrassonografia transvaginal é útil como exame inicial. O ponto central é a **espessura endometrial**:\n\n- endométrio fino, geralmente **≤ 4 mm**, tem baixo risco de câncer endometrial em um primeiro episódio de sangramento;\n- endométrio **> 4 mm** em mulher com sangramento pós-menopausa exige avaliação histológica;\n- endométrio de **10 mm** é claramente espessado nesse contexto.\n\nA paciente também tem fatores de risco para hiperplasia e carcinoma endometrial: **obesidade** e **hipertensão**. A obesidade aumenta a conversão periférica de androgênios em estrogênios no tecido adiposo, gerando estímulo estrogênico endometrial relativamente sem oposição; isso favorece proliferação endometrial, hiperplasia e, em alguns casos, carcinoma.\n\nAssim, o raciocínio correto é: sangramento pós-menopausa + endométrio espessado = necessidade de **estudo histopatológico do endométrio** para afastar hiperplasia e câncer. O sangramento não permite diagnosticar câncer de imediato, mas também não pode ser atribuído à atrofia diante de endométrio espessado. Terapia hormonal sem investigação prévia é inadequada.",
+      "eu_tenho_10_anos": "Depois da menopausa, a mulher não deve voltar a sangrar como se fosse menstruação. Se isso acontece, o médico precisa descobrir a causa. Neste caso, o exame mostrou que a camada de dentro do útero está grossa demais para quem já entrou na menopausa. Por isso, é preciso pegar um pedacinho dessa camada e examinar no microscópio para ver se existe crescimento anormal ou câncer. Não dá para dizer que já é câncer, mas também não dá para tratar sem investigar.",
+      "possivel_erro_no_gabarito": false,
+      "justificativa_erro_gabarito": ""
+    },
+    "clinical_pearl": "Sangramento pós-menopausa + espessura endometrial > 4-5mm → Biópsia endometrial para afastar câncer/hiperplasia.",
+    "common_mistake": "Subestimar a importância do sangramento pós-menopausa, atribuindo-o à atrofia endometrial sem investigação adequada. Embora a atrofia seja comum, a exclusão de malignidade é prioritária.",
+    "quick_takeaway": "Qualquer sangramento vaginal na pós-menopausa é um sinal de alerta e deve ser investigado para excluir patologias malignas, especialmente câncer de endométrio. A espessura endometrial de 10mm é significativamente acima do limite de normalidade para esta faixa etária, exigindo estudo histopatológico.",
+    "key_concepts": [
+      "Sangramento Pós-Menopausa",
+      "Câncer de Endométrio",
+      "Espessura Endometrial na Pós-Menopausa",
+      "Biópsia Endometrial",
+      "Hiperplasia Endometrial"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Detectar fatores de risco para câncer de endométrio (obesidade, hipertensão e pós-menopausa) no enunciado",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Avaliar a espessura endometrial ultrassonográfica de 10mm como patológica na pós-menopausa",
+        "bloom_level": "analisar"
+      },
+      {
+        "step": 2,
+        "type": "investigation",
+        "skill": "Indicar a necessidade de estudo histopatológico para exclusão de malignidade em sangramento pós-menopausa com endométrio espesso",
+        "bloom_level": "aplicar"
+      }
+    ]
+  },
+  {
+    "id": "06d75fd8-d707-413c-a797-2d14b6136e02",
+    "correct_choice": "4",
+    "ai_commentary": {
+      "referencias": [
+        {
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l9263.htm",
+          "tipo": "documento_oficial",
+          "titulo": "Lei nº 9.263, de 12 de janeiro de 1996 — redação atual consolidada"
+        },
+        {
+          "url": "https://planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14443.htm",
+          "tipo": "documento_oficial",
+          "titulo": "Lei nº 14.443, de 2 de setembro de 2022"
+        },
+        {
+          "url": "https://legis.senado.leg.br/norma/551139/publicacao/16426335",
+          "tipo": "documento_oficial",
+          "titulo": "Lei nº 9.263, de 12 de janeiro de 1996 — publicação das partes vetadas, redação vigente à época da prova"
+        },
+        {
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/sas/1999/prt0048_11_02_1999.html",
+          "tipo": "documento_oficial",
+          "titulo": "Portaria SAS/MS nº 48, de 11 de fevereiro de 1999"
+        }
+      ],
+      "alternativas": [
+        {
+          "texto": "Durante uma cesariana por apresentação anômala de uma mulher com 37 anos e com quatro filhos de parto vaginal.",
+          "correta": false,
+          "comentario": "<p>O erro decisivo é tentar fazer a laqueadura no momento da cesariana sem que a alternativa traga uma exceção legal aplicável. Em 2018, a esterilização no período de parto era vedada, salvo comprovada necessidade, como cesarianas sucessivas anteriores ou risco relevante. A apresentação anômala justifica a cesariana, mas não justifica, por si só, a esterilização naquele ato cirúrgico.</p>"
+        },
+        {
+          "texto": "Logo após uma curetagem por abortamento de uma mulher com 40 anos e com dois filhos vivos.",
+          "correta": false,
+          "comentario": "<p>O ponto que derruba a alternativa é o momento: <strong>logo após abortamento</strong>. Mesmo com idade adequada e dois filhos vivos, a legislação e a regulamentação brasileira tradicionalmente vedavam a esterilização no período de abortamento e no pós-abortamento imediato, salvo situação excepcional de risco ou necessidade comprovada, o que não foi descrito.</p>"
+        },
+        {
+          "texto": "Mulher de 24 anos, com história de três gestações que resultaram em óbito fetal.",
+          "correta": true,
+          "comentario": "<p>Pela legislação vigente em 2018, essa alternativa não era permitida: a mulher tinha menos de 25 anos e não possuía dois filhos vivos; óbitos fetais não preenchem o critério legal de filhos vivos. Contudo, pela redação atual da Lei nº 9.263/1996, alterada pela Lei nº 14.443/2022, a idade mínima passou a ser maior de 21 anos ou, alternativamente, dois filhos vivos. Assim, em uma questão atual, a idade de 24 anos não impediria a esterilização, desde que cumpridos os demais requisitos formais.</p>"
+        },
+        {
+          "texto": "Durante a terceira cesariana de uma mulher com 26 anos, tendo a manifestação de vontade assinada e registrada no dia anterior.",
+          "correta": false,
+          "comentario": "<p>O problema central é a manifestação de vontade feita apenas no dia anterior. A legislação exige intervalo mínimo de <strong>60 dias</strong> entre a manifestação de vontade e o ato cirúrgico, com aconselhamento e acesso a métodos de regulação da fecundidade. A situação de cesarianas sucessivas pode ser relevante para permitir laqueadura no contexto do parto em situações específicas, mas não autoriza ignorar o prazo legal quando a alternativa explicita que ele não foi cumprido.</p>"
+        },
+        {
+          "texto": "Nuligesta de 28 anos, sem sociedade conjugal ou alteração psiquiátrica.",
+          "correta": true,
+          "comentario": "<p>A nuligestação não impede a esterilização voluntária. Em 2018, a mulher com 28 anos já preenchia o critério etário da Lei nº 9.263/1996, que exigia capacidade civil plena e idade superior a 25 anos ou dois filhos vivos. A ausência de sociedade conjugal afastava a exigência então vigente de consentimento do cônjuge, e a ausência de alteração psiquiátrica preserva a validade da manifestação de vontade. O procedimento, naturalmente, dependeria do cumprimento dos trâmites formais, como registro escrito e intervalo mínimo legal.</p>"
+        }
+      ],
+      "comentario_final": "<p>O núcleo da questão é conhecer os requisitos legais para a <strong>esterilização voluntária</strong> no Brasil. À época da prova, em 2018, a Lei nº 9.263/1996 permitia o procedimento em pessoas com capacidade civil plena, maiores de 25 anos ou com pelo menos dois filhos vivos, desde que respeitado o intervalo mínimo de 60 dias entre a manifestação de vontade e a cirurgia. Além disso, havia exigência de consentimento do cônjuge na vigência de sociedade conjugal, e a esterilização no período de parto ou abortamento era vedada, salvo exceções específicas.</p><p>Aplicando esses critérios ao enunciado original, a resposta pretendida era a alternativa E: mulher nuligesta, 28 anos, sem sociedade conjugal e sem alteração psiquiátrica. Ser nuligesta não era impedimento legal, porque a idade maior que 25 anos já bastava para cumprir o critério objetivo.</p><p>Há, porém, uma atualização importante. A Lei nº 14.443/2022 alterou a Lei nº 9.263/1996: reduziu a idade mínima para maiores de 21 anos, manteve a alternativa de pelo menos dois filhos vivos, revogou a exigência de consentimento do cônjuge e passou a permitir esterilização no período do parto quando houver manifestação de vontade com antecedência mínima de 60 dias e condições médicas adequadas. Por isso, embora a alternativa E fosse a resposta adequada em 2018, a alternativa C também se torna defensável pela legislação atual, pois a idade de 24 anos já supera o novo limite legal.</p>",
+      "eu_tenho_10_anos": "A questão pergunta quando a lei deixa uma mulher fazer laqueadura. Em 2018, a regra principal era: ter mais de 25 anos ou ter pelo menos dois filhos vivos, conseguir decidir por si mesma, pedir por escrito e esperar 60 dias. Por isso, a mulher de 28 anos sem marido e sem problema para decidir podia fazer. A mulher de 24 anos não podia pela regra antiga, porque não tinha 25 anos e não tinha filhos vivos. Mas a lei mudou depois: hoje a idade mínima é maior de 21 anos. Então, atualmente, a mulher de 24 anos também poderia fazer se cumprisse os outros requisitos.",
+      "possivel_erro_no_gabarito": true,
+      "justificativa_erro_gabarito": "A alternativa indicada como correta é a E, e ela era defensável na data da prova, em 2018, porque a redação então vigente da Lei nº 9.263/1996 permitia esterilização voluntária em pessoa com capacidade civil plena maior de 25 anos, respeitados os demais requisitos legais. O problema é de desatualização posterior: a Lei nº 14.443/2022 reduziu a idade mínima para maiores de 21 anos. Com isso, a alternativa C, que traz mulher de 24 anos, deixou de ser excluída pelo critério etário e também passa a ser defensável pela legislação atual, desde que cumpridos os demais requisitos formais. Assim, a questão permanece resolvível historicamente com E, mas não funciona bem como questão de resposta única pela legislação atualmente vigente.",
+      "tipo_possivel_erro_gabarito": "questao_desatualizada"
+    },
+    "clinical_pearl": "Laqueadura: idade > 21 anos OU > 2 filhos vivos, sem necessidade de consentimento conjugal.",
+    "common_mistake": "Acreditar que o consentimento do cônjuge ainda é obrigatório para a laqueadura ou que a cirurgia pode ser realizada imediatamente após a manifestação de vontade, exceto em casos específicos. O erro é desconhecer as recentes alterações na legislação que flexibilizaram os requisitos.",
+    "quick_takeaway": "A legislação brasileira (Lei nº 9.263/96, alterada pela Lei nº 14.443/2022) permite a esterilização voluntária para mulheres com mais de 21 anos ou com pelo menos dois filhos vivos, independentemente do estado civil, e sem a necessidade de consentimento do cônjuge. O prazo mínimo de 60 dias entre a manifestação da vontade e o ato cirúrgico deve ser respeitado, exceto em casos de parto.",
+    "key_concepts": [
+      "Esterilização Voluntária",
+      "Laqueadura Tubária",
+      "Planejamento Familiar",
+      "Legislação Brasileira",
+      "Direitos Reprodutivos"
+    ],
+    "reasoning_steps": [
+      {
+        "step": 0,
+        "type": "recognition",
+        "skill": "Identificar os critérios de idade (mínimo 25 anos) ou prole (mínimo 2 filhos vivos) na Lei 9.263/1996",
+        "bloom_level": "lembrar"
+      },
+      {
+        "step": 1,
+        "type": "association",
+        "skill": "Reconhecer a autonomia da mulher nuligesta maior de 25 anos para solicitar esterilização voluntária",
+        "bloom_level": "compreender"
+      },
+      {
+        "step": 2,
+        "type": "diagnosis",
+        "skill": "Concluir a permissibilidade da laqueadura em mulher de 28 anos sem necessidade de sociedade conjugal",
+        "bloom_level": "aplicar"
+      }
+    ]
+  }
+]

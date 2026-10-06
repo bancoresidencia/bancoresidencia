@@ -51,7 +51,8 @@ import {
   AlertTriangle,
   Sparkles,
   RotateCcw,
-  Plus
+  Plus,
+  BookOpenCheck
 } from 'lucide-react';
 
 export default function Home() {
@@ -210,6 +211,8 @@ export default function Home() {
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
   const [reportedQuestionIds, setReportedQuestionIds] = useState<Record<string, boolean>>({});
+  // Padrão: não criar caderno ao resolver (aluno precisa marcar explicitamente para criar)
+  const [shouldCreateCadernoOnSolve, setShouldCreateCadernoOnSolve] = useState<boolean>(false);
 
   // Cronômetro para resolução de questão sequencial
   useEffect(() => {
@@ -959,19 +962,43 @@ export default function Home() {
                       </p>
                     </div>
 
-                    <div className="flex items-center gap-3 shrink-0">
+                    <div className="flex flex-wrap items-center gap-3 shrink-0">
+                      {/* Checkbox para criar caderno (Padrão: desmarcado) */}
+                      <label className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
+                        <input
+                          type="checkbox"
+                          checked={shouldCreateCadernoOnSolve}
+                          onChange={(e) => setShouldCreateCadernoOnSolve(e.target.checked)}
+                          className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700"
+                        />
+                        <span>Criar Caderno</span>
+                      </label>
+
                       <button
                         type="button"
                         onClick={() => {
-                          setBancoMode('resolucao');
-                          setCurrentQuestionIndex(0);
-                          setQuestionTimer(0);
+                          if (shouldCreateCadernoOnSolve) {
+                            handleCreateListFromFilter();
+                          } else {
+                            setActiveListId(null);
+                            setBancoMode('resolucao');
+                            setCurrentQuestionIndex(0);
+                            setQuestionTimer(0);
+                          }
                         }}
                         className="flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs font-extrabold text-white shadow-md transition-all hover:scale-102 cursor-pointer"
                         style={{ backgroundColor: accentConfig.primaryHex }}
                       >
-                        <Play className="w-3.5 h-3.5 fill-current" />
-                        <span>Resolver Questões ({filteredQuestions.length})</span>
+                        {shouldCreateCadernoOnSolve ? (
+                          <BookOpenCheck className="w-3.5 h-3.5" />
+                        ) : (
+                          <Play className="w-3.5 h-3.5 fill-current" />
+                        )}
+                        <span>
+                          {shouldCreateCadernoOnSolve
+                            ? `Criar Caderno e Resolver (${filteredQuestions.length})`
+                            : `Resolver Questões (${filteredQuestions.length})`}
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -998,10 +1025,12 @@ export default function Home() {
                         }
                         setCurrentQuestionIndex(0);
                       }
+                      setActiveListId(null);
                       setQuestionTimer(0);
                       setBancoMode('resolucao');
                     }}
                     onStartSequentialSolving={() => {
+                      setActiveListId(null);
                       setBancoMode('resolucao');
                       setCurrentQuestionIndex(0);
                       setQuestionTimer(0);
@@ -1009,19 +1038,42 @@ export default function Home() {
                   />
 
                   {/* Botão de Rodapé para Iniciar Resolução */}
-                  <div className="flex justify-end pt-2">
+                  <div className="flex flex-wrap items-center justify-end gap-3 pt-2">
+                    <label className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
+                      <input
+                        type="checkbox"
+                        checked={shouldCreateCadernoOnSolve}
+                        onChange={(e) => setShouldCreateCadernoOnSolve(e.target.checked)}
+                        className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700"
+                      />
+                      <span>Criar Caderno de Questões</span>
+                    </label>
+
                     <button
                       type="button"
                       onClick={() => {
-                        setBancoMode('resolucao');
-                        setCurrentQuestionIndex(0);
-                        setQuestionTimer(0);
+                        if (shouldCreateCadernoOnSolve) {
+                          handleCreateListFromFilter();
+                        } else {
+                          setActiveListId(null);
+                          setBancoMode('resolucao');
+                          setCurrentQuestionIndex(0);
+                          setQuestionTimer(0);
+                        }
                       }}
                       className="flex items-center gap-2 px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
-                      <Play className="w-4 h-4 fill-current" />
-                      <span>Iniciar Resolução ({filteredQuestions.length} questões) →</span>
+                      {shouldCreateCadernoOnSolve ? (
+                        <BookOpenCheck className="w-4 h-4" />
+                      ) : (
+                        <Play className="w-4 h-4 fill-current" />
+                      )}
+                      <span>
+                        {shouldCreateCadernoOnSolve
+                          ? `Criar Caderno e Iniciar (${filteredQuestions.length} questões) →`
+                          : `Iniciar Resolução (${filteredQuestions.length} questões) →`}
+                      </span>
                     </button>
                   </div>
                 </div>

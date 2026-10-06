@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useMemo } from 'react';
 import { Question } from '@/types';
 import {
   CheckCircle2,
@@ -55,6 +55,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   // Estado de alternativas riscadas/cortadas pelo aluno
   const [eliminatedOptions, setEliminatedOptions] = useState<Record<string, boolean>>({});
 
+  // Estado de justificativas das alternativas expandidas pelo aluno
+  const [expandedOptions, setExpandedOptions] = useState<Record<string, boolean>>({});
+
   // Estados de Marcador de Texto (Highlight)
   const [highlights, setHighlights] = useState<TextHighlight[]>([]);
   const [activeHighlighterColor, setActiveHighlighterColor] = useState<'yellow' | 'green' | 'pink'>('yellow');
@@ -91,8 +94,72 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setIsAnswered(!!userAnswer);
     setShowCommentary(!!userAnswer);
     setEliminatedOptions({});
+    setExpandedOptions({});
     setHighlights([]);
   }
+
+  // Alterna expansão da justificativa de uma alternativa específica
+  const toggleOptionExplanation = (letter: string) => {
+    setExpandedOptions((prev) => ({
+      ...prev,
+      [letter]: !prev[letter]
+    }));
+  };
+
+  // Separação inteligente das justificativas das alternativas e do comentário final
+  const { optionExplanations, finalCommentary } = useMemo(() => {
+    const rawCommentary = question.commentary || '';
+    const explanations: Record<string, string> = {};
+
+    if (question.options) {
+      question.options.forEach((opt: { letter: string; text: string; explanation?: string }) => {
+        if (opt.explanation) {
+          explanations[opt.letter] = opt.explanation;
+        }
+      });
+    }
+
+    let cleanedFinal = rawCommentary;
+
+    // Detecta bloco "Análise das Alternativas"
+    const altBlockRegex = /(?:Análise das Alternativas|Comentário das Alternativas|Justificativa das Alternativas|Alternativas):([\s\S]*?)(?=(?:\n\s*\n\s*(?:Resumo Clínico|Pérola Prática|Clinical Pearl|Referências|Gabarito Oficial)|$))/i;
+    const match = rawCommentary.match(altBlockRegex);
+
+    if (match) {
+      const blockText = match[1];
+      const itemRegex = /(?:^[•\-*]?\s*(?:Alternativa|Opção)?\s*([A-E])\s*(?:\([^)]+\))?[:.]?\s*)([\s\S]*?)(?=(?:^[•\-*]?\s*(?:Alternativa|Opção)?\s*[A-E]\s*(?:\([^)]+\))?[:.]?\s*)|$)/gim;
+      let itemMatch: RegExpExecArray | null;
+      while ((itemMatch = itemRegex.exec(blockText)) !== null) {
+        const letter = itemMatch[1].toUpperCase();
+        const text = itemMatch[2].trim();
+        if (text && !explanations[letter]) {
+          explanations[letter] = text;
+        }
+      }
+      cleanedFinal = rawCommentary.replace(match[0], '').replace(/\n{3,}/g, '\n\n').trim();
+    } else {
+      const standaloneAltRegex = /(?:^[•\-*]\s*(?:Alternativa|Opção)\s*([A-E])\s*(?:\([^)]+\))?[:.]?\s*)([\s\S]*?)(?=(?:^[•\-*]\s*(?:Alternativa|Opção)\s*[A-E])|\n\n|$)/gim;
+      let foundAny = false;
+      let itemMatch: RegExpExecArray | null;
+      while ((itemMatch = standaloneAltRegex.exec(rawCommentary)) !== null) {
+        const letter = itemMatch[1].toUpperCase();
+        const text = itemMatch[2].trim();
+        if (text && !explanations[letter]) {
+          explanations[letter] = text;
+          foundAny = true;
+        }
+      }
+      if (foundAny) {
+        cleanedFinal = rawCommentary.replace(standaloneAltRegex, '').replace(/\n{3,}/g, '\n\n').trim();
+      }
+    }
+
+    if (!cleanedFinal.trim() && question.correctAnswer) {
+      cleanedFinal = `Gabarito Oficial: Alternativa ${question.correctAnswer}.`;
+    }
+
+    return { optionExplanations: explanations, finalCommentary: cleanedFinal };
+  }, [question.commentary, question.options, question.correctAnswer]);
 
   // Captura seleção de texto dentro do enunciado e destaca automaticamente com a cor ativa
   const handleStatementMouseUp = () => {
@@ -140,9 +207,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     }));
   };
 
-  // Seleciona a alternativa (apenas seleciona, NÃO envia logo)
+  // Seleciona a alternativa ou expande justificativa pós-resolução
   const handleSelectOption = (letter: 'A' | 'B' | 'C' | 'D' | 'E') => {
-    if (isAnswered) return;
+    if (isAnswered) {
+      toggleOptionExplanation(letter);
+      return;
+    }
     // Se estava riscada, desseleciona o risco ao escolher
     if (eliminatedOptions[letter]) {
       setEliminatedOptions((prev) => ({ ...prev, [letter]: false }));
@@ -477,6 +547,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             let optionContainerStyle =
               'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/60 hover:bg-slate-50/80 dark:hover:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200 shadow-xs';
 
+            const isExplanationExpanded = !!expandedOptions[option.letter];
+            const explanationText = optionExplanations[option.letter];
+
             if (!isAnswered) {
               if (isPending) {
                 optionContainerStyle =
@@ -493,9 +566,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               } else if (isPending && !isCorrect) {
                 optionContainerStyle =
                   'border-rose-500/80 bg-rose-50/80 dark:bg-rose-950/50 text-rose-950 dark:text-rose-200 ring-2 ring-rose-500/30 shadow-sm';
+              } else if (isExplanationExpanded) {
+                optionContainerStyle =
+                  'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 shadow-sm';
               } else {
                 optionContainerStyle =
-                  'opacity-45 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/30 text-slate-400 dark:text-slate-500';
+                  'opacity-70 hover:opacity-100 border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-950/30 text-slate-600 dark:text-slate-400';
               }
             }
 
@@ -503,76 +579,125 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               <div
                 key={option.letter}
                 onClick={() => handleSelectOption(option.letter)}
-                className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex items-start justify-between group rounded-2xl ${
-                  !isAnswered ? 'cursor-pointer' : 'cursor-default'
-                } ${optionContainerStyle}`}
+                className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex flex-col group rounded-2xl cursor-pointer ${optionContainerStyle}`}
               >
-                <div className="flex items-start gap-3 flex-1">
-                  {/* Letra da Alternativa */}
-                  <span
-                    className={`${badgeSizeClass} rounded-xl flex items-center justify-center font-extrabold shrink-0 mt-0.5 shadow-xs transition-colors ${
-                      isAnswered && isCorrect
-                        ? 'bg-emerald-600 text-white'
-                        : isAnswered && isPending && !isCorrect
-                        ? 'bg-rose-600 text-white'
-                        : isPending
-                        ? 'bg-blue-600 text-white ring-2 ring-blue-400/50'
-                        : isEliminated
-                        ? 'bg-slate-100 dark:bg-slate-900 text-slate-400 line-through'
-                        : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700'
-                    }`}
-                  >
-                    {option.letter}
-                  </span>
-
-                  {/* Texto da Alternativa */}
-                  <span
-                    className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all ${
-                      isEliminated && !isPending && !isAnswered
-                        ? 'line-through text-slate-400 dark:text-slate-500 opacity-60 italic'
-                        : ''
-                    }`}
-                  >
-                    {option.text}
-                  </span>
-                </div>
-
-                {/* Ações da Alternativa: Riscar (Cortar) + Ícones de Acerto/Erro */}
-                <div className="flex items-center gap-2 shrink-0 ml-3 pt-0.5">
-                  {/* Botão de Cortar/Riscar (apenas antes de responder) */}
-                  {!isAnswered && (
-                    <button
-                      type="button"
-                      onClick={(e) => toggleEliminateOption(option.letter, e)}
-                      title={
-                        isEliminated
-                          ? 'Restaurar alternativa descartada'
-                          : 'Riscar alternativa (descartar distrator)'
-                      }
-                      className={`p-1.5 rounded-lg text-xs transition-all cursor-pointer ${
-                        isEliminated
-                          ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 font-bold border border-rose-300 dark:border-rose-800'
-                          : 'text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 opacity-60 hover:opacity-100'
+                <div className="flex items-start justify-between w-full gap-3">
+                  <div className="flex items-start gap-3 flex-1">
+                    {/* Letra da Alternativa */}
+                    <span
+                      className={`${badgeSizeClass} rounded-xl flex items-center justify-center font-extrabold shrink-0 mt-0.5 shadow-xs transition-colors ${
+                        isAnswered && isCorrect
+                          ? 'bg-emerald-600 text-white'
+                          : isAnswered && isPending && !isCorrect
+                          ? 'bg-rose-600 text-white'
+                          : isPending
+                          ? 'bg-blue-600 text-white ring-2 ring-blue-400/50'
+                          : isEliminated
+                          ? 'bg-slate-100 dark:bg-slate-900 text-slate-400 line-through'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700'
                       }`}
                     >
-                      <Strikethrough className="w-3.5 h-3.5" />
-                    </button>
-                  )}
+                      {option.letter}
+                    </span>
 
-                  {/* Feedback Visual pós-resposta */}
-                  {isAnswered && isCorrect && (
-                    <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
-                      <CheckCircle2 className="w-5 h-5 shrink-0" />
-                      <span className="hidden sm:inline">Correta</span>
-                    </div>
-                  )}
-                  {isAnswered && isPending && !isCorrect && (
-                    <div className="flex items-center gap-1 text-rose-600 dark:text-rose-400 text-xs font-bold">
-                      <XCircle className="w-5 h-5 shrink-0" />
-                      <span className="hidden sm:inline">Incorreta</span>
-                    </div>
-                  )}
+                    {/* Texto da Alternativa */}
+                    <span
+                      className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all ${
+                        isEliminated && !isPending && !isAnswered
+                          ? 'line-through text-slate-400 dark:text-slate-500 opacity-60 italic'
+                          : ''
+                      }`}
+                    >
+                      {option.text}
+                    </span>
+                  </div>
+
+                  {/* Ações da Alternativa: Riscar (Antes) ou Feedback + Toggle Justificativa (Depois) */}
+                  <div className="flex items-center gap-2 shrink-0 ml-3 pt-0.5">
+                    {/* Botão de Cortar/Riscar (apenas antes de responder) */}
+                    {!isAnswered && (
+                      <button
+                        type="button"
+                        onClick={(e) => toggleEliminateOption(option.letter, e)}
+                        title={
+                          isEliminated
+                            ? 'Restaurar alternativa descartada'
+                            : 'Riscar alternativa (descartar distrator)'
+                        }
+                        className={`p-1.5 rounded-lg text-xs transition-all cursor-pointer ${
+                          isEliminated
+                            ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 font-bold border border-rose-300 dark:border-rose-800'
+                            : 'text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 opacity-60 hover:opacity-100'
+                        }`}
+                      >
+                        <Strikethrough className="w-3.5 h-3.5" />
+                      </button>
+                    )}
+
+                    {/* Feedback Visual pós-resposta + Botão de Justificativa */}
+                    {isAnswered && (
+                      <div className="flex items-center gap-2">
+                        {isCorrect && (
+                          <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
+                            <CheckCircle2 className="w-4 h-4 shrink-0" />
+                            <span className="hidden sm:inline">Correta</span>
+                          </div>
+                        )}
+                        {isPending && !isCorrect && (
+                          <div className="flex items-center gap-1 text-rose-600 dark:text-rose-400 text-xs font-bold">
+                            <XCircle className="w-4 h-4 shrink-0" />
+                            <span className="hidden sm:inline">Incorreta</span>
+                          </div>
+                        )}
+
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleOptionExplanation(option.letter);
+                          }}
+                          className={`flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors cursor-pointer border ${
+                            isExplanationExpanded
+                              ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                              : 'bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/70 hover:bg-blue-100 dark:hover:bg-blue-900/60'
+                          }`}
+                          title="Clique para ver ou ocultar a justificativa desta alternativa"
+                        >
+                          <span>{isExplanationExpanded ? 'Ocultar Justificativa' : 'Ver Justificativa'}</span>
+                          {isExplanationExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+                        </button>
+                      </div>
+                    )}
+                  </div>
                 </div>
+
+                {/* Justificativa Detalhada da Alternativa (Aberta sob demanda) */}
+                {isAnswered && isExplanationExpanded && (
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                    className="w-full mt-3 pt-3 border-t border-slate-200/80 dark:border-slate-800/80 animate-in fade-in duration-150"
+                  >
+                    <div
+                      className={`p-3.5 rounded-xl border text-xs sm:text-[13px] leading-relaxed ${
+                        isCorrect
+                          ? 'bg-emerald-50/90 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/60 text-emerald-950 dark:text-emerald-200'
+                          : 'bg-slate-50 dark:bg-slate-900/90 border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200'
+                      }`}
+                    >
+                      <div className="flex items-center gap-1.5 font-bold mb-1.5">
+                        <span className={isCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}>
+                          Justificativa da Alternativa {option.letter} {isCorrect ? '(Correta)' : '(Incorreta)'}:
+                        </span>
+                      </div>
+                      <p className="font-normal whitespace-pre-line text-slate-700 dark:text-slate-300">
+                        {explanationText ||
+                          (isCorrect
+                            ? 'Alternativa correta segundo o gabarito oficial da banca examinadora.'
+                            : `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${question.correctAnswer}.`)}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}
@@ -678,7 +803,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         </div>
       )}
 
-      {/* Gabarito Comentado e Raciocínio Clínico */}
+      {/* Comentário Final e Resumo Clínico (Exclusivo para o desfecho/síntese da questão) */}
       {(isAnswered || showCommentary) && (
         <div className="pt-2">
           <button
@@ -688,8 +813,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             <BookOpen className="w-4 h-4" />
             <span>
               {showCommentary
-                ? 'Ocultar comentário do professor'
-                : 'Ver comentário do professor e raciocínio clínico'}
+                ? 'Ocultar comentário final do professor'
+                : 'Ver comentário final e resumo clínico'}
             </span>
             {showCommentary ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
           </button>
@@ -700,7 +825,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <span>
                   {question.options && question.options.length > 0
-                    ? `Resposta Correta: Alternativa ${question.correctAnswer}`
+                    ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
                     : 'Padrão de Resposta Oficial:'}
                 </span>
               </div>
@@ -711,9 +836,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                     : fontSize === 'lg'
                     ? 'text-sm sm:text-base leading-relaxed'
                     : 'text-xs sm:text-sm leading-relaxed'
-                } font-normal text-slate-800 dark:text-slate-300`}
+                } font-normal text-slate-800 dark:text-slate-300 whitespace-pre-line`}
               >
-                {question.commentary}
+                {finalCommentary}
               </p>
             </div>
           )}

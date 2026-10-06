@@ -36,6 +36,8 @@ import { obstetriciaHierarchy } from './obstetriciaData';
 import { ginecologiaHierarchy } from './ginecologiaData';
 import { preventivaHierarchy } from './preventivaData';
 import { extractedMedEvoQuestions } from './extractedMedEvoQuestions';
+import { urologiaQuestions } from './urologiaQuestions';
+import { ginecologiaQuestions } from './ginecologia';
 
 // Hierarquia completa extraída com Especialidade, Tema, Foco e Subfoco
 export const medevoHierarchy: SpecialtyHierarchy[] = [
@@ -48,6 +50,8 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
 ];
 
 export const mockQuestions: Question[] = [
+  ...urologiaQuestions,
+  ...ginecologiaQuestions,
   ...extractedMedEvoQuestions,
   {
     id: 'q-1',

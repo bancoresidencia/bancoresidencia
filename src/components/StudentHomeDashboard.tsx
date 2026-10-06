@@ -245,7 +245,26 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+            {/* Card Contagem Regressiva para o ENARE / Prova Alvo */}
+            <div
+              onClick={() => setIsEditingCountdown(!isEditingCountdown)}
+              title="Clique para ver ou alterar detalhes da contagem regressiva"
+              className="flex items-center gap-3.5 bg-blue-50/90 dark:bg-blue-950/30 border border-blue-300/70 dark:border-blue-500/30 px-5 py-3 rounded-2xl shadow-xs cursor-pointer hover:bg-blue-100/70 dark:hover:bg-blue-900/40 transition-all"
+            >
+              <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-inner shrink-0">
+                <CalendarDays className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+              </div>
+              <div>
+                <div className="text-2xl font-black text-blue-600 dark:text-blue-400 font-sans tracking-tight leading-none">
+                  {countdownStats.daysRemaining} dias
+                </div>
+                <div className="text-[11px] text-blue-700 dark:text-blue-300/90 font-medium mt-1">
+                  para o {examName}
+                </div>
+              </div>
+            </div>
+
             {/* Destaque de Sequência de Dias com Micro-Animação */}
             <div className="flex items-center gap-3.5 bg-amber-50/80 dark:bg-amber-950/20 border border-amber-300/60 dark:border-amber-500/30 px-5 py-3 rounded-2xl shadow-xs">
               <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-600 dark:text-amber-400 shadow-inner shrink-0">

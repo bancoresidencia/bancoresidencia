@@ -29,7 +29,8 @@ import {
   Sliders,
   ArrowRight,
   Target,
-  Key
+  Key,
+  Play
 } from 'lucide-react';
 import {
   medevoHierarchy,
@@ -114,9 +115,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   totalAvailable,
   totalFiltered,
   onCreateListFromFilter,
-  onSelectDirectQuestion
+  onSelectDirectQuestion,
+  onStartSequentialSolving
 }) => {
   const { accentConfig } = useTheme();
+
+  // Opção para criar caderno ao iniciar (padrão: false / não criar)
+  const [shouldCreateCaderno, setShouldCreateCaderno] = useState<boolean>(false);
 
   // Sub-abas no topo dos filtros (Filtrar questões | Encontrar questão)
   const [filterSubTab, setFilterSubTab] = useState<'filtrar' | 'encontrar'>('filtrar');
@@ -681,17 +686,44 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </span>
           </div>
 
-          <button
-            onClick={onCreateListFromFilter}
-            className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-white text-xs font-bold shadow-xs transition-all cursor-pointer hover:scale-102 active:scale-98"
-            style={{
-              backgroundColor: accentConfig.primaryHex,
-              boxShadow: `0 6px 15px -3px ${accentConfig.bgRgba}`
-            }}
-          >
-            <BookOpenCheck className="w-4 h-4" />
-            <span>Criar Caderno Deste Filtro</span>
-          </button>
+          {/* Opção para Criar Caderno (Padrão: Desmarcado) */}
+          <label className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
+            <input
+              type="checkbox"
+              checked={shouldCreateCaderno}
+              onChange={(e) => setShouldCreateCaderno(e.target.checked)}
+              className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700"
+            />
+            <span>Criar Caderno</span>
+          </label>
+
+          {shouldCreateCaderno ? (
+            <button
+              onClick={() => onCreateListFromFilter()}
+              className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-white text-xs font-bold shadow-xs transition-all cursor-pointer hover:scale-102 active:scale-98"
+              style={{
+                backgroundColor: accentConfig.primaryHex,
+                boxShadow: `0 6px 15px -3px ${accentConfig.bgRgba}`
+              }}
+              title="Salva as questões filtradas em um novo caderno e inicia"
+            >
+              <BookOpenCheck className="w-4 h-4" />
+              <span>Criar Caderno ({totalFiltered.toLocaleString('pt-BR')})</span>
+            </button>
+          ) : (
+            <button
+              onClick={() => onStartSequentialSolving?.()}
+              className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-white text-xs font-bold shadow-xs transition-all cursor-pointer hover:scale-102 active:scale-98"
+              style={{
+                backgroundColor: accentConfig.primaryHex,
+                boxShadow: `0 6px 15px -3px ${accentConfig.bgRgba}`
+              }}
+              title="Resolver questões diretamente sem criar caderno"
+            >
+              <Play className="w-3.5 h-3.5 fill-current" />
+              <span>Resolver Questões ({totalFiltered.toLocaleString('pt-BR')})</span>
+            </button>
+          )}
 
           {activeCount > 0 && (
             <button
