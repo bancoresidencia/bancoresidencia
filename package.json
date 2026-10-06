@@ -14,6 +14,7 @@
     "safe-submit": "node scripts/safe-submit.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
     "clsx": "^2.1.1",
     "lucide-react": "^1.49.0",
     "next": "16.3.8",

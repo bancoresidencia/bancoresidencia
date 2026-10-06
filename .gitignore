@@ -44,3 +44,11 @@ next-env.d.ts
 # python cache
 __pycache__/
 *.pyc
+
+# raw datasets & extraction scratch
+/data/*.json
+/data/enare_pdfs/
+/data/enare_raw/
+/data/enare_test/
+/data/images/
+/scratch/
