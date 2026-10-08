@@ -121,7 +121,14 @@ export async function fetchQuestionsFromSupabase(
       const otherIn = otherModalidades.join(',');
       query = query.or(`modalidade.in.(${otherIn}),banca.ilike.%Revalida%,institution.ilike.%Revalida%`);
     } else {
-      query = query.in('modalidade', filters.modalidades);
+      // Se apenas "Residência Médica" está marcado (padrão global do banco), não aplicamos
+      // filtro unindexed que causa timeout no Supabase. Apenas aplicamos se houver outra modalidade específica.
+      const isOnlyDefaultResidencia =
+        filters.modalidades.length === 1 &&
+        filters.modalidades[0] === 'Residência Médica';
+      if (!isOnlyDefaultResidencia) {
+        query = query.in('modalidade', filters.modalidades);
+      }
     }
   }
 

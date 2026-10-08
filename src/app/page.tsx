@@ -267,7 +267,7 @@ export default function Home() {
   };
 
   // Modo do Banco de Questões: 'resolucao' (sequencial questão a questão), 'filtros' (painel de filtros separado) ou 'resultado' (diagnóstico e pontos fracos)
-  const [bancoMode, setBancoMode] = useState<'resolucao' | 'filtros' | 'resultado'>('resolucao');
+  const [bancoMode, setBancoMode] = useState<'resolucao' | 'filtros' | 'resultado'>('filtros');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
@@ -656,6 +656,7 @@ export default function Home() {
       subfocos: [subfoco]
     }));
     setActiveTab('banco');
+    setBancoMode('filtros');
   };
 
   // Simulação / Teste de Percentil (padrão null para exibir estatísticas 100% reais do aluno)
@@ -878,6 +879,7 @@ export default function Home() {
         activeTab={activeTab}
         onNavigate={(tab) => {
           setActiveTab(tab);
+          if (tab === 'banco') setBancoMode('filtros');
           setMobileMenuOpen(false);
         }}
         modalidade={performanceFilters.modalidade}
@@ -907,6 +909,7 @@ export default function Home() {
             <GlobalSearchBar
               onNavigate={(tab) => {
                 setActiveTab(tab);
+                if (tab === 'banco') setBancoMode('filtros');
                 setMobileMenuOpen(false);
               }}
               onSearchQuestions={(searchTerm) => {
@@ -1056,7 +1059,9 @@ export default function Home() {
                 <button
                   key={item.id}
                   onClick={() => {
-                    setActiveTab(item.id as ActiveTab);
+                    const nextTab = item.id as ActiveTab;
+                    setActiveTab(nextTab);
+                    if (nextTab === 'banco') setBancoMode('filtros');
                     setMobileMenuOpen(false);
                   }}
                   className={`w-full text-left px-4 py-3 rounded-xl text-xs font-bold transition-all ${
@@ -1091,7 +1096,10 @@ export default function Home() {
               }}
               recentList={recentList}
               allLists={lists}
-              onNavigate={setActiveTab}
+              onNavigate={(tab) => {
+                setActiveTab(tab);
+                if (tab === 'banco') setBancoMode('filtros');
+              }}
               onContinueList={handleContinueList}
               modalidade={performanceFilters.modalidade}
               onSimulatePercentile={(p) => setSimulatedTestPercentile(p)}
@@ -1124,71 +1132,6 @@ export default function Home() {
               {/* MODO 1: FILTROS SEPARADOS DAS QUESTÕES */}
               {bancoMode === 'filtros' ? (
                 <div className="space-y-6 animate-in fade-in duration-200">
-                  {/* Cabeçalho do Painel de Filtros */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-3xl bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 shadow-xs">
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2">
-                        <SlidersHorizontal className="w-4 h-4 text-blue-500" />
-                        <h2 className="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white font-heading">
-                          Filtros Avançados do Banco
-                        </h2>
-                      </div>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">
-                        Defina suas especialidades, temas, bancas e dificuldades. Ao salvar, as questões serão resolvidas em sequência.
-                      </p>
-                    </div>
-
-                    <div className="flex flex-wrap items-center gap-3 shrink-0">
-                      {/* Botão / Toggle estilizado para Criar Caderno */}
-                      <button
-                        type="button"
-                        onClick={() => setShouldCreateCadernoOnSolve(!shouldCreateCadernoOnSolve)}
-                        className={`flex items-center gap-2 px-3.5 py-2 rounded-2xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
-                          shouldCreateCadernoOnSolve
-                            ? 'bg-blue-500/10 border-blue-500/40 text-blue-600 dark:text-blue-400 ring-2 ring-blue-500/20 shadow-blue-500/10'
-                            : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700'
-                        }`}
-                      >
-                        <div className={`w-3.5 h-3.5 rounded flex items-center justify-center transition-colors ${
-                          shouldCreateCadernoOnSolve ? 'bg-blue-600 text-white' : 'border border-slate-400 dark:border-slate-600'
-                        }`}>
-                          {shouldCreateCadernoOnSolve && <Check className="w-2.5 h-2.5 stroke-[3]" />}
-                        </div>
-                        <FolderPlus className="w-3.5 h-3.5" />
-                        <span>Criar Caderno</span>
-                      </button>
-
-                      <button
-                        type="button"
-                        onClick={() => {
-                          if (shouldCreateCadernoOnSolve) {
-                            handleCreateListFromFilter();
-                          } else {
-                            setActiveListId(null);
-                            setBancoMode('resolucao');
-                            setCurrentQuestionIndex(0);
-                            setQuestionTimer(0);
-                          }
-                        }}
-                        className="flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs font-extrabold text-white shadow-md transition-all hover:scale-102 cursor-pointer"
-                        style={{ backgroundColor: accentConfig.primaryHex }}
-                      >
-                        {shouldCreateCadernoOnSolve ? (
-                          <BookOpenCheck className="w-3.5 h-3.5" />
-                        ) : (
-                          <Play className="w-3.5 h-3.5 fill-current" />
-                        )}
-                        <span>
-                          {shouldCreateCadernoOnSolve
-                            ? `Criar Caderno e Resolver (${totalSupabaseCount.toLocaleString('pt-BR')})`
-                            : isLoadingSupabase
-                            ? 'Carregando questões...'
-                            : `Resolver Questões (${totalSupabaseCount.toLocaleString('pt-BR')})`}
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-
                   {/* Componente Completo de Filtros Avançados */}
                   <AdvancedQuestionFilters
                     filters={advancedFilters}
@@ -1606,7 +1549,7 @@ export default function Home() {
                                     setCurrentQuestionIndex(idx);
                                     setQuestionTimer(0);
                                   }}
-                                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full font-bold text-xs flex items-center justify-center shrink-0 transition-all cursor-pointer ${
+                                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full font-sans font-black text-sm sm:text-[15px] flex items-center justify-center shrink-0 transition-all cursor-pointer ${
                                     isCurrent
                                       ? 'text-white shadow-md ring-2 ring-offset-1 ring-blue-500/40'
                                       : isAnswered
@@ -1627,7 +1570,7 @@ export default function Home() {
                             <button
                               type="button"
                               onClick={() => setBancoMode('filtros')}
-                              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-dashed border-slate-300 dark:border-slate-700 hover:border-blue-500 text-slate-400 hover:text-blue-500 hover:bg-blue-50/60 dark:hover:bg-blue-950/40 flex items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs ml-0.5"
+                              className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-dashed border-slate-300 dark:border-slate-700 hover:border-blue-500 text-slate-400 hover:text-blue-500 hover:bg-blue-50/60 dark:hover:bg-blue-950/40 flex items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs ml-0.5"
                               title="Adicionar questões pelo filtro"
                             >
                               <Plus className="w-3.5 h-3.5" />
@@ -1825,7 +1768,7 @@ export default function Home() {
                         </button>
 
                         <div className="text-xs text-slate-500 dark:text-slate-400 font-semibold text-center">
-                          Questão <strong className="text-slate-900 dark:text-white font-mono">{Math.min(currentQuestionIndex, visibleQuestions.length - 1) + 1}</strong> de <strong className="text-slate-900 dark:text-white font-mono">{visibleQuestions.length}</strong>
+                          Questão <strong className="text-slate-900 dark:text-white font-sans font-black text-sm sm:text-base">{Math.min(currentQuestionIndex, visibleQuestions.length - 1) + 1}</strong> de <strong className="text-slate-900 dark:text-white font-sans font-black text-sm sm:text-base">{visibleQuestions.length}</strong>
                         </div>
 
                         {Math.min(currentQuestionIndex, visibleQuestions.length - 1) >= visibleQuestions.length - 1 ? (

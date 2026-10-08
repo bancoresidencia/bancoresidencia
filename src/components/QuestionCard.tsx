@@ -631,7 +631,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             </div>
           )}
 
-          <span className="text-xs font-mono font-bold text-slate-600 dark:text-slate-400">
+          <span className="text-sm sm:text-base font-sans font-black text-slate-700 dark:text-slate-300">
             {index + 1}/{total}
           </span>
         </div>
