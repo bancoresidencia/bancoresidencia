@@ -155,7 +155,8 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error('Erro fatal:', err);
-  process.exit(0);
+  console.error('FATAL ERROR STACK:', err.stack || err);
+  process.exit(1);
 });
+
 
