@@ -5,7 +5,6 @@ import {
   BookOpen,
   Search,
   Building2,
-  ChevronRight,
   ArrowLeft,
   Play,
   MapPin,
@@ -74,6 +73,45 @@ const InstitutionLogo: React.FC<{ inst: OfficialInstitution; size?: 'sm' | 'md' 
       }}
     >
       {inst.shortName.slice(0, 3)}
+    </div>
+  );
+};
+
+// Componente para exibir o ícone como fundo do retângulo do card com degradê de opacidade
+const InstitutionCardBackground: React.FC<{ inst: OfficialInstitution }> = ({ inst }) => {
+  const { accentConfig } = useTheme();
+  const [imgError, setImgError] = useState(false);
+
+  return (
+    <div
+      className="absolute inset-0 pointer-events-none select-none overflow-hidden rounded-3xl"
+      aria-hidden="true"
+    >
+      <div
+        className="absolute inset-y-0 -left-1 sm:left-0 w-3/4 sm:w-2/3 flex items-center pl-0 sm:pl-1 transition-all duration-300 ease-out group-hover:scale-105 origin-left"
+        style={{
+          maskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0) 90%)',
+          WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0) 90%)',
+        }}
+      >
+        {inst.logoSlug && !imgError ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`https://www.medevo.com.br/assets/pulso/institutions/${inst.logoSlug}-192.webp`}
+            alt=""
+            loading="lazy"
+            onError={() => setImgError(true)}
+            className="h-20 sm:h-24 w-auto max-w-[70%] object-contain object-left opacity-20 dark:opacity-25 group-hover:opacity-30 dark:group-hover:opacity-35 transition-opacity duration-300"
+          />
+        ) : (
+          <span
+            className="font-heading font-black text-5xl sm:text-6xl uppercase tracking-tighter opacity-15 dark:opacity-20 select-none pl-2"
+            style={{ color: accentConfig.primaryHex }}
+          >
+            {inst.shortName.slice(0, 4)}
+          </span>
+        )}
+      </div>
     </div>
   );
 };
@@ -529,32 +567,24 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                     key={inst.id}
                     type="button"
                     onClick={() => handleSelectInstitution(inst)}
-                    className="bento-card bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 rounded-3xl p-4 sm:p-5 transition-all duration-200 text-left flex items-center justify-between gap-3 group cursor-pointer hover:shadow-md"
+                    className="relative overflow-hidden bento-card bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 rounded-3xl p-4 sm:p-5 transition-all duration-200 text-left flex items-center group cursor-pointer hover:shadow-md"
                   >
-                    <div className="flex items-center gap-3.5 min-w-0">
-                      <InstitutionLogo inst={inst} />
-                      <div className="space-y-0.5 min-w-0">
-                        <div className="flex items-center gap-1.5">
-                          <h3 className="font-heading font-black text-sm text-slate-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors truncate">
-                            {inst.shortName}
-                          </h3>
-                          {inst.state && (
-                            <span className="text-[10px] font-bold font-mono px-1.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
-                              {inst.state}
-                            </span>
-                          )}
-                        </div>
-                        <p className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1">
-                          {inst.name}
-                        </p>
-                        <p className="text-[10px] font-bold text-slate-400 dark:text-slate-500 pt-0.5">
-                          {inst.modalityYearsCount ?? inst.years.length} anos • {inst.modalityExamCount ?? inst.examCount} cadernos
-                        </p>
-                      </div>
-                    </div>
+                    <InstitutionCardBackground inst={inst} />
 
-                    <div className="w-7 h-7 rounded-lg bg-slate-50 dark:bg-slate-800/60 flex items-center justify-center text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white group-hover:translate-x-0.5 transition-all shrink-0">
-                      <ChevronRight className="w-3.5 h-3.5" />
+                    <div className="space-y-1 min-w-0 relative z-10">
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-heading font-black text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors truncate">
+                          {inst.shortName}
+                        </h3>
+                        {inst.state && (
+                          <span className="text-[10px] font-bold font-mono px-1.5 py-0.5 rounded-md bg-slate-100/90 dark:bg-slate-800/90 text-slate-600 dark:text-slate-400 backdrop-blur-xs">
+                            {inst.state}
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">
+                        {inst.name}
+                      </p>
                     </div>
                   </button>
                 ))}
