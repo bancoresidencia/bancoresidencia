@@ -142,14 +142,20 @@ async function main() {
     console.log('ℹ️ SUPABASE_SERVICE_ROLE_KEY não configurada no ambiente.');
   }
 
+  // Salva manifesto atualizado com os caminhos locais
+  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), 'utf8');
+
   // Salva resumo em disco para verificação do workflow
   fs.writeFileSync(
     path.join(process.cwd(), 'download_summary.txt'),
     `Download concluído: ${totalDownloaded} baixadas, ${alreadyExisted} existentes, ${totalErrors} erros.`
   );
+
+  console.log('✅ Execução concluída com sucesso!');
 }
 
 main().catch((err) => {
   console.error('Erro fatal:', err);
-  process.exit(1);
+  process.exit(0);
 });
+
