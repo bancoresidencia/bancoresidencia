@@ -78,7 +78,19 @@ export async function fetchQuestionsFromSupabase(
 
   // 2. Especialidades
   if (filters.especialidades && filters.especialidades.length > 0) {
-    query = query.in('especialidade', filters.especialidades);
+    const specs = new Set<string>();
+    filters.especialidades.forEach((sp) => {
+      specs.add(sp);
+      if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
+        specs.add('Cirurgia');
+        specs.add('Cirurgia Geral');
+      }
+      if (sp === 'Ginecologia e Obstetrícia') {
+        specs.add('Ginecologia');
+        specs.add('Obstetrícia');
+      }
+    });
+    query = query.in('especialidade', Array.from(specs));
   }
 
   // 3. Temas
@@ -96,9 +108,62 @@ export async function fetchQuestionsFromSupabase(
     query = query.in('subfoco', filters.subfocos);
   }
 
-  // 6. Instituições / Bancas
+  // 5.1 Modalidade (com suporte refinado a Revalida)
+  if (filters.modalidades && filters.modalidades.length > 0) {
+    const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
+    const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
+
+    if (hasRevalida && otherModalidades.length === 0) {
+      // Filtrar apenas questões do Revalida
+      query = query.or('modalidade.eq.Revalida,banca.ilike.%Revalida%,institution.ilike.%Revalida%');
+    } else if (hasRevalida && otherModalidades.length > 0) {
+      // Revalida + outras modalidades
+      const otherIn = otherModalidades.join(',');
+      query = query.or(`modalidade.in.(${otherIn}),banca.ilike.%Revalida%,institution.ilike.%Revalida%`);
+    } else {
+      query = query.in('modalidade', filters.modalidades);
+    }
+  }
+
+  // 6. Instituições / Bancas (casamento exato e preciso moldado conforme o Supabase)
   if (filters.instituicoes && filters.instituicoes.length > 0) {
-    query = query.in('institution', filters.instituicoes);
+    const orParts: string[] = [];
+    filters.instituicoes.forEach((rawInst) => {
+      const inst = rawInst.trim();
+      if (!inst) return;
+
+      // Caso específico: INEP Revalida (apenas questões do INEP)
+      if (/^inep(\s+revalida)?$/i.test(inst) || /revalida\s*\/\s*inep/i.test(inst) || inst.toLowerCase() === 'inep revalida') {
+        orParts.push(`banca.ilike.%INEP Revalida%`);
+        orParts.push(`institution.ilike.%INEP Revalida%`);
+        orParts.push(`code.ilike.INEPREVALIDA%`);
+        return;
+      }
+
+      // Limpa contagem "(123 questões)" se houver
+      const clean = inst.replace(/\s*\(\d+\s*questões\)$/i, '').trim();
+
+      if (clean.includes(' - ')) {
+        const [sigla, ...rest] = clean.split(' - ');
+        const siglaTrim = sigla.trim();
+        const nomeTrim = rest.join(' - ').trim();
+        if (siglaTrim) {
+          orParts.push(`banca.eq.${siglaTrim}`);
+          orParts.push(`institution.ilike.%${siglaTrim}%`);
+        }
+        if (nomeTrim) {
+          orParts.push(`institution.ilike.%${nomeTrim}%`);
+        }
+      } else {
+        orParts.push(`banca.ilike.%${clean}%`);
+        orParts.push(`institution.ilike.%${clean}%`);
+      }
+    });
+
+    if (orParts.length > 0) {
+      const uniqueConditions = Array.from(new Set(orParts)).join(',');
+      query = query.or(uniqueConditions);
+    }
   }
 
   // 7. Anos
@@ -185,3 +250,19 @@ export async function fetchQuestionsByIds(ids: string[]): Promise<Question[]> {
   if (error || !data) return [];
   return data.map(mapRowToQuestion);
 }
+
+export async function fetchTotalQuestionsCount(): Promise<number> {
+  try {
+    const { count, error } = await supabase
+      .from('questions')
+      .select('id', { count: 'exact', head: true });
+
+    if (error || typeof count !== 'number') {
+      return 132965;
+    }
+    return count;
+  } catch {
+    return 132965;
+  }
+}
+

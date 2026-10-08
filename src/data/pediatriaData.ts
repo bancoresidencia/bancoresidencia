@@ -1,1306 +1,1431 @@
 import { SpecialtyHierarchy } from '@/types';
 
 export const pediatriaHierarchy: SpecialtyHierarchy = {
-  especialidade: 'Pediatria',
-  temas: [
+  "especialidade": "Pediatria",
+  "temas": [
     {
-      tema: 'Puericultura e Crescimento',
-      focos: [
+      "tema": "Adolescência",
+      "focos": [
         {
-          foco: 'Crescimento e Desenvolvimento',
-          subfocos: [
-            'Avaliação Antropométrica e Curvas de Crescimento',
-            'Z-Score Interpretação',
-            'Velocidade de Crescimento',
-            'Baixa Estatura: Investigação',
-            'Curvas OMS: Peso, Estatura, PC',
-            'Idade Óssea: Quando Solicitar'
+          "foco": "Contracepção na Adolescência: Aconselhamento e ISTs",
+          "subfocos": [
+            "Contracepção de Emergência: Levonorgestrel",
+            "Contracepção na Adolescência: Aconselhamento e ISTs",
+            "Contraceptivos Hormonais: ACO, Injetável",
+            "Critérios de Elegibilidade OMS",
+            "Dupla Proteção: ISTs e Gravidez",
+            "LARCs: DIU e Implante (Primeira Linha)"
           ]
         },
         {
-          foco: 'Aleitamento Materno',
-          subfocos: [
-            'Manejo de Dificuldades e Desafios na Amamentação',
-            'Composição e Benefícios do Leite Materno',
-            'Contraindicações Formais e Absolutas ao Aleitamento Materno',
-            'Técnica de Amamentação e Pega Correta',
-            'Armazenamento e Manejo do Leite Materno Ordenhado',
-            'Avaliação do Ganho Ponderal e Crescimento do Lactente'
+          "foco": "Puberdade e Desenvolvimento Puberal",
+          "subfocos": [
+            "Aumento Testicular: Primeiro Sinal Masculino",
+            "Estágios de Tanner: Mamas e Pelos Pubianos",
+            "Estirão Puberal: Velocidade de Crescimento",
+            "Menarca e Ginecomastia Puberal",
+            "Puberdade e Desenvolvimento Puberal",
+            "Telarca: Primeiro Sinal Feminino"
           ]
         },
         {
-          foco: 'DNPM: Marcos do Desenvolvimento',
-          subfocos: [
-            'Motor Grosso: Sentar, Engatinhar, Andar',
-            'Motor Fino: Pinça, Desenho, Escrita',
-            'Linguagem: Balbucio, Palavras, Frases',
-            'Social/Adaptativo: Sorriso, Estranho, Tchau',
-            'Sinais de Alerta por Idade (Caderneta)',
-            'Caderneta de Saúde: Vigilância do DNPM'
+          "foco": "Saúde Mental do Adolescente",
+          "subfocos": [
+            "Ansiedade e Transtornos de Ansiedade",
+            "Avaliação e Consulta do Adolescente",
+            "Depressão e Sintomas Depressivos",
+            "Ideação Suicida e Automutilação",
+            "Rastreamento e Manejo de Uso de Substâncias (Álcool e Drogas)",
+            "Saúde Mental do Adolescente",
+            "Uso Excessivo de Tecnologia e Impacto Psicossocial"
           ]
         },
         {
-          foco: 'Vacinas: Indicações, Contraindicações e Eventos Adversos',
-          subfocos: [
-            'EAPV: Notificação e Conduta',
-            'Intervalos Mínimos entre Doses',
-            'Contraindicações Absolutas e Relativas',
-            'Falsas Contraindicações',
-            'Vacinas Vivas: Imunossuprimidos'
+          "foco": "Saúde Sexual e Reprodutiva",
+          "subfocos": [
+            "Gravidez na Adolescência: Pré-Natal",
+            "ISTs: Sífilis, HIV, HPV, Clamídia",
+            "Saúde Sexual e Reprodutiva",
+            "Sigilo e Confidencialidade na Consulta",
+            "Vacinação HPV: 9-14 Anos",
+            "Violência Sexual: Profilaxia PEP"
           ]
         },
         {
-          foco: 'Calendário Vacinal',
-          subfocos: [
-            '2-6 meses: Penta, VIP, Rotavírus, Pneumo10',
-            'Nascimento: BCG e Hepatite B',
-            '12-15 meses: Tríplice Viral, Varicela, Hepatite A',
-            'EAPV: Eventos Adversos Pós-Vacinais',
-            'Contraindicações: Imunossuprimidos e Vacinas Vivas',
-            '4 anos: Reforços DTP, VIP e Varicela'
-          ]
-        },
-        {
-          foco: 'Suplementação de Ferro e Vitamina D por Faixa Etária',
-          subfocos: [
-            'SBP vs MS: Diferenças nas Recomendações',
-            'Ferro Profilático: 1mg/kg/dia',
-            'Vitamina D: 400UI/dia até 2 Anos',
-            'Prematuros: 2-4mg/kg/dia',
-            'Quando Iniciar e Quando Suspender'
-          ]
-        },
-        {
-          foco: 'Alimentação Complementar',
-          subfocos: [
-            'Início: 6 Meses Completos',
-            'Introdução de Proteínas e Ovos',
-            'Alimentos Proibidos: Mel, Açúcar, Sal',
-            'BLW vs Tradicional',
-            'Janela Imunológica: Prevenção de Alergias'
-          ]
-        },
-        {
-          foco: 'Segurança da Criança e Prevenção de Acidentes',
-          subfocos: [
-            'Ambiente Doméstico: Quedas, Queimaduras',
-            'Transporte: Bebê-Conforto, Cadeirinha',
-            'Sono Seguro: Posição Supina, Síndrome Morte Súbita',
-            'Intoxicações: Medicamentos e Produtos de Limpeza',
-            'Afogamento: Principal Causa 1-4 Anos'
+          "foco": "Transtornos Alimentares na Adolescência",
+          "subfocos": [
+            "Anorexia Nervosa: Apresentação Clínica e Diagnóstico",
+            "Deficiências Nutricionais Associadas a TAs",
+            "Transtornos Alimentares na Adolescência",
+            "Transtornos Alimentares: Fatores Psicossociais e Ambientais",
+            "Transtornos Alimentares: Tratamento Multidisciplinar"
           ]
         }
       ]
     },
     {
-      tema: 'Neonatologia',
-      focos: [
+      "tema": "Cardiologia Pediátrica",
+      "focos": [
         {
-          foco: 'Reanimação Neonatal',
-          subfocos: [
-            'VPP: Técnica e Frequência',
-            'Passos Iniciais: Aquecer, Posicionar, Aspirar',
-            'Clampeamento Tardio do Cordão',
-            'Adrenalina: Via e Dose',
-            'IOT: Quando Indicar',
-            'Massagem Cardíaca: Técnica 3:1'
+          "foco": "Arritmias Cardíacas Pediátricas",
+          "subfocos": [
+            "Arritmias Cardíacas Pediátricas",
+            "Bloqueio Atrioventricular (BAV) Congênito",
+            "Fibrilação/Flutter Atrial em Cardiopatias Congênitas",
+            "Síndrome de Wolff-Parkinson-White (WPW)",
+            "Síndrome do QT Longo: Risco de Morte Súbita",
+            "Taquicardia Supraventricular (TSV): Adenosina"
           ]
         },
         {
-          foco: 'Icterícia Neonatal',
-          subfocos: [
-            'Incompatibilidade ABO e Rh',
-            'Fisiológica vs Patológica: Critérios',
-            'Icterícia do Leite Materno',
-            'Fototerapia: Indicações e Técnica',
-            'Zonas de Kramer',
-            'Nomograma de Bhutani'
+          "foco": "Cardiopatias Congênitas Acianóticas",
+          "subfocos": [
+            "Cardiopatias Congênitas Acianóticas",
+            "CIA: Defeito do Septo Atrial",
+            "CIV: Defeito do Septo Ventricular",
+            "Coarctação da Aorta: Diferença de PA",
+            "Comunicação Interventricular (CIV) Pequena e Assintomática",
+            "DSAV: Defeito do Septo Atrioventricular (Down)",
+            "IC no Lactente: Sinais e Manejo",
+            "PCA: Persistência do Canal Arterial"
           ]
         },
         {
-          foco: 'Triagem Neonatal',
-          subfocos: [
-            'Teste do Pezinho: Doenças Rastradas',
-            'Teste do Coraçãozinho: Oximetria',
-            'Teste do Olhinho: Reflexo Vermelho',
-            'Teste da Orelhinha: EOA',
-            'Pezinho Ampliado: 50+ Doenças'
+          "foco": "Cardiopatias Congênitas Cianóticas",
+          "subfocos": [
+            "Atresia Tricúspide",
+            "Cardiopatias Congênitas Cianóticas",
+            "Prostaglandina E1 Canal-Dependente",
+            "Síndrome do Coração Esquerdo Hipoplásico",
+            "Tetralogia de Fallot: Crise Hipóxica",
+            "TGA: Canal-Dependente e Rashkind"
           ]
         },
         {
-          foco: 'Sífilis Congênita e Infecção por CMV',
-          subfocos: [
-            'Sífilis: VDRL Líquor e Penicilina Cristalina',
-            'Sífilis: Tratamento Materno Inadequado',
-            'CMV: Calcificações Periventriculares',
-            'CMV: Ganciclovir/Valganciclovir',
-            'Follow-up Auditivo: Ambas as Condições'
-          ]
-        },
-        {
-          foco: 'Infecções Congênitas TORCH',
-          subfocos: [
-            'Toxoplasmose: Calcificações Difusas e Coriorretinite',
-            'Rubéola Congênita: Surdez, Catarata, Cardiopatia',
-            'CMV Congênito: Calcificações Periventriculares',
-            'Zika Congênita: Microcefalia e Artrogripose',
-            'Sífilis Congênita: Rinite Sifilítica e Lesões Ósseas',
-            'Herpes Neonatal: Parto e Aciclovir'
-          ]
-        },
-        {
-          foco: 'Sepse Neonatal Precoce e Tardia: Protocolos e Antibiótico',
-          subfocos: [
-            'Precoce (<72h): GBS, E. coli, Listeria',
-            'Triagem: PCR, Hemograma, Hemocultura',
-            'ATB Empírico: Ampicilina + Gentamicina',
-            'Fatores de Risco: RPMO, Febre Materna, Corioamnionite',
-            'Tardia (>72h): CoNS, S. aureus'
-          ]
-        },
-        {
-          foco: 'Distúrbios Metabólicos do RN',
-          subfocos: [
-            'Hipoglicemia Neonatal: Triagem e Tratamento',
-            'Hipercalcemia: ECG e Tratamento',
-            'Hipocalcemia: Precoce vs Tardia',
-            'Hipernatremia: Desidratação e Manejo',
-            'Hipomagnesemia: Associação com Hipocalcemia'
-          ]
-        },
-        {
-          foco: 'Prematuridade',
-          subfocos: [
-            'Classificação: Extrema, Muito, Moderada, Tardio',
-            'Follow-up: Idade Corrigida até 2 Anos',
-            'DBP: Displasia Broncopulmonar',
-            'HPIV: Hemorragia Peri-Intraventricular',
-            'ROP: Retinopatia da Prematuridade'
-          ]
-        },
-        {
-          foco: 'Malformações Congênitas e Defeitos da Parede Abdominal Neonatal',
-          subfocos: [
-            'Gastrosquise: Defeito Lateral ao Cordão',
-            'Atresia Duodenal: Sinal da Dupla Bolha',
-            'Atresia de Esôfago: Tipos e Fístula Traqueoesofágica',
-            'Ânus Imperfurado e Malformações Anorretais',
-            'Onfalocele: Defeito com Saco Peritoneal'
-          ]
-        },
-        {
-          foco: 'Distúrbios Respiratórios Neonatais Avançados',
-          subfocos: [
-            'TTBN: Taquipneia Transitória do RN',
-            'HPP: Hipertensão Pulmonar Persistente',
-            'SDR: Surfactante e CPAP',
-            'SAM: Síndrome Aspiração Meconial',
-            'Hérnia Diafragmática Congênita'
-          ]
-        },
-        {
-          foco: 'Síndrome do Desconforto Respiratório do RN: CPAP e Surfactante',
-          subfocos: [
-            'Fisiopatologia: Deficiência de Surfactante',
-            'CPAP Nasal Não Invasivo',
-            'RX: Vidro Moído e Broncograma Aéreo',
-            'Surfactante Exógeno: INSURE',
-            'Corticoide Antenatal: Prevenção'
-          ]
-        },
-        {
-          foco: 'Enterocolite Necrosante: Risco e Manejo',
-          subfocos: [
-            'Fatores de Risco: Prematuridade, Fórmula',
-            'RX: Pneumatose Intestinal',
-            'Tratamento: NPO, ATB, Suporte',
-            'Prevenção: Leite Materno',
-            'Classificação de Bell: Estágios'
-          ]
-        },
-        {
-          foco: 'Prematuridade: Retinopatia, DBP e Hemorragia Peri-Intraventricular',
-          subfocos: [
-            'HPIV: Classificação de Papile',
-            'DBP: Critérios Diagnósticos',
-            'ROP: Classificação: Zonas e Estágios',
-            'LPV: Leucomalácia Periventricular',
-            'ROP: Tratamento Laser e Anti-VEGF'
-          ]
-        },
-        {
-          foco: 'Kernicterus e Encefalopatia Bilirrubínica',
-          subfocos: [
-            'Encefalopatia Bilirrubínica Aguda',
-            'Fatores de Risco: Hemólise, Prematuridade',
-            'Kernicterus Crônico: Sequelas',
-            'Exsanguineotransfusão: Indicações',
-            'Bilirrubina Indireta: Toxicidade Neurológica'
-          ]
-        },
-        {
-          foco: 'Principais Síndromes Genéticas Neonatais',
-          subfocos: [
-            'Síndrome de Down (Trissomia 21)',
-            'Síndrome de Edwards (Trissomia 18)',
-            'Síndrome de Turner (45,X)',
-            'Síndrome de Patau (Trissomia 13)',
-            'Síndrome de DiGeorge (22q11.2 Deletion)',
-            'Síndrome de Noonan'
+          "foco": "Sopros Cardíacos na Criança",
+          "subfocos": [
+            "Ecocardiograma: Indicações",
+            "Quando Encaminhar ao Cardiologista",
+            "Sopro de Still: Vibratório Musical",
+            "Sopros Cardíacos na Criança",
+            "Sopros Inocentes: Características",
+            "Sopros Patológicos: Sinais de Alerta"
           ]
         }
       ]
     },
     {
-      tema: 'Doenças Infecciosas Pediátricas',
-      focos: [
+      "tema": "Cirurgia Pediátrica",
+      "focos": [
         {
-          foco: 'Doenças Exantemáticas',
-          subfocos: [
-            'Sarampo: Diagnóstico, Clínica e Prevenção',
-            'Varicela (Catapora): Lesões Vesiculares e Manejo',
-            'Escarlatina: Quadro Clínico e Diagnóstico Diferencial',
-            'Exantema Súbito (Roséola): Febre e Exantema Pós-Defervescência',
-            'Dengue: Manifestações Clínicas e Complicações',
-            'Eritema Infeccioso (5ª Doença): Parvovírus B19 e Manifestações',
-            'Rubéola: Exantema e Linfonodomegalia Retroauricular'
+          "foco": "Procedimentos Cirúrgicos Pediátricos",
+          "subfocos": [
+            "Apendicite Aguda: Diagnóstico e Conduta",
+            "Estenose Pilórica: Oliva, USG, Piloromiotomia",
+            "Hérnia Inguinal: Cirurgia Eletiva",
+            "Invaginação Intestinal: Redução Pneumática",
+            "Procedimentos Cirúrgicos Pediátricos",
+            "Timpanostomia e Adenoidectomia"
           ]
         },
         {
-          foco: 'Infecções de Vias Aéreas Superiores: OMA e Sinusite Bacteriana',
-          subfocos: [
-            'OMA: Antibioticoterapia e Watch-and-Wait',
-            'Sinusite Aguda: Critérios AAP (10 dias, Bifásica, Grave)',
-            'Faringotonsilite Estreptocócica: Critérios de Centor',
-            'OMA: Critérios Diagnósticos e Otoscopia Pneumática',
-            'Sinusite: Complicações Orbitárias e Intracranianas',
-            'OMA de Repetição: Critérios e Timpanostomia'
-          ]
-        },
-        {
-          foco: 'Meningites',
-          subfocos: [
-            'Meningite Bacteriana: Agentes Etiológicos',
-            'Profilaxia de Contatos: Rifampicina',
-            'Punção Lombar: Técnica e Interpretação do LCR',
-            'Etiologia por Faixa Etária: RN vs Lactente vs Escolar',
-            'Sequelas: Surdez Neurossensorial e HIC',
-            'ATB Empírico: Ceftriaxone + Ampicilina em RN'
-          ]
-        },
-        {
-          foco: 'Gastroenterites',
-          subfocos: [
-            'Diarreia Invasiva vs Aquosa: Diferenciação',
-            'Rotavírus: Principal Agente e Vacina',
-            'ATB: Quando Indicar (Shigella, Cólera)',
-            'TRO: Sais OMS e Osmolaridade Reduzida',
-            'Zinco: Suplementação Obrigatória',
-            'Fase de Expansão e Manutenção Venosa'
-          ]
-        },
-        {
-          foco: 'Parasitoses Intestinais Pediátricas',
-          subfocos: [
-            'Oxiuríase (Enterobíase): Prurido Anal Noturno',
-            'Ascaridíase: Síndrome de Löffler e Obstrução',
-            'Giardíase: Síndrome Disabsortiva',
-            'Ancilostomíase: Anemia Ferropriva e Geofagia',
-            'Teníase e Cisticercose: Ciclo e Neurocisticercose'
-          ]
-        },
-        {
-          foco: 'Prevenção de Doenças Transmitidas por Vetores e Reações a Picadas de Insetos',
-          subfocos: [
-            'Leishmaniose: Tegumentar e Visceral (Calazar)',
-            'Dengue Pediátrica: Sinais de Alarme',
-            'Malária: Plasmodium e Profilaxia',
-            'Reações a Picadas: Prurigo Estrófulo',
-            'Zika e Chikungunya: Manifestações na Criança'
-          ]
-        },
-        {
-          foco: 'Tuberculose Pediátrica',
-          subfocos: [
-            'Contato Domiciliar e Quimioprofilaxia',
-            'TB Pulmonar: RX e Lavado Gástrico',
-            'Sistema de Pontuação (Escore) do MS',
-            'Prova Tuberculínica (PPD/Mantoux)',
-            'Tratamento: RIPE e Particularidades Pediátricas'
+          "foco": "Urologia Pediátrica",
+          "subfocos": [
+            "Criptorquidia: Orquidopexia até 12-18 meses",
+            "Edema/Dor Escrotal Aguda: Torção Testicular",
+            "Fimose: Fisiológica vs Patológica",
+            "Hidrocele e Hérnia Inguinal: Comunicante",
+            "Urologia Pediátrica",
+            "Válvula de Uretra Posterior: Uropatia Obstrutiva"
           ]
         }
       ]
     },
     {
-      tema: 'Pneumologia Pediátrica',
-      focos: [
+      "tema": "Dermatologia Pediátrica",
+      "focos": [
         {
-          foco: 'Pneumonia Pediátrica',
-          subfocos: [
-            'Etiologia por Idade: VSR, Pneumococo, Mycoplasma',
-            'Complicações: Derrame Pleural e Empiema',
-            'Sinais de Gravidade: Tiragem, BAN, SatO2<92%',
-            'Critérios de Internação e Gravidade',
-            'ATB Hospitalar: Ampicilina ou Penicilina Cristalina',
-            'ATB Ambulatorial: Amoxicilina',
-            'Pneumonia Atípica: Macrolídeos'
+          "foco": "Dermatite Atópica: Critérios de Hanifin-Rajka e Manejo",
+          "subfocos": [
+            "Corticoide Tópico: Potência e Local",
+            "Critérios de Hanifin-Rajka",
+            "Dermatite Atópica: Critérios de Hanifin-Rajka e Manejo",
+            "Distribuição por Idade: Flexuras",
+            "Hidratação: Base do Tratamento",
+            "Inibidores da Calcineurina",
+            "Manejo da Dermatite Atópica: Emolientes e Barreira Cutânea"
           ]
         },
         {
-          foco: 'Asma na Infância',
-          subfocos: [
-            'GINA Pediátrico: Steps de Tratamento',
-            'Asma em Pediatria: Diagnóstico e Apresentação Clínica',
-            'Crise: SABA + Corticoide Sistêmico',
-            'Critérios de Castro-Rodríguez (API)',
-            'Fenótipos: Sibilância Transitória vs Persistente',
-            'Dispositivos: Espaçador é Obrigatório'
+          "foco": "Dermatite Seborreica",
+          "subfocos": [
+            "Dermatite Seborreica",
+            "Dermatite Seborreica Neonatal e Infantil (Crosta Láctea)",
+            "Diagnóstico Diferencial: Dermatite Atópica",
+            "Malassezia furfur: Papel no Lactente",
+            "Milium Sebáceo Neonatal",
+            "Tratamento: Óleo Mineral e Xampu Antifúngico"
           ]
         },
         {
-          foco: 'Bronquiolite Viral Aguda',
-          subfocos: [
-            'Tratamento: Suporte (O2, Hidratação)',
-            'VSR: Principal Agente Etiológico',
-            'Clínica: Sibilância e Hiperinsuflação',
-            'O que NÃO Fazer: Beta-2, Corticoide, Raio',
-            'Critérios de Internação: SatO2 e FR',
-            'Fatores de Risco: Prematuridade, Cardiopatia'
+          "foco": "Escabiose e Pediculose",
+          "subfocos": [
+            "Escabiose e Pediculose",
+            "Escabiose: Sarcoptes scabiei",
+            "Lesões: Túneis e Prurido Noturno",
+            "Pediculose Capitis: Lêndeas",
+            "Tratamento Domiciliar: Contatos",
+            "Tratamento: Permetrina 5%, Ivermectina"
           ]
         },
         {
-          foco: 'Fibrose Cística',
-          subfocos: [
-            'Manifestações GI: Íleo Meconial, Insuf. Pancreática',
-            'Teste do Suor: Diagnóstico Confirmatório',
-            'Manifestações Pulmonares: Bronquiectasias',
-            'Colonização por P. aeruginosa',
-            'Triagem: IRT no Pezinho',
-            'Enzimas Pancreáticas e DNase'
-          ]
-        },
-        {
-          foco: 'Coqueluche (Pertussis)',
-          subfocos: [
-            'Tratamento Antimicrobiano e Profilaxia',
-            'Diagnóstico e Achados Laboratoriais',
-            'Quadro Clínico e Sintomatologia Clássica',
-            'Fases da Doença e Apresentação Atípica',
-            'Complicações e Gravidade em Lactentes'
-          ]
-        },
-        {
-          foco: 'Asma: Crise Aguda e Manejo na Emergência Pediátrica',
-          subfocos: [
-            'Manejo de Crise Asmática Grave (Estado de Mal Asmático)',
-            'Manejo de Crise Asmática Leve a Moderada',
-            'Diagnóstico Diferencial e Avaliação da Asma',
-            'Obstrução de Vias Aéreas em Lactentes: Diagnóstico',
-            'Tratamento de Manutenção e Prevenção de Asma'
-          ]
-        },
-        {
-          foco: 'Crupe, Laringotraqueíte e Estridor Agudo',
-          subfocos: [
-            'Tratamento: Dexametasona + Nebulização Adrenalina',
-            'Etiologia: Parainfluenza',
-            'Diagnóstico Diferencial: Epiglotite',
-            'Tríade: Tosse Ladrante, Estridor, Rouquidão',
-            'Classificação: Westley Score'
-          ]
-        },
-        {
-          foco: 'Prevenção do VSR: Nirsevimabe e Palivizumabe',
-          subfocos: [
-            'Indicações de Palivizumabe para Prematuros e Cardiopatas',
-            'Prematuros: <28 sem: Indicação Palivizumabe',
-            'Cardiopatas e Displasia Broncopulmonar',
-            'Nirsevimabe: Profilaxia do VSR (Novo: Dose Única)',
-            'Sazonalidade: Abril a Setembro no Brasil'
+          "foco": "Impetigo",
+          "subfocos": [
+            "Complicações: GNPE e Febre Reumática",
+            "Impetigo",
+            "Impetigo Bolhoso: Toxina Esfoliativa Estafilocócica",
+            "Impetigo Crostoso (Não-Bolhoso): S. aureus e S. pyogenes",
+            "Impetigo: Etiologia e Diagnóstico",
+            "SSSS: Síndrome Pele Escaldada Estafilocócica",
+            "Tratamento: Mupirocina Tópica e ATB Sistêmico"
           ]
         }
       ]
     },
     {
-      tema: 'Hematologia Pediátrica',
-      focos: [
+      "tema": "Distúrbios Genéticos e Metabólicos",
+      "focos": [
         {
-          foco: 'Anemias Pediátricas',
-          subfocos: [
-            'Anemia Ferropriva: Diagnóstico e Etiologia',
-            'Anemia Hemolítica Autoimune: Coombs Direto',
-            'Talassemia: Minor vs Major',
-            'Ferropriva: Principal Causa e Profilaxia',
-            'Anemia Fisiológica do Lactente',
-            'Esferocitose Hereditária: Teste de Fragilidade'
+          "foco": "Distúrbios Cromossômicos",
+          "subfocos": [
+            "Aconselhamento Genético em Doenças Cromossômicas",
+            "Array-CGH: Aplicações Clínicas",
+            "Cariótipo: Indicações e Interpretação",
+            "Distúrbios Cromossômicos",
+            "Microdeleções e Microduplicações Específicas",
+            "Síndrome de Down: Diagnóstico e Manifestações Clínicas",
+            "Síndromes Cromossômicas Específicas (Exceto Down)"
           ]
         },
         {
-          foco: 'Leucemias Pediátricas',
-          subfocos: [
-            'Apresentação Clínica e Diagnóstico de LLA',
-            'Apresentação: Pancitopenia, Dor Óssea',
-            'LLA: Principal Neoplasia Pediátrica',
-            'Síndrome de Lise Tumoral',
-            'Mielograma: Diagnóstico',
-            'Fator Prognóstico: Idade, Leucometria'
+          "foco": "Erros Inatos do Metabolismo",
+          "subfocos": [
+            "Doenças de Depósito: Gaucher, MPS",
+            "Erros Inatos do Metabolismo",
+            "Fenilcetonúria: Triagem e Dieta",
+            "Galactosemia: Clínica e Manejo",
+            "Hiperplasia Adrenal Congênita: 17-OHP",
+            "Hipotireoidismo Congênito: TSH no Pezinho",
+            "Investigação Laboratorial de Erros Inatos do Metabolismo",
+            "Sinais de Alerta: Odor, Acidose, Hipoglicemia"
           ]
         },
         {
-          foco: 'Doença Falciforme: Triagem Neonatal, Crises e Profilaxias',
-          subfocos: [
-            'Profilaxia: Penicilina e Vacinas',
-            'Sequestro Esplênico: Emergência',
-            'Triagem Neonatal: Eletroforese',
-            'Crise Álgica: Hidratação e Analgesia',
-            'Hidroxiureia: Indicações',
-            'AVC: Rastreamento com Doppler'
-          ]
-        },
-        {
-          foco: 'Púrpuras e Plaquetopenia',
-          subfocos: [
-            'PTI: Púrpura Trombocitopênica Idiopática',
-            'Sinais de Alarme: Sangramento Ativo',
-            'Tratamento: IVIG, Corticoide',
-            'PTT e SHU: Emergências',
-            'Púrpura de Henoch-Schönlein'
-          ]
-        },
-        {
-          foco: 'Hemofilia e Coagulopatias',
-          subfocos: [
-            'Coagulopatias Adquiridas: Deficiência de Vitamina K',
-            'Hemofilia: Diagnóstico e Manifestações Clínicas',
-            'Distúrbios da Coagulação: Trombose e Anticoagulação',
-            'Hemofilia: Manejo e Tratamento de Complicações',
-            'Hemofilia: Genética e Aconselhamento'
+          "foco": "Síndromes Genéticas Comuns",
+          "subfocos": [
+            "Síndrome de Down: Fenótipo e Comorbidades",
+            "Síndrome de Klinefelter: 47,XXY",
+            "Síndrome de Marfan: Aorta e Cristalino",
+            "Síndrome de Turner: 45,X e Follow-up",
+            "Síndrome do X Frágil: TDAH e TEA",
+            "Síndromes Genéticas Comuns"
           ]
         }
       ]
     },
     {
-      tema: 'Gastroenterologia Pediátrica',
-      focos: [
+      "tema": "Doenças Infecciosas Pediátricas",
+      "focos": [
         {
-          foco: 'Desidratação na GECA: TRO e Hidratação Venosa',
-          subfocos: [
-            'Plano A, B e C',
-            'Hidratação Venosa: Fase Rápida e Manutenção',
-            'Princípios e Indicações da Terapia de Reidratação Oral (TRO)',
-            'Classificação OMS: Sem, Alguma, Grave',
-            'Suplementação de Zinco na Diarreia Aguda',
-            'Sinais de Reidratação: Peso, Diurese',
-            'Composição e Administração da Solução de Reidratação Oral (SRO)'
+          "foco": "Doenças Exantemáticas",
+          "subfocos": [
+            "Dengue: Manifestações Clínicas e Complicações",
+            "Doenças Exantemáticas",
+            "Eritema Infeccioso (5ª Doença): Parvovírus B19 e Manifestações",
+            "Escarlatina: Quadro Clínico e Diagnóstico Diferencial",
+            "Exantema Súbito (Roséola): Febre e Exantema Pós-Defervescência",
+            "Rubéola: Exantema e Linfonodomegalia Retroauricular",
+            "Sarampo: Diagnóstico, Clínica e Prevenção",
+            "Varicela (Catapora): Lesões Vesiculosas e Manejo"
           ]
         },
         {
-          foco: 'Constipação Funcional e Dor Abdominal Recorrente',
-          subfocos: [
-            'Dor Abdominal Recorrente Funcional (DARF)',
-            'Sinais de Alarme e Causas Orgânicas',
-            'Diagnóstico de Constipação Funcional (Critérios Roma IV)',
-            'Fecaloma: Diagnóstico e Desimpactação',
-            'PEG e Lactulose: Tratamento Farmacológico',
-            'Tratamento de Manutenção da Constipação'
+          "foco": "Gastroenterites",
+          "subfocos": [
+            "ATB: Quando Indicar (Shigella, Cólera)",
+            "Diarreia Invasiva vs Aquosa: Diferenciação",
+            "Fase de Expansão e Manutenção Venosa",
+            "Gastroenterites",
+            "Rotavírus: Principal Agente e Vacina",
+            "TRO: Sais OMS e Osmolaridade Reduzida",
+            "Zinco: Suplementação Obrigatória"
           ]
         },
         {
-          foco: 'Refluxo Gastroesofágico',
-          subfocos: [
-            'Regurgitação Fisiológica: Caracterização e Manejo Inicial',
-            'Doença do Refluxo Gastroesofágico (DRGE): Diagnóstico Clínico e Sinais de Alarme',
-            'Manejo Não Farmacológico e Medidas Posturais',
-            'Tratamento Farmacológico: Inibidores da Bomba de Prótons (IBP)',
-            'Complicações da DRGE: Esofagite e Outras Manifestações Graves',
-            'Diagnóstico Diferencial de Vômitos em Lactentes (Estenose Pilórica, Vômitos Biliosos e Outras Causas)',
-            'Indicação Cirúrgica: Fundoplicatura de Nissen'
+          "foco": "Geral",
+          "subfocos": []
+        },
+        {
+          "foco": "Infecções de Vias Aéreas Superiores: OMA e Sinusite Bacteriana",
+          "subfocos": [
+            "Faringotonsilite Estreptocócica: Critérios de Centor",
+            "Infecções de Vias Aéreas Superiores: OMA e Sinusite Bacteriana",
+            "OMA de Repetição: Critérios e Timpanostomia",
+            "OMA: Antibioticoterapia e Watch-and-Wait",
+            "OMA: Critérios Diagnósticos e Otoscopia Pneumática",
+            "Sinusite Aguda: Critérios AAP (10 dias, Bifásica, Grave)",
+            "Sinusite: Complicações Orbitárias e Intracranianas"
           ]
         },
         {
-          foco: 'Intussuscepção: Diagnóstico por US e Enema Terapêutico',
-          subfocos: [
-            'Diagnóstico por Imagem na Intussuscepção',
-            'Quadro Clínico e Epidemiologia da Intussuscepção',
-            'Redução Não Cirúrgica da Intussuscepção',
-            'Outras Emergências Cirúrgicas Pediátricas',
-            'Tratamento Cirúrgico e Complicações da Intussuscepção'
+          "foco": "Meningites",
+          "subfocos": [
+            "ATB Empírico: Ceftriaxona + Ampicilina em RN",
+            "Etiologia por Faixa Etária: RN vs Lactente vs Escolar",
+            "Meningite Bacteriana: Agentes Etiológicos",
+            "Meningites",
+            "Profilaxia de Contatos: Rifampicina",
+            "Punção Lombar: Técnica e Interpretação do LCR",
+            "Sequelas: Surdez Neurossensorial e HIC"
           ]
         },
         {
-          foco: 'Alergia à Proteína do Leite de Vaca: Fenótipo IgE e Não IgE',
-          subfocos: [
-            'Não IgE Mediada: Proctocolite, FPIES',
-            'Fórmulas: Extensamente Hidrolisada, Aminoácidos',
-            'Diagnóstico: Teste de Provocação Oral',
-            'IgE Mediada: Urticária, Anafilaxia',
-            'Reintrodução: Escada do Leite'
+          "foco": "Parasitoses Intestinais Pediátricas",
+          "subfocos": [
+            "Ancilostomíase: Anemia Ferropriva e Geofagia",
+            "Ascaridíase: Síndrome de Löffler e Obstrução",
+            "Giardíase: Síndrome Disabsortiva",
+            "Oxiuríase (Enterobíase): Prurido Anal Noturno",
+            "Parasitoses Intestinais Pediátricas",
+            "Teníase e Cisticercose: Ciclo e Neurocisticercose"
           ]
         },
         {
-          foco: 'Doença Celíaca',
-          subfocos: [
-            'Diagnóstico: Sorologia e Biópsia Intestinal',
-            'Quadro Clínico e Manifestações Gastrointestinais',
-            'Diagnóstico Diferencial: Outras Enteropatias e Condições GI',
-            'Tratamento: Dieta Sem Glúten',
-            'Associações e Comorbidades'
+          "foco": "Prevenção de Doenças Transmitidas por Vetores e Reações a Picadas de Insetos",
+          "subfocos": [
+            "Dengue Pediátrica: Sinais de Alarme",
+            "Leishmaniose: Tegumentar e Visceral (Calazar)",
+            "Malária: Plasmodium e Profilaxia",
+            "Prevenção de Doenças Transmitidas por Vetores e Reações a Picadas de Insetos",
+            "Reações a Picadas: Prurigo Estrófulo",
+            "Zika e Chikungunya: Manifestações na Criança"
+          ]
+        },
+        {
+          "foco": "Tuberculose Pediátrica",
+          "subfocos": [
+            "Contato Domiciliar e Quimioprofilaxia",
+            "Prova Tuberculínica (PPD/Mantoux)",
+            "Sistema de Pontuação (Escore) do MS",
+            "TB Pulmonar: RX e Lavado Gástrico",
+            "Tratamento: RIPE e Particularidades Pediátricas",
+            "Tuberculose Pediátrica"
           ]
         }
       ]
     },
     {
-      tema: 'Endocrinologia Pediátrica',
-      focos: [
+      "tema": "Endocrinologia Pediátrica",
+      "focos": [
         {
-          foco: 'Puberdade Precoce e Tardia',
-          subfocos: [
-            'Puberdade Precoce Central: Diagnóstico e Etiologia',
-            'Telarca < 8 Anos (Meninas)',
-            'Central vs Periférica: Diferenciação',
-            'Teste de Estímulo com GnRH',
-            'Aumento Testicular < 9 Anos (Meninos)',
-            'Análogos de GnRH: Tratamento Central'
+          "foco": "Baixa Estatura",
+          "subfocos": [
+            "Atraso Constitucional do Crescimento e Puberdade (ACCP) e Baixa Estatura Familiar (BEF)",
+            "Avaliação Diagnóstica da Baixa Estatura",
+            "Baixa Estatura",
+            "Deficiência de Hormônio de Crescimento (GH) - Diagnóstico e Terapêutica",
+            "Hipotireoidismo e Baixa Estatura",
+            "Outras Causas Endócrinas, Metabólicas e Nutricionais de Baixa Estatura",
+            "Síndromes Genéticas e Cromossomopatias Associadas à Baixa Estatura"
           ]
         },
         {
-          foco: 'Diabetes Mellitus Tipo 1',
-          subfocos: [
-            'CAD: Cetoacidose Diabética',
-            'Diagnóstico e Fisiopatologia do DM1',
-            'Diagnóstico: Glicemia, HbA1c, Autoanticorpos',
-            'Insulinoterapia: Basal-Bolus',
-            'Metas Glicêmicas Pediátricas',
-            'Contagem de Carboidratos'
+          "foco": "Desordens do Desenvolvimento Sexual",
+          "subfocos": [
+            "Abordagem Multidisciplinar",
+            "Cariótipo e 17-OHP",
+            "Desordens do Desenvolvimento Sexual",
+            "Genitália Ambígua: Emergência",
+            "HAC: Causa Mais Comum (46,XX)",
+            "Registro Civil: Orientações"
           ]
         },
         {
-          foco: 'Baixa Estatura',
-          subfocos: [
-            'Atraso Constitucional do Crescimento e Puberdade (ACCP) e Baixa Estatura Familiar (BEF)',
-            'Avaliação Diagnóstica da Baixa Estatura',
-            'Síndromes Genéticas e Cromossomopatias Associadas à Baixa Estatura',
-            'Hipotireoidismo e Baixa Estatura',
-            'Deficiência de Hormônio de Crescimento (GH) - Diagnóstico e Terapêutica',
-            'Outras Causas Endócrinas, Metabólicas e Nutricionais de Baixa Estatura'
+          "foco": "Diabetes Mellitus Tipo 1",
+          "subfocos": [
+            "CAD: Cetoacidose Diabética",
+            "Contagem de Carboidratos",
+            "Diabetes Mellitus Tipo 1",
+            "Diagnóstico e Fisiopatologia do DM1",
+            "Diagnóstico: Glicemia, HbA1c, Autoanticorpos",
+            "Insulinoterapia: Basal-Bolus",
+            "Metas Glicêmicas Pediátricas"
           ]
         },
         {
-          foco: 'Desordens do Desenvolvimento Sexual',
-          subfocos: [
-            'HAC: Causa Mais Comum (46,XX)',
-            'Cariótipo e 17-OHP',
-            'Genitália Ambígua: Emergência',
-            'Registro Civil: Orientações',
-            'Abordagem Multidisciplinar'
+          "foco": "Hipotireoidismo Congênito",
+          "subfocos": [
+            "Diagnóstico Laboratorial Confirmatório do HC",
+            "Outras Tireoidopatias Pediátricas e Diagnóstico Diferencial",
+            "Quadro Clínico e Manifestações Neonatais do HC",
+            "Tratamento, Manejo e Prognóstico do HC",
+            "Triagem Neonatal: Teste do Pezinho e Protocolos"
           ]
         },
         {
-          foco: 'Hipotireoidismo Congênito',
-          subfocos: [
-            'Triagem Neonatal: Teste do Pezinho e Protocolos',
-            'Quadro Clínico e Manifestações Neonatais do HC',
-            'Outras Tireoidopatias Pediátricas e Diagnóstico Diferencial',
-            'Tratamento, Manejo e Prognóstico do HC',
-            'Diagnóstico Laboratorial Confirmatório do HC'
+          "foco": "Puberdade Precoce e Tardia",
+          "subfocos": [
+            "Análogos de GnRH: Tratamento Central",
+            "Aumento Testicular <9 Anos (Meninos)",
+            "Central vs Periférica: Diferenciação",
+            "Puberdade Precoce Central: Diagnóstico e Etiologia",
+            "Puberdade Precoce e Tardia",
+            "Telarca <8 Anos (Meninas)",
+            "Teste de Estímulo com GnRH"
           ]
         }
       ]
     },
     {
-      tema: 'Urgências Pediátricas',
-      focos: [
+      "tema": "Gastroenterologia Pediátrica",
+      "focos": [
         {
-          foco: 'Trauma Pediátrico',
-          subfocos: [
-            'TCE Pediátrico: Glasgow e PECARN',
-            'ATLS Pediátrico: ABCDE Adaptado',
-            'Queimaduras: Lund-Browder e Reposição',
-            'Trauma Abdominal: Fígado e Baço',
-            'Afogamento: Suporte e Aquecimento',
-            'Maus-Tratos Infantis: Sinais de Alerta'
+          "foco": "Alergia à Proteína do Leite de Vaca: Fenótipo IgE e Não IgE",
+          "subfocos": [
+            "Alergia à Proteína do Leite de Vaca: Fenótipo IgE e Não IgE",
+            "Diagnóstico: Teste de Provocação Oral",
+            "Fórmulas: Extensamente Hidrolisada, Aminoácidos",
+            "IgE Mediada: Urticária, Anafilaxia",
+            "Não-IgE Mediada: Proctocolite, FPIES",
+            "Reintrodução: Escada do Leite"
           ]
         },
         {
-          foco: 'Intoxicações Pediátricas',
-          subfocos: [
-            'Principais Agentes: Paracetamol, Organofosforados',
-            'Antídotos Específicos: NAC, Atropina',
-            'Carvão Ativado: Indicações',
-            'ABCDE e Estabilização',
-            'Lavagem Gástrica: Raramente Indicada'
+          "foco": "Constipação Funcional e Dor Abdominal Recorrente",
+          "subfocos": [
+            "Constipação Funcional e Dor Abdominal Recorrente",
+            "Diagnóstico da Constipação Funcional (Critérios Roma IV)",
+            "Dor Abdominal Recorrente Funcional (DARF)",
+            "Fecaloma: Diagnóstico e Desimpactação",
+            "PEG e Lactulose: Tratamento Farmacológico",
+            "Sinais de Alarme e Causas Orgânicas",
+            "Tratamento de Manutenção da Constipação"
           ]
         },
         {
-          foco: 'Choque Pediátrico: Reconhecimento e Estabilização',
-          subfocos: [
-            'Expansão Volêmica Inicial',
-            'Sinais Precoces: Taquicardia, TEC Prolongado',
-            'Acesso Venoso e IO',
-            'Tipos: Hipovolêmico, Distributivo, Cardiogênico',
-            'Sinal Tardio: Hipotensão'
+          "foco": "Desidratação na GECA: TRO e Hidratação Venosa",
+          "subfocos": [
+            "Classificação OMS: Sem, Alguma, Grave",
+            "Composição e Administração da Solução de Reidratação Oral (SRO)",
+            "Desidratação na GECA: TRO e Hidratação Venosa",
+            "Hidratação Venosa: Fase Rápida e Manutenção",
+            "Plano A, B e C",
+            "Princípios e Indicações da Terapia de Reidratação Oral (TRO)",
+            "Sinais de Reidratação: Peso, Diurese",
+            "Suplementação de Zinco na Diarreia Aguda"
           ]
         },
         {
-          foco: 'Febre sem Foco de 0 a 36 Meses: Estratificação de Risco e Condutas',
-          subfocos: [
-            'Step-by-Step e PECARN: Novos Critérios',
-            'Exames: Hemograma, EAS, PCR, Procalcitonina',
-            '29-90 dias: Estratificação de Risco',
-            '< 28 dias: Internação e ATB Empírico',
-            'Rochester, Boston, Philadelphia: Critérios'
+          "foco": "Doença Celíaca",
+          "subfocos": [
+            "Associações e Comorbidades",
+            "Diagnóstico Diferencial: Outras Enteropatias e Condições GI",
+            "Diagnóstico: Sorologia e Biópsia Intestinal",
+            "Doença Celíaca",
+            "Quadro Clínico e Manifestações Gastrointestinais",
+            "Tratamento: Dieta Sem Glúten"
           ]
         },
         {
-          foco: 'Corpo Estranho em Vias Aéreas: Aspiração e Desobstrução',
-          subfocos: [
-            'RX e Broncoscopia Diagnóstica',
-            'Manobra de Heimlich e Tapotagem',
-            'Corpos Estranhos Específicos: Baterias e Objetos Pontiagudos',
-            'Epidemiologia: < 3 Anos, Amendoim',
-            'Broncoscopia Rígida: Extração',
-            'Prevenção: Alimentos de Risco'
+          "foco": "Intussuscepção: Diagnóstico por US e Enema Terapêutico",
+          "subfocos": [
+            "Diagnóstico por Imagem na Intussuscepção",
+            "Intussuscepção: Diagnóstico por US e Enema Terapêutico",
+            "Outras Emergências Cirúrgicas Pediátricas",
+            "Quadro Clínico e Epidemiologia da Intussuscepção",
+            "Redução Não Cirúrgica da Intussuscepção",
+            "Tratamento Cirúrgico e Complicações da Intussuscepção"
           ]
         },
         {
-          foco: 'PCR Pediátrica: PALS e Ressuscitação',
-          subfocos: [
-            'Reconhecimento e Abordagem Inicial da PCR',
-            'Acesso Vascular e Administração de Drogas',
-            'Suporte Básico de Vida (SBV) em Pediatria',
-            'Causas Reversíveis e Ritmos de PCR',
-            'Suporte Avançado de Vida (SAV) em Pediatria',
-            'RCP em Situações Específicas'
-          ]
-        },
-        {
-          foco: 'Urticária e Angioedema Pediátricos',
-          subfocos: [
-            'Tratamento de Urticária/Angioedema',
-            'Urticária Aguda: Etiologias Comuns na Infância',
-            'Anafilaxia: Reconhecimento e Manejo Imediato',
-            'Angioedema: Manifestações e Obstrução de Vias Aéreas',
-            'Urticária Gigante e Reações a Picadas de Insetos'
-          ]
-        },
-        {
-          foco: 'Síndrome Morte Súbita do Lactente (SMSL)',
-          subfocos: [
-            'Fatores de Risco: Prona, Fumo, Coleito',
-            'ALTE/BRUE: Evento Aparentemente Ameaçador',
-            'Definição: Morte Inexplicada < 1 Ano',
-            'Ambiente Seguro: Supino, Colchão Firme',
-            'Chupeta e Aleitamento: Fatores Protetores'
+          "foco": "Refluxo Gastroesofágico",
+          "subfocos": [
+            "Complicações da DRGE: Esofagite e Outras Manifestações Graves",
+            "Diagnóstico Diferencial de Vômitos em Lactentes (Estenose Pilórica, Vômitos Biliosos e Outras Causas)",
+            "Doença do Refluxo Gastroesofágico (DRGE): Diagnóstico Clínico e Sinais de Alarme",
+            "Indicação Cirúrgica: Fundoplicatura de Nissen",
+            "Manejo Não Farmacológico e Medidas Posturais",
+            "Refluxo Gastroesofágico",
+            "Regurgitação Fisiológica: Caracterização e Manejo Inicial",
+            "Tratamento Farmacológico: Inibidores de Bomba de Prótons (IBP)"
           ]
         }
       ]
     },
     {
-      tema: 'Nefrologia Pediátrica',
-      focos: [
+      "tema": "Geral",
+      "focos": [
         {
-          foco: 'Infecção Urinária na Criança',
-          subfocos: [
-            'EAS e Urocultura: Interpretação',
-            'USG e UCRM: Quando Indicar',
-            'Coleta: Punção Suprapúbica, Cateterismo, Jato Médio',
-            'ATB: Ambulatorial vs Hospitalar',
-            'RVU: Refluxo Vesicoureteral'
+          "foco": "Geral",
+          "subfocos": []
+        }
+      ]
+    },
+    {
+      "tema": "Hematologia Pediátrica",
+      "focos": [
+        {
+          "foco": "Anemias Pediátricas",
+          "subfocos": [
+            "Anemia Ferropriva: Diagnóstico e Etiologia",
+            "Anemia Fisiológica do Lactente",
+            "Anemia Hemolítica Autoimune: Coombs Direto",
+            "Anemias Pediátricas",
+            "Esferocitose Hereditária: Teste de Fragilidade",
+            "Ferropriva: Principal Causa e Profilaxia",
+            "Talassemias: Minor vs Major"
           ]
         },
         {
-          foco: 'Glomerulonefrite Pós-Estreptocócica: Diagnóstico e Conduta',
-          subfocos: [
-            'Clínica: Edema, Hematúria, HAS',
-            'Tratamento: Suporte e Restrição',
-            'Complemento C3 Baixo (Transitório)',
-            'Prognóstico: Excelente em Crianças',
-            'ASLO e Anti-DNAse B'
+          "foco": "Doença Falciforme: Triagem Neonatal, Crises e Profilaxias",
+          "subfocos": [
+            "AVC: Rastreamento com Doppler",
+            "Crise Álgica: Hidratação e Analgesia",
+            "Doença Falciforme: Triagem Neonatal, Crises e Profilaxias",
+            "Hidroxiureia: Indicações",
+            "Profilaxia: Penicilina e Vacinas",
+            "Sequestro Esplênico: Emergência",
+            "Triagem Neonatal: Eletroforese"
           ]
         },
         {
-          foco: 'Síndrome Nefrótica na Infância: Corticossensível e Recaídas',
-          subfocos: [
-            'Tríade: Proteinúria, Hipoalbuminemia, Edema, Hiperlipidemia',
-            'Complicações: Infecção, Trombose',
-            'Lesão Mínima: Principal em Crianças',
-            'Corticoterapia: Prednisona 6 Semanas',
-            'Recaídas Frequentes e Corticodependência'
+          "foco": "Hemofilia e Coagulopatias",
+          "subfocos": [
+            "Coagulopatias Adquiridas: Deficiência de Vitamina K",
+            "Distúrbios da Coagulação: Trombose e Anticoagulação",
+            "Hemofilia e Coagulopatias",
+            "Hemofilia: Diagnóstico e Manifestações Clínicas",
+            "Hemofilia: Genética e Aconselhamento",
+            "Hemofilia: Manejo e Tratamento de Complicações"
           ]
         },
         {
-          foco: 'Síndrome Hemolítico-Urêmica',
-          subfocos: [
-            'Tríade: Anemia Hemolítica, Plaquetopenia, IRA',
-            'E. coli O157:H7 (STEC-SHU)',
-            'Tratamento: Suporte, Não Usar ATB',
-            'SHU Atípica: Eculizumabe'
+          "foco": "Leucemias Pediátricas",
+          "subfocos": [
+            "Apresentação Clínica e Diagnóstico de LLA",
+            "Apresentação: Pancitopenia, Dor Óssea",
+            "Fator Prognóstico: Idade, Leucometria",
+            "Leucemias Pediátricas",
+            "LLA: Principal Neoplasia Pediátrica",
+            "Mielograma: Diagnóstico",
+            "Síndrome de Lise Tumoral"
           ]
         },
         {
-          foco: 'Glomerulopatias Pediátricas (Nefropatia por IgA, Membranosa)',
-          subfocos: [
-            'Nefropatia por IgA: Hematúria Recorrente',
-            'Púrpura de Henoch-Schönlein: Nefrite Associada',
-            'GNPE: Clínica e Complemento Baixo',
-            'Indicações de Biópsia Renal',
-            'Síndrome Nefrótica: Lesão Mínima'
-          ]
-        },
-        {
-          foco: 'Refluxo Vesicoureteral',
-          subfocos: [
-            'Diagnóstico e Investigação de RVU',
-            'Quadro Clínico e Suspeita Diagnóstica',
-            'Manejo Terapêutico: Conservador e Cirúrgico',
-            'Infecção do Trato Urinário (ITU) e Dano Renal',
-            'Classificação e Fisiopatologia do RVU',
-            'Profilaxia Antibiótica e Prevenção de ITU'
-          ]
-        },
-        {
-          foco: 'Enurese Noturna',
-          subfocos: [
-            'Monossintomática vs Não-Mono',
-            'Primária vs Secundária',
-            'Desmopressina: Indicações',
-            'Avaliação: Diário Miccional',
-            'Alarme Noturno: Primeira Linha'
+          "foco": "Púrpuras e Plaquetopenia",
+          "subfocos": [
+            "PTI: Púrpura Trombocitopênica Idiopática",
+            "PTT e SHU: Emergências",
+            "Púrpura de Henoch-Schönlein",
+            "Púrpuras e Plaquetopenia",
+            "Sinais de Alarme: Sangramento Ativo",
+            "Tratamento: IVIG, Corticoide"
           ]
         }
       ]
     },
     {
-      tema: 'Reumatologia Pediátrica',
-      focos: [
+      "tema": "Imunologia e Alergia Pediátrica",
+      "focos": [
         {
-          foco: 'Febre Reumática',
-          subfocos: [
-            'Critérios de Jones: Diagnóstico e Aplicação',
-            'Tratamento e Profilaxia de Febre Reumática',
-            'Manifestações Extracardíacas (Coreia, Nódulos, Eritema)',
-            'Manifestações Cardíacas na Febre Reumática',
-            'Febre Reumática: Etiologia e Epidemiologia',
-            'Manifestações Articulares na Febre Reumática'
+          "foco": "Alergias Alimentares e Anafilaxia",
+          "subfocos": [
+            "Adrenalina IM: Tratamento de Escolha",
+            "Alérgenos Principais: Leite, Ovo, Amendoim",
+            "Alergias Alimentares e Anafilaxia",
+            "Anafilaxia: Critérios Diagnósticos",
+            "IgE Mediada vs Não-IgE Mediada",
+            "Prescrição de Autoinjetor"
           ]
         },
         {
-          foco: 'Doença de Kawasaki',
-          subfocos: [
-            'Critérios: Febre >= 5 dias + 4/5 Principais',
-            'IVIG 2g/kg: Tratamento até 10º Dia',
-            'Aneurismas Coronarianos: ECO e Seguimento',
-            'Kawasaki Incompleto: Protocolo',
-            'AAS em Dose Anti-inflamatória'
+          "foco": "Imunodeficiências Primárias",
+          "subfocos": [
+            "Deficiência de Anticorpos: Mais Comum",
+            "Doença Granulomatosa Crônica",
+            "Imunodeficiências Primárias",
+            "Reposição de Imunoglobulina",
+            "SCID: Emergência, TMO",
+            "Sinais de Alerta: Jeffrey Modell"
           ]
         },
         {
-          foco: 'Púrpura de Henoch-Schönlein',
-          subfocos: [
-            'Púrpura de Henoch-Schönlein: Apresentação Clínica Clássica',
-            'Púrpura de Henoch-Schönlein: Diagnóstico Diferencial e Abordagem Inicial',
-            'Púrpura de Henoch-Schönlein: Tétrade Completa',
-            'Púrpura de Henoch-Schönlein: Acometimento Renal (Nefrite)',
-            'Púrpura de Henoch-Schönlein: Manejo Terapêutico',
-            'Púrpura de Henoch-Schönlein: Prognóstico e Complicações'
-          ]
-        },
-        {
-          foco: 'Dor Musculoesquelética na Criança',
-          subfocos: [
-            'Artrite Séptica Pediátrica',
-            'Sinovite Transitória do Quadril',
-            'Dor de Crescimento: Característica Noturna',
-            'Epifisiólise (Deslizamento Epifisário)',
-            'Doença de Legg-Calvé-Perthes'
-          ]
-        },
-        {
-          foco: 'Artrite Idiopática Juvenil',
-          subfocos: [
-            'AIJ Sistêmica (Still): Febre Alta e Rash Salmão',
-            'AIJ Oligoarticular: <= 4 Articulações, Risco de Uveíte',
-            'Diagnóstico Diferencial e Critérios ILAR',
-            'Uveíte Anterior: Rastreamento Oftalmológico',
-            'AIJ Poliarticular: FR+ e FR- (Diferenças)',
-            'MTX e Biológicos: Anti-TNF, Tocilizumabe'
-          ]
-        },
-        {
-          foco: 'Síndrome Inflamatória Multissistêmica Pediátrica',
-          subfocos: [
-            'Definição CDC/OMS: Febre + Inflamação + COVID',
-            'Disfunção Cardíaca e Choque',
-            'Tratamento: IVIG e Corticoide',
-            'Diferencial com Kawasaki',
-            'Manifestações GI: Dor Abdominal, Vômitos'
-          ]
-        },
-        {
-          foco: 'Lúpus Eritematoso Sistêmico Pediátrico',
-          subfocos: [
-            'Critérios ACR/EULAR Pediátrico',
-            'Manifestações Hematológicas: Citopenias',
-            'Nefrite Lúpica: Classes e Tratamento',
-            'Tratamento: Hidroxicloroquina, Corticoide',
-            'Anti-dsDNA e Complemento',
-            'Manifestações Cutâneas Clássicas'
+          "foco": "Rinite Alérgica e Rinossinusites",
+          "subfocos": [
+            "Rinite Alérgica e Rinossinusites",
+            "Rinite Alérgica: Desencadeantes e Comorbidades Atópicas",
+            "Rinite Alérgica: Diagnóstico e Classificação",
+            "Rinite Alérgica: Manejo e Tratamento",
+            "Rinossinusite Aguda: Classificação e Etiologia",
+            "Rinossinusite Aguda: Diagnóstico e Avaliação"
           ]
         }
       ]
     },
     {
-      tema: 'Neurologia Pediátrica',
-      focos: [
+      "tema": "Maus Tratos à Criança e Adolescente",
+      "focos": [
         {
-          foco: 'Convulsões Febris',
-          subfocos: [
-            'Definição e Critérios de Convulsão Febril Simples',
-            'Investigação Diagnóstica e Indicações de Punção Lombar',
-            'Conduta Imediata e Manejo na Emergência',
-            'Relação com Epilepsia e Fatores de Risco',
-            'Profilaxia e Manejo a Longo Prazo',
-            'Definição e Critérios de Convulsão Febril Complexa'
-          ]
-        },
-        {
-          foco: 'Epilepsia Pediátrica',
-          subfocos: [
-            'Estado de Mal Epiléptico: Benzodiazepínicos',
-            'Síndrome de West: Espasmos e Hipsarritmia',
-            'Primeira Escolha: Valproato, Carbamazepina',
-            'Classificação: Focais vs Generalizadas',
-            'Epilepsia Ausência: Ponta-Onda 3Hz',
-            'Epilepsia Rolândica Benigna'
-          ]
-        },
-        {
-          foco: 'Meningites e Encefalites',
-          subfocos: [
-            'LCR: Diferenciação Bacteriana vs Viral vs TB',
-            'Encefalite: Herpes Simplex e Aciclovir',
-            'Meningite Bacteriana: ATB Empírico por Idade',
-            'Sinais de Irritação Meníngea: Kernig, Brudzinski',
-            'Meningococcemia e Profilaxia de Contatos'
-          ]
-        },
-        {
-          foco: 'Transtornos do Neurodesenvolvimento',
-          subfocos: [
-            'TEA: Critérios DSM-5 e Sinais Precoces',
-            'TDAH: Critérios, Subtipos e Comorbidades',
-            'Deficiência Intelectual: Classificação e Etiologias',
-            'Intervenção Precoce e Equipe Multidisciplinar',
-            'Transtornos Específicos de Aprendizagem: Dislexia',
-            'Transtorno do Desenvolvimento da Linguagem'
-          ]
-        },
-        {
-          foco: 'Cefaleia na Infância',
-          subfocos: [
-            'Sinais de Alerta: Neuroimagem',
-            'Migrânea: Critérios Pediátricos',
-            'Tratamento Agudo: Ibuprofeno',
-            'Cefaleia Tensional',
-            'Profilaxia: Quando Indicar'
-          ]
-        },
-        {
-          foco: 'Paralisia Cerebral: Classificação, GMFCS e Comorbidades',
-          subfocos: [
-            'Comorbidades: Epilepsia, Disfagia, Escoliose',
-            'GMFCS: Classificação da Função Motora Grossa',
-            'PC Espástica: Hemi, Di e Tetraparesia',
-            'Reabilitação Multidisciplinar',
-            'PC Discinética (Atetoide) e Atáxica',
-            'Classificação: Espástica'
+          "foco": "Violência e Abuso Infantil",
+          "subfocos": [
+            "Abuso Sexual: Abordagem",
+            "Notificação Compulsória",
+            "Papel do Pediatra e Rede de Proteção",
+            "Sinais Físicos: Lesões Suspeitas",
+            "Síndrome do Bebê Sacudido",
+            "Violência e Abuso Infantil"
           ]
         }
       ]
     },
     {
-      tema: 'Cardiologia Pediátrica',
-      focos: [
+      "tema": "Nefrologia Pediátrica",
+      "focos": [
         {
-          foco: 'Cardiopatias Congênitas Acianóticas',
-          subfocos: [
-            'CIV: Defeito do Septo Ventricular',
-            'Coarctação da Aorta: Diferença de PA',
-            'ICC no Lactente: Sinais e Manejo',
-            'PCA: Persistência do Canal Arterial',
-            'DSAV: Defeito do Septo Atrioventricular (Down)',
-            'CIA: Defeito do Septo Atrial',
-            'Comunicação Interventricular (CIV): Pequena e Assintomática'
+          "foco": "Enurese Noturna",
+          "subfocos": [
+            "Alarme Noturno: Primeira Linha",
+            "Avaliação: Diário Miccional",
+            "Desmopressina: Indicações",
+            "Enurese Noturna",
+            "Monossintomática vs Não-Mono",
+            "Primária vs Secundária"
           ]
         },
         {
-          foco: 'Cardiopatias Congênitas Cianóticas',
-          subfocos: [
-            'Tetralogia de Fallot: Crise Hipóxica',
-            'TGA: Canal-Dependente e Rashkind',
-            'Prostaglandina E1: Canal-Dependente',
-            'Atresia Tricúspide',
-            'Síndrome do Coração Esquerdo Hipoplásico'
+          "foco": "Glomerulonefrite Pós-Estreptocócica: Diagnóstico e Conduta",
+          "subfocos": [
+            "ASLO e Anti-DNase B",
+            "Clínica: Edema, Hematúria, HAS",
+            "Complemento C3 Baixo (Transitório)",
+            "Glomerulonefrite Pós-Estreptocócica: Diagnóstico e Conduta",
+            "Prognóstico: Excelente em Crianças",
+            "Tratamento: Suporte e Restrição"
           ]
         },
         {
-          foco: 'Arritmias Cardíacas Pediátricas',
-          subfocos: [
-            'Taquicardia Supraventricular (TSV): Adenosina',
-            'Síndrome do QT Longo: Risco de Morte Súbita',
-            'Fibrilação/Flutter Atrial em Cardiopatas Congênitos',
-            'Bloqueio Atrioventricular (BAV) Congênito',
-            'Síndrome de Wolff-Parkinson-White (WPW)'
+          "foco": "Glomerulopatias Pediátricas (Nefropatia por IgA, Membranosa)",
+          "subfocos": [
+            "Glomerulopatias Pediátricas (Nefropatia por IgA, Membranosa)",
+            "GNPE: Clínica e Complemento Baixo",
+            "Indicações de Biópsia Renal",
+            "Nefropatia por IgA: Hematúria Recorrente",
+            "Púrpura de Henoch-Schönlein: Nefrite Associada",
+            "Síndrome Nefrótica: Lesão Mínima"
           ]
         },
         {
-          foco: 'Sopros Cardíacos na Criança',
-          subfocos: [
-            'Sopros Inocentes: Características',
-            'Sopros Patológicos: Sinais de Alerta',
-            'Sopro de Still: Vibratório Musical',
-            'Quando Encaminhar ao Cardiologista',
-            'Ecocardiograma: Indicações'
+          "foco": "Infecção Urinária na Criança",
+          "subfocos": [
+            "ATB: Ambulatorial vs Hospitalar",
+            "Coleta: Punção Suprapúbica, Cateterismo, Jato Médio",
+            "EAS e Urocultura: Interpretação",
+            "Infecção Urinária na Criança",
+            "RVU: Refluxo Vesicoureteral",
+            "USG e UCM: Quando Indicar"
+          ]
+        },
+        {
+          "foco": "Refluxo Vesicoureteral",
+          "subfocos": [
+            "Classificação e Fisiopatologia do RVU",
+            "Diagnóstico e Investigação do RVU",
+            "Infecção do Trato Urinário (ITU) e Dano Renal",
+            "Manejo Terapêutico: Conservador e Cirúrgico",
+            "Profilaxia Antibiótica e Prevenção de ITU",
+            "Quadro Clínico e Suspeita Diagnóstica",
+            "Refluxo Vesicoureteral"
+          ]
+        },
+        {
+          "foco": "Síndrome Hemolítico-Urêmica",
+          "subfocos": [
+            "E. coli O157:H7 (STEC-SHU)",
+            "SHU Atípica: Eculizumabe",
+            "Síndrome Hemolítico-Urêmica",
+            "Tratamento: Suporte, Não Usar ATB",
+            "Tríade: Anemia Hemolítica, Plaquetopenia, IRA"
+          ]
+        },
+        {
+          "foco": "Síndrome Nefrótica na Infância: Corticossensível e Recaídas",
+          "subfocos": [
+            "Complicações: Infecção, Trombose",
+            "Corticoterapia: Prednisona 6 Semanas",
+            "Lesão Mínima: Principal em Crianças",
+            "Recaídas Frequentes e Corticodependência",
+            "Síndrome Nefrótica na Infância: Corticossensível e Recaídas",
+            "Tétrade: Proteinúria, Hipoalbuminemia, Edema, Hiperlipidemia"
           ]
         }
       ]
     },
     {
-      tema: 'Adolescência',
-      focos: [
+      "tema": "Neonatologia",
+      "focos": [
         {
-          foco: 'Puberdade e Desenvolvimento Puberal',
-          subfocos: [
-            'Estágios de Tanner: Mamas e Pelos Pubianos',
-            'Estirão Puberal: Velocidade de Crescimento',
-            'Menarca e Ginecomastia Puberal',
-            'Aumento Testicular: Primeiro Sinal Masculino',
-            'Telarca: Primeiro Sinal Feminino'
+          "foco": "Distúrbios Metabólicos do RN",
+          "subfocos": [
+            "Distúrbios Metabólicos do RN",
+            "Hipernatremia: Desidratação e Manejo",
+            "Hiperpotassemia: ECG e Tratamento",
+            "Hipocalcemia: Precoce vs Tardia",
+            "Hipoglicemia Neonatal: Triagem e Tratamento",
+            "Hipomagnesemia: Associação com Hipocalcemia"
           ]
         },
         {
-          foco: 'Saúde Mental do Adolescente',
-          subfocos: [
-            'Avaliação e Consulta do Adolescente',
-            'Ideação Suicida e Automutilação',
-            'Rastreamento e Manejo de Uso de Substâncias (Álcool e Drogas)',
-            'Depressão e Sintomas Depressivos',
-            'Ansiedade e Transtornos de Ansiedade',
-            'Uso Excessivo de Tecnologia e Impacto Psicossocial'
+          "foco": "Distúrbios Respiratórios Neonatais Avançados",
+          "subfocos": [
+            "Distúrbios Respiratórios Neonatais Avançados",
+            "Hérnia Diafragmática Congênita",
+            "HPP: Hipertensão Pulmonar Persistente",
+            "SAM: Síndrome Aspiração Meconial",
+            "SDR: Surfactante e CPAP",
+            "TTRN: Taquipneia Transitória do RN"
           ]
         },
         {
-          foco: 'Saúde Sexual e Reprodutiva',
-          subfocos: [
-            'Sigilo e Confidencialidade na Consulta',
-            'Violência Sexual: Profilaxia PEP',
-            'Gravidez na Adolescência: Pré-Natal',
-            'ISTs: Sífilis, HIV, HPV, Clamídia',
-            'Vacinação: HPV 9-14 Anos'
+          "foco": "Enterocolite Necrosante: Risco e Manejo",
+          "subfocos": [
+            "Classificação de Bell: Estágios",
+            "Fatores de Risco: Prematuridade, Fórmula",
+            "Prevenção: Leite Materno",
+            "RX: Pneumatose Intestinal",
+            "Tratamento: NPO, ATB, Suporte"
           ]
         },
         {
-          foco: 'Contracepção na Adolescência: Aconselhamento e ISTs',
-          subfocos: [
-            'Dupla Proteção: ISTs e Gravidez',
-            'LARCs: DIU e Implante (Primeira Linha)',
-            'Contracepção de Emergência: Levonorgestrel',
-            'Contraceptivos Hormonais: ACO, Injetável',
-            'Critérios de Elegibilidade OMS'
+          "foco": "Geral",
+          "subfocos": []
+        },
+        {
+          "foco": "Icterícia Neonatal",
+          "subfocos": [
+            "Fisiológica vs Patológica: Critérios",
+            "Fototerapia: Indicações e Técnica",
+            "Icterícia do Leite Materno",
+            "Icterícia Neonatal",
+            "Incompatibilidade ABO e Rh",
+            "Nomograma de Bhutani",
+            "Zonas de Kramer"
           ]
         },
         {
-          foco: 'Transtornos Alimentares na Adolescência',
-          subfocos: [
-            'Anorexia Nervosa: Apresentação Clínica e Diagnóstico',
-            'Transtornos Alimentares: Tratamento Multidisciplinar',
-            'Deficiências Nutricionais Associadas a TAU',
-            'Transtornos Alimentares: Complicações Metabólicas e Cardíacas',
-            'Transtornos Alimentares: Fatores Psicossociais e Ambientais'
+          "foco": "Infecções Congênitas TORCH",
+          "subfocos": [
+            "CMV Congênito: Calcificações Periventriculares",
+            "Herpes Neonatal: Parto e Aciclovir",
+            "Infecções Congênitas TORCH",
+            "Rubéola Congênita: Surdez, Catarata, Cardiopatia",
+            "Sífilis Congênita: Rinite Sifilítica e Lesóes Ósseas",
+            "Toxoplasmose: Calcificações Difusas e Coriorretinite",
+            "Zika Congênita: Microcefalia e Artrogripose"
+          ]
+        },
+        {
+          "foco": "Kernicterus e Encefalopatia Bilirrubínica",
+          "subfocos": [
+            "Bilirrubina Indireta: Toxicidade Neurológica",
+            "Encefalopatia Bilirrubínica Aguda",
+            "Exsanguineotransfusão: Indicações",
+            "Fatores de Risco: Hemólise, Prematuridade",
+            "Kernicterus Crônico: Sequelas",
+            "Kernicterus e Encefalopatia Bilirrubínica"
+          ]
+        },
+        {
+          "foco": "Malformações Congênitas e Defeitos de Parede Abdominal Neonatal",
+          "subfocos": [
+            "Ânus Imperfurado e Malformações Anorretais",
+            "Atresia de Esôfago: Tipos e Fístula Traqueoesofágica",
+            "Atresia Duodenal: Sinal da Dupla Bolha",
+            "Gastrosquise: Defeito Lateral ao Cordão",
+            "Malformações Congênitas e Defeitos de Parede Abdominal Neonatal",
+            "Onfalocele: Defeito com Saco Peritoneal"
+          ]
+        },
+        {
+          "foco": "Prematuridade",
+          "subfocos": [
+            "Classificação: Extremo, Muito, Moderado, Tardio",
+            "DBP: Displasia Broncopulmonar",
+            "Follow-up: Idade Corrigida até 2 Anos",
+            "HPIV: Hemorragia Peri-Intraventricular",
+            "Prematuridade",
+            "ROP: Retinopatia da Prematuridade"
+          ]
+        },
+        {
+          "foco": "Prematuridade: Retinopatia, DBP e Hemorragia Peri-intraventricular",
+          "subfocos": [
+            "DBP: Critérios Diagnósticos",
+            "HPIV: Classificação de Papile",
+            "LPV: Leucomalácia Periventricular",
+            "ROP: Classificação Zonas e Estágios",
+            "ROP: Tratamento Laser e Anti-VEGF"
+          ]
+        },
+        {
+          "foco": "Principais Síndromes Genéticas Neonatais",
+          "subfocos": [
+            "Principais Síndromes Genéticas Neonatais",
+            "Síndrome de DiGeorge (22q11.2 Deletion)",
+            "Síndrome de Down (Trissomia 21)",
+            "Síndrome de Edwards (Trissomia 18)",
+            "Síndrome de Noonan",
+            "Síndrome de Patau (Trissomia 13)",
+            "Síndrome de Turner (45,X)"
+          ]
+        },
+        {
+          "foco": "Reanimação Neonatal",
+          "subfocos": [
+            "Adrenalina: Via e Dose",
+            "Clampeamento Tardio do Cordão",
+            "IOT: Quando Indicar",
+            "Massagem Cardíaca: Técnica 3:1",
+            "Passos Iniciais: Aquecer, Posicionar, Aspirar",
+            "Reanimação Neonatal",
+            "VPP: Técnica e Frequência"
+          ]
+        },
+        {
+          "foco": "Sepse Neonatal Precoce e Tardia: Protocolos e Antibiótico",
+          "subfocos": [
+            "ATB Empírico: Ampicilina + Gentamicina",
+            "Fatores de Risco: RPMO, Febre Materna, Corioamnionite",
+            "Precoce (<72h): GBS, E. coli, Listeria",
+            "Sepse Neonatal Precoce e Tardia: Protocolos e Antibiótico",
+            "Tardia (>72h): CoNS, S. aureus",
+            "Triagem: PCR, Hemograma, Hemocultura"
+          ]
+        },
+        {
+          "foco": "Sífilis Congênita e Infecção por CMV",
+          "subfocos": [
+            "CMV: Calcificações Periventriculares",
+            "CMV: Ganciclovir/Valganciclovir",
+            "Follow-up Auditivo: Ambas as Condições",
+            "Sífilis Congênita e Infecção por CMV",
+            "Sífilis: Tratamento Materno Inadequado",
+            "Sífilis: VDRL Líquor e Penicilina Cristalina"
+          ]
+        },
+        {
+          "foco": "Síndrome do Desconforto Respiratório do RN: CPAP e Surfactante",
+          "subfocos": [
+            "Corticoide Antenatal: Prevenção",
+            "CPAP Nasal: Não Invasivo",
+            "Fisiopatologia: Deficiência de Surfactante",
+            "RX: Vidro Moído e Broncograma Aéreo",
+            "Síndrome do Desconforto Respiratório do RN: CPAP e Surfactante",
+            "Surfactante Exógeno: INSURE"
+          ]
+        },
+        {
+          "foco": "Triagem Neonatal",
+          "subfocos": [
+            "Pezinho Ampliado: 50+ Doenças",
+            "Teste da Orelhinha: EOA",
+            "Teste do Coraçãozinho: Oximetria",
+            "Teste do Olhinho: Reflexo Vermelho",
+            "Teste do Pezinho: Doenças Rastreadas",
+            "Triagem Neonatal"
           ]
         }
       ]
     },
     {
-      tema: 'Terapia Intensiva Pediátrica',
-      focos: [
+      "tema": "Neurologia Pediátrica",
+      "focos": [
         {
-          foco: 'Sepse e Choque Séptico Pediátrico',
-          subfocos: [
-            'Primeira Hora: Bundle de Sepse',
-            'Sinais de Disfunção Orgânica',
-            'Acesso e Ressuscitação Volêmica',
-            'ATB Empírico Precoce',
-            'Princípios do Cuidado Intensivo Pediátrico',
-            'Phoenix Criteria: Nova Definição'
+          "foco": "Cefaleia na Infância",
+          "subfocos": [
+            "Cefaleia na Infância",
+            "Cefaleia Tensional",
+            "Migrânea: Critérios Pediátricos",
+            "Profilaxia: Quando Indicar",
+            "Sinais de Alerta: Neuroimagem",
+            "Tratamento Agudo: Ibuprofeno"
           ]
         },
         {
-          foco: 'PCR Pediátrica: Cuidados Pós-Parada',
-          subfocos: [
-            'Cuidados Pós-Ressuscitação',
-            'PALS: Algoritmo de PCR Pediátrica',
-            'Ritmos Chocáveis: FV/TV sem Pulso',
-            'Ritmos Não-Chocáveis: Assistolia/AESP',
-            'Hipotermia Terapêutica'
+          "foco": "Convulsões Febris",
+          "subfocos": [
+            "Conduta Imediata e Manejo na Emergência",
+            "Convulsões Febris",
+            "Definição e Critérios de Convulsão Febril Complexa",
+            "Definição e Critérios de Convulsão Febril Simples",
+            "Investigação Diagnóstica e Indicações de Punção Lombar",
+            "Profilaxia e Manejo a Longo Prazo",
+            "Relação com Epilepsia e Fatores de Risco"
           ]
         },
         {
-          foco: 'Insuficiência Respiratória Aguda',
-          subfocos: [
-            'Sinais Clínicos: Tiragem, BAN, Gemência',
-            'Tipo I (Hipoxêmica) vs Tipo II (Hipercápnica)',
-            'IOT Pediátrica: Indicações e Técnica',
-            'Oxigenoterapia: Cateter, Máscara, Cânula Alto Fluxo',
-            'PARDS: Síndrome do Desconforto Respiratório Pediátrico',
-            'VNI: CPAP e BiPAP Pediátrico'
+          "foco": "Epilepsia Pediátrica",
+          "subfocos": [
+            "Classificação: Focais vs Generalizadas",
+            "Epilepsia Ausência: Ponta-Onda 3Hz",
+            "Epilepsia Pediátrica",
+            "Epilepsia Rolândica Benigna",
+            "Estado de Mal Epiléptico: Benzodiazepínicos",
+            "Primeira Escolha: Valproato, Carbamazepina",
+            "Síndrome de West: Espasmos e Hipsarritmia"
           ]
         },
         {
-          foco: 'Choque Pediátrico: Manejo Intensivo',
-          subfocos: [
-            'Expansão: 20mL/kg SF em Bolus',
-            'Metas: PAM, Lactato, Débito Urinário',
-            'Drogas Vasoativas: Adrenalina, Nora, Dopamina',
-            'Choque Frio vs Quente',
-            'Hidrocortisona: Quando Usar'
+          "foco": "Geral",
+          "subfocos": []
+        },
+        {
+          "foco": "Meningites e Encefalites",
+          "subfocos": [
+            "Encefalites: Herpes Simplex e Aciclovir",
+            "LCR: Diferenciação Bacteriana vs Viral vs TB",
+            "Meningite Bacteriana: ATB Empírico por Idade",
+            "Meningites e Encefalites",
+            "Meningococcemia e Profilaxia de Contatos",
+            "Sinais de Irritação Meníngea: Kernig, Brudzinski"
           ]
         },
         {
-          foco: 'Convulsões e Status Epilepticus',
-          subfocos: [
-            'Primeira Linha: Diazepam Retal ou Midazolam IM',
-            'Etiologia: Febril, Metabólica, Estrutural',
-            'Segunda Linha: Fenitoína IV',
-            'Status Refratário: Fenobarbital, Valproato',
-            'Investigação Emergencial: Glicemia, Eletrólitos'
+          "foco": "Paralisia Cerebral: Classificação GMFCS e Comorbidades",
+          "subfocos": [
+            "Classificação: Espástica",
+            "Comorbidades: Epilepsia, Disfagia, Escoliose",
+            "GMFCS: Classificação de Função Motora Grossa",
+            "Paralisia Cerebral: Classificação GMFCS e Comorbidades",
+            "PC Discinética (Atetoide) e Atáxica",
+            "PC Espástica: Hemi, Di e Tetraparesia",
+            "Reabilitação Multidisciplinar"
+          ]
+        },
+        {
+          "foco": "Transtornos do Neurodesenvolvimento",
+          "subfocos": [
+            "Deficiência Intelectual: Classificação e Etiologias",
+            "Intervenção Precoce e Equipe Multidisciplinar",
+            "TDAH: Critérios, Subtipos e Comorbidades",
+            "TEA: Critérios DSM-5 e Sinais Precoces",
+            "Transtorno do Desenvolvimento da Linguagem",
+            "Transtornos do Neurodesenvolvimento",
+            "Transtornos Específicos de Aprendizagem: Dislexia"
           ]
         }
       ]
     },
     {
-      tema: 'Distúrbios Genéticos e Metabólicos',
-      focos: [
+      "tema": "Oncologia Pediátrica",
+      "focos": [
         {
-          foco: 'Síndromes Genéticas Comuns',
-          subfocos: [
-            'Síndrome de Down: Fenótipo e Comorbidades',
-            'Síndrome do X Frágil: TDAH e TEA',
-            'Síndrome de Turner: 45,X e Follow-up',
-            'Síndrome de Marfan: Aorta e Cristalino',
-            'Síndrome de Klinefelter: 47,XXY'
-          ]
-        },
-        {
-          foco: 'Erros Inatos do Metabolismo',
-          subfocos: [
-            'Sinais de Alerta: Odor, Acidose, Hipoglicemia',
-            'Galactosemia: Clínica e Manejo',
-            'Investigação Laboratorial de Erros Inatos do Metabolismo',
-            'Hiperplasia Adrenal Congênita: 17-OHP',
-            'Doença de Gaucher: Glicocerebrosidase, MPS',
-            'Fenilcetonúria: Triagem e Dieta',
-            'Hipotireoidismo Congênito: TSH no Pezinho'
-          ]
-        },
-        {
-          foco: 'Distúrbios Cromossômicos',
-          subfocos: [
-            'Síndromes Cromossômicas Específicas (Exceto Down)',
-            'Síndrome de Down: Diagnóstico e Manifestações Clínicas',
-            'Aconselhamento Genético em Doenças Cromossômicas',
-            'Cariótipo: Indicações e Interpretação',
-            'Microdeleções e Microduplicações Específicas',
-            'Array-CGH: Aplicações Clínicas'
+          "foco": "Neoplasias Pediátricas",
+          "subfocos": [
+            "Leucemia Linfoblástica Aguda (LLA): Mais Comum",
+            "Linfomas: Hodgkin e Não-Hodgkin Pediátricos",
+            "Neoplasias Pediátricas",
+            "Neuroblastoma: Tumor Sólido Extracraniano",
+            "Retinoblastoma: Leucocoria e Genética",
+            "Tumor de Wilms (Nefroblastoma)",
+            "Tumores do SNC: Astrocitoma e Meduloblastoma"
           ]
         }
       ]
     },
     {
-      tema: 'Dermatologia Pediátrica',
-      focos: [
+      "tema": "Ortopedia Pediátrica",
+      "focos": [
         {
-          foco: 'Dermatite Atópica: Critérios de Hanifin-Rajka e Manejo',
-          subfocos: [
-            'Critérios de Hanifin-Rajka',
-            'Manejo de Dermatite Atópica: Emolientes e Barreira Cutânea',
-            'Inibidores de Calcineurina',
-            'Distribuição por Idade: Flexuras',
-            'Hidratação: Base do Tratamento',
-            'Corticoide Tópico: Potência e Local'
+          "foco": "Displasia do Desenvolvimento do Quadril",
+          "subfocos": [
+            "Displasia do Desenvolvimento do Quadril",
+            "Fatores de Risco: Sexo Feminino, Pélvico, HF",
+            "Manobras de Avaliação Clínica do Quadril (Ortolani e Barlow)",
+            "Suspeitos de Barlow: Rastreamento por Imagem",
+            "Tratamento: Suspensório de Pavlik",
+            "USG de Quadril: Método de Graf"
           ]
         },
         {
-          foco: 'Escabiose e Pediculose',
-          subfocos: [
-            'Tratamento: Permetrina 5%, Ivermectina',
-            'Escabiose: Sarcoptes scabiei',
-            'Tratamento Domiciliar: Contatos',
-            'Pediculose Capitis: Lêndeas',
-            'Lesões: Túnel e Prurido Noturno'
+          "foco": "Escoliose Idiopática: Triagem Escolar e Indicação de Tratamento",
+          "subfocos": [
+            "<25°: Observação e Fisioterapia",
+            "25-45°: Colete de Milwaukee/Boston",
+            "Escoliose Idiopática: Triagem Escolar e Indicação de Tratamento"
           ]
         },
         {
-          foco: 'Impetigo',
-          subfocos: [
-            'Tratamento: Mupirocina Tópica e ATB Sistêmico',
-            'Impetigo: Etiologia e Diagnóstico',
-            'Impetigo Crostoso (Não-Bolhoso): S. aureus e S. pyogenes',
-            'Impetigo Bolhoso: Toxina Esfoliativa Estafilocócica',
-            'SSSS: Síndrome Pele Escaldada Estafilocócica',
-            'Complicações: GNPE e Febre Reumática'
+          "foco": "Geno Valgo/Varo: Fisiológico vs Patológico",
+          "subfocos": [
+            "Doença de Blount: Tíbia Vara Patológica",
+            "Evolução Fisiológica: Varo→Valgo→Normal",
+            "Geno Valgo/Varo: Fisiológico vs Patológico",
+            "Raquitismo: Valgo/Varo Persistente",
+            "Tratamento: Órteses e Hemiepifisiodese"
           ]
         },
         {
-          foco: 'Dermatite Seborreica',
-          subfocos: [
-            'Dermatite Seborreica Neonatal e Infantil (Crosta Láctea)',
-            'Milium Sebáceo Neonatal',
-            'Diagnóstico Diferencial: Dermatite Atópica',
-            'Malassezia furfur: Papel no Lactente',
-            'Tratamento: Óleo Mineral e Xampu Antifúngico'
+          "foco": "Geral",
+          "subfocos": []
+        },
+        {
+          "foco": "Pé Torto Congênito",
+          "subfocos": [
+            "Diagnóstico e Achados Clínicos do Pé Torto Congênito",
+            "Tratamento do Pé Torto Congênito: Método de Ponseti"
           ]
         }
       ]
     },
     {
-      tema: 'Imunologia e Alergia Pediátrica',
-      focos: [
+      "tema": "Pneumologia Pediátrica",
+      "focos": [
         {
-          foco: 'Erros Inatos da Imunidade (Imunodeficiências Primárias)',
-          subfocos: [
-            'Imunodeficiência Comum Variável (IDCV)',
-            'Imunodeficiências Combinadas Graves (SCID)',
-            'Defeitos de Fagócitos (Doença Granulomatosa Crônica)',
-            'Deficiência Seletiva de IgA',
-            'Defeitos do Complemento e Angioedema Hereditário'
+          "foco": "Asma na Infância",
+          "subfocos": [
+            "Asma em Pediatria: Diagnóstico e Apresentação Clínica",
+            "Asma na Infância",
+            "Crise: SABA + Corticoide Sistêmico",
+            "Critérios de Castro-Rodriguez (API)",
+            "Dispositivos: Espaçador é Obrigatório",
+            "Fenótipos: Sibilante Transitório vs Persistente",
+            "GINA Pediátrico: Steps de Tratamento"
           ]
         },
         {
-          foco: 'Alergia Alimentar em Pediatria (Exceto APLV)',
-          subfocos: [
-            'Quadro Clínico e Apresentações Clínicas',
-            'Diagnóstico e Investigação de Alergias Alimentares',
-            'Epidemiologia e Principais Alérgenos Alimentares',
-            'Prevenção e Janela Imunológica',
-            'Tratamento e Dieta de Exclusão'
+          "foco": "Asma: Crise Aguda e Manejo na Emergência Pediátrica",
+          "subfocos": [
+            "Asma: Crise Aguda e Manejo na Emergência Pediátrica",
+            "Diagnóstico Diferencial e Avaliação da Asma",
+            "Manejo de Crise Asmática Grave (Estado de Mal Asmático)",
+            "Manejo de Crise Asmática Leve a Moderada",
+            "Obstrução de Vias Aéreas em Lactentes: Diagnóstico",
+            "Tratamento de Manutenção e Prevenção da Asma"
           ]
         },
         {
-          foco: 'Anafilaxia na Infância: Reconhecimento e Manejo',
-          subfocos: [
-            'Tratamento Imediato: Adrenalina IM e Vias Aéreas',
-            'Critérios Diagnósticos e Reconhecimento Clínico',
-            'Prescrição de Autoinjetor de Adrenalina e Prevenção',
-            'Etiologias e Fatores Desencadeantes Comuns'
+          "foco": "Bronquiolite Viral Aguda",
+          "subfocos": [
+            "Bronquiolite Viral Aguda",
+            "Clínica: Sibilância e Hiperinsuflação",
+            "Critérios de Internação: SatO2 e FR",
+            "Fatores de Risco: Prematuridade, Cardiopatia",
+            "O Que NÃO Fazer: Beta2, Corticoide, Fisio",
+            "Tratamento: Suporte (O2, Hidratação)",
+            "VSR: Principal Agente Etiológico"
           ]
         },
         {
-          foco: 'Rinite Alérgica na Infância',
-          subfocos: [
-            'Tratamento: Corticoide Intranasal e Anti-histamínicos',
-            'Quadro Clínico e Sinais Físicos Clássicos',
-            'Diagnóstico Clínico e Diferencial',
-            'Classificação ARIA e Impacto na Asma'
+          "foco": "Coqueluche (Pertussis)",
+          "subfocos": [
+            "Complicações e Gravidade em Lactentes",
+            "Coqueluche (Pertussis)",
+            "Diagnóstico e Achados Laboratoriais",
+            "Fases da Doença e Apresentação Atípica",
+            "Quadro Clínico e Sintomatologia Clássica",
+            "Tratamento Antimicrobiano e Profilaxia"
+          ]
+        },
+        {
+          "foco": "Crupe, Laringotraqueíte e Estridor Agudo",
+          "subfocos": [
+            "Classificação: Westley Score",
+            "Crupe, Laringotraqueíte e Estridor Agudo",
+            "Diagnóstico Diferencial: Epiglotite",
+            "Etiologia: Parainfluenza",
+            "Tratamento: Dexametasona + Nebulização Adrenalina",
+            "Tríade: Tosse Ladrante, Estridor, Rouquidão"
+          ]
+        },
+        {
+          "foco": "Fibrose Cística",
+          "subfocos": [
+            "Colonização por P. aeruginosa",
+            "Enzimas Pancreáticas e DNase",
+            "Fibrose Cística",
+            "Manifestações GI: Íleo Meconial, Insuf. Pancreática",
+            "Manifestações Pulmonares: Bronquiectasias",
+            "Teste do Suor: Diagnóstico Confirmatório",
+            "Triagem: IRT no Pezinho"
+          ]
+        },
+        {
+          "foco": "Pneumonia Pediátrica",
+          "subfocos": [
+            "ATB Ambulatorial: Amoxicilina",
+            "ATB Hospitalar: Ampicilina ou Penicilina Cristalina",
+            "Complicações: Derrame Pleural e Empiema",
+            "Critérios de Internação e Gravidade",
+            "Etiologia por Idade: VSR, Pneumococo, Mycoplasma",
+            "Pneumonia Atípica: Macrolídeos",
+            "Pneumonia Pediátrica",
+            "Sinais de Gravidade: Tiragem, BAN, SatO2<92%"
+          ]
+        },
+        {
+          "foco": "Prevenção do VSR: Nirsevimabe e Palivizumabe",
+          "subfocos": [
+            "Cardiopatias e Displasia Broncopulmonar",
+            "Indicações de Palivizumabe para Prematuros e Cardiopatas",
+            "Nirsevimabe: Profilaxia de VSR (Nova Geração)",
+            "Prematuros <29 sem: Indicação Palivizumabe",
+            "Prevenção do VSR: Nirsevimabe e Palivizumabe",
+            "Sazonalidade: Abril a Setembro no Brasil"
           ]
         }
       ]
     },
     {
-      tema: 'Maus Tratos à Criança e Adolescente',
-      focos: [
+      "tema": "Puericultura e Crescimento",
+      "focos": [
         {
-          foco: 'Abuso Físico: Lesões Sentinela e Fraturas Suspeitas',
-          subfocos: [
-            'Lesões Cutâneas Suspeitas (Hematomas, Mordeduras)',
-            'Fraturas Altamente Específicas de Abuso (Metáfise, Costela)',
-            'Notificação Obrigatória e Fluxo de Proteção',
-            'Diagnóstico Diferencial (Osteogênese Imperfeita, Coagulopatias)'
+          "foco": "Aleitamento Materno",
+          "subfocos": [
+            "Aleitamento Materno",
+            "Armazenamento e Manejo do Leite Materno Ordenhado",
+            "Avaliação do Ganho Ponderal e Crescimento do Lactente",
+            "Composição e Benefícios do Leite Materno",
+            "Contraindicações Formais e Absolutas ao Aleitamento Materno",
+            "Manejo de Dificuldades e Desafios na Amamentação",
+            "Técnica de Amamentação e Pega Correta"
           ]
         },
         {
-          foco: 'Abuso Sexual na Infância: Diagnóstico e Profilaxias',
-          subfocos: [
-            'Profilaxia de ISTs, HIV e Gravidez Pós-Abuso',
-            'Exame Físico Genital e Lesões Anogenitais',
-            'Sinais Comportamentais e Psicológicos de Alerta',
-            'Notificação e Atendimento em Rede de Proteção'
+          "foco": "Alimentação Complementar",
+          "subfocos": [
+            "Alimentação Complementar",
+            "Alimentos Proibidos: Mel, Açúcar, Sal",
+            "BLW vs Tradicional",
+            "Início: 6 Meses Completos",
+            "Introdução de Proteínas e Ovos",
+            "Janela Imunológica: Prevenção de Alergias"
           ]
         },
         {
-          foco: 'Síndrome do Bebê Sacudido (Trauma Craniano Abusivo)',
-          subfocos: [
-            'Tríade Clássica: Hematoma Subdural, Hemorragia Retiniana, Encefalopatia',
-            'Neuroimagem: TC/RM e Diagnóstico de Fraturas Ocultas',
-            'Mecanismo do Trauma e Fisiopatologia',
-            'Prognóstico Neurológico e Sequelas a Longo Prazo'
+          "foco": "Calendário Vacinal",
+          "subfocos": [
+            "12-15 meses: Tríplice Viral, Varicela, Hepatite A",
+            "2-6 meses: Penta, VIP, Rotavírus, Pneumo10",
+            "4 anos: Reforços DTP/VIP e Varicela",
+            "Calendário Vacinal",
+            "Contraindicações: Imunossuprimidos e Vacinas Vivas",
+            "EAPV: Eventos Adversos Pós-Vacinais",
+            "Nascimento: BCG e Hepatite B"
+          ]
+        },
+        {
+          "foco": "Crescimento e Desenvolvimento",
+          "subfocos": [
+            "Avaliação Antropométrica e Curvas de Crescimento",
+            "Baixa Estatura: Investigação",
+            "Crescimento e Desenvolvimento",
+            "Curvas OMS: Peso, Estatura, PC",
+            "Idade Óssea: Quando Solicitar",
+            "Velocidade de Crescimento",
+            "Z-Score: Interpretação"
+          ]
+        },
+        {
+          "foco": "DNPM: Marcos do Desenvolvimento",
+          "subfocos": [
+            "Caderneta de Saúde: Vigilância do DNPM",
+            "DNPM: Marcos do Desenvolvimento",
+            "Linguagem: Balbucio, Palavras, Frases",
+            "Motor Fino: Pinça, Desenho, Escrita",
+            "Motor Grosso: Sentar, Engatinhar, Andar",
+            "Sinais de Alerta por Idade (Caderneta)",
+            "Social/Adaptativo: Sorriso, Estranho, Tchau"
+          ]
+        },
+        {
+          "foco": "Geral",
+          "subfocos": []
+        },
+        {
+          "foco": "Segurança da Criança e Prevenção de Acidentes",
+          "subfocos": [
+            "Afogamento: Principal Causa 1-4 Anos",
+            "Ambiente Doméstico: Quedas, Queimaduras",
+            "Intoxicações: Medicamentos e Produtos de Limpeza",
+            "Segurança da Criança e Prevenção de Acidentes",
+            "Sono Seguro: Posição Supina, Síndrome Morte Súbita",
+            "Transporte: Bebê Conforto, Cadeirinha"
+          ]
+        },
+        {
+          "foco": "Suplementação de Ferro e Vitamina D por Faixa Etária",
+          "subfocos": [
+            "Ferro Profilático: 1mg/kg/dia",
+            "Prematuros: 2-4mg/kg/dia",
+            "Quando Iniciar e Quando Suspender",
+            "SBP vs MS: Diferenças nas Recomendações",
+            "Suplementação de Ferro e Vitamina D por Faixa Etária",
+            "Vitamina D: 400UI/dia até 2 Anos"
+          ]
+        },
+        {
+          "foco": "Vacinas: Indicações, Contraindicações e Eventos Adversos",
+          "subfocos": [
+            "Contraindicações Absolutas e Relativas",
+            "EAPV: Notificação e Conduta",
+            "Falsas Contraindicações",
+            "Intervalos Mínimos entre Doses",
+            "Vacinas Vivas: Imunossuprimidos",
+            "Vacinas: Indicações, Contraindicações e Eventos Adversos"
           ]
         }
       ]
     },
     {
-      tema: 'Cirurgia Pediátrica',
-      focos: [
+      "tema": "Reumatologia Pediátrica",
+      "focos": [
         {
-          foco: 'Hérnias Inguinais, Umbilicais e Hidrocele na Criança',
-          subfocos: [
-            'Hérnia Inguinal: Conduta Cirúrgica e Risco de Encarceramento',
-            'Hérnia Umbilical: Indicação Cirúrgica vs Expectante',
-            'Hidrocele Comunicante vs Não Comunicante'
+          "foco": "Artrite Idiopática Juvenil",
+          "subfocos": [
+            "AIJ Oligoarticular: ≤4 Articulações, Risco de Uveíte",
+            "AIJ Poliarticular: FR+ e FR- (Diferenças)",
+            "AIJ Sistêmica (Still): Febre Diária e Rash Salmão",
+            "Artrite Idiopática Juvenil",
+            "Diagnóstico Diferencial e Critérios ILAR",
+            "Uveíte Anterior: Rastreamento Oftalmológico"
           ]
         },
         {
-          foco: 'Afecções da Genitália Externa Masculina (Fimose e Criptorquidia)',
-          subfocos: [
-            'Criptorquidia: Diagnóstico, Complicações e Timing Cirúrgico',
-            'Fimose Fisiológica vs Patológica e Tratamento Tópico'
+          "foco": "Doença de Kawasaki",
+          "subfocos": [
+            "AAS em Dose Anti-inflamatória",
+            "Aneurismas Coronarianos: ECO e Seguimento",
+            "Critérios: Febre ≥5 dias + 4/5 Principais",
+            "Doença de Kawasaki",
+            "IVIG 2g/kg: Tratamento até 10º Dia",
+            "Kawasaki Incompleto: Protocolo"
+          ]
+        },
+        {
+          "foco": "Dor Musculoesquelética na Criança",
+          "subfocos": [
+            "Artrite Séptica Pediátrica",
+            "Doença de Legg-Calvé-Perthes",
+            "Dor de Crescimento: Característica Noturna e Noturna",
+            "Dor Musculoesquelética na Criança",
+            "Epifisiólise (Deslizamento Epifisário)",
+            "Sinovite Transitória do Quadril"
+          ]
+        },
+        {
+          "foco": "Febre Reumática",
+          "subfocos": [
+            "Critérios de Jones: Diagnóstico e Aplicação",
+            "Febre Reumática",
+            "Febre Reumática: Etiologia e Epidemiologia",
+            "Manifestações Articulares na Febre Reumática",
+            "Manifestações Cardíacas na Febre Reumática",
+            "Manifestações Extracardíacas (Coreia, Nódulos, Eritema)",
+            "Tratamento e Profilaxia da Febre Reumática"
+          ]
+        },
+        {
+          "foco": "Lúpus Eritematoso Sistêmico Pediátrico",
+          "subfocos": [
+            "Anti-dsDNA e Complemento",
+            "Critérios ACR/EULAR Pediátrico",
+            "Manifestações Cutâneas Clássicas",
+            "Manifestações Hematológicas: Citopenias",
+            "Nefrite Lúpica: Classes e Tratamento",
+            "Tratamento: Hidroxicloroquina, Corticoide"
+          ]
+        },
+        {
+          "foco": "Púrpura de Henoch-Schönlein",
+          "subfocos": [
+            "Púrpura de Henoch-Schönlein",
+            "Púrpura de Henoch-Schönlein: Acometimento Renal (Nefrite)",
+            "Púrpura de Henoch-Schönlein: Apresentação Clínica Clássica",
+            "Púrpura de Henoch-Schönlein: Diagnóstico Diferencial e Abordagem Inicial",
+            "Púrpura de Henoch-Schönlein: Manejo Terapêutico",
+            "Púrpura de Henoch-Schönlein: Prognóstico e Complicações",
+            "Púrpura de Henoch-Schönlein: Tétrade Completa"
+          ]
+        },
+        {
+          "foco": "Síndrome Inflamatória Multissistêmica Pediátrica",
+          "subfocos": [
+            "Definição CDC/OMS: Febre + Inflamação + COVID",
+            "Diferencial com Kawasaki",
+            "Disfunção Cardíaca e Choque",
+            "Manifestações GI: Dor Abdominal, Vômitos",
+            "Síndrome Inflamatória Multissistêmica Pediátrica",
+            "Tratamento: IVIG + Corticoide"
           ]
         }
       ]
     },
     {
-      tema: 'Ortopedia Pediátrica',
-      focos: [
+      "tema": "Terapia Intensiva Pediátrica",
+      "focos": [
         {
-          foco: 'Displasia do Desenvolvimento do Quadril (DDQ)',
-          subfocos: [
-            'Manobras de Ortolani e Barlow no Exame Neonatal',
-            'Ultrassonografia de Quadril e Radiografia: Idades e Indicações',
-            'Tratamento: Suspensório de Pavlik e Manejo'
+          "foco": "Choque Pediátrico: Manejo Intensivo",
+          "subfocos": [
+            "Choque Frio vs Quente",
+            "Choque Pediátrico: Manejo Intensivo",
+            "Drogas Vasoativas: Adrenalina, Nora, Dopamina",
+            "Expansão: 20mL/kg SF em Bolus",
+            "Hidrocortisona: Quando Usar",
+            "Metas: PAM, Lactato, Débito Urinário"
           ]
         },
         {
-          foco: 'Deformidades Ortopédicas Comuns (Pé Torto, Deformidades Angulares)',
-          subfocos: [
-            'Joelho Varo e Joelho Valgo: Fisiológico vs Patológico',
-            'Pé Torto Congênito (PTC): Método de Ponseti',
-            'Marcha com Rotação Interna: Marcha em Adução'
+          "foco": "Convulsões e Status Epilepticus",
+          "subfocos": [
+            "Convulsões e Status Epilepticus",
+            "Etiologia: Febril, Metabólica, Estrutural",
+            "Investigação Emergencial: Glicemia, Eletrólitos",
+            "Primeira Linha: Diazepam IV/Retal ou Midazolam IM",
+            "Segunda Linha: Fenitoína IV",
+            "Status Refratário: Fenobarbital, Valproato"
+          ]
+        },
+        {
+          "foco": "Insuficiência Respiratória Aguda",
+          "subfocos": [
+            "Insuficiência Respiratória Aguda",
+            "IOT Pediátrica: Indicações e Técnica",
+            "Oxigenoterapia: Cateter, Máscara, Cânula Alto Fluxo",
+            "PARDS: Síndrome do Desconforto Respiratório Pediátrico",
+            "Sinais Clínicos: Tiragem, BAN, Gemência",
+            "Tipo I (Hipoxêmica) vs Tipo II (Hipercápnica)",
+            "VNI: CPAP e BiPAP Pediátrico"
+          ]
+        },
+        {
+          "foco": "PCR Pediátrica: Cuidados Pós-Parada",
+          "subfocos": [
+            "Cuidados Pós-Ressuscitação",
+            "Hipotermia Terapêutica",
+            "PALS: Algoritmo de PCR Pediátrica",
+            "PCR Pediátrica: Cuidados Pós-Parada",
+            "Ritmos Chocáveis: FV/TV sem Pulso",
+            "Ritmos Não-Chocáveis: Assistolia/AESP"
+          ]
+        },
+        {
+          "foco": "Sepse e Choque Séptico Pediátrico",
+          "subfocos": [
+            "Acesso e Ressuscitação Volêmica",
+            "ATB Empírico Precoce",
+            "Phoenix Criteria: Nova Definição",
+            "Primeira Hora: Bundle de Sepse",
+            "Princípios do Cuidado Intensivo Pediátrico",
+            "Sepse e Choque Séptico Pediátrico",
+            "Sinais de Disfunção Orgânica"
           ]
         }
       ]
     },
     {
-      tema: 'Oncologia Pediátrica',
-      focos: [
+      "tema": "Urgências Pediátricas",
+      "focos": [
         {
-          foco: 'Tumores Abdominais Pediátricos (Neuroblastoma e Tumor de Wilms)',
-          subfocos: [
-            'Neuroblastoma: Origem na Crista Neural e Metástases',
-            'Diagnóstico Diferencial: Wilms (Nefroblastoma) vs Neuroblastoma',
-            'Tumor de Wilms: Quadro Clínico, Hematúria e HAS'
+          "foco": "Choque Pediátrico: Reconhecimento e Estabilização",
+          "subfocos": [
+            "Acesso Venoso e IO",
+            "Choque Pediátrico: Reconhecimento e Estabilização",
+            "Expansão Volêmica Inicial",
+            "Sinais Precoces: Taquicardia, TEC Prolongado",
+            "Sinais Tardios: Hipotensão",
+            "Tipos: Hipovolêmico, Distributivo, Cardiogênico"
           ]
         },
         {
-          foco: 'Tumores do Sistema Nervoso Central na Criança',
-          subfocos: [
-            'Meduloblastoma: Tumor Maligno Mais Comum em Fossa Posterior',
-            'Sinais de Hipertensão Intracraniana e Fossa Posterior',
-            'Astrocitoma Pilosítico: Tumor Cerebral Mais Frequente'
+          "foco": "Corpo Estranho em Via Aérea: Aspiração e Desobstrução",
+          "subfocos": [
+            "Broncoscopia Rígida: Extração",
+            "Corpo Estranho em Via Aérea: Aspiração e Desobstrução",
+            "Corpos Estranhos Específicos: Baterias e Objetos Pontiagudos",
+            "Epidemiologia: <3 Anos, Amendoim",
+            "Manobra de Heimlich e Tapotagem",
+            "Prevenção: Alimentos de Risco",
+            "RX e Broncoscopia Diagnóstica"
+          ]
+        },
+        {
+          "foco": "Febre sem Foco de 0 a 36 Meses: Estratificação de Risco e Condutas",
+          "subfocos": [
+            "<28 dias: Internação e ATB Empírico",
+            "29-90 dias: Estratificação de Risco",
+            "Exames: Hemograma, EAS, PCR, Procalcitonina",
+            "Febre sem Foco de 0 a 36 Meses: Estratificação de Risco e Condutas",
+            "Rochester, Boston, Philadelphia: Critérios",
+            "Step-by-Step e PECARN: Novos Critérios"
+          ]
+        },
+        {
+          "foco": "Intoxicações Pediátricas",
+          "subfocos": [
+            "ABCDE e Estabilização",
+            "Antídotos Específicos: NAC, Atropina",
+            "Carvão Ativado: Indicações",
+            "Intoxicações Pediátricas",
+            "Lavagem Gástrica: Raramente Indicada",
+            "Principais Agentes: Paracetamol, Orgfosforados"
+          ]
+        },
+        {
+          "foco": "PCR Pediátrica: PALS e Ressuscitação",
+          "subfocos": [
+            "Acesso Vascular e Administração de Drogas",
+            "Causas Reversíveis e Ritmos de PCR",
+            "PCR Pediátrica: PALS e Ressuscitação",
+            "RCP em Situações Específicas",
+            "Reconhecimento e Abordagem Inicial da PCR",
+            "Suporte Avançado de Vida (SAV) em Pediatria",
+            "Suporte Básico de Vida (SBV) em Pediatria"
+          ]
+        },
+        {
+          "foco": "Síndrome Morte Súbita do Lactente (SMSL)",
+          "subfocos": [
+            "ALTE/BRUE: Evento Aparentemente Ameaçador",
+            "Ambiente Seguro: Supino, Colchão Firme",
+            "Chupeta e Aleitamento: Fatores Protetores",
+            "Definição: Morte Inexplicada <1 Ano",
+            "Fatores de Risco: Prono, Fumo, Colecho",
+            "Síndrome Morte Súbita do Lactente (SMSL)"
+          ]
+        },
+        {
+          "foco": "Trauma Pediátrico",
+          "subfocos": [
+            "Afogamento: Suporte e Aquecimento",
+            "ATLS Pediátrico: ABCDE Adaptado",
+            "Maus-Tratos Infantis: Sinais de Alerta",
+            "Queimaduras: Lund-Browder e Reposição",
+            "TCE Pediátrico: Glasgow e PECARN",
+            "Trauma Abdominal: Fígado e Baço",
+            "Trauma Pediátrico"
+          ]
+        },
+        {
+          "foco": "Urticária e Angioedema Pediátricos",
+          "subfocos": [
+            "Anafilaxia: Reconhecimento e Manejo Imediato",
+            "Angioedema: Manifestações e Obstrução de Vias Aéreas",
+            "Tratamento da Urticária/Angioedema",
+            "Urticária Aguda: Etiologias Comuns na Infância",
+            "Urticária Gigante e Reações a Picadas de Insetos"
           ]
         }
       ]
     }
   ]
 };
-
-

@@ -17,7 +17,9 @@ import {
   Phone,
   Trash2,
   Save,
-  Palette
+  Palette,
+  CalendarDays,
+  Clock
 } from 'lucide-react';
 import { PercentileColorTester } from './PercentileColorTester';
 
@@ -61,6 +63,44 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   const [phone, setPhone] = useState(user?.phone || '');
   const [state, setState] = useState(user?.state || 'SP');
   const [avatarPreview, setAvatarPreview] = useState<string>(user?.avatarUrl || '');
+
+  // Configuração da Prova Alvo e Reta Final (Countdown)
+  const [targetExam, setTargetExam] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('user_target_exam_name') || 'ENARE 2026';
+    }
+    return 'ENARE 2026';
+  });
+  const [targetExamDate, setTargetExamDate] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('user_target_exam_date') || '2026-11-01';
+    }
+    return '2026-11-01';
+  });
+
+  const examCountdown = React.useMemo(() => {
+    try {
+      const target = new Date(targetExamDate + 'T00:00:00');
+      const now = new Date();
+      const diffMs = target.getTime() - now.getTime();
+      const diffDays = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
+      const diffWeeks = Math.floor(diffDays / 7);
+      const diffMonths = (diffDays / 30).toFixed(1);
+      return { diffDays, diffWeeks, diffMonths };
+    } catch {
+      return { diffDays: 0, diffWeeks: 0, diffMonths: '0' };
+    }
+  }, [targetExamDate]);
+
+  const handleSaveExamTarget = (nameVal: string, dateVal: string) => {
+    setTargetExam(nameVal);
+    setTargetExamDate(dateVal);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('user_target_exam_name', nameVal);
+      localStorage.setItem('user_target_exam_date', dateVal);
+    }
+    setStatusMsg({ type: 'success', text: `Prova alvo configurada para ${nameVal}!` });
+  };
 
   // Estado dos campos de Senha
   const [currentPassword, setCurrentPassword] = useState('');
@@ -732,6 +772,98 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                 >
                   A+ Grande
                 </button>
+              </div>
+            </div>
+
+            {/* Reta Final para a Residência - Configuração da Prova e Contagem de Dias */}
+            <div className="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-4">
+              <div>
+                <h3 className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <CalendarDays className="w-3.5 h-3.5 text-blue-500" />
+                  <span>Prova Alvo e Contagem Regressiva (Reta Final)</span>
+                </h3>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                  Defina o concurso pretendido e acompanhe quantos dias faltam para a prova diretamente no seu perfil.
+                </p>
+              </div>
+
+              {/* Card visual do countdown */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-blue-950/40 via-slate-900/60 to-slate-950 border border-blue-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="space-y-1 text-center sm:text-left">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wide uppercase bg-blue-500/10 text-blue-400 border border-blue-500/30">
+                    <Clock className="w-3 h-3" />
+                    <span>Contagem Regressiva</span>
+                  </div>
+                  <div className="text-lg font-black text-white flex items-center gap-2 justify-center sm:justify-start">
+                    <GraduationCap className="w-5 h-5 text-blue-400" />
+                    <span>{targetExam}</span>
+                  </div>
+                  <p className="text-xs text-slate-400">
+                    Data prevista: {new Date(targetExamDate + 'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+                  </p>
+                </div>
+
+                <div className="bg-blue-900/30 border border-blue-500/30 px-6 py-3 rounded-2xl text-center min-w-[150px]">
+                  <div className="text-3xl font-black text-blue-400 tracking-tight leading-none">
+                    {examCountdown.diffDays}
+                    <span className="text-xs font-bold text-blue-300 uppercase ml-1.5 tracking-wider">dias</span>
+                  </div>
+                  <div className="text-[11px] font-semibold text-slate-400 mt-1">
+                    ~{examCountdown.diffWeeks} semanas • ~{examCountdown.diffMonths} meses
+                  </div>
+                </div>
+              </div>
+
+              {/* Seletor rápido de provas e data customizada */}
+              <div className="space-y-3 pt-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  {[
+                    { name: 'ENARE 2026', date: '2026-11-01' },
+                    { name: 'USP-SP 2026', date: '2026-11-15' },
+                    { name: 'UNICAMP 2026', date: '2026-11-20' },
+                    { name: 'SUS-SP 2026', date: '2026-12-06' },
+                    { name: 'AMRIGS 2026', date: '2026-11-29' }
+                  ].map((p) => (
+                    <button
+                      key={p.name}
+                      type="button"
+                      onClick={() => handleSaveExamTarget(p.name, p.date)}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                        targetExam === p.name
+                          ? 'bg-blue-600 text-white shadow-xs'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                      }`}
+                    >
+                      {p.name}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-600 dark:text-slate-400 mb-1">
+                      Nome da Prova / Concurso
+                    </label>
+                    <input
+                      type="text"
+                      value={targetExam}
+                      onChange={(e) => handleSaveExamTarget(e.target.value, targetExamDate)}
+                      placeholder="Ex: USP, ENARE, AMP..."
+                      className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold text-slate-600 dark:text-slate-400 mb-1">
+                      Data da Prova
+                    </label>
+                    <input
+                      type="date"
+                      value={targetExamDate}
+                      onChange={(e) => handleSaveExamTarget(targetExam, e.target.value)}
+                      className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

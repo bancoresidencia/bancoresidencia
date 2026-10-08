@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 
 export type ThemeMode = 'dark' | 'light';
 export type AccentColor = 'blue' | 'green' | 'orange' | 'purple' | 'red';
@@ -115,7 +115,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [accent, setAccentState] = useState<AccentColor>('blue');
   const [isMounted, setIsMounted] = useState<boolean>(false);
 
-  useEffect(() => {
+  const isInitialMount = useRef(true);
+
+  const applyThemeToDOM = (themeMode: ThemeMode, themeAccent: AccentColor) => {
     try {
       const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
       if (savedMode === 'dark' || savedMode === 'light') {
@@ -135,17 +137,30 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (!isMounted) return;
     try {
       const root = document.documentElement;
-      if (mode === 'dark') {
+      if (themeMode === 'dark') {
         root.classList.add('dark');
         root.classList.remove('light');
       } else {
         root.classList.remove('dark');
         root.classList.add('light');
       }
-      root.style.setProperty('--primary-color', ACCENT_CONFIGS[accent].primaryHex);
-      root.style.setProperty('--primary-hover', ACCENT_CONFIGS[accent].hoverHex);
-      root.style.setProperty('--glow-color', ACCENT_CONFIGS[accent].bgRgba);
-      root.style.setProperty('--accent-muted', ACCENT_CONFIGS[accent].bgRgba);
+      const config = ACCENT_CONFIGS[themeAccent] || ACCENT_CONFIGS.blue;
+      root.style.setProperty('--primary-color', config.primaryHex);
+      root.style.setProperty('--primary-hover', config.hoverHex);
+      root.style.setProperty('--glow-color', config.bgRgba);
+      root.style.setProperty('--accent-muted', config.bgRgba);
+    } catch {
+      // ignore
+    }
+  };
+
+  useEffect(() => {
+    applyThemeToDOM(mode, accent);
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+    try {
       localStorage.setItem('banco_theme_mode', mode);
       localStorage.setItem('banco_accent_color', accent);
     } catch {
@@ -154,15 +169,30 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, [mode, accent, isMounted]);
 
   const toggleMode = () => {
-    setModeState((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setModeState((prev) => {
+      const next = prev === 'dark' ? 'light' : 'dark';
+      try {
+        localStorage.setItem('banco_theme_mode', next);
+      } catch {}
+      applyThemeToDOM(next, accent);
+      return next;
+    });
   };
 
   const setMode = (newMode: ThemeMode) => {
     setModeState(newMode);
+    try {
+      localStorage.setItem('banco_theme_mode', newMode);
+    } catch {}
+    applyThemeToDOM(newMode, accent);
   };
 
   const setAccent = (newAccent: AccentColor) => {
     setAccentState(newAccent);
+    try {
+      localStorage.setItem('banco_accent_color', newAccent);
+    } catch {}
+    applyThemeToDOM(mode, newAccent);
   };
 
   const accentConfig = ACCENT_CONFIGS[accent];

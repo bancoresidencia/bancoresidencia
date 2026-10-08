@@ -22,7 +22,6 @@ import {
   SlidersHorizontal,
   Check,
   X,
-  GraduationCap,
   CalendarDays
 } from 'lucide-react';
 import { UserStats, QuestionList, ActiveTab, Modalidade } from '@/types';
@@ -75,6 +74,43 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   // Meta Diária de Tempo de Estudo personalizada pelo aluno (em minutos)
   const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(120);
+
+  // Prova alvo e contagem regressiva de dias restantes (exibido ao lado da constância)
+  const [targetExamName, setTargetExamName] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('user_target_exam_name') || 'ENARE 2026';
+    }
+    return 'ENARE 2026';
+  });
+
+  const [targetDaysLeft, setTargetDaysLeft] = useState<number>(() => {
+    try {
+      const savedDate = typeof window !== 'undefined' ? localStorage.getItem('user_target_exam_date') || '2026-11-01' : '2026-11-01';
+      const target = new Date(savedDate + 'T00:00:00');
+      const now = new Date();
+      const diffMs = target.getTime() - now.getTime();
+      return Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
+    } catch {
+      return 238;
+    }
+  });
+
+  // Atualização em resposta a eventos externos (ex: salvamento de novo alvo em modal)
+  useEffect(() => {
+    const handleStorage = () => {
+      try {
+        const savedName = localStorage.getItem('user_target_exam_name') || 'ENARE 2026';
+        const savedDate = localStorage.getItem('user_target_exam_date') || '2026-11-01';
+        setTargetExamName(savedName);
+        const target = new Date(savedDate + 'T00:00:00');
+        const now = new Date();
+        const diffMs = target.getTime() - now.getTime();
+        setTargetDaysLeft(Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24))));
+      } catch {}
+    };
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   // Modal / Edição de Metas sem valores pré-definidos (escolha livre do aluno)
   const [isEditingGoals, setIsEditingGoals] = useState(false);
@@ -251,21 +287,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           </div>
 
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-            {/* Card Contagem Regressiva para o ENARE / Prova Alvo */}
-            <div
-              onClick={() => setIsEditingCountdown(!isEditingCountdown)}
-              title="Clique para ver ou alterar detalhes da contagem regressiva"
-              className="flex items-center gap-3.5 bg-blue-50/90 dark:bg-blue-950/30 border border-blue-300/70 dark:border-blue-500/30 px-5 py-3 rounded-2xl shadow-xs cursor-pointer hover:bg-blue-100/70 dark:hover:bg-blue-900/40 transition-all"
-            >
+            {/* Card de Dias Faltando para a Prova Alvo (ao lado da constância) */}
+            <div className="flex items-center gap-3.5 bg-blue-50/80 dark:bg-blue-950/20 border border-blue-300/60 dark:border-blue-500/30 px-5 py-3 rounded-2xl shadow-xs">
               <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-inner shrink-0">
                 <CalendarDays className="w-5 h-5 text-blue-600 dark:text-blue-400" />
               </div>
               <div>
                 <div className="text-2xl font-black text-blue-600 dark:text-blue-400 font-sans tracking-tight leading-none">
-                  {countdownStats.daysRemaining} dias
+                  {targetDaysLeft} dias
                 </div>
-                <div className="text-[11px] text-blue-700 dark:text-blue-300/90 font-medium mt-1">
-                  para o {examName}
+                <div className="text-[11px] text-blue-700 dark:text-blue-300/80 font-medium mt-1">
+                  para a prova ({targetExamName})
                 </div>
               </div>
             </div>
@@ -282,108 +314,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 <div className="text-[11px] text-amber-700 dark:text-amber-300/80 font-medium mt-1">
                   de constância diária
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 1.5. Card de Contagem Regressiva para a Prova da Residência */}
-      <section className="bg-white dark:bg-[#0d1527] border border-blue-200/90 dark:border-blue-900/60 rounded-3xl p-5 sm:p-6 shadow-xs relative overflow-hidden transition-all">
-        {/* Glow de fundo */}
-        <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 relative z-10">
-          {/* Informações da Prova */}
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <span className="px-2.5 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 border border-blue-200 dark:border-blue-800 flex items-center gap-1.5 shadow-2xs">
-                <CalendarDays className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-                Reta Final para a Residência
-              </span>
-              <button
-                type="button"
-                onClick={() => setIsEditingCountdown(!isEditingCountdown)}
-                className="text-[11px] font-bold text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 underline underline-offset-2 transition-colors cursor-pointer"
-              >
-                {isEditingCountdown ? 'Cancelar' : 'Alterar Prova ou Data'}
-              </button>
-            </div>
-
-            {isEditingCountdown ? (
-              <form onSubmit={handleSaveCountdown} className="pt-2 space-y-3 max-w-lg">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                  <div>
-                    <label className="block text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">
-                      Nome da Prova / Concurso
-                    </label>
-                    <input
-                      type="text"
-                      value={editExamName}
-                      onChange={(e) => setEditExamName(e.target.value)}
-                      placeholder="Ex: ENARE 2026, USP-SP, SUS-SP..."
-                      className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">
-                      Data da Prova
-                    </label>
-                    <input
-                      type="date"
-                      value={editExamDateStr}
-                      onChange={(e) => setEditExamDateStr(e.target.value)}
-                      className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                    />
-                  </div>
-                </div>
-                <div className="flex items-center gap-2">
-                  <button
-                    type="submit"
-                    className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 transition-colors cursor-pointer shadow-xs"
-                  >
-                    Salvar Contagem
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setIsEditingCountdown(false)}
-                    className="px-3 py-2 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-                  >
-                    Fechar
-                  </button>
-                </div>
-              </form>
-            ) : (
-              <div>
-                <h2 className="font-heading text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-                  <GraduationCap className="w-5 h-5 text-blue-600 dark:text-blue-400 shrink-0" />
-                  <span>{examName}</span>
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-1">
-                  Data prevista: <strong className="text-slate-700 dark:text-slate-200">{countdownStats.formattedDate}</strong>
-                  {countdownStats.daysRemaining > 0 && (
-                    <span className="text-slate-400 dark:text-slate-500"> • Foco em resolução diária e revisão de pontos críticos</span>
-                  )}
-                </p>
-              </div>
-            )}
-          </div>
-
-          {/* Destaque Numérico da Contagem Regressiva com Fonte Inter */}
-          <div className="flex items-center gap-4 bg-blue-50/70 dark:bg-blue-950/30 border border-blue-200/80 dark:border-blue-900/40 px-6 py-4 rounded-2xl shrink-0">
-            <div className="text-center sm:text-right">
-              <div className="flex items-baseline justify-center sm:justify-end gap-1.5">
-                <span className="text-4xl sm:text-5xl font-black font-sans tracking-tight text-blue-600 dark:text-blue-400">
-                  {countdownStats.daysRemaining}
-                </span>
-                <span className="text-xs uppercase font-extrabold tracking-wider text-blue-800 dark:text-blue-300">
-                  dias
-                </span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-end gap-2 text-[11px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">
-                <span>~{countdownStats.weeksRemaining} semanas</span>
-                <span>•</span>
-                <span>~{countdownStats.monthsRemaining} meses</span>
               </div>
             </div>
           </div>
@@ -653,10 +583,42 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
                 </div>
               ) : (
-                <div className="pt-2.5 space-y-1">
-                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200">Em Calibração</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">
-                    Faltam <strong className="font-sans font-bold">{stats.percentileInfo.missingForApprox} questões</strong> para homologação.
+                <div className="pt-2 space-y-2.5">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-600 dark:text-amber-400 shrink-0 shadow-xs">
+                      <Clock className="w-5 h-5 animate-pulse" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center justify-between">
+                        <div className="text-sm font-extrabold text-slate-800 dark:text-slate-100">
+                          Em Calibração
+                        </div>
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                          {Math.max(0, 150 - (stats.percentileInfo.missingForApprox || 150))}/150
+                        </span>
+                      </div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400">
+                        Faltam <strong className="font-sans font-bold text-slate-700 dark:text-slate-300">{stats.percentileInfo.missingForApprox} questões</strong> para homologação.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Barra de progresso para a calibração */}
+                  <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-1.5 overflow-hidden border border-slate-200 dark:border-slate-800">
+                    <div
+                      className="h-1.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 transition-all duration-500"
+                      style={{
+                        width: `${Math.max(
+                          5,
+                          Math.min(
+                            100,
+                            Math.round(
+                              ((150 - (stats.percentileInfo.missingForApprox || 150)) / 150) * 100
+                            )
+                          )
+                        )}%`
+                      }}
+                    />
                   </div>
                 </div>
               )}
@@ -679,7 +641,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   <span>À frente de <strong className="font-sans font-bold">{stats.percentileInfo.percentile}%</strong></span>
                 </div>
               ) : (
-                <span className="text-[10px] text-slate-400">Status não calibrado</span>
+                <span className="text-[10px] text-amber-600/90 dark:text-amber-400/90 font-medium flex items-center gap-1">
+                  <Clock className="w-3 h-3 text-amber-500" />
+                  Calibração em andamento
+                </span>
               )}
 
               <button

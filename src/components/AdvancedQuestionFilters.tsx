@@ -40,6 +40,7 @@ import {
   bancasExaminadorasOficiais,
   mockQuestions
 } from '@/data/mockQuestions';
+import { getQuestionCount } from '@/data/hierarchyCounts';
 import { matchesStudyModalidades } from '@/utils/modalidades';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -85,28 +86,41 @@ const HighlightMatch: React.FC<{ text: string; query: string }> = ({ text, query
 };
 
 const POPULAR_SIGLAS = [
-  'ENARE / ENAMED',
-  'ENARE',
+  'INEP Revalida',
+  'UNICAMP/HC',
+  'CERMAM',
   'SUS-SP',
-  'USP-SP',
-  'HCFMUSP',
-  'HCFMRP-USP',
+  'USP/HCFMUSP',
+  'USP/HCRP',
   'UNIFESP/EPM',
-  'HC-UNICAMP',
   'AMRIGS',
   'PSU-MG',
   'SURCE',
   'SES-DF',
-  'SES-RJ',
+  'SES-GO',
   'SES-PE',
   'SUS-BA',
-  'Santa Casa SP',
-  'Revalida / Inep',
-  'Einstein',
-  'HCPA',
-  'UFCSPA',
-  'FHEMIG'
+  'Santa Casa de São Paulo',
+  'UFRGS/HCPA',
+  'UFRJ/HUCFF',
+  'UEL',
+  'Centro Universitário FMABC',
+  'UFMT Revalida',
+  'HIAE/Einstein'
 ];
+
+const MODALIDADE_COUNTS: Record<string, number> = {
+  'Residência Médica': 132965,
+  'Revalida': 2718,
+  'Ciclo Básico': 0,
+  'R+ Clínica Médica': 0,
+  'R+ Pediatria': 0,
+  'R+ Cirurgia': 0,
+  'R+ Ginecologia e Obstetrícia': 0,
+  'R+ Neuropediatria': 0,
+  'Título de Oftalmologia (CBO)': 0,
+  'Título Clínica Médica (TECM)': 0
+};
 
 export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = ({
   filters,
@@ -686,16 +700,30 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </span>
           </div>
 
-          {/* Opção para Criar Caderno (Padrão: Desmarcado) */}
-          <label className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
-            <input
-              type="checkbox"
-              checked={shouldCreateCaderno}
-              onChange={(e) => setShouldCreateCaderno(e.target.checked)}
-              className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700"
-            />
-            <span>Criar Caderno</span>
-          </label>
+          {/* Opção para Criar Caderno (Design Moderno & Bonito) */}
+          <button
+            type="button"
+            onClick={() => setShouldCreateCaderno(!shouldCreateCaderno)}
+            className={`flex items-center gap-2.5 px-3.5 py-2 rounded-2xl border transition-all cursor-pointer select-none ${
+              shouldCreateCaderno
+                ? 'bg-blue-50 dark:bg-blue-950/50 border-blue-500/60 text-blue-700 dark:text-blue-300 shadow-sm ring-1 ring-blue-500/30'
+                : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700'
+            }`}
+          >
+            <div
+              className={`w-4 h-4 rounded-md flex items-center justify-center transition-colors ${
+                shouldCreateCaderno
+                  ? 'bg-blue-600 text-white'
+                  : 'border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950'
+              }`}
+            >
+              {shouldCreateCaderno && <Check className="w-3 h-3 stroke-[3]" />}
+            </div>
+            <div className="flex items-center gap-1.5 text-xs font-bold">
+              <BookOpenCheck className={`w-3.5 h-3.5 ${shouldCreateCaderno ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'}`} />
+              <span>Criar Caderno</span>
+            </div>
+          </button>
 
           {shouldCreateCaderno ? (
             <button
@@ -905,8 +933,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                               </span>
                             </button>
                           </div>
-                          <span className="text-[10px] text-slate-400 font-semibold">
-                            {esp.temas.length} {esp.temas.length === 1 ? 'tema' : 'temas'}
+                          <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-mono font-bold border border-emerald-200 dark:border-emerald-800/60">
+                            {getQuestionCount('especialidades', esp.especialidade).toLocaleString('pt-BR')} questões
                           </span>
                         </div>
 
@@ -961,8 +989,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                         </span>
                                       </button>
                                     </div>
-                                    <span className="text-[10px] text-slate-400">
-                                      {tem.focos.length} {tem.focos.length === 1 ? 'foco' : 'focos'}
+                                    <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-mono font-bold border border-blue-200 dark:border-blue-800/60">
+                                      {getQuestionCount('temas', tem.tema).toLocaleString('pt-BR')} questões
                                     </span>
                                   </div>
 
@@ -1021,8 +1049,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                   </span>
                                                 </button>
                                               </div>
-                                              <span className="text-[10px] text-slate-400">
-                                                {foc.subfocos.length} subfocos
+                                              <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 font-mono font-bold border border-purple-200 dark:border-purple-800/60">
+                                                {getQuestionCount('focos', foc.foco).toLocaleString('pt-BR')} questões
                                               </span>
                                             </div>
 
@@ -1042,10 +1070,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                           : 'bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900'
                                                       }`}
                                                     >
-                                                      <HighlightMatch
-                                                        text={sub}
-                                                        query={hierarchySearch}
-                                                      />
+                                                      <span className="inline-flex items-center gap-1">
+                                                        <HighlightMatch
+                                                          text={sub}
+                                                          query={hierarchySearch}
+                                                        />
+                                                        <span className="text-[9px] font-mono font-bold opacity-75">
+                                                          ({getQuestionCount('subfocos', sub)})
+                                                        </span>
+                                                      </span>
                                                     </button>
                                                   );
                                                 })}
@@ -1251,7 +1284,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="p-4 pt-1 border-t border-slate-200 dark:border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
               {medevoModalidades.map((mod) => {
                 const isSelected = filters.modalidades.includes(mod);
-                const countForMod = mockQuestions.filter((q) => matchesStudyModalidades(q, [mod])).length;
+                const countForMod = MODALIDADE_COUNTS[mod] ?? 0;
                 return (
                   <button
                     key={mod}

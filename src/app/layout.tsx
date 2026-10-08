@@ -32,7 +32,53 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={`${inter.variable} ${figtree.variable} font-sans h-full antialiased dark`}
+      suppressHydrationWarning
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var m = localStorage.getItem('banco_theme_mode');
+                  if (m === 'light') {
+                    document.documentElement.classList.remove('dark');
+                    document.documentElement.classList.add('light');
+                  }
+                  var a = localStorage.getItem('banco_accent_color');
+                  var colors = {
+                    blue: '#2563eb',
+                    green: '#059669',
+                    orange: '#ea580c',
+                    purple: '#7c3aed',
+                    red: '#dc2626'
+                  };
+                  var hovers = {
+                    blue: '#1d4ed8',
+                    green: '#047857',
+                    orange: '#c2410c',
+                    purple: '#6d28d9',
+                    red: '#b91c1c'
+                  };
+                  var glows = {
+                    blue: 'rgba(37, 99, 235, 0.15)',
+                    green: 'rgba(5, 150, 105, 0.15)',
+                    orange: 'rgba(234, 88, 12, 0.15)',
+                    purple: 'rgba(124, 58, 237, 0.15)',
+                    red: 'rgba(220, 38, 38, 0.15)'
+                  };
+                  if (a && colors[a]) {
+                    document.documentElement.style.setProperty('--primary-color', colors[a]);
+                    document.documentElement.style.setProperty('--primary-hover', hovers[a]);
+                    document.documentElement.style.setProperty('--glow-color', glows[a]);
+                    document.documentElement.style.setProperty('--accent-muted', glows[a]);
+                  }
+                } catch (e) {}
+              })();
+            `
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col font-sans transition-colors duration-200">
         <ThemeProvider>
           <AuthProvider>{children}</AuthProvider>
