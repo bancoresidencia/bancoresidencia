@@ -77,9 +77,11 @@ async function processSpecialty(spec) {
 
         const originalIndex = questions.findIndex(q => q.id === solved.id);
         if (originalIndex !== -1) {
+          const gold = questions[originalIndex].correctAnswer || questions[originalIndex].correct_answer;
           questions[originalIndex] = {
             ...questions[originalIndex],
-            correctAnswer: solved.correctAnswer,
+            correctAnswer: gold,
+            correct_answer: gold,
             commentary: solved.commentary,
             mainErrorReason: solved.mainErrorReason,
             takeHomeMessage: solved.takeHomeMessage,

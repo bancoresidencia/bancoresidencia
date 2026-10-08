@@ -99,6 +99,7 @@ function rotateModel(reason = '') {
 
 /**
  * Resolve e gera a fundamentação pedagógica profunda de uma única questão
+ * garantindo o PRINCÍPIO DO GABARITO IMUTÁVEL (ÂNCORA DE OURO)
  */
 export async function solveQuestionDeep(question) {
   const letters = ['A', 'B', 'C', 'D', 'E'];
@@ -106,11 +107,20 @@ export async function solveQuestionDeep(question) {
     .map(opt => `${opt.letter}) ${opt.text}`)
     .join('\n');
 
+  // Trava de Ouro: Identifica o gabarito oficial real pré-existente
+  const goldAnswer = (question.correctAnswer || question.correct_answer || '').toUpperCase().trim();
+  if (!goldAnswer) {
+    throw new Error(`Questão ${question.id} não possui gabarito oficial da banca definido. Pelo Princípio da Âncora de Ouro, a IA é proibida de adivinhar gabaritos.`);
+  }
+
+  const goldOption = (question.options || []).find(o => o.letter === goldAnswer);
+  const goldOptionText = goldOption ? goldOption.text : '';
+
   const themes = getRelevantBookThemes(question.especialidade, question.tema);
   const themesStr = themes.length > 0 ? themes.join(', ') : question.tema || question.especialidade;
 
   const prompt = `Você é um preceptor médico de elite e especialista em provas oficiais de Residência Médica e Revalida no Brasil.
-Sua missão é resolver a questão com rigor acadêmico máximo, 100% de precisão e profundidade clínica.
+Sua missão é fundamentar tecnicamente a questão e o gabarito oficial da banca examinadora com rigor acadêmico máximo, 100% de precisão e profundidade clínica.
 
 Dados da Questão:
 - Instituição/Banca: ${question.institution || question.banca || 'Oficial'} (${question.year || 2024})
@@ -124,37 +134,32 @@ ${question.statement}
 Alternativas:
 ${formattedOptions}
 
-DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
-1. GABARITO OFICIAL HISTÓRICO DA BANCA EXAMINADORA:
-   - Verifique com certeza absoluta qual foi a letra real oficial divulgada pela banca examinadora (${question.institution || question.banca || 'Banca Oficial'}, ano ${question.year || 2024}).
-   - O gabarito registrado no campo "correctAnswer" DEVE ser a alternativa oficial considerada pela banca da questão.
+🔒 PRINCÍPIO DO GABARITO IMUTÁVEL (ÂNCORA DE OURO DA BANCA EXAMINADORA):
+- O GABARITO OFICIAL HISTÓRICO DEFINITIVO DA BANCA EXAMINADORA É A ALTERNATIVA ${goldAnswer}: "${goldOptionText}".
+- REGRA ABSOLUTA: VOCÊ NÃO DEVE ESCOLHER OUTRA ALTERNATIVA NEM DISCORDAR DA BANCA. O gabarito oficial considerado pelo concurso É A ALTERNATIVA ${goldAnswer}.
+- Sua tarefa como preceptor é EXPLICAR e FUNDAMENTAR com a literatura médica por que a banca deu a Alternativa ${goldAnswer} como correta, dissecando os erros de todos os outros distratores.
 
-2. EVOLUÇÃO DE DIRETRIZES & MUDANÇAS HISTÓRICAS (COMO ERA ANTES vs O QUE FICOU DEPOIS):
+DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
+1. FUNDAMENTAÇÃO DA ALTERNATIVA CORRETA (${goldAnswer}):
+   - Justifique em detalhes os fundamentos fisiopatológicos, critérios diagnósticos, escores de gravidade ou condutas preconizadas que embasam a escolha da banca.
+2. DISSECAÇÃO DOS DISTRATORES INCORRETOS:
+   - Dissequilhe especificamente o erro de cada uma das outras opções incorretas (dose errada, tempo incorreto, contraindicação, confusão de conceitos).
+3. EVOLUÇÃO DE DIRETRIZES & MUDANÇAS HISTÓRICAS (COMO ERA ANTES vs O QUE FICOU DEPOIS):
    - Avalie minuciosamente o ano da prova (${question.year || 2024}) e verifique se as diretrizes daquela época mudaram em relação aos dias de hoje.
    - SE HOUVE MUDANÇA DE DIRETRIZ OU CONDUTA:
-     * Explique claramente "COMO ERA NA ÉPOCA DA PROVA" (o motivo exato pelo qual a banca considerou aquela alternativa correta naquele ano).
+     * Explique claramente "COMO ERA NA ÉPOCA DA PROVA" (o motivo exato pelo qual a banca considerou a alternativa ${goldAnswer} correta naquele ano).
      * Explique detalhadamente "O QUE MUDOU E COMO É HOJE" (as diretrizes atuais e condutas contemporâneas vigentes).
      * Esclareça para o aluno como esse tema é cobrado atualmente nas provas de residência médica para não haver confusão no estudo.
    - SE A DIRETRIZ PERMANECE IGUAL:
      * Aponte expressamente que o protocolo permanece pleno e totalmente convergente com as diretrizes e literatura vigentes.
-
-3. ANÁLISE MINUCIOSA DAS ALTERNATIVAS:
-   - Alternativa Correta: Justifique em detalhes os fundamentos fisiopatológicos, critérios diagnósticos, escores de gravidade ou condutas preconizadas que a tornam irrefutável.
-   - Cada Distrator Incorreto: Dissequilhe especificamente o erro de cada opção incorreta (dose errada, tempo incorreto, contraindicação, confusão de conceitos).
-
 4. COMENTÁRIO FINAL / SÍNTESE CLÍNICA: Redija um texto unificado que sintetize o raciocínio clínico completo do caso, integrando anamnese, exame físico e conduta médica.
-
 5. PRINCIPAL MOTIVO QUE PODERIA LEVAR O ALUNO A ERRAR: Identifique a armadilha ("pegadinha") clássica, o distrator mais tentador ou a confusão comum de raciocínio.
-
 6. TAKE-HOME MESSAGE: Forneça uma pérola prática/mnemônica de alto impacto em 1 a 2 frases para retenção rápida na memória.
-
 7. EMBASAMENTO & REFERÊNCIAS: Cite nominalmente os livros médicos clássicos de referência e/ou diretrizes oficiais de sociedades brasileiras ou mundiais (ex: Sabiston Tratado de Cirurgia, Nelson Tratado de Pediatria, Diretrizes FEBRASGO, Tratado de Medicina de Família, Protocolos do Ministério da Saúde).
-
 8. REGRA ABSOLUTA: JAMAIS cite nomes de cursinhos ou marcas comerciais (como "estratégiamed"). Baseie-se unicamente nas obras médicas, diretrizes oficiais e na ciência.
 
 Responda ESTRITAMENTE em formato JSON com o seguinte schema:
 {
-  "correctAnswer": "A",
   "optionExplanations": {
     "A": "Justificativa da alternativa A...",
     "B": "Justificativa da alternativa B...",
@@ -224,8 +229,8 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
 
       const parsed = JSON.parse(rawText);
 
-      // Sanitiza e padroniza os campos
-      const correctAnswer = (parsed.correctAnswer || 'A').toUpperCase().trim().slice(0, 1);
+      // Trava Irrevogável: o gabarito É SEMPRE a âncora de ouro da banca
+      const correctAnswer = goldAnswer;
       const optionExplanations = {};
       if (parsed.optionExplanations) {
         for (const [letter, exp] of Object.entries(parsed.optionExplanations)) {
@@ -268,6 +273,7 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
       return {
         id: question.id,
         correctAnswer,
+        correct_answer: correctAnswer,
         commentary: formattedCommentary,
         mainErrorReason,
         takeHomeMessage,
