@@ -893,20 +893,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             <button
                               type="button"
                               onClick={() => toggleEspecialidade(esp.especialidade)}
-                              className={`text-sm sm:text-base font-bold transition-colors cursor-pointer flex items-center gap-2.5 ${
+                              className={`text-xs sm:text-[13px] font-bold transition-colors cursor-pointer flex items-center gap-2 ${
                                 isEspSelected
                                   ? 'text-emerald-600 dark:text-emerald-400'
                                   : 'text-slate-800 dark:text-slate-100 hover:text-emerald-600 dark:hover:text-emerald-300'
                               }`}
                             >
                               <div
-                                className={`w-4 h-4 rounded flex items-center justify-center border shrink-0 ${
+                                className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 ${
                                   isEspSelected
                                     ? 'bg-emerald-600 border-emerald-600 text-white'
                                     : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
                                 }`}
                               >
-                                {isEspSelected && <Check className="w-3 h-3 stroke-[3]" />}
+                                {isEspSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
                               </div>
                               <span>
                                 <HighlightMatch text={esp.especialidade} query={hierarchySearch} />
@@ -916,12 +916,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                           <div className="flex items-center gap-2 ml-auto">
                             {matchCountForEsp > 0 && (
-                              <span className="text-[11px] font-sans font-bold px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 flex items-center gap-1 shadow-xs">
+                              <span className="text-[10.5px] font-sans font-bold px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 flex items-center gap-1 shadow-xs">
                                 <Check className="w-3 h-3 stroke-[3]" />
                                 <span>Presente nesta especialidade ({matchCountForEsp} {matchCountForEsp === 1 ? 'item' : 'itens'})</span>
                               </span>
                             )}
-                            <span className="text-xs sm:text-sm px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-sans font-bold border border-emerald-200 dark:border-emerald-800/60">
+                            <span className="text-[11px] sm:text-xs px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-sans font-bold border border-emerald-200 dark:border-emerald-800/60">
                               {getQuestionCount('especialidades', esp.especialidade).toLocaleString('pt-BR')} questões
                             </span>
                           </div>
@@ -929,13 +929,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                         {/* Temas da Especialidade */}
                         {isEspOpen && (
-                          <div className="pl-6 space-y-3 border-l-2 border-slate-100 dark:border-slate-800 ml-2 pt-1.5 pb-1">
+                          <div className="pl-6 space-y-2.5 border-l-2 border-slate-100 dark:border-slate-800 ml-2 pt-1 pb-1">
                             {esp.temas.map((tem) => {
                               const isTemaOpen = !!expandedTema[tem.tema];
                               const isTemaSelected = filters.temas.includes(tem.tema);
 
                               return (
-                                <div key={tem.tema} className="space-y-2 pt-1">
+                                <div key={tem.tema} className="space-y-1.5 pt-1">
                                   {/* Linha Tema */}
                                   <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-2">
@@ -959,40 +959,40 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                       <button
                                         type="button"
                                         onClick={() => toggleTema(tem.tema)}
-                                        className={`text-[13px] sm:text-sm transition-colors cursor-pointer flex items-center gap-2.5 ${
+                                        className={`text-xs sm:text-[12.5px] transition-colors cursor-pointer flex items-center gap-2 ${
                                           isTemaSelected
                                             ? 'text-blue-600 dark:text-blue-400 font-bold'
-                                            : 'text-slate-700 dark:text-slate-200 font-semibold hover:text-blue-600 dark:hover:text-blue-300'
+                                            : 'text-slate-700 dark:text-slate-200 font-medium hover:text-blue-600 dark:hover:text-blue-300'
                                         }`}
                                       >
                                         <div
-                                          className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 ${
+                                          className={`w-3 h-3 rounded flex items-center justify-center border shrink-0 ${
                                             isTemaSelected
                                               ? 'bg-blue-600 border-blue-600 text-white'
                                               : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
                                           }`}
                                         >
-                                          {isTemaSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                                          {isTemaSelected && <Check className="w-2 h-2 stroke-[3]" />}
                                         </div>
                                         <span>
                                           <HighlightMatch text={tem.tema} query={hierarchySearch} />
                                         </span>
                                       </button>
                                     </div>
-                                    <span className="text-xs sm:text-[13px] px-2.5 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-sans font-bold border border-blue-200 dark:border-blue-800/60">
+                                    <span className="text-[11px] sm:text-xs px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-sans font-bold border border-blue-200 dark:border-blue-800/60">
                                       {getQuestionCount('temas', tem.tema).toLocaleString('pt-BR')} questões
                                     </span>
                                   </div>
 
                                   {/* Focos do Tema */}
                                   {isTemaOpen && (
-                                    <div className="pl-6 space-y-2.5 border-l-2 border-slate-100 dark:border-slate-800 ml-2 pt-1 pb-1">
+                                    <div className="pl-6 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 ml-2 pt-1 pb-1">
                                       {tem.focos.map((foc) => {
                                         const isFocoOpen = !!expandedFoco[foc.foco];
                                         const isFocoSelected = filters.focos.includes(foc.foco);
 
                                         return (
-                                          <div key={foc.foco} className="space-y-1.5">
+                                          <div key={foc.foco} className="space-y-1">
                                             <div className="flex items-center justify-between">
                                               <div className="flex items-center gap-2">
                                                 <button
@@ -1015,20 +1015,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                 <button
                                                   type="button"
                                                   onClick={() => toggleFoco(foc.foco)}
-                                                  className={`text-[13px] sm:text-sm transition-colors cursor-pointer flex items-center gap-2 ${
+                                                  className={`text-[11.5px] sm:text-xs transition-colors cursor-pointer flex items-center gap-1.5 ${
                                                     isFocoSelected
                                                       ? 'text-purple-600 dark:text-purple-400 font-bold'
                                                       : 'text-slate-600 dark:text-slate-300 font-medium hover:text-purple-600 dark:hover:text-purple-300'
                                                   }`}
                                                 >
                                                   <div
-                                                    className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 ${
+                                                    className={`w-3 h-3 rounded flex items-center justify-center border shrink-0 ${
                                                       isFocoSelected
                                                         ? 'bg-purple-600 border-purple-600 text-white'
                                                         : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
                                                     }`}
                                                   >
-                                                    {isFocoSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                                                    {isFocoSelected && <Check className="w-2 h-2 stroke-[3]" />}
                                                   </div>
                                                   <span>
                                                     <HighlightMatch
@@ -1038,43 +1038,43 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                   </span>
                                                 </button>
                                               </div>
-                                              <span className="text-xs sm:text-[13px] px-2.5 py-0.5 rounded-md bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 font-sans font-bold border border-purple-200 dark:border-purple-800/60">
+                                              <span className="text-[11px] px-2 py-0.5 rounded-md bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 font-sans font-bold border border-purple-200 dark:border-purple-800/60">
                                                 {getQuestionCount('focos', foc.foco).toLocaleString('pt-BR')} questões
                                               </span>
                                             </div>
 
                                             {/* Subfocos do Foco: Um abaixo do outro em lista vertical */}
                                             {isFocoOpen && (
-                                              <div className="pl-6 pt-2 pb-1 space-y-1.5 border-l-2 border-slate-100 dark:border-slate-800 ml-2">
+                                              <div className="pl-6 pt-1.5 pb-1 space-y-1 border-l-2 border-slate-100 dark:border-slate-800 ml-2">
                                                 {foc.subfocos.map((sub) => {
                                                   const isSubSelected = filters.subfocos.includes(sub);
                                                   const subCount = getQuestionCount('subfocos', sub);
                                                   return (
                                                     <div
                                                       key={sub}
-                                                      className="flex items-center justify-between py-1.5 px-2.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/60 transition-colors"
+                                                      className="flex items-center justify-between py-1 px-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/60 transition-colors"
                                                     >
                                                       <button
                                                         type="button"
                                                         onClick={() => toggleSubfoco(sub)}
-                                                        className={`text-[13px] sm:text-sm transition-colors cursor-pointer flex items-center gap-2.5 text-left ${
+                                                        className={`text-[11.5px] sm:text-xs transition-colors cursor-pointer flex items-center gap-2 text-left ${
                                                           isSubSelected
                                                             ? 'text-purple-600 dark:text-purple-400 font-bold'
                                                             : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                                                         }`}
                                                       >
                                                         <div
-                                                          className={`w-3.5 h-3.5 rounded flex items-center justify-center border shrink-0 ${
+                                                          className={`w-3 h-3 rounded flex items-center justify-center border shrink-0 ${
                                                             isSubSelected
                                                               ? 'bg-purple-600 border-purple-600 text-white'
                                                               : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
                                                           }`}
                                                         >
-                                                          {isSubSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                                                          {isSubSelected && <Check className="w-2 h-2 stroke-[3]" />}
                                                         </div>
                                                         <span>{sub}</span>
                                                       </button>
-                                                      <span className="text-xs sm:text-[13px] font-sans font-bold text-slate-400 dark:text-slate-500 shrink-0 ml-2">
+                                                      <span className="text-[11px] font-sans font-medium text-slate-400 dark:text-slate-500 shrink-0 ml-2">
                                                         {subCount.toLocaleString('pt-BR')} questões
                                                       </span>
                                                     </div>

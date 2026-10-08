@@ -21,10 +21,13 @@ import {
   AlertTriangle,
   Lightbulb,
   Library,
-  History
+  History,
+  FolderPlus
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { QuestionComments } from './QuestionComments';
+import { SendQuestionToFolderModal } from './SendQuestionToFolderModal';
+import { Folder } from '@/types';
 
 interface QuestionCardProps {
   question: Question;
@@ -36,6 +39,10 @@ interface QuestionCardProps {
   onChangeFontSize?: (size: 'sm' | 'base' | 'lg') => void;
   isBookmarked?: boolean;
   onToggleBookmark?: (questionId: string) => void;
+  folders?: Folder[];
+  onCreateFolder?: (name: string, parentId: string | null) => void;
+  onSaveToFolder?: (questionId: string, folderId: string, folderName: string) => void;
+  savedFolderIds?: string[];
 }
 
 interface TextHighlight {
@@ -65,9 +72,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   fontSize = 'sm',
   onChangeFontSize,
   isBookmarked,
-  onToggleBookmark
+  onToggleBookmark,
+  folders,
+  onCreateFolder,
+  onSaveToFolder,
+  savedFolderIds = []
 }) => {
   const { accentConfig } = useTheme();
+
+  // Modal para salvar em pastas de 3 níveis
+  const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
 
   // Estado de favoritar (sincronizado com props e localStorage)
   const [internalBookmarked, setInternalBookmarked] = useState<boolean>(false);
@@ -504,6 +518,27 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             />
             <span>{isFavorited ? 'Favoritada' : 'Favoritar'}</span>
           </button>
+
+          {/* Botão de Salvar a Questão em Pasta Personalizada */}
+          {folders && onSaveToFolder && (
+            <button
+              type="button"
+              onClick={() => setIsFolderModalOpen(true)}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
+                savedFolderIds.length > 0
+                  ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-300 dark:border-blue-700/60 text-blue-700 dark:text-blue-300'
+                  : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+              }`}
+              title="Salvar esta questão em uma pasta de estudos"
+            >
+              <FolderPlus
+                className={`w-3.5 h-3.5 transition-transform ${
+                  savedFolderIds.length > 0 ? 'text-blue-600 dark:text-blue-400 scale-110' : 'text-slate-400'
+                }`}
+              />
+              <span>{savedFolderIds.length > 0 ? `Na Pasta (${savedFolderIds.length})` : 'Salvar na Pasta'}</span>
+            </button>
+          )}
 
           {/* Badges Extras: Visíveis APENAS se o aluno apertar para ver detalhes */}
           {showDetails && (
@@ -1087,6 +1122,21 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         questionId={question.id}
         isAnswered={isAnswered}
       />
+
+      {/* Modal para Salvar Questão em Pastas (3 níveis) */}
+      {folders && onSaveToFolder && (
+        <SendQuestionToFolderModal
+          isOpen={isFolderModalOpen}
+          onClose={() => setIsFolderModalOpen(false)}
+          question={question}
+          folders={folders}
+          onCreateFolder={(name, parentId) => {
+            if (onCreateFolder) onCreateFolder(name, parentId);
+          }}
+          onSaveToFolder={onSaveToFolder}
+          savedFolderIds={savedFolderIds}
+        />
+      )}
     </article>
   );
 };

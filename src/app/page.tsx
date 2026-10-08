@@ -5,6 +5,7 @@ import { mockQuestions } from '@/data/mockQuestions';
 import { initialFolders, initialLists } from '@/data/mockLists';
 import { AdvancedQuestionFilters } from '@/components/AdvancedQuestionFilters';
 import { QuestionCard } from '@/components/QuestionCard';
+import { CreateCadernoModal } from '@/components/CreateCadernoModal';
 import { StatsDashboard } from '@/components/StatsDashboard';
 import { StudentHomeDashboard } from '@/components/StudentHomeDashboard';
 import { ListManager } from '@/components/ListManager';
@@ -272,8 +273,23 @@ export default function Home() {
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
   const [reportedQuestionIds, setReportedQuestionIds] = useState<Record<string, boolean>>({});
-  // Padrão: não criar caderno ao resolver (aluno precisa marcar explicitamente para criar)
-  const [shouldCreateCadernoOnSolve, setShouldCreateCadernoOnSolve] = useState<boolean>(false);
+  // Modal avançado de criação de caderno personalizado (distribuição por especialidade/tema/foco/subfoco e pastas de 3 níveis)
+  const [isCreateCadernoModalOpen, setIsCreateCadernoModalOpen] = useState<boolean>(false);
+  // Mapeamento de questões salvas em pastas pelo aluno
+  const [savedQuestionsFolderMap, setSavedQuestionsFolderMap] = useState<Record<string, string[]>>({});
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const raw = localStorage.getItem('medevo_saved_questions_folder_map');
+        if (raw) {
+          setSavedQuestionsFolderMap(JSON.parse(raw));
+        }
+      } catch {
+        // ignore
+      }
+    }
+  }, []);
 
   // Cronômetro para resolução de questão sequencial
   useEffect(() => {
@@ -513,23 +529,125 @@ export default function Home() {
     });
   };
 
-  // Criar nova lista diretamente a partir do filtro configurado
+  // Criar nova lista diretamente a partir do filtro configurado: abre o modal de distribuição por especialidade/tema/foco/subfoco e seleção de pasta
   const handleCreateListFromFilter = () => {
-    const title = advancedFilters.temas[0] || advancedFilters.especialidades[0] || 'Caderno Personalizado de Estudos';
+    setIsCreateCadernoModalOpen(true);
+  };
+
+  // Confirmação da criação do caderno customizado com cotas por área e pasta
+  const handleConfirmCreateCaderno = (config: {
+    title: string;
+    folderId: string | null;
+    questionCountsByItem: Record<string, number>;
+    totalQuestions: number;
+    startSolvingImmediately: boolean;
+  }) => {
+    const pool = supabaseQuestions.length > 0 ? supabaseQuestions : mockQuestions;
+    const selectedIds: string[] = [];
+    const usedIds = new Set<string>();
+
+    Object.entries(config.questionCountsByItem).forEach(([itemName, count]) => {
+      if (count <= 0) return;
+      const matching = pool.filter((q) => {
+        if (usedIds.has(q.id)) return false;
+        return (
+          q.especialidade === itemName ||
+          q.specialty === itemName ||
+          q.tema === itemName ||
+          q.foco === itemName ||
+          q.subfoco === itemName
+        );
+      });
+
+      const chosen = matching.slice(0, count);
+      chosen.forEach((q) => {
+        selectedIds.push(q.id);
+        usedIds.add(q.id);
+      });
+    });
+
+    // Se ainda faltar questões ou se nenhuma correspondência direta foi encontrada, completa com as filtradas
+    if (selectedIds.length === 0) {
+      const fallback = (filteredQuestions.length > 0 ? filteredQuestions : pool).slice(0, Math.max(1, config.totalQuestions));
+      fallback.forEach((q) => selectedIds.push(q.id));
+    }
+
     const newList: QuestionList = {
       id: `list-${Date.now()}`,
-      title: `${title} (${filteredQuestions.length} questões)`,
-      folderId: undefined,
-      questionIds: filteredQuestions.map((q) => q.id),
-      totalQuestions: Math.max(filteredQuestions.length, 10),
+      title: `${config.title} (${selectedIds.length} questões)`,
+      folderId: config.folderId || undefined,
+      questionIds: selectedIds,
+      totalQuestions: selectedIds.length,
       completedQuestions: 0,
       lastStudiedAt: 'Criada agora',
       inProgress: false,
       progressPercentage: 0
     };
+
     setLists((prev) => [newList, ...prev]);
-    setActiveListId(newList.id);
-    setActiveTab('listas');
+    setIsCreateCadernoModalOpen(false);
+
+    if (config.startSolvingImmediately) {
+      setActiveListId(newList.id);
+      setActiveTab('banco');
+      setBancoMode('resolucao');
+      setCurrentQuestionIndex(0);
+      setQuestionTimer(0);
+    } else {
+      setActiveListId(newList.id);
+      setActiveTab('listas');
+    }
+  };
+
+  // Salvar uma questão individual visualizada em uma pasta específica
+  const handleSaveQuestionToFolder = (questionId: string, folderId: string, folderName: string) => {
+    // 1. Atualiza mapa em memória e localStorage
+    setSavedQuestionsFolderMap((prev) => {
+      const current = prev[questionId] || [];
+      if (current.includes(folderId)) return prev;
+      const nextMap = { ...prev, [questionId]: [...current, folderId] };
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('medevo_saved_questions_folder_map', JSON.stringify(nextMap));
+        } catch {
+          // ignore
+        }
+      }
+      return nextMap;
+    });
+
+    // 2. Adiciona à lista correspondente daquela pasta ou cria nova
+    setLists((prev) => {
+      const existingListIndex = prev.findIndex((l) => l.folderId === folderId);
+      if (existingListIndex !== -1) {
+        const targetList = prev[existingListIndex];
+        if (targetList.questionIds.includes(questionId)) {
+          return prev;
+        }
+        const updatedList: QuestionList = {
+          ...targetList,
+          questionIds: [questionId, ...targetList.questionIds],
+          totalQuestions: targetList.questionIds.length + 1,
+          lastStudiedAt: 'Atualizado recentemente'
+        };
+        const nextLists = [...prev];
+        nextLists[existingListIndex] = updatedList;
+        return nextLists;
+      } else {
+        const newList: QuestionList = {
+          id: `list-folder-${folderId}-${Date.now()}`,
+          title: `Questões Salvas - ${folderName}`,
+          folderId,
+          questionIds: [questionId],
+          totalQuestions: 1,
+          completedQuestions: 0,
+          lastStudiedAt: 'Criada recentemente',
+          inProgress: false,
+          progressPercentage: 0
+        };
+        return [newList, ...prev];
+      }
+    });
   };
 
   const handleCreateFolder = (name: string, parentId: string | null) => {
@@ -548,8 +666,22 @@ export default function Home() {
     );
   };
 
+  // Exclusão recursiva de pastas em até 3 níveis
   const handleDeleteFolder = (folderId: string) => {
-    setFolders((prev) => prev.filter((f) => f.id !== folderId && f.parentId !== folderId));
+    setFolders((prev) => {
+      const toDelete = new Set<string>([folderId]);
+      let addedMore = true;
+      while (addedMore) {
+        addedMore = false;
+        for (const f of prev) {
+          if (f.parentId && toDelete.has(f.parentId) && !toDelete.has(f.id)) {
+            toDelete.add(f.id);
+            addedMore = true;
+          }
+        }
+      }
+      return prev.filter((f) => !toDelete.has(f.id));
+    });
     setLists((prev) =>
       prev.map((l) => (l.folderId === folderId ? { ...l, folderId: undefined } : l))
     );
@@ -1174,50 +1306,31 @@ export default function Home() {
                     }}
                   />
 
-                  {/* Botão de Rodapé para Iniciar Resolução */}
+                  {/* Botão de Rodapé para Iniciar Resolução ou Criar Caderno */}
                   <div className="flex flex-wrap items-center justify-end gap-3 pt-2">
                     <button
                       type="button"
-                      onClick={() => setShouldCreateCadernoOnSolve(!shouldCreateCadernoOnSolve)}
-                      className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
-                        shouldCreateCadernoOnSolve
-                          ? 'bg-blue-500/10 border-blue-500/40 text-blue-600 dark:text-blue-400 ring-2 ring-blue-500/20 shadow-blue-500/10'
-                          : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700'
-                      }`}
+                      onClick={() => setIsCreateCadernoModalOpen(true)}
+                      className="flex items-center gap-2 px-4.5 py-3 rounded-2xl border text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-xs bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800"
                     >
-                      <div className={`w-4 h-4 rounded flex items-center justify-center transition-colors ${
-                        shouldCreateCadernoOnSolve ? 'bg-blue-600 text-white' : 'border border-slate-400 dark:border-slate-600'
-                      }`}>
-                        {shouldCreateCadernoOnSolve && <Check className="w-3 h-3 stroke-[3]" />}
-                      </div>
-                      <FolderPlus className="w-4 h-4" />
-                      <span>Criar Caderno de Questões</span>
+                      <FolderPlus className="w-4 h-4 text-blue-500" />
+                      <span>Criar Caderno Personalizado</span>
                     </button>
 
                     <button
                       type="button"
                       onClick={() => {
-                        if (shouldCreateCadernoOnSolve) {
-                          handleCreateListFromFilter();
-                        } else {
-                          setActiveListId(null);
-                          setBancoMode('resolucao');
-                          setCurrentQuestionIndex(0);
-                          setQuestionTimer(0);
-                        }
+                        setActiveListId(null);
+                        setBancoMode('resolucao');
+                        setCurrentQuestionIndex(0);
+                        setQuestionTimer(0);
                       }}
                       className="flex items-center gap-2 px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
-                      {shouldCreateCadernoOnSolve ? (
-                        <BookOpenCheck className="w-4 h-4" />
-                      ) : (
-                        <Play className="w-4 h-4 fill-current" />
-                      )}
+                      <Play className="w-4 h-4 fill-current" />
                       <span>
-                        {shouldCreateCadernoOnSolve
-                          ? `Criar Caderno e Iniciar (${totalSupabaseCount.toLocaleString('pt-BR')} questões) →`
-                          : `Iniciar Resolução (${totalSupabaseCount.toLocaleString('pt-BR')} questões) →`}
+                        Iniciar Resolução ({totalSupabaseCount.toLocaleString('pt-BR')} questões) →
                       </span>
                     </button>
                   </div>
@@ -1748,6 +1861,10 @@ export default function Home() {
                           userAnswer={userAnswers[visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)].id]?.letter}
                           fontSize={fontSize}
                           onChangeFontSize={handleFontSizeChange}
+                          folders={folders}
+                          onCreateFolder={handleCreateFolder}
+                          onSaveToFolder={handleSaveQuestionToFolder}
+                          savedFolderIds={savedQuestionsFolderMap[visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)].id] || []}
                         />
                       )}
 
@@ -1907,6 +2024,17 @@ export default function Home() {
           </div>
         </footer>
       </div>
+
+      {/* Modal Avançado de Criação de Caderno Personalizado com Cotas e Pastas em 3 Níveis */}
+      <CreateCadernoModal
+        isOpen={isCreateCadernoModalOpen}
+        onClose={() => setIsCreateCadernoModalOpen(false)}
+        filters={advancedFilters}
+        folders={folders}
+        onCreateFolder={handleCreateFolder}
+        onConfirmCreate={handleConfirmCreateCaderno}
+        availableQuestionsCount={totalSupabaseCount}
+      />
     </div>
   );
 }

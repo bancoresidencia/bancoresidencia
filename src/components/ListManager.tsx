@@ -214,10 +214,20 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 onChange={(e) => setFolderParentId(e.target.value ? e.target.value : null)}
                 className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
-                <option value="">Pasta Raiz (Principal)</option>
-                {folders.map((f) => (
-                  <option key={f.id} value={f.id}>{f.name}</option>
-                ))}
+                <option value="">📁 Pasta Maior (Nível 1 - Raiz)</option>
+                {rootFolders.map((r) => {
+                  const lvl2s = getSubfolders(r.id);
+                  return (
+                    <React.Fragment key={r.id}>
+                      <option value={r.id}>📁 {r.name} (Nível 1 → criará Nível 2)</option>
+                      {lvl2s.map((l2) => (
+                        <option key={l2.id} value={l2.id}>
+                          &nbsp;&nbsp;↳ 📁 {l2.name} (Nível 2 → criará Nível 3)
+                        </option>
+                      ))}
+                    </React.Fragment>
+                  );
+                })}
               </select>
             </div>
           </div>
@@ -367,10 +377,28 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 onChange={(e) => setEditingList({ ...editingList, folderId: e.target.value || null })}
                 className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
-                <option value="">Nenhuma pasta (Raiz)</option>
-                {folders.map((f) => (
-                  <option key={f.id} value={f.id}>{f.name}</option>
-                ))}
+                <option value="">📁 Nenhuma pasta (Raiz de Cadernos)</option>
+                {rootFolders.map((r) => {
+                  const lvl2s = getSubfolders(r.id);
+                  return (
+                    <React.Fragment key={r.id}>
+                      <option value={r.id}>📁 {r.name} (Nível 1)</option>
+                      {lvl2s.map((l2) => {
+                        const lvl3s = getSubfolders(l2.id);
+                        return (
+                          <React.Fragment key={l2.id}>
+                            <option value={l2.id}>&nbsp;&nbsp;↳ 📁 {l2.name} (Nível 2)</option>
+                            {lvl3s.map((l3) => (
+                              <option key={l3.id} value={l3.id}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;↳ ↳ 📁 {l3.name} (Nível 3)
+                              </option>
+                            ))}
+                          </React.Fragment>
+                        );
+                      })}
+                    </React.Fragment>
+                  );
+                })}
               </select>
             </div>
           </div>
@@ -442,10 +470,28 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 onChange={(e) => setListFolderId(e.target.value ? e.target.value : null)}
                 className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
-                <option value="">Sem pasta (Geral)</option>
-                {folders.map((f) => (
-                  <option key={f.id} value={f.id}>{f.name}</option>
-                ))}
+                <option value="">📁 Sem pasta (Raiz de Cadernos)</option>
+                {rootFolders.map((r) => {
+                  const lvl2s = getSubfolders(r.id);
+                  return (
+                    <React.Fragment key={r.id}>
+                      <option value={r.id}>📁 {r.name} (Nível 1)</option>
+                      {lvl2s.map((l2) => {
+                        const lvl3s = getSubfolders(l2.id);
+                        return (
+                          <React.Fragment key={l2.id}>
+                            <option value={l2.id}>&nbsp;&nbsp;↳ 📁 {l2.name} (Nível 2)</option>
+                            {lvl3s.map((l3) => (
+                              <option key={l3.id} value={l3.id}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;↳ ↳ 📁 {l3.name} (Nível 3)
+                              </option>
+                            ))}
+                          </React.Fragment>
+                        );
+                      })}
+                    </React.Fragment>
+                  );
+                })}
               </select>
             </div>
             <div>
@@ -605,52 +651,129 @@ export const ListManager: React.FC<ListManagerProps> = ({
                     </div>
                   </div>
 
-                  {/* Subpastas */}
+                  {/* Subpastas (Nível 2 e Nível 3) */}
                   {isOpen && subfolders.length > 0 && (
-                    <div className="pl-6 space-y-1 border-l-2 border-slate-100 dark:border-slate-800 ml-3">
+                    <div className="pl-4 space-y-1 border-l-2 border-slate-100 dark:border-slate-800 ml-3">
                       {subfolders.map((sub) => {
                         const isSubSelected = selectedFolderId === sub.id;
+                        const subSubfolders = getSubfolders(sub.id);
+                        const isSubOpen = !!openFolderIds[sub.id] || selectedFolderId === sub.id || subSubfolders.some((ss) => ss.id === selectedFolderId);
+
                         return (
-                          <div
-                            key={sub.id}
-                            onClick={() => setSelectedFolderId(sub.id)}
-                            className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs cursor-pointer transition-colors ${
-                              isSubSelected
-                                ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-bold'
-                                : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
-                            }`}
-                          >
-                            <div className="flex items-center gap-2 min-w-0">
-                              <FolderIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                              <span className="truncate">{sub.name}</span>
+                          <div key={sub.id} className="space-y-1">
+                            <div
+                              onClick={() => {
+                                setSelectedFolderId(sub.id);
+                                if (subSubfolders.length > 0) toggleFolder(sub.id);
+                              }}
+                              className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs cursor-pointer transition-colors ${
+                                isSubSelected
+                                  ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-bold'
+                                  : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+                              }`}
+                            >
+                              <div className="flex items-center gap-1.5 min-w-0">
+                                {subSubfolders.length > 0 ? (
+                                  <button
+                                    type="button"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      toggleFolder(sub.id);
+                                    }}
+                                    className="p-0.5 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                                  >
+                                    {isSubOpen ? (
+                                      <ChevronDown className="w-2.5 h-2.5" />
+                                    ) : (
+                                      <ChevronRight className="w-2.5 h-2.5" />
+                                    )}
+                                  </button>
+                                ) : (
+                                  <div className="w-2.5" />
+                                )}
+                                <FolderIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                                <span className="truncate">{sub.name}</span>
+                              </div>
+                              <div className="flex items-center gap-1 shrink-0">
+                                <button
+                                  type="button"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    setEditingFolder({ id: sub.id, name: sub.name });
+                                  }}
+                                  className="p-0.5 text-slate-400 hover:text-blue-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                  title="Renomear subpasta"
+                                >
+                                  <Pencil className="w-2.5 h-2.5" />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    setDeletingFolderId(sub.id);
+                                  }}
+                                  className="p-0.5 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                  title="Excluir subpasta"
+                                >
+                                  <Trash2 className="w-2.5 h-2.5" />
+                                </button>
+                                <span className="text-[10px] text-slate-400 font-mono ml-0.5">
+                                  {lists.filter((l) => l.folderId === sub.id).length}
+                                </span>
+                              </div>
                             </div>
-                            <div className="flex items-center gap-1 shrink-0">
-                              <button
-                                type="button"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  setEditingFolder({ id: sub.id, name: sub.name });
-                                }}
-                                className="p-0.5 text-slate-400 hover:text-blue-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
-                                title="Renomear subpasta"
-                              >
-                                <Pencil className="w-2.5 h-2.5" />
-                              </button>
-                              <button
-                                type="button"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  setDeletingFolderId(sub.id);
-                                }}
-                                className="p-0.5 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
-                                title="Excluir subpasta"
-                              >
-                                <Trash2 className="w-2.5 h-2.5" />
-                              </button>
-                              <span className="text-[10px] text-slate-400 font-mono ml-0.5">
-                                {lists.filter((l) => l.folderId === sub.id).length}
-                              </span>
-                            </div>
+
+                            {/* Sub-subpastas (Nível 3) */}
+                            {isSubOpen && subSubfolders.length > 0 && (
+                              <div className="pl-4 space-y-1 border-l-2 border-slate-100 dark:border-slate-800 ml-3">
+                                {subSubfolders.map((subSub) => {
+                                  const isSubSubSelected = selectedFolderId === subSub.id;
+                                  return (
+                                    <div
+                                      key={subSub.id}
+                                      onClick={() => setSelectedFolderId(subSub.id)}
+                                      className={`flex items-center justify-between px-2 py-1 rounded-md text-[11px] cursor-pointer transition-colors ${
+                                        isSubSubSelected
+                                          ? 'bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 font-bold'
+                                          : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                                      }`}
+                                    >
+                                      <div className="flex items-center gap-1.5 min-w-0">
+                                        <FolderIcon className="w-3 h-3 text-purple-500 shrink-0" />
+                                        <span className="truncate">{subSub.name}</span>
+                                      </div>
+                                      <div className="flex items-center gap-1 shrink-0">
+                                        <button
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            setEditingFolder({ id: subSub.id, name: subSub.name });
+                                          }}
+                                          className="p-0.5 text-slate-400 hover:text-purple-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                          title="Renomear pasta nível 3"
+                                        >
+                                          <Pencil className="w-2 h-2" />
+                                        </button>
+                                        <button
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            setDeletingFolderId(subSub.id);
+                                          }}
+                                          className="p-0.5 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                          title="Excluir pasta nível 3"
+                                        >
+                                          <Trash2 className="w-2 h-2" />
+                                        </button>
+                                        <span className="text-[9px] text-slate-400 font-mono ml-0.5">
+                                          {lists.filter((l) => l.folderId === subSub.id).length}
+                                        </span>
+                                      </div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            )}
                           </div>
                         );
                       })}

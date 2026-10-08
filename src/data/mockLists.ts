@@ -3,8 +3,10 @@ import { Folder, QuestionList } from '@/types';
 export const initialFolders: Folder[] = [
   { id: 'f-clinica', name: 'Clínica Médica', parentId: null, color: '#3b82f6' },
   { id: 'f-cardio', name: 'Cardiologia', parentId: 'f-clinica', color: '#60a5fa' },
+  { id: 'f-coronariana', name: 'Síndromes Coronarianas & ECG', parentId: 'f-cardio', color: '#93c5fd' },
   { id: 'f-cirurgia', name: 'Cirurgia Geral', parentId: null, color: '#10b981' },
   { id: 'f-abdome', name: 'Abdome Agudo', parentId: 'f-cirurgia', color: '#34d399' },
+  { id: 'f-apendicite', name: 'Apendicite e Diverticulite', parentId: 'f-abdome', color: '#6ee7b7' },
   { id: 'f-pediatria', name: 'Pediatria', parentId: null, color: '#f59e0b' },
   { id: 'f-go', name: 'Ginecologia e Obstetrícia', parentId: null, color: '#ec4899' },
   { id: 'f-preventiva', name: 'Medicina Preventiva', parentId: null, color: '#8b5cf6' }
