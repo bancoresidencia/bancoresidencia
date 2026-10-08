@@ -1,0 +1,49 @@
+name: Download Anonymous Options Images
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/download_options_images_cloud.mjs'
+
+permissions:
+  contents: write
+
+jobs:
+  download-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: |
+          npm install @supabase/supabase-js
+
+      - name: Download Images Anonymously via Cloud Runner
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: "https://ezluharxlmlqhdkqrjbz.supabase.co"
+          SUPABASE_SERVICE_ROLE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6bHVoYXJ4bG1scWhka3FyamJ6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MTI0OTE3NywiZXhwIjoyMTA2ODI1MTc3fQ.4HC3igdIbIuObD8jhQnIBMA5PoN9ShjeBcK37o9kYvA"
+        run: |
+          node scripts/download_options_images_cloud.mjs
+
+      - name: Commit and Push Downloaded Images
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/images/alternativas data/
+          if git diff --staged --quiet; then
+            echo "Nenhuma imagem nova para commitar."
+          else
+            git commit -m "chore: imagens de alternativas baixadas e sincronizadas via GitHub Actions"
+            git push origin main
+          fi
