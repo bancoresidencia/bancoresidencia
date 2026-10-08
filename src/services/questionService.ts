@@ -81,8 +81,13 @@ export async function fetchQuestionsFromSupabase(
     const specs = new Set<string>();
     filters.especialidades.forEach((sp) => {
       specs.add(sp);
-      if (sp.includes('Ginecologia') || sp.includes('Obstetrícia')) {
+      if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
+        specs.add('Cirurgia');
+        specs.add('Cirurgia Geral');
+      }
+      if (sp === 'Ginecologia e Obstetrícia') {
         specs.add('Ginecologia');
+        specs.add('Obstetrícia');
       }
     });
     query = query.in('especialidade', Array.from(specs));
