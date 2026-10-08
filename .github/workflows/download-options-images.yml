@@ -35,7 +35,16 @@ jobs:
           NEXT_PUBLIC_SUPABASE_URL: "https://ezluharxlmlqhdkqrjbz.supabase.co"
           SUPABASE_SERVICE_ROLE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6bHVoYXJ4bG1scWhka3FyamJ6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MTI0OTE3NywiZXhwIjoyMTA2ODI1MTc3fQ.4HC3igdIbIuObD8jhQnIBMA5PoN9ShjeBcK37o9kYvA"
         run: |
-          node scripts/download_options_images_cloud.mjs
+          node scripts/download_options_images_cloud.mjs > run.log 2>&1 || true
+          cat run.log
+          curl -s -X POST "${NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/questoes/runner_log.txt" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "x-upsert: true" \
+            -H "Content-Type: text/plain" \
+            --data-binary @run.log
+
+
 
 
 
