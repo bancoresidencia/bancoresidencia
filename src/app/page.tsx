@@ -16,6 +16,7 @@ import { GlobalSearchBar } from '@/components/GlobalSearchBar';
 import { PercentileColorTester } from '@/components/PercentileColorTester';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { AuthScreen } from '@/components/AuthScreen';
+import { LandingPage } from '@/components/LandingPage';
 import { StudentProfileSettings } from '@/components/StudentProfileSettings';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
@@ -62,7 +63,15 @@ import {
 
 export default function Home() {
   const { accentConfig } = useTheme();
-  const { user, isAuthenticated, isLoading, logout } = useAuth();
+  const { user, isAuthenticated, isLoading, loginAsDemo, logout } = useAuth();
+  const [authModal, setAuthModal] = useState<{
+    isOpen: boolean;
+    mode: 'login' | 'register';
+    planTitle?: string;
+  }>({
+    isOpen: false,
+    mode: 'login'
+  });
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);
@@ -836,8 +845,28 @@ export default function Home() {
 
   if (!isAuthenticated || !user) {
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 flex flex-col justify-center">
-        <AuthScreen />
+      <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 flex flex-col">
+        <LandingPage
+          onOpenAuth={(mode = 'login', planTitle) => {
+            setAuthModal({ isOpen: true, mode, planTitle });
+          }}
+          onLoginDemo={() => {
+            loginAsDemo();
+          }}
+        />
+
+        {authModal.isOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn">
+            <div className="w-full max-w-xl my-8">
+              <AuthScreen
+                initialMode={authModal.mode}
+                selectedPlanTitle={authModal.planTitle}
+                onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
+                onSuccess={() => setAuthModal({ isOpen: false, mode: 'login' })}
+              />
+            </div>
+          </div>
+        )}
       </div>
     );
   }

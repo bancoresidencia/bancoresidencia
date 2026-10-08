@@ -16,19 +16,28 @@ import {
   Sparkles,
   ArrowRight,
   ShieldCheck,
-  Award
+  Award,
+  X
 } from 'lucide-react';
 
 interface AuthScreenProps {
   onSuccess?: () => void;
+  initialMode?: 'login' | 'register';
+  onClose?: () => void;
+  selectedPlanTitle?: string;
 }
 
-export const AuthScreen: React.FC<AuthScreenProps> = ({ onSuccess }) => {
+export const AuthScreen: React.FC<AuthScreenProps> = ({
+  onSuccess,
+  initialMode = 'login',
+  onClose,
+  selectedPlanTitle
+}) => {
   const { login, register, loginAsDemo } = useAuth();
   const { accentConfig } = useTheme();
 
   // 'login' | 'register'
-  const [mode, setMode] = useState<'login' | 'register'>('login');
+  const [mode, setMode] = useState<'login' | 'register'>(initialMode);
 
   // Form States
   const [email, setEmail] = useState('');
@@ -179,12 +188,37 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onSuccess }) => {
               </div>
             </div>
 
-            {/* Selo de Proteção */}
-            <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-bold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-xl">
-              <ShieldCheck className="w-4 h-4 text-emerald-500" />
-              <span>Acesso Seguro</span>
+            {/* Ações da Direita: Selo de Proteção e Fechar */}
+            <div className="flex items-center gap-2">
+              <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-bold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-xl">
+                <ShieldCheck className="w-4 h-4 text-emerald-500" />
+                <span>Acesso Seguro</span>
+              </div>
+              {onClose && (
+                <button
+                  type="button"
+                  onClick={onClose}
+                  className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer"
+                  title="Fechar"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              )}
             </div>
           </div>
+
+          {/* Destaque do Plano Selecionado (se houver) */}
+          {selectedPlanTitle && (
+            <div className="mt-4 px-3.5 py-2.5 rounded-2xl bg-blue-500/10 border border-blue-500/25 text-blue-700 dark:text-blue-300 text-xs font-semibold flex items-center justify-between gap-2 animate-fadeIn">
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                <span>Plano selecionado: <strong className="font-extrabold">{selectedPlanTitle}</strong></span>
+              </div>
+              <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white px-2 py-0.5 rounded-md">
+                Todas as funções
+              </span>
+            </div>
+          )}
 
           {/* Abas Alternadoras: Entrar vs Criar Conta */}
           <div className="mt-6 flex bg-slate-100 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-slate-200/80 dark:border-slate-800">

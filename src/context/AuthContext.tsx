@@ -44,7 +44,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<UserAccount | null>(DEFAULT_DEMO_USER);
+  const [user, setUser] = useState<UserAccount | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -63,10 +63,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const savedUser = JSON.parse(savedUserRaw);
         setUser(usersList.find((u) => u.id === savedUser.id) || savedUser);
       } else {
-        setUser(DEFAULT_DEMO_USER);
+        setUser(null);
       }
     } catch {
-      setUser(DEFAULT_DEMO_USER);
+      setUser(null);
     } finally {
       setIsLoading(false);
     }
