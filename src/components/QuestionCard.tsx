@@ -36,6 +36,18 @@ interface TextHighlight {
   color: 'yellow' | 'green' | 'pink';
 }
 
+// Verifica se o texto da alternativa é uma imagem (URL ou caminho local)
+const isOptionImage = (text?: string): boolean => {
+  if (!text) return false;
+  const t = text.trim();
+  return (
+    (t.startsWith('http://') || t.startsWith('https://') || t.startsWith('/images/')) &&
+    (/\.(webp|png|jpe?g|gif|svg)(\?.*)?$/i.test(t) ||
+      t.includes('/storage/v1/object/public/') ||
+      t.includes('/alternativas/'))
+  );
+};
+
 export const QuestionCard: React.FC<QuestionCardProps> = ({
   question,
   index,
@@ -603,16 +615,32 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                       {option.letter}
                     </span>
 
-                    {/* Texto da Alternativa */}
-                    <span
-                      className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all ${
-                        isEliminated && !isPending && !isAnswered
-                          ? 'line-through text-slate-400 dark:text-slate-500 opacity-60 italic'
-                          : ''
-                      }`}
-                    >
-                      {option.text}
-                    </span>
+                    {/* Conteúdo da Alternativa: Imagem ou Texto */}
+                    {isOptionImage(option.text) ? (
+                      <div className="flex-1 pt-0.5">
+                        <div className="inline-block rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xs max-w-sm sm:max-w-md">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={option.text.trim()}
+                            alt={`Alternativa ${option.letter}`}
+                            className={`max-h-56 max-w-full object-contain rounded-lg transition-transform ${
+                              isEliminated ? 'opacity-40 grayscale' : 'hover:scale-102'
+                            }`}
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <span
+                        className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all ${
+                          isEliminated && !isPending && !isAnswered
+                            ? 'line-through text-slate-400 dark:text-slate-500 opacity-60 italic'
+                            : ''
+                        }`}
+                      >
+                        {option.text}
+                      </span>
+                    )}
                   </div>
 
                   {/* Ações da Alternativa: Riscar (Antes) ou Feedback + Toggle Justificativa (Depois) */}

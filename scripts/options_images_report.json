@@ -1,0 +1,502 @@
+{
+  "totalQuestions": 91,
+  "totalUniqueImages": 372,
+  "localFound": 0,
+  "missingLocally": 372,
+  "perSpecialty": {
+    "obstetricia": {
+      "total": 14092,
+      "withImagesInOptions": 14,
+      "totalImages": 57
+    },
+    "cirurgia": {
+      "total": 21229,
+      "withImagesInOptions": 19,
+      "totalImages": 78
+    },
+    "medicina_preventiva": {
+      "total": 22039,
+      "withImagesInOptions": 10,
+      "totalImages": 41
+    },
+    "pediatria": {
+      "total": 24132,
+      "withImagesInOptions": 21,
+      "totalImages": 84
+    },
+    "clinica_medica": {
+      "total": 38227,
+      "withImagesInOptions": 16,
+      "totalImages": 66
+    },
+    "ginecologia": {
+      "total": 13246,
+      "withImagesInOptions": 11,
+      "totalImages": 46
+    }
+  },
+  "samples": [
+    {
+      "id": "e30f3366-7637-4782-9334-9d4ed2cde5d8",
+      "code": "USPHCFMUSP-2019-OBS-1479",
+      "specialty": "Obstetrícia",
+      "tema": "Gestação Múltipla",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "c779c856-d92f-4589-b1b2-b07bb0c472d9",
+      "code": "USPHCFMUSP-2024-OBS-5393",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112223063-0.16092752255619436.webp",
+          "rawText": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112223063-0.16092752255619436.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112235489-0.7975316504777614.webp",
+          "rawText": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112235489-0.7975316504777614.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112245858-0.11514096637484716.webp",
+          "rawText": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112245858-0.11514096637484716.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112254390-0.8060666941225038.webp",
+          "rawText": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112254390-0.8060666941225038.webp"
+        }
+      ]
+    },
+    {
+      "id": "ae9398bf-5b9b-47a8-b68b-e4c9540a5bbb",
+      "code": "AMRIGS-2025-OBS-7289",
+      "specialty": "Obstetrícia",
+      "tema": "Assistência Pré-natal",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "26d33265-47b4-4b6a-81f7-6a40648f0e09",
+      "code": "USPHCFMUSP-2024-OBS-8852",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "acc62e59-df02-49e2-889f-405feb4238bc",
+      "code": "USPHCFMUSP-2017-OBS-9197",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "677b5f0d-ee3f-44db-8c43-8add4c844d18",
+      "code": "USPHCFMUSP-2018-OBS-9206",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "f02fc3ac-bfec-4a50-8df8-c56b2e223512",
+      "code": "USPHCFMUSP-2025-OBS-9561",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "44943482-cd24-49ef-a9c8-f37b7f4a756b",
+      "code": "USPHCFMUSP-2018-OBS-9688",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "622c9281-ab1b-49bc-be1e-aad169236c13",
+      "code": "USPHCFMUSP-2017-OBS-10143",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/gestante-com-35-anos-de-idade-sem-doencas-previas-e-admitida-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "886b6f84-c7d3-4972-ab15-8ba27c07c825",
+      "code": "AMRIGS-2024-OBS-11341",
+      "specialty": "Obstetrícia",
+      "tema": "Assistência Pré-natal",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/a-maneira-correta-de-utilizar-o-cinto-de-seguranca-durante-a-alternativa-3.webp"
+        }
+      ]
+    },
+    {
+      "id": "f357170c-e0a8-4b7e-92d2-e8b315d2b283",
+      "code": "UFRGSHCPA-2020-OBS-11894",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-3.webp"
+        },
+        {
+          "letter": "E",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-4.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-4.webp"
+        }
+      ]
+    },
+    {
+      "id": "2b37e6fe-2668-43dc-81f6-8098fc78e642",
+      "code": "UERJHUPE-2020-OBS-12912",
+      "specialty": "Obstetrícia",
+      "tema": "Sofrimento Fetal",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-01-46c031572a56.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-01-46c031572a56.jpeg"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-02-c231323242f5.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-02-c231323242f5.jpeg"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-03-9945ff83e5b2.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-03-9945ff83e5b2.jpeg"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-04-ed1024a028db.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/exam-import/uerj/2020/r1-acesso-direto/q061-04-ed1024a028db.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "ee836f70-bec9-4fb4-bb9d-78d20b51919f",
+      "code": "USPHCFMUSP-2021-OBS-13215",
+      "specialty": "Obstetrícia",
+      "tema": "",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-a.jpg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-a.jpg"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-b.jpg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-b.jpg"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-c.jpg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-c.jpg"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-d.jpg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/fmusp/2021/alternativas/q111-d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "0a71770c-f7c1-44dc-a98e-2f19f8899302",
+      "code": "UFRGSHCPA-2021-OBS-13268",
+      "specialty": "Obstetrícia",
+      "tema": "Trabalho de Parto e Parto",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-a.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-a.jpeg"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-b.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-b.jpeg"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-c.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-c.jpeg"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-d.jpeg",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/hcpa/acesso-direto/2021/question-033/alternative-d.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "04b394d3-1500-48d5-8501-6290554c9d2a",
+      "code": "HNMD-2017-CIR-1798",
+      "specialty": "Cirurgia",
+      "tema": "Cirurgia Pediátrica",
+      "optionsWithImages": [
+        {
+          "letter": "A",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-0.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-0.webp"
+        },
+        {
+          "letter": "B",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-1.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-1.webp"
+        },
+        {
+          "letter": "C",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-2.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-2.webp"
+        },
+        {
+          "letter": "D",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-3.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-3.webp"
+        },
+        {
+          "letter": "E",
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-4.webp",
+          "rawText": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/a-atresia-de-esofago-e-a-interrupcao-ou-descontinuidade-do-e-alternativa-4.webp"
+        }
+      ]
+    }
+  ],
+  "missingUrlsSample": [
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-0.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-1.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-2.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/alternativas/gestante-com-11-semanas-e-4-dias-realizou-a-ultrassonografia-alternativa-3.webp",
+    "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112223063-0.16092752255619436.webp",
+    "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112235489-0.7975316504777614.webp",
+    "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112245858-0.11514096637484716.webp",
+    "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112254390-0.8060666941225038.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-0.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-1.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-2.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/a-idade-gestacional-do-embriao-e-do-feto-pode-ser-verificada-alternativa-3.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-0.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-1.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-2.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/alternativas/paciente-de-20-anos-primigesta-40-semanas-admitida-em-trabal-alternativa-3.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-0.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-1.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-2.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/alternativas/dentre-as-imagens-abaixo-qual-apresenta-maior-dificuldade-na-alternativa-3.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-0.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-1.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-2.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/primigesta-de-27-anos-de-idade-com-idade-gestacional-de-38-s-alternativa-3.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-0.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-1.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-2.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-32-anos-de-idade-primigesta-com-38-semanas-de-gravide-alternativa-3.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-0.webp",
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/alternativas/qual-das-imagens-abaixo-representa-uma-apresentacao-fetal-co-alternativa-1.webp"
+  ]
+}
