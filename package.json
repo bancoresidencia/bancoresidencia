@@ -11,7 +11,9 @@
     "pull": "node scripts/safe-pull.mjs",
     "submit": "node scripts/safe-submit.mjs",
     "safe-pull": "node scripts/safe-pull.mjs",
-    "safe-submit": "node scripts/safe-submit.mjs"
+    "safe-submit": "node scripts/safe-submit.mjs",
+    "extract:books": "node scripts/extract_strategic_books.mjs",
+    "extract:status": "node scripts/check_extraction_status.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

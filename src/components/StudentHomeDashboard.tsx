@@ -140,75 +140,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const todayStudyMinutes = Math.round(todayAnswered * 2.5);
   const timeGoalPercentage = Math.min(100, Math.round((todayStudyMinutes / (dailyTimeGoal || 1)) * 100));
 
-  // Contagem Regressiva para a Prova da Residência Médica
-  const [examName, setExamName] = useState<string>('ENARE 2026');
-  const [examDateStr, setExamDateStr] = useState<string>('2026-11-01');
 
-  // Sincroniza preferências do localStorage após montagem
-  useEffect(() => {
-    try {
-      const savedTime = localStorage.getItem('bancoresidencia_daily_time_goal');
-      if (savedTime) {
-        const parsedTime = Number(savedTime);
-        setDailyTimeGoal(parsedTime);
-        setCustomGoalTime(parsedTime);
-      }
-      const savedName = localStorage.getItem('bancoresidencia_countdown_exam_name');
-      if (savedName) {
-        setExamName(savedName);
-        setEditExamName(savedName);
-      }
-      const savedDate = localStorage.getItem('bancoresidencia_countdown_exam_date');
-      if (savedDate) {
-        setExamDateStr(savedDate);
-        setEditExamDateStr(savedDate);
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
-
-  const [isEditingCountdown, setIsEditingCountdown] = useState<boolean>(false);
-  const [editExamName, setEditExamName] = useState<string>(examName);
-  const [editExamDateStr, setEditExamDateStr] = useState<string>(examDateStr);
-
-  const handleSaveCountdown = (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
-    const cleanName = editExamName.trim() || 'Prova de Residência';
-    const cleanDate = editExamDateStr || '2026-11-01';
-    setExamName(cleanName);
-    setExamDateStr(cleanDate);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('bancoresidencia_countdown_exam_name', cleanName);
-      localStorage.setItem('bancoresidencia_countdown_exam_date', cleanDate);
-    }
-    setIsEditingCountdown(false);
-  };
-
-  // Cálculo de dias restantes para a prova
-  const countdownStats = React.useMemo(() => {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const target = new Date(examDateStr + 'T00:00:00');
-    const diffTime = target.getTime() - today.getTime();
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    const daysRemaining = Math.max(0, diffDays);
-    const weeksRemaining = Math.floor(daysRemaining / 7);
-    const monthsRemaining = (daysRemaining / 30.4).toFixed(1);
-
-    const formattedDate = !isNaN(target.getTime())
-      ? target.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
-      : examDateStr;
-
-    return {
-      daysRemaining,
-      weeksRemaining,
-      monthsRemaining,
-      formattedDate,
-      isToday: diffDays === 0,
-      isPassed: diffDays < 0
-    };
-  }, [examDateStr]);
 
   // Tier cromático rigoroso do percentil
   const percentileTier = getPercentileColor(stats.percentileInfo.percentile);
