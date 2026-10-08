@@ -906,7 +906,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                         {explanationText ||
                           (isCorrect
                             ? 'Alternativa correta segundo o gabarito oficial da banca examinadora.'
-                            : `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${question.correctAnswer}.`)}
+                            : (question.correctAnswer
+                                ? `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${question.correctAnswer}.`
+                                : 'Gabarito oficial em processo de homologação por provas públicas.'))}
                       </p>
                     </div>
                   </div>
@@ -1040,7 +1042,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                   <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                   <span>
                     {question.options && question.options.length > 0
-                      ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
+                      ? (question.correctAnswer
+                          ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
+                          : 'Gabarito Oficial: Em processo de homologação por provas públicas')
                       : 'Padrão de Resposta Oficial:'}
                   </span>
                 </div>

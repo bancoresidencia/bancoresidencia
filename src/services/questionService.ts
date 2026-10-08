@@ -43,7 +43,7 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     isAnulada: Boolean(row.is_anulada),
     statement: row.statement || '',
     options: Array.isArray(row.options) ? row.options : [],
-    correctAnswer: row.correct_answer || 'A',
+    correctAnswer: (row.correct_answer as Question['correctAnswer']) || '',
     commentary: row.commentary || '',
     images: Array.isArray(row.images) ? row.images : []
   };

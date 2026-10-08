@@ -89,7 +89,7 @@ export interface Question {
   isAnulada: boolean;
   statement: string;
   options: QuestionOption[];
-  correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E';
+  correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E' | '';
   commentary: string;
   mainErrorReason?: string;
   takeHomeMessage?: string;
