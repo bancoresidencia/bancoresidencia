@@ -117,7 +117,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const isInitialMount = useRef(true);
 
-  const applyThemeToDOM = (themeMode: ThemeMode, themeAccent: AccentColor) => {
+  useEffect(() => {
     try {
       const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
       if (savedMode === 'dark' || savedMode === 'light') {
@@ -133,8 +133,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     setIsMounted(true);
   }, []);
 
-  useEffect(() => {
-    if (!isMounted) return;
+  const applyThemeToDOM = (themeMode: ThemeMode, themeAccent: AccentColor) => {
     try {
       const root = document.documentElement;
       if (themeMode === 'dark') {
