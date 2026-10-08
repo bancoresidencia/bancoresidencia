@@ -9,9 +9,33 @@ const supabaseKey =
   process.env.SUPABASE_SERVICE_ROLE_KEY ||
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6bHVoYXJ4bG1scWhka3FyamJ6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MTI0OTE3NywiZXhwIjoyMTA2ODI1MTc3fQ.4HC3igdIbIuObD8jhQnIBMA5PoN9ShjeBcK37o9kYvA';
 
-const supabase = createClient(supabaseUrl, supabaseKey);
+async function updateProgress(supabase, data) {
+  try {
+    await supabase.storage
+      .from('questoes')
+      .upload('progresso.json', Buffer.from(JSON.stringify(data, null, 2)), {
+        upsert: true,
+        contentType: 'application/json'
+      });
+  } catch (e) {
+    // silencioso
+  }
+}
 
-async function downloadAndUploadImage(url, fileName) {
+async function logToSupabase(supabase, text) {
+  try {
+    await supabase.storage
+      .from('questoes')
+      .upload('runner_log.txt', Buffer.from(text), {
+        upsert: true,
+        contentType: 'text/plain; charset=utf-8'
+      });
+  } catch (e) {
+    // silencioso
+  }
+}
+
+async function downloadAndUploadImage(supabase, url, fileName) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 12000);
 
@@ -51,22 +75,31 @@ async function downloadAndUploadImage(url, fileName) {
 }
 
 async function main() {
-  console.log('🚀 Iniciando pipeline 100% anônimo na nuvem (GitHub Actions / Azure)...');
-  console.log(`📡 Supabase de destino: ${supabaseUrl}\n`);
+  const logs = [];
+  const appendLog = (msg) => {
+    console.log(msg);
+    logs.push(`[${new Date().toISOString()}] ${msg}`);
+  };
+
+  appendLog('🚀 Iniciando pipeline 100% anônimo na nuvem (GitHub Actions / Azure)...');
+  appendLog(`📡 Supabase de destino: ${supabaseUrl}`);
+
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
+  // Garante que o bucket existe
+  try {
+    await supabase.storage.createBucket('questoes', { public: true });
+    appendLog('📁 Bucket "questoes" verificado/criado com sucesso.');
+  } catch (e) {
+    // Ignora se já existir
+  }
 
   if (!fs.existsSync(MANIFEST_PATH)) {
     throw new Error(`Manifesto não encontrado: ${MANIFEST_PATH}`);
   }
 
-  // Garante que o bucket existe
-  try {
-    await supabase.storage.createBucket('questoes', { public: true });
-  } catch (e) {
-    // Ignora se já existir
-  }
-
   const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
-  console.log(`📋 Total de questões para processar: ${manifest.length}`);
+  appendLog(`📋 Total de questões para processar: ${manifest.length}`);
 
   const downloadQueue = [];
   for (const item of manifest) {
@@ -82,7 +115,14 @@ async function main() {
     }
   }
 
-  console.log(`🖼️ Total de imagens na fila: ${downloadQueue.length}`);
+  appendLog(`🖼️ Total de imagens na fila: ${downloadQueue.length}`);
+  await updateProgress(supabase, {
+    status: 'em_andamento',
+    total: downloadQueue.length,
+    concluidas: 0,
+    erros: 0,
+    percentual: 0
+  });
 
   let totalUploaded = 0;
   let totalErrors = 0;
@@ -93,26 +133,32 @@ async function main() {
     await Promise.all(
       batch.map(async (task) => {
         try {
-          await downloadAndUploadImage(task.originalUrl, task.fileName);
+          await downloadAndUploadImage(supabase, task.originalUrl, task.fileName);
           totalUploaded++;
-          console.log(`  ✓ [${task.itemCode} Alt ${task.letter}] Salvo no Supabase -> ${task.fileName}`);
+          appendLog(`  ✓ [${task.itemCode} Alt ${task.letter}] Salvo -> ${task.fileName}`);
         } catch (err) {
           totalErrors++;
-          console.error(`  ❌ [${task.itemCode} Alt ${task.letter}] Erro: ${err.message}`);
+          appendLog(`  ❌ [${task.itemCode} Alt ${task.letter}] Erro: ${err.message}`);
         }
       })
     );
+
+    const pct = Math.round((totalUploaded / downloadQueue.length) * 100);
+    await updateProgress(supabase, {
+      status: 'em_andamento',
+      total: downloadQueue.length,
+      concluidas: totalUploaded,
+      erros: totalErrors,
+      percentual: pct
+    });
+
     await new Promise((r) => setTimeout(r, 100));
   }
 
-  console.log(`\n========================================`);
-  console.log(`🎉 Upload de imagens concluído no Supabase Storage!`);
-  console.log(`Total salvas: ${totalUploaded}`);
-  console.log(`Erros: ${totalErrors}`);
-  console.log(`========================================\n`);
+  appendLog(`🎉 Upload de imagens concluído: ${totalUploaded} salvas, ${totalErrors} erros.`);
 
   // Atualização das alternativas nas questões no Supabase
-  console.log('🔄 Atualizando opções das 91 questões no banco de dados...');
+  appendLog('🔄 Atualizando opções das 91 questões no banco de dados...');
   let syncSuccess = 0;
 
   for (const item of manifest) {
@@ -130,20 +176,35 @@ async function main() {
         .eq('id', item.id);
 
       if (error) {
-        console.error(`  ❌ Erro ao atualizar questão ${item.code}:`, error.message);
+        appendLog(`  ❌ Erro ao atualizar questão ${item.code}: ${error.message}`);
       } else {
         syncSuccess++;
       }
     } catch (err) {
-      console.error(`  ❌ Exceção ao atualizar questão ${item.code}:`, err.message);
+      appendLog(`  ❌ Exceção ao atualizar questão ${item.code}: ${err.message}`);
     }
   }
 
-  console.log(`✅ ${syncSuccess} / ${manifest.length} questões atualizadas com sucesso no Supabase!\n`);
-  console.log('🏁 Processo finalizado com 100% de sucesso.');
+  appendLog(`✅ ${syncSuccess} / ${manifest.length} questões atualizadas com sucesso no Supabase!`);
+  await updateProgress(supabase, {
+    status: 'concluido',
+    total: downloadQueue.length,
+    concluidas: totalUploaded,
+    erros: totalErrors,
+    questoesAtualizadas: syncSuccess,
+    percentual: 100
+  });
+
+  await logToSupabase(supabase, logs.join('\n'));
+  appendLog('🏁 Processo finalizado com 100% de sucesso.');
 }
 
-main().catch((err) => {
-  console.error('FATAL ERROR:', err.stack || err);
+main().catch(async (err) => {
+  const errMsg = `FATAL ERROR: ${err.stack || err}`;
+  console.error(errMsg);
+  try {
+    const supabase = createClient(supabaseUrl, supabaseKey);
+    await logToSupabase(supabase, errMsg);
+  } catch (e) {}
   process.exit(1);
 });
