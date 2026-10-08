@@ -9,14 +9,7 @@ if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
-const files = [
-  'data/obstetricia_final_questions.json',
-  'data/cirurgia_final_questions.json',
-  'data/medicina_preventiva_final_questions.json',
-  'data/pediatria_final_questions.json',
-  'data/clinica_medica_final_questions.json',
-  'data/ginecologia_final_questions.json'
-];
+const MANIFEST_PATH = path.join(process.cwd(), 'scripts', 'all_options_images_manifest.json');
 
 function downloadFile(url, destPath) {
   return new Promise((resolve, reject) => {
@@ -56,123 +49,75 @@ function downloadFile(url, destPath) {
   });
 }
 
-const isImageUrl = (str) => {
-  if (!str) return false;
-  const t = str.trim();
-  return (
-    (t.startsWith('http://') || t.startsWith('https://')) &&
-    (/\.(webp|png|jpe?g|gif|svg)(\?.*)?$/i.test(t) ||
-      t.includes('/storage/v1/object/public/') ||
-      t.includes('/alternativas/'))
-  );
-};
-
-function getFileExtension(url) {
-  try {
-    const clean = url.split('?')[0];
-    const ext = path.extname(clean).toLowerCase();
-    if (ext && ['.webp', '.png', '.jpg', '.jpeg', '.gif', '.svg'].includes(ext)) {
-      return ext;
-    }
-  } catch (e) {}
-  return '.webp';
-}
-
 async function main() {
-  console.log('🚀 Iniciando download anônimo de imagens das alternativas...');
-  console.log(`📁 Diretório de destino: ${OUTPUT_DIR}\n`);
+  console.log('🚀 Iniciando download anônimo das imagens via GitHub Actions Runner...');
+  console.log(`📁 Destino: ${OUTPUT_DIR}\n`);
+
+  if (!fs.existsSync(MANIFEST_PATH)) {
+    throw new Error(`Manifesto não encontrado: ${MANIFEST_PATH}`);
+  }
+
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
+  console.log(`📋 Total de questões para processar: ${manifest.length}`);
 
   let totalDownloaded = 0;
   let totalErrors = 0;
-  const updatedQuestionsForSupabase = [];
 
-  for (const filePath of files) {
-    if (!fs.existsSync(filePath)) continue;
-    console.log(`📖 Processando ${filePath}...`);
-    const questions = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    let fileModified = false;
-
-    for (const q of questions) {
-      if (!Array.isArray(q.options) || q.options.length === 0) continue;
-      let questionModified = false;
-
-      for (const opt of q.options) {
-        if (isImageUrl(opt.text)) {
-          const originalUrl = opt.text.trim();
-          const ext = getFileExtension(originalUrl);
-          const cleanCode = (q.code || q.id || 'q')
-            .replace(/[^a-zA-Z0-9_-]/g, '_')
-            .toLowerCase();
-          const fileName = `${cleanCode}_alt_${opt.letter}${ext}`;
-          const destPath = path.join(OUTPUT_DIR, fileName);
-          const localUrl = `/images/alternativas/${fileName}`;
-
-          try {
-            if (!fs.existsSync(destPath) || fs.statSync(destPath).size === 0) {
-              await downloadFile(originalUrl, destPath);
-              totalDownloaded++;
-              console.log(`  ✓ [${q.code} Alt ${opt.letter}] Baixado -> ${fileName}`);
-              // Pequena pausa para requisições suaves
-              await new Promise((r) => setTimeout(r, 80));
-            } else {
-              console.log(`  ⚡ [${q.code} Alt ${opt.letter}] Já existia -> ${fileName}`);
-            }
-
-            opt.text = localUrl;
-            questionModified = true;
-            fileModified = true;
-          } catch (err) {
-            totalErrors++;
-            console.error(`  ❌ [${q.code} Alt ${opt.letter}] Erro: ${err.message}`);
-          }
+  for (const item of manifest) {
+    for (const img of item.imageOptions) {
+      const destPath = path.join(OUTPUT_DIR, img.fileName);
+      try {
+        if (!fs.existsSync(destPath) || fs.statSync(destPath).size === 0) {
+          await downloadFile(img.originalUrl, destPath);
+          totalDownloaded++;
+          console.log(`  ✓ [${item.code} Alt ${img.letter}] Baixado -> ${img.fileName}`);
+          await new Promise((r) => setTimeout(r, 100));
+        } else {
+          console.log(`  ⚡ [${item.code} Alt ${img.letter}] Já existe -> ${img.fileName}`);
         }
-      }
 
-      if (questionModified) {
-        updatedQuestionsForSupabase.push({
-          id: q.id,
-          options: q.options
-        });
+        // Atualiza a opção no array da questão
+        const targetOpt = item.options.find((o) => o.letter === img.letter);
+        if (targetOpt) {
+          targetOpt.text = img.localUrl;
+        }
+      } catch (err) {
+        totalErrors++;
+        console.error(`  ❌ [${item.code} Alt ${img.letter}] Erro: ${err.message}`);
       }
-    }
-
-    if (fileModified) {
-      fs.writeFileSync(filePath, JSON.stringify(questions, null, 2), 'utf8');
-      console.log(`💾 ${filePath} atualizado com os novos caminhos locais.\n`);
     }
   }
 
   console.log(`\n========================================`);
-  console.log(`🎉 Download concluído!`);
-  console.log(`Total baixadas: ${totalDownloaded}`);
-  console.log(`Total de falhas: ${totalErrors}`);
-  console.log(`Total de questões para atualizar no Supabase: ${updatedQuestionsForSupabase.length}`);
+  console.log(`🎉 Download de imagens concluído!`);
+  console.log(`Baixadas: ${totalDownloaded}`);
+  console.log(`Falhas: ${totalErrors}`);
   console.log(`========================================\n`);
 
-  // Atualização no Supabase se as credenciais estiverem disponíveis no ambiente
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  // Atualização das 91 questões no Supabase
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://ezluharxlmlqhdkqrjbz.supabase.co';
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-  if (supabaseUrl && supabaseKey && updatedQuestionsForSupabase.length > 0) {
-    console.log('🔄 Sincronizando alternativas atualizadas com o Supabase...');
+  if (supabaseUrl && supabaseKey) {
+    console.log('🔄 Sincronizando alternativas atualizadas diretamente com o Supabase...');
     const supabase = createClient(supabaseUrl, supabaseKey);
 
     let syncCount = 0;
-    for (const item of updatedQuestionsForSupabase) {
+    for (const item of manifest) {
       const { error } = await supabase
         .from('questions')
         .update({ options: item.options })
         .eq('id', item.id);
 
       if (error) {
-        console.error(`  ❌ Erro ao atualizar questão ${item.id} no Supabase:`, error.message);
+        console.error(`  ❌ Erro ao atualizar questão ${item.code} (${item.id}):`, error.message);
       } else {
         syncCount++;
       }
     }
-    console.log(`✅ ${syncCount} questões sincronizadas com o Supabase com sucesso!`);
+    console.log(`✅ ${syncCount} / ${manifest.length} questões sincronizadas no Supabase com sucesso!\n`);
   } else {
-    console.log('ℹ️ Credenciais do Supabase não encontradas no ambiente de execução. As atualizações foram gravadas nos arquivos JSON locais.');
+    console.log('ℹ️ SUPABASE_SERVICE_ROLE_KEY não configurada no ambiente.');
   }
 }
 
