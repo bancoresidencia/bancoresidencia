@@ -51,6 +51,24 @@ export interface AdvancedFilterState {
   ultimos5Anos: boolean;
 }
 
+export interface QuestionOption {
+  letter: 'A' | 'B' | 'C' | 'D' | 'E';
+  text: string;
+  explanation?: string;
+}
+
+export interface StudentComment {
+  id: string;
+  questionId: string;
+  userId?: string;
+  userName: string;
+  userAvatar?: string;
+  content: string;
+  createdAt: string;
+  likes: number;
+  isLiked?: boolean;
+}
+
 export interface Question {
   id: string;
   code: string;
@@ -70,12 +88,12 @@ export interface Question {
   type: 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
   isAnulada: boolean;
   statement: string;
-  options: {
-    letter: 'A' | 'B' | 'C' | 'D' | 'E';
-    text: string;
-  }[];
+  options: QuestionOption[];
   correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E';
   commentary: string;
+  mainErrorReason?: string;
+  takeHomeMessage?: string;
+  guidelineEvolution?: string;
   references?: string[];
   imageUrl?: string;
   images?: string[];

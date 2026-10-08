@@ -16,9 +16,15 @@ import {
   Send,
   HelpCircle,
   Eye,
-  EyeOff
+  EyeOff,
+  Bookmark,
+  AlertTriangle,
+  Lightbulb,
+  Library,
+  History
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { QuestionComments } from './QuestionComments';
 
 interface QuestionCardProps {
   question: Question;
@@ -28,6 +34,8 @@ interface QuestionCardProps {
   userAnswer?: 'A' | 'B' | 'C' | 'D' | 'E';
   fontSize?: 'sm' | 'base' | 'lg';
   onChangeFontSize?: (size: 'sm' | 'base' | 'lg') => void;
+  isBookmarked?: boolean;
+  onToggleBookmark?: (questionId: string) => void;
 }
 
 interface TextHighlight {
@@ -55,9 +63,50 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   onAnswer,
   userAnswer,
   fontSize = 'sm',
-  onChangeFontSize
+  onChangeFontSize,
+  isBookmarked,
+  onToggleBookmark
 }) => {
   const { accentConfig } = useTheme();
+
+  // Estado de favoritar (sincronizado com props e localStorage)
+  const [internalBookmarked, setInternalBookmarked] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const raw = localStorage.getItem('medevo_bookmarked_ids');
+        if (raw) {
+          const map = JSON.parse(raw);
+          setInternalBookmarked(!!map[question.id]);
+        }
+      } catch {
+        // ignore
+      }
+    }
+  }, [question.id]);
+
+  const isFavorited = isBookmarked !== undefined ? isBookmarked : internalBookmarked;
+
+  const handleToggleBookmark = () => {
+    if (onToggleBookmark) {
+      onToggleBookmark(question.id);
+    }
+    setInternalBookmarked((prev) => {
+      const next = !prev;
+      if (typeof window !== 'undefined') {
+        try {
+          const raw = localStorage.getItem('medevo_bookmarked_ids');
+          const map = raw ? JSON.parse(raw) : {};
+          map[question.id] = next;
+          localStorage.setItem('medevo_bookmarked_ids', JSON.stringify(map));
+        } catch {
+          // ignore
+        }
+      }
+      return next;
+    });
+  };
 
   // Estados de resolução da questão (seleção prévia vs confirmação no botão Resolver)
   const [pendingSelected, setPendingSelected] = useState<'A' | 'B' | 'C' | 'D' | 'E' | null>(userAnswer || null);
@@ -121,11 +170,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     }));
   };
 
-  // Separação inteligente das justificativas das alternativas e do comentário final
-  const { optionExplanations, finalCommentary } = useMemo(() => {
+  // Separação inteligente das justificativas das alternativas, comentário final, motivo de erro e take-home message
+  const { optionExplanations, finalCommentary, mainErrorReason, takeHomeMessage, guidelineEvolution, references } = useMemo(() => {
     const rawCommentary = question.commentary || '';
     const explanations: Record<string, string> = {};
 
+    // 1. Justificativas diretas de question.options se existirem
     if (question.options) {
       question.options.forEach((opt: { letter: string; text: string; explanation?: string }) => {
         if (opt.explanation) {
@@ -135,10 +185,67 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     }
 
     let cleanedFinal = rawCommentary;
+    let extractedError = question.mainErrorReason || '';
+    let extractedTakeHome = question.takeHomeMessage || '';
+    let extractedGuideline = question.guidelineEvolution || '';
+    let extractedRefs: string[] = question.references ? [...question.references] : [];
+
+    // Função de sanitização: remove qualquer menção a termos comerciais/concorrentes
+    const sanitizeText = (txt: string): string => {
+      if (!txt) return '';
+      return txt
+        .replace(/estrat[ée]gia\s*med/gi, 'Base Médica Teórica')
+        .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
+        .replace(/estrat[ée]gia/gi, 'Literatura Oficial');
+    };
+
+    // Extração de Evolução de Diretrizes & Contexto Histórico
+    if (!extractedGuideline) {
+      const gRegex = /(?:Evolução de Diretrizes(?: & Contexto Histórico)?|Contexto Histórico(?: da Banca)?|Mudança de Diretriz(?:es)?|Diretrizes Anteriores vs Atuais|Atualização de Conduta)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Motivo de Erro|Referências|Fontes|Gabarito)|$))/i;
+      const gMatch = cleanedFinal.match(gRegex);
+      if (gMatch) {
+        extractedGuideline = gMatch[1].trim();
+        cleanedFinal = cleanedFinal.replace(gMatch[0], '').trim();
+      }
+    }
+
+    // Extração de Take-Home Message / Pérola Prática do comentário
+    if (!extractedTakeHome) {
+      const thRegex = /(?:Take-Home Message|Mensagem-Chave|Pérola Prática(?: para Prova)?|Pérola Clínica|Clinical Pearl|Pérola de Prova)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Principal Motivo|Motivo de Erro|Armadilha|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
+      const thMatch = cleanedFinal.match(thRegex);
+      if (thMatch) {
+        extractedTakeHome = thMatch[1].trim();
+        cleanedFinal = cleanedFinal.replace(thMatch[0], '').trim();
+      }
+    }
+
+    // Extração do Principal Motivo de Erro / Armadilha da Questão
+    if (!extractedError) {
+      const errRegex = /(?:Principal Motivo (?:de Erro|que Leva ao Erro)|Motivo de Erro|Armadilha da Questão|Pegadinha de Prova|Onde o Aluno Costuma Errar)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
+      const errMatch = cleanedFinal.match(errRegex);
+      if (errMatch) {
+        extractedError = errMatch[1].trim();
+        cleanedFinal = cleanedFinal.replace(errMatch[0], '').trim();
+      }
+    }
+
+    // Extração de Referências Teóricas
+    if (extractedRefs.length === 0) {
+      const refRegex = /(?:Referências(?:\s+Bibliográficas)?|Fontes Bibliográficas|Base Teórica(?: Consultada)?|Diretrizes)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Evolução de Diretrizes)|$))/i;
+      const refMatch = cleanedFinal.match(refRegex);
+      if (refMatch) {
+        const lines = refMatch[1]
+          .split('\n')
+          .map((l) => l.replace(/^[•\-*]\s*/, '').trim())
+          .filter(Boolean);
+        extractedRefs = lines;
+        cleanedFinal = cleanedFinal.replace(refMatch[0], '').trim();
+      }
+    }
 
     // Detecta bloco "Análise das Alternativas"
-    const altBlockRegex = /(?:Análise das Alternativas|Comentário das Alternativas|Justificativa das Alternativas|Alternativas):([\s\S]*?)(?=(?:\n\s*\n\s*(?:Resumo Clínico|Pérola Prática|Clinical Pearl|Referências|Gabarito Oficial)|$))/i;
-    const match = rawCommentary.match(altBlockRegex);
+    const altBlockRegex = /(?:Análise das Alternativas|Comentário das Alternativas|Justificativa das Alternativas|Alternativas):([\s\S]*?)(?=(?:\n\s*\n\s*(?:Resumo Clínico|Pérola Prática|Clinical Pearl|Take-Home|Principal Motivo|Evolução|Referências|Gabarito Oficial)|$))/i;
+    const match = cleanedFinal.match(altBlockRegex);
 
     if (match) {
       const blockText = match[1];
@@ -146,35 +253,56 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       let itemMatch: RegExpExecArray | null;
       while ((itemMatch = itemRegex.exec(blockText)) !== null) {
         const letter = itemMatch[1].toUpperCase();
-        const text = itemMatch[2].trim();
+        const text = sanitizeText(itemMatch[2].trim());
         if (text && !explanations[letter]) {
           explanations[letter] = text;
         }
       }
-      cleanedFinal = rawCommentary.replace(match[0], '').replace(/\n{3,}/g, '\n\n').trim();
+      cleanedFinal = cleanedFinal.replace(match[0], '').replace(/\n{3,}/g, '\n\n').trim();
     } else {
       const standaloneAltRegex = /(?:^[•\-*]\s*(?:Alternativa|Opção)\s*([A-E])\s*(?:\([^)]+\))?[:.]?\s*)([\s\S]*?)(?=(?:^[•\-*]\s*(?:Alternativa|Opção)\s*[A-E])|\n\n|$)/gim;
       let foundAny = false;
       let itemMatch: RegExpExecArray | null;
-      while ((itemMatch = standaloneAltRegex.exec(rawCommentary)) !== null) {
+      while ((itemMatch = standaloneAltRegex.exec(cleanedFinal)) !== null) {
         const letter = itemMatch[1].toUpperCase();
-        const text = itemMatch[2].trim();
+        const text = sanitizeText(itemMatch[2].trim());
         if (text && !explanations[letter]) {
           explanations[letter] = text;
           foundAny = true;
         }
       }
       if (foundAny) {
-        cleanedFinal = rawCommentary.replace(standaloneAltRegex, '').replace(/\n{3,}/g, '\n\n').trim();
+        cleanedFinal = cleanedFinal.replace(standaloneAltRegex, '').replace(/\n{3,}/g, '\n\n').trim();
       }
     }
+
+    cleanedFinal = sanitizeText(cleanedFinal);
+    extractedError = sanitizeText(extractedError);
+    extractedTakeHome = sanitizeText(extractedTakeHome);
+    extractedGuideline = sanitizeText(extractedGuideline);
+    extractedRefs = extractedRefs.map(sanitizeText);
 
     if (!cleanedFinal.trim() && question.correctAnswer) {
       cleanedFinal = `Gabarito Oficial: Alternativa ${question.correctAnswer}.`;
     }
 
-    return { optionExplanations: explanations, finalCommentary: cleanedFinal };
-  }, [question.commentary, question.options, question.correctAnswer]);
+    return {
+      optionExplanations: explanations,
+      finalCommentary: cleanedFinal,
+      mainErrorReason: extractedError,
+      takeHomeMessage: extractedTakeHome,
+      guidelineEvolution: extractedGuideline,
+      references: extractedRefs
+    };
+  }, [
+    question.commentary,
+    question.options,
+    question.correctAnswer,
+    question.mainErrorReason,
+    question.takeHomeMessage,
+    question.guidelineEvolution,
+    question.references
+  ]);
 
   // Captura seleção de texto dentro do enunciado e destaca automaticamente com a cor ativa
   const handleStatementMouseUp = () => {
@@ -356,6 +484,25 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 <span>Ver Detalhes</span>
               </>
             )}
+          </button>
+
+          {/* Botão de Favoritar a Questão na Barra Superior */}
+          <button
+            type="button"
+            onClick={handleToggleBookmark}
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
+              isFavorited
+                ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-300 dark:border-amber-700/60 text-amber-700 dark:text-amber-300'
+                : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+            }`}
+            title={isFavorited ? 'Remover dos favoritos' : 'Favoritar esta questão'}
+          >
+            <Bookmark
+              className={`w-3.5 h-3.5 transition-transform ${
+                isFavorited ? 'fill-amber-500 text-amber-500 scale-110' : 'text-slate-400'
+              }`}
+            />
+            <span>{isFavorited ? 'Favoritada' : 'Favoritar'}</span>
           </button>
 
           {/* Badges Extras: Visíveis APENAS se o aluno apertar para ver detalhes */}
@@ -851,30 +998,95 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           </button>
 
           {showCommentary && (
-            <div className="mt-3 p-4 sm:p-5 rounded-2xl bg-emerald-50/80 dark:bg-slate-950 border border-emerald-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 space-y-2.5 shadow-inner">
-              <div className="flex items-center gap-2 text-emerald-800 dark:text-emerald-400 font-bold text-xs sm:text-sm">
-                <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                <span>
-                  {question.options && question.options.length > 0
-                    ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
-                    : 'Padrão de Resposta Oficial:'}
-                </span>
+            <div className="mt-3 space-y-3.5 animate-in fade-in duration-200">
+              {/* Card de Comentário Final / Gabarito */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/80 dark:bg-slate-950 border border-emerald-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 space-y-2.5 shadow-inner">
+                <div className="flex items-center gap-2 text-emerald-800 dark:text-emerald-400 font-bold text-xs sm:text-sm">
+                  <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                  <span>
+                    {question.options && question.options.length > 0
+                      ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
+                      : 'Padrão de Resposta Oficial:'}
+                  </span>
+                </div>
+                <p
+                  className={`${
+                    fontSize === 'sm'
+                      ? 'text-[12.5px] sm:text-[13px] leading-relaxed'
+                      : fontSize === 'lg'
+                      ? 'text-sm sm:text-base leading-relaxed'
+                      : 'text-xs sm:text-sm leading-relaxed'
+                  } font-normal text-slate-800 dark:text-slate-300 whitespace-pre-line`}
+                >
+                  {finalCommentary}
+                </p>
               </div>
-              <p
-                className={`${
-                  fontSize === 'sm'
-                    ? 'text-[12.5px] sm:text-[13px] leading-relaxed'
-                    : fontSize === 'lg'
-                    ? 'text-sm sm:text-base leading-relaxed'
-                    : 'text-xs sm:text-sm leading-relaxed'
-                } font-normal text-slate-800 dark:text-slate-300 whitespace-pre-line`}
-              >
-                {finalCommentary}
-              </p>
+
+              {/* Card: Principal Motivo que Poderia Levar ao Erro */}
+              {mainErrorReason && (
+                <div className="p-4 sm:p-4.5 rounded-2xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/60 text-slate-900 dark:text-slate-200 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-amber-800 dark:text-amber-400 font-bold text-xs sm:text-sm">
+                    <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                    <span>Principal Motivo de Erro (Armadilha da Questão)</span>
+                  </div>
+                  <p className="text-xs sm:text-[13px] leading-relaxed text-amber-950 dark:text-amber-200/90 whitespace-pre-line pl-6">
+                    {mainErrorReason}
+                  </p>
+                </div>
+              )}
+
+              {/* Card: Take-Home Message / Pérola Prática */}
+              {takeHomeMessage && (
+                <div className="p-4 sm:p-4.5 rounded-2xl bg-blue-50/80 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/60 text-slate-900 dark:text-slate-200 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-blue-800 dark:text-blue-400 font-bold text-xs sm:text-sm">
+                    <Lightbulb className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                    <span>Take-Home Message (Pérola Prática)</span>
+                  </div>
+                  <p className="text-xs sm:text-[13px] leading-relaxed text-blue-950 dark:text-blue-200/90 font-medium whitespace-pre-line pl-6">
+                    {takeHomeMessage}
+                  </p>
+                </div>
+              )}
+
+              {/* Card: Evolução de Diretrizes & Contexto Histórico da Banca */}
+              {guidelineEvolution && (
+                <div className="p-4 sm:p-4.5 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800/60 text-slate-900 dark:text-slate-200 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-indigo-800 dark:text-indigo-400 font-bold text-xs sm:text-sm">
+                    <History className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
+                    <span>Evolução de Diretrizes & Contexto Histórico da Banca</span>
+                  </div>
+                  <p className="text-xs sm:text-[13px] leading-relaxed text-indigo-950 dark:text-indigo-200/90 whitespace-pre-line pl-6">
+                    {guidelineEvolution}
+                  </p>
+                </div>
+              )}
+
+              {/* Referências e Fontes da Literatura Médica Oficial */}
+              {references && references.length > 0 && (
+                <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-[11px] text-slate-600 dark:text-slate-400 space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-slate-700 dark:text-slate-300">
+                    <Library className="w-3.5 h-3.5 text-slate-500" />
+                    <span>Base Teórica & Diretrizes Médicas:</span>
+                  </div>
+                  <ul className="list-disc list-inside space-y-0.5 pl-1 text-slate-600 dark:text-slate-400">
+                    {references.map((ref, idx) => (
+                      <li key={idx} className="leading-relaxed">
+                        {ref}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           )}
         </div>
       )}
+
+      {/* Espaço de Interação: Comentários dos Alunos Abaixo da Questão */}
+      <QuestionComments
+        questionId={question.id}
+        isAnswered={isAnswered}
+      />
     </article>
   );
 };
