@@ -30,20 +30,12 @@ jobs:
         run: |
           npm install @supabase/supabase-js
 
-      - name: Download Images Anonymously via Cloud Runner
+      - name: Download and Sync Images Anonymously to Supabase Storage
         env:
           NEXT_PUBLIC_SUPABASE_URL: "https://ezluharxlmlqhdkqrjbz.supabase.co"
           SUPABASE_SERVICE_ROLE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6bHVoYXJ4bG1scWhka3FyamJ6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MTI0OTE3NywiZXhwIjoyMTA2ODI1MTc3fQ.4HC3igdIbIuObD8jhQnIBMA5PoN9ShjeBcK37o9kYvA"
         run: |
-          node scripts/download_options_images_cloud.mjs 2>&1 | tee runner_output.txt
+          node scripts/download_options_images_cloud.mjs
 
-      - name: Commit and Push Downloaded Images
-        if: always()
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/images/alternativas scripts/all_options_images_manifest.json download_summary.txt runner_output.txt || true
-          git commit -m "chore: resultados do download de imagens via cloud runner [skip ci]" || true
-          git push origin main || true
 
 
