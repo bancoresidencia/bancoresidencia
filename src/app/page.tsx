@@ -29,7 +29,7 @@ import {
   UserAttempt,
   Question
 } from '@/types';
-import { fetchQuestionsFromSupabase } from '@/services/questionService';
+import { fetchQuestionsFromSupabase, fetchTotalQuestionsCount } from '@/services/questionService';
 import { calculatePercentile, getOfficialRanking } from '@/utils/percentile';
 import { matchesStudyModalidades } from '@/utils/modalidades';
 import {
@@ -306,10 +306,24 @@ export default function Home() {
   }, [advancedFilters]);
 
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
-  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(14233);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(132965);
+  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(132965);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
   const [hasLoadedSupabaseOnce, setHasLoadedSupabaseOnce] = useState<boolean>(false);
   const [questionsPage, setQuestionsPage] = useState<number>(1);
+
+  // Carrega dinamicamente a contagem global total do Supabase
+  useEffect(() => {
+    let isCancelled = false;
+    fetchTotalQuestionsCount().then((count) => {
+      if (!isCancelled && count > 0) {
+        setTotalGlobalQuestions(count);
+      }
+    });
+    return () => {
+      isCancelled = true;
+    };
+  }, []);
 
   // Referências para acompanhamento suave da barra de navegação de questões
   const questionScrollContainerRef = useRef<HTMLDivElement>(null);
@@ -1157,7 +1171,7 @@ export default function Home() {
                       setQuestionsPage(1);
                       setCurrentQuestionIndex(0);
                     }}
-                    totalAvailable={14233}
+                    totalAvailable={totalGlobalQuestions}
                     totalFiltered={totalSupabaseCount}
                     onCreateListFromFilter={handleCreateListFromFilter}
                     onSelectDirectQuestion={(questionId) => {

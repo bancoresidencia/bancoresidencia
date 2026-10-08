@@ -492,8 +492,8 @@ export const ListManager: React.FC<ListManagerProps> = ({
                   ultimos5Anos: false
                 })
               }
-              totalAvailable={mockQuestions.length}
-              totalFiltered={mockQuestions.length}
+              totalAvailable={132965}
+              totalFiltered={132965}
               onCreateListFromFilter={() => {}}
             />
           </div>

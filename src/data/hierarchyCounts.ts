@@ -21,6 +21,7 @@ export const hierarchyQuestionCounts = {
     "Sofrimento Fetal": 440,
     "Abortamento": 1292,
     "Fisiologia Fetal e Embriologia": 205,
+    "Geral": 396,
     "Trauma e Emergência": 3639,
     "Cirurgia Torácica": 354,
     "Coloproctologia": 547,
@@ -204,6 +205,7 @@ export const hierarchyQuestionCounts = {
     "Propedêutica do Pré-natal": 322,
     "Malformações Fetais": 168,
     "Imunologia na Gestação": 26,
+    "Geral": 476,
     "FAST e Ultrassonografia no Trauma": 67,
     "Derrame Pleural: Drenagem e Abordagem Cirúrgica": 8,
     "Fístulas e Abscessos Anorretais": 128,
@@ -4596,6 +4598,30 @@ export const hierarchyQuestionCounts = {
   }
 };
 
+const normalizeStr = (str: string): string =>
+  (str || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+
+// Mapas auxiliares para busca resiliente (case-insensitive / sem acento)
+const normalizedMaps = {
+  especialidades: new Map<string, number>(),
+  temas: new Map<string, number>(),
+  focos: new Map<string, number>(),
+  subfocos: new Map<string, number>()
+};
+
+for (const [type, map] of Object.entries(hierarchyQuestionCounts)) {
+  const normMap = normalizedMaps[type as keyof typeof normalizedMaps];
+  if (normMap) {
+    for (const [key, count] of Object.entries(map as Record<string, number>)) {
+      normMap.set(normalizeStr(key), count);
+    }
+  }
+}
+
 export function getQuestionCount(type: 'especialidades' | 'temas' | 'focos' | 'subfocos', name: string): number {
   if (type === 'especialidades') {
     if (name === 'Cirurgia' || name === 'Cirurgia Geral') {
@@ -4605,5 +4631,12 @@ export function getQuestionCount(type: 'especialidades' | 'temas' | 'focos' | 's
       return hierarchyQuestionCounts.especialidades['Ginecologia e Obstetrícia'] || 0;
     }
   }
-  return (hierarchyQuestionCounts[type] as Record<string, number>)[name] || 0;
+
+  // 1. Match exato
+  const exact = (hierarchyQuestionCounts[type] as Record<string, number>)[name];
+  if (exact !== undefined) return exact;
+
+  // 2. Fallback normalizado resiliente (ignora maiúsculas/minúsculas e acentos)
+  const normVal = normalizedMaps[type]?.get(normalizeStr(name));
+  return normVal || 0;
 }

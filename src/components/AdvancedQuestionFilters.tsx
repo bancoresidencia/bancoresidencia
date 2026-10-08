@@ -86,28 +86,41 @@ const HighlightMatch: React.FC<{ text: string; query: string }> = ({ text, query
 };
 
 const POPULAR_SIGLAS = [
-  'ENARE / ENAMED',
-  'ENARE',
+  'INEP Revalida',
+  'UNICAMP/HC',
+  'CERMAM',
   'SUS-SP',
-  'USP-SP',
-  'HCFMUSP',
-  'HCFMRP-USP',
+  'USP/HCFMUSP',
+  'USP/HCRP',
   'UNIFESP/EPM',
-  'HC-UNICAMP',
   'AMRIGS',
   'PSU-MG',
   'SURCE',
   'SES-DF',
-  'SES-RJ',
+  'SES-GO',
   'SES-PE',
   'SUS-BA',
-  'Santa Casa SP',
-  'Revalida / Inep',
-  'Einstein',
-  'HCPA',
-  'UFCSPA',
-  'FHEMIG'
+  'Santa Casa de São Paulo',
+  'UFRGS/HCPA',
+  'UFRJ/HUCFF',
+  'UEL',
+  'Centro Universitário FMABC',
+  'UFMT Revalida',
+  'HIAE/Einstein'
 ];
+
+const MODALIDADE_COUNTS: Record<string, number> = {
+  'Residência Médica': 132965,
+  'Revalida': 2718,
+  'Ciclo Básico': 0,
+  'R+ Clínica Médica': 0,
+  'R+ Pediatria': 0,
+  'R+ Cirurgia': 0,
+  'R+ Ginecologia e Obstetrícia': 0,
+  'R+ Neuropediatria': 0,
+  'Título de Oftalmologia (CBO)': 0,
+  'Título Clínica Médica (TECM)': 0
+};
 
 export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = ({
   filters,
@@ -1271,7 +1284,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="p-4 pt-1 border-t border-slate-200 dark:border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
               {medevoModalidades.map((mod) => {
                 const isSelected = filters.modalidades.includes(mod);
-                const countForMod = mockQuestions.filter((q) => matchesStudyModalidades(q, [mod])).length;
+                const countForMod = MODALIDADE_COUNTS[mod] ?? 0;
                 return (
                   <button
                     key={mod}
