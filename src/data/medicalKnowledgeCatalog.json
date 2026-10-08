@@ -1,0 +1,2544 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-10-08T03:06:17.361Z",
+  "bucket": "medical-knowledge",
+  "totalSpecialties": 21,
+  "totalBooks": 341,
+  "totalChunks": 15111,
+  "specialties": {
+    "Cardiologia": {
+      "name": "Cardiologia",
+      "booksCount": 20,
+      "chunksCount": 808,
+      "books": [
+        {
+          "theme": "Bradiarritmias",
+          "fileName": "Bradiarritmias.json",
+          "storagePath": "Cardiologia/Bradiarritmias.json",
+          "totalChunks": 20,
+          "characters": 64751
+        },
+        {
+          "theme": "Cardiomiopatias",
+          "fileName": "Cardiomiopatias.json",
+          "storagePath": "Cardiologia/Cardiomiopatias.json",
+          "totalChunks": 44,
+          "characters": 159540
+        },
+        {
+          "theme": "Choque",
+          "fileName": "Choque.json",
+          "storagePath": "Cardiologia/Choque.json",
+          "totalChunks": 26,
+          "characters": 91615
+        },
+        {
+          "theme": "Dislipidemia e Estratificação de Risco Cardiovascular",
+          "fileName": "Dislipidemia e Estratificação de Risco Cardiovascular.json",
+          "storagePath": "Cardiologia/Dislipidemia_e_Estratificacao_de_Risco_Cardiovascular.json",
+          "totalChunks": 57,
+          "characters": 186005
+        },
+        {
+          "theme": "Eletrocardiograma",
+          "fileName": "Eletrocardiograma.json",
+          "storagePath": "Cardiologia/Eletrocardiograma.json",
+          "totalChunks": 42,
+          "characters": 129685
+        },
+        {
+          "theme": "Fibrilação e Flutter Atrial",
+          "fileName": "Fibrilação e Flutter Atrial.json",
+          "storagePath": "Cardiologia/Fibrilacao_e_Flutter_Atrial.json",
+          "totalChunks": 49,
+          "characters": 172048
+        },
+        {
+          "theme": "Hipertensão Arterial Sistêmica (Parte 3)- Secundária e Crise Hipertensiva",
+          "fileName": "Hipertensão Arterial Sistêmica (Parte 3)- Secundária e Crise Hipertensiva.json",
+          "storagePath": "Cardiologia/Hipertensao_Arterial_Sistemica_Parte_3_-_Secundaria_e_Crise_Hipertensiva.json",
+          "totalChunks": 44,
+          "characters": 164402
+        },
+        {
+          "theme": "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+          "fileName": "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST).json",
+          "storagePath": "Cardiologia/IAMCSSST_Infarto_Agudo_do_Miocardio_com_Supradesnivelamento_de_Segmento_ST_.json",
+          "totalChunks": 63,
+          "characters": 205228
+        },
+        {
+          "theme": "Insuficiência Cardíaca (Parte 1)- Classificação, Fisiopatologia, Diagnóstico e Exames Complementares",
+          "fileName": "Insuficiência Cardíaca (Parte 1)- Classificação, Fisiopatologia, Diagnóstico e Exames Complementares.json",
+          "storagePath": "Cardiologia/Insuficiencia_Cardiaca_Parte_1_-_Classificacao_Fisiopatologia_Diagnostico_e_Exames_Complementares.json",
+          "totalChunks": 31,
+          "characters": 118385
+        },
+        {
+          "theme": "Insuficiência Cardíaca (Parte 2)- Tratamento",
+          "fileName": "Insuficiência Cardíaca (Parte 2)- Tratamento.json",
+          "storagePath": "Cardiologia/Insuficiencia_Cardiaca_Parte_2_-_Tratamento.json",
+          "totalChunks": 44,
+          "characters": 156922
+        },
+        {
+          "theme": "Insuficiência Cardíaca Aguda",
+          "fileName": "Insuficiência Cardíaca Aguda.json",
+          "storagePath": "Cardiologia/Insuficiencia_Cardiaca_Aguda.json",
+          "totalChunks": 28,
+          "characters": 94005
+        },
+        {
+          "theme": "Parada Cardiorrespiratória (PCR)",
+          "fileName": "Parada Cardiorrespiratória (PCR).json",
+          "storagePath": "Cardiologia/Parada_Cardiorrespiratoria_PCR_.json",
+          "totalChunks": 39,
+          "characters": 129591
+        },
+        {
+          "theme": "Pericardiopatias",
+          "fileName": "Pericardiopatias.json",
+          "storagePath": "Cardiologia/Pericardiopatias.json",
+          "totalChunks": 34,
+          "characters": 115800
+        },
+        {
+          "theme": "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST",
+          "fileName": "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST.json",
+          "storagePath": "Cardiologia/SCASSST_-_Sindrome_Coronaria_Aguda_Sem_Supra_do_Segmento_ST.json",
+          "totalChunks": 46,
+          "characters": 161702
+        },
+        {
+          "theme": "Semiologia Cardíaca",
+          "fileName": "Semiologia Cardíaca.json",
+          "storagePath": "Cardiologia/Semiologia_Cardiaca.json",
+          "totalChunks": 39,
+          "characters": 129537
+        },
+        {
+          "theme": "Síncope",
+          "fileName": "Síncope.json",
+          "storagePath": "Cardiologia/Sincope.json",
+          "totalChunks": 25,
+          "characters": 84949
+        },
+        {
+          "theme": "Síndrome Coronariana Crônica",
+          "fileName": "Síndrome Coronariana Crônica.json",
+          "storagePath": "Cardiologia/Sindrome_Coronariana_Cronica.json",
+          "totalChunks": 46,
+          "characters": 159660
+        },
+        {
+          "theme": "Síndromes Aórticas Agudas",
+          "fileName": "Síndromes Aórticas Agudas.json",
+          "storagePath": "Cardiologia/Sindromes_Aorticas_Agudas.json",
+          "totalChunks": 24,
+          "characters": 79550
+        },
+        {
+          "theme": "Taquiarritmias",
+          "fileName": "Taquiarritmias.json",
+          "storagePath": "Cardiologia/Taquiarritmias.json",
+          "totalChunks": 44,
+          "characters": 148216
+        },
+        {
+          "theme": "Valvopatias",
+          "fileName": "Valvopatias.json",
+          "storagePath": "Cardiologia/Valvopatias.json",
+          "totalChunks": 63,
+          "characters": 220748
+        }
+      ]
+    },
+    "Cirurgia": {
+      "name": "Cirurgia",
+      "booksCount": 24,
+      "chunksCount": 1145,
+      "books": [
+        {
+          "theme": "Abdome Agudo Inflamatório - Colecistite e Colangite Aguda",
+          "fileName": "Abdome Agudo Inflamatório - Colecistite e Colangite Aguda.json",
+          "storagePath": "Cirurgia/Abdome_Agudo_Inflamatorio_-_Colecistite_e_Colangite_Aguda.json",
+          "totalChunks": 53,
+          "characters": 185576
+        },
+        {
+          "theme": "Abdome Agudo Inflamatório - Diverticulite Aguda",
+          "fileName": "Abdome Agudo Inflamatório - Diverticulite Aguda.json",
+          "storagePath": "Cirurgia/Abdome_Agudo_Inflamatorio_-_Diverticulite_Aguda.json",
+          "totalChunks": 31,
+          "characters": 108287
+        },
+        {
+          "theme": "Abdome Agudo Inflamatório – Apendicite Aguda",
+          "fileName": "Abdome Agudo Inflamatório – Apendicite Aguda.json",
+          "storagePath": "Cirurgia/Abdome_Agudo_Inflamatorio_Apendicite_Aguda.json",
+          "totalChunks": 59,
+          "characters": 200660
+        },
+        {
+          "theme": "Abdome Agudo Obstrutivo",
+          "fileName": "Abdome Agudo Obstrutivo.json",
+          "storagePath": "Cirurgia/Abdome_Agudo_Obstrutivo.json",
+          "totalChunks": 77,
+          "characters": 260310
+        },
+        {
+          "theme": "Cicatrização de Feridas",
+          "fileName": "Cicatrização de Feridas.json",
+          "storagePath": "Cirurgia/Cicatrizacao_de_Feridas.json",
+          "totalChunks": 30,
+          "characters": 96610
+        },
+        {
+          "theme": "Cirurgia Infantil - Parte I",
+          "fileName": "Cirurgia Infantil - Parte I.json",
+          "storagePath": "Cirurgia/Cirurgia_Infantil_-_Parte_I.json",
+          "totalChunks": 49,
+          "characters": 160577
+        },
+        {
+          "theme": "Cirurgia Infantil - Parte II",
+          "fileName": "Cirurgia Infantil - Parte II.json",
+          "storagePath": "Cirurgia/Cirurgia_Infantil_-_Parte_II.json",
+          "totalChunks": 47,
+          "characters": 158537
+        },
+        {
+          "theme": "Cirurgia Infantil - Parte III",
+          "fileName": "Cirurgia Infantil - Parte III.json",
+          "storagePath": "Cirurgia/Cirurgia_Infantil_-_Parte_III.json",
+          "totalChunks": 40,
+          "characters": 140931
+        },
+        {
+          "theme": "Cirurgia Plástica",
+          "fileName": "Cirurgia Plástica.json",
+          "storagePath": "Cirurgia/Cirurgia_Plastica.json",
+          "totalChunks": 41,
+          "characters": 136424
+        },
+        {
+          "theme": "Cirurgia Vascular",
+          "fileName": "Cirurgia Vascular.json",
+          "storagePath": "Cirurgia/Cirurgia_Vascular.json",
+          "totalChunks": 84,
+          "characters": 277370
+        },
+        {
+          "theme": "Complicações Pós-Operatórias",
+          "fileName": "Complicações Pós-Operatórias.json",
+          "storagePath": "Cirurgia/Complicacoes_Pos-Operatorias.json",
+          "totalChunks": 58,
+          "characters": 204653
+        },
+        {
+          "theme": "Hérnias da Parede Abdominal",
+          "fileName": "Hérnias da Parede Abdominal.json",
+          "storagePath": "Cirurgia/Hernias_da_Parede_Abdominal.json",
+          "totalChunks": 60,
+          "characters": 196438
+        },
+        {
+          "theme": "Nutrição em Cirurgia",
+          "fileName": "Nutrição em Cirurgia.json",
+          "storagePath": "Cirurgia/Nutricao_em_Cirurgia.json",
+          "totalChunks": 38,
+          "characters": 125686
+        },
+        {
+          "theme": "Proctologia",
+          "fileName": "Proctologia.json",
+          "storagePath": "Cirurgia/Proctologia.json",
+          "totalChunks": 39,
+          "characters": 133313
+        },
+        {
+          "theme": "Queimaduras e Trauma Elétrico",
+          "fileName": "Queimaduras e Trauma Elétrico.json",
+          "storagePath": "Cirurgia/Queimaduras_e_Trauma_Eletrico.json",
+          "totalChunks": 29,
+          "characters": 100638
+        },
+        {
+          "theme": "Resposta Endócrino-Metabólica ao Trauma",
+          "fileName": "Resposta Endócrino-Metabólica ao Trauma.json",
+          "storagePath": "Cirurgia/Resposta_Endocrino-Metabolica_ao_Trauma.json",
+          "totalChunks": 23,
+          "characters": 74089
+        },
+        {
+          "theme": "Temas Gerais em Cirurgia",
+          "fileName": "Temas Gerais em Cirurgia.json",
+          "storagePath": "Cirurgia/Temas_Gerais_em_Cirurgia.json",
+          "totalChunks": 42,
+          "characters": 138261
+        },
+        {
+          "theme": "Trauma - Choque",
+          "fileName": "Trauma - Choque.json",
+          "storagePath": "Cirurgia/Trauma_-_Choque.json",
+          "totalChunks": 30,
+          "characters": 108142
+        },
+        {
+          "theme": "Trauma Abdominal e Pélvico",
+          "fileName": "Trauma Abdominal e Pélvico.json",
+          "storagePath": "Cirurgia/Trauma_Abdominal_e_Pelvico.json",
+          "totalChunks": 114,
+          "characters": 378910
+        },
+        {
+          "theme": "Trauma Vascular de Extremidades e Musculoesquelético",
+          "fileName": "Trauma Vascular de Extremidades e Musculoesquelético.json",
+          "storagePath": "Cirurgia/Trauma_Vascular_de_Extremidades_e_Musculoesqueletico.json",
+          "totalChunks": 26,
+          "characters": 84147
+        },
+        {
+          "theme": "Trauma de Face e Cervical",
+          "fileName": "Trauma de Face e Cervical.json",
+          "storagePath": "Cirurgia/Trauma_de_Face_e_Cervical.json",
+          "totalChunks": 18,
+          "characters": 57076
+        },
+        {
+          "theme": "Urgências Abdominais - Abdome Agudo",
+          "fileName": "Urgências Abdominais - Abdome Agudo.json",
+          "storagePath": "Cirurgia/Urgencias_Abdominais_-_Abdome_Agudo.json",
+          "totalChunks": 41,
+          "characters": 137760
+        },
+        {
+          "theme": "Urologia",
+          "fileName": "Urologia.json",
+          "storagePath": "Cirurgia/Urologia.json",
+          "totalChunks": 63,
+          "characters": 216471
+        },
+        {
+          "theme": "Vesícula e Vias Biliares",
+          "fileName": "Vesícula e Vias Biliares.json",
+          "storagePath": "Cirurgia/Vesicula_e_Vias_Biliares.json",
+          "totalChunks": 53,
+          "characters": 175015
+        }
+      ]
+    },
+    "Dermatologia": {
+      "name": "Dermatologia",
+      "booksCount": 10,
+      "chunksCount": 230,
+      "books": [
+        {
+          "theme": "Dermatoses Eczematosas",
+          "fileName": "Dermatoses Eczematosas.json",
+          "storagePath": "Dermatologia/Dermatoses_Eczematosas.json",
+          "totalChunks": 18,
+          "characters": 55836
+        },
+        {
+          "theme": "Dermatoses Infecciosas",
+          "fileName": "Dermatoses Infecciosas.json",
+          "storagePath": "Dermatologia/Dermatoses_Infecciosas.json",
+          "totalChunks": 48,
+          "characters": 158911
+        },
+        {
+          "theme": "Dermatoses Papuloescamosas",
+          "fileName": "Dermatoses Papuloescamosas.json",
+          "storagePath": "Dermatologia/Dermatoses_Papuloescamosas.json",
+          "totalChunks": 22,
+          "characters": 72112
+        },
+        {
+          "theme": "Dermatoses Vesicobolhosas",
+          "fileName": "Dermatoses Vesicobolhosas.json",
+          "storagePath": "Dermatologia/Dermatoses_Vesicobolhosas.json",
+          "totalChunks": 16,
+          "characters": 52134
+        },
+        {
+          "theme": "Farmacodermias",
+          "fileName": "Farmacodermias.json",
+          "storagePath": "Dermatologia/Farmacodermias.json",
+          "totalChunks": 17,
+          "characters": 55975
+        },
+        {
+          "theme": "Hanseníase",
+          "fileName": "Hanseníase.json",
+          "storagePath": "Dermatologia/Hanseniase.json",
+          "totalChunks": 30,
+          "characters": 98990
+        },
+        {
+          "theme": "Histologia e Fisiologia da Pele e Lesões Elementares",
+          "fileName": "Histologia e Fisiologia da Pele e Lesões Elementares.json",
+          "storagePath": "Dermatologia/Histologia_e_Fisiologia_da_Pele_e_Lesoes_Elementares.json",
+          "totalChunks": 21,
+          "characters": 71068
+        },
+        {
+          "theme": "Oncologia Cutânea (Câncer de Pele)",
+          "fileName": "Oncologia Cutânea (Câncer de Pele).json",
+          "storagePath": "Dermatologia/Oncologia_Cutanea_Cancer_de_Pele_.json",
+          "totalChunks": 26,
+          "characters": 82489
+        },
+        {
+          "theme": "Piodermites",
+          "fileName": "Piodermites.json",
+          "storagePath": "Dermatologia/Piodermites.json",
+          "totalChunks": 15,
+          "characters": 48471
+        },
+        {
+          "theme": "Síndromes Verrucosas",
+          "fileName": "Síndromes Verrucosas.json",
+          "storagePath": "Dermatologia/Sindromes_Verrucosas.json",
+          "totalChunks": 17,
+          "characters": 54570
+        }
+      ]
+    },
+    "Endocrinologia": {
+      "name": "Endocrinologia",
+      "booksCount": 22,
+      "chunksCount": 559,
+      "books": [
+        {
+          "theme": "Adrenal - Hipocortisolismo (Insuficiência Adrenal)",
+          "fileName": "Adrenal - Hipocortisolismo (Insuficiência Adrenal).json",
+          "storagePath": "Endocrinologia/Adrenal_-_Hipocortisolismo_Insuficiencia_Adrenal_.json",
+          "totalChunks": 20,
+          "characters": 76228
+        },
+        {
+          "theme": "Adrenal- Hipercortisolismo (Síndrome de Cushing)",
+          "fileName": "Adrenal- Hipercortisolismo (Síndrome de Cushing).json",
+          "storagePath": "Endocrinologia/Adrenal-_Hipercortisolismo_Sindrome_de_Cushing_.json",
+          "totalChunks": 20,
+          "characters": 62788
+        },
+        {
+          "theme": "Diabetes Mellitus - Complicações Agudas",
+          "fileName": "Diabetes Mellitus - Complicações Agudas.json",
+          "storagePath": "Endocrinologia/Diabetes_Mellitus_-_Complicacoes_Agudas.json",
+          "totalChunks": 36,
+          "characters": 113784
+        },
+        {
+          "theme": "Diabetes Mellitus - Complicações Crônicas",
+          "fileName": "Diabetes Mellitus - Complicações Crônicas.json",
+          "storagePath": "Endocrinologia/Diabetes_Mellitus_-_Complicacoes_Cronicas.json",
+          "totalChunks": 35,
+          "characters": 128700
+        },
+        {
+          "theme": "Diabetes Mellitus - Hiperglicemia Hospitalar",
+          "fileName": "Diabetes Mellitus - Hiperglicemia Hospitalar.json",
+          "storagePath": "Endocrinologia/Diabetes_Mellitus_-_Hiperglicemia_Hospitalar.json",
+          "totalChunks": 24,
+          "characters": 82913
+        },
+        {
+          "theme": "Diabetes Mellitus Tipo 2",
+          "fileName": "Diabetes Mellitus Tipo 2.json",
+          "storagePath": "Endocrinologia/Diabetes_Mellitus_Tipo_2.json",
+          "totalChunks": 48,
+          "characters": 168952
+        },
+        {
+          "theme": "Diabetes Mellitus- Insulinoterapia",
+          "fileName": "Diabetes Mellitus- Insulinoterapia.json",
+          "storagePath": "Endocrinologia/Diabetes_Mellitus-_Insulinoterapia.json",
+          "totalChunks": 25,
+          "characters": 81503
+        },
+        {
+          "theme": "Hipoglicemia no Paciente não Diabético",
+          "fileName": "Hipoglicemia no Paciente não Diabético.json",
+          "storagePath": "Endocrinologia/Hipoglicemia_no_Paciente_nao_Diabetico.json",
+          "totalChunks": 14,
+          "characters": 42443
+        },
+        {
+          "theme": "Hipófise - Acromegalia e Incidentaloma Hipofisário",
+          "fileName": "Hipófise - Acromegalia e Incidentaloma Hipofisário.json",
+          "storagePath": "Endocrinologia/Hipofise_-_Acromegalia_e_Incidentaloma_Hipofisario.json",
+          "totalChunks": 16,
+          "characters": 55998
+        },
+        {
+          "theme": "Hipófise - Fisiologia da Hipófise e Hipopituitarismo",
+          "fileName": "Hipófise - Fisiologia da Hipófise e Hipopituitarismo.json",
+          "storagePath": "Endocrinologia/Hipofise_-_Fisiologia_da_Hipofise_e_Hipopituitarismo.json",
+          "totalChunks": 17,
+          "characters": 60542
+        },
+        {
+          "theme": "Hipófise - Hiperprolactinemia",
+          "fileName": "Hipófise - Hiperprolactinemia.json",
+          "storagePath": "Endocrinologia/Hipofise_-_Hiperprolactinemia.json",
+          "totalChunks": 22,
+          "characters": 68072
+        },
+        {
+          "theme": "Incongruência de Gênero",
+          "fileName": "Incongruência de Gênero.json",
+          "storagePath": "Endocrinologia/Incongruencia_de_Genero.json",
+          "totalChunks": 15,
+          "characters": 46103
+        },
+        {
+          "theme": "Introdução ao Diabetes Mellitus",
+          "fileName": "Introdução ao Diabetes Mellitus.json",
+          "storagePath": "Endocrinologia/Introducao_ao_Diabetes_Mellitus.json",
+          "totalChunks": 36,
+          "characters": 122500
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Hipercalcemia",
+          "fileName": "Metabolismo Ósseo e Mineral - Hipercalcemia.json",
+          "storagePath": "Endocrinologia/Metabolismo_Osseo_e_Mineral_-_Hipercalcemia.json",
+          "totalChunks": 20,
+          "characters": 67585
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Hipocalcemia",
+          "fileName": "Metabolismo Ósseo e Mineral - Hipocalcemia.json",
+          "storagePath": "Endocrinologia/Metabolismo_Osseo_e_Mineral_-_Hipocalcemia.json",
+          "totalChunks": 18,
+          "characters": 61053
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Osteoporose e Doença Óssea de Paget",
+          "fileName": "Metabolismo Ósseo e Mineral - Osteoporose e Doença Óssea de Paget.json",
+          "storagePath": "Endocrinologia/Metabolismo_Osseo_e_Mineral_-_Osteoporose_e_Doenca_Ossea_de_Paget.json",
+          "totalChunks": 45,
+          "characters": 148931
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Raquitismo",
+          "fileName": "Metabolismo Ósseo e Mineral - Raquitismo.json",
+          "storagePath": "Endocrinologia/Metabolismo_Osseo_e_Mineral_-_Raquitismo.json",
+          "totalChunks": 14,
+          "characters": 44057
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral- Vitamina D e Osteomalácia",
+          "fileName": "Metabolismo Ósseo e Mineral- Vitamina D e Osteomalácia.json",
+          "storagePath": "Endocrinologia/Metabolismo_Osseo_e_Mineral-_Vitamina_D_e_Osteomalacia.json",
+          "totalChunks": 18,
+          "characters": 63685
+        },
+        {
+          "theme": "Neoplasias Endócrinas Múltiplas",
+          "fileName": "Neoplasias Endócrinas Múltiplas.json",
+          "storagePath": "Endocrinologia/Neoplasias_Endocrinas_Multiplas.json",
+          "totalChunks": 17,
+          "characters": 57088
+        },
+        {
+          "theme": "Obesidade - Obesidade e Síndrome Metabólica",
+          "fileName": "Obesidade - Obesidade e Síndrome Metabólica.json",
+          "storagePath": "Endocrinologia/Obesidade_-_Obesidade_e_Sindrome_Metabolica.json",
+          "totalChunks": 39,
+          "characters": 137836
+        },
+        {
+          "theme": "Tireoide - Fisiologia, Semiologia e Avaliação Diagnóstica",
+          "fileName": "Tireoide - Fisiologia, Semiologia e Avaliação Diagnóstica.json",
+          "storagePath": "Endocrinologia/Tireoide_-_Fisiologia_Semiologia_e_Avaliacao_Diagnostica.json",
+          "totalChunks": 31,
+          "characters": 95588
+        },
+        {
+          "theme": "Tireoide - Hipotireoidismo",
+          "fileName": "Tireoide - Hipotireoidismo.json",
+          "storagePath": "Endocrinologia/Tireoide_-_Hipotireoidismo.json",
+          "totalChunks": 29,
+          "characters": 95054
+        }
+      ]
+    },
+    "Gastroenterologia": {
+      "name": "Gastroenterologia",
+      "booksCount": 13,
+      "chunksCount": 550,
+      "books": [
+        {
+          "theme": "Anatomia e Fisiologia do Pâncreas e Neoplasias Pancreáticas",
+          "fileName": "Anatomia e Fisiologia do Pâncreas e Neoplasias Pancreáticas.json",
+          "storagePath": "Gastroenterologia/Anatomia_e_Fisiologia_do_Pancreas_e_Neoplasias_Pancreaticas.json",
+          "totalChunks": 53,
+          "characters": 177255
+        },
+        {
+          "theme": "Anatomofisiologia Gástrica, Gastrites, Gastroparesia e Dispepsia Funcional",
+          "fileName": "Anatomofisiologia Gástrica, Gastrites, Gastroparesia e Dispepsia Funcional.json",
+          "storagePath": "Gastroenterologia/Anatomofisiologia_Gastrica_Gastrites_Gastroparesia_e_Dispepsia_Funcional.json",
+          "totalChunks": 27,
+          "characters": 96940
+        },
+        {
+          "theme": "Disfagia, Alterações Estruturais e Distúrbios da Motilidade do Esôfago",
+          "fileName": "Disfagia, Alterações Estruturais e Distúrbios da Motilidade do Esôfago.json",
+          "storagePath": "Gastroenterologia/Disfagia_Alteracoes_Estruturais_e_Disturbios_da_Motilidade_do_Esofago.json",
+          "totalChunks": 37,
+          "characters": 135029
+        },
+        {
+          "theme": "Divertículos Colônicos e Divertículo de Meckel",
+          "fileName": "Divertículos Colônicos e Divertículo de Meckel.json",
+          "storagePath": "Gastroenterologia/Diverticulos_Colonicos_e_Diverticulo_de_Meckel.json",
+          "totalChunks": 19,
+          "characters": 72660
+        },
+        {
+          "theme": "Doença Inflamatória Intestinal",
+          "fileName": "Doença Inflamatória Intestinal.json",
+          "storagePath": "Gastroenterologia/Doenca_Inflamatoria_Intestinal.json",
+          "totalChunks": 44,
+          "characters": 158424
+        },
+        {
+          "theme": "Doença Ulcerosa Péptica, Inibidores de Bomba de Prótons (IBP) e Helicobacter Pylori",
+          "fileName": "Doença Ulcerosa Péptica, Inibidores de Bomba de Prótons (IBP) e Helicobacter Pylori.json",
+          "storagePath": "Gastroenterologia/Doenca_Ulcerosa_Peptica_Inibidores_de_Bomba_de_Protons_IBP_e_Helicobacter_Pylori.json",
+          "totalChunks": 61,
+          "characters": 192584
+        },
+        {
+          "theme": "Doença do Refluxo Gastroesofágico, Esofagites Não-Pépticas e Ingestão de Corpo Estranho",
+          "fileName": "Doença do Refluxo Gastroesofágico, Esofagites Não-Pépticas e Ingestão de Corpo Estranho.json",
+          "storagePath": "Gastroenterologia/Doenca_do_Refluxo_Gastroesofagico_Esofagites_Nao-Pepticas_e_Ingestao_de_Corpo_Estranho.json",
+          "totalChunks": 51,
+          "characters": 177187
+        },
+        {
+          "theme": "Hemorragia Digestiva Alta Não Varicosa",
+          "fileName": "Hemorragia Digestiva Alta Não Varicosa.json",
+          "storagePath": "Gastroenterologia/Hemorragia_Digestiva_Alta_Nao_Varicosa.json",
+          "totalChunks": 21,
+          "characters": 70649
+        },
+        {
+          "theme": "Hemorragia Digestiva Alta Varicosa",
+          "fileName": "Hemorragia Digestiva Alta Varicosa.json",
+          "storagePath": "Gastroenterologia/Hemorragia_Digestiva_Alta_Varicosa.json",
+          "totalChunks": 28,
+          "characters": 93092
+        },
+        {
+          "theme": "Hemorragia Digestiva Baixa",
+          "fileName": "Hemorragia Digestiva Baixa.json",
+          "storagePath": "Gastroenterologia/Hemorragia_Digestiva_Baixa.json",
+          "totalChunks": 26,
+          "characters": 79736
+        },
+        {
+          "theme": "Neoplasias de Estômago e Esôfago",
+          "fileName": "Neoplasias de Estômago e Esôfago.json",
+          "storagePath": "Gastroenterologia/Neoplasias_de_Estomago_e_Esofago.json",
+          "totalChunks": 66,
+          "characters": 225388
+        },
+        {
+          "theme": "Polipose Intestinal e Câncer Colorretal",
+          "fileName": "Polipose Intestinal e Câncer Colorretal.json",
+          "storagePath": "Gastroenterologia/Polipose_Intestinal_e_Cancer_Colorretal.json",
+          "totalChunks": 83,
+          "characters": 266675
+        },
+        {
+          "theme": "Tumores Neuroendócrinos",
+          "fileName": "Tumores Neuroendócrinos.json",
+          "storagePath": "Gastroenterologia/Tumores_Neuroendocrinos.json",
+          "totalChunks": 34,
+          "characters": 116373
+        }
+      ]
+    },
+    "Ginecologia": {
+      "name": "Ginecologia",
+      "booksCount": 28,
+      "chunksCount": 1046,
+      "books": [
+        {
+          "theme": "Abdome Agudo em Ginecologia",
+          "fileName": "Abdome Agudo em Ginecologia.json",
+          "storagePath": "Ginecologia/Abdome_Agudo_em_Ginecologia.json",
+          "totalChunks": 13,
+          "characters": 39191
+        },
+        {
+          "theme": "Adenomiose",
+          "fileName": "Adenomiose.json",
+          "storagePath": "Ginecologia/Adenomiose.json",
+          "totalChunks": 27,
+          "characters": 89537
+        },
+        {
+          "theme": "Amenorreia",
+          "fileName": "Amenorreia.json",
+          "storagePath": "Ginecologia/Amenorreia.json",
+          "totalChunks": 40,
+          "characters": 143786
+        },
+        {
+          "theme": "Anatomia e Embriologia do Trato Genital Feminino",
+          "fileName": "Anatomia e Embriologia do Trato Genital Feminino.json",
+          "storagePath": "Ginecologia/Anatomia_e_Embriologia_do_Trato_Genital_Feminino.json",
+          "totalChunks": 21,
+          "characters": 71635
+        },
+        {
+          "theme": "Assistência à Vítima de Violência Sexual",
+          "fileName": "Assistência à Vítima de Violência Sexual.json",
+          "storagePath": "Ginecologia/Assistencia_a_Vitima_de_Violencia_Sexual.json",
+          "totalChunks": 28,
+          "characters": 90469
+        },
+        {
+          "theme": "Cervicites",
+          "fileName": "Cervicites.json",
+          "storagePath": "Ginecologia/Cervicites.json",
+          "totalChunks": 15,
+          "characters": 46550
+        },
+        {
+          "theme": "Ciclo Menstrual",
+          "fileName": "Ciclo Menstrual.json",
+          "storagePath": "Ginecologia/Ciclo_Menstrual.json",
+          "totalChunks": 36,
+          "characters": 108247
+        },
+        {
+          "theme": "Câncer de Colo Uterino",
+          "fileName": "Câncer de Colo Uterino.json",
+          "storagePath": "Ginecologia/Cancer_de_Colo_Uterino.json",
+          "totalChunks": 31,
+          "characters": 105290
+        },
+        {
+          "theme": "Câncer de Mama",
+          "fileName": "Câncer de Mama.json",
+          "storagePath": "Ginecologia/Cancer_de_Mama.json",
+          "totalChunks": 80,
+          "characters": 264967
+        },
+        {
+          "theme": "Câncer do Corpo do Útero",
+          "fileName": "Câncer do Corpo do Útero.json",
+          "storagePath": "Ginecologia/Cancer_do_Corpo_do_Utero.json",
+          "totalChunks": 62,
+          "characters": 212782
+        },
+        {
+          "theme": "Doença Inflamatória Pélvica (DIP)",
+          "fileName": "Doença Inflamatória Pélvica (DIP).json",
+          "storagePath": "Ginecologia/Doenca_Inflamatoria_Pelvica_DIP_.json",
+          "totalChunks": 19,
+          "characters": 69052
+        },
+        {
+          "theme": "Doenças Benignas da Mama",
+          "fileName": "Doenças Benignas da Mama.json",
+          "storagePath": "Ginecologia/Doencas_Benignas_da_Mama.json",
+          "totalChunks": 60,
+          "characters": 199095
+        },
+        {
+          "theme": "Doenças de Vulva e Vagina",
+          "fileName": "Doenças de Vulva e Vagina.json",
+          "storagePath": "Ginecologia/Doencas_de_Vulva_e_Vagina.json",
+          "totalChunks": 32,
+          "characters": 106316
+        },
+        {
+          "theme": "Dor Pélvica Crônica e Dismenorreia",
+          "fileName": "Dor Pélvica Crônica e Dismenorreia.json",
+          "storagePath": "Ginecologia/Dor_Pelvica_Cronica_e_Dismenorreia.json",
+          "totalChunks": 22,
+          "characters": 69823
+        },
+        {
+          "theme": "Endometriose",
+          "fileName": "Endometriose.json",
+          "storagePath": "Ginecologia/Endometriose.json",
+          "totalChunks": 63,
+          "characters": 217710
+        },
+        {
+          "theme": "Incontinência Urinária",
+          "fileName": "Incontinência Urinária.json",
+          "storagePath": "Ginecologia/Incontinencia_Urinaria.json",
+          "totalChunks": 37,
+          "characters": 129305
+        },
+        {
+          "theme": "Infertilidade Conjugal",
+          "fileName": "Infertilidade Conjugal.json",
+          "storagePath": "Ginecologia/Infertilidade_Conjugal.json",
+          "totalChunks": 39,
+          "characters": 139530
+        },
+        {
+          "theme": "Miomatose Uterina",
+          "fileName": "Miomatose Uterina.json",
+          "storagePath": "Ginecologia/Miomatose_Uterina.json",
+          "totalChunks": 36,
+          "characters": 119078
+        },
+        {
+          "theme": "Planejamento Familiar",
+          "fileName": "Planejamento Familiar.json",
+          "storagePath": "Ginecologia/Planejamento_Familiar.json",
+          "totalChunks": 63,
+          "characters": 214636
+        },
+        {
+          "theme": "Prolapsos de Órgãos Pélvicos",
+          "fileName": "Prolapsos de Órgãos Pélvicos.json",
+          "storagePath": "Ginecologia/Prolapsos_de_Orgaos_Pelvicos.json",
+          "totalChunks": 23,
+          "characters": 73784
+        },
+        {
+          "theme": "Pólipos Uterinos",
+          "fileName": "Pólipos Uterinos.json",
+          "storagePath": "Ginecologia/Polipos_Uterinos.json",
+          "totalChunks": 18,
+          "characters": 62839
+        },
+        {
+          "theme": "Rastreamento do Câncer de Colo Uterino",
+          "fileName": "Rastreamento do Câncer de Colo Uterino.json",
+          "storagePath": "Ginecologia/Rastreamento_do_Cancer_de_Colo_Uterino.json",
+          "totalChunks": 68,
+          "characters": 222255
+        },
+        {
+          "theme": "Rastreamento do Câncer de Mama",
+          "fileName": "Rastreamento do Câncer de Mama.json",
+          "storagePath": "Ginecologia/Rastreamento_do_Cancer_de_Mama.json",
+          "totalChunks": 47,
+          "characters": 153439
+        },
+        {
+          "theme": "Sexualidade",
+          "fileName": "Sexualidade.json",
+          "storagePath": "Ginecologia/Sexualidade.json",
+          "totalChunks": 19,
+          "characters": 59376
+        },
+        {
+          "theme": "Síndrome Pré-Menstrual",
+          "fileName": "Síndrome Pré-Menstrual.json",
+          "storagePath": "Ginecologia/Sindrome_Pre-Menstrual.json",
+          "totalChunks": 11,
+          "characters": 39217
+        },
+        {
+          "theme": "Síndrome dos Ovários Policísticos",
+          "fileName": "Síndrome dos Ovários Policísticos.json",
+          "storagePath": "Ginecologia/Sindrome_dos_Ovarios_Policisticos.json",
+          "totalChunks": 59,
+          "characters": 195092
+        },
+        {
+          "theme": "Tumores Anexiais e Câncer de Ovário",
+          "fileName": "Tumores Anexiais e Câncer de Ovário.json",
+          "storagePath": "Ginecologia/Tumores_Anexiais_e_Cancer_de_Ovario.json",
+          "totalChunks": 42,
+          "characters": 138617
+        },
+        {
+          "theme": "Vulvovaginites",
+          "fileName": "Vulvovaginites.json",
+          "storagePath": "Ginecologia/Vulvovaginites.json",
+          "totalChunks": 35,
+          "characters": 121662
+        }
+      ]
+    },
+    "Hematologia": {
+      "name": "Hematologia",
+      "booksCount": 11,
+      "chunksCount": 1491,
+      "books": [
+        {
+          "theme": "Anemia Associada a Condições Não Hematológicas",
+          "fileName": "Anemia Associada a Condições Não Hematológicas.json",
+          "storagePath": "Hematologia/Anemia_Associada_a_Condicoes_Nao_Hematologicas.json",
+          "totalChunks": 59,
+          "characters": 203888
+        },
+        {
+          "theme": "Anemias Hemolíticas",
+          "fileName": "Anemias Hemolíticas.json",
+          "storagePath": "Hematologia/Anemias_Hemoliticas.json",
+          "totalChunks": 194,
+          "characters": 674686
+        },
+        {
+          "theme": "Anemias Macrocíticas",
+          "fileName": "Anemias Macrocíticas.json",
+          "storagePath": "Hematologia/Anemias_Macrociticas.json",
+          "totalChunks": 155,
+          "characters": 530036
+        },
+        {
+          "theme": "Anemias Microcíticas",
+          "fileName": "Anemias Microcíticas.json",
+          "storagePath": "Hematologia/Anemias_Microciticas.json",
+          "totalChunks": 191,
+          "characters": 659574
+        },
+        {
+          "theme": "Hemostasia I - Conceitos Básicos e Anticoagulantes",
+          "fileName": "Hemostasia I - Conceitos Básicos e Anticoagulantes.json",
+          "storagePath": "Hematologia/Hemostasia_I_-_Conceitos_Basicos_e_Anticoagulantes.json",
+          "totalChunks": 95,
+          "characters": 318997
+        },
+        {
+          "theme": "Hemostasia II - Doenças Hemostáticas",
+          "fileName": "Hemostasia II - Doenças Hemostáticas.json",
+          "storagePath": "Hematologia/Hemostasia_II_-_Doencas_Hemostaticas.json",
+          "totalChunks": 147,
+          "characters": 492604
+        },
+        {
+          "theme": "Introdução ao Estudo das Anemias",
+          "fileName": "Introdução ao Estudo das Anemias.json",
+          "storagePath": "Hematologia/Introducao_ao_Estudo_das_Anemias.json",
+          "totalChunks": 151,
+          "characters": 512711
+        },
+        {
+          "theme": "Leucemias Agudas",
+          "fileName": "Leucemias Agudas.json",
+          "storagePath": "Hematologia/Leucemias_Agudas.json",
+          "totalChunks": 129,
+          "characters": 446068
+        },
+        {
+          "theme": "Leucemias Crônicas, Linfomas, Mielodisplasias e Mieloproliferações",
+          "fileName": "Leucemias Crônicas, Linfomas, Mielodisplasias e Mieloproliferações.json",
+          "storagePath": "Hematologia/Leucemias_Cronicas_Linfomas_Mielodisplasias_e_Mieloproliferacoes.json",
+          "totalChunks": 144,
+          "characters": 512448
+        },
+        {
+          "theme": "Medicina Transfusional",
+          "fileName": "Medicina Transfusional.json",
+          "storagePath": "Hematologia/Medicina_Transfusional.json",
+          "totalChunks": 94,
+          "characters": 311311
+        },
+        {
+          "theme": "Mieloma Múltiplo (Gamopatias Monoclonais)",
+          "fileName": "Mieloma Múltiplo (Gamopatias Monoclonais).json",
+          "storagePath": "Hematologia/Mieloma_Multiplo_Gamopatias_Monoclonais_.json",
+          "totalChunks": 132,
+          "characters": 465828
+        }
+      ]
+    },
+    "Hepatologia": {
+      "name": "Hepatologia",
+      "booksCount": 8,
+      "chunksCount": 406,
+      "books": [
+        {
+          "theme": "Cirrose Hepática",
+          "fileName": "Cirrose Hepática.json",
+          "storagePath": "Hepatologia/Cirrose_Hepatica.json",
+          "totalChunks": 27,
+          "characters": 99099
+        },
+        {
+          "theme": "Complicações da Cirrose Hepática",
+          "fileName": "Complicações da Cirrose Hepática.json",
+          "storagePath": "Hepatologia/Complicacoes_da_Cirrose_Hepatica.json",
+          "totalChunks": 66,
+          "characters": 231233
+        },
+        {
+          "theme": "Hepatites Virais",
+          "fileName": "Hepatites Virais.json",
+          "storagePath": "Hepatologia/Hepatites_Virais.json",
+          "totalChunks": 107,
+          "characters": 354466
+        },
+        {
+          "theme": "Hepatopatias Autoimunes",
+          "fileName": "Hepatopatias Autoimunes.json",
+          "storagePath": "Hepatologia/Hepatopatias_Autoimunes.json",
+          "totalChunks": 35,
+          "characters": 118652
+        },
+        {
+          "theme": "Outras Causas de Hepatopatia Crônica",
+          "fileName": "Outras Causas de Hepatopatia Crônica.json",
+          "storagePath": "Hepatologia/Outras_Causas_de_Hepatopatia_Cronica.json",
+          "totalChunks": 70,
+          "characters": 242057
+        },
+        {
+          "theme": "Síndrome Hepatorrenal e Síndrome Hepatopulmonar",
+          "fileName": "Síndrome Hepatorrenal e Síndrome Hepatopulmonar.json",
+          "storagePath": "Hepatologia/Sindrome_Hepatorrenal_e_Sindrome_Hepatopulmonar.json",
+          "totalChunks": 14,
+          "characters": 43076
+        },
+        {
+          "theme": "Transplante Hepático e Hepatite Fulminante",
+          "fileName": "Transplante Hepático e Hepatite Fulminante.json",
+          "storagePath": "Hepatologia/Transplante_Hepatico_e_Hepatite_Fulminante.json",
+          "totalChunks": 22,
+          "characters": 71317
+        },
+        {
+          "theme": "Tumores Hepáticos",
+          "fileName": "Tumores Hepáticos.json",
+          "storagePath": "Hepatologia/Tumores_Hepaticos.json",
+          "totalChunks": 65,
+          "characters": 210867
+        }
+      ]
+    },
+    "Infectologia": {
+      "name": "Infectologia",
+      "booksCount": 19,
+      "chunksCount": 865,
+      "books": [
+        {
+          "theme": "Animais Peçonhentos",
+          "fileName": "Animais Peçonhentos.json",
+          "storagePath": "Infectologia/Animais_Peconhentos.json",
+          "totalChunks": 28,
+          "characters": 100770
+        },
+        {
+          "theme": "Antibióticos",
+          "fileName": "Antibióticos.json",
+          "storagePath": "Infectologia/Antibioticos.json",
+          "totalChunks": 49,
+          "characters": 167322
+        },
+        {
+          "theme": "Arboviroses (Dengue, Chikungunya e Zika)",
+          "fileName": "Arboviroses (Dengue, Chikungunya e Zika).json",
+          "storagePath": "Infectologia/Arboviroses_Dengue_Chikungunya_e_Zika_.json",
+          "totalChunks": 55,
+          "characters": 174708
+        },
+        {
+          "theme": "Covid 19",
+          "fileName": "Covid 19.json",
+          "storagePath": "Infectologia/Covid_19.json",
+          "totalChunks": 19,
+          "characters": 60288
+        },
+        {
+          "theme": "Endocardite Bacteriana - Endocardite Infecciosa",
+          "fileName": "Endocardite Bacteriana - Endocardite Infecciosa.json",
+          "storagePath": "Infectologia/Endocardite_Bacteriana_-_Endocardite_Infecciosa.json",
+          "totalChunks": 44,
+          "characters": 149190
+        },
+        {
+          "theme": "HIV (EM ATUALIZAÇÃO)",
+          "fileName": "HIV (EM ATUALIZAÇÃO).json",
+          "storagePath": "Infectologia/HIV_EM_ATUALIZACAO_.json",
+          "totalChunks": 85,
+          "characters": 276393
+        },
+        {
+          "theme": "Hepatoesplenomegalias Infecciosas",
+          "fileName": "Hepatoesplenomegalias Infecciosas.json",
+          "storagePath": "Infectologia/Hepatoesplenomegalias_Infecciosas.json",
+          "totalChunks": 57,
+          "characters": 201885
+        },
+        {
+          "theme": "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+          "fileName": "Infecções Relacionadas à Assistência em Saúde (IRAS).json",
+          "storagePath": "Infectologia/Infeccoes_Relacionadas_a_Assistencia_em_Saude_IRAS_.json",
+          "totalChunks": 42,
+          "characters": 140605
+        },
+        {
+          "theme": "Leptospirose",
+          "fileName": "Leptospirose.json",
+          "storagePath": "Infectologia/Leptospirose.json",
+          "totalChunks": 17,
+          "characters": 56388
+        },
+        {
+          "theme": "Malária",
+          "fileName": "Malária.json",
+          "storagePath": "Infectologia/Malaria.json",
+          "totalChunks": 18,
+          "characters": 61954
+        },
+        {
+          "theme": "Meningites (Infecções do Sistema Nervoso Central)",
+          "fileName": "Meningites (Infecções do Sistema Nervoso Central).json",
+          "storagePath": "Infectologia/Meningites_Infeccoes_do_Sistema_Nervoso_Central_.json",
+          "totalChunks": 63,
+          "characters": 225170
+        },
+        {
+          "theme": "Micoses Invasivas",
+          "fileName": "Micoses Invasivas.json",
+          "storagePath": "Infectologia/Micoses_Invasivas.json",
+          "totalChunks": 51,
+          "characters": 188512
+        },
+        {
+          "theme": "Neutropenia Febril e Febre de Origem Indeterminada",
+          "fileName": "Neutropenia Febril e Febre de Origem Indeterminada.json",
+          "storagePath": "Infectologia/Neutropenia_Febril_e_Febre_de_Origem_Indeterminada.json",
+          "totalChunks": 39,
+          "characters": 137084
+        },
+        {
+          "theme": "Parasitoses",
+          "fileName": "Parasitoses.json",
+          "storagePath": "Infectologia/Parasitoses.json",
+          "totalChunks": 44,
+          "characters": 145002
+        },
+        {
+          "theme": "Pneumonias Bacterianas",
+          "fileName": "Pneumonias Bacterianas.json",
+          "storagePath": "Infectologia/Pneumonias_Bacterianas.json",
+          "totalChunks": 72,
+          "characters": 243609
+        },
+        {
+          "theme": "Raiva, Tétano, Mordedura e Arranhadura Animal",
+          "fileName": "Raiva, Tétano, Mordedura e Arranhadura Animal.json",
+          "storagePath": "Infectologia/Raiva_Tetano_Mordedura_e_Arranhadura_Animal.json",
+          "totalChunks": 48,
+          "characters": 163580
+        },
+        {
+          "theme": "Sepse",
+          "fileName": "Sepse.json",
+          "storagePath": "Infectologia/Sepse.json",
+          "totalChunks": 47,
+          "characters": 165121
+        },
+        {
+          "theme": "Síndrome Febril Íctero-Hemorrágica",
+          "fileName": "Síndrome Febril Íctero-Hemorrágica.json",
+          "storagePath": "Infectologia/Sindrome_Febril_Ictero-Hemorragica.json",
+          "totalChunks": 31,
+          "characters": 101985
+        },
+        {
+          "theme": "Tuberculose",
+          "fileName": "Tuberculose.json",
+          "storagePath": "Infectologia/Tuberculose.json",
+          "totalChunks": 56,
+          "characters": 184106
+        }
+      ]
+    },
+    "Medicina Preventiva": {
+      "name": "Medicina Preventiva",
+      "booksCount": 20,
+      "chunksCount": 1345,
+      "books": [
+        {
+          "theme": "Atenção Primária à Saúde",
+          "fileName": "Atenção Primária à Saúde.json",
+          "storagePath": "Medicina_Preventiva/Atencao_Primaria_a_Saude.json",
+          "totalChunks": 58,
+          "characters": 186315
+        },
+        {
+          "theme": "Descentralização e regionalização do SUS",
+          "fileName": "Descentralização e regionalização do SUS.json",
+          "storagePath": "Medicina_Preventiva/Descentralizacao_e_regionalizacao_do_SUS.json",
+          "totalChunks": 46,
+          "characters": 163402
+        },
+        {
+          "theme": "Epidemias e Epidemiologia das Doenças Infecciosas",
+          "fileName": "Epidemias e Epidemiologia das Doenças Infecciosas.json",
+          "storagePath": "Medicina_Preventiva/Epidemias_e_Epidemiologia_das_Doencas_Infecciosas.json",
+          "totalChunks": 105,
+          "characters": 339159
+        },
+        {
+          "theme": "Estatística Médica",
+          "fileName": "Estatística Médica.json",
+          "storagePath": "Medicina_Preventiva/Estatistica_Medica.json",
+          "totalChunks": 82,
+          "characters": 256216
+        },
+        {
+          "theme": "Estudos Epidemiológicos e Medidas de Associação",
+          "fileName": "Estudos Epidemiológicos e Medidas de Associação.json",
+          "storagePath": "Medicina_Preventiva/Estudos_Epidemiologicos_e_Medidas_de_Associacao.json",
+          "totalChunks": 148,
+          "characters": 488939
+        },
+        {
+          "theme": "Financiamento em Saúde",
+          "fileName": "Financiamento em Saúde.json",
+          "storagePath": "Medicina_Preventiva/Financiamento_em_Saude.json",
+          "totalChunks": 36,
+          "characters": 121301
+        },
+        {
+          "theme": "História do SUS",
+          "fileName": "História do SUS.json",
+          "storagePath": "Medicina_Preventiva/Historia_do_SUS.json",
+          "totalChunks": 26,
+          "characters": 83181
+        },
+        {
+          "theme": "Marcos Legais do SUS (Leis 8.080-90 e 8.142-90)",
+          "fileName": "Marcos Legais do SUS (Leis 8.080-90 e 8.142-90).json",
+          "storagePath": "Medicina_Preventiva/Marcos_Legais_do_SUS_Leis_8.080-90_e_8.142-90_.json",
+          "totalChunks": 99,
+          "characters": 330618
+        },
+        {
+          "theme": "Medicina de Família e Comunidade",
+          "fileName": "Medicina de Família e Comunidade.json",
+          "storagePath": "Medicina_Preventiva/Medicina_de_Familia_e_Comunidade.json",
+          "totalChunks": 49,
+          "characters": 165873
+        },
+        {
+          "theme": "Medidas de Saúde Coletiva - Parte I- Indicadores de Morbidade",
+          "fileName": "Medidas de Saúde Coletiva - Parte I- Indicadores de Morbidade.json",
+          "storagePath": "Medicina_Preventiva/Medidas_de_Saude_Coletiva_-_Parte_I-_Indicadores_de_Morbidade.json",
+          "totalChunks": 84,
+          "characters": 276167
+        },
+        {
+          "theme": "Medidas de Saúde Coletiva Parte II - Indicadores de Mortalidade",
+          "fileName": "Medidas de Saúde Coletiva Parte II - Indicadores de Mortalidade.json",
+          "storagePath": "Medicina_Preventiva/Medidas_de_Saude_Coletiva_Parte_II_-_Indicadores_de_Mortalidade.json",
+          "totalChunks": 86,
+          "characters": 287536
+        },
+        {
+          "theme": "Políticas de Saúde",
+          "fileName": "Políticas de Saúde.json",
+          "storagePath": "Medicina_Preventiva/Politicas_de_Saude.json",
+          "totalChunks": 46,
+          "characters": 159305
+        },
+        {
+          "theme": "Princípios e Diretrizes do SUS",
+          "fileName": "Princípios e Diretrizes do SUS.json",
+          "storagePath": "Medicina_Preventiva/Principios_e_Diretrizes_do_SUS.json",
+          "totalChunks": 50,
+          "characters": 162870
+        },
+        {
+          "theme": "Processo Saúde-Doença e níveis de prevenção em saúde",
+          "fileName": "Processo Saúde-Doença e níveis de prevenção em saúde.json",
+          "storagePath": "Medicina_Preventiva/Processo_Saude-Doenca_e_niveis_de_prevencao_em_saude.json",
+          "totalChunks": 52,
+          "characters": 179035
+        },
+        {
+          "theme": "Saúde do Idoso",
+          "fileName": "Saúde do Idoso.json",
+          "storagePath": "Medicina_Preventiva/Saude_do_Idoso.json",
+          "totalChunks": 64,
+          "characters": 219283
+        },
+        {
+          "theme": "Saúde do Trabalhador",
+          "fileName": "Saúde do Trabalhador.json",
+          "storagePath": "Medicina_Preventiva/Saude_do_Trabalhador.json",
+          "totalChunks": 77,
+          "characters": 278775
+        },
+        {
+          "theme": "Sistemas de Informação em Saúde",
+          "fileName": "Sistemas de Informação em Saúde.json",
+          "storagePath": "Medicina_Preventiva/Sistemas_de_Informacao_em_Saude.json",
+          "totalChunks": 73,
+          "characters": 242775
+        },
+        {
+          "theme": "Testes Diagnósticos",
+          "fileName": "Testes Diagnósticos.json",
+          "storagePath": "Medicina_Preventiva/Testes_Diagnosticos.json",
+          "totalChunks": 102,
+          "characters": 338528
+        },
+        {
+          "theme": "Vigilância em Saúde",
+          "fileName": "Vigilância em Saúde.json",
+          "storagePath": "Medicina_Preventiva/Vigilancia_em_Saude.json",
+          "totalChunks": 22,
+          "characters": 73955
+        },
+        {
+          "theme": "Ética Médica",
+          "fileName": "Ética Médica.json",
+          "storagePath": "Medicina_Preventiva/Etica_Medica.json",
+          "totalChunks": 40,
+          "characters": 136321
+        }
+      ]
+    },
+    "Nefrologia": {
+      "name": "Nefrologia",
+      "booksCount": 11,
+      "chunksCount": 468,
+      "books": [
+        {
+          "theme": "Análise da Gasometria Arterial",
+          "fileName": "Análise da Gasometria Arterial.json",
+          "storagePath": "Nefrologia/Analise_da_Gasometria_Arterial.json",
+          "totalChunks": 21,
+          "characters": 66944
+        },
+        {
+          "theme": "Distúrbios do Potássio",
+          "fileName": "Distúrbios do Potássio.json",
+          "storagePath": "Nefrologia/Disturbios_do_Potassio.json",
+          "totalChunks": 38,
+          "characters": 132334
+        },
+        {
+          "theme": "Distúrbios do Sódio - Disnatremias",
+          "fileName": "Distúrbios do Sódio - Disnatremias.json",
+          "storagePath": "Nefrologia/Disturbios_do_Sodio_-_Disnatremias.json",
+          "totalChunks": 62,
+          "characters": 206937
+        },
+        {
+          "theme": "Distúrbios Ácido-Básicos",
+          "fileName": "Distúrbios Ácido-Básicos.json",
+          "storagePath": "Nefrologia/Disturbios_Acido-Basicos.json",
+          "totalChunks": 31,
+          "characters": 108154
+        },
+        {
+          "theme": "Doença Renal Crônica (DRC) - Parte I",
+          "fileName": "Doença Renal Crônica (DRC) - Parte I.json",
+          "storagePath": "Nefrologia/Doenca_Renal_Cronica_DRC_-_Parte_I.json",
+          "totalChunks": 41,
+          "characters": 143742
+        },
+        {
+          "theme": "Doença Renal Crônica (DRC) - Parte II",
+          "fileName": "Doença Renal Crônica (DRC) - Parte II.json",
+          "storagePath": "Nefrologia/Doenca_Renal_Cronica_DRC_-_Parte_II.json",
+          "totalChunks": 57,
+          "characters": 193615
+        },
+        {
+          "theme": "Doenças Glomerulares",
+          "fileName": "Doenças Glomerulares.json",
+          "storagePath": "Nefrologia/Doencas_Glomerulares.json",
+          "totalChunks": 61,
+          "characters": 207294
+        },
+        {
+          "theme": "ITU - Infecção do Trato Urinário",
+          "fileName": "ITU - Infecção do Trato Urinário.json",
+          "storagePath": "Nefrologia/ITU_-_Infeccao_do_Trato_Urinario.json",
+          "totalChunks": 22,
+          "characters": 70768
+        },
+        {
+          "theme": "Lesão Renal Aguda (LRA)",
+          "fileName": "Lesão Renal Aguda (LRA).json",
+          "storagePath": "Nefrologia/Lesao_Renal_Aguda_LRA_.json",
+          "totalChunks": 69,
+          "characters": 252010
+        },
+        {
+          "theme": "Nefrolitíase",
+          "fileName": "Nefrolitíase.json",
+          "storagePath": "Nefrologia/Nefrolitiase.json",
+          "totalChunks": 38,
+          "characters": 123903
+        },
+        {
+          "theme": "Túbulo-Interstício Renal",
+          "fileName": "Túbulo-Interstício Renal.json",
+          "storagePath": "Nefrologia/Tubulo-Intersticio_Renal.json",
+          "totalChunks": 28,
+          "characters": 100364
+        }
+      ]
+    },
+    "Neurologia": {
+      "name": "Neurologia",
+      "booksCount": 12,
+      "chunksCount": 602,
+      "books": [
+        {
+          "theme": "Anatomia, Fisiologia e Semiologia Neurológica",
+          "fileName": "Anatomia, Fisiologia e Semiologia Neurológica.json",
+          "storagePath": "Neurologia/Anatomia_Fisiologia_e_Semiologia_Neurologica.json",
+          "totalChunks": 65,
+          "characters": 219661
+        },
+        {
+          "theme": "Cefaleias",
+          "fileName": "Cefaleias.json",
+          "storagePath": "Neurologia/Cefaleias.json",
+          "totalChunks": 56,
+          "characters": 184102
+        },
+        {
+          "theme": "Coma e Alterações da Consciência",
+          "fileName": "Coma e Alterações da Consciência.json",
+          "storagePath": "Neurologia/Coma_e_Alteracoes_da_Consciencia.json",
+          "totalChunks": 52,
+          "characters": 175124
+        },
+        {
+          "theme": "Demências",
+          "fileName": "Demências.json",
+          "storagePath": "Neurologia/Demencias.json",
+          "totalChunks": 59,
+          "characters": 213869
+        },
+        {
+          "theme": "Distúrbios do Movimento",
+          "fileName": "Distúrbios do Movimento.json",
+          "storagePath": "Neurologia/Disturbios_do_Movimento.json",
+          "totalChunks": 49,
+          "characters": 166709
+        },
+        {
+          "theme": "Distúrbios do Sono",
+          "fileName": "Distúrbios do Sono.json",
+          "storagePath": "Neurologia/Disturbios_do_Sono.json",
+          "totalChunks": 36,
+          "characters": 113829
+        },
+        {
+          "theme": "Doenças Desmielinizantes e Encefalites Autoimunes",
+          "fileName": "Doenças Desmielinizantes e Encefalites Autoimunes.json",
+          "storagePath": "Neurologia/Doencas_Desmielinizantes_e_Encefalites_Autoimunes.json",
+          "totalChunks": 42,
+          "characters": 142702
+        },
+        {
+          "theme": "Doenças Neuromusculares I",
+          "fileName": "Doenças Neuromusculares I.json",
+          "storagePath": "Neurologia/Doencas_Neuromusculares_I.json",
+          "totalChunks": 63,
+          "characters": 223192
+        },
+        {
+          "theme": "Doenças Neuromusculares ll",
+          "fileName": "Doenças Neuromusculares ll.json",
+          "storagePath": "Neurologia/Doencas_Neuromusculares_ll.json",
+          "totalChunks": 44,
+          "characters": 154078
+        },
+        {
+          "theme": "Epilepsias",
+          "fileName": "Epilepsias.json",
+          "storagePath": "Neurologia/Epilepsias.json",
+          "totalChunks": 50,
+          "characters": 179601
+        },
+        {
+          "theme": "Traumatismo Cranioencefálico",
+          "fileName": "Traumatismo Cranioencefálico.json",
+          "storagePath": "Neurologia/Traumatismo_Cranioencefalico.json",
+          "totalChunks": 37,
+          "characters": 114726
+        },
+        {
+          "theme": "Tumores Intracranianos",
+          "fileName": "Tumores Intracranianos.json",
+          "storagePath": "Neurologia/Tumores_Intracranianos.json",
+          "totalChunks": 49,
+          "characters": 159679
+        }
+      ]
+    },
+    "Obstetrícia": {
+      "name": "Obstetrícia",
+      "booksCount": 24,
+      "chunksCount": 375,
+      "books": [
+        {
+          "theme": "acia Obstétrica, Pelvimetria e Estática Fetal",
+          "fileName": "acia Obstétrica, Pelvimetria e Estática Fetal.json",
+          "storagePath": "Obstetricia/acia_Obstetrica_Pelvimetria_e_Estatica_Fetal.json",
+          "totalChunks": 13,
+          "characters": 34175
+        },
+        {
+          "theme": "angramento da Primeira Metade",
+          "fileName": "angramento da Primeira Metade.json",
+          "storagePath": "Obstetricia/angramento_da_Primeira_Metade.json",
+          "totalChunks": 25,
+          "characters": 84188
+        },
+        {
+          "theme": "angramento da Segunda Metade",
+          "fileName": "angramento da Segunda Metade.json",
+          "storagePath": "Obstetricia/angramento_da_Segunda_Metade.json",
+          "totalChunks": 17,
+          "characters": 54252
+        },
+        {
+          "theme": "arto Vaginal Operatório",
+          "fileName": "arto Vaginal Operatório.json",
+          "storagePath": "Obstetricia/arto_Vaginal_Operatorio.json",
+          "totalChunks": 10,
+          "characters": 27601
+        },
+        {
+          "theme": "borto de Repetição",
+          "fileName": "borto de Repetição.json",
+          "storagePath": "Obstetricia/borto_de_Repeticao.json",
+          "totalChunks": 8,
+          "characters": 25590
+        },
+        {
+          "theme": "ecanismo de Parto e Fases Clínicas do Parto",
+          "fileName": "ecanismo de Parto e Fases Clínicas do Parto.json",
+          "storagePath": "Obstetricia/ecanismo_de_Parto_e_Fases_Clinicas_do_Parto.json",
+          "totalChunks": 15,
+          "characters": 53526
+        },
+        {
+          "theme": "emorragia Pós-Parto (HPP)",
+          "fileName": "emorragia Pós-Parto (HPP).json",
+          "storagePath": "Obstetricia/emorragia_Pos-Parto_HPP_.json",
+          "totalChunks": 11,
+          "characters": 33093
+        },
+        {
+          "theme": "estação Múltipla",
+          "fileName": "estação Múltipla.json",
+          "storagePath": "Obstetricia/estacao_Multipla.json",
+          "totalChunks": 10,
+          "characters": 36196
+        },
+        {
+          "theme": "estrição de Crescimento Fetal e Óbito Fetal",
+          "fileName": "estrição de Crescimento Fetal e Óbito Fetal.json",
+          "storagePath": "Obstetricia/estricao_de_Crescimento_Fetal_e_Obito_Fetal.json",
+          "totalChunks": 14,
+          "characters": 44733
+        },
+        {
+          "theme": "iabetes Mellitus na Gestação",
+          "fileName": "iabetes Mellitus na Gestação.json",
+          "storagePath": "Obstetricia/iabetes_Mellitus_na_Gestacao.json",
+          "totalChunks": 15,
+          "characters": 44987
+        },
+        {
+          "theme": "istocia e Partograma",
+          "fileName": "istocia e Partograma.json",
+          "storagePath": "Obstetricia/istocia_e_Partograma.json",
+          "totalChunks": 18,
+          "characters": 58991
+        },
+        {
+          "theme": "italidade Fetal",
+          "fileName": "italidade Fetal.json",
+          "storagePath": "Obstetricia/italidade_Fetal.json",
+          "totalChunks": 18,
+          "characters": 57712
+        },
+        {
+          "theme": "loimunização Materna e Doença Hemolítica Perinatal",
+          "fileName": "loimunização Materna e Doença Hemolítica Perinatal.json",
+          "storagePath": "Obstetricia/loimunizacao_Materna_e_Doenca_Hemolitica_Perinatal.json",
+          "totalChunks": 8,
+          "characters": 24998
+        },
+        {
+          "theme": "lterações do Volume de Líquido Amniótico",
+          "fileName": "lterações do Volume de Líquido Amniótico.json",
+          "storagePath": "Obstetricia/lteracoes_do_Volume_de_Liquido_Amniotico.json",
+          "totalChunks": 10,
+          "characters": 34804
+        },
+        {
+          "theme": "ltrassom em Obstetrícia",
+          "fileName": "ltrassom em Obstetrícia.json",
+          "storagePath": "Obstetricia/ltrassom_em_Obstetricia.json",
+          "totalChunks": 20,
+          "characters": 65585
+        },
+        {
+          "theme": "ndução do Parto e Pós-Datismo",
+          "fileName": "ndução do Parto e Pós-Datismo.json",
+          "storagePath": "Obstetricia/nducao_do_Parto_e_Pos-Datismo.json",
+          "totalChunks": 9,
+          "characters": 25926
+        },
+        {
+          "theme": "nfecção Puerperal",
+          "fileName": "nfecção Puerperal.json",
+          "storagePath": "Obstetricia/nfeccao_Puerperal.json",
+          "totalChunks": 9,
+          "characters": 25429
+        },
+        {
+          "theme": "nfecções Congênitas na Gestação",
+          "fileName": "nfecções Congênitas na Gestação.json",
+          "storagePath": "Obstetricia/nfeccoes_Congenitas_na_Gestacao.json",
+          "totalChunks": 26,
+          "characters": 91649
+        },
+        {
+          "theme": "odificações Fisiológicas da Gestação",
+          "fileName": "odificações Fisiológicas da Gestação.json",
+          "storagePath": "Obstetricia/odificacoes_Fisiologicas_da_Gestacao.json",
+          "totalChunks": 11,
+          "characters": 35984
+        },
+        {
+          "theme": "otura Prematura de Membranas (RPM)",
+          "fileName": "otura Prematura de Membranas (RPM).json",
+          "storagePath": "Obstetricia/otura_Prematura_de_Membranas_RPM_.json",
+          "totalChunks": 11,
+          "characters": 33646
+        },
+        {
+          "theme": "rematuridade e Trabalho de parto prematuro (TPP)",
+          "fileName": "rematuridade e Trabalho de parto prematuro (TPP).json",
+          "storagePath": "Obstetricia/rematuridade_e_Trabalho_de_parto_prematuro_TPP_.json",
+          "totalChunks": 9,
+          "characters": 33254
+        },
+        {
+          "theme": "ré-Natal",
+          "fileName": "ré-Natal.json",
+          "storagePath": "Obstetricia/re-Natal.json",
+          "totalChunks": 50,
+          "characters": 167255
+        },
+        {
+          "theme": "ssistência ao Parto",
+          "fileName": "ssistência ao Parto.json",
+          "storagePath": "Obstetricia/ssistencia_ao_Parto.json",
+          "totalChunks": 27,
+          "characters": 83384
+        },
+        {
+          "theme": "ífilis na Gestação e Sífilis Congênitas",
+          "fileName": "ífilis na Gestação e Sífilis Congênitas.json",
+          "storagePath": "Obstetricia/ifilis_na_Gestacao_e_Sifilis_Congenitas.json",
+          "totalChunks": 11,
+          "characters": 35842
+        }
+      ]
+    },
+    "Oftalmologia": {
+      "name": "Oftalmologia",
+      "booksCount": 9,
+      "chunksCount": 350,
+      "books": [
+        {
+          "theme": "euroftalmologia",
+          "fileName": "euroftalmologia.json",
+          "storagePath": "Oftalmologia/euroftalmologia.json",
+          "totalChunks": 22,
+          "characters": 68108
+        },
+        {
+          "theme": "istúrbios da Refração",
+          "fileName": "istúrbios da Refração.json",
+          "storagePath": "Oftalmologia/isturbios_da_Refracao.json",
+          "totalChunks": 22,
+          "characters": 66763
+        },
+        {
+          "theme": "laucoma",
+          "fileName": "laucoma.json",
+          "storagePath": "Oftalmologia/laucoma.json",
+          "totalChunks": 52,
+          "characters": 172102
+        },
+        {
+          "theme": "natomia e Fisiologia do Aparelho Visual",
+          "fileName": "natomia e Fisiologia do Aparelho Visual.json",
+          "storagePath": "Oftalmologia/natomia_e_Fisiologia_do_Aparelho_Visual.json",
+          "totalChunks": 28,
+          "characters": 81596
+        },
+        {
+          "theme": "oenças do Polo Posterior",
+          "fileName": "oenças do Polo Posterior.json",
+          "storagePath": "Oftalmologia/oencas_do_Polo_Posterior.json",
+          "totalChunks": 79,
+          "characters": 269136
+        },
+        {
+          "theme": "raumatismos Oculares",
+          "fileName": "raumatismos Oculares.json",
+          "storagePath": "Oftalmologia/raumatismos_Oculares.json",
+          "totalChunks": 33,
+          "characters": 109805
+        },
+        {
+          "theme": "umores Oculares Malignos",
+          "fileName": "umores Oculares Malignos.json",
+          "storagePath": "Oftalmologia/umores_Oculares_Malignos.json",
+          "totalChunks": 7,
+          "characters": 22502
+        },
+        {
+          "theme": "índrome do Olho Vermelho",
+          "fileName": "índrome do Olho Vermelho.json",
+          "storagePath": "Oftalmologia/indrome_do_Olho_Vermelho.json",
+          "totalChunks": 82,
+          "characters": 276672
+        },
+        {
+          "theme": "órnea e Cristalino",
+          "fileName": "órnea e Cristalino.json",
+          "storagePath": "Oftalmologia/ornea_e_Cristalino.json",
+          "totalChunks": 25,
+          "characters": 84889
+        }
+      ]
+    },
+    "Ortopedia": {
+      "name": "Ortopedia",
+      "booksCount": 18,
+      "chunksCount": 1820,
+      "books": [
+        {
+          "theme": "aus Tratos",
+          "fileName": "aus Tratos.json",
+          "storagePath": "Ortopedia/aus_Tratos.json",
+          "totalChunks": 151,
+          "characters": 494788
+        },
+        {
+          "theme": "esenvolvimento Ortopédico da Criança",
+          "fileName": "esenvolvimento Ortopédico da Criança.json",
+          "storagePath": "Ortopedia/esenvolvimento_Ortopedico_da_Crianca.json",
+          "totalChunks": 53,
+          "characters": 173822
+        },
+        {
+          "theme": "iscelânea Ortopédica",
+          "fileName": "iscelânea Ortopédica.json",
+          "storagePath": "Ortopedia/iscelanea_Ortopedica.json",
+          "totalChunks": 70,
+          "characters": 218210
+        },
+        {
+          "theme": "mbro e Joelho Pediátrico",
+          "fileName": "mbro e Joelho Pediátrico.json",
+          "storagePath": "Ortopedia/mbro_e_Joelho_Pediatrico.json",
+          "totalChunks": 40,
+          "characters": 120877
+        },
+        {
+          "theme": "ncologia Ortopédica e Osteomielite",
+          "fileName": "ncologia Ortopédica e Osteomielite.json",
+          "storagePath": "Ortopedia/ncologia_Ortopedica_e_Osteomielite.json",
+          "totalChunks": 157,
+          "characters": 507884
+        },
+        {
+          "theme": "oenças Neuromusculares Pediátricas",
+          "fileName": "oenças Neuromusculares Pediátricas.json",
+          "storagePath": "Ortopedia/oencas_Neuromusculares_Pediatricas.json",
+          "totalChunks": 66,
+          "characters": 207922
+        },
+        {
+          "theme": "oenças da Coluna Vertebral",
+          "fileName": "oenças da Coluna Vertebral.json",
+          "storagePath": "Ortopedia/oencas_da_Coluna_Vertebral.json",
+          "totalChunks": 190,
+          "characters": 593472
+        },
+        {
+          "theme": "oenças da Mão e Síndromes Compressivas",
+          "fileName": "oenças da Mão e Síndromes Compressivas.json",
+          "storagePath": "Ortopedia/oencas_da_Mao_e_Sindromes_Compressivas.json",
+          "totalChunks": 77,
+          "characters": 233615
+        },
+        {
+          "theme": "oenças de Partes Moles",
+          "fileName": "oenças de Partes Moles.json",
+          "storagePath": "Ortopedia/oencas_de_Partes_Moles.json",
+          "totalChunks": 17,
+          "characters": 49870
+        },
+        {
+          "theme": "oenças do Ombro e Cotovelo",
+          "fileName": "oenças do Ombro e Cotovelo.json",
+          "storagePath": "Ortopedia/oencas_do_Ombro_e_Cotovelo.json",
+          "totalChunks": 91,
+          "characters": 278095
+        },
+        {
+          "theme": "olitrauma Ortopédico",
+          "fileName": "olitrauma Ortopédico.json",
+          "storagePath": "Ortopedia/olitrauma_Ortopedico.json",
+          "totalChunks": 171,
+          "characters": 553913
+        },
+        {
+          "theme": "oluna Pediátrica",
+          "fileName": "oluna Pediátrica.json",
+          "storagePath": "Ortopedia/oluna_Pediatrica.json",
+          "totalChunks": 26,
+          "characters": 75223
+        },
+        {
+          "theme": "omplicações do Trauma Ortopédico",
+          "fileName": "omplicações do Trauma Ortopédico.json",
+          "storagePath": "Ortopedia/omplicacoes_do_Trauma_Ortopedico.json",
+          "totalChunks": 122,
+          "characters": 380640
+        },
+        {
+          "theme": "onceitos Básicos de Anatomia e Semiologia",
+          "fileName": "onceitos Básicos de Anatomia e Semiologia.json",
+          "storagePath": "Ortopedia/onceitos_Basicos_de_Anatomia_e_Semiologia.json",
+          "totalChunks": 46,
+          "characters": 136028
+        },
+        {
+          "theme": "onceitos Básicos do Trauma Ortopédico",
+          "fileName": "onceitos Básicos do Trauma Ortopédico.json",
+          "storagePath": "Ortopedia/onceitos_Basicos_do_Trauma_Ortopedico.json",
+          "totalChunks": 99,
+          "characters": 306127
+        },
+        {
+          "theme": "ratura Exposta",
+          "fileName": "ratura Exposta.json",
+          "storagePath": "Ortopedia/ratura_Exposta.json",
+          "totalChunks": 64,
+          "characters": 208251
+        },
+        {
+          "theme": "raturas e Luxações",
+          "fileName": "raturas e Luxações.json",
+          "storagePath": "Ortopedia/raturas_e_Luxacoes.json",
+          "totalChunks": 211,
+          "characters": 640414
+        },
+        {
+          "theme": "uadril Pediátrico",
+          "fileName": "uadril Pediátrico.json",
+          "storagePath": "Ortopedia/uadril_Pediatrico.json",
+          "totalChunks": 169,
+          "characters": 550001
+        }
+      ]
+    },
+    "Otorrinolaringologia": {
+      "name": "Otorrinolaringologia",
+      "booksCount": 7,
+      "chunksCount": 457,
+      "books": [
+        {
+          "theme": "irurgia de Cabeça e Pescoço - Laringologia, Apneia do Sono e SRO",
+          "fileName": "irurgia de Cabeça e Pescoço - Laringologia, Apneia do Sono e SRO.json",
+          "storagePath": "Otorrinolaringologia/irurgia_de_Cabeca_e_Pescoco_-_Laringologia_Apneia_do_Sono_e_SRO.json",
+          "totalChunks": 27,
+          "characters": 80096
+        },
+        {
+          "theme": "irurgia de Cabeça e Pescoço - Manejo dos Nódulos de Tireoide, Câncer de Tireoide e Tireoidectomia",
+          "fileName": "irurgia de Cabeça e Pescoço - Manejo dos Nódulos de Tireoide, Câncer de Tireoide e Tireoidectomia.json",
+          "storagePath": "Otorrinolaringologia/irurgia_de_Cabeca_e_Pescoco_-_Manejo_dos_Nodulos_de_Tireoide_Cancer_de_Tireoide_e_Tireoidectomia.json",
+          "totalChunks": 88,
+          "characters": 279631
+        },
+        {
+          "theme": "irurgia de Cabeça e Pescoço - Neoplasias Benignas e Malignas de Cabeça e Pescoço, Doenças Congênitas Cervicofaciais e Traqueostomia",
+          "fileName": "irurgia de Cabeça e Pescoço - Neoplasias Benignas e Malignas de Cabeça e Pescoço, Doenças Congênitas Cervicofaciais e Traqueostomia.json",
+          "storagePath": "Otorrinolaringologia/irurgia_de_Cabeca_e_Pescoco_-_Neoplasias_Benignas_e_Malignas_de_Cabeca_e_Pescoco_Doencas_Congenitas_Cervicofaciais_e_Traqueostomia.json",
+          "totalChunks": 66,
+          "characters": 207982
+        },
+        {
+          "theme": "nfecções das Vias Aéreas Superiores - Parte II",
+          "fileName": "nfecções das Vias Aéreas Superiores - Parte II.json",
+          "storagePath": "Otorrinolaringologia/nfeccoes_das_Vias_Aereas_Superiores_-_Parte_II.json",
+          "totalChunks": 84,
+          "characters": 277805
+        },
+        {
+          "theme": "nfecções de Vias Aéreas Superiores - Parte I",
+          "fileName": "nfecções de Vias Aéreas Superiores - Parte I.json",
+          "storagePath": "Otorrinolaringologia/nfeccoes_de_Vias_Aereas_Superiores_-_Parte_I.json",
+          "totalChunks": 87,
+          "characters": 294783
+        },
+        {
+          "theme": "nfecções de Vias Aéreas Superiores - Parte III",
+          "fileName": "nfecções de Vias Aéreas Superiores - Parte III.json",
+          "storagePath": "Otorrinolaringologia/nfeccoes_de_Vias_Aereas_Superiores_-_Parte_III.json",
+          "totalChunks": 54,
+          "characters": 173536
+        },
+        {
+          "theme": "toneurologia, Vertigens e Audiologia",
+          "fileName": "toneurologia, Vertigens e Audiologia.json",
+          "storagePath": "Otorrinolaringologia/toneurologia_Vertigens_e_Audiologia.json",
+          "totalChunks": 51,
+          "characters": 162703
+        }
+      ]
+    },
+    "Pediatria": {
+      "name": "Pediatria",
+      "booksCount": 43,
+      "chunksCount": 1292,
+      "books": [
+        {
+          "theme": "Aleitamento Materno",
+          "fileName": "Aleitamento Materno.json",
+          "storagePath": "Pediatria/Aleitamento_Materno.json",
+          "totalChunks": 53,
+          "characters": 177008
+        },
+        {
+          "theme": "Alergia Alimentar",
+          "fileName": "Alergia Alimentar.json",
+          "storagePath": "Pediatria/Alergia_Alimentar.json",
+          "totalChunks": 14,
+          "characters": 44651
+        },
+        {
+          "theme": "Anafilaxia e Urticária",
+          "fileName": "Anafilaxia e Urticária.json",
+          "storagePath": "Pediatria/Anafilaxia_e_Urticaria.json",
+          "totalChunks": 44,
+          "characters": 155388
+        },
+        {
+          "theme": "Artrite Idiopática Juvenil (AIJ)",
+          "fileName": "Artrite Idiopática Juvenil (AIJ).json",
+          "storagePath": "Pediatria/Artrite_Idiopatica_Juvenil_AIJ_.json",
+          "totalChunks": 27,
+          "characters": 88463
+        },
+        {
+          "theme": "Asma",
+          "fileName": "Asma.json",
+          "storagePath": "Pediatria/Asma.json",
+          "totalChunks": 59,
+          "characters": 203836
+        },
+        {
+          "theme": "BRUE-SMSL (Brief Resolved Unexplained Events - Síndrome da Morte Súbita do Lactente)",
+          "fileName": "BRUE-SMSL (Brief Resolved Unexplained Events - Síndrome da Morte Súbita do Lactente).json",
+          "storagePath": "Pediatria/BRUE-SMSL_Brief_Resolved_Unexplained_Events_-_Sindrome_da_Morte_Subita_do_Lactente_.json",
+          "totalChunks": 12,
+          "characters": 33790
+        },
+        {
+          "theme": "Bronquiolite",
+          "fileName": "Bronquiolite.json",
+          "storagePath": "Pediatria/Bronquiolite.json",
+          "totalChunks": 22,
+          "characters": 77617
+        },
+        {
+          "theme": "Cardiopatias Congênitas",
+          "fileName": "Cardiopatias Congênitas.json",
+          "storagePath": "Pediatria/Cardiopatias_Congenitas.json",
+          "totalChunks": 34,
+          "characters": 106449
+        },
+        {
+          "theme": "Cefaleias na Infância",
+          "fileName": "Cefaleias na Infância.json",
+          "storagePath": "Pediatria/Cefaleias_na_Infancia.json",
+          "totalChunks": 12,
+          "characters": 39456
+        },
+        {
+          "theme": "Choque em Pediatria",
+          "fileName": "Choque em Pediatria.json",
+          "storagePath": "Pediatria/Choque_em_Pediatria.json",
+          "totalChunks": 46,
+          "characters": 156502
+        },
+        {
+          "theme": "Constipação Intestinal",
+          "fileName": "Constipação Intestinal.json",
+          "storagePath": "Pediatria/Constipacao_Intestinal.json",
+          "totalChunks": 16,
+          "characters": 46372
+        },
+        {
+          "theme": "Convulsão Febril",
+          "fileName": "Convulsão Febril.json",
+          "storagePath": "Pediatria/Convulsao_Febril.json",
+          "totalChunks": 15,
+          "characters": 52247
+        },
+        {
+          "theme": "Coqueluche",
+          "fileName": "Coqueluche.json",
+          "storagePath": "Pediatria/Coqueluche.json",
+          "totalChunks": 19,
+          "characters": 67135
+        },
+        {
+          "theme": "Crescimento",
+          "fileName": "Crescimento.json",
+          "storagePath": "Pediatria/Crescimento.json",
+          "totalChunks": 30,
+          "characters": 100148
+        },
+        {
+          "theme": "Cuidados Neonatais",
+          "fileName": "Cuidados Neonatais.json",
+          "storagePath": "Pediatria/Cuidados_Neonatais.json",
+          "totalChunks": 41,
+          "characters": 133587
+        },
+        {
+          "theme": "Desenvolvimento Neuropsicomotor (DNPM)",
+          "fileName": "Desenvolvimento Neuropsicomotor (DNPM).json",
+          "storagePath": "Pediatria/Desenvolvimento_Neuropsicomotor_DNPM_.json",
+          "totalChunks": 42,
+          "characters": 125614
+        },
+        {
+          "theme": "Desnutrição na Infância",
+          "fileName": "Desnutrição na Infância.json",
+          "storagePath": "Pediatria/Desnutricao_na_Infancia.json",
+          "totalChunks": 33,
+          "characters": 110542
+        },
+        {
+          "theme": "Diagnóstico Nutricional",
+          "fileName": "Diagnóstico Nutricional.json",
+          "storagePath": "Pediatria/Diagnostico_Nutricional.json",
+          "totalChunks": 18,
+          "characters": 54860
+        },
+        {
+          "theme": "Diarreia",
+          "fileName": "Diarreia.json",
+          "storagePath": "Pediatria/Diarreia.json",
+          "totalChunks": 43,
+          "characters": 141133
+        },
+        {
+          "theme": "Doença Celíaca em Pediatria",
+          "fileName": "Doença Celíaca em Pediatria.json",
+          "storagePath": "Pediatria/Doenca_Celiaca_em_Pediatria.json",
+          "totalChunks": 19,
+          "characters": 55711
+        },
+        {
+          "theme": "Doença do Refluxo Gastroesofágico em Pediatria",
+          "fileName": "Doença do Refluxo Gastroesofágico em Pediatria.json",
+          "storagePath": "Pediatria/Doenca_do_Refluxo_Gastroesofagico_em_Pediatria.json",
+          "totalChunks": 15,
+          "characters": 48754
+        },
+        {
+          "theme": "Doenças Exantemáticas",
+          "fileName": "Doenças Exantemáticas.json",
+          "storagePath": "Pediatria/Doencas_Exantematicas.json",
+          "totalChunks": 26,
+          "characters": 82044
+        },
+        {
+          "theme": "Emergências Pediátricas",
+          "fileName": "Emergências Pediátricas.json",
+          "storagePath": "Pediatria/Emergencias_Pediatricas.json",
+          "totalChunks": 50,
+          "characters": 158723
+        },
+        {
+          "theme": "Enurese Noturna",
+          "fileName": "Enurese Noturna.json",
+          "storagePath": "Pediatria/Enurese_Noturna.json",
+          "totalChunks": 16,
+          "characters": 52737
+        },
+        {
+          "theme": "Febre Reumática",
+          "fileName": "Febre Reumática.json",
+          "storagePath": "Pediatria/Febre_Reumatica.json",
+          "totalChunks": 19,
+          "characters": 68452
+        },
+        {
+          "theme": "Febre na Pediatria",
+          "fileName": "Febre na Pediatria.json",
+          "storagePath": "Pediatria/Febre_na_Pediatria.json",
+          "totalChunks": 16,
+          "characters": 48153
+        },
+        {
+          "theme": "Hiperplasia Adrenal Congênita",
+          "fileName": "Hiperplasia Adrenal Congênita.json",
+          "storagePath": "Pediatria/Hiperplasia_Adrenal_Congenita.json",
+          "totalChunks": 14,
+          "characters": 46556
+        },
+        {
+          "theme": "Hipertensão Arterial na Criança e Adolescente",
+          "fileName": "Hipertensão Arterial na Criança e Adolescente.json",
+          "storagePath": "Pediatria/Hipertensao_Arterial_na_Crianca_e_Adolescente.json",
+          "totalChunks": 21,
+          "characters": 72292
+        },
+        {
+          "theme": "Hipotireoidismo Congênito",
+          "fileName": "Hipotireoidismo Congênito.json",
+          "storagePath": "Pediatria/Hipotireoidismo_Congenito.json",
+          "totalChunks": 13,
+          "characters": 38729
+        },
+        {
+          "theme": "Icterícia e Sepse Neonatal",
+          "fileName": "Icterícia e Sepse Neonatal.json",
+          "storagePath": "Pediatria/Ictericia_e_Sepse_Neonatal.json",
+          "totalChunks": 31,
+          "characters": 96836
+        },
+        {
+          "theme": "Imunizações",
+          "fileName": "Imunizações.json",
+          "storagePath": "Pediatria/Imunizacoes.json",
+          "totalChunks": 63,
+          "characters": 228720
+        },
+        {
+          "theme": "Infecção de Trato Urinário em Pediatria (ITU)",
+          "fileName": "Infecção de Trato Urinário em Pediatria (ITU).json",
+          "storagePath": "Pediatria/Infeccao_de_Trato_Urinario_em_Pediatria_ITU_.json",
+          "totalChunks": 25,
+          "characters": 84509
+        },
+        {
+          "theme": "Infecções Congênitas",
+          "fileName": "Infecções Congênitas.json",
+          "storagePath": "Pediatria/Infeccoes_Congenitas.json",
+          "totalChunks": 78,
+          "characters": 256433
+        },
+        {
+          "theme": "Obesidade Infantil e na Adolescência",
+          "fileName": "Obesidade Infantil e na Adolescência.json",
+          "storagePath": "Pediatria/Obesidade_Infantil_e_na_Adolescencia.json",
+          "totalChunks": 34,
+          "characters": 118372
+        },
+        {
+          "theme": "Pneumonias na Infância",
+          "fileName": "Pneumonias na Infância.json",
+          "storagePath": "Pediatria/Pneumonias_na_Infancia.json",
+          "totalChunks": 42,
+          "characters": 146419
+        },
+        {
+          "theme": "Puberdade",
+          "fileName": "Puberdade.json",
+          "storagePath": "Pediatria/Puberdade.json",
+          "totalChunks": 43,
+          "characters": 153379
+        },
+        {
+          "theme": "Púrpura de Henoch Schonlein-Vasculite por IGA",
+          "fileName": "Púrpura de Henoch Schonlein-Vasculite por IGA.json",
+          "storagePath": "Pediatria/Purpura_de_Henoch_Schonlein-Vasculite_por_IGA.json",
+          "totalChunks": 12,
+          "characters": 37263
+        },
+        {
+          "theme": "Reanimação Neonatal",
+          "fileName": "Reanimação Neonatal.json",
+          "storagePath": "Pediatria/Reanimacao_Neonatal.json",
+          "totalChunks": 19,
+          "characters": 63108
+        },
+        {
+          "theme": "Segurança em Pediatria",
+          "fileName": "Segurança em Pediatria.json",
+          "storagePath": "Pediatria/Seguranca_em_Pediatria.json",
+          "totalChunks": 11,
+          "characters": 29880
+        },
+        {
+          "theme": "Sífilis Congênita",
+          "fileName": "Sífilis Congênita.json",
+          "storagePath": "Pediatria/Sifilis_Congenita.json",
+          "totalChunks": 39,
+          "characters": 123630
+        },
+        {
+          "theme": "Síndromes Genéticas, Erros Inatos do Metabolismo e da Imunidade",
+          "fileName": "Síndromes Genéticas, Erros Inatos do Metabolismo e da Imunidade.json",
+          "storagePath": "Pediatria/Sindromes_Geneticas_Erros_Inatos_do_Metabolismo_e_da_Imunidade.json",
+          "totalChunks": 66,
+          "characters": 221752
+        },
+        {
+          "theme": "Tuberculose na Infância",
+          "fileName": "Tuberculose na Infância.json",
+          "storagePath": "Pediatria/Tuberculose_na_Infancia.json",
+          "totalChunks": 22,
+          "characters": 74625
+        },
+        {
+          "theme": "Tópicos em Pediatria",
+          "fileName": "Tópicos em Pediatria.json",
+          "storagePath": "Pediatria/Topicos_em_Pediatria.json",
+          "totalChunks": 18,
+          "characters": 55598
+        }
+      ]
+    },
+    "Pneumologia": {
+      "name": "Pneumologia",
+      "booksCount": 8,
+      "chunksCount": 493,
+      "books": [
+        {
+          "theme": "Asma",
+          "fileName": "Asma.json",
+          "storagePath": "Pneumologia/Asma.json",
+          "totalChunks": 57,
+          "characters": 201662
+        },
+        {
+          "theme": "Derrame Pleural",
+          "fileName": "Derrame Pleural.json",
+          "storagePath": "Pneumologia/Derrame_Pleural.json",
+          "totalChunks": 45,
+          "characters": 155894
+        },
+        {
+          "theme": "Doença Pulmonar Obstrutiva Crônica (DPOC)",
+          "fileName": "Doença Pulmonar Obstrutiva Crônica (DPOC).json",
+          "storagePath": "Pneumologia/Doenca_Pulmonar_Obstrutiva_Cronica_DPOC_.json",
+          "totalChunks": 53,
+          "characters": 191707
+        },
+        {
+          "theme": "Introdução à Pneumologia",
+          "fileName": "Introdução à Pneumologia.json",
+          "storagePath": "Pneumologia/Introducao_a_Pneumologia.json",
+          "totalChunks": 44,
+          "characters": 149969
+        },
+        {
+          "theme": "Miscelânea (Interstício, Bronquiectasias, Hipertensão Pulmonar, Pneumotórax e EVALI)",
+          "fileName": "Miscelânea (Interstício, Bronquiectasias, Hipertensão Pulmonar, Pneumotórax e EVALI).json",
+          "storagePath": "Pneumologia/Miscelanea_Intersticio_Bronquiectasias_Hipertensao_Pulmonar_Pneumotorax_e_EVALI_.json",
+          "totalChunks": 63,
+          "characters": 219223
+        },
+        {
+          "theme": "Neoplasias Pulmonares",
+          "fileName": "Neoplasias Pulmonares.json",
+          "storagePath": "Pneumologia/Neoplasias_Pulmonares.json",
+          "totalChunks": 51,
+          "characters": 175331
+        },
+        {
+          "theme": "Pneumologia Intensiva",
+          "fileName": "Pneumologia Intensiva.json",
+          "storagePath": "Pneumologia/Pneumologia_Intensiva.json",
+          "totalChunks": 98,
+          "characters": 338568
+        },
+        {
+          "theme": "Tromboembolismo Pulmonar (TEP)",
+          "fileName": "Tromboembolismo Pulmonar (TEP).json",
+          "storagePath": "Pneumologia/Tromboembolismo_Pulmonar_TEP_.json",
+          "totalChunks": 82,
+          "characters": 281537
+        }
+      ]
+    },
+    "Psiquiatria": {
+      "name": "Psiquiatria",
+      "booksCount": 12,
+      "chunksCount": 237,
+      "books": [
+        {
+          "theme": "Dependência Química",
+          "fileName": "Dependência Química.json",
+          "storagePath": "Psiquiatria/Dependencia_Quimica.json",
+          "totalChunks": 34,
+          "characters": 119395
+        },
+        {
+          "theme": "Intoxicações Exógenas",
+          "fileName": "Intoxicações Exógenas.json",
+          "storagePath": "Psiquiatria/Intoxicacoes_Exogenas.json",
+          "totalChunks": 27,
+          "characters": 98951
+        },
+        {
+          "theme": "Psicofarmacologia",
+          "fileName": "Psicofarmacologia.json",
+          "storagePath": "Psiquiatria/Psicofarmacologia.json",
+          "totalChunks": 27,
+          "characters": 101686
+        },
+        {
+          "theme": "Psicopatologia",
+          "fileName": "Psicopatologia.json",
+          "storagePath": "Psiquiatria/Psicopatologia.json",
+          "totalChunks": 13,
+          "characters": 46971
+        },
+        {
+          "theme": "Psiquiatria Infantil",
+          "fileName": "Psiquiatria Infantil.json",
+          "storagePath": "Psiquiatria/Psiquiatria_Infantil.json",
+          "totalChunks": 24,
+          "characters": 86682
+        },
+        {
+          "theme": "Psiquiatria Social e Reforma Psiquiátrica",
+          "fileName": "Psiquiatria Social e Reforma Psiquiátrica.json",
+          "storagePath": "Psiquiatria/Psiquiatria_Social_e_Reforma_Psiquiatrica.json",
+          "totalChunks": 17,
+          "characters": 59781
+        },
+        {
+          "theme": "TOC, Transtornos Somáticos, Dissociativos e Relacionados ao Estresse",
+          "fileName": "TOC, Transtornos Somáticos, Dissociativos e Relacionados ao Estresse.json",
+          "storagePath": "Psiquiatria/TOC_Transtornos_Somaticos_Dissociativos_e_Relacionados_ao_Estresse.json",
+          "totalChunks": 20,
+          "characters": 72010
+        },
+        {
+          "theme": "Transtorno de Personalidade",
+          "fileName": "Transtorno de Personalidade.json",
+          "storagePath": "Psiquiatria/Transtorno_de_Personalidade.json",
+          "totalChunks": 16,
+          "characters": 60585
+        },
+        {
+          "theme": "Transtornos Alimentares",
+          "fileName": "Transtornos Alimentares.json",
+          "storagePath": "Psiquiatria/Transtornos_Alimentares.json",
+          "totalChunks": 13,
+          "characters": 47741
+        },
+        {
+          "theme": "Transtornos Psicóticos",
+          "fileName": "Transtornos Psicóticos.json",
+          "storagePath": "Psiquiatria/Transtornos_Psicoticos.json",
+          "totalChunks": 13,
+          "characters": 47565
+        },
+        {
+          "theme": "Transtornos de Ansiedade",
+          "fileName": "Transtornos de Ansiedade.json",
+          "storagePath": "Psiquiatria/Transtornos_de_Ansiedade.json",
+          "totalChunks": 15,
+          "characters": 54498
+        },
+        {
+          "theme": "Transtornos do Humor",
+          "fileName": "Transtornos do Humor.json",
+          "storagePath": "Psiquiatria/Transtornos_do_Humor.json",
+          "totalChunks": 18,
+          "characters": 65901
+        }
+      ]
+    },
+    "Radiologia": {
+      "name": "Radiologia",
+      "booksCount": 10,
+      "chunksCount": 34,
+      "books": [
+        {
+          "theme": "adiografia Musculoesquelética",
+          "fileName": "adiografia Musculoesquelética.json",
+          "storagePath": "Radiologia/adiografia_Musculoesqueletica.json",
+          "totalChunks": 1,
+          "characters": 471
+        },
+        {
+          "theme": "adiografia do Abdome",
+          "fileName": "adiografia do Abdome.json",
+          "storagePath": "Radiologia/adiografia_do_Abdome.json",
+          "totalChunks": 1,
+          "characters": 435
+        },
+        {
+          "theme": "adiografia do Tórax",
+          "fileName": "adiografia do Tórax.json",
+          "storagePath": "Radiologia/adiografia_do_Torax.json",
+          "totalChunks": 1,
+          "characters": 431
+        },
+        {
+          "theme": "ltrassonografia Transvaginal",
+          "fileName": "ltrassonografia Transvaginal.json",
+          "storagePath": "Radiologia/ltrassonografia_Transvaginal.json",
+          "totalChunks": 1,
+          "characters": 467
+        },
+        {
+          "theme": "ntrodução a Tomografia",
+          "fileName": "ntrodução a Tomografia.json",
+          "storagePath": "Radiologia/ntroducao_a_Tomografia.json",
+          "totalChunks": 1,
+          "characters": 443
+        },
+        {
+          "theme": "omografia de Abdome e Pelve",
+          "fileName": "omografia de Abdome e Pelve.json",
+          "storagePath": "Radiologia/omografia_de_Abdome_e_Pelve.json",
+          "totalChunks": 1,
+          "characters": 463
+        },
+        {
+          "theme": "omografia de Crânio",
+          "fileName": "omografia de Crânio.json",
+          "storagePath": "Radiologia/omografia_de_Cranio.json",
+          "totalChunks": 1,
+          "characters": 431
+        },
+        {
+          "theme": "omografia de Tórax",
+          "fileName": "omografia de Tórax.json",
+          "storagePath": "Radiologia/omografia_de_Torax.json",
+          "totalChunks": 1,
+          "characters": 427
+        },
+        {
+          "theme": "tlas de Radiologia",
+          "fileName": "tlas de Radiologia.json",
+          "storagePath": "Radiologia/tlas_de_Radiologia.json",
+          "totalChunks": 25,
+          "characters": 75228
+        },
+        {
+          "theme": "xames Contrastados",
+          "fileName": "xames Contrastados.json",
+          "storagePath": "Radiologia/xames_Contrastados.json",
+          "totalChunks": 1,
+          "characters": 432
+        }
+      ]
+    },
+    "Reumatologia": {
+      "name": "Reumatologia",
+      "booksCount": 12,
+      "chunksCount": 538,
+      "books": [
+        {
+          "theme": "Artrite Reumatoide (Apêndice - Medicações na Reumatologia)",
+          "fileName": "Artrite Reumatoide (Apêndice - Medicações na Reumatologia).json",
+          "storagePath": "Reumatologia/Artrite_Reumatoide_Apendice_-_Medicacoes_na_Reumatologia_.json",
+          "totalChunks": 62,
+          "characters": 213612
+        },
+        {
+          "theme": "Artrites Microcristalinas",
+          "fileName": "Artrites Microcristalinas.json",
+          "storagePath": "Reumatologia/Artrites_Microcristalinas.json",
+          "totalChunks": 36,
+          "characters": 118368
+        },
+        {
+          "theme": "Artropatias Infecciosas",
+          "fileName": "Artropatias Infecciosas.json",
+          "storagePath": "Reumatologia/Artropatias_Infecciosas.json",
+          "totalChunks": 26,
+          "characters": 84356
+        },
+        {
+          "theme": "Doenças Autoimunes do Tecido Conjuntivo",
+          "fileName": "Doenças Autoimunes do Tecido Conjuntivo.json",
+          "storagePath": "Reumatologia/Doencas_Autoimunes_do_Tecido_Conjuntivo.json",
+          "totalChunks": 62,
+          "characters": 219785
+        },
+        {
+          "theme": "Doenças do Osso e da Cartilagem",
+          "fileName": "Doenças do Osso e da Cartilagem.json",
+          "storagePath": "Reumatologia/Doencas_do_Osso_e_da_Cartilagem.json",
+          "totalChunks": 35,
+          "characters": 126020
+        },
+        {
+          "theme": "Espondiloartrites",
+          "fileName": "Espondiloartrites.json",
+          "storagePath": "Reumatologia/Espondiloartrites.json",
+          "totalChunks": 45,
+          "characters": 158909
+        },
+        {
+          "theme": "Introdução à Reumatologia",
+          "fileName": "Introdução à Reumatologia.json",
+          "storagePath": "Reumatologia/Introducao_a_Reumatologia.json",
+          "totalChunks": 47,
+          "characters": 160426
+        },
+        {
+          "theme": "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+          "fileName": "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide.json",
+          "storagePath": "Reumatologia/Lupus_Eritematoso_Sistemico_e_Sindrome_Antifosfolipide.json",
+          "totalChunks": 82,
+          "characters": 272126
+        },
+        {
+          "theme": "Manifestações Reumatológicas e Doenças Sistêmicas",
+          "fileName": "Manifestações Reumatológicas e Doenças Sistêmicas.json",
+          "storagePath": "Reumatologia/Manifestacoes_Reumatologicas_e_Doencas_Sistemicas.json",
+          "totalChunks": 18,
+          "characters": 56458
+        },
+        {
+          "theme": "Miscelânea",
+          "fileName": "Miscelânea.json",
+          "storagePath": "Reumatologia/Miscelanea.json",
+          "totalChunks": 26,
+          "characters": 91327
+        },
+        {
+          "theme": "Síndromes Dolorosas Crônicas",
+          "fileName": "Síndromes Dolorosas Crônicas.json",
+          "storagePath": "Reumatologia/Sindromes_Dolorosas_Cronicas.json",
+          "totalChunks": 33,
+          "characters": 113018
+        },
+        {
+          "theme": "Vasculites",
+          "fileName": "Vasculites.json",
+          "storagePath": "Reumatologia/Vasculites.json",
+          "totalChunks": 66,
+          "characters": 227528
+        }
+      ]
+    }
+  }
+}
