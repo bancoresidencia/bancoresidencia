@@ -1,0 +1,4524 @@
+{
+  "title": "Manifesto Oficial de Conhecimento e Questões Auditadas (Google Drive)",
+  "generatedAt": "2026-10-09T01:43:51.362Z",
+  "supabaseStorageBucket": "medical-knowledge",
+  "supabaseStorageFolder": "gabarito_das_questoes",
+  "totalBooks": 337,
+  "totalUniqueQuestions": 29931,
+  "specialties": [
+    {
+      "specialty": "Cardio",
+      "booksCount": 22,
+      "uniqueQuestionsCount": 1988,
+      "books": [
+        {
+          "theme": "Bradiarritmias.pdf",
+          "sourceBook": "Cópia de 2. Bradiarritmias.pdf",
+          "totalChunks": 64,
+          "characters": 191916,
+          "questionsAudit": {
+            "gabaritosIdentificados": 111,
+            "questoesNumeradas": 0,
+            "alternativasA": 66,
+            "estimativaQuestoesComGabarito": 111
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Bradiarritmias.pdf.json"
+        },
+        {
+          "theme": "Cardiomiopatias.pdf",
+          "sourceBook": "Cópia de 20. Cardiomiopatias.pdf",
+          "totalChunks": 124,
+          "characters": 406523,
+          "questionsAudit": {
+            "gabaritosIdentificados": 231,
+            "questoesNumeradas": 0,
+            "alternativasA": 119,
+            "estimativaQuestoesComGabarito": 231
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Cardiomiopatias.pdf.json"
+        },
+        {
+          "theme": "Choque.pdf",
+          "sourceBook": "Cópia de 17. Choque.pdf",
+          "totalChunks": 73,
+          "characters": 225807,
+          "questionsAudit": {
+            "gabaritosIdentificados": 138,
+            "questoesNumeradas": 0,
+            "alternativasA": 77,
+            "estimativaQuestoesComGabarito": 138
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Choque.pdf.json"
+        },
+        {
+          "theme": "Dislipidemia e Estratificação de Risco Cardiovascular .pdf",
+          "sourceBook": "Cópia de 6. Dislipidemia e Estratificação de Risco Cardiovascular .pdf",
+          "totalChunks": 139,
+          "characters": 443267,
+          "questionsAudit": {
+            "gabaritosIdentificados": 228,
+            "questoesNumeradas": 0,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 228
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Dislipidemia e Estratificação de Risco Cardiovascular .pdf.json"
+        },
+        {
+          "theme": "Eletrocardiograma.pdf",
+          "sourceBook": "Cópia de 22. Eletrocardiograma.pdf",
+          "totalChunks": 110,
+          "characters": 319367,
+          "questionsAudit": {
+            "gabaritosIdentificados": 215,
+            "questoesNumeradas": 1,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 215
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Eletrocardiograma.pdf.json"
+        },
+        {
+          "theme": "Fibrilação e Flutter Atrial .pdf",
+          "sourceBook": "Cópia de 4. Fibrilação e Flutter Atrial .pdf",
+          "totalChunks": 138,
+          "characters": 432668,
+          "questionsAudit": {
+            "gabaritosIdentificados": 245,
+            "questoesNumeradas": 0,
+            "alternativasA": 132,
+            "estimativaQuestoesComGabarito": 245
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Fibrilação e Flutter Atrial .pdf.json"
+        },
+        {
+          "theme": "Hipertensão Arterial Sistêmica (Parte 1) Diagnóstico, Classificação, Avaliação Clínico-Laboratorial e Estratificação de Risco Cardiovascular .pdf",
+          "sourceBook": "Cópia de 11. Hipertensão Arterial Sistêmica (Parte 1) Diagnóstico, Classificação, Avaliação Clínico-Laboratorial e Estratificação de Risco Cardiovascular .pdf",
+          "totalChunks": 98,
+          "characters": 315923,
+          "questionsAudit": {
+            "gabaritosIdentificados": 197,
+            "questoesNumeradas": 0,
+            "alternativasA": 100,
+            "estimativaQuestoesComGabarito": 197
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Hipertensão Arterial Sistêmica (Parte 1) Diagnóstico, Classificação, Avaliação Clínico-Laboratorial e Estratificação de Risco Cardiovascular .pdf.json"
+        },
+        {
+          "theme": "Hipertensão Arterial Sistêmica (Parte 2) Tratamento.pdf",
+          "sourceBook": "Cópia de 12. Hipertensão Arterial Sistêmica (Parte 2) Tratamento.pdf",
+          "totalChunks": 122,
+          "characters": 385855,
+          "questionsAudit": {
+            "gabaritosIdentificados": 219,
+            "questoesNumeradas": 1,
+            "alternativasA": 141,
+            "estimativaQuestoesComGabarito": 219
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Hipertensão Arterial Sistêmica (Parte 2) Tratamento.pdf.json"
+        },
+        {
+          "theme": "Hipertensão Arterial Sistêmica (Parte 3) Secundária e Crise Hipertensiva (EM ATUALIZAÇÃO).pdf",
+          "sourceBook": "Cópia de 13. Hipertensão Arterial Sistêmica (Parte 3) Secundária e Crise Hipertensiva (EM ATUALIZAÇÃO).pdf",
+          "totalChunks": 132,
+          "characters": 448450,
+          "questionsAudit": {
+            "gabaritosIdentificados": 244,
+            "questoesNumeradas": 1,
+            "alternativasA": 129,
+            "estimativaQuestoesComGabarito": 244
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Hipertensão Arterial Sistêmica (Parte 3) Secundária e Crise Hipertensiva (EM ATUALIZAÇÃO).pdf.json"
+        },
+        {
+          "theme": "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST).pdf",
+          "sourceBook": "Cópia de 9. IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST).pdf",
+          "totalChunks": 149,
+          "characters": 482341,
+          "questionsAudit": {
+            "gabaritosIdentificados": 253,
+            "questoesNumeradas": 0,
+            "alternativasA": 131,
+            "estimativaQuestoesComGabarito": 253
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST).pdf.json"
+        },
+        {
+          "theme": "Insuficiência Cardíaca (Parte 1) Classificação, Fisiopatologia, Diagnóstico e Exames Complementares.pdf",
+          "sourceBook": "Cópia de 14. Insuficiência Cardíaca (Parte 1) Classificação, Fisiopatologia, Diagnóstico e Exames Complementares.pdf",
+          "totalChunks": 96,
+          "characters": 313146,
+          "questionsAudit": {
+            "gabaritosIdentificados": 195,
+            "questoesNumeradas": 0,
+            "alternativasA": 98,
+            "estimativaQuestoesComGabarito": 195
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Insuficiência Cardíaca (Parte 1) Classificação, Fisiopatologia, Diagnóstico e Exames Complementares.pdf.json"
+        },
+        {
+          "theme": "Insuficiência Cardíaca (Parte 2) Tratamento.pdf",
+          "sourceBook": "Cópia de 15. Insuficiência Cardíaca (Parte 2) Tratamento.pdf",
+          "totalChunks": 137,
+          "characters": 444898,
+          "questionsAudit": {
+            "gabaritosIdentificados": 253,
+            "questoesNumeradas": 0,
+            "alternativasA": 133,
+            "estimativaQuestoesComGabarito": 253
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Insuficiência Cardíaca (Parte 2) Tratamento.pdf.json"
+        },
+        {
+          "theme": "Insuficiência Cardíaca Aguda.pdf",
+          "sourceBook": "Cópia de 16. Insuficiência Cardíaca Aguda.pdf",
+          "totalChunks": 96,
+          "characters": 302703,
+          "questionsAudit": {
+            "gabaritosIdentificados": 175,
+            "questoesNumeradas": 0,
+            "alternativasA": 95,
+            "estimativaQuestoesComGabarito": 175
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Insuficiência Cardíaca Aguda.pdf.json"
+        },
+        {
+          "theme": "Parada Cardiorrespiratória (PCR).pdf",
+          "sourceBook": "Cópia de 1. Parada Cardiorrespiratória (PCR).pdf",
+          "totalChunks": 104,
+          "characters": 330875,
+          "questionsAudit": {
+            "gabaritosIdentificados": 228,
+            "questoesNumeradas": 1,
+            "alternativasA": 119,
+            "estimativaQuestoesComGabarito": 228
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Parada Cardiorrespiratória (PCR).pdf.json"
+        },
+        {
+          "theme": "Pericardiopatias.pdf",
+          "sourceBook": "Cópia de 21. Pericardiopatias.pdf",
+          "totalChunks": 109,
+          "characters": 334431,
+          "questionsAudit": {
+            "gabaritosIdentificados": 236,
+            "questoesNumeradas": 0,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 236
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Pericardiopatias.pdf.json"
+        },
+        {
+          "theme": "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST.pdf",
+          "sourceBook": "Cópia de 8. SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST.pdf",
+          "totalChunks": 140,
+          "characters": 446907,
+          "questionsAudit": {
+            "gabaritosIdentificados": 235,
+            "questoesNumeradas": 1,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 235
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST.pdf.json"
+        },
+        {
+          "theme": "Semiologia Cardíaca.pdf",
+          "sourceBook": "Cópia de 18. Semiologia Cardíaca.pdf",
+          "totalChunks": 103,
+          "characters": 316516,
+          "questionsAudit": {
+            "gabaritosIdentificados": 226,
+            "questoesNumeradas": 0,
+            "alternativasA": 110,
+            "estimativaQuestoesComGabarito": 226
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Semiologia Cardíaca.pdf.json"
+        },
+        {
+          "theme": "Síncope.pdf",
+          "sourceBook": "Cópia de 5. Síncope.pdf",
+          "totalChunks": 88,
+          "characters": 284828,
+          "questionsAudit": {
+            "gabaritosIdentificados": 188,
+            "questoesNumeradas": 0,
+            "alternativasA": 89,
+            "estimativaQuestoesComGabarito": 188
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Síncope.pdf.json"
+        },
+        {
+          "theme": "Síndrome Coronariana Crônica.pdf",
+          "sourceBook": "Cópia de 7. Síndrome Coronariana Crônica.pdf",
+          "totalChunks": 130,
+          "characters": 420362,
+          "questionsAudit": {
+            "gabaritosIdentificados": 252,
+            "questoesNumeradas": 0,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 252
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Síndrome Coronariana Crônica.pdf.json"
+        },
+        {
+          "theme": "Síndromes Aórticas Agudas.pdf",
+          "sourceBook": "Cópia de 10. Síndromes Aórticas Agudas.pdf",
+          "totalChunks": 94,
+          "characters": 291634,
+          "questionsAudit": {
+            "gabaritosIdentificados": 198,
+            "questoesNumeradas": 0,
+            "alternativasA": 106,
+            "estimativaQuestoesComGabarito": 198
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Síndromes Aórticas Agudas.pdf.json"
+        },
+        {
+          "theme": "Taquiarritmias.pdf",
+          "sourceBook": "Cópia de 3. Taquiarritmias.pdf",
+          "totalChunks": 104,
+          "characters": 326857,
+          "questionsAudit": {
+            "gabaritosIdentificados": 191,
+            "questoesNumeradas": 1,
+            "alternativasA": 104,
+            "estimativaQuestoesComGabarito": 191
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Taquiarritmias.pdf.json"
+        },
+        {
+          "theme": "Valvopatias.pdf",
+          "sourceBook": "Cópia de 19. Valvopatias.pdf",
+          "totalChunks": 147,
+          "characters": 464128,
+          "questionsAudit": {
+            "gabaritosIdentificados": 262,
+            "questoesNumeradas": 0,
+            "alternativasA": 132,
+            "estimativaQuestoesComGabarito": 262
+          },
+          "supabasePath": "gabarito_das_questoes/Cardio/Valvopatias.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Cirurgia",
+      "booksCount": 33,
+      "uniqueQuestionsCount": 3815,
+      "books": [
+        {
+          "theme": "Abdome Agudo Hemorrágico.pdf",
+          "sourceBook": "Cópia de 14. Abdome Agudo Hemorrágico.pdf",
+          "totalChunks": 43,
+          "characters": 138776,
+          "questionsAudit": {
+            "gabaritosIdentificados": 94,
+            "questoesNumeradas": 0,
+            "alternativasA": 60,
+            "estimativaQuestoesComGabarito": 94
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Abdome Agudo Hemorrágico.pdf.json"
+        },
+        {
+          "theme": "Abdome Agudo Inflamatório - Colecistite e Colangite Aguda.pdf",
+          "sourceBook": "Cópia de 11. Abdome Agudo Inflamatório - Colecistite e Colangite Aguda.pdf",
+          "totalChunks": 142,
+          "characters": 452724,
+          "questionsAudit": {
+            "gabaritosIdentificados": 272,
+            "questoesNumeradas": 0,
+            "alternativasA": 169,
+            "estimativaQuestoesComGabarito": 272
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Abdome Agudo Inflamatório - Colecistite e Colangite Aguda.pdf.json"
+        },
+        {
+          "theme": "Abdome Agudo Inflamatório - Diverticulite Aguda.pdf",
+          "sourceBook": "Cópia de 12. Abdome Agudo Inflamatório - Diverticulite Aguda.pdf",
+          "totalChunks": 84,
+          "characters": 265355,
+          "questionsAudit": {
+            "gabaritosIdentificados": 147,
+            "questoesNumeradas": 0,
+            "alternativasA": 105,
+            "estimativaQuestoesComGabarito": 147
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Abdome Agudo Inflamatório - Diverticulite Aguda.pdf.json"
+        },
+        {
+          "theme": "Abdome Agudo Inflamatório – Apendicite Aguda.pdf",
+          "sourceBook": "Cópia de 10. Abdome Agudo Inflamatório – Apendicite Aguda.pdf",
+          "totalChunks": 127,
+          "characters": 408594,
+          "questionsAudit": {
+            "gabaritosIdentificados": 231,
+            "questoesNumeradas": 0,
+            "alternativasA": 166,
+            "estimativaQuestoesComGabarito": 231
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Abdome Agudo Inflamatório – Apendicite Aguda.pdf.json"
+        },
+        {
+          "theme": "Abdome Agudo Obstrutivo.pdf",
+          "sourceBook": "Cópia de 16. Abdome Agudo Obstrutivo.pdf",
+          "totalChunks": 157,
+          "characters": 525259,
+          "questionsAudit": {
+            "gabaritosIdentificados": 254,
+            "questoesNumeradas": 160,
+            "alternativasA": 160,
+            "estimativaQuestoesComGabarito": 254
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Abdome Agudo Obstrutivo.pdf.json"
+        },
+        {
+          "theme": "Abdome Agudo Perfurativo.pdf",
+          "sourceBook": "Cópia de 15. Abdome Agudo Perfurativo.pdf",
+          "totalChunks": 62,
+          "characters": 196755,
+          "questionsAudit": {
+            "gabaritosIdentificados": 124,
+            "questoesNumeradas": 0,
+            "alternativasA": 78,
+            "estimativaQuestoesComGabarito": 124
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Abdome Agudo Perfurativo.pdf.json"
+        },
+        {
+          "theme": "Abdome Agudo Vascular.pdf",
+          "sourceBook": "Cópia de 13. Abdome Agudo Vascular.pdf",
+          "totalChunks": 86,
+          "characters": 282821,
+          "questionsAudit": {
+            "gabaritosIdentificados": 139,
+            "questoesNumeradas": 1,
+            "alternativasA": 89,
+            "estimativaQuestoesComGabarito": 139
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Abdome Agudo Vascular.pdf.json"
+        },
+        {
+          "theme": "Cicatrização de Feridas.pdf",
+          "sourceBook": "Cópia de 30. Cicatrização de Feridas.pdf",
+          "totalChunks": 89,
+          "characters": 276436,
+          "questionsAudit": {
+            "gabaritosIdentificados": 209,
+            "questoesNumeradas": 1,
+            "alternativasA": 139,
+            "estimativaQuestoesComGabarito": 209
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cicatrização de Feridas.pdf.json"
+        },
+        {
+          "theme": "Cirurgia Bariátrica e Metabólica (Tratamento Cirúrgico da Obesidade) .pdf",
+          "sourceBook": "Cópia de 31. Cirurgia Bariátrica e Metabólica (Tratamento Cirúrgico da Obesidade) .pdf",
+          "totalChunks": 114,
+          "characters": 374325,
+          "questionsAudit": {
+            "gabaritosIdentificados": 209,
+            "questoesNumeradas": 0,
+            "alternativasA": 133,
+            "estimativaQuestoesComGabarito": 209
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cirurgia Bariátrica e Metabólica (Tratamento Cirúrgico da Obesidade) .pdf.json"
+        },
+        {
+          "theme": "Cirurgia Infantil - Parte I.pdf",
+          "sourceBook": "Cópia de 24. Cirurgia Infantil - Parte I.pdf",
+          "totalChunks": 124,
+          "characters": 417309,
+          "questionsAudit": {
+            "gabaritosIdentificados": 235,
+            "questoesNumeradas": 146,
+            "alternativasA": 144,
+            "estimativaQuestoesComGabarito": 235
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cirurgia Infantil - Parte I.pdf.json"
+        },
+        {
+          "theme": "Cirurgia Infantil - Parte II.pdf",
+          "sourceBook": "Cópia de 25. Cirurgia Infantil - Parte II.pdf",
+          "totalChunks": 134,
+          "characters": 431871,
+          "questionsAudit": {
+            "gabaritosIdentificados": 228,
+            "questoesNumeradas": 0,
+            "alternativasA": 148,
+            "estimativaQuestoesComGabarito": 228
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cirurgia Infantil - Parte II.pdf.json"
+        },
+        {
+          "theme": "Cirurgia Infantil - Parte III.pdf",
+          "sourceBook": "Cópia de 26. Cirurgia Infantil - Parte III.pdf",
+          "totalChunks": 116,
+          "characters": 363262,
+          "questionsAudit": {
+            "gabaritosIdentificados": 201,
+            "questoesNumeradas": 0,
+            "alternativasA": 130,
+            "estimativaQuestoesComGabarito": 201
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cirurgia Infantil - Parte III.pdf.json"
+        },
+        {
+          "theme": "Cirurgia Plástica.pdf",
+          "sourceBook": "Cópia de 22. Cirurgia Plástica.pdf",
+          "totalChunks": 101,
+          "characters": 329311,
+          "questionsAudit": {
+            "gabaritosIdentificados": 222,
+            "questoesNumeradas": 132,
+            "alternativasA": 131,
+            "estimativaQuestoesComGabarito": 222
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cirurgia Plástica.pdf.json"
+        },
+        {
+          "theme": "Cirurgia Torácica.pdf",
+          "sourceBook": "Cópia de 21. Cirurgia Torácica.pdf",
+          "totalChunks": 96,
+          "characters": 312965,
+          "questionsAudit": {
+            "gabaritosIdentificados": 161,
+            "questoesNumeradas": 100,
+            "alternativasA": 97,
+            "estimativaQuestoesComGabarito": 161
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cirurgia Torácica.pdf.json"
+        },
+        {
+          "theme": "Cirurgia Vascular.pdf",
+          "sourceBook": "Cópia de 20. Cirurgia Vascular.pdf",
+          "totalChunks": 149,
+          "characters": 506307,
+          "questionsAudit": {
+            "gabaritosIdentificados": 243,
+            "questoesNumeradas": 170,
+            "alternativasA": 167,
+            "estimativaQuestoesComGabarito": 243
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Cirurgia Vascular.pdf.json"
+        },
+        {
+          "theme": "Complicações Pós-Operatórias.pdf",
+          "sourceBook": "Cópia de 18. Complicações Pós-Operatórias.pdf",
+          "totalChunks": 128,
+          "characters": 435540,
+          "questionsAudit": {
+            "gabaritosIdentificados": 204,
+            "questoesNumeradas": 155,
+            "alternativasA": 152,
+            "estimativaQuestoesComGabarito": 204
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Complicações Pós-Operatórias.pdf.json"
+        },
+        {
+          "theme": "Hérnias da Parede Abdominal.pdf",
+          "sourceBook": "Cópia de 19. Hérnias da Parede Abdominal.pdf",
+          "totalChunks": 118,
+          "characters": 389563,
+          "questionsAudit": {
+            "gabaritosIdentificados": 271,
+            "questoesNumeradas": 181,
+            "alternativasA": 183,
+            "estimativaQuestoesComGabarito": 271
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Hérnias da Parede Abdominal.pdf.json"
+        },
+        {
+          "theme": "Medicina Perioperatória.pdf",
+          "sourceBook": "Cópia de 33. Medicina Perioperatória.pdf",
+          "totalChunks": 251,
+          "characters": 866038,
+          "questionsAudit": {
+            "gabaritosIdentificados": 476,
+            "questoesNumeradas": 273,
+            "alternativasA": 269,
+            "estimativaQuestoesComGabarito": 476
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Medicina Perioperatória.pdf.json"
+        },
+        {
+          "theme": "Neoplasias do Apêndice Cecal.pdf",
+          "sourceBook": "Cópia de 28. Neoplasias do Apêndice Cecal.pdf",
+          "totalChunks": 33,
+          "characters": 109560,
+          "questionsAudit": {
+            "gabaritosIdentificados": 85,
+            "questoesNumeradas": 0,
+            "alternativasA": 45,
+            "estimativaQuestoesComGabarito": 85
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Neoplasias do Apêndice Cecal.pdf.json"
+        },
+        {
+          "theme": "Nutrição em Cirurgia.pdf",
+          "sourceBook": "Cópia de 29. Nutrição em Cirurgia.pdf",
+          "totalChunks": 97,
+          "characters": 300486,
+          "questionsAudit": {
+            "gabaritosIdentificados": 200,
+            "questoesNumeradas": 0,
+            "alternativasA": 133,
+            "estimativaQuestoesComGabarito": 200
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Nutrição em Cirurgia.pdf.json"
+        },
+        {
+          "theme": "Proctologia.pdf",
+          "sourceBook": "Cópia de 27. Proctologia.pdf",
+          "totalChunks": 99,
+          "characters": 312072,
+          "questionsAudit": {
+            "gabaritosIdentificados": 180,
+            "questoesNumeradas": 2,
+            "alternativasA": 131,
+            "estimativaQuestoesComGabarito": 180
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Proctologia.pdf.json"
+        },
+        {
+          "theme": "Queimaduras e Trauma Elétrico.pdf",
+          "sourceBook": "Cópia de 7. Queimaduras e Trauma Elétrico.pdf",
+          "totalChunks": 98,
+          "characters": 297400,
+          "questionsAudit": {
+            "gabaritosIdentificados": 215,
+            "questoesNumeradas": 0,
+            "alternativasA": 117,
+            "estimativaQuestoesComGabarito": 215
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Queimaduras e Trauma Elétrico.pdf.json"
+        },
+        {
+          "theme": "Resposta Endócrino-Metabólica ao Trauma.pdf",
+          "sourceBook": "Cópia de 8. Resposta Endócrino-Metabólica ao Trauma.pdf",
+          "totalChunks": 75,
+          "characters": 241738,
+          "questionsAudit": {
+            "gabaritosIdentificados": 518,
+            "questoesNumeradas": 0,
+            "alternativasA": 105,
+            "estimativaQuestoesComGabarito": 518
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Resposta Endócrino-Metabólica ao Trauma.pdf.json"
+        },
+        {
+          "theme": "Temas Gerais em Cirurgia.pdf",
+          "sourceBook": "Cópia de 32. Temas Gerais em Cirurgia.pdf",
+          "totalChunks": 94,
+          "characters": 289324,
+          "questionsAudit": {
+            "gabaritosIdentificados": 177,
+            "questoesNumeradas": 0,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 177
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Temas Gerais em Cirurgia.pdf.json"
+        },
+        {
+          "theme": "Trauma - Choque.pdf",
+          "sourceBook": "Cópia de 2. Trauma - Choque.pdf",
+          "totalChunks": 88,
+          "characters": 300171,
+          "questionsAudit": {
+            "gabaritosIdentificados": 173,
+            "questoesNumeradas": 125,
+            "alternativasA": 118,
+            "estimativaQuestoesComGabarito": 173
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Trauma - Choque.pdf.json"
+        },
+        {
+          "theme": "Trauma Abdominal e Pélvico.pdf",
+          "sourceBook": "Cópia de 3. Trauma Abdominal e Pélvico.pdf",
+          "totalChunks": 261,
+          "characters": 809062,
+          "questionsAudit": {
+            "gabaritosIdentificados": 531,
+            "questoesNumeradas": 1,
+            "alternativasA": 353,
+            "estimativaQuestoesComGabarito": 531
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Trauma Abdominal e Pélvico.pdf.json"
+        },
+        {
+          "theme": "Trauma Avaliação Inicial, Vias Aéreas e Trauma Torácico .pdf",
+          "sourceBook": "Cópia de 1. Trauma Avaliação Inicial, Vias Aéreas e Trauma Torácico .pdf",
+          "totalChunks": 191,
+          "characters": 591949,
+          "questionsAudit": {
+            "gabaritosIdentificados": 344,
+            "questoesNumeradas": 1,
+            "alternativasA": 218,
+            "estimativaQuestoesComGabarito": 344
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Trauma Avaliação Inicial, Vias Aéreas e Trauma Torácico .pdf.json"
+        },
+        {
+          "theme": "Trauma de Face e Cervical.pdf",
+          "sourceBook": "Cópia de 4. Trauma de Face e Cervical.pdf",
+          "totalChunks": 64,
+          "characters": 207414,
+          "questionsAudit": {
+            "gabaritosIdentificados": 142,
+            "questoesNumeradas": 91,
+            "alternativasA": 91,
+            "estimativaQuestoesComGabarito": 142
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Trauma de Face e Cervical.pdf.json"
+        },
+        {
+          "theme": "Trauma Populações Especiais (Pediátrico, Gestante e Idosos).pdf",
+          "sourceBook": "Cópia de 6. Trauma Populações Especiais (Pediátrico, Gestante e Idosos).pdf",
+          "totalChunks": 59,
+          "characters": 195045,
+          "questionsAudit": {
+            "gabaritosIdentificados": 137,
+            "questoesNumeradas": 77,
+            "alternativasA": 77,
+            "estimativaQuestoesComGabarito": 137
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Trauma Populações Especiais (Pediátrico, Gestante e Idosos).pdf.json"
+        },
+        {
+          "theme": "Trauma Vascular de Extremidades e Musculoesquelético.pdf",
+          "sourceBook": "Cópia de 5. Trauma Vascular de Extremidades e Musculoesquelético.pdf",
+          "totalChunks": 54,
+          "characters": 192978,
+          "questionsAudit": {
+            "gabaritosIdentificados": 131,
+            "questoesNumeradas": 79,
+            "alternativasA": 78,
+            "estimativaQuestoesComGabarito": 131
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Trauma Vascular de Extremidades e Musculoesquelético.pdf.json"
+        },
+        {
+          "theme": "Urgências Abdominais - Abdome Agudo.pdf",
+          "sourceBook": "Cópia de 9. Urgências Abdominais - Abdome Agudo.pdf",
+          "totalChunks": 71,
+          "characters": 239370,
+          "questionsAudit": {
+            "gabaritosIdentificados": 177,
+            "questoesNumeradas": 108,
+            "alternativasA": 109,
+            "estimativaQuestoesComGabarito": 177
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Urgências Abdominais - Abdome Agudo.pdf.json"
+        },
+        {
+          "theme": "Urologia.pdf",
+          "sourceBook": "Cópia de 23. Urologia.pdf",
+          "totalChunks": 155,
+          "characters": 482309,
+          "questionsAudit": {
+            "gabaritosIdentificados": 231,
+            "questoesNumeradas": 0,
+            "alternativasA": 153,
+            "estimativaQuestoesComGabarito": 231
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Urologia.pdf.json"
+        },
+        {
+          "theme": "Vesícula e Vias Biliares.pdf",
+          "sourceBook": "Cópia de 17. Vesícula e Vias Biliares.pdf",
+          "totalChunks": 176,
+          "characters": 587803,
+          "questionsAudit": {
+            "gabaritosIdentificados": 345,
+            "questoesNumeradas": 225,
+            "alternativasA": 227,
+            "estimativaQuestoesComGabarito": 345
+          },
+          "supabasePath": "gabarito_das_questoes/Cirurgia/Vesícula e Vias Biliares.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Dermato",
+      "booksCount": 11,
+      "uniqueQuestionsCount": 866,
+      "books": [
+        {
+          "theme": "Dermatoses Eczematosas.pdf",
+          "sourceBook": "Cópia de 5. Dermatoses Eczematosas.pdf",
+          "totalChunks": 70,
+          "characters": 233892,
+          "questionsAudit": {
+            "gabaritosIdentificados": 215,
+            "questoesNumeradas": 116,
+            "alternativasA": 112,
+            "estimativaQuestoesComGabarito": 215
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Dermatoses Eczematosas.pdf.json"
+        },
+        {
+          "theme": "Dermatoses Infecciosas.pdf",
+          "sourceBook": "Cópia de 4. Dermatoses Infecciosas.pdf",
+          "totalChunks": 114,
+          "characters": 351983,
+          "questionsAudit": {
+            "gabaritosIdentificados": 250,
+            "questoesNumeradas": 1,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 250
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Dermatoses Infecciosas.pdf.json"
+        },
+        {
+          "theme": "Dermatoses Papuloescamosas.pdf",
+          "sourceBook": "Cópia de 7. Dermatoses Papuloescamosas.pdf",
+          "totalChunks": 47,
+          "characters": 148431,
+          "questionsAudit": {
+            "gabaritosIdentificados": 113,
+            "questoesNumeradas": 0,
+            "alternativasA": 58,
+            "estimativaQuestoesComGabarito": 113
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Dermatoses Papuloescamosas.pdf.json"
+        },
+        {
+          "theme": "Dermatoses Vesicobolhosas.pdf",
+          "sourceBook": "Cópia de 8. Dermatoses Vesicobolhosas.pdf",
+          "totalChunks": 28,
+          "characters": 92135,
+          "questionsAudit": {
+            "gabaritosIdentificados": 68,
+            "questoesNumeradas": 35,
+            "alternativasA": 35,
+            "estimativaQuestoesComGabarito": 68
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Dermatoses Vesicobolhosas.pdf.json"
+        },
+        {
+          "theme": "Farmacodermias.pdf",
+          "sourceBook": "Cópia de 6. Farmacodermias.pdf",
+          "totalChunks": 59,
+          "characters": 189530,
+          "questionsAudit": {
+            "gabaritosIdentificados": 160,
+            "questoesNumeradas": 1,
+            "alternativasA": 84,
+            "estimativaQuestoesComGabarito": 160
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Farmacodermias.pdf.json"
+        },
+        {
+          "theme": "Hanseníase.pdf",
+          "sourceBook": "Cópia de 2. Hanseníase.pdf",
+          "totalChunks": 99,
+          "characters": 316079,
+          "questionsAudit": {
+            "gabaritosIdentificados": 223,
+            "questoesNumeradas": 1,
+            "alternativasA": 116,
+            "estimativaQuestoesComGabarito": 223
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Hanseníase.pdf.json"
+        },
+        {
+          "theme": "Histologia e Fisiologia da Pele e Lesões Elementares.pdf",
+          "sourceBook": "Cópia de 1. Histologia e Fisiologia da Pele e Lesões Elementares.pdf",
+          "totalChunks": 37,
+          "characters": 105027,
+          "questionsAudit": {
+            "gabaritosIdentificados": 69,
+            "questoesNumeradas": 0,
+            "alternativasA": 36,
+            "estimativaQuestoesComGabarito": 69
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Histologia e Fisiologia da Pele e Lesões Elementares.pdf.json"
+        },
+        {
+          "theme": "Miscelânea.pdf",
+          "sourceBook": "Cópia de 9. Miscelânea.pdf",
+          "totalChunks": 91,
+          "characters": 301619,
+          "questionsAudit": {
+            "gabaritosIdentificados": 236,
+            "questoesNumeradas": 128,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 236
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Miscelânea.pdf.json"
+        },
+        {
+          "theme": "Oncologia Cutânea (Câncer de Pele).pdf",
+          "sourceBook": "Cópia de 3. Oncologia Cutânea (Câncer de Pele).pdf",
+          "totalChunks": 87,
+          "characters": 262325,
+          "questionsAudit": {
+            "gabaritosIdentificados": 223,
+            "questoesNumeradas": 0,
+            "alternativasA": 119,
+            "estimativaQuestoesComGabarito": 223
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Oncologia Cutânea (Câncer de Pele).pdf.json"
+        },
+        {
+          "theme": "Piodermites.pdf",
+          "sourceBook": "Cópia de 10. Piodermites.pdf",
+          "totalChunks": 62,
+          "characters": 217815,
+          "questionsAudit": {
+            "gabaritosIdentificados": 192,
+            "questoesNumeradas": 109,
+            "alternativasA": 107,
+            "estimativaQuestoesComGabarito": 192
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Piodermites.pdf.json"
+        },
+        {
+          "theme": "Síndromes Verrucosas.pdf",
+          "sourceBook": "Cópia de 11. Síndromes Verrucosas.pdf",
+          "totalChunks": 48,
+          "characters": 173100,
+          "questionsAudit": {
+            "gabaritosIdentificados": 144,
+            "questoesNumeradas": 75,
+            "alternativasA": 72,
+            "estimativaQuestoesComGabarito": 144
+          },
+          "supabasePath": "gabarito_das_questoes/Dermato/Síndromes Verrucosas.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Endocrino",
+      "booksCount": 27,
+      "uniqueQuestionsCount": 1566,
+      "books": [
+        {
+          "theme": "Adrenal - Feocromocitoma, Hiperaldosteronismo e Incidentaloma Adrenal.pdf",
+          "sourceBook": "Cópia de 21. Adrenal - Feocromocitoma, Hiperaldosteronismo e Incidentaloma Adrenal.pdf",
+          "totalChunks": 74,
+          "characters": 244455,
+          "questionsAudit": {
+            "gabaritosIdentificados": 144,
+            "questoesNumeradas": 74,
+            "alternativasA": 74,
+            "estimativaQuestoesComGabarito": 144
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Adrenal - Feocromocitoma, Hiperaldosteronismo e Incidentaloma Adrenal.pdf.json"
+        },
+        {
+          "theme": "Adrenal - Hipocortisolismo (Insuficiência Adrenal).pdf",
+          "sourceBook": "Cópia de 19. Adrenal - Hipocortisolismo (Insuficiência Adrenal).pdf",
+          "totalChunks": 63,
+          "characters": 227313,
+          "questionsAudit": {
+            "gabaritosIdentificados": 155,
+            "questoesNumeradas": 83,
+            "alternativasA": 83,
+            "estimativaQuestoesComGabarito": 155
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Adrenal - Hipocortisolismo (Insuficiência Adrenal).pdf.json"
+        },
+        {
+          "theme": "Adrenal - Morfofisiologia Adrenal.pdf",
+          "sourceBook": "Cópia de 18. Adrenal - Morfofisiologia Adrenal.pdf",
+          "totalChunks": 10,
+          "characters": 30674,
+          "questionsAudit": {
+            "gabaritosIdentificados": 30,
+            "questoesNumeradas": 13,
+            "alternativasA": 13,
+            "estimativaQuestoesComGabarito": 30
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Adrenal - Morfofisiologia Adrenal.pdf.json"
+        },
+        {
+          "theme": "Adrenal- Hipercortisolismo (Síndrome de Cushing).pdf",
+          "sourceBook": "Cópia de 20. Adrenal- Hipercortisolismo (Síndrome de Cushing).pdf",
+          "totalChunks": 66,
+          "characters": 229497,
+          "questionsAudit": {
+            "gabaritosIdentificados": 166,
+            "questoesNumeradas": 85,
+            "alternativasA": 82,
+            "estimativaQuestoesComGabarito": 166
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Adrenal- Hipercortisolismo (Síndrome de Cushing).pdf.json"
+        },
+        {
+          "theme": "Diabetes Mellitus - Complicações Agudas.pdf",
+          "sourceBook": "Cópia de 4. Diabetes Mellitus - Complicações Agudas.pdf",
+          "totalChunks": 150,
+          "characters": 506935,
+          "questionsAudit": {
+            "gabaritosIdentificados": 183,
+            "questoesNumeradas": 112,
+            "alternativasA": 113,
+            "estimativaQuestoesComGabarito": 183
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Diabetes Mellitus - Complicações Agudas.pdf.json"
+        },
+        {
+          "theme": "Diabetes Mellitus - Complicações Crônicas.pdf",
+          "sourceBook": "Cópia de 5. Diabetes Mellitus - Complicações Crônicas.pdf",
+          "totalChunks": 105,
+          "characters": 364576,
+          "questionsAudit": {
+            "gabaritosIdentificados": 199,
+            "questoesNumeradas": 119,
+            "alternativasA": 112,
+            "estimativaQuestoesComGabarito": 199
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Diabetes Mellitus - Complicações Crônicas.pdf.json"
+        },
+        {
+          "theme": "Diabetes Mellitus - Hiperglicemia Hospitalar.pdf",
+          "sourceBook": "Cópia de 6. Diabetes Mellitus - Hiperglicemia Hospitalar.pdf",
+          "totalChunks": 48,
+          "characters": 160789,
+          "questionsAudit": {
+            "gabaritosIdentificados": 58,
+            "questoesNumeradas": 32,
+            "alternativasA": 32,
+            "estimativaQuestoesComGabarito": 58
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Diabetes Mellitus - Hiperglicemia Hospitalar.pdf.json"
+        },
+        {
+          "theme": "Diabetes Mellitus Insulinoterapia.pdf",
+          "sourceBook": "Cópia de 3. Diabetes Mellitus Insulinoterapia.pdf",
+          "totalChunks": 103,
+          "characters": 348813,
+          "questionsAudit": {
+            "gabaritosIdentificados": 204,
+            "questoesNumeradas": 116,
+            "alternativasA": 116,
+            "estimativaQuestoesComGabarito": 204
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Diabetes Mellitus Insulinoterapia.pdf.json"
+        },
+        {
+          "theme": "Diabetes Mellitus Tipo 2.pdf",
+          "sourceBook": "Cópia de 2. Diabetes Mellitus Tipo 2.pdf",
+          "totalChunks": 133,
+          "characters": 458124,
+          "questionsAudit": {
+            "gabaritosIdentificados": 209,
+            "questoesNumeradas": 128,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 209
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Diabetes Mellitus Tipo 2.pdf.json"
+        },
+        {
+          "theme": "Hipoglicemia no Paciente não Diabético.pdf",
+          "sourceBook": "Cópia de 26. Hipoglicemia no Paciente não Diabético.pdf",
+          "totalChunks": 24,
+          "characters": 76290,
+          "questionsAudit": {
+            "gabaritosIdentificados": 51,
+            "questoesNumeradas": 28,
+            "alternativasA": 28,
+            "estimativaQuestoesComGabarito": 51
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Hipoglicemia no Paciente não Diabético.pdf.json"
+        },
+        {
+          "theme": "Hipófise - Acromegalia e Incidentaloma Hipofisário.pdf",
+          "sourceBook": "Cópia de 23. Hipófise - Acromegalia e Incidentaloma Hipofisário.pdf",
+          "totalChunks": 33,
+          "characters": 112249,
+          "questionsAudit": {
+            "gabaritosIdentificados": 48,
+            "questoesNumeradas": 26,
+            "alternativasA": 26,
+            "estimativaQuestoesComGabarito": 48
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Hipófise - Acromegalia e Incidentaloma Hipofisário.pdf.json"
+        },
+        {
+          "theme": "Hipófise - Fisiologia da Hipófise e Hipopituitarismo.pdf",
+          "sourceBook": "Cópia de 22. Hipófise - Fisiologia da Hipófise e Hipopituitarismo.pdf",
+          "totalChunks": 34,
+          "characters": 115848,
+          "questionsAudit": {
+            "gabaritosIdentificados": 75,
+            "questoesNumeradas": 35,
+            "alternativasA": 35,
+            "estimativaQuestoesComGabarito": 75
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Hipófise - Fisiologia da Hipófise e Hipopituitarismo.pdf.json"
+        },
+        {
+          "theme": "Hipófise - Hiperprolactinemia.pdf",
+          "sourceBook": "Cópia de 24. Hipófise - Hiperprolactinemia.pdf",
+          "totalChunks": 51,
+          "characters": 185660,
+          "questionsAudit": {
+            "gabaritosIdentificados": 113,
+            "questoesNumeradas": 66,
+            "alternativasA": 66,
+            "estimativaQuestoesComGabarito": 113
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Hipófise - Hiperprolactinemia.pdf.json"
+        },
+        {
+          "theme": "Incongruência de Gênero.pdf",
+          "sourceBook": "Cópia de 27. Incongruência de Gênero.pdf",
+          "totalChunks": 32,
+          "characters": 105997,
+          "questionsAudit": {
+            "gabaritosIdentificados": 55,
+            "questoesNumeradas": 30,
+            "alternativasA": 30,
+            "estimativaQuestoesComGabarito": 55
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Incongruência de Gênero.pdf.json"
+        },
+        {
+          "theme": "Introdução ao Diabetes Mellitus.pdf",
+          "sourceBook": "Cópia de 1. Introdução ao Diabetes Mellitus.pdf",
+          "totalChunks": 99,
+          "characters": 344069,
+          "questionsAudit": {
+            "gabaritosIdentificados": 178,
+            "questoesNumeradas": 110,
+            "alternativasA": 108,
+            "estimativaQuestoesComGabarito": 178
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Introdução ao Diabetes Mellitus.pdf.json"
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Hipercalcemia.pdf",
+          "sourceBook": "Cópia de 12. Metabolismo Ósseo e Mineral - Hipercalcemia.pdf",
+          "totalChunks": 95,
+          "characters": 341792,
+          "questionsAudit": {
+            "gabaritosIdentificados": 197,
+            "questoesNumeradas": 114,
+            "alternativasA": 114,
+            "estimativaQuestoesComGabarito": 197
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Metabolismo Ósseo e Mineral - Hipercalcemia.pdf.json"
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Hipocalcemia.pdf",
+          "sourceBook": "Cópia de 13. Metabolismo Ósseo e Mineral - Hipocalcemia.pdf",
+          "totalChunks": 47,
+          "characters": 156392,
+          "questionsAudit": {
+            "gabaritosIdentificados": 109,
+            "questoesNumeradas": 63,
+            "alternativasA": 59,
+            "estimativaQuestoesComGabarito": 109
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Metabolismo Ósseo e Mineral - Hipocalcemia.pdf.json"
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Magnésio e Fosfato.pdf",
+          "sourceBook": "Cópia de 14. Metabolismo Ósseo e Mineral - Magnésio e Fosfato.pdf",
+          "totalChunks": 35,
+          "characters": 113511,
+          "questionsAudit": {
+            "gabaritosIdentificados": 46,
+            "questoesNumeradas": 27,
+            "alternativasA": 25,
+            "estimativaQuestoesComGabarito": 46
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Metabolismo Ósseo e Mineral - Magnésio e Fosfato.pdf.json"
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Osteoporose e Doença Óssea de Paget.pdf",
+          "sourceBook": "Cópia de 17. Metabolismo Ósseo e Mineral - Osteoporose e Doença Óssea de Paget.pdf",
+          "totalChunks": 136,
+          "characters": 454976,
+          "questionsAudit": {
+            "gabaritosIdentificados": 213,
+            "questoesNumeradas": 123,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 213
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Metabolismo Ósseo e Mineral - Osteoporose e Doença Óssea de Paget.pdf.json"
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral - Raquitismo.pdf",
+          "sourceBook": "Cópia de 16. Metabolismo Ósseo e Mineral - Raquitismo.pdf",
+          "totalChunks": 26,
+          "characters": 84038,
+          "questionsAudit": {
+            "gabaritosIdentificados": 55,
+            "questoesNumeradas": 28,
+            "alternativasA": 27,
+            "estimativaQuestoesComGabarito": 55
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Metabolismo Ósseo e Mineral - Raquitismo.pdf.json"
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral Princípios e Fisiologia.pdf",
+          "sourceBook": "Cópia de 11. Metabolismo Ósseo e Mineral Princípios e Fisiologia.pdf",
+          "totalChunks": 38,
+          "characters": 124895,
+          "questionsAudit": {
+            "gabaritosIdentificados": 49,
+            "questoesNumeradas": 23,
+            "alternativasA": 23,
+            "estimativaQuestoesComGabarito": 49
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Metabolismo Ósseo e Mineral Princípios e Fisiologia.pdf.json"
+        },
+        {
+          "theme": "Metabolismo Ósseo e Mineral- Vitamina D e Osteomalácia.pdf",
+          "sourceBook": "Cópia de 15. Metabolismo Ósseo e Mineral- Vitamina D e Osteomalácia.pdf",
+          "totalChunks": 41,
+          "characters": 133669,
+          "questionsAudit": {
+            "gabaritosIdentificados": 81,
+            "questoesNumeradas": 42,
+            "alternativasA": 41,
+            "estimativaQuestoesComGabarito": 81
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Metabolismo Ósseo e Mineral- Vitamina D e Osteomalácia.pdf.json"
+        },
+        {
+          "theme": "Neoplasias Endócrinas Múltiplas.pdf",
+          "sourceBook": "Cópia de 25. Neoplasias Endócrinas Múltiplas.pdf",
+          "totalChunks": 34,
+          "characters": 118988,
+          "questionsAudit": {
+            "gabaritosIdentificados": 113,
+            "questoesNumeradas": 58,
+            "alternativasA": 58,
+            "estimativaQuestoesComGabarito": 113
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Neoplasias Endócrinas Múltiplas.pdf.json"
+        },
+        {
+          "theme": "Obesidade - Obesidade e Síndrome Metabólica.pdf",
+          "sourceBook": "Cópia de 10. Obesidade - Obesidade e Síndrome Metabólica.pdf",
+          "totalChunks": 100,
+          "characters": 327218,
+          "questionsAudit": {
+            "gabaritosIdentificados": 173,
+            "questoesNumeradas": 102,
+            "alternativasA": 102,
+            "estimativaQuestoesComGabarito": 173
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Obesidade - Obesidade e Síndrome Metabólica.pdf.json"
+        },
+        {
+          "theme": "Tireoide - Fisiologia, Semiologia e Avaliação Diagnóstica.pdf",
+          "sourceBook": "Cópia de 7. Tireoide - Fisiologia, Semiologia e Avaliação Diagnóstica.pdf",
+          "totalChunks": 58,
+          "characters": 188967,
+          "questionsAudit": {
+            "gabaritosIdentificados": 110,
+            "questoesNumeradas": 54,
+            "alternativasA": 54,
+            "estimativaQuestoesComGabarito": 110
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Tireoide - Fisiologia, Semiologia e Avaliação Diagnóstica.pdf.json"
+        },
+        {
+          "theme": "Tireoide - Hipotireoidismo.pdf",
+          "sourceBook": "Cópia de 8. Tireoide - Hipotireoidismo.pdf",
+          "totalChunks": 90,
+          "characters": 303783,
+          "questionsAudit": {
+            "gabaritosIdentificados": 161,
+            "questoesNumeradas": 97,
+            "alternativasA": 97,
+            "estimativaQuestoesComGabarito": 161
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Tireoide - Hipotireoidismo.pdf.json"
+        },
+        {
+          "theme": "Tireoide - Tireotoxicose Diagnóstico, Etiologia, Tratamento, Tireotoxicose na Gestação e Crise Tireotóxica.pdf",
+          "sourceBook": "Cópia de 9. Tireoide - Tireotoxicose Diagnóstico, Etiologia, Tratamento, Tireotoxicose na Gestação e Crise Tireotóxica.pdf",
+          "totalChunks": 128,
+          "characters": 451683,
+          "questionsAudit": {
+            "gabaritosIdentificados": 213,
+            "questoesNumeradas": 124,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 213
+          },
+          "supabasePath": "gabarito_das_questoes/Endocrino/Tireoide - Tireotoxicose Diagnóstico, Etiologia, Tratamento, Tireotoxicose na Gestação e Crise Tireotóxica.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Gastro",
+      "booksCount": 16,
+      "uniqueQuestionsCount": 1754,
+      "books": [
+        {
+          "theme": "Anatomia e Fisiologia do Cólon e Síndrome do Intestino Irritável.pdf",
+          "sourceBook": "Cópia de 9. Anatomia e Fisiologia do Cólon e Síndrome do Intestino Irritável.pdf",
+          "totalChunks": 60,
+          "characters": 201676,
+          "questionsAudit": {
+            "gabaritosIdentificados": 109,
+            "questoesNumeradas": 63,
+            "alternativasA": 64,
+            "estimativaQuestoesComGabarito": 109
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Anatomia e Fisiologia do Cólon e Síndrome do Intestino Irritável.pdf.json"
+        },
+        {
+          "theme": "Anatomia e Fisiologia do Pâncreas e Neoplasias Pancreáticas.pdf",
+          "sourceBook": "Cópia de 15. Anatomia e Fisiologia do Pâncreas e Neoplasias Pancreáticas.pdf",
+          "totalChunks": 102,
+          "characters": 359285,
+          "questionsAudit": {
+            "gabaritosIdentificados": 233,
+            "questoesNumeradas": 123,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 233
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Anatomia e Fisiologia do Pâncreas e Neoplasias Pancreáticas.pdf.json"
+        },
+        {
+          "theme": "Anatomofisiologia Gástrica, Gastrites, Gastroparesia e Dispepsia Funcional.pdf",
+          "sourceBook": "Cópia de 6. Anatomofisiologia Gástrica, Gastrites, Gastroparesia e Dispepsia Funcional.pdf",
+          "totalChunks": 78,
+          "characters": 274776,
+          "questionsAudit": {
+            "gabaritosIdentificados": 233,
+            "questoesNumeradas": 121,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 233
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Anatomofisiologia Gástrica, Gastrites, Gastroparesia e Dispepsia Funcional.pdf.json"
+        },
+        {
+          "theme": "Disfagia, Alterações Estruturais e Distúrbios da Motilidade do Esôfago.pdf",
+          "sourceBook": "Cópia de 5. Disfagia, Alterações Estruturais e Distúrbios da Motilidade do Esôfago.pdf",
+          "totalChunks": 121,
+          "characters": 396034,
+          "questionsAudit": {
+            "gabaritosIdentificados": 178,
+            "questoesNumeradas": 1,
+            "alternativasA": 128,
+            "estimativaQuestoesComGabarito": 178
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Disfagia, Alterações Estruturais e Distúrbios da Motilidade do Esôfago.pdf.json"
+        },
+        {
+          "theme": "Distúrbios Disabsortivos.pdf",
+          "sourceBook": "Cópia de 11. Distúrbios Disabsortivos.pdf",
+          "totalChunks": 69,
+          "characters": 242442,
+          "questionsAudit": {
+            "gabaritosIdentificados": 162,
+            "questoesNumeradas": 91,
+            "alternativasA": 90,
+            "estimativaQuestoesComGabarito": 162
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Distúrbios Disabsortivos.pdf.json"
+        },
+        {
+          "theme": "Divertículos Colônicos e Divertículo de Meckel.pdf",
+          "sourceBook": "Cópia de 12. Divertículos Colônicos e Divertículo de Meckel.pdf",
+          "totalChunks": 50,
+          "characters": 172257,
+          "questionsAudit": {
+            "gabaritosIdentificados": 175,
+            "questoesNumeradas": 88,
+            "alternativasA": 91,
+            "estimativaQuestoesComGabarito": 175
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Divertículos Colônicos e Divertículo de Meckel.pdf.json"
+        },
+        {
+          "theme": "Doença do Refluxo Gastroesofágico, Esofagites Não-Pépticas e Ingestão de Corpo Estranho.pdf",
+          "sourceBook": "Cópia de 4. Doença do Refluxo Gastroesofágico, Esofagites Não-Pépticas e Ingestão de Corpo Estranho.pdf",
+          "totalChunks": 153,
+          "characters": 523034,
+          "questionsAudit": {
+            "gabaritosIdentificados": 246,
+            "questoesNumeradas": 0,
+            "alternativasA": 155,
+            "estimativaQuestoesComGabarito": 246
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Doença do Refluxo Gastroesofágico, Esofagites Não-Pépticas e Ingestão de Corpo Estranho.pdf.json"
+        },
+        {
+          "theme": "Doença Inflamatória Intestinal.pdf",
+          "sourceBook": "Cópia de 10. Doença Inflamatória Intestinal.pdf",
+          "totalChunks": 110,
+          "characters": 382491,
+          "questionsAudit": {
+            "gabaritosIdentificados": 220,
+            "questoesNumeradas": 128,
+            "alternativasA": 125,
+            "estimativaQuestoesComGabarito": 220
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Doença Inflamatória Intestinal.pdf.json"
+        },
+        {
+          "theme": "Doença Ulcerosa Péptica, Inibidores de Bomba de Prótons (IBP) e Helicobacter Pylori.pdf",
+          "sourceBook": "Cópia de 7. Doença Ulcerosa Péptica, Inibidores de Bomba de Prótons (IBP) e Helicobacter Pylori.pdf",
+          "totalChunks": 123,
+          "characters": 413373,
+          "questionsAudit": {
+            "gabaritosIdentificados": 233,
+            "questoesNumeradas": 138,
+            "alternativasA": 138,
+            "estimativaQuestoesComGabarito": 233
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Doença Ulcerosa Péptica, Inibidores de Bomba de Prótons (IBP) e Helicobacter Pylori.pdf.json"
+        },
+        {
+          "theme": "Hemorragia Digestiva Alta Não Varicosa.pdf",
+          "sourceBook": "Cópia de 1. Hemorragia Digestiva Alta Não Varicosa.pdf",
+          "totalChunks": 88,
+          "characters": 286820,
+          "questionsAudit": {
+            "gabaritosIdentificados": 180,
+            "questoesNumeradas": 0,
+            "alternativasA": 117,
+            "estimativaQuestoesComGabarito": 180
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Hemorragia Digestiva Alta Não Varicosa.pdf.json"
+        },
+        {
+          "theme": "Hemorragia Digestiva Alta Varicosa.pdf",
+          "sourceBook": "Cópia de 2. Hemorragia Digestiva Alta Varicosa.pdf",
+          "totalChunks": 108,
+          "characters": 362084,
+          "questionsAudit": {
+            "gabaritosIdentificados": 203,
+            "questoesNumeradas": 0,
+            "alternativasA": 117,
+            "estimativaQuestoesComGabarito": 203
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Hemorragia Digestiva Alta Varicosa.pdf.json"
+        },
+        {
+          "theme": "Hemorragia Digestiva Baixa.pdf",
+          "sourceBook": "Cópia de 3. Hemorragia Digestiva Baixa.pdf",
+          "totalChunks": 80,
+          "characters": 266512,
+          "questionsAudit": {
+            "gabaritosIdentificados": 189,
+            "questoesNumeradas": 0,
+            "alternativasA": 113,
+            "estimativaQuestoesComGabarito": 189
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Hemorragia Digestiva Baixa.pdf.json"
+        },
+        {
+          "theme": "Neoplasias de Estômago e Esôfago.pdf",
+          "sourceBook": "Cópia de 14. Neoplasias de Estômago e Esôfago.pdf",
+          "totalChunks": 138,
+          "characters": 457652,
+          "questionsAudit": {
+            "gabaritosIdentificados": 236,
+            "questoesNumeradas": 155,
+            "alternativasA": 156,
+            "estimativaQuestoesComGabarito": 236
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Neoplasias de Estômago e Esôfago.pdf.json"
+        },
+        {
+          "theme": "Pancreatite Aguda e Crônica (Pancreatites).pdf",
+          "sourceBook": "Cópia de 8. Pancreatite Aguda e Crônica (Pancreatites).pdf",
+          "totalChunks": 139,
+          "characters": 457008,
+          "questionsAudit": {
+            "gabaritosIdentificados": 210,
+            "questoesNumeradas": 0,
+            "alternativasA": 135,
+            "estimativaQuestoesComGabarito": 210
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Pancreatite Aguda e Crônica (Pancreatites).pdf.json"
+        },
+        {
+          "theme": "Polipose Intestinal e Câncer Colorretal.pdf",
+          "sourceBook": "Cópia de 13. Polipose Intestinal e Câncer Colorretal.pdf",
+          "totalChunks": 129,
+          "characters": 456501,
+          "questionsAudit": {
+            "gabaritosIdentificados": 239,
+            "questoesNumeradas": 143,
+            "alternativasA": 141,
+            "estimativaQuestoesComGabarito": 239
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Polipose Intestinal e Câncer Colorretal.pdf.json"
+        },
+        {
+          "theme": "Tumores Neuroendócrinos.pdf",
+          "sourceBook": "Cópia de 16. Tumores Neuroendócrinos.pdf",
+          "totalChunks": 66,
+          "characters": 233108,
+          "questionsAudit": {
+            "gabaritosIdentificados": 172,
+            "questoesNumeradas": 95,
+            "alternativasA": 98,
+            "estimativaQuestoesComGabarito": 172
+          },
+          "supabasePath": "gabarito_das_questoes/Gastro/Tumores Neuroendócrinos.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Gineco",
+      "booksCount": 28,
+      "uniqueQuestionsCount": 2848,
+      "books": [
+        {
+          "theme": "Adenomiose.pdf",
+          "sourceBook": "Cópia de 6. Adenomiose.pdf",
+          "totalChunks": 99,
+          "characters": 327008,
+          "questionsAudit": {
+            "gabaritosIdentificados": 172,
+            "questoesNumeradas": 0,
+            "alternativasA": 116,
+            "estimativaQuestoesComGabarito": 172
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Adenomiose.pdf.json"
+        },
+        {
+          "theme": "Amenorreia.pdf",
+          "sourceBook": "Cópia de 3. Amenorreia.pdf",
+          "totalChunks": 121,
+          "characters": 384973,
+          "questionsAudit": {
+            "gabaritosIdentificados": 173,
+            "questoesNumeradas": 0,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 173
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Amenorreia.pdf.json"
+        },
+        {
+          "theme": "Anatomia e Embriologia do Trato Genital Feminino.pdf",
+          "sourceBook": "Cópia de 26. Anatomia e Embriologia do Trato Genital Feminino.pdf",
+          "totalChunks": 76,
+          "characters": 224524,
+          "questionsAudit": {
+            "gabaritosIdentificados": 126,
+            "questoesNumeradas": 0,
+            "alternativasA": 92,
+            "estimativaQuestoesComGabarito": 126
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Anatomia e Embriologia do Trato Genital Feminino.pdf.json"
+        },
+        {
+          "theme": "Assistência à Vítima de Violência Sexual.pdf",
+          "sourceBook": "Cópia de 20. Assistência à Vítima de Violência Sexual.pdf",
+          "totalChunks": 132,
+          "characters": 416097,
+          "questionsAudit": {
+            "gabaritosIdentificados": 184,
+            "questoesNumeradas": 1,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 184
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Assistência à Vítima de Violência Sexual.pdf.json"
+        },
+        {
+          "theme": "Cervicites.pdf",
+          "sourceBook": "Cópia de 17. Cervicites.pdf",
+          "totalChunks": 42,
+          "characters": 127964,
+          "questionsAudit": {
+            "gabaritosIdentificados": 87,
+            "questoesNumeradas": 0,
+            "alternativasA": 51,
+            "estimativaQuestoesComGabarito": 87
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Cervicites.pdf.json"
+        },
+        {
+          "theme": "Ciclo Menstrual.pdf",
+          "sourceBook": "Cópia de 1. Ciclo Menstrual.pdf",
+          "totalChunks": 86,
+          "characters": 255874,
+          "questionsAudit": {
+            "gabaritosIdentificados": 187,
+            "questoesNumeradas": 0,
+            "alternativasA": 114,
+            "estimativaQuestoesComGabarito": 187
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Ciclo Menstrual.pdf.json"
+        },
+        {
+          "theme": "Climatério e Terapia Hormonal.pdf",
+          "sourceBook": "Cópia de 23. Climatério e Terapia Hormonal.pdf",
+          "totalChunks": 119,
+          "characters": 385172,
+          "questionsAudit": {
+            "gabaritosIdentificados": 179,
+            "questoesNumeradas": 1,
+            "alternativasA": 130,
+            "estimativaQuestoesComGabarito": 179
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Climatério e Terapia Hormonal.pdf.json"
+        },
+        {
+          "theme": "Câncer de Colo Uterino.pdf",
+          "sourceBook": "Cópia de 22. Câncer de Colo Uterino.pdf",
+          "totalChunks": 100,
+          "characters": 306952,
+          "questionsAudit": {
+            "gabaritosIdentificados": 207,
+            "questoesNumeradas": 0,
+            "alternativasA": 129,
+            "estimativaQuestoesComGabarito": 207
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Câncer de Colo Uterino.pdf.json"
+        },
+        {
+          "theme": "Câncer de Mama.pdf",
+          "sourceBook": "Cópia de 12. Câncer de Mama.pdf",
+          "totalChunks": 172,
+          "characters": 521496,
+          "questionsAudit": {
+            "gabaritosIdentificados": 284,
+            "questoesNumeradas": 0,
+            "alternativasA": 183,
+            "estimativaQuestoesComGabarito": 284
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Câncer de Mama.pdf.json"
+        },
+        {
+          "theme": "Câncer do Corpo do Útero.pdf",
+          "sourceBook": "Cópia de 13. Câncer do Corpo do Útero.pdf",
+          "totalChunks": 130,
+          "characters": 403312,
+          "questionsAudit": {
+            "gabaritosIdentificados": 246,
+            "questoesNumeradas": 0,
+            "alternativasA": 175,
+            "estimativaQuestoesComGabarito": 246
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Câncer do Corpo do Útero.pdf.json"
+        },
+        {
+          "theme": "Doença Inflamatória Pélvica (DIP).pdf",
+          "sourceBook": "Cópia de 18. Doença Inflamatória Pélvica (DIP).pdf",
+          "totalChunks": 70,
+          "characters": 216910,
+          "questionsAudit": {
+            "gabaritosIdentificados": 121,
+            "questoesNumeradas": 1,
+            "alternativasA": 78,
+            "estimativaQuestoesComGabarito": 121
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Doença Inflamatória Pélvica (DIP).pdf.json"
+        },
+        {
+          "theme": "Doenças Benignas da Mama.pdf",
+          "sourceBook": "Cópia de 10. Doenças Benignas da Mama.pdf",
+          "totalChunks": 139,
+          "characters": 438462,
+          "questionsAudit": {
+            "gabaritosIdentificados": 251,
+            "questoesNumeradas": 1,
+            "alternativasA": 168,
+            "estimativaQuestoesComGabarito": 251
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Doenças Benignas da Mama.pdf.json"
+        },
+        {
+          "theme": "Doenças de Vulva e Vagina.pdf",
+          "sourceBook": "Cópia de 15. Doenças de Vulva e Vagina.pdf",
+          "totalChunks": 108,
+          "characters": 330124,
+          "questionsAudit": {
+            "gabaritosIdentificados": 210,
+            "questoesNumeradas": 0,
+            "alternativasA": 121,
+            "estimativaQuestoesComGabarito": 210
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Doenças de Vulva e Vagina.pdf.json"
+        },
+        {
+          "theme": "Dor Pélvica Crônica e Dismenorreia.pdf",
+          "sourceBook": "Cópia de 28. Dor Pélvica Crônica e Dismenorreia.pdf",
+          "totalChunks": 56,
+          "characters": 175401,
+          "questionsAudit": {
+            "gabaritosIdentificados": 92,
+            "questoesNumeradas": 1,
+            "alternativasA": 66,
+            "estimativaQuestoesComGabarito": 92
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Dor Pélvica Crônica e Dismenorreia.pdf.json"
+        },
+        {
+          "theme": "Endometriose.pdf",
+          "sourceBook": "Cópia de 5. Endometriose.pdf",
+          "totalChunks": 163,
+          "characters": 555305,
+          "questionsAudit": {
+            "gabaritosIdentificados": 230,
+            "questoesNumeradas": 0,
+            "alternativasA": 167,
+            "estimativaQuestoesComGabarito": 230
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Endometriose.pdf.json"
+        },
+        {
+          "theme": "Incontinência Urinária.pdf",
+          "sourceBook": "Cópia de 11. Incontinência Urinária.pdf",
+          "totalChunks": 121,
+          "characters": 380505,
+          "questionsAudit": {
+            "gabaritosIdentificados": 182,
+            "questoesNumeradas": 1,
+            "alternativasA": 129,
+            "estimativaQuestoesComGabarito": 182
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Incontinência Urinária.pdf.json"
+        },
+        {
+          "theme": "Infertilidade Conjugal.pdf",
+          "sourceBook": "Cópia de 27. Infertilidade Conjugal.pdf",
+          "totalChunks": 102,
+          "characters": 344779,
+          "questionsAudit": {
+            "gabaritosIdentificados": 142,
+            "questoesNumeradas": 108,
+            "alternativasA": 108,
+            "estimativaQuestoesComGabarito": 142
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Infertilidade Conjugal.pdf.json"
+        },
+        {
+          "theme": "Miomatose Uterina.pdf",
+          "sourceBook": "Cópia de 24. Miomatose Uterina.pdf",
+          "totalChunks": 125,
+          "characters": 390186,
+          "questionsAudit": {
+            "gabaritosIdentificados": 200,
+            "questoesNumeradas": 1,
+            "alternativasA": 146,
+            "estimativaQuestoesComGabarito": 200
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Miomatose Uterina.pdf.json"
+        },
+        {
+          "theme": "Planejamento Familiar.pdf",
+          "sourceBook": "Cópia de 2. Planejamento Familiar.pdf",
+          "totalChunks": 152,
+          "characters": 478891,
+          "questionsAudit": {
+            "gabaritosIdentificados": 190,
+            "questoesNumeradas": 0,
+            "alternativasA": 156,
+            "estimativaQuestoesComGabarito": 190
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Planejamento Familiar.pdf.json"
+        },
+        {
+          "theme": "Prolapsos de Órgãos Pélvicos.pdf",
+          "sourceBook": "Cópia de 25. Prolapsos de Órgãos Pélvicos.pdf",
+          "totalChunks": 92,
+          "characters": 285215,
+          "questionsAudit": {
+            "gabaritosIdentificados": 157,
+            "questoesNumeradas": 109,
+            "alternativasA": 109,
+            "estimativaQuestoesComGabarito": 157
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Prolapsos de Órgãos Pélvicos.pdf.json"
+        },
+        {
+          "theme": "Pólipos Uterinos.pdf",
+          "sourceBook": "Cópia de 7. Pólipos Uterinos.pdf",
+          "totalChunks": 60,
+          "characters": 187249,
+          "questionsAudit": {
+            "gabaritosIdentificados": 134,
+            "questoesNumeradas": 0,
+            "alternativasA": 88,
+            "estimativaQuestoesComGabarito": 134
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Pólipos Uterinos.pdf.json"
+        },
+        {
+          "theme": "Rastreamento do Câncer de Colo Uterino.pdf",
+          "sourceBook": "Cópia de 21. Rastreamento do Câncer de Colo Uterino.pdf",
+          "totalChunks": 182,
+          "characters": 578543,
+          "questionsAudit": {
+            "gabaritosIdentificados": 202,
+            "questoesNumeradas": 1,
+            "alternativasA": 164,
+            "estimativaQuestoesComGabarito": 202
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Rastreamento do Câncer de Colo Uterino.pdf.json"
+        },
+        {
+          "theme": "Rastreamento do Câncer de Mama.pdf",
+          "sourceBook": "Cópia de 8. Rastreamento do Câncer de Mama.pdf",
+          "totalChunks": 115,
+          "characters": 342494,
+          "questionsAudit": {
+            "gabaritosIdentificados": 219,
+            "questoesNumeradas": 0,
+            "alternativasA": 160,
+            "estimativaQuestoesComGabarito": 219
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Rastreamento do Câncer de Mama.pdf.json"
+        },
+        {
+          "theme": "Sangramento Uterino Anormal (SUA).pdf",
+          "sourceBook": "Cópia de 9. Sangramento Uterino Anormal (SUA).pdf",
+          "totalChunks": 122,
+          "characters": 384083,
+          "questionsAudit": {
+            "gabaritosIdentificados": 190,
+            "questoesNumeradas": 0,
+            "alternativasA": 148,
+            "estimativaQuestoesComGabarito": 190
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Sangramento Uterino Anormal (SUA).pdf.json"
+        },
+        {
+          "theme": "Síndrome dos Ovários Policísticos.pdf",
+          "sourceBook": "Cópia de 4. Síndrome dos Ovários Policísticos.pdf",
+          "totalChunks": 157,
+          "characters": 486408,
+          "questionsAudit": {
+            "gabaritosIdentificados": 243,
+            "questoesNumeradas": 0,
+            "alternativasA": 167,
+            "estimativaQuestoesComGabarito": 243
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Síndrome dos Ovários Policísticos.pdf.json"
+        },
+        {
+          "theme": "Tumores Anexiais e Câncer de Ovário.pdf",
+          "sourceBook": "Cópia de 14. Tumores Anexiais e Câncer de Ovário.pdf",
+          "totalChunks": 109,
+          "characters": 345726,
+          "questionsAudit": {
+            "gabaritosIdentificados": 174,
+            "questoesNumeradas": 1,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 174
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Tumores Anexiais e Câncer de Ovário.pdf.json"
+        },
+        {
+          "theme": "Vulvovaginites.pdf",
+          "sourceBook": "Cópia de 16. Vulvovaginites.pdf",
+          "totalChunks": 115,
+          "characters": 352468,
+          "questionsAudit": {
+            "gabaritosIdentificados": 190,
+            "questoesNumeradas": 1,
+            "alternativasA": 124,
+            "estimativaQuestoesComGabarito": 190
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Vulvovaginites.pdf.json"
+        },
+        {
+          "theme": "Úlceras Genitais.pdf",
+          "sourceBook": "Cópia de 19. Úlceras Genitais.pdf",
+          "totalChunks": 72,
+          "characters": 223475,
+          "questionsAudit": {
+            "gabaritosIdentificados": 143,
+            "questoesNumeradas": 0,
+            "alternativasA": 91,
+            "estimativaQuestoesComGabarito": 143
+          },
+          "supabasePath": "gabarito_das_questoes/Gineco/Úlceras Genitais.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Hemato",
+      "booksCount": 11,
+      "uniqueQuestionsCount": 1013,
+      "books": [
+        {
+          "theme": "Anemia Associada a Condições Não Hematológicas.pdf",
+          "sourceBook": "Cópia de 5. Anemia Associada a Condições Não Hematológicas.pdf",
+          "totalChunks": 51,
+          "characters": 158538,
+          "questionsAudit": {
+            "gabaritosIdentificados": 86,
+            "questoesNumeradas": 0,
+            "alternativasA": 45,
+            "estimativaQuestoesComGabarito": 86
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Anemia Associada a Condições Não Hematológicas.pdf.json"
+        },
+        {
+          "theme": "Anemias Hemolíticas.pdf",
+          "sourceBook": "Cópia de 4. Anemias Hemolíticas.pdf",
+          "totalChunks": 166,
+          "characters": 532546,
+          "questionsAudit": {
+            "gabaritosIdentificados": 216,
+            "questoesNumeradas": 0,
+            "alternativasA": 153,
+            "estimativaQuestoesComGabarito": 216
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Anemias Hemolíticas.pdf.json"
+        },
+        {
+          "theme": "Anemias Macrocíticas.pdf",
+          "sourceBook": "Cópia de 3. Anemias Macrocíticas.pdf",
+          "totalChunks": 117,
+          "characters": 370764,
+          "questionsAudit": {
+            "gabaritosIdentificados": 206,
+            "questoesNumeradas": 0,
+            "alternativasA": 115,
+            "estimativaQuestoesComGabarito": 206
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Anemias Macrocíticas.pdf.json"
+        },
+        {
+          "theme": "Anemias Microcíticas.pdf",
+          "sourceBook": "Cópia de 2. Anemias Microcíticas.pdf",
+          "totalChunks": 148,
+          "characters": 502331,
+          "questionsAudit": {
+            "gabaritosIdentificados": 239,
+            "questoesNumeradas": 147,
+            "alternativasA": 147,
+            "estimativaQuestoesComGabarito": 239
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Anemias Microcíticas.pdf.json"
+        },
+        {
+          "theme": "Hemostasia I Conceitos Básicos e Anticoagulantes.pdf",
+          "sourceBook": "Cópia de 9. Hemostasia I Conceitos Básicos e Anticoagulantes.pdf",
+          "totalChunks": 102,
+          "characters": 323734,
+          "questionsAudit": {
+            "gabaritosIdentificados": 217,
+            "questoesNumeradas": 0,
+            "alternativasA": 124,
+            "estimativaQuestoesComGabarito": 217
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Hemostasia I Conceitos Básicos e Anticoagulantes.pdf.json"
+        },
+        {
+          "theme": "Hemostasia II Doenças Hemostáticas.pdf",
+          "sourceBook": "Cópia de 10. Hemostasia II Doenças Hemostáticas.pdf",
+          "totalChunks": 107,
+          "characters": 352508,
+          "questionsAudit": {
+            "gabaritosIdentificados": 198,
+            "questoesNumeradas": 0,
+            "alternativasA": 128,
+            "estimativaQuestoesComGabarito": 198
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Hemostasia II Doenças Hemostáticas.pdf.json"
+        },
+        {
+          "theme": "Introdução ao Estudo das Anemias.pdf",
+          "sourceBook": "Cópia de 1. Introdução ao Estudo das Anemias.pdf",
+          "totalChunks": 98,
+          "characters": 321972,
+          "questionsAudit": {
+            "gabaritosIdentificados": 203,
+            "questoesNumeradas": 116,
+            "alternativasA": 115,
+            "estimativaQuestoesComGabarito": 203
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Introdução ao Estudo das Anemias.pdf.json"
+        },
+        {
+          "theme": "Leucemias Agudas.pdf",
+          "sourceBook": "Cópia de 6. Leucemias Agudas.pdf",
+          "totalChunks": 97,
+          "characters": 341662,
+          "questionsAudit": {
+            "gabaritosIdentificados": 201,
+            "questoesNumeradas": 123,
+            "alternativasA": 120,
+            "estimativaQuestoesComGabarito": 201
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Leucemias Agudas.pdf.json"
+        },
+        {
+          "theme": "Leucemias Crônicas, Linfomas, Mielodisplasias e Mieloproliferações.pdf",
+          "sourceBook": "Cópia de 7. Leucemias Crônicas, Linfomas, Mielodisplasias e Mieloproliferações.pdf",
+          "totalChunks": 113,
+          "characters": 356513,
+          "questionsAudit": {
+            "gabaritosIdentificados": 263,
+            "questoesNumeradas": 1,
+            "alternativasA": 132,
+            "estimativaQuestoesComGabarito": 263
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Leucemias Crônicas, Linfomas, Mielodisplasias e Mieloproliferações.pdf.json"
+        },
+        {
+          "theme": "Medicina Transfusional.pdf",
+          "sourceBook": "Cópia de 11. Medicina Transfusional.pdf",
+          "totalChunks": 91,
+          "characters": 314072,
+          "questionsAudit": {
+            "gabaritosIdentificados": 191,
+            "questoesNumeradas": 118,
+            "alternativasA": 115,
+            "estimativaQuestoesComGabarito": 191
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Medicina Transfusional.pdf.json"
+        },
+        {
+          "theme": "Mieloma Múltiplo (Gamopatias Monoclonais).pdf",
+          "sourceBook": "Cópia de 8. Mieloma Múltiplo (Gamopatias Monoclonais).pdf",
+          "totalChunks": 96,
+          "characters": 304636,
+          "questionsAudit": {
+            "gabaritosIdentificados": 213,
+            "questoesNumeradas": 0,
+            "alternativasA": 121,
+            "estimativaQuestoesComGabarito": 213
+          },
+          "supabasePath": "gabarito_das_questoes/Hemato/Mieloma Múltiplo (Gamopatias Monoclonais).pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Infecto",
+      "booksCount": 21,
+      "uniqueQuestionsCount": 2056,
+      "books": [
+        {
+          "theme": "Animais Peçonhentos.pdf",
+          "sourceBook": "4. Animais Peçonhentos.pdf",
+          "totalChunks": 83,
+          "characters": 266045,
+          "questionsAudit": {
+            "gabaritosIdentificados": 218,
+            "questoesNumeradas": 1,
+            "alternativasA": 116,
+            "estimativaQuestoesComGabarito": 218
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Animais Peçonhentos.pdf.json"
+        },
+        {
+          "theme": "Antibióticos.pdf",
+          "sourceBook": "8. Antibióticos.pdf",
+          "totalChunks": 92,
+          "characters": 295058,
+          "questionsAudit": {
+            "gabaritosIdentificados": 276,
+            "questoesNumeradas": 0,
+            "alternativasA": 138,
+            "estimativaQuestoesComGabarito": 276
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Antibióticos.pdf.json"
+        },
+        {
+          "theme": "Arboviroses (Dengue, Chikungunya e Zika).pdf",
+          "sourceBook": "9. Arboviroses (Dengue, Chikungunya e Zika).pdf",
+          "totalChunks": 150,
+          "characters": 477818,
+          "questionsAudit": {
+            "gabaritosIdentificados": 268,
+            "questoesNumeradas": 0,
+            "alternativasA": 145,
+            "estimativaQuestoesComGabarito": 268
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Arboviroses (Dengue, Chikungunya e Zika).pdf.json"
+        },
+        {
+          "theme": "Aula Bônus - Sífilis e Outras ISTs.pdf",
+          "sourceBook": "19. Aula Bônus - Sífilis e Outras ISTs.pdf",
+          "totalChunks": 58,
+          "characters": 183496,
+          "questionsAudit": {
+            "gabaritosIdentificados": 188,
+            "questoesNumeradas": 1,
+            "alternativasA": 96,
+            "estimativaQuestoesComGabarito": 188
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Aula Bônus - Sífilis e Outras ISTs.pdf.json"
+        },
+        {
+          "theme": "Covid 19.pdf",
+          "sourceBook": "18. Covid 19.pdf",
+          "totalChunks": 70,
+          "characters": 214926,
+          "questionsAudit": {
+            "gabaritosIdentificados": 129,
+            "questoesNumeradas": 0,
+            "alternativasA": 84,
+            "estimativaQuestoesComGabarito": 129
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Covid 19.pdf.json"
+        },
+        {
+          "theme": "Endocardite Bacteriana - Endocardite Infecciosa.pdf",
+          "sourceBook": "14. Endocardite Bacteriana - Endocardite Infecciosa.pdf",
+          "totalChunks": 107,
+          "characters": 338275,
+          "questionsAudit": {
+            "gabaritosIdentificados": 227,
+            "questoesNumeradas": 1,
+            "alternativasA": 126,
+            "estimativaQuestoesComGabarito": 227
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Endocardite Bacteriana - Endocardite Infecciosa.pdf.json"
+        },
+        {
+          "theme": "Hepatoesplenomegalias Infecciosas.pdf",
+          "sourceBook": "16. Hepatoesplenomegalias Infecciosas.pdf",
+          "totalChunks": 145,
+          "characters": 474579,
+          "questionsAudit": {
+            "gabaritosIdentificados": 288,
+            "questoesNumeradas": 2,
+            "alternativasA": 144,
+            "estimativaQuestoesComGabarito": 288
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Hepatoesplenomegalias Infecciosas.pdf.json"
+        },
+        {
+          "theme": "HIV.pdf",
+          "sourceBook": "6. HIV.pdf",
+          "totalChunks": 158,
+          "characters": 493693,
+          "questionsAudit": {
+            "gabaritosIdentificados": 307,
+            "questoesNumeradas": 0,
+            "alternativasA": 172,
+            "estimativaQuestoesComGabarito": 307
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/HIV.pdf.json"
+        },
+        {
+          "theme": "Infecções Relacionadas à Assistência em Saúde (IRAS).pdf",
+          "sourceBook": "15. Infecções Relacionadas à Assistência em Saúde (IRAS).pdf",
+          "totalChunks": 105,
+          "characters": 347043,
+          "questionsAudit": {
+            "gabaritosIdentificados": 240,
+            "questoesNumeradas": 0,
+            "alternativasA": 143,
+            "estimativaQuestoesComGabarito": 240
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Infecções Relacionadas à Assistência em Saúde (IRAS).pdf.json"
+        },
+        {
+          "theme": "Influenza.pdf",
+          "sourceBook": "5. Influenza.pdf",
+          "totalChunks": 45,
+          "characters": 139806,
+          "questionsAudit": {
+            "gabaritosIdentificados": 120,
+            "questoesNumeradas": 1,
+            "alternativasA": 61,
+            "estimativaQuestoesComGabarito": 120
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Influenza.pdf.json"
+        },
+        {
+          "theme": "Leptospirose.pdf",
+          "sourceBook": "2. Leptospirose.pdf",
+          "totalChunks": 64,
+          "characters": 197123,
+          "questionsAudit": {
+            "gabaritosIdentificados": 207,
+            "questoesNumeradas": 0,
+            "alternativasA": 102,
+            "estimativaQuestoesComGabarito": 207
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Leptospirose.pdf.json"
+        },
+        {
+          "theme": "Malária.pdf",
+          "sourceBook": "3. Malária.pdf",
+          "totalChunks": 48,
+          "characters": 144763,
+          "questionsAudit": {
+            "gabaritosIdentificados": 133,
+            "questoesNumeradas": 0,
+            "alternativasA": 71,
+            "estimativaQuestoesComGabarito": 133
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Malária.pdf.json"
+        },
+        {
+          "theme": "Meningites (Infecções do Sistema Nervoso Central).pdf",
+          "sourceBook": "1. Meningites (Infecções do Sistema Nervoso Central).pdf",
+          "totalChunks": 84,
+          "characters": 292603,
+          "questionsAudit": {
+            "gabaritosIdentificados": 131,
+            "questoesNumeradas": 81,
+            "alternativasA": 79,
+            "estimativaQuestoesComGabarito": 131
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Meningites (Infecções do Sistema Nervoso Central).pdf.json"
+        },
+        {
+          "theme": "Micoses Invasivas.pdf",
+          "sourceBook": "10. Micoses Invasivas.pdf",
+          "totalChunks": 124,
+          "characters": 411483,
+          "questionsAudit": {
+            "gabaritosIdentificados": 263,
+            "questoesNumeradas": 0,
+            "alternativasA": 135,
+            "estimativaQuestoesComGabarito": 263
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Micoses Invasivas.pdf.json"
+        },
+        {
+          "theme": "Neutropenia Febril e Febre de Origem Indeterminada.pdf",
+          "sourceBook": "13. Neutropenia Febril e Febre de Origem Indeterminada.pdf",
+          "totalChunks": 133,
+          "characters": 430751,
+          "questionsAudit": {
+            "gabaritosIdentificados": 277,
+            "questoesNumeradas": 0,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 277
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Neutropenia Febril e Febre de Origem Indeterminada.pdf.json"
+        },
+        {
+          "theme": "Parasitoses.pdf",
+          "sourceBook": "12. Parasitoses.pdf",
+          "totalChunks": 101,
+          "characters": 307738,
+          "questionsAudit": {
+            "gabaritosIdentificados": 270,
+            "questoesNumeradas": 2,
+            "alternativasA": 144,
+            "estimativaQuestoesComGabarito": 270
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Parasitoses.pdf.json"
+        },
+        {
+          "theme": "Pneumonias Bacterianas.pdf",
+          "sourceBook": "20. Pneumonias Bacterianas.pdf",
+          "totalChunks": 134,
+          "characters": 433288,
+          "questionsAudit": {
+            "gabaritosIdentificados": 269,
+            "questoesNumeradas": 0,
+            "alternativasA": 148,
+            "estimativaQuestoesComGabarito": 269
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Pneumonias Bacterianas.pdf.json"
+        },
+        {
+          "theme": "Raiva, Tétano, Mordedura e Arranhadura Animal.pdf",
+          "sourceBook": "21. Raiva, Tétano, Mordedura e Arranhadura Animal.pdf",
+          "totalChunks": 87,
+          "characters": 266920,
+          "questionsAudit": {
+            "gabaritosIdentificados": 127,
+            "questoesNumeradas": 0,
+            "alternativasA": 76,
+            "estimativaQuestoesComGabarito": 127
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Raiva, Tétano, Mordedura e Arranhadura Animal.pdf.json"
+        },
+        {
+          "theme": "Sepse.pdf",
+          "sourceBook": "7. Sepse.pdf",
+          "totalChunks": 138,
+          "characters": 415188,
+          "questionsAudit": {
+            "gabaritosIdentificados": 294,
+            "questoesNumeradas": 1,
+            "alternativasA": 130,
+            "estimativaQuestoesComGabarito": 294
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Sepse.pdf.json"
+        },
+        {
+          "theme": "Síndrome Febril Íctero-Hemorrágica.pdf",
+          "sourceBook": "17. Síndrome Febril Íctero-Hemorrágica.pdf",
+          "totalChunks": 79,
+          "characters": 247218,
+          "questionsAudit": {
+            "gabaritosIdentificados": 181,
+            "questoesNumeradas": 0,
+            "alternativasA": 96,
+            "estimativaQuestoesComGabarito": 181
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Síndrome Febril Íctero-Hemorrágica.pdf.json"
+        },
+        {
+          "theme": "Tuberculose.pdf",
+          "sourceBook": "11. Tuberculose.pdf",
+          "totalChunks": 136,
+          "characters": 424579,
+          "questionsAudit": {
+            "gabaritosIdentificados": 274,
+            "questoesNumeradas": 0,
+            "alternativasA": 149,
+            "estimativaQuestoesComGabarito": 274
+          },
+          "supabasePath": "gabarito_das_questoes/Infecto/Tuberculose.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "nefro",
+      "booksCount": 11,
+      "uniqueQuestionsCount": 1092,
+      "books": [
+        {
+          "theme": "Análise da Gasometria Arterial.pdf",
+          "sourceBook": "6. Análise da Gasometria Arterial.pdf",
+          "totalChunks": 113,
+          "characters": 344957,
+          "questionsAudit": {
+            "gabaritosIdentificados": 224,
+            "questoesNumeradas": 1,
+            "alternativasA": 113,
+            "estimativaQuestoesComGabarito": 224
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Análise da Gasometria Arterial.pdf.json"
+        },
+        {
+          "theme": "Distúrbios Ácido-Básicos.pdf",
+          "sourceBook": "5. Distúrbios Ácido-Básicos.pdf",
+          "totalChunks": 122,
+          "characters": 383565,
+          "questionsAudit": {
+            "gabaritosIdentificados": 231,
+            "questoesNumeradas": 1,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 231
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Distúrbios Ácido-Básicos.pdf.json"
+        },
+        {
+          "theme": "Distúrbios do Potássio.pdf",
+          "sourceBook": "8. Distúrbios do Potássio.pdf",
+          "totalChunks": 122,
+          "characters": 387931,
+          "questionsAudit": {
+            "gabaritosIdentificados": 229,
+            "questoesNumeradas": 1,
+            "alternativasA": 121,
+            "estimativaQuestoesComGabarito": 229
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Distúrbios do Potássio.pdf.json"
+        },
+        {
+          "theme": "Distúrbios do Sódio - Disnatremias.pdf",
+          "sourceBook": "7. Distúrbios do Sódio - Disnatremias.pdf",
+          "totalChunks": 144,
+          "characters": 434024,
+          "questionsAudit": {
+            "gabaritosIdentificados": 276,
+            "questoesNumeradas": 0,
+            "alternativasA": 148,
+            "estimativaQuestoesComGabarito": 276
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Distúrbios do Sódio - Disnatremias.pdf.json"
+        },
+        {
+          "theme": "Doença Renal Crônica (DRC) - Parte I.pdf",
+          "sourceBook": "3. Doença Renal Crônica (DRC) - Parte I.pdf",
+          "totalChunks": 130,
+          "characters": 419241,
+          "questionsAudit": {
+            "gabaritosIdentificados": 230,
+            "questoesNumeradas": 0,
+            "alternativasA": 136,
+            "estimativaQuestoesComGabarito": 230
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Doença Renal Crônica (DRC) - Parte I.pdf.json"
+        },
+        {
+          "theme": "Doença Renal Crônica (DRC) - Parte II.pdf",
+          "sourceBook": "4. Doença Renal Crônica (DRC) - Parte II.pdf",
+          "totalChunks": 161,
+          "characters": 532298,
+          "questionsAudit": {
+            "gabaritosIdentificados": 249,
+            "questoesNumeradas": 1,
+            "alternativasA": 141,
+            "estimativaQuestoesComGabarito": 249
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Doença Renal Crônica (DRC) - Parte II.pdf.json"
+        },
+        {
+          "theme": "Doenças Glomerulares.pdf",
+          "sourceBook": "1. Doenças Glomerulares.pdf",
+          "totalChunks": 150,
+          "characters": 485089,
+          "questionsAudit": {
+            "gabaritosIdentificados": 190,
+            "questoesNumeradas": 0,
+            "alternativasA": 137,
+            "estimativaQuestoesComGabarito": 190
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Doenças Glomerulares.pdf.json"
+        },
+        {
+          "theme": "ITU - Infecção do Trato Urinário.pdf",
+          "sourceBook": "10. ITU - Infecção do Trato Urinário.pdf",
+          "totalChunks": 84,
+          "characters": 263195,
+          "questionsAudit": {
+            "gabaritosIdentificados": 177,
+            "questoesNumeradas": 0,
+            "alternativasA": 115,
+            "estimativaQuestoesComGabarito": 177
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/ITU - Infecção do Trato Urinário.pdf.json"
+        },
+        {
+          "theme": "Lesão Renal Aguda (LRA).pdf",
+          "sourceBook": "2. Lesão Renal Aguda (LRA).pdf",
+          "totalChunks": 170,
+          "characters": 558157,
+          "questionsAudit": {
+            "gabaritosIdentificados": 253,
+            "questoesNumeradas": 1,
+            "alternativasA": 142,
+            "estimativaQuestoesComGabarito": 253
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Lesão Renal Aguda (LRA).pdf.json"
+        },
+        {
+          "theme": "Nefrolitíase.pdf",
+          "sourceBook": "11. Nefrolitíase.pdf",
+          "totalChunks": 101,
+          "characters": 307586,
+          "questionsAudit": {
+            "gabaritosIdentificados": 184,
+            "questoesNumeradas": 0,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 184
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Nefrolitíase.pdf.json"
+        },
+        {
+          "theme": "Túbulo-Interstício Renal.pdf",
+          "sourceBook": "9. Túbulo-Interstício Renal.pdf",
+          "totalChunks": 90,
+          "characters": 283723,
+          "questionsAudit": {
+            "gabaritosIdentificados": 177,
+            "questoesNumeradas": 0,
+            "alternativasA": 91,
+            "estimativaQuestoesComGabarito": 177
+          },
+          "supabasePath": "gabarito_das_questoes/nefro/Túbulo-Interstício Renal.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Neuro",
+      "booksCount": 13,
+      "uniqueQuestionsCount": 1382,
+      "books": [
+        {
+          "theme": "Acidentes Vasculares Cerebrais (AVC).pdf",
+          "sourceBook": "6. Acidentes Vasculares Cerebrais (AVC).pdf",
+          "totalChunks": 212,
+          "characters": 695871,
+          "questionsAudit": {
+            "gabaritosIdentificados": 183,
+            "questoesNumeradas": 0,
+            "alternativasA": 166,
+            "estimativaQuestoesComGabarito": 183
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Acidentes Vasculares Cerebrais (AVC).pdf.json"
+        },
+        {
+          "theme": "Anatomia, Fisiologia e Semiologia Neurológica.pdf",
+          "sourceBook": "2. Anatomia, Fisiologia e Semiologia Neurológica.pdf",
+          "totalChunks": 124,
+          "characters": 393986,
+          "questionsAudit": {
+            "gabaritosIdentificados": 195,
+            "questoesNumeradas": 0,
+            "alternativasA": 129,
+            "estimativaQuestoesComGabarito": 195
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Anatomia, Fisiologia e Semiologia Neurológica.pdf.json"
+        },
+        {
+          "theme": "Cefaleias.pdf",
+          "sourceBook": "3. Cefaleias.pdf",
+          "totalChunks": 149,
+          "characters": 492891,
+          "questionsAudit": {
+            "gabaritosIdentificados": 158,
+            "questoesNumeradas": 0,
+            "alternativasA": 133,
+            "estimativaQuestoesComGabarito": 158
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Cefaleias.pdf.json"
+        },
+        {
+          "theme": "Coma e Alterações da Consciência.pdf",
+          "sourceBook": "1. Coma e Alterações da Consciência.pdf",
+          "totalChunks": 146,
+          "characters": 484521,
+          "questionsAudit": {
+            "gabaritosIdentificados": 145,
+            "questoesNumeradas": 0,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 145
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Coma e Alterações da Consciência.pdf.json"
+        },
+        {
+          "theme": "Demências.pdf",
+          "sourceBook": "4. Demências.pdf",
+          "totalChunks": 150,
+          "characters": 499444,
+          "questionsAudit": {
+            "gabaritosIdentificados": 172,
+            "questoesNumeradas": 0,
+            "alternativasA": 132,
+            "estimativaQuestoesComGabarito": 172
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Demências.pdf.json"
+        },
+        {
+          "theme": "Distúrbios do Movimento.pdf",
+          "sourceBook": "9. Distúrbios do Movimento.pdf",
+          "totalChunks": 120,
+          "characters": 399712,
+          "questionsAudit": {
+            "gabaritosIdentificados": 200,
+            "questoesNumeradas": 1,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 200
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Distúrbios do Movimento.pdf.json"
+        },
+        {
+          "theme": "Distúrbios do Sono.pdf",
+          "sourceBook": "11. Distúrbios do Sono.pdf",
+          "totalChunks": 138,
+          "characters": 436494,
+          "questionsAudit": {
+            "gabaritosIdentificados": 209,
+            "questoesNumeradas": 0,
+            "alternativasA": 130,
+            "estimativaQuestoesComGabarito": 209
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Distúrbios do Sono.pdf.json"
+        },
+        {
+          "theme": "Doenças Desmielinizantes e Encefalites Autoimunes.pdf",
+          "sourceBook": "12. Doenças Desmielinizantes e Encefalites Autoimunes.pdf",
+          "totalChunks": 114,
+          "characters": 376318,
+          "questionsAudit": {
+            "gabaritosIdentificados": 169,
+            "questoesNumeradas": 0,
+            "alternativasA": 118,
+            "estimativaQuestoesComGabarito": 169
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Doenças Desmielinizantes e Encefalites Autoimunes.pdf.json"
+        },
+        {
+          "theme": "Doenças Neuromusculares I.pdf",
+          "sourceBook": "7. Doenças Neuromusculares I.pdf",
+          "totalChunks": 171,
+          "characters": 613740,
+          "questionsAudit": {
+            "gabaritosIdentificados": 172,
+            "questoesNumeradas": 1,
+            "alternativasA": 145,
+            "estimativaQuestoesComGabarito": 172
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Doenças Neuromusculares I.pdf.json"
+        },
+        {
+          "theme": "Doenças Neuromusculares ll.pdf",
+          "sourceBook": "8. Doenças Neuromusculares ll.pdf",
+          "totalChunks": 123,
+          "characters": 417107,
+          "questionsAudit": {
+            "gabaritosIdentificados": 203,
+            "questoesNumeradas": 0,
+            "alternativasA": 134,
+            "estimativaQuestoesComGabarito": 203
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Doenças Neuromusculares ll.pdf.json"
+        },
+        {
+          "theme": "Epilepsias.pdf",
+          "sourceBook": "5. Epilepsias.pdf",
+          "totalChunks": 142,
+          "characters": 481661,
+          "questionsAudit": {
+            "gabaritosIdentificados": 150,
+            "questoesNumeradas": 0,
+            "alternativasA": 134,
+            "estimativaQuestoesComGabarito": 150
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Epilepsias.pdf.json"
+        },
+        {
+          "theme": "Traumatismo Cranioencefálico.pdf",
+          "sourceBook": "10. Traumatismo Cranioencefálico.pdf",
+          "totalChunks": 130,
+          "characters": 417601,
+          "questionsAudit": {
+            "gabaritosIdentificados": 184,
+            "questoesNumeradas": 2,
+            "alternativasA": 125,
+            "estimativaQuestoesComGabarito": 184
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Traumatismo Cranioencefálico.pdf.json"
+        },
+        {
+          "theme": "Tumores Intracranianos.pdf",
+          "sourceBook": "13. Tumores Intracranianos.pdf",
+          "totalChunks": 106,
+          "characters": 324013,
+          "questionsAudit": {
+            "gabaritosIdentificados": 183,
+            "questoesNumeradas": 1,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 183
+          },
+          "supabasePath": "gabarito_das_questoes/Neuro/Tumores Intracranianos.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Obstetrícia",
+      "booksCount": 26,
+      "uniqueQuestionsCount": 2684,
+      "books": [
+        {
+          "theme": "Aborto de Repetição.pdf",
+          "sourceBook": "16. Aborto de Repetição.pdf",
+          "totalChunks": 101,
+          "characters": 329269,
+          "questionsAudit": {
+            "gabaritosIdentificados": 200,
+            "questoesNumeradas": 0,
+            "alternativasA": 125,
+            "estimativaQuestoesComGabarito": 200
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Aborto de Repetição.pdf.json"
+        },
+        {
+          "theme": "Aloimunização Materna e Doença Hemolítica Perinatal.pdf",
+          "sourceBook": "21. Aloimunização Materna e Doença Hemolítica Perinatal.pdf",
+          "totalChunks": 109,
+          "characters": 363306,
+          "questionsAudit": {
+            "gabaritosIdentificados": 222,
+            "questoesNumeradas": 0,
+            "alternativasA": 121,
+            "estimativaQuestoesComGabarito": 222
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Aloimunização Materna e Doença Hemolítica Perinatal.pdf.json"
+        },
+        {
+          "theme": "Alterações do Volume de Líquido Amniótico.pdf",
+          "sourceBook": "22. Alterações do Volume de Líquido Amniótico.pdf",
+          "totalChunks": 69,
+          "characters": 212822,
+          "questionsAudit": {
+            "gabaritosIdentificados": 116,
+            "questoesNumeradas": 0,
+            "alternativasA": 63,
+            "estimativaQuestoesComGabarito": 116
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Alterações do Volume de Líquido Amniótico.pdf.json"
+        },
+        {
+          "theme": "Apresentação do curso de obstetrícia.pdf",
+          "sourceBook": "1. Apresentação do curso de obstetrícia.pdf",
+          "totalChunks": 2,
+          "characters": 3485,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Apresentação do curso de obstetrícia.pdf.json"
+        },
+        {
+          "theme": "Assistência ao Parto.pdf",
+          "sourceBook": "6. Assistência ao Parto.pdf",
+          "totalChunks": 173,
+          "characters": 525868,
+          "questionsAudit": {
+            "gabaritosIdentificados": 243,
+            "questoesNumeradas": 0,
+            "alternativasA": 161,
+            "estimativaQuestoesComGabarito": 243
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Assistência ao Parto.pdf.json"
+        },
+        {
+          "theme": "Assistência ao Pré-Natal.pdf",
+          "sourceBook": "2. Assistência ao Pré-Natal.pdf",
+          "totalChunks": 236,
+          "characters": 814203,
+          "questionsAudit": {
+            "gabaritosIdentificados": 211,
+            "questoesNumeradas": 189,
+            "alternativasA": 186,
+            "estimativaQuestoesComGabarito": 211
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Assistência ao Pré-Natal.pdf.json"
+        },
+        {
+          "theme": "Bacia Obstétrica, Pelvimetria e Estática Fetal.pdf",
+          "sourceBook": "4. Bacia Obstétrica, Pelvimetria e Estática Fetal.pdf",
+          "totalChunks": 107,
+          "characters": 333820,
+          "questionsAudit": {
+            "gabaritosIdentificados": 190,
+            "questoesNumeradas": 126,
+            "alternativasA": 125,
+            "estimativaQuestoesComGabarito": 190
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Bacia Obstétrica, Pelvimetria e Estática Fetal.pdf.json"
+        },
+        {
+          "theme": "Diabetes Mellitus na Gestação.pdf",
+          "sourceBook": "14. Diabetes Mellitus na Gestação.pdf",
+          "totalChunks": 147,
+          "characters": 439412,
+          "questionsAudit": {
+            "gabaritosIdentificados": 192,
+            "questoesNumeradas": 1,
+            "alternativasA": 140,
+            "estimativaQuestoesComGabarito": 192
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Diabetes Mellitus na Gestação.pdf.json"
+        },
+        {
+          "theme": "Gestação Múltipla.pdf",
+          "sourceBook": "20. Gestação Múltipla.pdf",
+          "totalChunks": 132,
+          "characters": 421454,
+          "questionsAudit": {
+            "gabaritosIdentificados": 234,
+            "questoesNumeradas": 0,
+            "alternativasA": 136,
+            "estimativaQuestoesComGabarito": 234
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Gestação Múltipla.pdf.json"
+        },
+        {
+          "theme": "Hemorragia Pós-Parto (HPP).pdf",
+          "sourceBook": "24. Hemorragia Pós-Parto (HPP).pdf",
+          "totalChunks": 123,
+          "characters": 395087,
+          "questionsAudit": {
+            "gabaritosIdentificados": 203,
+            "questoesNumeradas": 0,
+            "alternativasA": 130,
+            "estimativaQuestoesComGabarito": 203
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Hemorragia Pós-Parto (HPP).pdf.json"
+        },
+        {
+          "theme": "Indução do Parto e Pós-Datismo.pdf",
+          "sourceBook": "10. Indução do Parto e Pós-Datismo.pdf",
+          "totalChunks": 103,
+          "characters": 320261,
+          "questionsAudit": {
+            "gabaritosIdentificados": 193,
+            "questoesNumeradas": 0,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 193
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Indução do Parto e Pós-Datismo.pdf.json"
+        },
+        {
+          "theme": "Infecção Puerperal.pdf",
+          "sourceBook": "25. Infecção Puerperal.pdf",
+          "totalChunks": 101,
+          "characters": 331886,
+          "questionsAudit": {
+            "gabaritosIdentificados": 101,
+            "questoesNumeradas": 0,
+            "alternativasA": 75,
+            "estimativaQuestoesComGabarito": 101
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Infecção Puerperal.pdf.json"
+        },
+        {
+          "theme": "Infecções Congênitas na Gestação.pdf",
+          "sourceBook": "13. Infecções Congênitas na Gestação.pdf",
+          "totalChunks": 221,
+          "characters": 714420,
+          "questionsAudit": {
+            "gabaritosIdentificados": 267,
+            "questoesNumeradas": 0,
+            "alternativasA": 171,
+            "estimativaQuestoesComGabarito": 267
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Infecções Congênitas na Gestação.pdf.json"
+        },
+        {
+          "theme": "Mecanismo de Parto e Fases Clínicas do Parto.pdf",
+          "sourceBook": "5. Mecanismo de Parto e Fases Clínicas do Parto.pdf",
+          "totalChunks": 136,
+          "characters": 396400,
+          "questionsAudit": {
+            "gabaritosIdentificados": 212,
+            "questoesNumeradas": 0,
+            "alternativasA": 139,
+            "estimativaQuestoesComGabarito": 212
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Mecanismo de Parto e Fases Clínicas do Parto.pdf.json"
+        },
+        {
+          "theme": "Modificações Fisiológicas da Gestação.pdf",
+          "sourceBook": "3. Modificações Fisiológicas da Gestação.pdf",
+          "totalChunks": 111,
+          "characters": 368112,
+          "questionsAudit": {
+            "gabaritosIdentificados": 208,
+            "questoesNumeradas": 143,
+            "alternativasA": 143,
+            "estimativaQuestoesComGabarito": 208
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Modificações Fisiológicas da Gestação.pdf.json"
+        },
+        {
+          "theme": "Parto Vaginal Operatório.pdf",
+          "sourceBook": "9. Parto Vaginal Operatório.pdf",
+          "totalChunks": 84,
+          "characters": 248157,
+          "questionsAudit": {
+            "gabaritosIdentificados": 210,
+            "questoesNumeradas": 2,
+            "alternativasA": 129,
+            "estimativaQuestoesComGabarito": 210
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Parto Vaginal Operatório.pdf.json"
+        },
+        {
+          "theme": "Partograma e Distocia.pdf",
+          "sourceBook": "7. Partograma e Distocia.pdf",
+          "totalChunks": 135,
+          "characters": 399876,
+          "questionsAudit": {
+            "gabaritosIdentificados": 195,
+            "questoesNumeradas": 0,
+            "alternativasA": 119,
+            "estimativaQuestoesComGabarito": 195
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Partograma e Distocia.pdf.json"
+        },
+        {
+          "theme": "Prematuridade e Trabalho de parto prematuro (TPP).pdf",
+          "sourceBook": "19. Prematuridade e Trabalho de parto prematuro (TPP).pdf",
+          "totalChunks": 142,
+          "characters": 479636,
+          "questionsAudit": {
+            "gabaritosIdentificados": 222,
+            "questoesNumeradas": 0,
+            "alternativasA": 137,
+            "estimativaQuestoesComGabarito": 222
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Prematuridade e Trabalho de parto prematuro (TPP).pdf.json"
+        },
+        {
+          "theme": "Restrição de Crescimento Fetal e Óbito Fetal.pdf",
+          "sourceBook": "23. Restrição de Crescimento Fetal e Óbito Fetal.pdf",
+          "totalChunks": 132,
+          "characters": 420060,
+          "questionsAudit": {
+            "gabaritosIdentificados": 247,
+            "questoesNumeradas": 0,
+            "alternativasA": 138,
+            "estimativaQuestoesComGabarito": 247
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Restrição de Crescimento Fetal e Óbito Fetal.pdf.json"
+        },
+        {
+          "theme": "Rotura Prematura de Membranas (RPM).pdf",
+          "sourceBook": "18. Rotura Prematura de Membranas (RPM).pdf",
+          "totalChunks": 153,
+          "characters": 494970,
+          "questionsAudit": {
+            "gabaritosIdentificados": 199,
+            "questoesNumeradas": 0,
+            "alternativasA": 145,
+            "estimativaQuestoesComGabarito": 199
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Rotura Prematura de Membranas (RPM).pdf.json"
+        },
+        {
+          "theme": "Sangramento da Primeira Metade.pdf",
+          "sourceBook": "15. Sangramento da Primeira Metade.pdf",
+          "totalChunks": 190,
+          "characters": 606200,
+          "questionsAudit": {
+            "gabaritosIdentificados": 210,
+            "questoesNumeradas": 0,
+            "alternativasA": 159,
+            "estimativaQuestoesComGabarito": 210
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Sangramento da Primeira Metade.pdf.json"
+        },
+        {
+          "theme": "Sangramento da Segunda Metade.pdf",
+          "sourceBook": "17. Sangramento da Segunda Metade.pdf",
+          "totalChunks": 201,
+          "characters": 661161,
+          "questionsAudit": {
+            "gabaritosIdentificados": 246,
+            "questoesNumeradas": 1,
+            "alternativasA": 182,
+            "estimativaQuestoesComGabarito": 246
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Sangramento da Segunda Metade.pdf.json"
+        },
+        {
+          "theme": "Sífilis na Gestação e Sífilis Congênitas.pdf",
+          "sourceBook": "12. Sífilis na Gestação e Sífilis Congênitas.pdf",
+          "totalChunks": 110,
+          "characters": 337369,
+          "questionsAudit": {
+            "gabaritosIdentificados": 158,
+            "questoesNumeradas": 0,
+            "alternativasA": 89,
+            "estimativaQuestoesComGabarito": 158
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Sífilis na Gestação e Sífilis Congênitas.pdf.json"
+        },
+        {
+          "theme": "Síndromes Hipertensivas da Gestação.pdf",
+          "sourceBook": "11. Síndromes Hipertensivas da Gestação.pdf",
+          "totalChunks": 202,
+          "characters": 679238,
+          "questionsAudit": {
+            "gabaritosIdentificados": 190,
+            "questoesNumeradas": 2,
+            "alternativasA": 151,
+            "estimativaQuestoesComGabarito": 190
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Síndromes Hipertensivas da Gestação.pdf.json"
+        },
+        {
+          "theme": "Ultrassom em Obstetrícia.pdf",
+          "sourceBook": "26. Ultrassom em Obstetrícia.pdf",
+          "totalChunks": 191,
+          "characters": 592229,
+          "questionsAudit": {
+            "gabaritosIdentificados": 294,
+            "questoesNumeradas": 0,
+            "alternativasA": 164,
+            "estimativaQuestoesComGabarito": 294
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Ultrassom em Obstetrícia.pdf.json"
+        },
+        {
+          "theme": "Vitalidade Fetal.pdf",
+          "sourceBook": "8. Vitalidade Fetal.pdf",
+          "totalChunks": 161,
+          "characters": 496540,
+          "questionsAudit": {
+            "gabaritosIdentificados": 233,
+            "questoesNumeradas": 1,
+            "alternativasA": 152,
+            "estimativaQuestoesComGabarito": 233
+          },
+          "supabasePath": "gabarito_das_questoes/Obstetrícia/Vitalidade Fetal.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Oftalmo",
+      "booksCount": 9,
+      "uniqueQuestionsCount": 273,
+      "books": [
+        {
+          "theme": "Anatomia e Fisiologia do Aparelho Visual.pdf",
+          "sourceBook": "Cópia de 1. Anatomia e Fisiologia do Aparelho Visual.pdf",
+          "totalChunks": 29,
+          "characters": 81437,
+          "questionsAudit": {
+            "gabaritosIdentificados": 84,
+            "questoesNumeradas": 0,
+            "alternativasA": 42,
+            "estimativaQuestoesComGabarito": 84
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Anatomia e Fisiologia do Aparelho Visual.pdf.json"
+        },
+        {
+          "theme": "Córnea e Cristalino.pdf",
+          "sourceBook": "Cópia de 2. Córnea e Cristalino.pdf",
+          "totalChunks": 21,
+          "characters": 68442,
+          "questionsAudit": {
+            "gabaritosIdentificados": 39,
+            "questoesNumeradas": 0,
+            "alternativasA": 20,
+            "estimativaQuestoesComGabarito": 39
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Córnea e Cristalino.pdf.json"
+        },
+        {
+          "theme": "Distúrbios da Refração.pdf",
+          "sourceBook": "Cópia de 4. Distúrbios da Refração.pdf",
+          "totalChunks": 21,
+          "characters": 63005,
+          "questionsAudit": {
+            "gabaritosIdentificados": 49,
+            "questoesNumeradas": 1,
+            "alternativasA": 25,
+            "estimativaQuestoesComGabarito": 49
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Distúrbios da Refração.pdf.json"
+        },
+        {
+          "theme": "Doenças do Polo Posterior.pdf",
+          "sourceBook": "Cópia de 9. Doenças do Polo Posterior.pdf",
+          "totalChunks": 66,
+          "characters": 215997,
+          "questionsAudit": {
+            "gabaritosIdentificados": 124,
+            "questoesNumeradas": 0,
+            "alternativasA": 65,
+            "estimativaQuestoesComGabarito": 124
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Doenças do Polo Posterior.pdf.json"
+        },
+        {
+          "theme": "Glaucoma.pdf",
+          "sourceBook": "Cópia de 3. Glaucoma.pdf",
+          "totalChunks": 39,
+          "characters": 120594,
+          "questionsAudit": {
+            "gabaritosIdentificados": 78,
+            "questoesNumeradas": 0,
+            "alternativasA": 54,
+            "estimativaQuestoesComGabarito": 78
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Glaucoma.pdf.json"
+        },
+        {
+          "theme": "Neuroftalmologia.pdf",
+          "sourceBook": "Cópia de 5. Neuroftalmologia.pdf",
+          "totalChunks": 22,
+          "characters": 69801,
+          "questionsAudit": {
+            "gabaritosIdentificados": 49,
+            "questoesNumeradas": 0,
+            "alternativasA": 24,
+            "estimativaQuestoesComGabarito": 49
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Neuroftalmologia.pdf.json"
+        },
+        {
+          "theme": "Síndrome do Olho Vermelho.pdf",
+          "sourceBook": "Cópia de 8. Síndrome do Olho Vermelho.pdf",
+          "totalChunks": 88,
+          "characters": 280593,
+          "questionsAudit": {
+            "gabaritosIdentificados": 181,
+            "questoesNumeradas": 0,
+            "alternativasA": 95,
+            "estimativaQuestoesComGabarito": 181
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Síndrome do Olho Vermelho.pdf.json"
+        },
+        {
+          "theme": "Traumatismos Oculares.pdf",
+          "sourceBook": "Cópia de 6. Traumatismos Oculares.pdf",
+          "totalChunks": 37,
+          "characters": 108557,
+          "questionsAudit": {
+            "gabaritosIdentificados": 83,
+            "questoesNumeradas": 0,
+            "alternativasA": 46,
+            "estimativaQuestoesComGabarito": 83
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Traumatismos Oculares.pdf.json"
+        },
+        {
+          "theme": "Tumores Oculares Malignos.pdf",
+          "sourceBook": "Cópia de 7. Tumores Oculares Malignos.pdf",
+          "totalChunks": 8,
+          "characters": 21310,
+          "questionsAudit": {
+            "gabaritosIdentificados": 7,
+            "questoesNumeradas": 0,
+            "alternativasA": 5,
+            "estimativaQuestoesComGabarito": 7
+          },
+          "supabasePath": "gabarito_das_questoes/Oftalmo/Tumores Oculares Malignos.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Orto",
+      "booksCount": 18,
+      "uniqueQuestionsCount": 1084,
+      "books": [
+        {
+          "theme": "Coluna Pediátrica.pdf",
+          "sourceBook": "Cópia de 15. Coluna Pediátrica.pdf",
+          "totalChunks": 27,
+          "characters": 73133,
+          "questionsAudit": {
+            "gabaritosIdentificados": 30,
+            "questoesNumeradas": 0,
+            "alternativasA": 18,
+            "estimativaQuestoesComGabarito": 30
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Coluna Pediátrica.pdf.json"
+        },
+        {
+          "theme": "Complicações do Trauma Ortopédico.pdf",
+          "sourceBook": "Cópia de 4. Complicações do Trauma Ortopédico.pdf",
+          "totalChunks": 92,
+          "characters": 298765,
+          "questionsAudit": {
+            "gabaritosIdentificados": 190,
+            "questoesNumeradas": 109,
+            "alternativasA": 100,
+            "estimativaQuestoesComGabarito": 190
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Complicações do Trauma Ortopédico.pdf.json"
+        },
+        {
+          "theme": "Conceitos Básicos de Anatomia e Semiologia.pdf",
+          "sourceBook": "Cópia de 11. Conceitos Básicos de Anatomia e Semiologia.pdf",
+          "totalChunks": 40,
+          "characters": 110784,
+          "questionsAudit": {
+            "gabaritosIdentificados": 79,
+            "questoesNumeradas": 0,
+            "alternativasA": 42,
+            "estimativaQuestoesComGabarito": 79
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Conceitos Básicos de Anatomia e Semiologia.pdf.json"
+        },
+        {
+          "theme": "Conceitos Básicos do Trauma Ortopédico.pdf",
+          "sourceBook": "Cópia de 10. Conceitos Básicos do Trauma Ortopédico.pdf",
+          "totalChunks": 100,
+          "characters": 306689,
+          "questionsAudit": {
+            "gabaritosIdentificados": 119,
+            "questoesNumeradas": 0,
+            "alternativasA": 60,
+            "estimativaQuestoesComGabarito": 119
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Conceitos Básicos do Trauma Ortopédico.pdf.json"
+        },
+        {
+          "theme": "Desenvolvimento Ortopédico da Criança.pdf",
+          "sourceBook": "Cópia de 12. Desenvolvimento Ortopédico da Criança.pdf",
+          "totalChunks": 44,
+          "characters": 129767,
+          "questionsAudit": {
+            "gabaritosIdentificados": 67,
+            "questoesNumeradas": 0,
+            "alternativasA": 38,
+            "estimativaQuestoesComGabarito": 67
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Desenvolvimento Ortopédico da Criança.pdf.json"
+        },
+        {
+          "theme": "Doenças da Coluna Vertebral.pdf",
+          "sourceBook": "Cópia de 3. Doenças da Coluna Vertebral.pdf",
+          "totalChunks": 148,
+          "characters": 468222,
+          "questionsAudit": {
+            "gabaritosIdentificados": 250,
+            "questoesNumeradas": 132,
+            "alternativasA": 133,
+            "estimativaQuestoesComGabarito": 250
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Doenças da Coluna Vertebral.pdf.json"
+        },
+        {
+          "theme": "Doenças da Mão e Síndromes Compressivas.pdf",
+          "sourceBook": "Cópia de 14. Doenças da Mão e Síndromes Compressivas.pdf",
+          "totalChunks": 62,
+          "characters": 178710,
+          "questionsAudit": {
+            "gabaritosIdentificados": 103,
+            "questoesNumeradas": 0,
+            "alternativasA": 58,
+            "estimativaQuestoesComGabarito": 103
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Doenças da Mão e Síndromes Compressivas.pdf.json"
+        },
+        {
+          "theme": "Doenças de Partes Moles.pdf",
+          "sourceBook": "Cópia de 17. Doenças de Partes Moles.pdf",
+          "totalChunks": 16,
+          "characters": 46833,
+          "questionsAudit": {
+            "gabaritosIdentificados": 21,
+            "questoesNumeradas": 0,
+            "alternativasA": 12,
+            "estimativaQuestoesComGabarito": 21
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Doenças de Partes Moles.pdf.json"
+        },
+        {
+          "theme": "Doenças do Ombro e Cotovelo.pdf",
+          "sourceBook": "Cópia de 13. Doenças do Ombro e Cotovelo.pdf",
+          "totalChunks": 76,
+          "characters": 220626,
+          "questionsAudit": {
+            "gabaritosIdentificados": 143,
+            "questoesNumeradas": 0,
+            "alternativasA": 73,
+            "estimativaQuestoesComGabarito": 143
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Doenças do Ombro e Cotovelo.pdf.json"
+        },
+        {
+          "theme": "Doenças Neuromusculares Pediátricas.pdf",
+          "sourceBook": "Cópia de 16. Doenças Neuromusculares Pediátricas.pdf",
+          "totalChunks": 49,
+          "characters": 152956,
+          "questionsAudit": {
+            "gabaritosIdentificados": 81,
+            "questoesNumeradas": 0,
+            "alternativasA": 44,
+            "estimativaQuestoesComGabarito": 81
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Doenças Neuromusculares Pediátricas.pdf.json"
+        },
+        {
+          "theme": "Fratura Exposta.pdf",
+          "sourceBook": "Cópia de 8. Fratura Exposta.pdf",
+          "totalChunks": 62,
+          "characters": 176080,
+          "questionsAudit": {
+            "gabaritosIdentificados": 89,
+            "questoesNumeradas": 0,
+            "alternativasA": 46,
+            "estimativaQuestoesComGabarito": 89
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Fratura Exposta.pdf.json"
+        },
+        {
+          "theme": "Fraturas e Luxações.pdf",
+          "sourceBook": "Cópia de 7. Fraturas e Luxações.pdf",
+          "totalChunks": 179,
+          "characters": 521508,
+          "questionsAudit": {
+            "gabaritosIdentificados": 276,
+            "questoesNumeradas": 0,
+            "alternativasA": 140,
+            "estimativaQuestoesComGabarito": 276
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Fraturas e Luxações.pdf.json"
+        },
+        {
+          "theme": "Maus Tratos.pdf",
+          "sourceBook": "Cópia de 5. Maus Tratos.pdf",
+          "totalChunks": 124,
+          "characters": 406543,
+          "questionsAudit": {
+            "gabaritosIdentificados": 200,
+            "questoesNumeradas": 125,
+            "alternativasA": 125,
+            "estimativaQuestoesComGabarito": 200
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Maus Tratos.pdf.json"
+        },
+        {
+          "theme": "Miscelânea Ortopédica.pdf",
+          "sourceBook": "Cópia de 18. Miscelânea Ortopédica.pdf",
+          "totalChunks": 55,
+          "characters": 173050,
+          "questionsAudit": {
+            "gabaritosIdentificados": 72,
+            "questoesNumeradas": 0,
+            "alternativasA": 41,
+            "estimativaQuestoesComGabarito": 72
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Miscelânea Ortopédica.pdf.json"
+        },
+        {
+          "theme": "Ombro e Joelho Pediátrico.pdf",
+          "sourceBook": "Cópia de 9. Ombro e Joelho Pediátrico.pdf",
+          "totalChunks": 31,
+          "characters": 89277,
+          "questionsAudit": {
+            "gabaritosIdentificados": 62,
+            "questoesNumeradas": 0,
+            "alternativasA": 30,
+            "estimativaQuestoesComGabarito": 62
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Ombro e Joelho Pediátrico.pdf.json"
+        },
+        {
+          "theme": "Oncologia Ortopédica e Osteomielite.pdf",
+          "sourceBook": "Cópia de 6. Oncologia Ortopédica e Osteomielite.pdf",
+          "totalChunks": 124,
+          "characters": 401250,
+          "questionsAudit": {
+            "gabaritosIdentificados": 216,
+            "questoesNumeradas": 115,
+            "alternativasA": 115,
+            "estimativaQuestoesComGabarito": 216
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Oncologia Ortopédica e Osteomielite.pdf.json"
+        },
+        {
+          "theme": "Politrauma Ortopédico.pdf",
+          "sourceBook": "Cópia de 2. Politrauma Ortopédico.pdf",
+          "totalChunks": 134,
+          "characters": 432491,
+          "questionsAudit": {
+            "gabaritosIdentificados": 275,
+            "questoesNumeradas": 148,
+            "alternativasA": 147,
+            "estimativaQuestoesComGabarito": 275
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Politrauma Ortopédico.pdf.json"
+        },
+        {
+          "theme": "Quadril Pediátrico.pdf",
+          "sourceBook": "Cópia de 1. Quadril Pediátrico.pdf",
+          "totalChunks": 130,
+          "characters": 436440,
+          "questionsAudit": {
+            "gabaritosIdentificados": 233,
+            "questoesNumeradas": 131,
+            "alternativasA": 128,
+            "estimativaQuestoesComGabarito": 233
+          },
+          "supabasePath": "gabarito_das_questoes/Orto/Quadril Pediátrico.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "otorrino",
+      "booksCount": 7,
+      "uniqueQuestionsCount": 594,
+      "books": [
+        {
+          "theme": "Cirurgia de Cabeça e Pescoço - Laringologia, Apneia do Sono e SRO.pdf",
+          "sourceBook": "Cópia de 5. Cirurgia de Cabeça e Pescoço - Laringologia, Apneia do Sono e SRO.pdf",
+          "totalChunks": 26,
+          "characters": 79827,
+          "questionsAudit": {
+            "gabaritosIdentificados": 86,
+            "questoesNumeradas": 0,
+            "alternativasA": 43,
+            "estimativaQuestoesComGabarito": 86
+          },
+          "supabasePath": "gabarito_das_questoes/otorrino/Cirurgia de Cabeça e Pescoço - Laringologia, Apneia do Sono e SRO.pdf.json"
+        },
+        {
+          "theme": "Cirurgia de Cabeça e Pescoço - Manejo dos Nódulos de Tireoide, Câncer de Tireoide e Tireoidectomia.pdf",
+          "sourceBook": "Cópia de 6. Cirurgia de Cabeça e Pescoço - Manejo dos Nódulos de Tireoide, Câncer de Tireoide e Tireoidectomia.pdf",
+          "totalChunks": 91,
+          "characters": 289380,
+          "questionsAudit": {
+            "gabaritosIdentificados": 262,
+            "questoesNumeradas": 0,
+            "alternativasA": 139,
+            "estimativaQuestoesComGabarito": 262
+          },
+          "supabasePath": "gabarito_das_questoes/otorrino/Cirurgia de Cabeça e Pescoço - Manejo dos Nódulos de Tireoide, Câncer de Tireoide e Tireoidectomia.pdf.json"
+        },
+        {
+          "theme": "Cirurgia de Cabeça e Pescoço - Neoplasias Benignas e Malignas de Cabeça e Pescoço, Doenças Congênitas Cervicofaciais e Traqueostomia.pdf",
+          "sourceBook": "Cópia de 7. Cirurgia de Cabeça e Pescoço - Neoplasias Benignas e Malignas de Cabeça e Pescoço, Doenças Congênitas Cervicofaciais e Traqueostomia.pdf",
+          "totalChunks": 70,
+          "characters": 215957,
+          "questionsAudit": {
+            "gabaritosIdentificados": 178,
+            "questoesNumeradas": 0,
+            "alternativasA": 92,
+            "estimativaQuestoesComGabarito": 178
+          },
+          "supabasePath": "gabarito_das_questoes/otorrino/Cirurgia de Cabeça e Pescoço - Neoplasias Benignas e Malignas de Cabeça e Pescoço, Doenças Congênitas Cervicofaciais e Traqueostomia.pdf.json"
+        },
+        {
+          "theme": "Infecções das Vias Aéreas Superiores - Parte II.pdf",
+          "sourceBook": "Cópia de 2. Infecções das Vias Aéreas Superiores - Parte II.pdf",
+          "totalChunks": 90,
+          "characters": 283334,
+          "questionsAudit": {
+            "gabaritosIdentificados": 162,
+            "questoesNumeradas": 0,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 162
+          },
+          "supabasePath": "gabarito_das_questoes/otorrino/Infecções das Vias Aéreas Superiores - Parte II.pdf.json"
+        },
+        {
+          "theme": "Infecções de Vias Aéreas Superiores - Parte I.pdf",
+          "sourceBook": "Cópia de 1. Infecções de Vias Aéreas Superiores - Parte I.pdf",
+          "totalChunks": 92,
+          "characters": 297477,
+          "questionsAudit": {
+            "gabaritosIdentificados": 150,
+            "questoesNumeradas": 0,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 150
+          },
+          "supabasePath": "gabarito_das_questoes/otorrino/Infecções de Vias Aéreas Superiores - Parte I.pdf.json"
+        },
+        {
+          "theme": "Infecções de Vias Aéreas Superiores - Parte III.pdf",
+          "sourceBook": "Cópia de 3. Infecções de Vias Aéreas Superiores - Parte III.pdf",
+          "totalChunks": 55,
+          "characters": 173485,
+          "questionsAudit": {
+            "gabaritosIdentificados": 91,
+            "questoesNumeradas": 0,
+            "alternativasA": 73,
+            "estimativaQuestoesComGabarito": 91
+          },
+          "supabasePath": "gabarito_das_questoes/otorrino/Infecções de Vias Aéreas Superiores - Parte III.pdf.json"
+        },
+        {
+          "theme": "Otoneurologia, Vertigens e Audiologia.pdf",
+          "sourceBook": "Cópia de 4. Otoneurologia, Vertigens e Audiologia.pdf",
+          "totalChunks": 53,
+          "characters": 169142,
+          "questionsAudit": {
+            "gabaritosIdentificados": 151,
+            "questoesNumeradas": 0,
+            "alternativasA": 80,
+            "estimativaQuestoesComGabarito": 151
+          },
+          "supabasePath": "gabarito_das_questoes/otorrino/Otoneurologia, Vertigens e Audiologia.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "Pediatria",
+      "booksCount": 28,
+      "uniqueQuestionsCount": 2542,
+      "books": [
+        {
+          "theme": "Aleitamento Materno.pdf",
+          "sourceBook": "Cópia de 17. Aleitamento Materno.pdf",
+          "totalChunks": 195,
+          "characters": 616898,
+          "questionsAudit": {
+            "gabaritosIdentificados": 165,
+            "questoesNumeradas": 0,
+            "alternativasA": 145,
+            "estimativaQuestoesComGabarito": 165
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Aleitamento Materno.pdf.json"
+        },
+        {
+          "theme": "Alergia Alimentar.pdf",
+          "sourceBook": "Cópia de 4. Alergia Alimentar.pdf",
+          "totalChunks": 110,
+          "characters": 347634,
+          "questionsAudit": {
+            "gabaritosIdentificados": 232,
+            "questoesNumeradas": 0,
+            "alternativasA": 113,
+            "estimativaQuestoesComGabarito": 232
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Alergia Alimentar.pdf.json"
+        },
+        {
+          "theme": "Anafilaxia e Urticária.pdf",
+          "sourceBook": "Cópia de 7. Anafilaxia e Urticária.pdf",
+          "totalChunks": 165,
+          "characters": 501450,
+          "questionsAudit": {
+            "gabaritosIdentificados": 167,
+            "questoesNumeradas": 0,
+            "alternativasA": 126,
+            "estimativaQuestoesComGabarito": 167
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Anafilaxia e Urticária.pdf.json"
+        },
+        {
+          "theme": "Asma.pdf",
+          "sourceBook": "Cópia de 21. Asma.pdf",
+          "totalChunks": 241,
+          "characters": 703859,
+          "questionsAudit": {
+            "gabaritosIdentificados": 281,
+            "questoesNumeradas": 1,
+            "alternativasA": 143,
+            "estimativaQuestoesComGabarito": 281
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Asma.pdf.json"
+        },
+        {
+          "theme": "BRUESMSL (Brief Resolved Unexplained Events Síndrome da Morte Súbita do Lactente).pdf",
+          "sourceBook": "Cópia de 2. BRUESMSL (Brief Resolved Unexplained Events Síndrome da Morte Súbita do Lactente).pdf",
+          "totalChunks": 44,
+          "characters": 131668,
+          "questionsAudit": {
+            "gabaritosIdentificados": 61,
+            "questoesNumeradas": 0,
+            "alternativasA": 40,
+            "estimativaQuestoesComGabarito": 61
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/BRUESMSL (Brief Resolved Unexplained Events Síndrome da Morte Súbita do Lactente).pdf.json"
+        },
+        {
+          "theme": "Choque em Pediatria.pdf",
+          "sourceBook": "Cópia de 23. Choque em Pediatria.pdf",
+          "totalChunks": 222,
+          "characters": 759568,
+          "questionsAudit": {
+            "gabaritosIdentificados": 282,
+            "questoesNumeradas": 124,
+            "alternativasA": 125,
+            "estimativaQuestoesComGabarito": 282
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Choque em Pediatria.pdf.json"
+        },
+        {
+          "theme": "Constipação Intestinal.pdf",
+          "sourceBook": "Cópia de 9. Constipação Intestinal.pdf",
+          "totalChunks": 110,
+          "characters": 338692,
+          "questionsAudit": {
+            "gabaritosIdentificados": 201,
+            "questoesNumeradas": 0,
+            "alternativasA": 111,
+            "estimativaQuestoesComGabarito": 201
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Constipação Intestinal.pdf.json"
+        },
+        {
+          "theme": "Convulsão Febril.pdf",
+          "sourceBook": "Cópia de 26. Convulsão Febril.pdf",
+          "totalChunks": 161,
+          "characters": 515172,
+          "questionsAudit": {
+            "gabaritosIdentificados": 135,
+            "questoesNumeradas": 0,
+            "alternativasA": 119,
+            "estimativaQuestoesComGabarito": 135
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Convulsão Febril.pdf.json"
+        },
+        {
+          "theme": "Crescimento.pdf",
+          "sourceBook": "Cópia de 8. Crescimento.pdf",
+          "totalChunks": 173,
+          "characters": 506769,
+          "questionsAudit": {
+            "gabaritosIdentificados": 156,
+            "questoesNumeradas": 0,
+            "alternativasA": 126,
+            "estimativaQuestoesComGabarito": 156
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Crescimento.pdf.json"
+        },
+        {
+          "theme": "Cuidados Neonatais.pdf",
+          "sourceBook": "Cópia de 23. Cuidados Neonatais.pdf",
+          "totalChunks": 154,
+          "characters": 459586,
+          "questionsAudit": {
+            "gabaritosIdentificados": 254,
+            "questoesNumeradas": 0,
+            "alternativasA": 148,
+            "estimativaQuestoesComGabarito": 254
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Cuidados Neonatais.pdf.json"
+        },
+        {
+          "theme": "Deficiências Vitamínicas e Profilaxias.pdf",
+          "sourceBook": "Cópia de 25. Deficiências Vitamínicas e Profilaxias.pdf",
+          "totalChunks": 234,
+          "characters": 745514,
+          "questionsAudit": {
+            "gabaritosIdentificados": 146,
+            "questoesNumeradas": 131,
+            "alternativasA": 131,
+            "estimativaQuestoesComGabarito": 146
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Deficiências Vitamínicas e Profilaxias.pdf.json"
+        },
+        {
+          "theme": "Desnutrição na Infância.pdf",
+          "sourceBook": "Cópia de 19. Desnutrição na Infância.pdf",
+          "totalChunks": 112,
+          "characters": 348669,
+          "questionsAudit": {
+            "gabaritosIdentificados": 91,
+            "questoesNumeradas": 0,
+            "alternativasA": 77,
+            "estimativaQuestoesComGabarito": 91
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Desnutrição na Infância.pdf.json"
+        },
+        {
+          "theme": "Distúrbios Respiratórios do Período Neonatal .pdf",
+          "sourceBook": "Cópia de 11. Distúrbios Respiratórios do Período Neonatal .pdf",
+          "totalChunks": 121,
+          "characters": 389311,
+          "questionsAudit": {
+            "gabaritosIdentificados": 204,
+            "questoesNumeradas": 0,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 204
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Distúrbios Respiratórios do Período Neonatal .pdf.json"
+        },
+        {
+          "theme": "Doença de Kawasaki.pdf",
+          "sourceBook": "Cópia de 28. Doença de Kawasaki.pdf",
+          "totalChunks": 137,
+          "characters": 428020,
+          "questionsAudit": {
+            "gabaritosIdentificados": 152,
+            "questoesNumeradas": 2,
+            "alternativasA": 124,
+            "estimativaQuestoesComGabarito": 152
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Doença de Kawasaki.pdf.json"
+        },
+        {
+          "theme": "Enurese Noturna.pdf",
+          "sourceBook": "Cópia de 14. Enurese Noturna.pdf",
+          "totalChunks": 50,
+          "characters": 159479,
+          "questionsAudit": {
+            "gabaritosIdentificados": 54,
+            "questoesNumeradas": 0,
+            "alternativasA": 32,
+            "estimativaQuestoesComGabarito": 54
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Enurese Noturna.pdf.json"
+        },
+        {
+          "theme": "Febre Reumática.pdf",
+          "sourceBook": "Cópia de 12. Febre Reumática.pdf",
+          "totalChunks": 132,
+          "characters": 392181,
+          "questionsAudit": {
+            "gabaritosIdentificados": 133,
+            "questoesNumeradas": 0,
+            "alternativasA": 104,
+            "estimativaQuestoesComGabarito": 133
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Febre Reumática.pdf.json"
+        },
+        {
+          "theme": "Hiperplasia Adrenal Congênita.pdf",
+          "sourceBook": "Cópia de 10. Hiperplasia Adrenal Congênita.pdf",
+          "totalChunks": 124,
+          "characters": 418253,
+          "questionsAudit": {
+            "gabaritosIdentificados": 78,
+            "questoesNumeradas": 0,
+            "alternativasA": 70,
+            "estimativaQuestoesComGabarito": 78
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Hiperplasia Adrenal Congênita.pdf.json"
+        },
+        {
+          "theme": "Hipotireoidismo Congênito.pdf",
+          "sourceBook": "Cópia de 16. Hipotireoidismo Congênito.pdf",
+          "totalChunks": 41,
+          "characters": 120960,
+          "questionsAudit": {
+            "gabaritosIdentificados": 44,
+            "questoesNumeradas": 0,
+            "alternativasA": 34,
+            "estimativaQuestoesComGabarito": 44
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Hipotireoidismo Congênito.pdf.json"
+        },
+        {
+          "theme": "Imunizações.pdf",
+          "sourceBook": "Cópia de 20. Imunizações.pdf",
+          "totalChunks": 175,
+          "characters": 528553,
+          "questionsAudit": {
+            "gabaritosIdentificados": 301,
+            "questoesNumeradas": 0,
+            "alternativasA": 169,
+            "estimativaQuestoesComGabarito": 301
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Imunizações.pdf.json"
+        },
+        {
+          "theme": "Infecção de Trato Urinário em Pediatria (ITU).pdf",
+          "sourceBook": "Cópia de 3. Infecção de Trato Urinário em Pediatria (ITU).pdf",
+          "totalChunks": 169,
+          "characters": 548891,
+          "questionsAudit": {
+            "gabaritosIdentificados": 206,
+            "questoesNumeradas": 128,
+            "alternativasA": 126,
+            "estimativaQuestoesComGabarito": 206
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Infecção de Trato Urinário em Pediatria (ITU).pdf.json"
+        },
+        {
+          "theme": "Infecções Congênitas.pdf",
+          "sourceBook": "Cópia de 15. Infecções Congênitas.pdf",
+          "totalChunks": 217,
+          "characters": 707837,
+          "questionsAudit": {
+            "gabaritosIdentificados": 265,
+            "questoesNumeradas": 0,
+            "alternativasA": 170,
+            "estimativaQuestoesComGabarito": 265
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Infecções Congênitas.pdf.json"
+        },
+        {
+          "theme": "Obesidade Infantil e na Adolescência.pdf",
+          "sourceBook": "Cópia de 5. Obesidade Infantil e na Adolescência.pdf",
+          "totalChunks": 102,
+          "characters": 318799,
+          "questionsAudit": {
+            "gabaritosIdentificados": 107,
+            "questoesNumeradas": 0,
+            "alternativasA": 89,
+            "estimativaQuestoesComGabarito": 107
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Obesidade Infantil e na Adolescência.pdf.json"
+        },
+        {
+          "theme": "Outros Distúrbios do Período Neonatal.pdf",
+          "sourceBook": "Cópia de 6. Outros Distúrbios do Período Neonatal.pdf",
+          "totalChunks": 119,
+          "characters": 370912,
+          "questionsAudit": {
+            "gabaritosIdentificados": 217,
+            "questoesNumeradas": 0,
+            "alternativasA": 122,
+            "estimativaQuestoesComGabarito": 217
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Outros Distúrbios do Período Neonatal.pdf.json"
+        },
+        {
+          "theme": "Pneumonias na Infância.pdf",
+          "sourceBook": "Cópia de 18. Pneumonias na Infância.pdf",
+          "totalChunks": 151,
+          "characters": 479034,
+          "questionsAudit": {
+            "gabaritosIdentificados": 171,
+            "questoesNumeradas": 0,
+            "alternativasA": 129,
+            "estimativaQuestoesComGabarito": 171
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Pneumonias na Infância.pdf.json"
+        },
+        {
+          "theme": "Puberdade.pdf",
+          "sourceBook": "Cópia de 1. Puberdade.pdf",
+          "totalChunks": 214,
+          "characters": 690530,
+          "questionsAudit": {
+            "gabaritosIdentificados": 164,
+            "questoesNumeradas": 145,
+            "alternativasA": 144,
+            "estimativaQuestoesComGabarito": 164
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Puberdade.pdf.json"
+        },
+        {
+          "theme": "Reanimação Neonatal.pdf",
+          "sourceBook": "Cópia de 27. Reanimação Neonatal.pdf",
+          "totalChunks": 134,
+          "characters": 420346,
+          "questionsAudit": {
+            "gabaritosIdentificados": 174,
+            "questoesNumeradas": 0,
+            "alternativasA": 115,
+            "estimativaQuestoesComGabarito": 174
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Reanimação Neonatal.pdf.json"
+        },
+        {
+          "theme": "Sífilis Congênita.pdf",
+          "sourceBook": "Cópia de 22. Sífilis Congênita.pdf",
+          "totalChunks": 60,
+          "characters": 188643,
+          "questionsAudit": {
+            "gabaritosIdentificados": 71,
+            "questoesNumeradas": 0,
+            "alternativasA": 36,
+            "estimativaQuestoesComGabarito": 71
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Sífilis Congênita.pdf.json"
+        },
+        {
+          "theme": "Síndromes Genéticas, Erros Inatos do Metabolismo e da Imunidade.pdf",
+          "sourceBook": "Cópia de 13. Síndromes Genéticas, Erros Inatos do Metabolismo e da Imunidade.pdf",
+          "totalChunks": 185,
+          "characters": 579819,
+          "questionsAudit": {
+            "gabaritosIdentificados": 199,
+            "questoesNumeradas": 0,
+            "alternativasA": 161,
+            "estimativaQuestoesComGabarito": 199
+          },
+          "supabasePath": "gabarito_das_questoes/Pediatria/Síndromes Genéticas, Erros Inatos do Metabolismo e da Imunidade.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "preventiva",
+      "booksCount": 21,
+      "uniqueQuestionsCount": 2610,
+      "books": [
+        {
+          "theme": "Atenção Primária à Saúde. .pdf",
+          "sourceBook": "Cópia de 13. Atenção Primária à Saúde. .pdf",
+          "totalChunks": 180,
+          "characters": 585419,
+          "questionsAudit": {
+            "gabaritosIdentificados": 259,
+            "questoesNumeradas": 0,
+            "alternativasA": 142,
+            "estimativaQuestoesComGabarito": 259
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Atenção Primária à Saúde. .pdf.json"
+        },
+        {
+          "theme": "Descentralização e regionalização do SUS..pdf",
+          "sourceBook": "Cópia de 12. Descentralização e regionalização do SUS..pdf",
+          "totalChunks": 142,
+          "characters": 452200,
+          "questionsAudit": {
+            "gabaritosIdentificados": 243,
+            "questoesNumeradas": 0,
+            "alternativasA": 131,
+            "estimativaQuestoesComGabarito": 243
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Descentralização e regionalização do SUS..pdf.json"
+        },
+        {
+          "theme": "Epidemias e Epidemiologia das Doenças Infecciosas..pdf",
+          "sourceBook": "Cópia de 4. Epidemias e Epidemiologia das Doenças Infecciosas..pdf",
+          "totalChunks": 268,
+          "characters": 859204,
+          "questionsAudit": {
+            "gabaritosIdentificados": 298,
+            "questoesNumeradas": 0,
+            "alternativasA": 185,
+            "estimativaQuestoesComGabarito": 298
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Epidemias e Epidemiologia das Doenças Infecciosas..pdf.json"
+        },
+        {
+          "theme": "Estatística Médica..pdf",
+          "sourceBook": "Cópia de 18. Estatística Médica..pdf",
+          "totalChunks": 214,
+          "characters": 652267,
+          "questionsAudit": {
+            "gabaritosIdentificados": 268,
+            "questoesNumeradas": 0,
+            "alternativasA": 144,
+            "estimativaQuestoesComGabarito": 268
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Estatística Médica..pdf.json"
+        },
+        {
+          "theme": "Estudos Epidemiológicos e Medidas de Associação. .pdf",
+          "sourceBook": "Cópia de 16. Estudos Epidemiológicos e Medidas de Associação. .pdf",
+          "totalChunks": 296,
+          "characters": 934481,
+          "questionsAudit": {
+            "gabaritosIdentificados": 333,
+            "questoesNumeradas": 1,
+            "alternativasA": 174,
+            "estimativaQuestoesComGabarito": 333
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Estudos Epidemiológicos e Medidas de Associação. .pdf.json"
+        },
+        {
+          "theme": "Financiamento em Saúde..pdf",
+          "sourceBook": "Cópia de 14. Financiamento em Saúde..pdf",
+          "totalChunks": 149,
+          "characters": 484752,
+          "questionsAudit": {
+            "gabaritosIdentificados": 232,
+            "questoesNumeradas": 0,
+            "alternativasA": 124,
+            "estimativaQuestoesComGabarito": 232
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Financiamento em Saúde..pdf.json"
+        },
+        {
+          "theme": "História do SUS..pdf",
+          "sourceBook": "Cópia de 9. História do SUS..pdf",
+          "totalChunks": 128,
+          "characters": 403553,
+          "questionsAudit": {
+            "gabaritosIdentificados": 226,
+            "questoesNumeradas": 1,
+            "alternativasA": 123,
+            "estimativaQuestoesComGabarito": 226
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/História do SUS..pdf.json"
+        },
+        {
+          "theme": "Indicadores demográficos, Indicadores socioeconômicos e transição demográfica-epidemiológica..pdf",
+          "sourceBook": "Cópia de 3. Indicadores demográficos, Indicadores socioeconômicos e transição demográfica-epidemiológica..pdf",
+          "totalChunks": 157,
+          "characters": 508830,
+          "questionsAudit": {
+            "gabaritosIdentificados": 224,
+            "questoesNumeradas": 0,
+            "alternativasA": 120,
+            "estimativaQuestoesComGabarito": 224
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Indicadores demográficos, Indicadores socioeconômicos e transição demográfica-epidemiológica..pdf.json"
+        },
+        {
+          "theme": "Marcos Legais do SUS (Leis 8.08090 e 8.14290). .pdf",
+          "sourceBook": "Cópia de 10. Marcos Legais do SUS (Leis 8.08090 e 8.14290). .pdf",
+          "totalChunks": 218,
+          "characters": 696561,
+          "questionsAudit": {
+            "gabaritosIdentificados": 283,
+            "questoesNumeradas": 0,
+            "alternativasA": 184,
+            "estimativaQuestoesComGabarito": 283
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Marcos Legais do SUS (Leis 8.08090 e 8.14290). .pdf.json"
+        },
+        {
+          "theme": "Medicina de Família e Comunidade..pdf",
+          "sourceBook": "Cópia de 19. Medicina de Família e Comunidade..pdf",
+          "totalChunks": 239,
+          "characters": 767807,
+          "questionsAudit": {
+            "gabaritosIdentificados": 282,
+            "questoesNumeradas": 0,
+            "alternativasA": 151,
+            "estimativaQuestoesComGabarito": 282
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Medicina de Família e Comunidade..pdf.json"
+        },
+        {
+          "theme": "Medidas de Saúde Coletiva - Parte I Indicadores de Morbidade.pdf",
+          "sourceBook": "Cópia de 1. Medidas de Saúde Coletiva - Parte I Indicadores de Morbidade.pdf",
+          "totalChunks": 189,
+          "characters": 574040,
+          "questionsAudit": {
+            "gabaritosIdentificados": 290,
+            "questoesNumeradas": 0,
+            "alternativasA": 146,
+            "estimativaQuestoesComGabarito": 290
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Medidas de Saúde Coletiva - Parte I Indicadores de Morbidade.pdf.json"
+        },
+        {
+          "theme": "Medidas de Saúde Coletiva Parte II - Indicadores de Mortalidade.pdf",
+          "sourceBook": "Cópia de 2. Medidas de Saúde Coletiva Parte II - Indicadores de Mortalidade.pdf",
+          "totalChunks": 207,
+          "characters": 624092,
+          "questionsAudit": {
+            "gabaritosIdentificados": 331,
+            "questoesNumeradas": 0,
+            "alternativasA": 161,
+            "estimativaQuestoesComGabarito": 331
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Medidas de Saúde Coletiva Parte II - Indicadores de Mortalidade.pdf.json"
+        },
+        {
+          "theme": "Políticas de Saúde..pdf",
+          "sourceBook": "Cópia de 15. Políticas de Saúde..pdf",
+          "totalChunks": 167,
+          "characters": 523310,
+          "questionsAudit": {
+            "gabaritosIdentificados": 245,
+            "questoesNumeradas": 0,
+            "alternativasA": 126,
+            "estimativaQuestoesComGabarito": 245
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Políticas de Saúde..pdf.json"
+        },
+        {
+          "theme": "Princípios e Diretrizes do SUS..pdf",
+          "sourceBook": "Cópia de 11. Princípios e Diretrizes do SUS..pdf",
+          "totalChunks": 175,
+          "characters": 563519,
+          "questionsAudit": {
+            "gabaritosIdentificados": 279,
+            "questoesNumeradas": 0,
+            "alternativasA": 156,
+            "estimativaQuestoesComGabarito": 279
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Princípios e Diretrizes do SUS..pdf.json"
+        },
+        {
+          "theme": "Processo Saúde-Doença e níveis de prevenção em saúde. .pdf",
+          "sourceBook": "Cópia de 7. Processo Saúde-Doença e níveis de prevenção em saúde. .pdf",
+          "totalChunks": 175,
+          "characters": 581450,
+          "questionsAudit": {
+            "gabaritosIdentificados": 275,
+            "questoesNumeradas": 0,
+            "alternativasA": 155,
+            "estimativaQuestoesComGabarito": 275
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Processo Saúde-Doença e níveis de prevenção em saúde. .pdf.json"
+        },
+        {
+          "theme": "Saúde do Idoso..pdf",
+          "sourceBook": "Cópia de 20. Saúde do Idoso..pdf",
+          "totalChunks": 150,
+          "characters": 486772,
+          "questionsAudit": {
+            "gabaritosIdentificados": 220,
+            "questoesNumeradas": 0,
+            "alternativasA": 126,
+            "estimativaQuestoesComGabarito": 220
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Saúde do Idoso..pdf.json"
+        },
+        {
+          "theme": "Saúde do Trabalhador. .pdf",
+          "sourceBook": "Cópia de 21. Saúde do Trabalhador. .pdf",
+          "totalChunks": 179,
+          "characters": 581891,
+          "questionsAudit": {
+            "gabaritosIdentificados": 271,
+            "questoesNumeradas": 0,
+            "alternativasA": 159,
+            "estimativaQuestoesComGabarito": 271
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Saúde do Trabalhador. .pdf.json"
+        },
+        {
+          "theme": "SINAN, declaração de óbito (SIM) e outros sistemas de informações em saúde. .pdf",
+          "sourceBook": "Cópia de 6. SINAN, declaração de óbito (SIM) e outros sistemas de informações em saúde. .pdf",
+          "totalChunks": 189,
+          "characters": 603938,
+          "questionsAudit": {
+            "gabaritosIdentificados": 256,
+            "questoesNumeradas": 0,
+            "alternativasA": 149,
+            "estimativaQuestoesComGabarito": 256
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/SINAN, declaração de óbito (SIM) e outros sistemas de informações em saúde. .pdf.json"
+        },
+        {
+          "theme": "Testes Diagnósticos..pdf",
+          "sourceBook": "Cópia de 17. Testes Diagnósticos..pdf",
+          "totalChunks": 231,
+          "characters": 708121,
+          "questionsAudit": {
+            "gabaritosIdentificados": 310,
+            "questoesNumeradas": 0,
+            "alternativasA": 166,
+            "estimativaQuestoesComGabarito": 310
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Testes Diagnósticos..pdf.json"
+        },
+        {
+          "theme": "Vigilância em Saúde..pdf",
+          "sourceBook": "Cópia de 5. Vigilância em Saúde..pdf",
+          "totalChunks": 112,
+          "characters": 357722,
+          "questionsAudit": {
+            "gabaritosIdentificados": 214,
+            "questoesNumeradas": 1,
+            "alternativasA": 111,
+            "estimativaQuestoesComGabarito": 214
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Vigilância em Saúde..pdf.json"
+        },
+        {
+          "theme": "Ética Médica..pdf",
+          "sourceBook": "Cópia de 8. Ética Médica..pdf",
+          "totalChunks": 126,
+          "characters": 393863,
+          "questionsAudit": {
+            "gabaritosIdentificados": 201,
+            "questoesNumeradas": 0,
+            "alternativasA": 131,
+            "estimativaQuestoesComGabarito": 201
+          },
+          "supabasePath": "gabarito_das_questoes/preventiva/Ética Médica..pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "psiq",
+      "booksCount": 12,
+      "uniqueQuestionsCount": 1106,
+      "books": [
+        {
+          "theme": "Dependência Química.pdf",
+          "sourceBook": "Cópia de 4. Dependência Química.pdf",
+          "totalChunks": 116,
+          "characters": 360864,
+          "questionsAudit": {
+            "gabaritosIdentificados": 162,
+            "questoesNumeradas": 6,
+            "alternativasA": 130,
+            "estimativaQuestoesComGabarito": 162
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Dependência Química.pdf.json"
+        },
+        {
+          "theme": "Intoxicações Exógenas.pdf",
+          "sourceBook": "Cópia de 12. Intoxicações Exógenas.pdf",
+          "totalChunks": 87,
+          "characters": 279067,
+          "questionsAudit": {
+            "gabaritosIdentificados": 173,
+            "questoesNumeradas": 0,
+            "alternativasA": 132,
+            "estimativaQuestoesComGabarito": 173
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Intoxicações Exógenas.pdf.json"
+        },
+        {
+          "theme": "Psicofarmacologia.pdf",
+          "sourceBook": "Cópia de 9. Psicofarmacologia.pdf",
+          "totalChunks": 87,
+          "characters": 279534,
+          "questionsAudit": {
+            "gabaritosIdentificados": 183,
+            "questoesNumeradas": 0,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 183
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Psicofarmacologia.pdf.json"
+        },
+        {
+          "theme": "Psicopatologia.pdf",
+          "sourceBook": "Cópia de 10. Psicopatologia.pdf",
+          "totalChunks": 27,
+          "characters": 84157,
+          "questionsAudit": {
+            "gabaritosIdentificados": 61,
+            "questoesNumeradas": 0,
+            "alternativasA": 45,
+            "estimativaQuestoesComGabarito": 61
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Psicopatologia.pdf.json"
+        },
+        {
+          "theme": "Psiquiatria Infantil.pdf",
+          "sourceBook": "Cópia de 6. Psiquiatria Infantil.pdf",
+          "totalChunks": 99,
+          "characters": 314059,
+          "questionsAudit": {
+            "gabaritosIdentificados": 173,
+            "questoesNumeradas": 0,
+            "alternativasA": 126,
+            "estimativaQuestoesComGabarito": 173
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Psiquiatria Infantil.pdf.json"
+        },
+        {
+          "theme": "Psiquiatria Social e Reforma Psiquiátrica.pdf",
+          "sourceBook": "Cópia de 11. Psiquiatria Social e Reforma Psiquiátrica.pdf",
+          "totalChunks": 90,
+          "characters": 283475,
+          "questionsAudit": {
+            "gabaritosIdentificados": 162,
+            "questoesNumeradas": 0,
+            "alternativasA": 110,
+            "estimativaQuestoesComGabarito": 162
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Psiquiatria Social e Reforma Psiquiátrica.pdf.json"
+        },
+        {
+          "theme": "TOC, Transtornos Somáticos, Dissociativos e Relacionados ao Estresse.pdf",
+          "sourceBook": "Cópia de 5. TOC, Transtornos Somáticos, Dissociativos e Relacionados ao Estresse.pdf",
+          "totalChunks": 88,
+          "characters": 284739,
+          "questionsAudit": {
+            "gabaritosIdentificados": 169,
+            "questoesNumeradas": 0,
+            "alternativasA": 114,
+            "estimativaQuestoesComGabarito": 169
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/TOC, Transtornos Somáticos, Dissociativos e Relacionados ao Estresse.pdf.json"
+        },
+        {
+          "theme": "Transtorno de Personalidade.pdf",
+          "sourceBook": "Cópia de 7. Transtorno de Personalidade.pdf",
+          "totalChunks": 29,
+          "characters": 92002,
+          "questionsAudit": {
+            "gabaritosIdentificados": 55,
+            "questoesNumeradas": 0,
+            "alternativasA": 38,
+            "estimativaQuestoesComGabarito": 55
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Transtorno de Personalidade.pdf.json"
+        },
+        {
+          "theme": "Transtornos Alimentares.pdf",
+          "sourceBook": "Cópia de 8. Transtornos Alimentares.pdf",
+          "totalChunks": 49,
+          "characters": 151176,
+          "questionsAudit": {
+            "gabaritosIdentificados": 109,
+            "questoesNumeradas": 0,
+            "alternativasA": 73,
+            "estimativaQuestoesComGabarito": 109
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Transtornos Alimentares.pdf.json"
+        },
+        {
+          "theme": "Transtornos de Ansiedade.pdf",
+          "sourceBook": "Cópia de 2. Transtornos de Ansiedade.pdf",
+          "totalChunks": 83,
+          "characters": 269710,
+          "questionsAudit": {
+            "gabaritosIdentificados": 127,
+            "questoesNumeradas": 0,
+            "alternativasA": 114,
+            "estimativaQuestoesComGabarito": 127
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Transtornos de Ansiedade.pdf.json"
+        },
+        {
+          "theme": "Transtornos do Humor.pdf",
+          "sourceBook": "Cópia de 1. Transtornos do Humor.pdf",
+          "totalChunks": 103,
+          "characters": 327767,
+          "questionsAudit": {
+            "gabaritosIdentificados": 151,
+            "questoesNumeradas": 0,
+            "alternativasA": 119,
+            "estimativaQuestoesComGabarito": 151
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Transtornos do Humor.pdf.json"
+        },
+        {
+          "theme": "Transtornos Psicóticos.pdf",
+          "sourceBook": "Cópia de 3. Transtornos Psicóticos.pdf",
+          "totalChunks": 71,
+          "characters": 224781,
+          "questionsAudit": {
+            "gabaritosIdentificados": 165,
+            "questoesNumeradas": 0,
+            "alternativasA": 108,
+            "estimativaQuestoesComGabarito": 165
+          },
+          "supabasePath": "gabarito_das_questoes/psiq/Transtornos Psicóticos.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "radio",
+      "booksCount": 10,
+      "uniqueQuestionsCount": 0,
+      "books": [
+        {
+          "theme": "Atlas de Radiologia.pdf",
+          "sourceBook": "Cópia de 1. Atlas de Radiologia.pdf",
+          "totalChunks": 27,
+          "characters": 78876,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 4,
+            "estimativaQuestoesComGabarito": 3
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Atlas de Radiologia.pdf.json"
+        },
+        {
+          "theme": "Exames Contrastados .pdf",
+          "sourceBook": "Cópia de 10. Exames Contrastados .pdf",
+          "totalChunks": 1,
+          "characters": 546,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Exames Contrastados .pdf.json"
+        },
+        {
+          "theme": "Introdução a Tomografia.pdf",
+          "sourceBook": "Cópia de 6. Introdução a Tomografia.pdf",
+          "totalChunks": 1,
+          "characters": 557,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Introdução a Tomografia.pdf.json"
+        },
+        {
+          "theme": "Radiografia do Abdome.pdf",
+          "sourceBook": "Cópia de 3. Radiografia do Abdome.pdf",
+          "totalChunks": 1,
+          "characters": 549,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Radiografia do Abdome.pdf.json"
+        },
+        {
+          "theme": "Radiografia do Tórax.pdf",
+          "sourceBook": "Cópia de 2. Radiografia do Tórax.pdf",
+          "totalChunks": 1,
+          "characters": 545,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Radiografia do Tórax.pdf.json"
+        },
+        {
+          "theme": "Radiografia Musculoesquelética.pdf",
+          "sourceBook": "Cópia de 4. Radiografia Musculoesquelética.pdf",
+          "totalChunks": 1,
+          "characters": 585,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Radiografia Musculoesquelética.pdf.json"
+        },
+        {
+          "theme": "Tomografia de Abdome e Pelve.pdf",
+          "sourceBook": "Cópia de 9. Tomografia de Abdome e Pelve.pdf",
+          "totalChunks": 1,
+          "characters": 577,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Tomografia de Abdome e Pelve.pdf.json"
+        },
+        {
+          "theme": "Tomografia de Crânio.pdf",
+          "sourceBook": "Cópia de 7. Tomografia de Crânio.pdf",
+          "totalChunks": 1,
+          "characters": 545,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Tomografia de Crânio.pdf.json"
+        },
+        {
+          "theme": "Tomografia de Tórax.pdf",
+          "sourceBook": "Cópia de 8. Tomografia de Tórax.pdf",
+          "totalChunks": 1,
+          "characters": 541,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Tomografia de Tórax.pdf.json"
+        },
+        {
+          "theme": "Ultrassonografia Transvaginal.pdf",
+          "sourceBook": "Cópia de 5. Ultrassonografia Transvaginal.pdf",
+          "totalChunks": 1,
+          "characters": 581,
+          "questionsAudit": {
+            "gabaritosIdentificados": 0,
+            "questoesNumeradas": 0,
+            "alternativasA": 0,
+            "estimativaQuestoesComGabarito": 0
+          },
+          "supabasePath": "gabarito_das_questoes/radio/Ultrassonografia Transvaginal.pdf.json"
+        }
+      ]
+    },
+    {
+      "specialty": "reumato",
+      "booksCount": 13,
+      "uniqueQuestionsCount": 1298,
+      "books": [
+        {
+          "theme": "Artrite Reumatoide (Apêndice - Medicações na Reumatologia).pdf",
+          "sourceBook": "Cópia de 4. Artrite Reumatoide (Apêndice - Medicações na Reumatologia).pdf",
+          "totalChunks": 125,
+          "characters": 412956,
+          "questionsAudit": {
+            "gabaritosIdentificados": 288,
+            "questoesNumeradas": 0,
+            "alternativasA": 145,
+            "estimativaQuestoesComGabarito": 288
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Artrite Reumatoide (Apêndice - Medicações na Reumatologia).pdf.json"
+        },
+        {
+          "theme": "Artrites Microcristalinas.pdf",
+          "sourceBook": "Cópia de 7. Artrites Microcristalinas.pdf",
+          "totalChunks": 99,
+          "characters": 316815,
+          "questionsAudit": {
+            "gabaritosIdentificados": 260,
+            "questoesNumeradas": 0,
+            "alternativasA": 129,
+            "estimativaQuestoesComGabarito": 260
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Artrites Microcristalinas.pdf.json"
+        },
+        {
+          "theme": "Artropatias Infecciosas.pdf",
+          "sourceBook": "Cópia de 10. Artropatias Infecciosas.pdf",
+          "totalChunks": 81,
+          "characters": 264496,
+          "questionsAudit": {
+            "gabaritosIdentificados": 233,
+            "questoesNumeradas": 0,
+            "alternativasA": 120,
+            "estimativaQuestoesComGabarito": 233
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Artropatias Infecciosas.pdf.json"
+        },
+        {
+          "theme": "Doenças Autoimunes do Tecido Conjuntivo.pdf",
+          "sourceBook": "Cópia de 2. Doenças Autoimunes do Tecido Conjuntivo.pdf",
+          "totalChunks": 126,
+          "characters": 397554,
+          "questionsAudit": {
+            "gabaritosIdentificados": 293,
+            "questoesNumeradas": 1,
+            "alternativasA": 150,
+            "estimativaQuestoesComGabarito": 293
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Doenças Autoimunes do Tecido Conjuntivo.pdf.json"
+        },
+        {
+          "theme": "Doenças do Osso e da Cartilagem.pdf",
+          "sourceBook": "Cópia de 9. Doenças do Osso e da Cartilagem.pdf",
+          "totalChunks": 96,
+          "characters": 303806,
+          "questionsAudit": {
+            "gabaritosIdentificados": 253,
+            "questoesNumeradas": 0,
+            "alternativasA": 130,
+            "estimativaQuestoesComGabarito": 253
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Doenças do Osso e da Cartilagem.pdf.json"
+        },
+        {
+          "theme": "Espondiloartrites.pdf",
+          "sourceBook": "Cópia de 5. Espondiloartrites.pdf",
+          "totalChunks": 101,
+          "characters": 325124,
+          "questionsAudit": {
+            "gabaritosIdentificados": 255,
+            "questoesNumeradas": 2,
+            "alternativasA": 127,
+            "estimativaQuestoesComGabarito": 255
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Espondiloartrites.pdf.json"
+        },
+        {
+          "theme": "Introdução à Reumatologia.pdf",
+          "sourceBook": "Cópia de 1. Introdução à Reumatologia.pdf",
+          "totalChunks": 99,
+          "characters": 314971,
+          "questionsAudit": {
+            "gabaritosIdentificados": 286,
+            "questoesNumeradas": 0,
+            "alternativasA": 140,
+            "estimativaQuestoesComGabarito": 286
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Introdução à Reumatologia.pdf.json"
+        },
+        {
+          "theme": "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide.pdf",
+          "sourceBook": "Cópia de 3. Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide.pdf",
+          "totalChunks": 138,
+          "characters": 451746,
+          "questionsAudit": {
+            "gabaritosIdentificados": 303,
+            "questoesNumeradas": 0,
+            "alternativasA": 163,
+            "estimativaQuestoesComGabarito": 303
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide.pdf.json"
+        },
+        {
+          "theme": "Manifestações Reumatológicas e Doenças Sistêmicas.pdf",
+          "sourceBook": "Cópia de 13. Manifestações Reumatológicas e Doenças Sistêmicas.pdf",
+          "totalChunks": 39,
+          "characters": 124081,
+          "questionsAudit": {
+            "gabaritosIdentificados": 77,
+            "questoesNumeradas": 0,
+            "alternativasA": 39,
+            "estimativaQuestoesComGabarito": 77
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Manifestações Reumatológicas e Doenças Sistêmicas.pdf.json"
+        },
+        {
+          "theme": "Miscelânea.pdf",
+          "sourceBook": "Cópia de 11. Miscelânea.pdf",
+          "totalChunks": 76,
+          "characters": 245951,
+          "questionsAudit": {
+            "gabaritosIdentificados": 213,
+            "questoesNumeradas": 0,
+            "alternativasA": 106,
+            "estimativaQuestoesComGabarito": 213
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Miscelânea.pdf.json"
+        },
+        {
+          "theme": "Reumatologia Pediátrica.pdf",
+          "sourceBook": "Cópia de 12. Reumatologia Pediátrica.pdf",
+          "totalChunks": 89,
+          "characters": 283792,
+          "questionsAudit": {
+            "gabaritosIdentificados": 231,
+            "questoesNumeradas": 0,
+            "alternativasA": 116,
+            "estimativaQuestoesComGabarito": 231
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Reumatologia Pediátrica.pdf.json"
+        },
+        {
+          "theme": "Síndromes Dolorosas Crônicas.pdf",
+          "sourceBook": "Cópia de 8. Síndromes Dolorosas Crônicas.pdf",
+          "totalChunks": 95,
+          "characters": 307277,
+          "questionsAudit": {
+            "gabaritosIdentificados": 236,
+            "questoesNumeradas": 0,
+            "alternativasA": 120,
+            "estimativaQuestoesComGabarito": 236
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Síndromes Dolorosas Crônicas.pdf.json"
+        },
+        {
+          "theme": "Vasculites.pdf",
+          "sourceBook": "Cópia de 6. Vasculites.pdf",
+          "totalChunks": 128,
+          "characters": 420460,
+          "questionsAudit": {
+            "gabaritosIdentificados": 286,
+            "questoesNumeradas": 0,
+            "alternativasA": 150,
+            "estimativaQuestoesComGabarito": 286
+          },
+          "supabasePath": "gabarito_das_questoes/reumato/Vasculites.pdf.json"
+        }
+      ]
+    }
+  ]
+}

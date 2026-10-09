@@ -53,6 +53,7 @@ __pycache__/
 
 # raw datasets & extraction scratch
 /data/*.json
+!data/gabarito_das_questoes_manifest.json
 /data/enare_pdfs/
 /data/enare_raw/
 /data/enare_test/
@@ -61,5 +62,6 @@ __pycache__/
 scripts/medevo_config.json
 scripts/test_token.mjs
 scripts/test_req.mjs
+scripts/.chrome_profile/
 /data/inep_pdfs/
 
