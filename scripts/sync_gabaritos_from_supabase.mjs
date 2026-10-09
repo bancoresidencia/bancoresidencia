@@ -31,6 +31,7 @@ async function sync() {
   let downloaded = 0;
   let alreadyPresent = 0;
 
+  const tasks = [];
   for (const spec of manifest.specialties) {
     const specDir = path.join(TARGET_DIR, spec.specialty);
     if (!fs.existsSync(specDir)) {
@@ -40,30 +41,52 @@ async function sync() {
     for (const book of spec.books) {
       const fileName = path.basename(book.supabasePath);
       const localFilePath = path.join(specDir, fileName);
-
-      if (fs.existsSync(localFilePath)) {
-        alreadyPresent++;
-        continue;
-      }
-
-      const fileUrl = `${SUPABASE_URL}/storage/v1/object/public/${BUCKET_NAME}/${book.supabasePath}`;
-      try {
-        const res = await fetch(fileUrl, {
-          headers: SERVICE_KEY ? { 'Authorization': `Bearer ${SERVICE_KEY}` } : {}
-        });
-
-        if (res.ok) {
-          const buffer = Buffer.from(await res.arrayBuffer());
-          fs.writeFileSync(localFilePath, buffer);
-          downloaded++;
-          console.log(`   ⬇️ Baixado: [${spec.specialty}] ${book.theme}`);
-        } else {
-          console.warn(`   ⚠️ Erro ao baixar ${book.supabasePath}: HTTP ${res.status}`);
-        }
-      } catch (err) {
-        console.warn(`   ⚠️ Falha de rede para ${book.theme}:`, err.message);
-      }
+      tasks.push({ spec, book, localFilePath });
     }
+  }
+
+function toS3Key(str) {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9._\-\/]/g, '_')
+    .replace(/_+/g, '_');
+}
+
+  const CONCURRENCY = 12;
+  async function worker(task) {
+    const { spec, book, localFilePath } = task;
+    if (fs.existsSync(localFilePath) && fs.statSync(localFilePath).size > 100) {
+      alreadyPresent++;
+      return;
+    }
+
+    const s3Key = toS3Key(book.supabasePath);
+    const fileUrl = `${SUPABASE_URL}/storage/v1/object/authenticated/${BUCKET_NAME}/${s3Key}`;
+    try {
+      const res = await fetch(fileUrl, {
+        headers: SERVICE_KEY ? { 'Authorization': `Bearer ${SERVICE_KEY}` } : {}
+      });
+
+      if (res.ok) {
+        const buffer = Buffer.from(await res.arrayBuffer());
+        fs.writeFileSync(localFilePath, buffer);
+        downloaded++;
+        if (downloaded % 10 === 0 || downloaded === tasks.length) {
+          console.log(`   ⬇️ [${downloaded}/${tasks.length}] Baixado: [${spec.specialty}] ${book.theme}`);
+        }
+      } else {
+        console.warn(`   ⚠️ Erro ao baixar ${book.supabasePath}: HTTP ${res.status}`);
+      }
+    } catch (err) {
+      console.warn(`   ⚠️ Falha de rede para ${book.theme}:`, err.message);
+    }
+  }
+
+  // Pool execution
+  for (let i = 0; i < tasks.length; i += CONCURRENCY) {
+    const slice = tasks.slice(i, i + CONCURRENCY);
+    await Promise.all(slice.map(worker));
   }
 
   console.log('\n======================================================');

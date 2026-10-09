@@ -54,6 +54,10 @@ __pycache__/
 # raw datasets & extraction scratch
 /data/*.json
 !data/gabarito_das_questoes_manifest.json
+!data/all_homologated_questions_gold.json
+!data/questoes_ineditas_livros_drive_7822.json
+/data/official_exams/**/*.pdf
+!data/official_exams/manifest.json
 /data/enare_pdfs/
 /data/enare_raw/
 /data/enare_test/
