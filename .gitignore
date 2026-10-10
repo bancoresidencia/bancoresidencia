@@ -56,6 +56,10 @@ __pycache__/
 !data/gabarito_das_questoes_manifest.json
 !data/all_homologated_questions_gold.json
 !data/questoes_ineditas_livros_drive_7822.json
+!data/medcurso_extracao_manifest.json
+!data/medcurso_comparacao_resultado.json
+!data/medcurso_all_questoes_folders.json
+!data/medcurso_extraction_status.json
 /data/official_exams/**/*.pdf
 !data/official_exams/manifest.json
 /data/enare_pdfs/

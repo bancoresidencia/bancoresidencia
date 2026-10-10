@@ -1,0 +1,544 @@
+{
+  "title": "Manifesto Oficial de Questões Extraídas do MEDCURSO 2026",
+  "generatedAt": "2026-10-10T20:10:54.589Z",
+  "supabaseStorageBucket": "medical-knowledge",
+  "supabaseStorageFolder": "extracao_de_questoes",
+  "totalFiles": 83,
+  "totalUniqueQuestions": 1967,
+  "novasParaPlataforma": 1855,
+  "specialties": [
+    {
+      "specialty": "01 - Clínica Médica",
+      "filesCount": 41,
+      "questionsCount": 970,
+      "files": [
+        {
+          "theme": "AIDS [S38]",
+          "fileName": "AIDS [S38].json",
+          "questionsCount": 48,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/AIDS [S38].json"
+        },
+        {
+          "theme": "Anemia II - Introdução às Anemias Hemolíticas  Anemia Falciforme [S16]",
+          "fileName": "Anemia II - Introdução às Anemias Hemolíticas Anemia Falciforme [S16].json",
+          "questionsCount": 41,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Anemia II - Introdução às Anemias Hemolíticas Anemia Falciforme [S16].json"
+        },
+        {
+          "theme": "Anemias I - Introdução, Ferropriva, Doença Crônica, Megaloblástica [S15]",
+          "fileName": "Anemias I - Introdução, Ferropriva, Doença Crônica, Megaloblástica [S15].json",
+          "questionsCount": 47,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Anemias I - Introdução, Ferropriva, Doença Crônica, Megaloblástica [S15].json"
+        },
+        {
+          "theme": "Arritmias I (Taquiarritmias) [S26]",
+          "fileName": "Arritmias I (Taquiarritmias) [S26].json",
+          "questionsCount": 53,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Arritmias I (Taquiarritmias) [S26].json"
+        },
+        {
+          "theme": "Arritmias II (Bradiarritmias) + PCR [S27]",
+          "fileName": "Arritmias II (Bradiarritmias) + PCR [S27].json",
+          "questionsCount": 35,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Arritmias II (Bradiarritmias) + PCR [S27].json"
+        },
+        {
+          "theme": "Asma e DPOC [S35]",
+          "fileName": "Asma e DPOC [S35].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Asma e DPOC [S35].json"
+        },
+        {
+          "theme": "Cirrose e suas Causas [S24]",
+          "fileName": "Cirrose e suas Causas [S24].json",
+          "questionsCount": 22,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Cirrose e suas Causas [S24].json"
+        },
+        {
+          "theme": "Cirrose e suas Complicações; Hipertensão Porta (Tratamento Clínico e Cirúrgico); Ascite; [S25]",
+          "fileName": "Cirrose e suas Complicações; Hipertensão Porta (Tratamento Clínico e Cirúrgico); Ascite; [S25].json",
+          "questionsCount": 35,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Cirrose e suas Complicações; Hipertensão Porta (Tratamento Clínico e Cirúrgico); Ascite; [S25].json"
+        },
+        {
+          "theme": "Colagenoses [S12]",
+          "fileName": "Colagenoses [S12].json",
+          "questionsCount": 39,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Colagenoses [S12].json"
+        },
+        {
+          "theme": "Câncer de Pulmão, TEP [S36]",
+          "fileName": "Câncer de Pulmão, TEP [S36].json",
+          "questionsCount": 5,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Câncer de Pulmão, TEP [S36].json"
+        },
+        {
+          "theme": "Diabetes Mellitus [S34]",
+          "fileName": "Diabetes Mellitus [S34].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Diabetes Mellitus [S34].json"
+        },
+        {
+          "theme": "Distúrbio Hidroeletrolítico [S04]",
+          "fileName": "Distúrbio Hidroeletrolítico [S04].json",
+          "questionsCount": 29,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Distúrbio Hidroeletrolítico [S04].json"
+        },
+        {
+          "theme": "Distúrbio Ácido-Básico [S05]",
+          "fileName": "Distúrbio Ácido-Básico [S05].json",
+          "questionsCount": 30,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Distúrbio Ácido-Básico [S05].json"
+        },
+        {
+          "theme": "Distúrbios da Hemostasia [S18]",
+          "fileName": "Distúrbios da Hemostasia [S18].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Distúrbios da Hemostasia [S18].json"
+        },
+        {
+          "theme": "Doença Arterial Coronariana IAM e Angina [S30]",
+          "fileName": "Doença Arterial Coronariana IAM e Angina [S30].json",
+          "questionsCount": 60,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doença Arterial Coronariana IAM e Angina [S30].json"
+        },
+        {
+          "theme": "Doença das Vias Biliares [S23]",
+          "fileName": "Doença das Vias Biliares [S23].json",
+          "questionsCount": 41,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doença das Vias Biliares [S23].json"
+        },
+        {
+          "theme": "Doenças Cirúrgicas do Intestino I - Vascular e Obstrução [S21]",
+          "fileName": "Doenças Cirúrgicas do Intestino I - Vascular e Obstrução [S21].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doenças Cirúrgicas do Intestino I - Vascular e Obstrução [S21].json"
+        },
+        {
+          "theme": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda [S22]",
+          "fileName": "Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda [S22].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doenças Cirúrgicas do Intestino II - Diverticulose, Polipose, Câncer e Apendicite Aguda [S22].json"
+        },
+        {
+          "theme": "Doenças Clínicas do Intestino [S20]",
+          "fileName": "Doenças Clínicas do Intestino [S20].json",
+          "questionsCount": 3,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doenças Clínicas do Intestino [S20].json"
+        },
+        {
+          "theme": "Doenças da Suprarrenal [S33]",
+          "fileName": "Doenças da Suprarrenal [S33].json",
+          "questionsCount": 59,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doenças da Suprarrenal [S33].json"
+        },
+        {
+          "theme": "Doenças do Estômago [S20]",
+          "fileName": "Doenças do Estômago [S20].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doenças do Estômago [S20].json"
+        },
+        {
+          "theme": "Doenças do Esôfago [S19]",
+          "fileName": "Doenças do Esôfago [S19].json",
+          "questionsCount": 3,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Doenças do Esôfago [S19].json"
+        },
+        {
+          "theme": "Endocardite Infecciosa  Meningite [S39]",
+          "fileName": "Endocardite Infecciosa Meningite [S39].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Endocardite Infecciosa Meningite [S39].json"
+        },
+        {
+          "theme": "Glomerulopatias I (Nefrítica, Alterações Assintomáticas, GNRP) [S01]",
+          "fileName": "Glomerulopatias I (Nefrítica, Alterações Assintomáticas, GNRP) [S01].json",
+          "questionsCount": 26,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Glomerulopatias I (Nefrítica, Alterações Assintomáticas, GNRP) [S01].json"
+        },
+        {
+          "theme": "Glomerulopatias II (Síndrome Nefrótica, Glomerulopatias nas Desordens Sistêmicas) [S02]",
+          "fileName": "Glomerulopatias II (Síndrome Nefrótica, Glomerulopatias nas Desordens Sistêmicas) [S02].json",
+          "questionsCount": 32,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Glomerulopatias II (Síndrome Nefrótica, Glomerulopatias nas Desordens Sistêmicas) [S02].json"
+        },
+        {
+          "theme": "Gota; Febre Reumática [S10]",
+          "fileName": "Gota; Febre Reumática [S10].json",
+          "questionsCount": 47,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Gota; Febre Reumática [S10].json"
+        },
+        {
+          "theme": "Hipertensão Arterial Sistêmica; Crise Hipertensiva [S29]",
+          "fileName": "Hipertensão Arterial Sistêmica; Crise Hipertensiva [S29].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Hipertensão Arterial Sistêmica; Crise Hipertensiva [S29].json"
+        },
+        {
+          "theme": "Insuficiência Cardíaca [S28]",
+          "fileName": "Insuficiência Cardíaca [S28].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Insuficiência Cardíaca [S28].json"
+        },
+        {
+          "theme": "Insuficiência Renal [S05]",
+          "fileName": "Insuficiência Renal [S05].json",
+          "questionsCount": 57,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Insuficiência Renal [S05].json"
+        },
+        {
+          "theme": "Introdução à Hepatologia; Hepatites Virais [S24]",
+          "fileName": "Introdução à Hepatologia; Hepatites Virais [S24].json",
+          "questionsCount": 41,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Introdução à Hepatologia; Hepatites Virais [S24].json"
+        },
+        {
+          "theme": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas) [S09]",
+          "fileName": "Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas) [S09].json",
+          "questionsCount": 54,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Introdução à Reumatologia + Artrites (Artrite Reumatoide, Espondiloartropatias Soronegativas) [S09].json"
+        },
+        {
+          "theme": "Leucemias Agudas e Crônicas [S16]",
+          "fileName": "Leucemias Agudas e Crônicas [S16].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Leucemias Agudas e Crônicas [S16].json"
+        },
+        {
+          "theme": "Linfomas e Mieloma Múltiplo [S17]",
+          "fileName": "Linfomas e Mieloma Múltiplo [S17].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Linfomas e Mieloma Múltiplo [S17].json"
+        },
+        {
+          "theme": "Pancreatite Aguda e Crônica; Câncer de Pâncreas [S23]",
+          "fileName": "Pancreatite Aguda e Crônica; Câncer de Pâncreas [S23].json",
+          "questionsCount": 51,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Pancreatite Aguda e Crônica; Câncer de Pâncreas [S23].json"
+        },
+        {
+          "theme": "Parasitoses Intestinais [S38]",
+          "fileName": "Parasitoses Intestinais [S38].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Parasitoses Intestinais [S38].json"
+        },
+        {
+          "theme": "Pneumonia e Complicações [S37]",
+          "fileName": "Pneumonia e Complicações [S37].json",
+          "questionsCount": 5,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Pneumonia e Complicações [S37].json"
+        },
+        {
+          "theme": "Síndromes Febris [S40]",
+          "fileName": "Síndromes Febris [S40].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Síndromes Febris [S40].json"
+        },
+        {
+          "theme": "Tireoide [S32]",
+          "fileName": "Tireoide [S32].json",
+          "questionsCount": 45,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Tireoide [S32].json"
+        },
+        {
+          "theme": "Tuberculose [S37]",
+          "fileName": "Tuberculose [S37].json",
+          "questionsCount": 5,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Tuberculose [S37].json"
+        },
+        {
+          "theme": "Valvopatias [S29]",
+          "fileName": "Valvopatias [S29].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Valvopatias [S29].json"
+        },
+        {
+          "theme": "Vasculites [S14]",
+          "fileName": "Vasculites [S14].json",
+          "questionsCount": 40,
+          "supabasePath": "extracao_de_questoes/01 - Clínica Médica/Vasculites [S14].json"
+        }
+      ]
+    },
+    {
+      "specialty": "02 - Cirurgia",
+      "filesCount": 11,
+      "questionsCount": 136,
+      "files": [
+        {
+          "theme": "Cicatrização de Feridas e Queimaduras [S11]",
+          "fileName": "Cicatrização de Feridas e Queimaduras [S11].json",
+          "questionsCount": 3,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Cicatrização de Feridas e Queimaduras [S11].json"
+        },
+        {
+          "theme": "Cirurgia Pediátrica [S13]",
+          "fileName": "Cirurgia Pediátrica [S13].json",
+          "questionsCount": 4,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Cirurgia Pediátrica [S13].json"
+        },
+        {
+          "theme": "Especialidade Cirúrgica - Parte I [S44]",
+          "fileName": "Especialidade Cirúrgica - Parte I [S44].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Especialidade Cirúrgica - Parte I [S44].json"
+        },
+        {
+          "theme": "Especialidade Cirúrgica - Parte II [S44]",
+          "fileName": "Especialidade Cirúrgica - Parte II [S44].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Especialidade Cirúrgica - Parte II [S44].json"
+        },
+        {
+          "theme": "Hérnias da Parede Abdominal [S18]",
+          "fileName": "Hérnias da Parede Abdominal [S18].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Hérnias da Parede Abdominal [S18].json"
+        },
+        {
+          "theme": "ORTOPEDIA I [S46]",
+          "fileName": "ORTOPEDIA I [S46].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/ORTOPEDIA I [S46].json"
+        },
+        {
+          "theme": "ORTOPEDIA II [S46]",
+          "fileName": "ORTOPEDIA II [S46].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/ORTOPEDIA II [S46].json"
+        },
+        {
+          "theme": "Preparo Pré-operatório, Risco Cirúrgico e Complicações em Cirurgia [S17]",
+          "fileName": "Preparo Pré-operatório, Risco Cirúrgico e Complicações em Cirurgia [S17].json",
+          "questionsCount": 3,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Preparo Pré-operatório, Risco Cirúrgico e Complicações em Cirurgia [S17].json"
+        },
+        {
+          "theme": "Trauma I - Avaliação Inicial e Trauma de Tórax [S03]",
+          "fileName": "Trauma I - Avaliação Inicial e Trauma de Tórax [S03].json",
+          "questionsCount": 62,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Trauma I - Avaliação Inicial e Trauma de Tórax [S03].json"
+        },
+        {
+          "theme": "Trauma II - Trauma de Abdome, Pelve e TCE [S03]",
+          "fileName": "Trauma II - Trauma de Abdome, Pelve e TCE [S03].json",
+          "questionsCount": 58,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Trauma II - Trauma de Abdome, Pelve e TCE [S03].json"
+        },
+        {
+          "theme": "Urologia [S08]",
+          "fileName": "Urologia [S08].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/02 - Cirurgia/Urologia [S08].json"
+        }
+      ]
+    },
+    {
+      "specialty": "03 - Ginecologia e Obstetrícia",
+      "filesCount": 13,
+      "questionsCount": 669,
+      "files": [
+        {
+          "theme": "Amenorreia e Ovário Policístico [S02]",
+          "fileName": "Amenorreia e Ovário Policístico [S02].json",
+          "questionsCount": 42,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Amenorreia e Ovário Policístico [S02].json"
+        },
+        {
+          "theme": "Assistência Clínica ao Parto e Parto Prematuro [S11]",
+          "fileName": "Assistência Clínica ao Parto e Parto Prematuro [S11].json",
+          "questionsCount": 60,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Assistência Clínica ao Parto e Parto Prematuro [S11].json"
+        },
+        {
+          "theme": "Ciclo Menstrual e Anticoncepção [S01]",
+          "fileName": "Ciclo Menstrual e Anticoncepção [S01].json",
+          "questionsCount": 33,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Ciclo Menstrual e Anticoncepção [S01].json"
+        },
+        {
+          "theme": "Climatério, Distopia e Incontinência Urinária [S25]",
+          "fileName": "Climatério, Distopia e Incontinência Urinária [S25].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Climatério, Distopia e Incontinência Urinária [S25].json"
+        },
+        {
+          "theme": "Diagnóstico de Gravidez, Modificações do Organismo Materno e Pré-natal [S04]",
+          "fileName": "Diagnóstico de Gravidez, Modificações do Organismo Materno e Pré-natal [S04].json",
+          "questionsCount": 40,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Diagnóstico de Gravidez, Modificações do Organismo Materno e Pré-natal [S04].json"
+        },
+        {
+          "theme": "Distúrbios Hipertensivos da Gestação, Diabetes e Gemelaridade [S35]",
+          "fileName": "Distúrbios Hipertensivos da Gestação, Diabetes e Gemelaridade [S35].json",
+          "questionsCount": 59,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Distúrbios Hipertensivos da Gestação, Diabetes e Gemelaridade [S35].json"
+        },
+        {
+          "theme": "Doença das Mamas e Ovários [S28]",
+          "fileName": "Doença das Mamas e Ovários [S28].json",
+          "questionsCount": 111,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Doença das Mamas e Ovários [S28].json"
+        },
+        {
+          "theme": "IST [S40]",
+          "fileName": "IST [S40].json",
+          "questionsCount": 109,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/IST [S40].json"
+        },
+        {
+          "theme": "Lesões Precursoras, Câncer de Colo Uterino e Endométrio [S31]",
+          "fileName": "Lesões Precursoras, Câncer de Colo Uterino e Endométrio [S31].json",
+          "questionsCount": 104,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Lesões Precursoras, Câncer de Colo Uterino e Endométrio [S31].json"
+        },
+        {
+          "theme": "Sangramento uterino anormal, endometriose e infertilidade [S19]",
+          "fileName": "Sangramento uterino anormal, endometriose e infertilidade [S19].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Sangramento uterino anormal, endometriose e infertilidade [S19].json"
+        },
+        {
+          "theme": "Sangramentos na Gravidez PARTE I [S21]",
+          "fileName": "Sangramentos na Gravidez PARTE I [S21].json",
+          "questionsCount": 18,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Sangramentos na Gravidez PARTE I [S21].json"
+        },
+        {
+          "theme": "Sangramentos na Gravidez PARTE II e Doença Hemolítica Perinatal [S22]",
+          "fileName": "Sangramentos na Gravidez PARTE II e Doença Hemolítica Perinatal [S22].json",
+          "questionsCount": 21,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Sangramentos na Gravidez PARTE II e Doença Hemolítica Perinatal [S22].json"
+        },
+        {
+          "theme": "Sofrimento fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério [S39]",
+          "fileName": "Sofrimento fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério [S39].json",
+          "questionsCount": 69,
+          "supabasePath": "extracao_de_questoes/03 - Ginecologia e Obstetrícia/Sofrimento fetal, Avaliação da Vitalidade Fetal, Fórcipe e Puerpério [S39].json"
+        }
+      ]
+    },
+    {
+      "specialty": "04 - Pediatria",
+      "filesCount": 11,
+      "questionsCount": 73,
+      "files": [
+        {
+          "theme": "Aleitamento Materno [S14]",
+          "fileName": "Aleitamento Materno [S14].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Aleitamento Materno [S14].json"
+        },
+        {
+          "theme": "Crescimento e Desenvolvimento Normais. Puberdade normal. Dever de casa puberdade precoce [S15]",
+          "fileName": "Crescimento e Desenvolvimento Normais. Puberdade normal. Dever de casa puberdade precoce [S15].json",
+          "questionsCount": 0,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Crescimento e Desenvolvimento Normais. Puberdade normal. Dever de casa puberdade precoce [S15].json"
+        },
+        {
+          "theme": "Diarreia Aguda e Desidratação na Infância [S30]",
+          "fileName": "Diarreia Aguda e Desidratação na Infância [S30].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Diarreia Aguda e Desidratação na Infância [S30].json"
+        },
+        {
+          "theme": "Distúrbios do Crescimento Desnutrição e Baixa Estatura [S26]",
+          "fileName": "Distúrbios do Crescimento Desnutrição e Baixa Estatura [S26].json",
+          "questionsCount": 25,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Distúrbios do Crescimento Desnutrição e Baixa Estatura [S26].json"
+        },
+        {
+          "theme": "Doenças Exantemáticas na Infância [S42]",
+          "fileName": "Doenças Exantemáticas na Infância [S42].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Doenças Exantemáticas na Infância [S42].json"
+        },
+        {
+          "theme": "Imunização [S27]",
+          "fileName": "Imunização [S27].json",
+          "questionsCount": 28,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Imunização [S27].json"
+        },
+        {
+          "theme": "Infecções Respiratórias Agudas (Parte I) [S33]",
+          "fileName": "Infecções Respiratórias Agudas (Parte I) [S33].json",
+          "questionsCount": 5,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Infecções Respiratórias Agudas (Parte I) [S33].json"
+        },
+        {
+          "theme": "Infecções Respiratórias Agudas (Parte II) [S34]",
+          "fileName": "Infecções Respiratórias Agudas (Parte II) [S34].json",
+          "questionsCount": 4,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Infecções Respiratórias Agudas (Parte II) [S34].json"
+        },
+        {
+          "theme": "Nefrologia Pediátrica [S36]",
+          "fileName": "Nefrologia Pediátrica [S36].json",
+          "questionsCount": 5,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Nefrologia Pediátrica [S36].json"
+        },
+        {
+          "theme": "Neonatologia I [S06]",
+          "fileName": "Neonatologia I [S06].json",
+          "questionsCount": 2,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Neonatologia I [S06].json"
+        },
+        {
+          "theme": "Neonatologia II [S09]",
+          "fileName": "Neonatologia II [S09].json",
+          "questionsCount": 1,
+          "supabasePath": "extracao_de_questoes/04 - Pediatria/Neonatologia II [S09].json"
+        }
+      ]
+    },
+    {
+      "specialty": "05 - Medicina Preventiva",
+      "filesCount": 7,
+      "questionsCount": 119,
+      "files": [
+        {
+          "theme": "Epidemiologia Clínica [S10]",
+          "fileName": "Epidemiologia Clínica [S10].json",
+          "questionsCount": 16,
+          "supabasePath": "extracao_de_questoes/05 - Medicina Preventiva/Epidemiologia Clínica [S10].json"
+        },
+        {
+          "theme": "Estudos Epidemiológicos [S08]",
+          "fileName": "Estudos Epidemiológicos [S08].json",
+          "questionsCount": 13,
+          "supabasePath": "extracao_de_questoes/05 - Medicina Preventiva/Estudos Epidemiológicos [S08].json"
+        },
+        {
+          "theme": "Medidas de Saúde Coletiva [S06]",
+          "fileName": "Medidas de Saúde Coletiva [S06].json",
+          "questionsCount": 17,
+          "supabasePath": "extracao_de_questoes/05 - Medicina Preventiva/Medidas de Saúde Coletiva [S06].json"
+        },
+        {
+          "theme": "Saúde do Trabalhador + Ética Médica [S13]",
+          "fileName": "Saúde do Trabalhador + Ética Médica [S13].json",
+          "questionsCount": 22,
+          "supabasePath": "extracao_de_questoes/05 - Medicina Preventiva/Saúde do Trabalhador + Ética Médica [S13].json"
+        },
+        {
+          "theme": "SUS I - Evolução histórica, legislação e financiamento [S31]",
+          "fileName": "SUS I - Evolução histórica, legislação e financiamento [S31].json",
+          "questionsCount": 10,
+          "supabasePath": "extracao_de_questoes/05 - Medicina Preventiva/SUS I - Evolução histórica, legislação e financiamento [S31].json"
+        },
+        {
+          "theme": "SUS II - Atenção Básica [S32]",
+          "fileName": "SUS II - Atenção Básica [S32].json",
+          "questionsCount": 13,
+          "supabasePath": "extracao_de_questoes/05 - Medicina Preventiva/SUS II - Atenção Básica [S32].json"
+        },
+        {
+          "theme": "Vigilância da Saúde [S12]",
+          "fileName": "Vigilância da Saúde [S12].json",
+          "questionsCount": 28,
+          "supabasePath": "extracao_de_questoes/05 - Medicina Preventiva/Vigilância da Saúde [S12].json"
+        }
+      ]
+    }
+  ]
+}

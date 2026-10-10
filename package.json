@@ -16,9 +16,10 @@
     "extract:status": "node scripts/check_extraction_status.mjs",
     "upload:knowledge": "node scripts/upload_knowledge_to_supabase.mjs",
     "pull:knowledge": "node scripts/sync_knowledge_from_supabase.mjs",
-    "sync:knowledge": "node scripts/upload_knowledge_to_supabase.mjs",
     "status:gabaritos": "node scripts/check_all_specialties_status.mjs",
-    "sync:gabaritos": "node scripts/sync_gabaritos_from_supabase.mjs"
+    "sync:gabaritos": "node scripts/sync_gabaritos_from_supabase.mjs",
+    "sync:medcurso": "node scripts/sync_medcurso_from_supabase.mjs",
+    "upload:medcurso": "node scripts/upload_medcurso_to_supabase.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
