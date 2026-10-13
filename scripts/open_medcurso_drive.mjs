@@ -15,7 +15,11 @@ async function main() {
     args: [
       '--start-maximized',
       '--disable-blink-features=AutomationControlled',
-      '--no-sandbox'
+      '--no-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu-process-crash-limit',
+      '--disable-crash-reporter',
+      '--disable-breakpad'
     ]
   });
 
@@ -27,7 +31,11 @@ async function main() {
 
   const page = await context.newPage();
   console.log('📌 Navegando para:', TARGET_URL);
-  await page.goto(TARGET_URL);
+  try {
+    await page.goto(TARGET_URL, { timeout: 30000 });
+  } catch (navErr) {
+    console.warn('⚠️ Alerta ao navegar (a página ainda está acessível):', navErr.message);
+  }
 
   console.log('\n===============================================================');
   console.log('👀 A JANELA DO CHROMIUM ESTÁ ABERTA E AGUARDANDO VOCÊ.');

@@ -6,11 +6,18 @@ const chromePath = 'C:\\Users\\cnath\\AppData\\Local\\ms-playwright\\chromium-12
 const profileDir = path.join(process.cwd(), 'scripts', '.chrome_profile');
 const url = 'https://drive.google.com/drive/u/1/folders/1_cgWHry1w_sJjQhrqIvW5ry0n7kv-slx';
 
-if (!fs.existsSync(profileDir)) {
+if (fs.existsSync(profileDir)) {
+  for (const f of ['lockfile', 'SingletonLock', 'SingletonCookie', 'SingletonSocket']) {
+    try {
+      const p = path.join(profileDir, f);
+      if (fs.existsSync(p)) fs.unlinkSync(p);
+    } catch {}
+  }
+} else {
   fs.mkdirSync(profileDir, { recursive: true });
 }
 
-console.log('Iniciando Chromium diretamente no Windows Desktop...');
+console.log('Iniciando Chromium diretamente no Windows Desktop (Anti-Crash)...');
 const child = spawn(
   chromePath,
   [
@@ -18,6 +25,12 @@ const child = spawn(
     '--no-first-run',
     '--no-default-browser-check',
     '--start-maximized',
+    '--disable-blink-features=AutomationControlled',
+    '--no-sandbox',
+    '--disable-dev-shm-usage',
+    '--disable-gpu-process-crash-limit',
+    '--disable-crash-reporter',
+    '--disable-breakpad',
     url
   ],
   {
@@ -28,3 +41,4 @@ const child = spawn(
 
 child.unref();
 console.log('✅ Processo do Chromium disparado com sucesso! PID:', child.pid);
+

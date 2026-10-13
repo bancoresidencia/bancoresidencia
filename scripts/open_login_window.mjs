@@ -8,12 +8,18 @@ const TARGET_URL = 'https://drive.google.com/drive/u/1/folders/1_cgWHry1w_sJjQhr
 async function main() {
   console.log('🌐 Abrindo janela visível com bypass anti-bloqueio do Google...');
   
+  const LOCAL_CHROMIUM = 'C:\\Users\\cnath\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe';
   const browser = await chromium.launch({
+    executablePath: fs.existsSync(LOCAL_CHROMIUM) ? LOCAL_CHROMIUM : undefined,
     headless: false,
     args: [
       '--start-maximized',
       '--disable-blink-features=AutomationControlled',
-      '--no-sandbox'
+      '--no-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu-process-crash-limit',
+      '--disable-crash-reporter',
+      '--disable-breakpad'
     ]
   });
 
@@ -24,7 +30,11 @@ async function main() {
 
   const page = await context.newPage();
   console.log('📌 Navegando para:', TARGET_URL);
-  await page.goto(TARGET_URL);
+  try {
+    await page.goto(TARGET_URL, { timeout: 30000 });
+  } catch (navErr) {
+    console.warn('⚠️ Alerta ao navegar (a página ainda está acessível):', navErr.message);
+  }
 
   console.log('\n===============================================================');
   console.log('👀 A JANELA DO NAVEGADOR ESTÁ ABERTA E AGUARDANDO VOCÊ.');
