@@ -1,0 +1,92 @@
+[
+  {
+    "nome_instituicao": "Universidade de São Paulo",
+    "sigla": "USP_FUVEST",
+    "banca": "FUVEST",
+    "uf": "SP",
+    "abrangencia": "Estadual",
+    "url_oficial": "https://www.fuvest.br/residencia-medica/",
+    "anos_disponiveis": [2021, 2022, 2023, 2024, 2025],
+    "observacoes": "Processo de Acesso Direto e Áreas com Pré-Requisito; cadernos múltiplos A1/A2/A3"
+  },
+  {
+    "nome_instituicao": "Fundação Hospitalar do Estado de Minas Gerais / PSU-MG",
+    "sigla": "FHEMIG_PSUMG",
+    "banca": "AREMG",
+    "uf": "MG",
+    "abrangencia": "Estadual",
+    "url_oficial": "https://www.aremg.org.br/processos-seletivos",
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "Processo Seletivo Unificado de MG (inclui rede FHEMIG, HC-UFMG, etc.)"
+  },
+  {
+    "nome_instituicao": "Universidade Federal do Pará",
+    "sigla": "UFPA_CEPS",
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "abrangencia": "Estadual",
+    "url_oficial": "https://www.ceps.ufpa.br",
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "PSRM - Processo Seletivo de Residência Médica UFPA (Acesso Direto e R+)"
+  },
+  {
+    "nome_instituicao": "Universidade Estadual de Campinas",
+    "sigla": "UNICAMP",
+    "banca": "FCM/UNICAMP",
+    "uf": "SP",
+    "abrangencia": "Estadual",
+    "url_oficial": "https://www.fcm.unicamp.br/posgraduacao/residencia-medica",
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "Provas e gabaritos oficiais da FCM Unicamp"
+  },
+  {
+    "nome_instituicao": "Universidade do Estado do Rio de Janeiro",
+    "sigla": "UERJ",
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "abrangencia": "Estadual",
+    "url_oficial": "https://www.cepuerj.uerj.br",
+    "anos_disponiveis": [2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "Processo Seletivo Residência Médica Hospital Universitário Pedro Ernesto (HUPE/UERJ)"
+  },
+  {
+    "nome_instituicao": "Secretaria Estadual de Saúde de Pernambuco",
+    "sigla": "SES_PE",
+    "banca": "IAUPE",
+    "uf": "PE",
+    "abrangencia": "Estadual",
+    "url_oficial": "http://www.upenet.com.br",
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "Processo Seletivo Unificado Residência Médica SES-PE"
+  },
+  {
+    "nome_instituicao": "Secretaria da Saúde do Estado da Bahia",
+    "sigla": "SUS_BA",
+    "banca": "CEREM-BA / STRIX",
+    "uf": "BA",
+    "abrangencia": "Estadual",
+    "url_oficial": "http://www.strixconcursos.com.br",
+    "anos_disponiveis": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "Processo Seletivo Unificado SUS-BA"
+  },
+  {
+    "nome_instituicao": "Associação Médica do Paraná",
+    "sigla": "AMP_PR",
+    "banca": "AMP",
+    "uf": "PR",
+    "abrangencia": "Estadual",
+    "url_oficial": "https://www.amp.org.br/residencia-medica",
+    "anos_disponiveis": [2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "Exame da Associação Médica do Paraná (dezenas de hospitais participantes)"
+  },
+  {
+    "nome_instituicao": "Associação Médica do Rio Grande do Sul",
+    "sigla": "AMRIGS",
+    "banca": "AMRIGS",
+    "uf": "RS",
+    "abrangencia": "Regional",
+    "url_oficial": "https://amrigs.org.br/exame",
+    "anos_disponiveis": [2021, 2022, 2023, 2024, 2025, 2026],
+    "observacoes": "Exame AMRIGS unificado para RS, SC, MT, MS e RO"
+  }
+]
