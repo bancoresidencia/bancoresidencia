@@ -2,73 +2,73 @@
 
 * **Total de Instituições:** 286
 * **Total de Questões no Banco:** 14,233
-* **Total com Gabarito/Resolvidas:** 4,607 (32.37%)
-* **Gabaritos Válidos:** 4,209 | **Anuladas Oficiais:** 398
+* **Total com Gabarito/Resolvidas:** 5,334 (37.48%)
+* **Gabaritos Válidos:** 4,936 | **Anuladas Oficiais:** 398
 
 | # | Instituição / Banca | Com Gabarito | Anuladas | Total Resolvidas | Total no Banco | % Cobertura |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| 1 | HU-FMJ - Hospital Universitário da Faculdade de Medicina de Jundiaí (SP) | 138 | 8 | **146** | 146 | 100.0% |
-| 2 | CERMAM - Comissão Estadual de Residência Médica do Amazonas | 145 | 1 | **146** | 146 | 100.0% |
-| 3 | INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos | 132 | 8 | **140** | 201 | 69.7% |
-| 4 | UEL - Hospital Universitário de Londrina (PR) | 136 | 2 | **138** | 138 | 100.0% |
-| 5 | CMC - Fundação Centro Médico de Campinas (SP) | 128 | 1 | **129** | 129 | 100.0% |
-| 6 | UFPA/HUJBB - Hospital Universitário João de Barros Barreto - Belém (PA) | 107 | 12 | **119** | 119 | 100.0% |
-| 7 | SES-PE - Secretaria de Estado de Saúde de Pernambuco | 109 | 6 | **115** | 115 | 100.0% |
-| 8 | Pontifícia Universidade Católica de São Paulo - Campus Sorocaba | 108 | 3 | **111** | 111 | 100.0% |
-| 9 | Universidade Evangélica de Goiás | 104 | 2 | **106** | 106 | 100.0% |
-| 10 | UNIFESP/EPM - Universidade Federal de São Paulo - Escola Paulista de Medicina (SP) | 87 | 4 | **91** | 141 | 64.5% |
-| 11 | USP/HCRP - Hospital das Clínicas de Ribeirão Preto (SP) | 87 | 0 | **87** | 135 | 64.4% |
-| 12 | SUS-SP - Sistema Único de Saúde de São Paulo | 80 | 4 | **84** | 127 | 66.1% |
-| 13 | Santa Casa de São Paulo - ISCMSP/FCMSCSP (SP) | 80 | 4 | **84** | 125 | 67.2% |
-| 14 | UNESP/HCFMB - Hospital das Clínicas de Botucatu (SP) | 81 | 2 | **83** | 121 | 68.6% |
-| 15 | Centro Universitário FMABC | 75 | 5 | **80** | 147 | 54.4% |
-| 16 | UFG/HC - Hospital das Clínicas da UFG - Goiânia (GO) | 76 | 4 | **80** | 80 | 100.0% |
-| 17 | UNICAMP/HC - Hospital de Clínicas da Unicamp - Campinas (SP) | 76 | 3 | **79** | 221 | 35.7% |
-| 18 | USP/HCFMUSP - Hospital das Clínicas da FMUSP (SP) | 78 | 1 | **79** | 117 | 67.5% |
-| 19 | UERJ/HUPE - Hospital Universitário Pedro Ernesto (RJ) | 69 | 3 | **72** | 142 | 50.7% |
-| 20 | UFRGS/HCPA - Hospital de Clínicas de Porto Alegre (RS) | 70 | 2 | **72** | 134 | 53.7% |
-| 21 | IAMSPE/HSPE - Instituto de Assistência Médica ao Servidor Público - Hospital do Servidor (SP) | 68 | 3 | **71** | 117 | 60.7% |
-| 22 | AMP - Associação Médica do Paraná | 63 | 7 | **70** | 125 | 56.0% |
-| 23 | UFRJ/HUCFF - Hospital Universitário Clementino Fraga Filho (RJ) | 64 | 4 | **68** | 140 | 48.6% |
-| 24 | AMRIGS - Associação Médica do Rio Grande do Sul | 60 | 6 | **66** | 123 | 53.7% |
-| 25 | HIAE/Einstein - Hospital Israelita Albert Einstein (SP) | 63 | 2 | **65** | 100 | 65.0% |
-| 26 | ENARE/ENAMED | 61 | 3 | **64** | 64 | 100.0% |
-| 27 | SES-GO - Secretaria de Estado de Saúde de Goiás | 56 | 6 | **62** | 109 | 56.9% |
-| 28 | PSU-MG - Processo Seletivo Unificado de Minas Gerais | 51 | 9 | **60** | 115 | 52.2% |
-| 29 | SES-DF - Secretaria de Estado de Saúde do Distrito Federal | 53 | 5 | **58** | 157 | 36.9% |
-| 30 | HOS/BOS - Hospital Oftalmológico de Sorocaba - Banco de Olhos (SP) | 54 | 1 | **55** | 82 | 67.1% |
-| 31 | SES-RJ - Secretaria de Estado de Saúde do Rio de Janeiro | 51 | 3 | **54** | 95 | 56.8% |
-| 32 | PSU-GO - Processo Seletivo Unificado de Goiás | 50 | 1 | **51** | 51 | 100.0% |
-| 33 | Santa Casa de Belo Horizonte (MG) | 46 | 2 | **48** | 85 | 56.5% |
-| 34 | SUS-BA - Sistema Único de Saúde da Bahia | 47 | 0 | **47** | 93 | 50.5% |
-| 35 | UFES/HUCAM - Hospital Universitário Cassiano Antônio Moraes - Vitória (ES) | 47 | 0 | **47** | 92 | 51.1% |
-| 36 | FAMERP/HB - Faculdade de Medicina de São José do Rio Preto - Hospital de Base (SP) | 42 | 5 | **47** | 83 | 56.6% |
-| 37 | SURCE - Seleção Unificada para Residência Médica no Estado do Ceará | 41 | 2 | **43** | 107 | 40.2% |
-| 38 | HSL/Sírio - Hospital Sírio-Libanês (SP) | 41 | 1 | **42** | 67 | 62.7% |
-| 39 | UFRN/HUOL - Hospital Universitário Onofre Lopes - Natal (RN) | 33 | 5 | **38** | 84 | 45.2% |
-| 40 | INTO - Instituto Nacional de Traumatologia e Ortopedia Jamil Haddad (RJ) | 35 | 1 | **36** | 82 | 43.9% |
-| 41 | Fundação Universidade Federal de Ciências da Saúde de Porto Alegre | 31 | 5 | **36** | 36 | 100.0% |
-| 42 | UFPR/HC - Complexo Hospital de Clínicas da UFPR (PR) | 32 | 2 | **34** | 86 | 39.5% |
-| 43 | Santa Casa de Ribeirão Preto (SP) | 29 | 2 | **31** | 91 | 34.1% |
-| 44 | Santa Casa de Limeira (SP) | 25 | 2 | **27** | 104 | 26.0% |
-| 45 | UFSC/HU - Hospital Universitário Prof. Polydoro Ernani de São Thiago (SC) | 23 | 2 | **25** | 75 | 33.3% |
-| 46 | Pontifícia Universidade Católica do Paraná - Campus Curitiba | 17 | 7 | **24** | 146 | 16.4% |
-| 47 | IHOA - Instituto e Hospital Oftalmológico de Anápolis (GO) | 19 | 4 | **23** | 86 | 26.7% |
-| 48 | Faculdade de Ciências Médicas de Minas Gerais | 17 | 5 | **22** | 30 | 73.3% |
-| 49 | FUBOG - Fundação Banco de Olhos de Goiás | 15 | 6 | **21** | 123 | 17.1% |
-| 50 | HEVV - Hospital Evangélico de Vila Velha (ES) | 13 | 8 | **21** | 92 | 22.8% |
-| 51 | HM São José - Hospital Municipal de São José (SC) | 19 | 2 | **21** | 92 | 22.8% |
-| 52 | HSL PUCRS - Hospital São Lucas da PUCRS (RS) | 20 | 1 | **21** | 83 | 25.3% |
-| 53 | Universidade do Estado do Pará - Belém | 16 | 4 | **20** | 141 | 14.2% |
-| 54 | SMS-SP - Secretaria Municipal de Saúde de São Paulo | 20 | 0 | **20** | 52 | 38.5% |
-| 55 | HAC - Hospital Angelina Caron (PR) | 16 | 3 | **19** | 120 | 15.8% |
-| 56 | UnB/HUB - Hospital Universitário de Brasília (DF) | 17 | 2 | **19** | 74 | 25.7% |
-| 57 | Fundhacre - Fundação Hospital Estadual do Acre | 17 | 2 | **19** | 69 | 27.5% |
-| 58 | UFS/HU - Hospital Universitário de Sergipe - Aracaju (SE) | 15 | 4 | **19** | 60 | 31.7% |
-| 59 | IOG - Instituto de Olhos de Goiânia | 16 | 1 | **17** | 147 | 11.6% |
-| 60 | Universidade de Ribeirão Preto | 12 | 5 | **17** | 116 | 14.7% |
-| 61 | HEDA - Hospital Estadual Dirceu Arcoverde (PI) | 13 | 4 | **17** | 67 | 25.4% |
-| 62 | UFMT/HUJM - Hospital Universitário Júlio Müller - Cuiabá (MT) | 16 | 1 | **17** | 65 | 26.2% |
+| 1 | IOG - Instituto de Olhos de Goiânia | 146 | 1 | **147** | 147 | 100.0% |
+| 2 | HU-FMJ - Hospital Universitário da Faculdade de Medicina de Jundiaí (SP) | 138 | 8 | **146** | 146 | 100.0% |
+| 3 | CERMAM - Comissão Estadual de Residência Médica do Amazonas | 145 | 1 | **146** | 146 | 100.0% |
+| 4 | Universidade do Estado do Pará - Belém | 137 | 4 | **141** | 141 | 100.0% |
+| 5 | INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos | 132 | 8 | **140** | 201 | 69.7% |
+| 6 | UEL - Hospital Universitário de Londrina (PR) | 136 | 2 | **138** | 138 | 100.0% |
+| 7 | CMC - Fundação Centro Médico de Campinas (SP) | 128 | 1 | **129** | 129 | 100.0% |
+| 8 | HAC - Hospital Angelina Caron (PR) | 117 | 3 | **120** | 120 | 100.0% |
+| 9 | UFPA/HUJBB - Hospital Universitário João de Barros Barreto - Belém (PA) | 107 | 12 | **119** | 119 | 100.0% |
+| 10 | Universidade de Ribeirão Preto | 111 | 5 | **116** | 116 | 100.0% |
+| 11 | SES-PE - Secretaria de Estado de Saúde de Pernambuco | 109 | 6 | **115** | 115 | 100.0% |
+| 12 | Pontifícia Universidade Católica de São Paulo - Campus Sorocaba | 108 | 3 | **111** | 111 | 100.0% |
+| 13 | Universidade Evangélica de Goiás | 104 | 2 | **106** | 106 | 100.0% |
+| 14 | UNIFESP/EPM - Universidade Federal de São Paulo - Escola Paulista de Medicina (SP) | 87 | 4 | **91** | 141 | 64.5% |
+| 15 | USP/HCRP - Hospital das Clínicas de Ribeirão Preto (SP) | 87 | 0 | **87** | 135 | 64.4% |
+| 16 | SUS-SP - Sistema Único de Saúde de São Paulo | 80 | 4 | **84** | 127 | 66.1% |
+| 17 | Santa Casa de São Paulo - ISCMSP/FCMSCSP (SP) | 80 | 4 | **84** | 125 | 67.2% |
+| 18 | UNESP/HCFMB - Hospital das Clínicas de Botucatu (SP) | 81 | 2 | **83** | 121 | 68.6% |
+| 19 | Centro Universitário FMABC | 75 | 5 | **80** | 147 | 54.4% |
+| 20 | UFG/HC - Hospital das Clínicas da UFG - Goiânia (GO) | 76 | 4 | **80** | 80 | 100.0% |
+| 21 | UNICAMP/HC - Hospital de Clínicas da Unicamp - Campinas (SP) | 76 | 3 | **79** | 221 | 35.7% |
+| 22 | USP/HCFMUSP - Hospital das Clínicas da FMUSP (SP) | 78 | 1 | **79** | 117 | 67.5% |
+| 23 | UnB/HUB - Hospital Universitário de Brasília (DF) | 72 | 2 | **74** | 74 | 100.0% |
+| 24 | UERJ/HUPE - Hospital Universitário Pedro Ernesto (RJ) | 69 | 3 | **72** | 142 | 50.7% |
+| 25 | UFRGS/HCPA - Hospital de Clínicas de Porto Alegre (RS) | 70 | 2 | **72** | 134 | 53.7% |
+| 26 | IAMSPE/HSPE - Instituto de Assistência Médica ao Servidor Público - Hospital do Servidor (SP) | 68 | 3 | **71** | 117 | 60.7% |
+| 27 | AMP - Associação Médica do Paraná | 63 | 7 | **70** | 125 | 56.0% |
+| 28 | Fundhacre - Fundação Hospital Estadual do Acre | 67 | 2 | **69** | 69 | 100.0% |
+| 29 | UFRJ/HUCFF - Hospital Universitário Clementino Fraga Filho (RJ) | 64 | 4 | **68** | 140 | 48.6% |
+| 30 | HEDA - Hospital Estadual Dirceu Arcoverde (PI) | 63 | 4 | **67** | 67 | 100.0% |
+| 31 | AMRIGS - Associação Médica do Rio Grande do Sul | 60 | 6 | **66** | 123 | 53.7% |
+| 32 | HIAE/Einstein - Hospital Israelita Albert Einstein (SP) | 63 | 2 | **65** | 100 | 65.0% |
+| 33 | UFMT/HUJM - Hospital Universitário Júlio Müller - Cuiabá (MT) | 64 | 1 | **65** | 65 | 100.0% |
+| 34 | ENARE/ENAMED | 61 | 3 | **64** | 64 | 100.0% |
+| 35 | SES-GO - Secretaria de Estado de Saúde de Goiás | 56 | 6 | **62** | 109 | 56.9% |
+| 36 | PSU-MG - Processo Seletivo Unificado de Minas Gerais | 51 | 9 | **60** | 115 | 52.2% |
+| 37 | UFS/HU - Hospital Universitário de Sergipe - Aracaju (SE) | 56 | 4 | **60** | 60 | 100.0% |
+| 38 | SES-DF - Secretaria de Estado de Saúde do Distrito Federal | 53 | 5 | **58** | 157 | 36.9% |
+| 39 | HOS/BOS - Hospital Oftalmológico de Sorocaba - Banco de Olhos (SP) | 54 | 1 | **55** | 82 | 67.1% |
+| 40 | SES-RJ - Secretaria de Estado de Saúde do Rio de Janeiro | 51 | 3 | **54** | 95 | 56.8% |
+| 41 | SMS-SP - Secretaria Municipal de Saúde de São Paulo | 52 | 0 | **52** | 52 | 100.0% |
+| 42 | PSU-GO - Processo Seletivo Unificado de Goiás | 50 | 1 | **51** | 51 | 100.0% |
+| 43 | Santa Casa de Belo Horizonte (MG) | 46 | 2 | **48** | 85 | 56.5% |
+| 44 | SUS-BA - Sistema Único de Saúde da Bahia | 47 | 0 | **47** | 93 | 50.5% |
+| 45 | UFES/HUCAM - Hospital Universitário Cassiano Antônio Moraes - Vitória (ES) | 47 | 0 | **47** | 92 | 51.1% |
+| 46 | FAMERP/HB - Faculdade de Medicina de São José do Rio Preto - Hospital de Base (SP) | 42 | 5 | **47** | 83 | 56.6% |
+| 47 | SURCE - Seleção Unificada para Residência Médica no Estado do Ceará | 41 | 2 | **43** | 107 | 40.2% |
+| 48 | HSL/Sírio - Hospital Sírio-Libanês (SP) | 41 | 1 | **42** | 67 | 62.7% |
+| 49 | UFRN/HUOL - Hospital Universitário Onofre Lopes - Natal (RN) | 33 | 5 | **38** | 84 | 45.2% |
+| 50 | INTO - Instituto Nacional de Traumatologia e Ortopedia Jamil Haddad (RJ) | 35 | 1 | **36** | 82 | 43.9% |
+| 51 | Fundação Universidade Federal de Ciências da Saúde de Porto Alegre | 31 | 5 | **36** | 36 | 100.0% |
+| 52 | UFPR/HC - Complexo Hospital de Clínicas da UFPR (PR) | 32 | 2 | **34** | 86 | 39.5% |
+| 53 | Santa Casa de Ribeirão Preto (SP) | 29 | 2 | **31** | 91 | 34.1% |
+| 54 | Santa Casa de Limeira (SP) | 25 | 2 | **27** | 104 | 26.0% |
+| 55 | UFSC/HU - Hospital Universitário Prof. Polydoro Ernani de São Thiago (SC) | 23 | 2 | **25** | 75 | 33.3% |
+| 56 | Pontifícia Universidade Católica do Paraná - Campus Curitiba | 17 | 7 | **24** | 146 | 16.4% |
+| 57 | IHOA - Instituto e Hospital Oftalmológico de Anápolis (GO) | 19 | 4 | **23** | 86 | 26.7% |
+| 58 | Faculdade de Ciências Médicas de Minas Gerais | 17 | 5 | **22** | 30 | 73.3% |
+| 59 | FUBOG - Fundação Banco de Olhos de Goiás | 15 | 6 | **21** | 123 | 17.1% |
+| 60 | HEVV - Hospital Evangélico de Vila Velha (ES) | 13 | 8 | **21** | 92 | 22.8% |
+| 61 | HM São José - Hospital Municipal de São José (SC) | 19 | 2 | **21** | 92 | 22.8% |
+| 62 | HSL PUCRS - Hospital São Lucas da PUCRS (RS) | 20 | 1 | **21** | 83 | 25.3% |
 | 63 | HMMSJP - Hospital e Maternidade Municipal São José dos Pinhais (PR) | 12 | 5 | **17** | 61 | 27.9% |
 | 64 | SEMUSA (SMS) Macaé | 12 | 4 | **16** | 114 | 14.0% |
 | 65 | UEM - Hospital Universitário de Maringá (PR) | 8 | 8 | **16** | 66 | 24.2% |
