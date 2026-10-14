@@ -23211,7 +23211,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Planejamento Familiar.pdf.json"
+    "official_book": "Planejamento Familiar.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 80,
+      "overlap_score": 30,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "fabbd1ae-0cb3-4bf5-b6a9-54f57b7532c5",
@@ -30332,12 +30341,21 @@
         "text": "Na fase em que a produção de estradiol folicular é máxima ocorre um feedback positivo sobre a hipófise."
       }
     ],
-    "correctAnswer": "",
+    "correctAnswer": "ANULADA",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "is_anulada": true,
-    "correct_answer": "",
+    "correct_answer": "ANULADA",
     "mainErrorReason": "",
-    "takeHomeMessage": ""
+    "takeHomeMessage": "",
+    "official_source": "Gabarito Oficial Definitivo FMABC 2024 Questão 68",
+    "official_audit": {
+      "verified": true,
+      "institution": "Centro Universitário FMABC",
+      "year": 2024,
+      "question_number": 68,
+      "official_answer": "ANULADA",
+      "score": 6
+    }
   },
   {
     "id": "16d0649f-31b6-4023-827d-59d7b984ab7a",
@@ -67756,6 +67774,15 @@
       "source": "drive_knowledge_book",
       "book": "Rastreamento do Câncer de Colo Uterino.pdf.json",
       "specialty": "Gineco"
+    },
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 48,
+      "overlap_score": 26,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
     }
   },
   {
@@ -68225,7 +68252,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Infertilidade Conjugal.pdf.json"
+    "official_book": "Infertilidade Conjugal.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 45,
+      "overlap_score": 21,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "0af1803c-2269-4d90-bdea-8a8a9d6c0b4f",
@@ -108562,12 +108598,21 @@
       "/images/questoes/ginecologia/mulher-42-anos-de-idade-assintomatica-e-sem-antecedentes-fam-01.webp"
     ],
     "is_anulada": true,
-    "correct_answer": "C",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Rastreamento do Câncer de Mama.pdf.json"
+    "official_book": "Rastreamento do Câncer de Mama.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 47,
+      "overlap_score": 27,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "7546e85d-c9db-4961-8445-78b4d65ee057",
@@ -116984,7 +117029,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Miomatose Uterina.pdf.json"
+    "official_book": "Miomatose Uterina.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 44,
+      "overlap_score": 39,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "92dffaa6-b4db-4670-b36d-616c767c4118",
@@ -249319,7 +249373,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Incontinência Urinária.pdf.json"
+    "official_book": "Incontinência Urinária.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 46,
+      "overlap_score": 25,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "45c7eacb-1288-41de-818b-2f28b64a98f4",
@@ -255873,7 +255936,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Planejamento Familiar.pdf.json"
+    "official_book": "Planejamento Familiar.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 50,
+      "overlap_score": 38,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "dcf257b6-a7b6-4f28-bfbd-7e0ed8c1e583",
@@ -365572,7 +365644,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Câncer do Corpo do Útero.pdf.json"
+    "official_book": "Câncer do Corpo do Útero.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 54,
+      "overlap_score": 25,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "289f204e-70b4-4abc-a67c-3ca17bddad44",
@@ -389249,7 +389330,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Amenorreia.pdf.json"
+    "official_book": "Amenorreia.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 49,
+      "overlap_score": 43,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "594cc683-c268-47dd-8f0c-74918fbb934d",
@@ -437826,7 +437916,16 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Câncer do Corpo do Útero.pdf.json"
+    "official_book": "Câncer do Corpo do Útero.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "UNIFESP",
+      "year": 2024,
+      "exam": "ACESSO DIRETO",
+      "question_number": 43,
+      "overlap_score": 47,
+      "source": "FAPUNIFESP/UNIFESP Oficial Definitivo"
+    }
   },
   {
     "id": "2ce7ea92-c865-4162-888d-8af5ef4c5744",
