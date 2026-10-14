@@ -6189,7 +6189,16 @@
     "correct_answer": "A",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Urologia.pdf.json"
+    "official_book": "Urologia.pdf.json",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "Santa Casa",
+      "year": 2023,
+      "exam": "ACESSO DIRETO",
+      "question_number": 64,
+      "overlap_score": 13,
+      "source": "Quadrix Oficial Definitivo 2023"
+    }
   },
   {
     "id": "1f9d1e9c-3aa6-4018-9f42-3f4515b1f92a",
@@ -13055,7 +13064,16 @@
       "Campbell-Walsh Urology",
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Litíase Urinária"
     ],
-    "correct_answer": "D"
+    "correct_answer": "E",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "Santa Casa",
+      "year": 2020,
+      "exam": "ACESSO DIRETO",
+      "question_number": 15,
+      "overlap_score": 17,
+      "source": "Quadrix Oficial Definitivo 2020"
+    }
   },
   {
     "id": "9ebcac35-c55b-4243-8b50-ddc5b10b147e",
@@ -15144,7 +15162,16 @@
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) - Câncer de Próstata",
       "Sabiston Tratado de Cirurgia"
     ],
-    "correct_answer": "C"
+    "correct_answer": "B",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "Santa Casa",
+      "year": 2020,
+      "exam": "ACESSO DIRETO",
+      "question_number": 22,
+      "overlap_score": 9,
+      "source": "Quadrix Oficial Definitivo 2020"
+    }
   },
   {
     "id": "1ccfc614-9cb9-4de1-a273-d82829c1adef",
@@ -16976,7 +17003,16 @@
       "Diretrizes da Sociedade Brasileira de Urologia (SBU)",
       "European Association of Urology (EAU) Guidelines on Muscle-Invasive and Metastatic Bladder Cancer"
     ],
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "Santa Casa",
+      "year": 2020,
+      "exam": "ACESSO DIRETO",
+      "question_number": 30,
+      "overlap_score": 10,
+      "source": "Quadrix Oficial Definitivo 2020"
+    }
   },
   {
     "id": "d685728c-a3fe-499a-a318-ce0e8201e9c0",
@@ -23909,14 +23945,23 @@
     "correctAnswer": "C",
     "commentary": "Gabarito Oficial: Alternativa C.\n\n<p>O paciente apresenta <strong>sintomas do trato urinário inferior (STUI)</strong>, com sintomas de esvaziamento (jato fraco, esforço miccional, interrupção do jato e sensação de resíduo) associados a sintomas de armazenamento (noctúria e urgência). Em um homem idoso, a principal hipótese é hiperplasia prostática benigna (HPB), mas esses sintomas não são exclusivos dessa doença.</p><p>O ponto central da questão é reconhecer que a avaliação inicial deve procurar causas alternativas ou associadas, principalmente <strong>infecção urinária</strong>, que pode causar urgência, aumento da frequência urinária, desconforto miccional e piora do padrão urinário. Por isso, a análise da urina é um exame fundamental na abordagem inicial dos STUI.</p><p>O PSA e a ultrassonografia podem ser úteis em momentos posteriores da investigação, conforme o contexto clínico, a suspeita de câncer de próstata, o planejamento terapêutico e a necessidade de avaliar volume prostático ou repercussões da obstrução. Já a urodinâmica é reservada para casos selecionados, não sendo exame de rotina na apresentação inicial.</p><p>Assim, para provas de residência: diante de homem com sintomas urinários sugestivos de HPB, lembre-se de que o diagnóstico é clínico, mas a avaliação inicial deve incluir exame de urina para excluir diagnósticos diferenciais importantes.</p>\n\nAnálise das Alternativas:\n• PSA sérico: <p>O PSA pode fazer parte da avaliação de homens com sintomas urinários, principalmente quando o resultado pode influenciar a investigação de câncer de próstata ou a decisão terapêutica. Entretanto, não é o exame inicial indispensável para avaliar sintomas do trato urinário inferior (STUI). A primeira etapa é identificar causas que podem mimetizar ou agravar os sintomas, como infecção urinária.</p>\n\n• Ultrassonografia trans-abdominal de próstata e bexiga: <p>A ultrassonografia pode fornecer informações importantes, como volume prostático, alterações vesicais e resíduo pós-miccional. Porém, não é obrigatória como primeiro exame na avaliação inicial de todo paciente com STUI. Ela é geralmente solicitada em situações selecionadas, especialmente quando há necessidade de avaliar repercussões da obstrução ou planejar tratamento.</p>\n\n• Exame de sedimentos urinários (EAS associado a urocultura): <p>O exame de urina é fundamental na investigação inicial dos sintomas urinários porque permite identificar alterações como hematúria e sinais de infecção, condições que podem produzir quadro semelhante ao da hiperplasia prostática benigna. A presença de disúria/estrangúria e urgência reforça a importância de excluir infecção urinária. Embora algumas diretrizes reservem a urocultura para casos com suspeita de infecção ou alterações no exame inicial, dentro da lógica da questão essa alternativa representa a investigação urinária indispensável.</p>\n\n• Estudo urodinâmico: <p>O estudo urodinâmico é um exame funcional mais complexo, indicado em situações específicas, como dúvida diagnóstica, suspeita de disfunção vesical associada ou antes de determinados tratamentos. Não faz parte da avaliação inicial obrigatória de um homem com sintomas típicos de hiperplasia prostática benigna.</p>",
     "images": [],
-    "correct_answer": "C",
+    "correct_answer": "A",
     "mainErrorReason": "A pegadinha da banca nesta questão reside na interpretação rigorosa do protocolo oficial da alternativa C.",
     "takeHomeMessage": "Atenção ao gabarito oficial: a alternativa correta é a C.",
     "references": [
       "Campbell-Walsh Urology",
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Hiperplasia Prostática Benigna",
       "Sabiston Tratado de Cirurgia"
-    ]
+    ],
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "Santa Casa",
+      "year": 2020,
+      "exam": "ACESSO DIRETO",
+      "question_number": 70,
+      "overlap_score": 10,
+      "source": "Quadrix Oficial Definitivo 2020"
+    }
   },
   {
     "id": "0c055c92-cd49-471e-baac-a9dc65ab8c0c",
@@ -33435,7 +33480,16 @@
     "correctAnswer": "D",
     "commentary": "Gabarito Oficial: Alternativa D.\n\nResumo Clínico:\nA classificação das lesões renais traumáticas pela AAST (American Association for the Surgery of Trauma) utiliza principalmente os achados da tomografia para definir a gravidade e orientar o manejo.O ponto central da questão é reconhecer que o grau da lesão não depende apenas do tamanho da laceração. Uma lesão renal de 3 cm poderia sugerir uma lesão parenquimatosa, mas a presença de comprometimento vascular renal é o achado que muda a classificação para grau IV quando não há descrição de avulsão do pedículo.O raciocínio para a prova é:Graus I e II: lesões menores, sem alterações profundas;Grau III: laceração profunda do parênquima, sem lesão vascular ou sistema coletor;Grau IV: lesão vascular segmentar ou laceração complexa envolvendo estruturas importantes;Grau V: destruição renal extensa ou avulsão do hilo renal.Assim, o achado vascular descrito no enunciado é o elemento que define a alternativa correta.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): A lesão renal grau I corresponde a alterações mínimas, como contusão renal ou hematoma subcapsular sem laceração significativa. O achado descrito de lesão de 3 cm associada a alteração vascular ultrapassa esse nível de gravidade.\n• Alternativa B (Incorreta): As lesões grau II envolvem principalmente hematomas maiores ou lacerações superficiais, sem comprometimento vascular relevante. A presença de lesão dos vasos renais torna o quadro mais complexo e incompatível com esse grau.\n• Alternativa C (Incorreta): A lesão grau III é caracterizada por laceração renal profunda, geralmente maior que 1 cm, mas sem comprometimento do sistema coletor ou lesão vascular importante. Neste caso, o achado que define a gravidade é o acometimento vascular, levando a classificação superior.\n• Alternativa D (Correta): A presença de lesão vascular renal com hematoma retroperitoneal contido caracteriza lesão renal grau IV na classificação da AAST. Esse grau inclui lesões vasculares segmentares e lacerações complexas que não chegam à destruição completa do órgão.O tamanho da lesão parenquimatosa (3 cm) isoladamente não seria suficiente para classificar como grau IV, mas o comprometimento vascular é o dado decisivo para a classificação.\n• Alternativa E (Incorreta): A lesão grau V é reservada para os traumas renais mais graves, como avulsão do pedículo renal, rim completamente fragmentado ou destruição extensa do órgão. Uma lesão vascular sem descrição de avulsão do hilo renal não deve ser classificada automaticamente como grau V.\n\nReferências: AAST Organ Injury Scale (OIS) - Kidney Injury Scale; Campbell-Walsh-Wein Urology, capítulo de trauma geniturinário",
     "images": [],
-    "correct_answer": "D"
+    "correct_answer": "C",
+    "homologated_exam": true,
+    "official_exam_meta": {
+      "institution": "Santa Casa",
+      "year": 2020,
+      "exam": "ACESSO DIRETO",
+      "question_number": 33,
+      "overlap_score": 35,
+      "source": "Quadrix Oficial Definitivo 2020"
+    }
   },
   {
     "id": "e38a3e5b-7abf-41cf-9c0a-18786f0e67f0",
