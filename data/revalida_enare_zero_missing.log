@@ -1,0 +1,83 @@
+=== INICIANDO OPERAÇÃO ZERO MISSING REVALIDA & ENARE ===
+Data: 2026-10-14T00:19:55.463Z
+
+[21:19:55] 🚀 Iniciando Operação Contínua: Resolução Integral de Revalida e ENARE
+[21:19:55] 📚 [1/4] Indexando base oficial completa (PDFs Oficiais, Acervos e Apostilas)...
+[21:19:55]    📄 INEP INEP_2011_PV.pdf -> 100 gabaritos pareados
+[21:19:56]    📄 INEP INEP_2012_PV.pdf -> 83 gabaritos pareados
+[21:19:56]    📄 INEP INEP_2013_PV.pdf -> 0 gabaritos pareados
+[21:19:57]    📄 INEP INEP_2014_PV.pdf -> 110 gabaritos pareados
+[21:19:57]    📄 INEP INEP_2015_PV.pdf -> 110 gabaritos pareados
+[21:19:58]    📄 INEP INEP_2016_PV_1.pdf -> 100 gabaritos pareados
+[21:19:58]    📄 INEP INEP_2016_PV_2.pdf -> 100 gabaritos pareados
+[21:19:58]    📄 INEP INEP_2017_PV_1.pdf -> 0 gabaritos pareados
+[21:19:58]    📄 INEP INEP_2017_PV_2.pdf -> 0 gabaritos pareados
+[21:19:59]    📄 INEP INEP_2020_PV_1.pdf -> 0 gabaritos pareados
+[21:19:59]    📄 INEP INEP_2021_PV.pdf -> 100 gabaritos pareados
+[21:19:59]    📄 INEP INEP_2022_1_PV.pdf -> 100 gabaritos pareados
+[21:19:59]    📄 INEP INEP_2022_2_PV.pdf -> 100 gabaritos pareados
+[21:20:00]    📄 INEP INEP_2023_1_PV.pdf -> 100 gabaritos pareados
+[21:20:00]    📄 INEP INEP_2023_2_PV.pdf -> 100 gabaritos pareados
+[21:20:00]    📄 INEP INEP_2024_1_PV.pdf -> 100 gabaritos pareados
+[21:20:01]    📄 INEP INEP_2024_2_PV.pdf -> 100 gabaritos pareados
+[21:20:01]    📄 INEP INEP_2025_1_PV.pdf -> 100 gabaritos pareados
+[21:20:03]    📄 INEP INEP_2025_2_PV.pdf -> 100 gabaritos pareados
+[21:20:03]    📄 INEP INEP_2026_1_PV.pdf -> 0 gabaritos pareados
+[21:20:03]    📄 INEP INEP_2026_2_PV.pdf -> 100 gabaritos pareados
+[21:20:05]    📄 ENARE ENARE_2020_PV_AD.pdf -> 100 gabaritos pareados
+[21:20:09]    📄 ENARE ENARE_2021_PV_AD.pdf -> 100 gabaritos pareados
+[21:20:12]    📄 ENARE ENARE_2022_PV_AD.pdf -> 100 gabaritos pareados
+[21:20:12]    📄 ENARE ENARE_2023_PV_AD.pdf -> 100 gabaritos pareados
+[21:20:12]    📄 Adicionando Gabarito Oficial ENARE FGV 2024/2025...
+[21:20:13]    📖 Acervo Livros Drive: +7.822 gabaritos incorporados
+[21:20:13]    ⭐ Acervo Homologado Gold: +0 gabaritos incorporados
+[21:20:14]    📚 Acervo Especialidades Medcurso: +23.957 gabaritos incorporados
+[21:20:14] ✅ Catálogo Mestre Completo: 33.736 registros indexados.
+
+[21:20:14] 📥 [2/4] Buscando todas as questões de Revalida e ENARE no Supabase...
+[21:20:59] 📊 Total de Questões Alvo: 3.418
+[21:21:23] 📝 Questões Discursivas tratadas: 230
+[21:21:23] ⏳ Questões Objetivas que necessitam de gabarito: 1048
+[21:21:23] 
+🔍 [3/4] Pareando questões pendentes com o Catálogo Mestre...
+[21:21:47] ✨ Encontrados no Catálogo Mestre: 281 gabaritos oficiais!
+[21:21:47] ⚠️ Restantes sem pareamento direto: 767
+[21:21:47] 💾 Gravando atualizações do catálogo no Supabase...
+[21:22:13] 
+🧠 [4/4] Executando resolução cirúrgica das 767 questões restantes...
+[21:22:15]    ⚙️ Progresso: 25/767 resolvidas | Restam: 742
+[21:22:17]    ⚙️ Progresso: 50/767 resolvidas | Restam: 717
+[21:22:19]    ⚙️ Progresso: 75/767 resolvidas | Restam: 692
+[21:22:22]    ⚙️ Progresso: 100/767 resolvidas | Restam: 667
+[21:22:24]    ⚙️ Progresso: 125/767 resolvidas | Restam: 642
+[21:22:26]    ⚙️ Progresso: 150/767 resolvidas | Restam: 617
+[21:22:28]    ⚙️ Progresso: 175/767 resolvidas | Restam: 592
+[21:22:30]    ⚙️ Progresso: 200/767 resolvidas | Restam: 567
+[21:22:33]    ⚙️ Progresso: 225/767 resolvidas | Restam: 542
+[21:22:35]    ⚙️ Progresso: 250/767 resolvidas | Restam: 517
+[21:22:37]    ⚙️ Progresso: 275/767 resolvidas | Restam: 492
+[21:22:40]    ⚙️ Progresso: 300/767 resolvidas | Restam: 467
+[21:22:42]    ⚙️ Progresso: 325/767 resolvidas | Restam: 442
+[21:22:44]    ⚙️ Progresso: 350/767 resolvidas | Restam: 417
+[21:22:47]    ⚙️ Progresso: 375/767 resolvidas | Restam: 392
+[21:22:49]    ⚙️ Progresso: 400/767 resolvidas | Restam: 367
+[21:22:51]    ⚙️ Progresso: 425/767 resolvidas | Restam: 342
+[21:22:53]    ⚙️ Progresso: 450/767 resolvidas | Restam: 317
+[21:22:56]    ⚙️ Progresso: 475/767 resolvidas | Restam: 292
+[21:22:58]    ⚙️ Progresso: 500/767 resolvidas | Restam: 267
+[21:23:01]    ⚙️ Progresso: 525/767 resolvidas | Restam: 242
+[21:23:03]    ⚙️ Progresso: 550/767 resolvidas | Restam: 217
+[21:23:05]    ⚙️ Progresso: 575/767 resolvidas | Restam: 192
+[21:23:07]    ⚙️ Progresso: 600/767 resolvidas | Restam: 167
+[21:23:09]    ⚙️ Progresso: 625/767 resolvidas | Restam: 142
+[21:23:12]    ⚙️ Progresso: 650/767 resolvidas | Restam: 117
+[21:23:14]    ⚙️ Progresso: 675/767 resolvidas | Restam: 92
+[21:23:16]    ⚙️ Progresso: 700/767 resolvidas | Restam: 67
+[21:23:19]    ⚙️ Progresso: 725/767 resolvidas | Restam: 42
+[21:23:21]    ⚙️ Progresso: 750/767 resolvidas | Restam: 17
+[21:23:22]    ⚙️ Progresso: 767/767 resolvidas | Restam: 0
+[21:23:22] 
+🏁 [FINAL] Verificando censo final no Supabase para garantir 0 pendentes...
+[21:23:22] 📥 [2/4] Buscando todas as questões de Revalida e ENARE no Supabase...
+[21:24:10] 🎯 CENSO FINAL: 0 questões pendentes.
+[21:24:10] 🎉 OPERAÇÃO CONCLUÍDA COM SUCESSO! 100% DAS QUESTÕES DO REVALIDA E ENARE COM GABARITO.
