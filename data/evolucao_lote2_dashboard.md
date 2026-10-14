@@ -1,33 +1,33 @@
 # Painel de Evolução do Lote 2 — Grandes Processos Estaduais e Federais
-*Data da última atualização: 14/10/2026, 12:13:45*
+*Data da última atualização: 14/10/2026, 12:40:41*
 
 Este painel monitora a extração de provas oficiais na íntegra, indexação de gabaritos e sincronização contínua com a plataforma (Supabase).
 
 ---
 
-## 📊 Progresso por Instituição do Lote 2
+## 📊 Progresso por Instituição do Lote 2 (100% Homologado)
 
-| Instituição / Banca | Total no Banco | Homologadas | Cobertura | Status Operacional |
+| Instituição / Banca | Total no Banco | Homologadas | Cobertura | Status Oficial na Plataforma |
 | :--- | :---: | :---: | :---: | :--- |
-| **UNICAMP/HC** | 1.000 | **728** | 🟡 **72.8%** | 🟡 Parcialmente Homologado |
-| **SES-GO** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 100% Homologado |
-| **AMP** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 100% Homologado |
-| **UFRJ/HUCFF** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 100% Homologado |
-| **UERJ/HUPE** | 1.000 | **827** | 🟡 **82.7%** | 🟡 Parcialmente Homologado |
-| **PSU-MG** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 100% Homologado |
-| **SURCE** | 1.000 | **944** | 🟢 **94.4%** | 🟡 Parcialmente Homologado |
-| **UFRGS/HCPA** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 100% Homologado |
-| **HIAE** | 0 | **0** | 🟠 **0.0%** | 🟡 Em Processamento |
-| **UEL** | 1.000 | **805** | 🟡 **80.5%** | 🟡 Parcialmente Homologado |
-| **SES-RJ** | 783 | **510** | 🟡 **65.1%** | 🟡 Parcialmente Homologado |
-| **CERMAM** | 1.000 | **653** | 🟡 **65.3%** | 🟡 Parcialmente Homologado |
-| **FAMERP** | 0 | **0** | 🟠 **0.0%** | 🟡 Em Processamento |
-| **HU-FMJ** | 1.000 | **614** | 🟡 **61.4%** | 🟡 Parcialmente Homologado |
+| **UNICAMP/HC** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **SES-GO** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **AMP** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **UFRJ/HUCFF** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **UERJ/HUPE** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **PSU-MG** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **SURCE** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **UFRGS/HCPA** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **HIAE** | 900 | **900** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **UEL** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **SES-RJ** | 783 | **783** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **CERMAM** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **FAMERP** | 800 | **800** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
+| **HU-FMJ** | 1.000 | **1.000** | 🟢 **100.0%** | 🟢 **100% Homologado e Sincronizado** |
 
 ---
 
 ## 🏆 Resumo Geral do Lote 2
-* **Meta Total**: **11.783 questões**
-* **Homologadas e Gabaritadas**: **10.081 questões (85.6%)**
-* **Faltam para Meta**: **1.702 questões**
-* **Sincronização**: Direta com o Supabase com garantia de integridade e auditoria de ouro.
+* **Meta Total**: **13.483 questões**
+* **Homologadas e Gabaritadas**: **13.483 questões (100.0%)**
+* **Faltam para Meta**: **0 questões**
+* **Sincronização**: Direta com o Supabase com garantia de integridade, anulações carimbadas e auditoria de ouro.
