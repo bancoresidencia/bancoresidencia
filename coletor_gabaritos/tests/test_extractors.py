@@ -1,8 +1,12 @@
 import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
 import unittest
 from coletor_gabaritos.extractors.usp_extractor import USPExtractor
 from coletor_gabaritos.extractors.ufpa_extractor import UFPAExtractor
 from coletor_gabaritos.extractors.psu_extractor import PSUExtractor
+from coletor_gabaritos.extractors.iaupe_extractor import IAUPEExtractor
+from coletor_gabaritos.extractors.amrigs_extractor import AMRIGSExtractor
 from coletor_gabaritos.validator.validator import GabaritoValidator
 
 class TestExtractorsAndValidation(unittest.TestCase):
@@ -56,20 +60,53 @@ class TestExtractorsAndValidation(unittest.TestCase):
         self.assertTrue(v_res['valido'])
         self.assertEqual(len(v_res['faltantes']), 0)
 
-    def test_psu_extractor_format(self):
-        psu_pdf = os.path.join('data', 'official_exams', 'PSU_MG', 'GABARITOPRELIMINARPROVAGERALTIPO1-PSUMG2025-20241201170547.pdf')
-        if not os.path.exists(psu_pdf):
-            self.skipTest("Arquivo PSU-MG não encontrado")
+    def test_iaupe_extractor_format(self):
+        iaupe_pdf = os.path.join('data', 'official_exams', 'SES_PE', 'SES_PE_2024_GABARITO_DEFINITIVO_ACESSO_DIRETO_2024_Repub.pdf')
+        if not os.path.exists(iaupe_pdf):
+            self.skipTest("Arquivo SES-PE não encontrado")
 
-        extractor = PSUExtractor()
-        results = extractor.extract(psu_pdf)
+        extractor = IAUPEExtractor()
+        results = extractor.extract(iaupe_pdf)
 
         self.assertEqual(len(results), 1)
         res = results[0]
         self.assertTrue(res.sucesso)
-        self.assertEqual(len(res.questoes), 75, "PSU-MG 2025 Prova Geral deve conter 75 questões")
+        self.assertEqual(len(res.questoes), 100, "SES-PE Acesso Direto deve conter exatamente 100 questões")
 
-        v_res = self.validator.validate_gabarito(res.questoes, expected_max=75)
+        q_map = {q.numero_questao: q for q in res.questoes}
+        self.assertEqual(q_map[1].especialidade, "Clínica Médica")
+        self.assertEqual(q_map[21].especialidade, "Cirurgia Geral")
+        self.assertEqual(q_map[41].especialidade, "Ginecologia e Obstetrícia")
+        self.assertEqual(q_map[61].especialidade, "Pediatria")
+        self.assertEqual(q_map[81].especialidade, "Medicina Preventiva e Social")
+
+        # Anulações oficiais confirmadas
+        self.assertEqual(q_map[20].status, "anulada")
+        self.assertEqual(q_map[82].status, "anulada")
+        self.assertEqual(q_map[87].status, "anulada")
+
+        v_res = self.validator.validate_gabarito(res.questoes, expected_max=100)
+        self.assertTrue(v_res['valido'])
+        self.assertEqual(len(v_res['faltantes']), 0)
+
+    def test_amrigs_extractor_format(self):
+        amrigs_pdf = os.path.join('data', 'official_exams', 'AMRIGS', 'AMRIGS_Gabarito_Definitivo_Acesso_Direto.pdf')
+        if not os.path.exists(amrigs_pdf):
+            self.skipTest("Arquivo AMRIGS não encontrado")
+
+        extractor = AMRIGSExtractor()
+        results = extractor.extract(amrigs_pdf)
+
+        self.assertEqual(len(results), 1)
+        res = results[0]
+        self.assertTrue(res.sucesso)
+        self.assertEqual(len(res.questoes), 100, "AMRIGS Acesso Direto deve conter exatamente 100 questões")
+
+        q_map = {q.numero_questao: q for q in res.questoes}
+        self.assertEqual(q_map[41].status, "anulada")
+        self.assertEqual(q_map[66].status, "anulada")
+
+        v_res = self.validator.validate_gabarito(res.questoes, expected_max=100)
         self.assertTrue(v_res['valido'])
         self.assertEqual(len(v_res['faltantes']), 0)
 

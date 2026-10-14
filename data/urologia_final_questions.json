@@ -9430,10 +9430,10 @@
         "text": "I, II e III."
       }
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "B",
     "commentary": "Gabarito Oficial: Alternativa D.\n\n<p>O caso descreve um homem jovem, com história de criptorquidia e massa hipoecogênica intratesticular ao ultrassom. Esse conjunto deve levantar forte suspeita de <strong>tumor de células germinativas do testículo</strong>, a neoplasia testicular mais importante nas provas de residência.</p><p>Há três ideias centrais. Primeiro, o câncer de testículo é uma neoplasia sólida com altíssima chance de cura, inclusive porque muitos tumores germinativos são muito sensíveis à quimioterapia baseada em cisplatina. Segundo, os marcadores séricos clássicos são <strong>AFP, beta-hCG e LDH</strong>. A questão cita AFP e beta-hCG, que são os mais cobrados para suspeita, classificação indireta e seguimento; o LDH também deve ser lembrado, principalmente por valor prognóstico e de acompanhamento, mas sua ausência na assertiva não invalida a resposta porque não há restrição por “apenas”.</p><p>Terceiro, como os pacientes costumam ser jovens e sobrevivem por décadas, as toxicidades tardias importam. Quimioterapia e radioterapia podem aumentar o risco de segundas neoplasias; entre as hematológicas, a associação clássica é com leucemias relacionadas à quimioterapia, especialmente em exposições a etoposídeo. Portanto, a alternativa que reúne I, II e III é a melhor resposta.</p>\n\nAnálise das Alternativas:\n• Apenas I e II.: <p>A assertiva III também deve ser considerada verdadeira. Em sobreviventes de câncer de testículo, especialmente após exposição a quimioterapia baseada em platina/etoposídeo e radioterapia, há preocupação com toxicidades tardias, incluindo risco aumentado de segundas neoplasias. Portanto, excluir a III torna a alternativa incompleta.</p>\n\n• Apenas I e III.: <p>A assertiva II é aceitável no contexto da questão: <strong>AFP e beta-hCG</strong> são marcadores clássicos dos tumores germinativos testiculares e são usados no diagnóstico, estadiamento, avaliação de resposta e seguimento. Uma ressalva importante é que o LDH também é marcador sérico utilizado, embora menos específico; como a assertiva não diz “apenas”, a omissão do LDH não derruba a resposta pretendida.</p>\n\n• Apenas II e III.: <p>A assertiva I também está correta. O câncer de testículo, em especial os tumores germinativos, é paradigma de neoplasia sólida altamente curável, com sobrevida global muito elevada quando tratado adequadamente. Assim, retirar a assertiva I deixa a alternativa insuficiente.</p>\n\n• I, II e III.: <p>As três assertivas estão adequadas para a lógica da prova. A doença é altamente curável; AFP e beta-hCG são marcadores clássicos usados no manejo dos tumores germinativos; e sobreviventes tratados com quimioterapia e/ou radioterapia têm maior risco de efeitos tardios, incluindo segundas neoplasias, com destaque para neoplasias hematológicas associadas a certos esquemas quimioterápicos.</p>",
     "images": [],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "mainErrorReason": "A pegadinha da banca nesta questão reside na interpretação rigorosa do protocolo oficial da alternativa D.",
     "takeHomeMessage": "Atenção ao gabarito oficial: a alternativa correta é a D.",
     "references": [
@@ -9443,7 +9443,17 @@
     ],
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Urologia.pdf.json"
+    "official_book": "Urologia.pdf.json",
+    "is_anulada": false,
+    "official_source": "Gabarito Oficial Definitivo AMRIGS / Fundatec 2023 Questão 12",
+    "official_audit": {
+      "verified": true,
+      "institution": "AMRIGS",
+      "year": 2023,
+      "question_number": 12,
+      "official_answer": "B",
+      "score": 10
+    }
   },
   {
     "id": "25a4b83b-99b7-4d3d-9cbd-19908998239a",
@@ -14529,7 +14539,9 @@
       "Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna",
       "Campbell-Walsh Urologia"
     ],
-    "correct_answer": "C"
+    "correct_answer": "D",
+    "is_anulada": false,
+    "official_source": "Gabarito Oficial USP 2025 Questão 8"
   },
   {
     "id": "0505e8ea-f11b-41ef-bc56-0b675a6ccb48",
