@@ -61,6 +61,8 @@ __pycache__/
 !data/medcurso_all_questoes_folders.json
 !data/medcurso_extraction_status.json
 /data/official_exams/**/*.pdf
+/data/official_exams/**/*.rar
+/data/official_exams/**/*.zip
 !data/official_exams/manifest.json
 /data/enare_pdfs/
 /data/enare_raw/
