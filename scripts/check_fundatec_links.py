@@ -4,8 +4,8 @@ if sys.platform == 'win32':
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-for cid in [594, 604, 647, 677]:
-    url = f"https://www.fundatec.org.br/portal/concursos/publicacoes_concurso.php?concurso={cid}"
+for cid in [500, 520, 551, 594, 603, 604, 647, 677]:
+    url = f"https://www.fundatec.org.br/portal/concursos/publicacoes_v2.php?concurso={cid}"
     try:
         r = requests.get(url, headers=headers, timeout=10)
         print(f"=== CID {cid} (Status: {r.status_code}) ===")
