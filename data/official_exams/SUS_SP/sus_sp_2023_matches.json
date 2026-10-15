@@ -1,0 +1,702 @@
+[
+  {
+    "id": "127859cd-1fa9-4ec8-87d6-e9b1937c3b63",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 78,
+    "score": 0.971,
+    "enunciado_snippet": "Paciente do sexo masculino, de 20 anos de idade, com diagnóstico de DM1 há cerca"
+  },
+  {
+    "id": "dd495a80-ae5b-4083-b2ac-f6c461be90d3",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 67,
+    "score": 0.976,
+    "enunciado_snippet": "Paciente FMN, masculino, de 28 anos de idade, comparece a consulta ambulatorial "
+  },
+  {
+    "id": "1387f67e-a4b2-473a-92d6-df4224d48769",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 16,
+    "score": 0.966,
+    "enunciado_snippet": "Acerca de pancreatites agudas, assinale a alternativa incorreta."
+  },
+  {
+    "id": "157c5e38-02bd-4438-a506-f59fd9ad2f4f",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 73,
+    "score": 0.474,
+    "enunciado_snippet": "Paciente do sexo feminino, de 39 anos de idade, natural e procedente de São Paul"
+  },
+  {
+    "id": "f18b992f-4d3b-4278-878b-bee3f1e47df0",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 72,
+    "score": 0.597,
+    "enunciado_snippet": "Uma mulher de 82 anos de idade, com antecedentes pessoais de diabetes melito não"
+  },
+  {
+    "id": "366ecd3d-dba3-4c71-9eed-d987f78d092b",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 63,
+    "score": 0.864,
+    "enunciado_snippet": "Uma mulher de 78 anos de idade, com antecedentes pessoais de hipertensão arteria"
+  },
+  {
+    "id": "69944a36-5216-4379-9955-8525a8018713",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 71,
+    "score": 0.963,
+    "enunciado_snippet": "Um homem de 63 anos de idade, com antecedente pessoal de hipertensão arterial si"
+  },
+  {
+    "id": "d752e1fc-937e-4025-8ef3-e0843bf91e5e",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 7,
+    "score": 0.97,
+    "enunciado_snippet": "Cada uma das alternativas a seguir apresenta um paciente e algumas de suas infor"
+  },
+  {
+    "id": "9e885477-1fec-4fc8-9938-811ccb3d49be",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 34,
+    "score": 0.927,
+    "enunciado_snippet": "De acordo com o Global Initiative For Asthma de 2022 (GINA 2022), assinale a alt"
+  },
+  {
+    "id": "f88fb254-c876-4898-adf0-0728b3abb2b5",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 68,
+    "score": 0.892,
+    "enunciado_snippet": "Paciente MDH, homem, de 42 anos de idade, foi internado por dispneia aos esforço"
+  },
+  {
+    "id": "a958590e-0c6b-4e6a-ba32-17216f30e813",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 11,
+    "score": 0.903,
+    "enunciado_snippet": "A tríade de Charcot caracteriza-se por"
+  },
+  {
+    "id": "b3925fff-6efe-4a46-960c-781d6edc7916",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 14,
+    "score": 0.889,
+    "enunciado_snippet": "Com relação à classificação de Forrest para úlceras pépticas com sangramento, as"
+  },
+  {
+    "id": "772bfdef-062e-421a-8077-4a5201c84e7d",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 65,
+    "score": 0.982,
+    "enunciado_snippet": "Paciente IVM, feminina, de 67 anos de idade, com diagnóstico prévio de osteoporo"
+  },
+  {
+    "id": "45ff6524-7d52-4045-83bf-597e0ac62197",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 4,
+    "score": 0.828,
+    "enunciado_snippet": "Uma paciente de 45 anos de idade, assintomática, com índice de massa corpórea (I"
+  },
+  {
+    "id": "a4cc0fb0-adf3-4971-988c-854b1303c80e",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 15,
+    "score": 0.889,
+    "enunciado_snippet": "Quanto às hemorragias digestivas, assinale a alternativa incorreta."
+  },
+  {
+    "id": "4cd99cc2-b1a2-44ed-a518-ec79b2b3a84c",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 2,
+    "score": 0.969,
+    "enunciado_snippet": "Paciente do sexo feminino, de 53 anos de idade, sem comorbidades, assintomática,"
+  },
+  {
+    "id": "4115f6f4-8d71-46b1-a979-880bd424d2bf",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 80,
+    "score": 0.492,
+    "enunciado_snippet": "Os fatores predisponentes para o desenvolvimento de peritonite bacteriana espont"
+  },
+  {
+    "id": "e51f9a02-a1eb-4af0-a181-de26dea10a01",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 74,
+    "score": 0.444,
+    "enunciado_snippet": "Paciente do sexo feminino, de 39 anos de idade, natural e procedente de São Paul"
+  },
+  {
+    "id": "5fbbf7e1-2f98-40bf-bc3f-0ce54a0d00a5",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 76,
+    "score": 0.636,
+    "enunciado_snippet": "Quanto à intoxicação exógena, considere as seguintes possibilidades de quadros c"
+  },
+  {
+    "id": "4bd76b61-5478-425a-bfab-f31b5a7ab72a",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 61,
+    "score": 0.937,
+    "enunciado_snippet": "Um homem de 58 anos de idade, obeso, hipertenso e diabético, em uso de atenolol "
+  },
+  {
+    "id": "e54a3594-d36a-407b-be21-555044e2a46e",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 98,
+    "score": 0.977,
+    "enunciado_snippet": "Um paciente aparece na unidade básica de saúde em sua consulta agendada. Durante"
+  },
+  {
+    "id": "5c023bd5-c081-4347-a2ba-d5d3926521de",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 95,
+    "score": 0.938,
+    "enunciado_snippet": "Uma mulher com 62 anos de idade comparece à unidade básica de saúde, pois tem ap"
+  },
+  {
+    "id": "1a18d8d5-2425-449a-a371-fb6f8e8277ae",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 12,
+    "score": 0.657,
+    "enunciado_snippet": "Quanto à Pêntade de Reinolds, assinale a alternativa correta."
+  },
+  {
+    "id": "d2c6e7e7-f9cc-4a03-a235-ed28526b3dc5",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 62,
+    "score": 0.937,
+    "enunciado_snippet": "Em relação à iatrogenia, assinale a alternativa incorreta."
+  },
+  {
+    "id": "aae61609-4804-4258-957e-0a47c1208d4c",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 77,
+    "score": 0.956,
+    "enunciado_snippet": "Homem de 60 anos de idade refere início, há 4 meses, de bradicinesia, passos cur"
+  },
+  {
+    "id": "68d1672c-0136-48b5-859c-bc86fe7ba9fa",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 100,
+    "score": 0.982,
+    "enunciado_snippet": "O Método Clínico Centrado na Pessoa (MCCP) surgiu da necessidade de um atendimen"
+  },
+  {
+    "id": "4028cef4-ecd3-4032-8dbb-507baa8f806c",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 75,
+    "score": 0.766,
+    "enunciado_snippet": "Mulher de 52 anos de idade, hipertensa, diabética e tabagista procurou o pronto-"
+  },
+  {
+    "id": "c9a65aef-cd66-436a-add3-d7e2ebe46cf5",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 20,
+    "score": 0.89,
+    "enunciado_snippet": "Um paciente, vítima de acidente de moto contra anteparo fixo a 60 km/h, com capa"
+  },
+  {
+    "id": "3249aed2-b846-41bf-bab4-73d70f5c2d37",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 1,
+    "score": 0.931,
+    "enunciado_snippet": "Entre as alternativas a seguir, assinale aquela que apresenta uma alteração para"
+  },
+  {
+    "id": "12e00a97-f3ad-4cac-8c7a-366dc13858c7",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 10,
+    "score": 0.969,
+    "enunciado_snippet": "Paciente de 35 anos de idade, masculino, vítima de acidente com colisão de sua m"
+  },
+  {
+    "id": "3e8d0531-c08b-4ac6-a5ec-943825fb96b1",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 9,
+    "score": 0.977,
+    "enunciado_snippet": "Paciente, masculino, de 45 anos de idade, vítima de incêndio de grandes proporçõ"
+  },
+  {
+    "id": "8859509f-6a96-41b7-bdd4-060cf5da85cb",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 13,
+    "score": 0.977,
+    "enunciado_snippet": "Paciente do sexo feminino, de 35 anos de idade, com queixa de dor abdominal há 5"
+  },
+  {
+    "id": "e4e7a518-ac02-476a-addb-5fced1d40318",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 19,
+    "score": 0.948,
+    "enunciado_snippet": "Acerca do tratamento não operatório (TNO) no trauma abdominal fechado, assinale "
+  },
+  {
+    "id": "19d2db94-4acc-4d27-83a9-ee5f3dbe455c",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 3,
+    "score": 0.944,
+    "enunciado_snippet": "Em relação às hérnias inguinocrurais em adultos, julgue os itens a seguir.I. O t"
+  },
+  {
+    "id": "c6a80887-83ee-4309-8547-91d2b16b071b",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 5,
+    "score": 0.968,
+    "enunciado_snippet": "Um paciente de 75 anos de idade, hipertenso controlado, com queixa de sangrament"
+  },
+  {
+    "id": "2b10b224-0ef6-493d-943c-4ec7e647391c",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 17,
+    "score": 0.734,
+    "enunciado_snippet": "A respeito do abdome agudo obstrutivo (AAO), assinale a alternativa incorreta."
+  },
+  {
+    "id": "d511afbc-1297-41d7-b9e8-2a57bf8eadda",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 70,
+    "score": 0.968,
+    "enunciado_snippet": "Paciente, JVCC, 25 anos de idade, apresentou quadro de dispneia súbita e dessatu"
+  },
+  {
+    "id": "bf654a99-7f3a-436c-8e0b-f481cd2c91ee",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 6,
+    "score": 0.911,
+    "enunciado_snippet": "Uma mulher de 78 anos de idade, com histórico de múltiplas cirurgias prévias, ap"
+  },
+  {
+    "id": "78debcfa-9a4b-44aa-838c-7eed7ad5dad5",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 69,
+    "score": 0.943,
+    "enunciado_snippet": "Paciente, RFO, homem, de 53 anos de idade, sofreu acidente automobilístico há 20"
+  },
+  {
+    "id": "53578e20-69cf-4277-b48f-c7f8f9a686b9",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 8,
+    "score": 0.818,
+    "enunciado_snippet": "Uma mulher de 55 anos de idade foi submetida a reconstrução mamária com músculo "
+  },
+  {
+    "id": "6734ff98-b580-4711-8167-d7ac3912f2d9",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 18,
+    "score": 0.966,
+    "enunciado_snippet": "Um paciente, vítima de ferimento penetrante por arma branca em zona II cervical,"
+  },
+  {
+    "id": "7cc081bc-2759-4d62-b3c7-bc0afca8138a",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 21,
+    "score": 0.929,
+    "enunciado_snippet": "Assinale a alternativa que apresenta a recomendação de suplementação de ferro pa"
+  },
+  {
+    "id": "240e8b5d-2c8b-49de-8a74-a8b4b5670400",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 30,
+    "score": 0.973,
+    "enunciado_snippet": "Paciente de dois anos de idade, do sexo masculino, deu entrada pela sala de emer"
+  },
+  {
+    "id": "8b5f0479-ac42-46e9-ad4d-0aa664c978da",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 39,
+    "score": 0.977,
+    "enunciado_snippet": "Um lactente de 10 meses de idade, previamente hígido, dá entrada no pronto-socor"
+  },
+  {
+    "id": "67ec54a5-931a-448a-8e4c-f0b765198574",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 27,
+    "score": 0.946,
+    "enunciado_snippet": "Lactente do sexo masculino, com 2 meses de vida, foi levado para consulta de pue"
+  },
+  {
+    "id": "bb05340a-0a2e-418a-94c9-1beeea509f91",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 22,
+    "score": 0.935,
+    "enunciado_snippet": "Lactente de 12 meses de vida, do sexo masculino, foi levado para consulta de pue"
+  },
+  {
+    "id": "053eee1d-4333-435d-b52a-cbb40d341ffa",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 36,
+    "score": 0.844,
+    "enunciado_snippet": "Uma criança de 7 anos de idade, previamente hígida, com história de tosse, coriz"
+  },
+  {
+    "id": "cdc9e724-f390-43fb-a17b-eb3bd96c173b",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 91,
+    "score": 0.976,
+    "enunciado_snippet": "Uma jovem de 17 anos de idade comparece à unidade de saúde, desacompanhada, soli"
+  },
+  {
+    "id": "488ea1a8-b78d-4950-9c95-750e08376e5c",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 37,
+    "score": 0.949,
+    "enunciado_snippet": "De acordo com as diretrizes da Sociedade Brasileira de Pediatria acerca do manej"
+  },
+  {
+    "id": "04ec109c-94ed-4ebb-9870-014d09c4478f",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 35,
+    "score": 0.889,
+    "enunciado_snippet": "Assinale a alternativa que apresenta a primeira carga a ser utilizada de acordo "
+  },
+  {
+    "id": "fe6c17fb-aca7-490f-8d40-4bb97780b289",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 26,
+    "score": 0.938,
+    "enunciado_snippet": "Escolar, com 7 anos de idade, do sexo feminino, previamente hígida, apresenta, e"
+  },
+  {
+    "id": "e814f3f8-01c4-4a79-ab2f-ebcfaed0e6e4",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 28,
+    "score": 0.547,
+    "enunciado_snippet": "Apesar do desenvolvimento de vacinas eficazes e novos testes de diagnósticos ráp"
+  },
+  {
+    "id": "6635e426-da71-45a1-9d02-83bc7b5d367f",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 29,
+    "score": 0.975,
+    "enunciado_snippet": "Uma criança do sexo feminino, de 2 anos de idade, foi levada ao pronto atendimen"
+  },
+  {
+    "id": "6aa17011-ca7a-41c4-a972-c0c5716cb341",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 79,
+    "score": 0.918,
+    "enunciado_snippet": "Entre as alternativas a seguir, assinale a que não apresenta um dos critérios di"
+  },
+  {
+    "id": "d7322a10-c1e0-4316-9887-8962b3b07df4",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 32,
+    "score": 0.657,
+    "enunciado_snippet": "Considerando-se um quadro de traumatismo crânio encefálico em uma criança com me"
+  },
+  {
+    "id": "2c25b49f-f0cb-4a1c-982d-ea095cb42585",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 31,
+    "score": 0.916,
+    "enunciado_snippet": "Um paciente de 10 anos de idade foi levado a uma consulta com queixa de tosse e "
+  },
+  {
+    "id": "c89fdaf8-1c14-451d-beaf-5feb64153362",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 23,
+    "score": 0.934,
+    "enunciado_snippet": "Um menino de 3 anos de idade, previamente hígido, foi levado ao pronto-socorro c"
+  },
+  {
+    "id": "b910b4f0-d683-4e54-8928-4fa4a5fa252a",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 40,
+    "score": 0.75,
+    "enunciado_snippet": "Acerca da obesidade infantil, assinale a alternativa correta."
+  },
+  {
+    "id": "6aef4eac-2e1a-4880-8346-29958effcbba",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 33,
+    "score": 0.939,
+    "enunciado_snippet": "Paciente de 2 anos de idade é levada pela mãe ao hospital com relato de aumento "
+  },
+  {
+    "id": "b4995ac3-3870-48a6-b30e-5ae810a59519",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 24,
+    "score": 0.81,
+    "enunciado_snippet": "Foi levado para o hospital um recém-nascido, do sexo masculino, com 39 semanas d"
+  },
+  {
+    "id": "3bb85151-7f1d-4aec-b0bc-28f96e4b973a",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 38,
+    "score": 0.982,
+    "enunciado_snippet": "Um adolescente de 14 anos de idade dá entrada no pronto-socorro com história de "
+  },
+  {
+    "id": "4aa22009-3b4d-42e0-a022-48cfdcdbdf2b",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 43,
+    "score": 0.962,
+    "enunciado_snippet": "Uma paciente de 42 anos de idade comparece a uma consulta ambulatorial queixando"
+  },
+  {
+    "id": "8a13ae5d-adf0-498c-a733-3031bd70fb88",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 44,
+    "score": 0.772,
+    "enunciado_snippet": "Uma paciente de 45 anos de idade comparece a uma consulta ambulatorial por metro"
+  },
+  {
+    "id": "e430b0c3-b7e4-4814-b282-9bee30cf6b5b",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 48,
+    "score": 0.994,
+    "enunciado_snippet": "Uma paciente de 22 anos de idade, cuja menarca foi aos 14 anos de idade, compare"
+  },
+  {
+    "id": "983a8549-285f-4826-bb42-79f221d38220",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 45,
+    "score": 0.942,
+    "enunciado_snippet": "Uma paciente de 64 anos de idade compareceu ao consultório ginecológico por apre"
+  },
+  {
+    "id": "52671fb3-cd39-49a4-9414-8d2367f41fb6",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 42,
+    "score": 0.984,
+    "enunciado_snippet": "Uma paciente de 27 anos de idade comparece ao pronto-socorro de um hospital e re"
+  },
+  {
+    "id": "e3a79932-a791-4ddc-a83c-609593ca0e47",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 46,
+    "score": 0.952,
+    "enunciado_snippet": "A osteoporose é uma doença esquelética sistêmica e silenciosa. É considerada uma"
+  },
+  {
+    "id": "c650aad0-4887-4a47-ac42-bd89abb61462",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 41,
+    "score": 0.961,
+    "enunciado_snippet": "Em relação a massas anexiais, assinale a alternativa correta."
+  },
+  {
+    "id": "73e01617-8e37-43d7-b0b8-4fc11189af08",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 49,
+    "score": 0.993,
+    "enunciado_snippet": "Uma paciente de 77 anos de idade, cadeirante, foi levada ao consultório pela fil"
+  },
+  {
+    "id": "9294e3f1-e609-4b44-9d40-2d952befcb7c",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 50,
+    "score": 0.767,
+    "enunciado_snippet": "O câncer de mama é o mais incidente em mulheres no mundo. Quanto ao rastreamento"
+  },
+  {
+    "id": "484d9013-691f-4f3f-a8a4-3ec4bfda90a2",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 47,
+    "score": 0.779,
+    "enunciado_snippet": "Paciente de 16 anos de idade comparece sozinha ao consultório referindo tentativ"
+  },
+  {
+    "id": "53fd1b4b-212c-48ac-baca-95dd82494c21",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 64,
+    "score": 0.971,
+    "enunciado_snippet": "Segundo o Caderno de Atenção Primária do Ministério da Saúde, existe boa evidênc"
+  },
+  {
+    "id": "f16c80d4-805d-473e-b42a-487d25fb8c9a",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 87,
+    "score": 0.889,
+    "enunciado_snippet": "Ana, uma mulher de 35 anos de idade, casada, possui uma filha de 7 anos de idade"
+  },
+  {
+    "id": "fa3d5956-5704-4921-947e-fe30882b47b4",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 97,
+    "score": 0.727,
+    "enunciado_snippet": "Um paciente internado em UTI após cirurgia neurológica por fratura de base de cr"
+  },
+  {
+    "id": "2f6efccb-dba6-4049-8472-d5ef2ecb22bc",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 83,
+    "score": 0.974,
+    "enunciado_snippet": "Um rapaz de 18 anos de idade, motoboy, tinha acabado de ser registrado em seu pr"
+  },
+  {
+    "id": "46cc6032-e97f-4419-81d2-1bfe30a50f66",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 81,
+    "score": 0.955,
+    "enunciado_snippet": "Prevenção combinada, segundo o Ministério da Saúde (MS), é uma estratégia de pre"
+  },
+  {
+    "id": "0966cef0-d4a4-41ef-aeba-fd6df047d74c",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 96,
+    "score": 0.957,
+    "enunciado_snippet": "Segundo o Tratado de Medicina de Família, Gusso e Ceratti (2018) afirmam que “o "
+  },
+  {
+    "id": "5d724197-9f2e-4f2f-8375-3cc43232f18d",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 82,
+    "score": 0.944,
+    "enunciado_snippet": "Dona Teresa, de 45 anos de idade, foi visitar os netos para as festas de fim de "
+  },
+  {
+    "id": "c888a432-3664-4a0b-915a-08704eb0660b",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 94,
+    "score": 0.973,
+    "enunciado_snippet": "A atenção primária à saúde (APS) é fundamental para a organização da rede de ate"
+  },
+  {
+    "id": "4ce6f460-f6c2-4ad0-9366-bb1f82f9b276",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 25,
+    "score": 0.943,
+    "enunciado_snippet": "Quanto à vacina contra o HPV disponível no calendário nacional de vacinação do B"
+  },
+  {
+    "id": "34f66b20-0303-43ce-ad7f-0bb9a93ec6fe",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 84,
+    "score": 0.84,
+    "enunciado_snippet": "Acerca das recentes atualizações na lista nacional de agravos de notificação, ju"
+  },
+  {
+    "id": "3dde058f-fc90-4a86-acaa-a7382ff11ca6",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 89,
+    "score": 0.878,
+    "enunciado_snippet": "Em um município de 5.000 habitantes, existe somente uma unidade de saúde da famí"
+  },
+  {
+    "id": "74752f48-ba6a-4f82-97f1-6a7d8bdd5df4",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 88,
+    "score": 0.965,
+    "enunciado_snippet": "Um médico terminou a residência em medicina de família e comunidade recentemente"
+  },
+  {
+    "id": "8236e534-b564-4d0b-a632-123ec5435149",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 85,
+    "score": 0.95,
+    "enunciado_snippet": "Em uma cidade do interior paulista, uma clínica vem fazendo muito sucesso com pr"
+  },
+  {
+    "id": "4f6066f8-ddb7-4556-bcb4-4afaab9c8545",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 93,
+    "score": 0.829,
+    "enunciado_snippet": "Os coeficientes de mortalidade auxiliam as vigilâncias epidemiológicas, juntamen"
+  },
+  {
+    "id": "af0b508a-c324-49cc-8d38-78edb3f942f3",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 92,
+    "score": 0.806,
+    "enunciado_snippet": "Com o objetivo de avaliar o impacto da triagem populacional com o exame de antíg"
+  },
+  {
+    "id": "97ef59c2-1eaa-4645-9bb8-715173401faf",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 99,
+    "score": 0.897,
+    "enunciado_snippet": "A Política Nacional de Atenção Integral à Saúde da Mulher (PNAISM) reflete o com"
+  },
+  {
+    "id": "27b3a613-234e-4d5d-a342-41b9a82ddd9f",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 86,
+    "score": 0.91,
+    "enunciado_snippet": "Em julho de 2022, a Organização Mundial da Saúde (OMS) decretou que a doença var"
+  },
+  {
+    "id": "11a54d13-c191-4253-9d79-5030190394c7",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 66,
+    "score": 0.731,
+    "enunciado_snippet": "Recomenda-se que, pelo risco que oferece à saúde do indivíduo, o tabagismo passi"
+  },
+  {
+    "id": "c65fac20-cf81-4f6b-a82d-87805ea3e1a4",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 90,
+    "score": 0.935,
+    "enunciado_snippet": "Em dezembro de 2022, o governo federal aprovou a Lei n.o  14.510/2022, que autor"
+  },
+  {
+    "id": "3919ce3c-048a-4986-9a45-f8c8985e1a32",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 53,
+    "score": 0.893,
+    "enunciado_snippet": "A respeito dos procedimentos invasivos realizados em medicina fetal, assinale a "
+  },
+  {
+    "id": "8f902fb0-4dc5-40b0-9c6a-b61c9455b83d",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 55,
+    "score": 0.621,
+    "enunciado_snippet": "Com relação ao fórceps, assinale a alternativa correta."
+  },
+  {
+    "id": "90654aec-4180-48c9-90a8-c4d7673a9154",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 60,
+    "score": 0.782,
+    "enunciado_snippet": "O puerpério é o período que sucede o parto e, do ponto de vista fisiológico, com"
+  },
+  {
+    "id": "cc515d37-c515-431e-9412-47847341ba5e",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 52,
+    "score": 0.943,
+    "enunciado_snippet": "Gestante com idade gestacional de 39 semanas e 4 dias internou-se para a indução"
+  },
+  {
+    "id": "49cfbf49-a653-4f72-88d7-257d70d5f60c",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 58,
+    "score": 0.967,
+    "enunciado_snippet": "A respeito do período expulsivo do trabalho de parto, assinale a alternativa cor"
+  },
+  {
+    "id": "b8eb883a-699e-4080-b03b-a2cc32a11c43",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 59,
+    "score": 0.976,
+    "enunciado_snippet": "A respeito da amamentação, assinale a alternativa correta."
+  },
+  {
+    "id": "618bc99a-9334-48f4-8761-958a1258285a",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 57,
+    "score": 0.934,
+    "enunciado_snippet": "A pré-eclâmpsia é uma grave doença multissistêmica caracterizada por hipertensão"
+  },
+  {
+    "id": "04ee7284-c75d-4731-a271-60b47e37d444",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 54,
+    "score": 0.953,
+    "enunciado_snippet": "Primípara a termo, com gestação de risco habitual, foi admitida no centro de par"
+  },
+  {
+    "id": "f43481b7-490c-4352-855a-45462a725b73",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 51,
+    "score": 0.953,
+    "enunciado_snippet": "Uma gestante de 18 anos de idade, com antecedentes de G2 P0 A1, idade gestaciona"
+  },
+  {
+    "id": "488d80ca-685a-4502-82e1-dfa99ce59780",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 56,
+    "score": 0.8,
+    "enunciado_snippet": "Considerando a imagem acima, assinale a alternativa que apresenta uma alteração "
+  }
+]

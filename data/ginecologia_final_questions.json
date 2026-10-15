@@ -458,7 +458,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Câncer do Corpo do Útero.pdf.json"
+    "official_book": "Câncer do Corpo do Útero.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
+      "question_number": 61,
+      "official_gabarito": "B",
+      "verified_at": "2026-10-15T16:48:48.186631"
+    }
   },
   {
     "id": "b509b4dd-6778-4dd0-9285-a3fe24080bc6",
@@ -3520,9 +3532,9 @@
         "text": "Conforme exame de imagem, não há causa estrutural."
       }
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "C",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "D",
+    "correct_answer": "C",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
@@ -3532,11 +3544,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 43",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 43,
-      "official_answer": "D",
-      "score": 74
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T16:46:32.547608"
     }
   },
   {
@@ -6403,7 +6418,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Pólipos Uterinos.pdf.json"
+    "official_book": "Pólipos Uterinos.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
+      "question_number": 44,
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T16:46:32.547667"
+    }
   },
   {
     "id": "94a824f3-dda9-4610-9531-035536f7d4b3",
@@ -9694,7 +9721,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Assistência à Vítima de Violência Sexual.pdf.json"
+    "official_book": "Assistência à Vítima de Violência Sexual.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
+      "question_number": 70,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:48:48.186695"
+    }
   },
   {
     "id": "43108b07-655e-43d9-89c9-6144c2a511a6",
@@ -13144,11 +13183,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2024 Questão 69",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2024,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
       "question_number": 69,
-      "official_answer": "E",
-      "score": 31
+      "official_gabarito": "E",
+      "verified_at": "2026-10-15T16:48:48.186713"
     }
   },
   {
@@ -29212,7 +29254,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Síndrome dos Ovários Policísticos.pdf.json"
+    "official_book": "Síndrome dos Ovários Policísticos.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
+      "question_number": 62,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:48:48.186786"
+    }
   },
   {
     "id": "68f6be5e-76b2-410c-b9c4-219b7c46ae4b",
@@ -33941,9 +33995,9 @@
         "text": "Trata-se de síndrome dos ovários policísticos com fenótipo D, e o tratamento inicial é contracepção hormonal oral."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
@@ -33953,11 +34007,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 48",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 48,
-      "official_answer": "A",
-      "score": 90
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:46:32.547912"
     }
   },
   {
@@ -57822,9 +57879,9 @@
         "text": "Deve-se solicitar histeroscopia com biópsia para diagnóstico histológico da lesão endometrial visualizada no exame de imagem."
       }
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "E",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "D",
+    "correct_answer": "E",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
@@ -57834,11 +57891,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 45",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 45,
-      "official_answer": "D",
-      "score": 86
+      "official_gabarito": "E",
+      "verified_at": "2026-10-15T16:46:32.548085"
     }
   },
   {
@@ -80225,7 +80285,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Amenorreia.pdf.json"
+    "official_book": "Amenorreia.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 62,
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T16:44:17.803762"
+    }
   },
   {
     "id": "3cbc9b79-64bd-4b93-abc7-afc681a07b72",
@@ -82409,20 +82481,23 @@
         "text": "deverá fazer profilaxia para HIV, pois tal conduta é necessária em todos os casos de abuso."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "C",
+    "correct_answer": "D",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_anulada": false,
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 42",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 42,
-      "official_answer": "C",
-      "score": 48
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:46:32.548227"
     }
   },
   {
@@ -87849,7 +87924,7 @@
     "subfoco": "Fatores de Risco e Prevenção Primária",
     "difficulty": "Difícil",
     "type": "Múltipla escolha",
-    "isAnulada": false,
+    "isAnulada": true,
     "statement": "A osteoporose é uma doença esquelética sistêmica e silenciosa. É considerada uma doença osteometabólica caracterizada por resistência óssea comprometida, predispondo a um risco aumentado de fratura. A resistência óssea é uma função tanto de quantidade óssea, estimada pela medição da densidade mineral óssea, quanto de qualidade óssea, conjunto de propriedades que inclui microarquitetura óssea, taxa de remodelação, grau de mineralização e normalidade da matriz osteoide. Em relação à osteoporose na menopausa, assinale a alternativa correta.",
     "options": [
       {
@@ -87873,20 +87948,23 @@
         "text": "Os agentes anticatabólicos estimulam a atividade osteoclástica e aumentam a remodelação óssea."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": null,
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "is_anulada": false,
-    "correct_answer": "B",
+    "is_anulada": true,
+    "correct_answer": null,
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 46",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 46,
-      "official_answer": "B",
-      "score": 41
+      "official_gabarito": "ANULADA",
+      "verified_at": "2026-10-15T16:46:32.548266"
     }
   },
   {
@@ -89020,11 +89098,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2024 Questão 65",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2024,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
       "question_number": 65,
-      "official_answer": "A",
-      "score": 26
+      "official_gabarito": "A",
+      "verified_at": "2026-10-15T16:48:48.187050"
     }
   },
   {
@@ -107488,7 +107569,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Incontinência Urinária.pdf.json"
+    "official_book": "Incontinência Urinária.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 67,
+      "official_gabarito": "B",
+      "verified_at": "2026-10-15T16:44:17.803931"
+    }
   },
   {
     "id": "bcf345d9-f08a-4835-afc0-26dd69a77064",
@@ -122396,11 +122489,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2024 Questão 64",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2024,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
       "question_number": 64,
-      "official_answer": "D",
-      "score": 31
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:48:48.187207"
     }
   },
   {
@@ -149083,9 +149179,9 @@
         "text": "Mutações dos genes BRCA1 e BRCA2 nada têm a ver com tumores ovarianos, relacionando-se apenas com tumores de mama."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "A",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "B",
+    "correct_answer": "A",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
@@ -149095,11 +149191,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 41",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 41,
-      "official_answer": "B",
-      "score": 6
+      "official_gabarito": "A",
+      "verified_at": "2026-10-15T16:46:32.548588"
     }
   },
   {
@@ -151232,7 +151331,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Infertilidade Conjugal.pdf.json"
+    "official_book": "Infertilidade Conjugal.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 70,
+      "official_gabarito": "E",
+      "verified_at": "2026-10-15T16:44:17.804119"
+    }
   },
   {
     "id": "a45bfdec-0dfb-4404-856f-637c969d3237",
@@ -167021,7 +167132,19 @@
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "correct_answer": "E",
     "mainErrorReason": "",
-    "takeHomeMessage": ""
+    "takeHomeMessage": "",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
+      "question_number": 49,
+      "official_gabarito": "E",
+      "verified_at": "2026-10-15T16:46:32.548677"
+    }
   },
   {
     "id": "f77c5b2c-cd79-424e-b0ea-b4cc414a8250",
@@ -183046,9 +183169,9 @@
         "text": "A mamografia é dispensável e pode ser substituída pela ultrassonografia no rastreio do câncer de mama."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
@@ -183058,11 +183181,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 50",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 50,
-      "official_answer": "A",
-      "score": 15
+      "official_gabarito": "B",
+      "verified_at": "2026-10-15T16:46:32.548768"
     }
   },
   {
@@ -234286,7 +234412,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Planejamento Familiar.pdf.json"
+    "official_book": "Planejamento Familiar.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
+      "question_number": 84,
+      "official_gabarito": "E",
+      "verified_at": "2026-10-15T16:48:48.187687"
+    }
   },
   {
     "id": "9e5fd669-0d38-4a97-aa30-23009c903f31",
@@ -240324,11 +240462,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2024 Questão 68",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2024,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
       "question_number": 68,
-      "official_answer": "C",
-      "score": 40
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T16:48:48.187753"
     }
   },
   {
@@ -243532,7 +243673,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Rastreamento do Câncer de Colo Uterino.pdf.json"
+    "official_book": "Rastreamento do Câncer de Colo Uterino.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 69,
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T16:44:17.804582"
+    }
   },
   {
     "id": "d067957e-72e1-41fd-a61e-9f444b4b6d86",
@@ -253533,7 +253686,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Úlceras Genitais.pdf.json"
+    "official_book": "Úlceras Genitais.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 63,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:44:17.804640"
+    }
   },
   {
     "id": "14064a02-7685-4ca9-920b-009f6439b12b",
@@ -287649,7 +287814,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Climatério e Terapia Hormonal.pdf.json"
+    "official_book": "Climatério e Terapia Hormonal.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 64,
+      "official_gabarito": "B",
+      "verified_at": "2026-10-15T16:44:17.804789"
+    }
   },
   {
     "id": "aaaa7c04-0a1c-4630-a625-1dad336a8c5d",
@@ -300668,9 +300845,9 @@
         "text": "fechar o diagnóstico de insensibilidade completa aos androgênios."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "B",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
@@ -300680,11 +300857,14 @@
     "official_source": "Gabarito Oficial Definitivo Quadrix SUS-SP 2023 Questão 47",
     "official_audit": {
       "verified": true,
-      "institution": "SUS-SP",
-      "year": 2023,
+      "source": "SUS_SP_2023_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2023 (Acesso Direto)",
+      "exam_date": "Janeiro/2023",
+      "prova_source": "100-121_PROGRAMAS DE ACESSO DIRETO_prova_objetiva_SES-SP_RM_2023_QUADRIX.pdf",
       "question_number": 47,
-      "official_answer": "C",
-      "score": 47
+      "official_gabarito": "B",
+      "verified_at": "2026-10-15T16:46:32.549512"
     }
   },
   {
@@ -305947,7 +306127,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Câncer do Corpo do Útero.pdf.json"
+    "official_book": "Câncer do Corpo do Útero.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
+      "question_number": 63,
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T16:48:48.188353"
+    }
   },
   {
     "id": "2749af5f-2860-4f1b-bae6-fd6ca29e42a5",
@@ -335364,7 +335556,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Planejamento Familiar.pdf.json"
+    "official_book": "Planejamento Familiar.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 65,
+      "official_gabarito": "A",
+      "verified_at": "2026-10-15T16:44:17.805219"
+    }
   },
   {
     "id": "f6b32144-2a87-4159-bbb5-3bf0e1e24227",
@@ -401944,7 +402148,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Planejamento Familiar.pdf.json"
+    "official_book": "Planejamento Familiar.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 90,
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T16:44:17.805769"
+    }
   },
   {
     "id": "9e226360-234b-447e-a293-f28b9a293d2c",
@@ -426227,7 +426443,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Planejamento Familiar.pdf.json"
+    "official_book": "Planejamento Familiar.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
+      "question_number": 99,
+      "official_gabarito": "B",
+      "verified_at": "2026-10-15T16:48:48.189022"
+    }
   },
   {
     "id": "7f4ff762-e4e6-4af7-8a2c-c11dc99aacbf",
@@ -431000,7 +431228,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Câncer de Mama.pdf.json"
+    "official_book": "Câncer de Mama.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 68,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:44:17.805973"
+    }
   },
   {
     "id": "cfd52cf5-d9d9-41a4-b7c9-2e736a6a9061",
@@ -456533,7 +456773,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Rastreamento do Câncer de Colo Uterino.pdf.json"
+    "official_book": "Rastreamento do Câncer de Colo Uterino.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2024_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2024 (Acesso Direto)",
+      "exam_date": "16/12/2023",
+      "prova_source": "SUS_SP_2024_PV_AD.pdf",
+      "question_number": 25,
+      "official_gabarito": "A",
+      "verified_at": "2026-10-15T16:48:48.189155"
+    }
   },
   {
     "id": "82254f50-80f7-4479-8d52-a295dae33abb",
@@ -474212,7 +474464,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Anatomia e Embriologia do Trato Genital Feminino.pdf.json"
+    "official_book": "Anatomia e Embriologia do Trato Genital Feminino.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SUS_SP_2022_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Seleção Pública para Residência Médica SUS/SP 2022 (Acesso Direto)",
+      "exam_date": "Janeiro/2022",
+      "prova_source": "QUADRIX_001_SES-SP-RM-2022_Prova_Objetiva_ACESSO DIRETO-AREAS BASICAS_.pdf",
+      "question_number": 66,
+      "official_gabarito": "A",
+      "verified_at": "2026-10-15T16:44:17.806850"
+    }
   },
   {
     "id": "6dac8e74-4146-4062-a0c2-a628180c49d0",
