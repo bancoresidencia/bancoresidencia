@@ -52,12 +52,14 @@ for spec, path in specialty_files:
                 gold_map[qid] = record
                 added_new += 1
             else:
-                # Atualiza se não tinha audit
                 curr = gold_map[qid]
-                if q.get('official_audit') and not curr.get('audit', {}).get('verified'):
-                    curr['audit'] = audit_info
-                    curr['correct_answer'] = val
-                    updated_existing += 1
+                if q.get('official_audit'):
+                    if curr.get('audit') != audit_info or curr.get('correct_answer') != val:
+                        curr['audit'] = audit_info
+                        curr['correct_answer'] = val
+                        curr['institution'] = q.get('institution') or curr.get('institution')
+                        curr['year'] = q.get('year') or curr.get('year')
+                        updated_existing += 1
 
 out_list = list(gold_map.values())
 with open(gold_path, 'w', encoding='utf-8') as fp:

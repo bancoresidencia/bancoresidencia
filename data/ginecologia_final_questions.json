@@ -16203,14 +16203,18 @@
     ],
     "correctAnswer": "C",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "source": "drive_knowledge_book",
-      "book": "Câncer do Corpo do Útero.pdf.json",
-      "specialty": "Gineco"
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 29,
+      "official_answer": "C",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.333028"
     },
     "is_anulada": false,
     "homologated_exam": true,
@@ -16221,7 +16225,19 @@
       "question_number": 8,
       "overlap_score": 25,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 29,
+    "number": 29,
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 29,
+        "official_answer": "C",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "c40752db-2410-442c-897d-64c09a5e7e3d",
@@ -40270,10 +40286,10 @@
         "text": "Cariótipo 47 XXY."
       }
     ],
-    "correctAnswer": "",
+    "correctAnswer": null,
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "is_anulada": false,
-    "correct_answer": "B",
+    "is_anulada": true,
+    "correct_answer": null,
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "homologated_exam": true,
@@ -40284,7 +40300,29 @@
       "question_number": 8,
       "overlap_score": 53,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 23,
+    "number": 23,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 23,
+      "official_answer": "*",
+      "is_anulada": true,
+      "timestamp": "2026-10-15T14:32:01.333515"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 23,
+        "official_answer": "*",
+        "is_anulada": true,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "64095ede-c320-410c-ad64-e1c3cab68a33",
@@ -62139,9 +62177,13 @@
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "source": "drive_knowledge_book",
-      "book": "Síndrome dos Ovários Policísticos.pdf.json",
-      "specialty": "Gineco"
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 24,
+      "official_answer": "B",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.333925"
     },
     "is_anulada": false,
     "homologated_exam": true,
@@ -62152,7 +62194,19 @@
       "question_number": 8,
       "overlap_score": 43,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 24,
+    "number": 24,
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 24,
+        "official_answer": "B",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "7a9ee30a-4aec-4e10-b2e4-d2e75d3fc0a1",
@@ -68116,7 +68170,7 @@
         "text": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2023/alternativas/caso-3-paciente-27-anos-refere-dor-pelvica-ha-2-dias-e-piora-alternativa-3.webp"
       }
     ],
-    "correctAnswer": "",
+    "correctAnswer": "B",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "imageUrl": "/images/questoes/ginecologia/caso-3-paciente-27-anos-refere-dor-pelvica-ha-2-dias-e-piora-01.webp",
     "images": [
@@ -68134,7 +68188,29 @@
       "question_number": 8,
       "overlap_score": 54,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 105,
+    "number": 105,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 105,
+      "official_answer": "B",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.334063"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 105,
+        "official_answer": "B",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "d44f2d4e-3172-41ee-9d76-9c6b3f343849",
@@ -106086,7 +106162,30 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Vulvovaginites.pdf.json"
+    "official_book": "Vulvovaginites.pdf.json",
+    "question_number": 114,
+    "number": 114,
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_FUVEST_2024",
+      "concurso": "COREME/FM/AD Nº 01/2023",
+      "caderno": "PROVA A1",
+      "question_number": 114,
+      "official_answer": "A",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:35:07.139176"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2024_GB.pdf / USP_FUVEST_2024_PV.pdf (PROVA A1)",
+        "question_number": 114,
+        "official_answer": "A",
+        "is_anulada": false,
+        "date": "2026-10-15 14:35:07"
+      }
+    ]
   },
   {
     "id": "4eaf0d39-c54e-4c3d-a214-19c3f12fa557",
@@ -219986,9 +220085,13 @@
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "source": "drive_knowledge_book",
-      "book": "Doenças Benignas da Mama.pdf.json",
-      "specialty": "Gineco"
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 21,
+      "official_answer": "B",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.336139"
     },
     "is_anulada": false,
     "homologated_exam": true,
@@ -219999,7 +220102,19 @@
       "question_number": 8,
       "overlap_score": 61,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 21,
+    "number": 21,
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 21,
+        "official_answer": "B",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "a3b65c61-9b4e-497a-8734-99969afe6096",
@@ -298310,7 +298425,7 @@
     ],
     "correctAnswer": "C",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_official": true,
@@ -298325,7 +298440,29 @@
       "question_number": 8,
       "overlap_score": 33,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 71,
+    "number": 71,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 71,
+      "official_answer": "C",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.337330"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 71,
+        "official_answer": "C",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "d14d2d03-d5e4-4999-9c45-b78323bfdd1c",
@@ -313582,13 +313719,13 @@
         "text": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685582331-0.863239705381562.webp"
       }
     ],
-    "correctAnswer": "",
+    "correctAnswer": "A",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "imageUrl": "/images/questoes/ginecologia/caso-3-paciente-27-anos-refere-dor-pelvica-ha-2-dias-e-piora-01.webp",
     "images": [
       "/images/questoes/ginecologia/caso-3-paciente-27-anos-refere-dor-pelvica-ha-2-dias-e-piora-01.webp"
     ],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "is_anulada": false,
@@ -313600,7 +313737,29 @@
       "question_number": 8,
       "overlap_score": 66,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 106,
+    "number": 106,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 106,
+      "official_answer": "A",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.337863"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 106,
+        "official_answer": "A",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "9000c15e-0e3a-46f8-ad08-1ea07cfe4df5",
@@ -336833,14 +336992,18 @@
     ],
     "correctAnswer": "D",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "B",
+    "correct_answer": "D",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "source": "drive_knowledge_book",
-      "book": "Câncer do Corpo do Útero.pdf.json",
-      "specialty": "Gineco"
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 25,
+      "official_answer": "D",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.338243"
     },
     "is_anulada": false,
     "homologated_exam": true,
@@ -336851,7 +337014,19 @@
       "question_number": 8,
       "overlap_score": 43,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 25,
+    "number": 25,
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 25,
+        "official_answer": "D",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "33ed7788-d2c4-4b25-a88c-ffc39cc72222",
@@ -369015,14 +369190,18 @@
     ],
     "correctAnswer": "C",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "source": "drive_knowledge_book",
-      "book": "Rastreamento do Câncer de Colo Uterino.pdf.json",
-      "specialty": "Gineco"
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 70,
+      "official_answer": "C",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.338724"
     },
     "is_anulada": false,
     "homologated_exam": true,
@@ -369033,7 +369212,19 @@
       "question_number": 8,
       "overlap_score": 24,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 70,
+    "number": 70,
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 70,
+        "official_answer": "C",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "3416fead-5642-4028-891b-3874aef5cc7a",
@@ -381300,15 +381491,27 @@
         "text": "Clitóris."
       }
     ],
-    "correctAnswer": "",
+    "correctAnswer": "C",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "imageUrl": "/images/questoes/ginecologia/na-figura-1-abaixo-a-seta-indica-os-01.webp",
     "images": [
       "/images/questoes/ginecologia/na-figura-1-abaixo-a-seta-indica-os-01.webp"
     ],
-    "correct_answer": "",
+    "correct_answer": "C",
     "mainErrorReason": "",
-    "takeHomeMessage": ""
+    "takeHomeMessage": "",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "AMRIGS_2024_GABARITO.pdf",
+      "banca": "Fundatec / AMRIGS",
+      "edital": "Edital 01/2024 (Concurso AMB, AMRIGS, ACM, AMMS 2024/2025)",
+      "exam_date": "17/11/2024",
+      "prova_source": "AMRIGS_2024_PROVA.pdf",
+      "question_number": 47,
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T14:53:35.939506"
+    }
   },
   {
     "id": "4e12493d-f831-4e86-a5a7-7219b6cc0840",
@@ -395992,7 +396195,7 @@
         "text": "Colpo-sacro fixação."
       }
     ],
-    "correctAnswer": "",
+    "correctAnswer": "B",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "correct_answer": "B",
     "mainErrorReason": "",
@@ -396006,7 +396209,29 @@
       "question_number": 8,
       "overlap_score": 50,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 26,
+    "number": 26,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 26,
+      "official_answer": "B",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.341171"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 26,
+        "official_answer": "B",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "53059259-644f-4eb9-9192-b8a77f54c4e8",
@@ -407655,7 +407880,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Dermatoses Infecciosas.pdf.json"
+    "official_book": "Dermatoses Infecciosas.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "AMRIGS_2023_GABARITO.pdf",
+      "banca": "Fundatec / AMRIGS",
+      "edital": "Edital 02/2023 (Concurso AMB, AMRIGS, ACM, AMMS 2023/2024)",
+      "exam_date": "19/11/2023",
+      "prova_source": "AMRIGS_2023_PROVA.pdf",
+      "question_number": 46,
+      "official_gabarito": "A",
+      "verified_at": "2026-10-15T15:07:16.619500"
+    }
   },
   {
     "id": "59b69ebe-fc0d-4130-9ec3-c2a20e5ae006",
@@ -430163,7 +430400,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Rastreamento do Câncer de Mama.pdf.json"
+    "official_book": "Rastreamento do Câncer de Mama.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "AMRIGS_2024_GABARITO.pdf",
+      "banca": "Fundatec / AMRIGS",
+      "edital": "Edital 01/2024 (Concurso AMB, AMRIGS, ACM, AMMS 2024/2025)",
+      "exam_date": "17/11/2024",
+      "prova_source": "AMRIGS_2024_PROVA.pdf",
+      "question_number": 43,
+      "official_gabarito": "C",
+      "verified_at": "2026-10-15T14:53:35.939873"
+    }
   },
   {
     "id": "fce5f2a4-8e5c-4cf6-aa94-745a8addc2b0",
@@ -452485,9 +452734,13 @@
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "source": "drive_knowledge_book",
-      "book": "Ciclo Menstrual.pdf.json",
-      "specialty": "Gineco"
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 27,
+      "official_answer": "B",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.342090"
     },
     "is_anulada": false,
     "homologated_exam": true,
@@ -452498,7 +452751,19 @@
       "question_number": 8,
       "overlap_score": 23,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 27,
+    "number": 27,
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 27,
+        "official_answer": "B",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "a56cd677-3de8-4a6b-86c0-f849f1ad2abc",
@@ -454149,7 +454414,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Tumores Anexiais e Câncer de Ovário.pdf.json"
+    "official_book": "Tumores Anexiais e Câncer de Ovário.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "AMRIGS_2023_GABARITO.pdf",
+      "banca": "Fundatec / AMRIGS",
+      "edital": "Edital 02/2023 (Concurso AMB, AMRIGS, ACM, AMMS 2023/2024)",
+      "exam_date": "19/11/2023",
+      "prova_source": "AMRIGS_2023_PROVA.pdf",
+      "question_number": 40,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T15:07:16.620459"
+    }
   },
   {
     "id": "ef058708-886c-4afd-be4e-26265f4a2edf",
@@ -465789,7 +466066,26 @@
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "correct_answer": "D",
     "mainErrorReason": "",
-    "takeHomeMessage": ""
+    "takeHomeMessage": "",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_HCRP_2024",
+      "institution": "USP/HCRP - Hospital das Clínicas de Ribeirão Preto (SP)",
+      "year": 2024,
+      "official_answer": "D",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:39:09.246806"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_HCRP_2024_GABARITO_DEFINITIVO",
+        "official_answer": "D",
+        "is_anulada": false,
+        "date": "2026-10-15 14:39:09"
+      }
+    ]
   },
   {
     "id": "3a01f258-236b-4adb-8380-eb8b056cfb4d",
@@ -465832,7 +466128,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Rastreamento do Câncer de Colo Uterino.pdf.json"
+    "official_book": "Rastreamento do Câncer de Colo Uterino.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "AMRIGS_2023_GABARITO.pdf",
+      "banca": "Fundatec / AMRIGS",
+      "edital": "Edital 02/2023 (Concurso AMB, AMRIGS, ACM, AMMS 2023/2024)",
+      "exam_date": "19/11/2023",
+      "prova_source": "AMRIGS_2023_PROVA.pdf",
+      "question_number": 45,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T15:07:16.620771"
+    }
   },
   {
     "id": "baaca559-14a0-433f-bd14-45c019fd31ee",
@@ -492168,14 +492476,18 @@
     ],
     "correctAnswer": "D",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
-    "correct_answer": "B",
+    "correct_answer": "D",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "source": "drive_knowledge_book",
-      "book": "Ciclo Menstrual.pdf.json",
-      "specialty": "Gineco"
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 28,
+      "official_answer": "D",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.342718"
     },
     "is_anulada": false,
     "homologated_exam": true,
@@ -492186,7 +492498,19 @@
       "question_number": 8,
       "overlap_score": 27,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 28,
+    "number": 28,
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 28,
+        "official_answer": "D",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "fd9fdba9-d77c-4bed-96ba-906be4ea2734",
@@ -499819,7 +500143,19 @@
     "takeHomeMessage": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Anatomia e Embriologia do Trato Genital Feminino.pdf.json"
+    "official_book": "Anatomia e Embriologia do Trato Genital Feminino.pdf.json",
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "AMRIGS_2023_GABARITO.pdf",
+      "banca": "Fundatec / AMRIGS",
+      "edital": "Edital 02/2023 (Concurso AMB, AMRIGS, ACM, AMMS 2023/2024)",
+      "exam_date": "19/11/2023",
+      "prova_source": "AMRIGS_2023_PROVA.pdf",
+      "question_number": 57,
+      "official_gabarito": "B",
+      "verified_at": "2026-10-15T15:07:16.621477"
+    }
   },
   {
     "id": "f13577df-9b8b-47fd-bdec-10dbc5658bdb",
@@ -503347,7 +503683,7 @@
         "text": "A variante com maior efeito sobre o CM total foi a rs1042538."
       }
     ],
-    "correctAnswer": "",
+    "correctAnswer": "B",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "imageUrl": "/images/questoes/ginecologia/o-cancer-de-mama-cm-e-um-importante-problema-de-saude-public-01.webp",
     "images": [
@@ -503365,7 +503701,29 @@
       "question_number": 8,
       "overlap_score": 57,
       "source": "FUVEST Oficial Retificado 2023"
-    }
+    },
+    "question_number": 77,
+    "number": 77,
+    "official_audit": {
+      "verified": true,
+      "exam_id": "USP_FUVEST_2023",
+      "concurso": "COREME/FM - 01/2022",
+      "caderno": "PROVA A - Áreas Básicas e de Acesso Direto",
+      "question_number": 77,
+      "official_answer": "B",
+      "is_anulada": false,
+      "timestamp": "2026-10-15T14:32:01.342935"
+    },
+    "audit_trail": [
+      {
+        "action": "homologate_official_gabarito",
+        "source": "USP_FUVEST_2023_GB.pdf (Prova A) / USP_FUVEST_2023_PV.pdf",
+        "question_number": 77,
+        "official_answer": "B",
+        "is_anulada": false,
+        "date": "2026-10-15 14:32:01"
+      }
+    ]
   },
   {
     "id": "7c8375e2-8b02-4199-b9e0-9dab146f44ab",
