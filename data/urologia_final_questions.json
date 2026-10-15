@@ -18975,6 +18975,17 @@
       "question_number": 26,
       "overlap_score": 6,
       "source": "Quadrix Oficial Definitivo 2021 (CID 1243)"
+    },
+    "official_audit": {
+      "verified": true,
+      "source": "SANTA_CASA_2021_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Concurso Residência Médica ISCMSP 2021 (Acesso Direto)",
+      "exam_date": "20/12/2020",
+      "prova_source": "100_ISCMSP_RM_2021_Programa_Acesso_Direto_QUADRIX",
+      "question_number": 26,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:15:39.940280"
     }
   },
   {
@@ -33560,7 +33571,7 @@
     "correctAnswer": "D",
     "commentary": "Gabarito Oficial: Alternativa D.\n\nResumo Clínico:\nA classificação das lesões renais traumáticas pela AAST (American Association for the Surgery of Trauma) utiliza principalmente os achados da tomografia para definir a gravidade e orientar o manejo.O ponto central da questão é reconhecer que o grau da lesão não depende apenas do tamanho da laceração. Uma lesão renal de 3 cm poderia sugerir uma lesão parenquimatosa, mas a presença de comprometimento vascular renal é o achado que muda a classificação para grau IV quando não há descrição de avulsão do pedículo.O raciocínio para a prova é:Graus I e II: lesões menores, sem alterações profundas;Grau III: laceração profunda do parênquima, sem lesão vascular ou sistema coletor;Grau IV: lesão vascular segmentar ou laceração complexa envolvendo estruturas importantes;Grau V: destruição renal extensa ou avulsão do hilo renal.Assim, o achado vascular descrito no enunciado é o elemento que define a alternativa correta.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): A lesão renal grau I corresponde a alterações mínimas, como contusão renal ou hematoma subcapsular sem laceração significativa. O achado descrito de lesão de 3 cm associada a alteração vascular ultrapassa esse nível de gravidade.\n• Alternativa B (Incorreta): As lesões grau II envolvem principalmente hematomas maiores ou lacerações superficiais, sem comprometimento vascular relevante. A presença de lesão dos vasos renais torna o quadro mais complexo e incompatível com esse grau.\n• Alternativa C (Incorreta): A lesão grau III é caracterizada por laceração renal profunda, geralmente maior que 1 cm, mas sem comprometimento do sistema coletor ou lesão vascular importante. Neste caso, o achado que define a gravidade é o acometimento vascular, levando a classificação superior.\n• Alternativa D (Correta): A presença de lesão vascular renal com hematoma retroperitoneal contido caracteriza lesão renal grau IV na classificação da AAST. Esse grau inclui lesões vasculares segmentares e lacerações complexas que não chegam à destruição completa do órgão.O tamanho da lesão parenquimatosa (3 cm) isoladamente não seria suficiente para classificar como grau IV, mas o comprometimento vascular é o dado decisivo para a classificação.\n• Alternativa E (Incorreta): A lesão grau V é reservada para os traumas renais mais graves, como avulsão do pedículo renal, rim completamente fragmentado ou destruição extensa do órgão. Uma lesão vascular sem descrição de avulsão do hilo renal não deve ser classificada automaticamente como grau V.\n\nReferências: AAST Organ Injury Scale (OIS) - Kidney Injury Scale; Campbell-Walsh-Wein Urology, capítulo de trauma geniturinário",
     "images": [],
-    "correct_answer": "C",
+    "correct_answer": "D",
     "homologated_exam": true,
     "official_exam_meta": {
       "institution": "Santa Casa",
@@ -33569,6 +33580,18 @@
       "question_number": 33,
       "overlap_score": 35,
       "source": "Quadrix Oficial Definitivo 2020"
+    },
+    "is_anulada": false,
+    "official_audit": {
+      "verified": true,
+      "source": "SANTA_CASA_2020_GABARITO_DEFINITIVO.pdf",
+      "banca": "Instituto Quadrix",
+      "edital": "Concurso Residência Médica ISCMSP 2020 (Acesso Direto)",
+      "exam_date": "23/11/2019",
+      "prova_source": "100_ISCMSP_RM_2020_Programa_Acesso_Direto_QUADRIX_Cad. Prova.pdf",
+      "question_number": 33,
+      "official_gabarito": "D",
+      "verified_at": "2026-10-15T16:12:54.355606"
     }
   },
   {
