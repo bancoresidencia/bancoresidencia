@@ -10,6 +10,7 @@ export interface UserAccount {
   dailyGoal: number;
   phone?: string;
   state?: string;
+  role?: 'admin' | 'student';
   createdAt: string;
 }
 

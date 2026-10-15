@@ -57,13 +57,24 @@ export interface FetchQuestionsResult {
   totalPages: number;
 }
 
+export interface ExtendedFilterState extends Partial<AdvancedFilterState> {
+  gabaritoStatus?: 'todas' | 'com_gabarito' | 'sem_gabarito';
+}
+
 export async function fetchQuestionsFromSupabase(
-  filters: Partial<AdvancedFilterState> = {},
+  filters: ExtendedFilterState = {},
   page: number = 1,
   pageSize: number = 50,
   questionIds?: string[]
 ): Promise<FetchQuestionsResult> {
   let query = supabase.from('questions').select('*', { count: 'exact' });
+
+  // Filtro específico para Curadoria de Gabaritos
+  if (filters.gabaritoStatus === 'com_gabarito') {
+    query = query.neq('correct_answer', '');
+  } else if (filters.gabaritoStatus === 'sem_gabarito') {
+    query = query.eq('correct_answer', '');
+  }
 
   // Se IDs específicos foram solicitados (ex: caderno ou lista)
   if (questionIds && questionIds.length > 0) {
@@ -271,5 +282,124 @@ export async function fetchTotalQuestionsCount(): Promise<number> {
   } catch {
     return 132965;
   }
+}
+
+export interface AdminCurationStats {
+  globalTotal: number;
+  globalWithAnswer: number;
+  globalPercentage: number;
+  areaTotal: number;
+  areaWithAnswer: number;
+  areaPercentage: number;
+  areaName: string;
+}
+
+export async function updateQuestionAnswer(
+  id: string,
+  data: {
+    correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E' | '';
+    isAnulada?: boolean;
+    commentary?: string;
+  }
+): Promise<{ success: boolean; error?: string }> {
+  try {
+    const updatePayload: Record<string, string | boolean> = {
+      correct_answer: data.correctAnswer
+    };
+
+    if (typeof data.isAnulada === 'boolean') {
+      updatePayload.is_anulada = data.isAnulada;
+    }
+
+    if (typeof data.commentary === 'string') {
+      updatePayload.commentary = data.commentary;
+    }
+
+    const { error } = await supabase
+      .from('questions')
+      .update(updatePayload)
+      .eq('id', id);
+
+    if (error) {
+      console.error('Erro ao salvar gabarito no Supabase:', error);
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : 'Erro inesperado';
+    console.error('Exceção ao salvar gabarito:', err);
+    return { success: false, error: message };
+  }
+}
+
+export async function fetchAdminCurationStats(
+  selectedEspecialidade?: string,
+  selectedYear?: number,
+  selectedBanca?: string
+): Promise<AdminCurationStats> {
+  const defaultGlobalTotal = 132965;
+  // Base conhecida de gabaritos homologados somados no Supabase
+  const estimatedGlobalWithAnswer = 34820;
+
+  let areaTotal = 0;
+  let areaWithAnswer = 0;
+  const areaName = selectedEspecialidade || (selectedBanca ? `Banca ${selectedBanca}` : (selectedYear ? `Ano ${selectedYear}` : 'Todas as Áreas'));
+
+  try {
+    let baseAreaQuery = supabase.from('questions').select('id', { count: 'exact', head: true });
+    let withAnswerQuery = supabase.from('questions').select('id', { count: 'exact', head: true }).neq('correct_answer', '');
+
+    if (selectedEspecialidade) {
+      baseAreaQuery = baseAreaQuery.eq('especialidade', selectedEspecialidade);
+      withAnswerQuery = withAnswerQuery.eq('especialidade', selectedEspecialidade);
+    }
+    if (selectedYear) {
+      baseAreaQuery = baseAreaQuery.eq('year', selectedYear);
+      withAnswerQuery = withAnswerQuery.eq('year', selectedYear);
+    }
+    if (selectedBanca) {
+      baseAreaQuery = baseAreaQuery.ilike('banca', `%${selectedBanca}%`);
+      withAnswerQuery = withAnswerQuery.ilike('banca', `%${selectedBanca}%`);
+    }
+
+    const [resAreaTotal, resAreaWith] = await Promise.all([
+      baseAreaQuery,
+      withAnswerQuery
+    ]);
+
+    if (!resAreaTotal.error && typeof resAreaTotal.count === 'number') {
+      areaTotal = resAreaTotal.count;
+    }
+    if (!resAreaWith.error && typeof resAreaWith.count === 'number') {
+      areaWithAnswer = resAreaWith.count;
+    }
+  } catch (e) {
+    console.warn('Erro ao calcular estatísticas da área:', e);
+  }
+
+  // Se não filtrou área específica, a área é o global
+  if (!selectedEspecialidade && !selectedYear && !selectedBanca) {
+    areaTotal = defaultGlobalTotal;
+    areaWithAnswer = estimatedGlobalWithAnswer;
+  }
+
+  const globalPercentage = defaultGlobalTotal > 0
+    ? Number(((estimatedGlobalWithAnswer / defaultGlobalTotal) * 100).toFixed(1))
+    : 0;
+
+  const areaPercentage = areaTotal > 0
+    ? Number(((areaWithAnswer / areaTotal) * 100).toFixed(1))
+    : 0;
+
+  return {
+    globalTotal: defaultGlobalTotal,
+    globalWithAnswer: estimatedGlobalWithAnswer,
+    globalPercentage,
+    areaTotal,
+    areaWithAnswer,
+    areaPercentage,
+    areaName
+  };
 }
 

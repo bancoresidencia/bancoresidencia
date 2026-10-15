@@ -6,11 +6,12 @@ import { UserAccount, UpdateProfileData } from '@/types/auth';
 const STORAGE_USERS_KEY = 'bancoresidencia_registered_users';
 const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
 
-const DEFAULT_DEMO_USER: UserAccount = {
+export const DEFAULT_DEMO_USER: UserAccount = {
   id: 'user-demo-1',
   name: 'Dr. Lucas Rocha',
   email: 'lucas.rocha@med.br',
   password: 'med123',
+  role: 'student',
   avatarUrl: '',
   specialtyTarget: 'Clínica Médica',
   college: 'Faculdade de Medicina (USP)',
@@ -21,9 +22,26 @@ const DEFAULT_DEMO_USER: UserAccount = {
   createdAt: '2026-01-15T10:00:00.000Z'
 };
 
+export const DEFAULT_ADMIN_USER: UserAccount = {
+  id: 'user-admin-1',
+  name: 'Administrador MedEvo',
+  email: 'admin@medevo.com',
+  password: 'adminmedevo2026',
+  role: 'admin',
+  avatarUrl: '',
+  specialtyTarget: 'Curadoria de Gabaritos',
+  college: 'MedEvo Curadoria Central',
+  graduationYear: 2026,
+  dailyGoal: 100,
+  phone: '(11) 99999-0000',
+  state: 'SP',
+  createdAt: '2026-01-01T00:00:00.000Z'
+};
+
 interface AuthContextType {
   user: UserAccount | null;
   isAuthenticated: boolean;
+  isAdmin: boolean;
   isLoading: boolean;
   login: (email: string, password: string) => Promise<{ success: boolean; message?: string }>;
   register: (data: {
@@ -39,6 +57,7 @@ interface AuthContextType {
   updatePassword: (currentPassword: string, newPassword: string) => Promise<{ success: boolean; message?: string }>;
   updateAvatar: (avatarUrl: string) => Promise<{ success: boolean; message?: string }>;
   loginAsDemo: () => void;
+  loginAsAdmin: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -53,8 +72,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       let usersList: UserAccount[] = [];
       if (storedUsersRaw) {
         usersList = JSON.parse(storedUsersRaw);
+        // Garante que a conta admin sempre exista para acesso imediato no Vercel
+        if (!usersList.some((u) => u.email.toLowerCase() === DEFAULT_ADMIN_USER.email.toLowerCase())) {
+          usersList.push(DEFAULT_ADMIN_USER);
+          localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(usersList));
+        }
       } else {
-        usersList = [DEFAULT_DEMO_USER];
+        usersList = [DEFAULT_DEMO_USER, DEFAULT_ADMIN_USER];
         localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(usersList));
       }
 
@@ -150,11 +174,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     saveCurrentUser(DEFAULT_DEMO_USER);
   };
 
+  const loginAsAdmin = () => {
+    saveCurrentUser(DEFAULT_ADMIN_USER);
+  };
+
   const updateProfile = async (data: UpdateProfileData): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
 
     const rawUsers = localStorage.getItem(STORAGE_USERS_KEY);
-    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER];
+    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER, DEFAULT_ADMIN_USER];
 
     // Se o e-mail foi alterado, checa duplicidade
     if (data.email && data.email.toLowerCase() !== user.email.toLowerCase()) {
@@ -194,7 +222,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
 
     const rawUsers = localStorage.getItem(STORAGE_USERS_KEY);
-    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER];
+    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER, DEFAULT_ADMIN_USER];
 
     const updatedUser: UserAccount = {
       ...user,
@@ -212,11 +240,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return updateProfile({ avatarUrl });
   };
 
+  const isAdmin = Boolean(user && (user.role === 'admin' || user.email.toLowerCase() === 'admin@medevo.com'));
+
   return (
     <AuthContext.Provider
       value={{
         user,
         isAuthenticated: !!user,
+        isAdmin,
         isLoading,
         login,
         register,
@@ -224,7 +255,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         updateProfile,
         updatePassword,
         updateAvatar,
-        loginAsDemo
+        loginAsDemo,
+        loginAsAdmin
       }}
     >
       {children}

@@ -19,6 +19,7 @@ import { ThemeSelector } from '@/components/ThemeSelector';
 import { AuthScreen } from '@/components/AuthScreen';
 import { LandingPage } from '@/components/LandingPage';
 import { StudentProfileSettings } from '@/components/StudentProfileSettings';
+import { AdminCuradoriaGabaritos } from '@/components/AdminCuradoriaGabaritos';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import {
@@ -59,12 +60,13 @@ import {
   BookOpenCheck,
   Check,
   FolderPlus,
-  Clock
+  Clock,
+  ShieldCheck
 } from 'lucide-react';
 
 export default function Home() {
   const { accentConfig } = useTheme();
-  const { user, isAuthenticated, isLoading, loginAsDemo, logout } = useAuth();
+  const { user, isAuthenticated, isAdmin, isLoading, loginAsDemo, logout } = useAuth();
   const [authModal, setAuthModal] = useState<{
     isOpen: boolean;
     mode: 'login' | 'register';
@@ -1144,6 +1146,23 @@ export default function Home() {
                       </div>
 
                       <div className="pt-2 space-y-1">
+                        {isAdmin && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setActiveTab('curadoria');
+                              setProfileDropdownOpen(false);
+                            }}
+                            className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50/50 dark:bg-indigo-950/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all cursor-pointer"
+                          >
+                            <div className="flex items-center gap-2">
+                              <ShieldCheck className="w-3.5 h-3.5" />
+                              <span>Curadoria de Gabaritos</span>
+                            </div>
+                            <ChevronRight className="w-3.5 h-3.5" />
+                          </button>
+                        )}
+
                         <button
                           type="button"
                           onClick={() => {
@@ -1186,7 +1205,8 @@ export default function Home() {
                 { id: 'simulados', label: 'Simulados' },
                 { id: 'stats', label: 'Meu Desempenho' },
                 { id: 'ranking', label: 'Ranking Oficial' },
-                { id: 'configuracoes', label: 'Meu Perfil & Ajustes' }
+                { id: 'configuracoes', label: 'Meu Perfil & Ajustes' },
+                ...(isAdmin ? [{ id: 'curadoria', label: 'Curadoria de Gabaritos' }] : [])
               ].map((item) => (
                 <button
                   key={item.id}
@@ -2006,6 +2026,11 @@ export default function Home() {
               simulatedPercentile={simulatedTestPercentile ?? stats.percentileInfo.percentile ?? 78}
               onSimulatePercentile={(p) => setSimulatedTestPercentile(p)}
             />
+          )}
+
+          {/* ABA 8: CURADORIA DE GABARITOS (PAINEL ADMINISTRATIVO) */}
+          {activeTab === 'curadoria' && (
+            <AdminCuradoriaGabaritos />
           )}
         </main>
 

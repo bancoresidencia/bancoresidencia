@@ -12,10 +12,12 @@ import {
   Settings,
   BookOpen,
   PanelLeftClose,
-  PanelLeftOpen
+  PanelLeftOpen,
+  ShieldCheck
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { useAuth } from '@/context/AuthContext';
 
 interface SidebarProps {
   activeTab: ActiveTab;
@@ -34,6 +36,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onToggleCollapse,
 }) => {
   const { accentConfig } = useTheme();
+  const { isAdmin } = useAuth();
 
   const menuItems = [
     { id: 'home', label: 'Início', icon: Home },
@@ -43,7 +46,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'simulados', label: 'Simulados Oficiais', icon: FileCheck2 },
     { id: 'stats', label: 'Meu Desempenho', icon: BarChart2 },
     { id: 'ranking', label: 'Ranking Oficial', icon: Trophy },
-    { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Settings }
+    { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Settings },
+    ...(isAdmin ? [{ id: 'curadoria', label: 'Curadoria de Gabaritos', icon: ShieldCheck }] : [])
   ];
 
   return (
