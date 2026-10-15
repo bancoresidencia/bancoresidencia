@@ -15,12 +15,12 @@ for t in targets:
     matches = [i for i in insts if t.lower() in i.lower()]
     for m in matches:
         all_q = [q for q in gold if q.get('institution') == m]
-        res = [q for q in all_q if q.get('gabarito_oficial')]
+        res = [q for q in all_q if q.get('correct_answer') or q.get('gabarito_oficial')]
         years = sorted(set(q.get('year') for q in all_q))
         print(f"  Institution: '{m}'")
         print(f"  Total: {len(all_q)} | Resolved: {len(res)} ({len(res)/len(all_q)*100:.1f}%)")
         print("  By year (resolved/total):")
         for y in sorted(years):
             y_all = [q for q in all_q if q.get('year') == y]
-            y_res = [q for q in y_all if q.get('gabarito_oficial')]
+            y_res = [q for q in y_all if q.get('correct_answer') or q.get('gabarito_oficial')]
             print(f"    {y}: {len(y_res)}/{len(y_all)}")

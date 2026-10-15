@@ -14,7 +14,7 @@ const SERVICE_KEY = env.SUPABASE_SERVICE_ROLE_KEY;
 const lote1 = [
   { name: 'SES-PE', term: 'Pernambuco' },
   { name: 'SUS-SP', term: 'SUS-SP' },
-  { name: 'Santa Casa SP', term: 'Santa*Casa*Paulo' },
+  { name: 'Santa Casa SP', term: 'Santa Casa de S' },
   { name: 'IAMSPE', term: 'IAMSPE' },
   { name: 'USP / HCFMUSP', term: 'HCFMUSP' },
   { name: 'USP / HCRP', term: 'HCRP' },
@@ -32,7 +32,7 @@ async function main() {
   let grandAns = 0;
 
   for (const inst of lote1) {
-    const url = `${SUPABASE_URL}/rest/v1/questions?institution=ilike.*${inst.term}*&select=id,correct_answer&limit=5000`;
+    const url = `${SUPABASE_URL}/rest/v1/questions?institution=ilike.%25${encodeURIComponent(inst.term)}%25&select=id,correct_answer&limit=5000`;
     const res = await fetch(url, {
       headers: {
         'apikey': SERVICE_KEY,
