@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useDeferredValue } from 'react';
 import {
   StudyModalidade,
   AdvancedFilterState,
   QuestionStatus,
   QuestionDifficulty,
-  QuestionType
+  QuestionType,
+  Question
 } from '@/types';
 import {
   Search,
@@ -37,11 +38,10 @@ import {
   medevoModalidades,
   medevoAnos,
   medicalInstitutionsDirectory,
-  bancasExaminadorasOficiais,
-  mockQuestions
+  bancasExaminadorasOficiais
 } from '@/data/mockQuestions';
 import { getQuestionCount } from '@/data/hierarchyCounts';
-import { matchesStudyModalidades } from '@/utils/modalidades';
+import { searchQuestionsDirect } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
 
 interface AdvancedQuestionFiltersProps {
@@ -123,11 +123,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [filterSubTab, setFilterSubTab] = useState<'filtrar' | 'encontrar'>('filtrar');
   const [directSearchText, setDirectSearchText] = useState<string>('');
   const [directSearchMode, setDirectSearchMode] = useState<'questao' | 'palavras'>('questao');
-  const [directSearchResults, setDirectSearchResults] = useState<typeof mockQuestions>([]);
+  const [directSearchResults, setDirectSearchResults] = useState<Question[]>([]);
   const [hasSearchedDirect, setHasSearchedDirect] = useState<boolean>(false);
+  const [isSearchingDirect, setIsSearchingDirect] = useState<boolean>(false);
 
-  // Executa busca direta de questão por texto ou termos
-  const handleSearchDirect = () => {
+  // Executa busca direta de questão por texto ou termos contra o acervo real do Supabase
+  const handleSearchDirect = async () => {
     setHasSearchedDirect(true);
     const query = directSearchText.trim();
     if (!query) {
@@ -135,44 +136,16 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       return;
     }
 
-    const normQuery = normalizeText(query);
-    const queryWords = normQuery
-      .split(/[\s,.;:!?\n\r\(\)]+/)
-      .filter(
-        (w) =>
-          w.length >= 3 &&
-          !['com', 'para', 'uma', 'por', 'sobre', 'que', 'dos', 'das', 'nas', 'nos', 'tem', 'foi', 'qual', 'como', 'mais'].includes(w)
-      );
-
-    const matched = mockQuestions.filter((q) => {
-      const normStatement = normalizeText(q.statement);
-      const normCode = normalizeText(q.code);
-      const normInst = normalizeText(q.institution || '');
-      const normBanca = normalizeText(q.banca || '');
-
-      // Substring direta em enunciado ou código
-      if (normStatement.includes(normQuery) || normCode.includes(normQuery)) {
-        return true;
-      }
-
-      // Substring em opções
-      const matchesOption = q.options.some((opt) => normalizeText(opt.text).includes(normQuery));
-      if (matchesOption) return true;
-
-      // Palavras-chave clínicas relevantes
-      if (queryWords.length > 0) {
-        const matchingWordCount = queryWords.filter(
-          (w) => normStatement.includes(w) || normInst.includes(w) || normBanca.includes(w)
-        ).length;
-        if (matchingWordCount >= Math.min(2, queryWords.length)) {
-          return true;
-        }
-      }
-
-      return false;
-    });
-
-    setDirectSearchResults(matched);
+    setIsSearchingDirect(true);
+    try {
+      const results = await searchQuestionsDirect(query, 25);
+      setDirectSearchResults(results);
+    } catch (e) {
+      console.error('Erro na busca direta:', e);
+      setDirectSearchResults([]);
+    } finally {
+      setIsSearchingDirect(false);
+    }
   };
 
   // Estados de acordeões abertos
@@ -194,9 +167,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   // Busca textual dedicada dentro da hierarquia clínica (Especialidades, Temas, Focos, Subfocos)
   const [hierarchySearch, setHierarchySearch] = useState<string>('');
+  const deferredHierarchySearch = useDeferredValue(hierarchySearch);
 
   // Estados e lógica para o filtro de Instituições e Bancas Oficiais
   const [instSearch, setInstSearch] = useState<string>('');
+  const deferredInstSearch = useDeferredValue(instSearch);
   const [instCategory, setInstCategory] = useState<'todas' | 'populares' | 'bancas'>('todas');
 
   const filteredInstituicoes = useMemo(() => {
@@ -216,8 +191,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       list = medicalInstitutionsDirectory;
     }
 
-    if (instSearch.trim()) {
-      const q = instSearch.toLowerCase().trim();
+    if (deferredInstSearch.trim()) {
+      const q = deferredInstSearch.toLowerCase().trim();
       return list.filter(
         (item) =>
           item.sigla.toLowerCase().includes(q) ||
@@ -226,11 +201,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     }
 
     return list;
-  }, [instCategory, instSearch]);
+  }, [instCategory, deferredInstSearch]);
 
   // Filtragem inteligente da hierarquia por texto e identificação de especialidades
   const { filteredHierarchy, hierarchyMatchCount, matchesByEsp } = useMemo(() => {
-    if (!hierarchySearch.trim()) {
+    if (!deferredHierarchySearch.trim()) {
       return {
         filteredHierarchy: medevoHierarchy,
         hierarchyMatchCount: 0,
@@ -238,7 +213,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       };
     }
 
-    const q = normalizeText(hierarchySearch.trim());
+    const q = normalizeText(deferredHierarchySearch.trim());
     let matchCount = 0;
     const matchesMap: Record<string, number> = {};
 
@@ -311,7 +286,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       .filter((e): e is NonNullable<typeof e> => e !== null);
 
     return { filteredHierarchy: filtered, hierarchyMatchCount: matchCount, matchesByEsp: matchesMap };
-  }, [hierarchySearch]);
+  }, [deferredHierarchySearch]);
 
   const toggleSection = (section: string) => {
     setOpenSections((prev) => ({ ...prev, [section]: !prev[section] }));
@@ -589,12 +564,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               <button
                 type="button"
                 onClick={handleSearchDirect}
-                disabled={!directSearchText.trim()}
+                disabled={!directSearchText.trim() || isSearchingDirect}
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-extrabold text-white shadow-md transition-all cursor-pointer hover:scale-102 disabled:opacity-40 disabled:cursor-not-allowed"
                 style={{ backgroundColor: accentConfig.primaryHex }}
               >
                 <Search className="w-3.5 h-3.5" />
-                <span>Buscar questões</span>
+                <span>{isSearchingDirect ? 'Buscando questões...' : 'Buscar questões'}</span>
               </button>
             </div>
           </div>

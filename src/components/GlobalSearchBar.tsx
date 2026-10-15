@@ -16,8 +16,9 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
-import { ActiveTab, QuestionList } from '@/types';
-import { mockQuestions, medevoHierarchy, medevoInstituicoes } from '@/data/mockQuestions';
+import { ActiveTab, QuestionList, Question } from '@/types';
+import { medevoHierarchy, medevoInstituicoes } from '@/data/mockQuestions';
+import { searchQuestionsDirect } from '@/services/questionService';
 
 interface GlobalSearchBarProps {
   onNavigate: (tab: ActiveTab) => void;
@@ -43,8 +44,33 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
   const { accentConfig } = useTheme();
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
+  const [matchingQuestions, setMatchingQuestions] = useState<Question[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Busca assíncrona de questões reais no Supabase com debounce
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!trimmed || trimmed.length < 2) {
+      setMatchingQuestions([]);
+      return;
+    }
+    let isCancelled = false;
+    const timer = setTimeout(async () => {
+      try {
+        const res = await searchQuestionsDirect(trimmed, 5);
+        if (!isCancelled) {
+          setMatchingQuestions(res);
+        }
+      } catch {
+        // ignore
+      }
+    }, 250);
+    return () => {
+      isCancelled = true;
+      clearTimeout(timer);
+    };
+  }, [query]);
 
   // Tecla de atalho Ctrl+K / Cmd+K para focar na pesquisa
   useEffect(() => {
@@ -98,19 +124,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
 
     const qNorm = normalize(trimmed);
 
-    // 1. Questões correspondentes (até 4)
-    const matchingQuestions = mockQuestions
-      .filter((q) => {
-        const inStatement = normalize(q.statement).includes(qNorm);
-        const inCode = normalize(q.code).includes(qNorm);
-        const inTema = q.tema ? normalize(q.tema).includes(qNorm) : false;
-        const inSubfoco = q.subfoco ? normalize(q.subfoco).includes(qNorm) : false;
-        const inFoco = q.foco ? normalize(q.foco).includes(qNorm) : false;
-        const inInst = q.institution ? normalize(q.institution).includes(qNorm) : false;
-        return inStatement || inCode || inTema || inSubfoco || inFoco || inInst;
-      })
-      .slice(0, 4);
-
+    // 1. Questões correspondentes (até 4) carregadas do Supabase
     // 2. Especialidades e Temas correspondentes (até 4)
     const matchingSpecialties: { specialty: string; tema?: string; type: 'esp' | 'tema' }[] = [];
     for (const esp of medevoHierarchy) {
@@ -158,14 +172,14 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
       matchingLists.length;
 
     return {
-      questions: matchingQuestions,
+      questions: matchingQuestions.slice(0, 4),
       specialties: matchingSpecialties.slice(0, 4),
       institutions: matchingInstitutions,
       simulados: matchingSimulados,
       lists: matchingLists,
       total
     };
-  }, [query, lists]);
+  }, [query, lists, matchingQuestions]);
 
   const handleExecuteGeneralSearch = (customQuery?: string) => {
     const finalQuery = customQuery !== undefined ? customQuery : query;

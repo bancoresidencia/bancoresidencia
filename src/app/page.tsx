@@ -1,16 +1,13 @@
 'use client';
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { mockQuestions } from '@/data/mockQuestions';
+import dynamic from 'next/dynamic';
 import { initialFolders, initialLists } from '@/data/mockLists';
 import { AdvancedQuestionFilters } from '@/components/AdvancedQuestionFilters';
 import { QuestionCard } from '@/components/QuestionCard';
 import { CreateCadernoModal } from '@/components/CreateCadernoModal';
-import { StatsDashboard } from '@/components/StatsDashboard';
 import { StudentHomeDashboard } from '@/components/StudentHomeDashboard';
 import { ListManager } from '@/components/ListManager';
-import { MockExams } from '@/components/MockExams';
-import { OfficialExams } from '@/components/OfficialExams';
 import { OfficialRanking } from '@/components/OfficialRanking';
 import { Sidebar } from '@/components/Sidebar';
 import { GlobalSearchBar } from '@/components/GlobalSearchBar';
@@ -19,9 +16,44 @@ import { ThemeSelector } from '@/components/ThemeSelector';
 import { AuthScreen } from '@/components/AuthScreen';
 import { LandingPage } from '@/components/LandingPage';
 import { StudentProfileSettings } from '@/components/StudentProfileSettings';
-import { AdminCuradoriaGabaritos } from '@/components/AdminCuradoriaGabaritos';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
+
+const OfficialExams = dynamic(
+  () => import('@/components/OfficialExams').then((mod) => mod.OfficialExams),
+  {
+    loading: () => (
+      <div className="p-8 text-center text-xs text-slate-500 flex items-center justify-center gap-2">
+        <div className="w-4 h-4 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+        <span>Carregando provas oficiais...</span>
+      </div>
+    ),
+    ssr: false
+  }
+);
+
+const AdminCuradoriaGabaritos = dynamic(
+  () => import('@/components/AdminCuradoriaGabaritos').then((mod) => mod.AdminCuradoriaGabaritos),
+  {
+    loading: () => (
+      <div className="p-8 text-center text-xs text-slate-500 flex items-center justify-center gap-2">
+        <div className="w-4 h-4 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin" />
+        <span>Carregando curadoria...</span>
+      </div>
+    ),
+    ssr: false
+  }
+);
+
+const StatsDashboard = dynamic(
+  () => import('@/components/StatsDashboard').then((mod) => mod.StatsDashboard),
+  { ssr: false }
+);
+
+const MockExams = dynamic(
+  () => import('@/components/MockExams').then((mod) => mod.MockExams),
+  { ssr: false }
+);
 import {
   UserStats,
   PerformanceFilterState,
@@ -415,7 +447,7 @@ export default function Home() {
 
     const timer = setTimeout(() => {
       loadQuestions();
-    }, 200);
+    }, 350);
 
     return () => {
       isCancelled = true;
@@ -430,7 +462,7 @@ export default function Home() {
       ? supabaseQuestions
       : supabaseQuestions.length > 0
       ? supabaseQuestions
-      : mockQuestions;
+      : [];
     if (advancedFilters.status === 'Todas') return list;
 
     return list.filter((q) => {
@@ -460,7 +492,7 @@ export default function Home() {
   }, [filteredQuestions, userAnswers, currentQuestionIndex]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
-    const q = supabaseQuestions.find((item) => item.id === questionId) || mockQuestions.find((item) => item.id === questionId);
+    const q = supabaseQuestions.find((item) => item.id === questionId);
     setUserAnswers((prev) => {
       const nextAnswers = {
         ...prev,
@@ -544,7 +576,7 @@ export default function Home() {
     totalQuestions: number;
     startSolvingImmediately: boolean;
   }) => {
-    const pool = supabaseQuestions.length > 0 ? supabaseQuestions : mockQuestions;
+    const pool = supabaseQuestions.length > 0 ? supabaseQuestions : filteredQuestions;
     const selectedIds: string[] = [];
     const usedIds = new Set<string>();
 
@@ -716,36 +748,8 @@ export default function Home() {
     totalQuestions: number,
     appliedFilters: AdvancedFilterState
   ) => {
-    const matched = mockQuestions.filter((q) => {
-      if (appliedFilters.modalidades?.length > 0 && !matchesStudyModalidades(q, appliedFilters.modalidades)) return false;
-      if (appliedFilters.especialidades?.length > 0) {
-        const matchesSpec = appliedFilters.especialidades.some((spec: string) => {
-          if (spec === q.especialidade) return true;
-          if (
-            (spec === 'Ginecologia' || spec === 'Obstetrícia' || spec === 'Ginecologia e Obstetrícia') &&
-            (q.especialidade === 'Ginecologia' || q.especialidade === 'Obstetrícia' || q.especialidade === 'Ginecologia e Obstetrícia')
-          ) {
-            return true;
-          }
-          return false;
-        });
-        if (!matchesSpec) return false;
-      }
-      if (appliedFilters.temas?.length > 0 && !appliedFilters.temas.includes(q.tema)) return false;
-      if (appliedFilters.focos?.length > 0 && !appliedFilters.focos.includes(q.foco)) return false;
-      if (appliedFilters.subfocos?.length > 0 && !appliedFilters.subfocos.includes(q.subfoco)) return false;
-      if (appliedFilters.instituicoes?.length > 0 && !appliedFilters.instituicoes.includes(q.institution)) return false;
-      if (appliedFilters.anos?.length > 0 && !appliedFilters.anos.includes(q.year)) return false;
-      if (appliedFilters.dificuldade !== 'Todas' && q.difficulty !== appliedFilters.dificuldade) return false;
-      if (appliedFilters.tipoQuestao !== 'Todas' && q.type !== appliedFilters.tipoQuestao) return false;
-      if (appliedFilters.ocultarAnuladasErro && q.isAnulada) return false;
-      if (appliedFilters.ultimos5Anos && q.year < 2020) return false;
-      return true;
-    });
-
-    const chosenIds = matched.length > 0
-      ? matched.slice(0, totalQuestions).map((q) => q.id)
-      : mockQuestions.slice(0, Math.min(totalQuestions, mockQuestions.length)).map((q) => q.id);
+    const pool = supabaseQuestions.length > 0 ? supabaseQuestions : filteredQuestions;
+    const chosenIds = pool.slice(0, totalQuestions).map((q) => q.id);
 
     const newList: QuestionList = {
       id: `list-${Date.now()}`,
@@ -857,7 +861,7 @@ export default function Home() {
     Object.entries(userAnswers).forEach(([qid, ans]) => {
       let spec = ans.specialty;
       if (!spec) {
-        const q = supabaseQuestions.find((item) => item.id === qid) || mockQuestions.find((item) => item.id === qid);
+        const q = supabaseQuestions.find((item) => item.id === qid);
         spec = q?.especialidade;
       }
       if (spec) {
@@ -1072,11 +1076,17 @@ export default function Home() {
               }}
               onSelectQuestion={(questionId) => {
                 setActiveTab('banco');
-                const q = mockQuestions.find((item) => item.id === questionId);
+                setBancoMode('resolucao');
+                const q = supabaseQuestions.find((item) => item.id === questionId);
                 if (q) {
                   setAdvancedFilters((prev) => ({
                     ...prev,
                     search: q.code
+                  }));
+                } else {
+                  setAdvancedFilters((prev) => ({
+                    ...prev,
+                    search: questionId
                   }));
                 }
               }}
@@ -1305,11 +1315,16 @@ export default function Home() {
                       if (idx !== -1) {
                         setCurrentQuestionIndex(idx);
                       } else {
-                        const targetQ = supabaseQuestions.find((q) => q.id === questionId) || mockQuestions.find((q) => q.id === questionId);
+                        const targetQ = supabaseQuestions.find((q) => q.id === questionId);
                         if (targetQ) {
                           setAdvancedFilters((prev) => ({
                             ...prev,
                             search: targetQ.code
+                          }));
+                        } else {
+                          setAdvancedFilters((prev) => ({
+                            ...prev,
+                            search: questionId
                           }));
                         }
                         setCurrentQuestionIndex(0);
