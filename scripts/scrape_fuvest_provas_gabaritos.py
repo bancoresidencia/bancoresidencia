@@ -15,5 +15,9 @@ print(f"Total links: {len(links)}")
 
 for href, text in links:
     clean = re.sub(r'<[^>]+>', '', text).strip()
-    if any(k in href.lower() or k in clean.lower() for k in ['prova', 'gabarito', 'acesso', 'definitivo']):
+    c_low = clean.lower()
+    h_low = href.lower()
+    if any(k in c_low or k in h_low for k in ['direto', 'basica', 'básica', 'geral', 'r1', 'conhecimentos']):
         print(f"  [{clean}] -> {href}")
+    elif 'gabarito' in h_low and ('geral' in h_low or 'r1' in h_low or 'retificado' in h_low):
+        print(f"  GAB: [{clean}] -> {href}")
