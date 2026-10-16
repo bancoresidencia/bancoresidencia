@@ -74,12 +74,12 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
 
   // Estatísticas Globais e da Área
   const [stats, setStats] = useState<AdminCurationStats>({
-    globalTotal: 132965,
-    globalWithAnswer: 34820,
-    globalPercentage: 26.2,
-    areaTotal: 0,
-    areaWithAnswer: 0,
-    areaPercentage: 0,
+    globalTotal: 133952,
+    globalWithAnswer: 72728,
+    globalPercentage: 54.3,
+    areaTotal: 133952,
+    areaWithAnswer: 72728,
+    areaPercentage: 54.3,
     areaName: 'Todas as Áreas'
   });
   const [isLoadingStats, setIsLoadingStats] = useState<boolean>(false);
@@ -595,7 +595,10 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
 
                 {/* Paginação Sequencial */}
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-500">
-                  <span>Questão <strong>{currentIndex + 1}</strong> de <strong>{questions.length}</strong></span>
+                  <span>
+                    Questão <strong>{(currentPage - 1) * 30 + currentIndex + 1}</strong> de{' '}
+                    <strong>{totalQuestions > 0 ? totalQuestions.toLocaleString('pt-BR') : questions.length}</strong>
+                  </span>
                   <span className="text-slate-300 dark:text-slate-700">|</span>
                   <button
                     type="button"

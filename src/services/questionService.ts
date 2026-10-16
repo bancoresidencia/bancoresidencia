@@ -70,11 +70,15 @@ export async function fetchQuestionsFromSupabase(
 ): Promise<FetchQuestionsResult> {
   let query = supabase.from('questions').select('*');
 
-  // Filtro específico para Curadoria de Gabaritos
-  if (filters.gabaritoStatus === 'com_gabarito') {
-    query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
-  } else if (filters.gabaritoStatus === 'sem_gabarito') {
+  // Regra de Gabarito: No banco de questões (alunos), exibe EXCLUSIVAMENTE questões com gabarito oficial padrão ouro.
+  // No painel de curadoria, respeita a aba selecionada (sem gabarito, com gabarito ou todas).
+  if (filters.gabaritoStatus === 'sem_gabarito') {
     query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
+  } else if (filters.gabaritoStatus === 'todas') {
+    // Curador inspecionando todas as questões
+  } else {
+    // Padrão Ouro Oficial: Alunos e Curadoria "Com Gabarito"
+    query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
   }
 
   // Se IDs específicos foram solicitados (ex: caderno ou lista)
@@ -235,7 +239,13 @@ export async function fetchQuestionsFromSupabase(
   const questions = (data || []).map(mapRowToQuestion);
 
   // Estimativa de contagem ultra-rápida sem travar o banco
-  let total = 132965;
+  let total = 72728; // Padrão ouro oficial com gabarito homologado
+  if (filters.gabaritoStatus === 'sem_gabarito') {
+    total = 61224; // Total pendente de gabarito
+  } else if (filters.gabaritoStatus === 'todas') {
+    total = 133952;
+  }
+
   if (questions.length < pageSize && page === 1) {
     total = questions.length;
   } else if (filters.subfocos && filters.subfocos.length === 1) {
@@ -245,7 +255,19 @@ export async function fetchQuestionsFromSupabase(
   } else if (filters.temas && filters.temas.length === 1) {
     total = getQuestionCount('temas', filters.temas[0]) || questions.length;
   } else if (filters.especialidades && filters.especialidades.length === 1) {
-    total = getQuestionCount('especialidades', filters.especialidades[0]) || questions.length;
+    const espKey = filters.especialidades[0];
+    const specData = SPECIALTY_STATS[espKey];
+    if (specData) {
+      if (filters.gabaritoStatus === 'sem_gabarito') {
+        total = specData.total - specData.withAnswer;
+      } else if (filters.gabaritoStatus === 'todas') {
+        total = specData.total;
+      } else {
+        total = specData.withAnswer;
+      }
+    } else {
+      total = getQuestionCount('especialidades', espKey) || questions.length;
+    }
   } else if (questionIds && questionIds.length > 0) {
     total = questionIds.length;
   } else {
@@ -281,6 +303,7 @@ export async function searchQuestionsDirect(
         .from('questions')
         .select('*')
         .or(`code.ilike.%${q}%,banca.ilike.%${q}%,foco.ilike.%${q}%`)
+        .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
         .limit(limit);
 
       if (!error && data && data.length > 0) {
@@ -301,6 +324,7 @@ export async function searchQuestionsDirect(
       .from('questions')
       .select('*')
       .or(`foco.ilike.%${primaryTerm}%,subfoco.ilike.%${primaryTerm}%,tema.ilike.%${primaryTerm}%,banca.ilike.%${primaryTerm}%`)
+      .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
       .limit(limit);
 
     if (!error && data && data.length > 0) {
@@ -312,6 +336,7 @@ export async function searchQuestionsDirect(
       .from('questions')
       .select('*')
       .ilike('code', `%${primaryTerm}%`)
+      .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
       .limit(limit);
 
     return (codeData || []).map(mapRowToQuestion);
@@ -348,14 +373,15 @@ export async function fetchTotalQuestionsCount(): Promise<number> {
   try {
     const { count, error } = await supabase
       .from('questions')
-      .select('id', { count: 'exact', head: true });
+      .select('id', { count: 'exact', head: true })
+      .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
 
     if (error || typeof count !== 'number') {
-      return 133952;
+      return 72728;
     }
     return count;
   } catch {
-    return 133952;
+    return 72728;
   }
 }
 
