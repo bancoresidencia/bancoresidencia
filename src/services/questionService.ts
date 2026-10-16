@@ -72,9 +72,9 @@ export async function fetchQuestionsFromSupabase(
 
   // Filtro específico para Curadoria de Gabaritos
   if (filters.gabaritoStatus === 'com_gabarito') {
-    query = query.neq('correct_answer', '');
+    query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
   } else if (filters.gabaritoStatus === 'sem_gabarito') {
-    query = query.eq('correct_answer', '');
+    query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
   }
 
   // Se IDs específicos foram solicitados (ex: caderno ou lista)
@@ -351,11 +351,11 @@ export async function fetchTotalQuestionsCount(): Promise<number> {
       .select('id', { count: 'exact', head: true });
 
     if (error || typeof count !== 'number') {
-      return 132965;
+      return 133952;
     }
     return count;
   } catch {
-    return 132965;
+    return 133952;
   }
 }
 
@@ -408,46 +408,64 @@ export async function updateQuestionAnswer(
   }
 }
 
+const SPECIALTY_STATS: Record<string, { total: number; withAnswer: number }> = {
+  'Cirurgia': { total: 21229, withAnswer: 11893 },
+  'Cirurgia Geral': { total: 21229, withAnswer: 11893 },
+  'Clínica Médica': { total: 38227, withAnswer: 22335 },
+  'Ginecologia e Obstetrícia': { total: 27338, withAnswer: 11763 },
+  'Ginecologia': { total: 13246, withAnswer: 7707 },
+  'Obstetrícia': { total: 14092, withAnswer: 4056 },
+  'Medicina Preventiva e Social': { total: 22039, withAnswer: 11879 },
+  'Medicina Preventiva': { total: 22039, withAnswer: 11879 },
+  'Pediatria': { total: 24132, withAnswer: 13871 },
+  'Urologia': { total: 987, withAnswer: 987 },
+};
+
 export async function fetchAdminCurationStats(
   selectedEspecialidade?: string,
   selectedYear?: number,
   selectedBanca?: string
 ): Promise<AdminCurationStats> {
-  const defaultGlobalTotal = 132965;
-  const estimatedGlobalWithAnswer = 34820;
+  const defaultGlobalTotal = 133952;
+  const realGlobalWithAnswer = 72728;
 
   let areaTotal = 0;
   let areaWithAnswer = 0;
   const areaName = selectedEspecialidade || (selectedBanca ? `Banca ${selectedBanca}` : (selectedYear ? `Ano ${selectedYear}` : 'Todas as Áreas'));
 
   try {
-    if (selectedEspecialidade) {
+    if (selectedEspecialidade && SPECIALTY_STATS[selectedEspecialidade]) {
+      areaTotal = SPECIALTY_STATS[selectedEspecialidade].total;
+      areaWithAnswer = SPECIALTY_STATS[selectedEspecialidade].withAnswer;
+    } else if (selectedEspecialidade) {
       areaTotal = getQuestionCount('especialidades', selectedEspecialidade) || 20000;
-      areaWithAnswer = Math.round(areaTotal * 0.28);
+      areaWithAnswer = Math.round(areaTotal * 0.543);
     } else if (selectedBanca) {
-      const { count } = await supabase.from('questions').select('id', { count: 'exact', head: true }).eq('banca', selectedBanca);
+      const { count } = await supabase.from('questions').select('id', { count: 'exact', head: true }).ilike('banca', `%${selectedBanca}%`);
+      const { count: ansCount } = await supabase.from('questions').select('id', { count: 'exact', head: true }).ilike('banca', `%${selectedBanca}%`).or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
       if (typeof count === 'number') {
         areaTotal = count;
-        areaWithAnswer = Math.round(count * 0.26);
+        areaWithAnswer = typeof ansCount === 'number' ? ansCount : Math.round(count * 0.543);
       }
     } else if (selectedYear) {
       const { count } = await supabase.from('questions').select('id', { count: 'exact', head: true }).eq('year', selectedYear);
+      const { count: ansCount } = await supabase.from('questions').select('id', { count: 'exact', head: true }).eq('year', selectedYear).or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
       if (typeof count === 'number') {
         areaTotal = count;
-        areaWithAnswer = Math.round(count * 0.26);
+        areaWithAnswer = typeof ansCount === 'number' ? ansCount : Math.round(count * 0.543);
       }
     } else {
       areaTotal = defaultGlobalTotal;
-      areaWithAnswer = estimatedGlobalWithAnswer;
+      areaWithAnswer = realGlobalWithAnswer;
     }
   } catch (e) {
     console.warn('Erro ao calcular estatísticas da área:', e);
     areaTotal = defaultGlobalTotal;
-    areaWithAnswer = estimatedGlobalWithAnswer;
+    areaWithAnswer = realGlobalWithAnswer;
   }
 
   const globalPercentage = defaultGlobalTotal > 0
-    ? Number(((estimatedGlobalWithAnswer / defaultGlobalTotal) * 100).toFixed(1))
+    ? Number(((realGlobalWithAnswer / defaultGlobalTotal) * 100).toFixed(1))
     : 0;
 
   const areaPercentage = areaTotal > 0
@@ -456,7 +474,7 @@ export async function fetchAdminCurationStats(
 
   return {
     globalTotal: defaultGlobalTotal,
-    globalWithAnswer: estimatedGlobalWithAnswer,
+    globalWithAnswer: realGlobalWithAnswer,
     globalPercentage,
     areaTotal,
     areaWithAnswer,
