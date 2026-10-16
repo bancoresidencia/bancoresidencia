@@ -377,11 +377,11 @@ export async function fetchTotalQuestionsCount(): Promise<number> {
       .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
 
     if (error || typeof count !== 'number') {
-      return 72728;
+      return 41843;
     }
     return count;
   } catch {
-    return 72728;
+    return 41843;
   }
 }
 
@@ -435,15 +435,15 @@ export async function updateQuestionAnswer(
 }
 
 const SPECIALTY_STATS: Record<string, { total: number; withAnswer: number }> = {
-  'Cirurgia': { total: 21229, withAnswer: 11893 },
-  'Cirurgia Geral': { total: 21229, withAnswer: 11893 },
-  'Clínica Médica': { total: 38227, withAnswer: 22335 },
-  'Ginecologia e Obstetrícia': { total: 27338, withAnswer: 11763 },
-  'Ginecologia': { total: 13246, withAnswer: 7707 },
-  'Obstetrícia': { total: 14092, withAnswer: 4056 },
-  'Medicina Preventiva e Social': { total: 22039, withAnswer: 11879 },
-  'Medicina Preventiva': { total: 22039, withAnswer: 11879 },
-  'Pediatria': { total: 24132, withAnswer: 13871 },
+  'Cirurgia': { total: 21229, withAnswer: 6510 },
+  'Cirurgia Geral': { total: 21229, withAnswer: 6510 },
+  'Clínica Médica': { total: 38227, withAnswer: 13074 },
+  'Ginecologia e Obstetrícia': { total: 27338, withAnswer: 8319 },
+  'Ginecologia': { total: 13246, withAnswer: 4047 },
+  'Obstetrícia': { total: 14092, withAnswer: 4272 },
+  'Medicina Preventiva e Social': { total: 22039, withAnswer: 5746 },
+  'Medicina Preventiva': { total: 22039, withAnswer: 5746 },
+  'Pediatria': { total: 24132, withAnswer: 7207 },
   'Urologia': { total: 987, withAnswer: 987 },
 };
 
@@ -453,7 +453,7 @@ export async function fetchAdminCurationStats(
   selectedBanca?: string
 ): Promise<AdminCurationStats> {
   const defaultGlobalTotal = 133952;
-  const realGlobalWithAnswer = 72728;
+  const realGlobalWithAnswer = 41843;
 
   let areaTotal = 0;
   let areaWithAnswer = 0;

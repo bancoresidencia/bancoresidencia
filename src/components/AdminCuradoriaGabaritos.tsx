@@ -75,11 +75,11 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
   // Estatísticas Globais e da Área
   const [stats, setStats] = useState<AdminCurationStats>({
     globalTotal: 133952,
-    globalWithAnswer: 72728,
-    globalPercentage: 54.3,
+    globalWithAnswer: 41843,
+    globalPercentage: 31.2,
     areaTotal: 133952,
-    areaWithAnswer: 72728,
-    areaPercentage: 54.3,
+    areaWithAnswer: 41843,
+    areaPercentage: 31.2,
     areaName: 'Todas as Áreas'
   });
   const [isLoadingStats, setIsLoadingStats] = useState<boolean>(false);
