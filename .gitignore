@@ -77,3 +77,7 @@ scripts/chrome_debug.log
 /data/inep_pdfs/
 data/*.log
 *.log
+docs/driveprojetorapido/
+data/backups_pre_drive/
+data/provaderesidencia_coleta.db*
+data/*.tmp

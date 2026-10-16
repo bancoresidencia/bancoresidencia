@@ -15,7 +15,10 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     ".agents/**",
     "design-system/**",
-    "data/knowledge/**",
+    "data/**",
+    "docs/**",
+    "scratch/**",
+    "coletor_gabaritos/**",
     "scripts/**",
   ]),
   {

@@ -3,7 +3,13 @@ import path from 'path';
 import fs from 'fs';
 
 // Configurações e caminhos
-const CHROME_PATH = 'C:\\Users\\cnath\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe';
+const CANDIDATE_PATHS = [
+  'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+  'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe'
+];
+const CHROME_PATH = CANDIDATE_PATHS.find(p => fs.existsSync(p)) || 'chrome';
 const PROFILE_DIR = path.join(process.cwd(), 'scripts', '.chrome_profile');
 
 const rawArgs = process.argv.slice(2);
