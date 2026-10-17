@@ -328,6 +328,20 @@ export default function Home() {
 
   // Modo do Banco de Questões: 'resolucao' (sequencial questão a questão), 'filtros' (painel de filtros separado) ou 'resultado' (diagnóstico e pontos fracos)
   const [bancoMode, setBancoMode] = useState<'resolucao' | 'filtros' | 'resultado'>('filtros');
+  // Snapshot de questões excluídas por já terem sido respondidas antes do início da sessão de resolução
+  // Garante que uma questão respondida NÃO suma instantaneamente da tela enquanto o aluno está na sessão ativa
+  const [sessionExclusionSnapshot, setSessionExclusionSnapshot] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    if (bancoMode === 'resolucao') {
+      const snapshot: Record<string, boolean> = {};
+      Object.keys(userAnswers).forEach((id) => {
+        snapshot[id] = true;
+      });
+      setSessionExclusionSnapshot(snapshot);
+    }
+  }, [bancoMode]);
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
@@ -404,13 +418,37 @@ export default function Home() {
       if (saved) {
         loaded = JSON.parse(saved);
       }
+
+      // Se for um aluno autenticado em conta real e houver respostas registradas anteriormente como visitante,
+      // migra essas respostas automaticamente para a conta dele para garantir continuidade sem perda de dados
+      if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
+        const guestSaved = localStorage.getItem('bancoresidencia_user_answers_guest');
+        if (guestSaved) {
+          try {
+            const guestAnswers: Record<string, UserAnswerItem> = JSON.parse(guestSaved);
+            let hasNewFromGuest = false;
+            Object.entries(guestAnswers).forEach(([qId, ans]) => {
+              if (!loaded[qId]) {
+                loaded[qId] = ans;
+                hasNewFromGuest = true;
+              }
+            });
+            if (hasNewFromGuest) {
+              localStorage.setItem(storageKey, JSON.stringify(loaded));
+              localStorage.removeItem('bancoresidencia_user_answers_guest');
+            }
+          } catch {
+            // ignore
+          }
+        }
+      }
     } catch (e) {
       console.error('Erro ao ler respostas locais da conta:', e);
     }
 
     setUserAnswers(loaded);
 
-    // Se estiver logado em conta real no Supabase, sincroniza com o banco de dados
+    // Se estiver logado em conta real no Supabase, sincroniza com o banco de dados remoto
     if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
       const supabase = createClient();
       supabase
@@ -418,10 +456,13 @@ export default function Home() {
         .select('question_id, selected_option, is_correct, answered_at')
         .eq('user_id', user.id)
         .then(({ data, error }) => {
-          if (!error && data && data.length > 0) {
+          if (!error && data) {
             setUserAnswers((prev) => {
               const merged = { ...prev };
               let changed = false;
+              const remoteQuestionIds = new Set(data.map((r) => r.question_id));
+
+              // 1. Incorpora respostas remotas para a máquina local
               data.forEach((row) => {
                 if (!merged[row.question_id]) {
                   changed = true;
@@ -439,6 +480,27 @@ export default function Home() {
                   };
                 }
               });
+
+              // 2. Se houver respostas locais que ainda não estão no Supabase, faz o upload em segundo plano
+              const missingInRemote = Object.entries(prev).filter(([qId]) => !remoteQuestionIds.has(qId));
+              if (missingInRemote.length > 0) {
+                const upsertPayload = missingInRemote.map(([qId, ans]) => ({
+                  user_id: user.id,
+                  question_id: qId,
+                  selected_option: ans.letter,
+                  is_correct: ans.isCorrect,
+                  answered_at: new Date(ans.timestamp || Date.now()).toISOString()
+                }));
+                supabase
+                  .from('user_answers')
+                  .upsert(upsertPayload, { onConflict: 'user_id,question_id' })
+                  .then(({ error: upsertErr }) => {
+                    if (upsertErr) {
+                      console.error('Erro ao sincronizar respostas pendentes com Supabase:', upsertErr);
+                    }
+                  });
+              }
+
               if (changed) {
                 try {
                   localStorage.setItem(storageKey, JSON.stringify(merged));
@@ -558,7 +620,18 @@ export default function Home() {
       const isCorrect = answer?.isCorrect === true;
       const isWrong = isResolved && !isCorrect;
 
-      if (advancedFilters.status === 'Não vistas' && isResolved) return false;
+      // Se estiver no modo de resolução sequencial ativo, uma questão respondida nesta sessão
+      // NÃO é removida instantaneamente para permitir que o aluno visualize a resposta, feedback e justificativas.
+      // A questão só não aparecerá mais quando o aluno sair da sessão e iniciar novamente.
+      const isResolvedBeforeSession = sessionExclusionSnapshot[q.id] === true;
+
+      if (advancedFilters.status === 'Não vistas') {
+        if (bancoMode === 'resolucao') {
+          if (isResolvedBeforeSession) return false;
+        } else {
+          if (isResolved) return false;
+        }
+      }
       if (advancedFilters.status === 'Resolvidas' && !isResolved) return false;
       if (advancedFilters.status === 'Acertadas' && !isCorrect) return false;
       if (advancedFilters.status === 'Erradas' && !isWrong) return false;
@@ -582,8 +655,12 @@ export default function Home() {
       }
 
       // 5. Ocultar já revisadas
-      if (advancedFilters.ocultarRevisadas && isResolved) {
-        return false;
+      if (advancedFilters.ocultarRevisadas) {
+        if (bancoMode === 'resolucao') {
+          if (isResolvedBeforeSession) return false;
+        } else {
+          if (isResolved) return false;
+        }
       }
 
       return true;
@@ -596,7 +673,9 @@ export default function Home() {
     advancedFilters.tipoQuestao,
     advancedFilters.ocultarAnuladasErro,
     advancedFilters.ocultarRevisadas,
-    userAnswers
+    userAnswers,
+    sessionExclusionSnapshot,
+    bancoMode
   ]);
 
   // Janela dinâmica de 50 questões: exibe 50 questões inicialmente. A cada questão resolvida, adiciona +1 ao final.
