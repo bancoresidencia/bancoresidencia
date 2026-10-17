@@ -22,6 +22,8 @@
     "sync:medcurso": "node scripts/sync_medcurso_from_supabase.mjs",
     "upload:medcurso": "node scripts/upload_medcurso_to_supabase.mjs",
     "open:chromium": "node scripts/open_chromium_forced.mjs",
+    "open:medevo": "open_medevo.bat",
+    "demo:medevo": "node scripts/connect_existing_chrome.mjs",
     "open:drive": "node scripts/open_medcurso_drive.mjs"
   },
   "dependencies": {

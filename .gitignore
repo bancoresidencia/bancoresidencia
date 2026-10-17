@@ -85,6 +85,9 @@ data/*.tmp
 data/*.html
 data/*.pdf
 /data/uel_pdfs/
+scripts/.chrome_test/
+scripts/medevo_session.json
+scripts/medevo_config.json
 
 # Temporary visual QA screenshots & scratch dumps
 *.png
