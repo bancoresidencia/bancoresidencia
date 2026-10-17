@@ -254,14 +254,14 @@ export default function Home() {
     focos: [],
     subfocos: [],
     instituicoes: [],
-    anos: [],
+    anos: [2026, 2025, 2024, 2023, 2022],
     tipoProva: [],
     status: 'Todas',
     dificuldade: 'Todas',
     tipoQuestao: 'Todas',
     ocultarAnuladasErro: false,
     ocultarRevisadas: false,
-    ultimos5Anos: false
+    ultimos5Anos: true
   });
 
   // Filtros de Desempenho e Ranking (Padrão: 6 meses e Residência)
@@ -457,15 +457,16 @@ export default function Home() {
 
 
   // Filtragem local complementar para status (resolvidas/não vistas) e fallback
+  // Filtragem local complementar para status (resolvidas/não vistas), dificuldade, formato, anuladas e revisadas
   const filteredQuestions = useMemo(() => {
     const list = hasLoadedSupabaseOnce
       ? supabaseQuestions
       : supabaseQuestions.length > 0
       ? supabaseQuestions
       : [];
-    if (advancedFilters.status === 'Todas') return list;
 
     return list.filter((q) => {
+      // 1. Status da questão (userAnswers)
       const answer = userAnswers[q.id];
       const isResolved = !!answer;
       const isCorrect = answer?.isCorrect === true;
@@ -476,9 +477,41 @@ export default function Home() {
       if (advancedFilters.status === 'Acertadas' && !isCorrect) return false;
       if (advancedFilters.status === 'Erradas' && !isWrong) return false;
       if (advancedFilters.status === 'Ainda não acertadas' && isCorrect) return false;
+
+      // 2. Dificuldade (Fácil, Médio, Difícil)
+      if (advancedFilters.dificuldade !== 'Todas') {
+        const qDiff = q.difficulty || 'Médio';
+        if (qDiff !== advancedFilters.dificuldade) return false;
+      }
+
+      // 3. Formato / Tipo de questão (Múltipla escolha, Discursiva)
+      if (advancedFilters.tipoQuestao !== 'Todas') {
+        const qType = q.type || 'Múltipla escolha';
+        if (qType !== advancedFilters.tipoQuestao) return false;
+      }
+
+      // 4. Ocultar anuladas
+      if (advancedFilters.ocultarAnuladasErro && q.isAnulada) {
+        return false;
+      }
+
+      // 5. Ocultar já revisadas
+      if (advancedFilters.ocultarRevisadas && isResolved) {
+        return false;
+      }
+
       return true;
     });
-  }, [supabaseQuestions, hasLoadedSupabaseOnce, advancedFilters.status, userAnswers]);
+  }, [
+    supabaseQuestions,
+    hasLoadedSupabaseOnce,
+    advancedFilters.status,
+    advancedFilters.dificuldade,
+    advancedFilters.tipoQuestao,
+    advancedFilters.ocultarAnuladasErro,
+    advancedFilters.ocultarRevisadas,
+    userAnswers
+  ]);
 
   // Janela dinâmica de 50 questões: exibe 50 questões inicialmente. A cada questão resolvida, adiciona +1 ao final.
   const visibleQuestions = useMemo(() => {
@@ -1243,7 +1276,13 @@ export default function Home() {
         </header>
 
         {/* Corpo Principal da Aplicação */}
-        <main className="max-w-6xl w-full mx-auto px-4 sm:px-6 py-9 sm:py-10 flex-1 space-y-9 sm:space-y-11">
+        <main
+          className={`w-full mx-auto px-4 sm:px-6 flex-1 transition-all max-w-6xl ${
+            activeTab === 'banco' && bancoMode === 'filtros'
+              ? 'h-[calc(100vh-4.75rem)] max-h-[calc(100vh-4.75rem)] flex flex-col justify-between py-2 sm:py-2.5 overflow-hidden'
+              : 'py-9 sm:py-10 space-y-9 sm:space-y-11'
+          }`}
+        >
           {/* ABA 1: INÍCIO (TELA INICIAL DO ALUNO BENTO) */}
           {activeTab === 'home' && (
             <StudentHomeDashboard
@@ -1270,10 +1309,10 @@ export default function Home() {
 
           {/* ABA 2: BANCO DE QUESTÕES (RESOLUÇÃO SEQUENCIAL INSPIRADA NA IMAGEM 2 OU FILTROS SEPARADOS) */}
           {activeTab === 'banco' && (
-            <div className="space-y-6">
+            <div className={bancoMode === 'filtros' ? 'h-full flex flex-col justify-between min-h-0' : 'space-y-6'}>
               {/* Caderno Ativo (se houver) */}
               {activeListId && (
-                <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-500/40 p-4 sm:p-5 rounded-3xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-blue-900 dark:text-blue-300 shadow-sm">
+                <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-500/40 p-4 sm:p-5 rounded-3xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-blue-900 dark:text-blue-300 shadow-sm shrink-0">
                   <div className="flex items-center gap-2.5">
                     <span className="font-bold text-blue-700 dark:text-blue-400">Resolvendo Caderno:</span>
                     <strong className="text-slate-900 dark:text-white font-heading text-sm">
@@ -1293,7 +1332,7 @@ export default function Home() {
 
               {/* MODO 1: FILTROS SEPARADOS DAS QUESTÕES */}
               {bancoMode === 'filtros' ? (
-                <div className="space-y-6 animate-in fade-in duration-200">
+                <div className="h-full flex flex-col justify-between min-h-0 animate-in fade-in duration-200">
                   {/* Componente Completo de Filtros Avançados */}
                   <AdvancedQuestionFilters
                     filters={advancedFilters}
@@ -1340,35 +1379,6 @@ export default function Home() {
                       setQuestionTimer(0);
                     }}
                   />
-
-                  {/* Botão de Rodapé para Iniciar Resolução ou Criar Caderno */}
-                  <div className="flex flex-wrap items-center justify-end gap-3 pt-2">
-                    <button
-                      type="button"
-                      onClick={() => setIsCreateCadernoModalOpen(true)}
-                      className="flex items-center gap-2 px-4.5 py-3 rounded-2xl border text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-xs bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800"
-                    >
-                      <FolderPlus className="w-4 h-4 text-blue-500" />
-                      <span>Criar Caderno Personalizado</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setActiveListId(null);
-                        setBancoMode('resolucao');
-                        setCurrentQuestionIndex(0);
-                        setQuestionTimer(0);
-                      }}
-                      className="flex items-center gap-2 px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer"
-                      style={{ backgroundColor: accentConfig.primaryHex }}
-                    >
-                      <Play className="w-4 h-4 fill-current" />
-                      <span>
-                        Iniciar Resolução ({totalSupabaseCount.toLocaleString('pt-BR')} questões) →
-                      </span>
-                    </button>
-                  </div>
                 </div>
               ) : bancoMode === 'resultado' ? (
                 /* MODO 3: TELA DE RESULTADOS E PRINCIPAIS PONTOS A SEREM MELHOR ESTUDADOS */
@@ -2050,19 +2060,21 @@ export default function Home() {
         </main>
 
         {/* Rodapé Moderno */}
-        <footer className="border-t border-slate-200 dark:border-slate-800/80 bg-white dark:bg-[#070d18] py-6 text-center text-xs text-slate-500 dark:text-slate-400 transition-colors">
-          <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="font-semibold text-slate-700 dark:text-slate-300">Banco Residência Médica 2026</span>
-              <span>•</span>
-              <span>Alta Performance & Raciocínio Clínico</span>
+        {!(activeTab === 'banco' && bancoMode === 'filtros') && (
+          <footer className="border-t border-slate-200 dark:border-slate-800/80 bg-white dark:bg-[#070d18] py-6 text-center text-xs text-slate-500 dark:text-slate-400 transition-colors">
+            <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="font-semibold text-slate-700 dark:text-slate-300">Banco Residência Médica 2026</span>
+                <span>•</span>
+                <span>Alta Performance & Raciocínio Clínico</span>
+              </div>
+              <p className="text-[11px] text-slate-400">
+                Score Bayesiano • Diamante & Elite Calibrados • Modos Claro e Escuro
+              </p>
             </div>
-            <p className="text-[11px] text-slate-400">
-              Score Bayesiano • Diamante & Elite Calibrados • Modos Claro e Escuro
-            </p>
-          </div>
-        </footer>
+          </footer>
+        )}
       </div>
 
       {/* Modal Avançado de Criação de Caderno Personalizado com Cotas e Pastas em 3 Níveis */}

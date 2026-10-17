@@ -84,3 +84,14 @@ data/*.tmp
 data/*.html
 data/*.pdf
 /data/uel_pdfs/
+
+# Temporary visual QA screenshots & scratch dumps
+*.png
+scripts/*.png
+scripts/resp_*.txt
+scripts/network_trace.json
+scripts/bg3_data.json
+scripts/canvas_frame_data.json
+scripts/canvas_frame.html
+scripts/gemini_*.json
+scripts/gemini_*.html

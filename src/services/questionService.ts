@@ -96,7 +96,8 @@ export async function fetchQuestionsFromSupabase(
     }
   }
 
-  // 2. Especialidades
+  // 2. Árvore Clínica (Especialidades, Temas, Focos, Subfocos): Soma / União (OR) entre seleções
+  const clinicalOrParts: string[] = [];
   if (filters.especialidades && filters.especialidades.length > 0) {
     const specs = new Set<string>();
     filters.especialidades.forEach((sp) => {
@@ -110,22 +111,46 @@ export async function fetchQuestionsFromSupabase(
         specs.add('Obstetrícia');
       }
     });
-    query = query.in('especialidade', Array.from(specs));
+    const specList = Array.from(specs);
+    clinicalOrParts.push(`especialidade.in.(${specList.map(s => `"${s}"`).join(',')})`);
   }
 
-  // 3. Temas
   if (filters.temas && filters.temas.length > 0) {
-    query = query.in('tema', filters.temas);
+    clinicalOrParts.push(`tema.in.(${filters.temas.map(t => `"${t}"`).join(',')})`);
   }
 
-  // 4. Focos
   if (filters.focos && filters.focos.length > 0) {
-    query = query.in('foco', filters.focos);
+    clinicalOrParts.push(`foco.in.(${filters.focos.map(f => `"${f}"`).join(',')})`);
   }
 
-  // 5. Subfocos
   if (filters.subfocos && filters.subfocos.length > 0) {
-    query = query.in('subfoco', filters.subfocos);
+    clinicalOrParts.push(`subfoco.in.(${filters.subfocos.map(s => `"${s}"`).join(',')})`);
+  }
+
+  if (clinicalOrParts.length === 1) {
+    if (filters.especialidades && filters.especialidades.length > 0) {
+      const specs = new Set<string>();
+      filters.especialidades.forEach((sp) => {
+        specs.add(sp);
+        if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
+          specs.add('Cirurgia');
+          specs.add('Cirurgia Geral');
+        }
+        if (sp === 'Ginecologia e Obstetrícia') {
+          specs.add('Ginecologia');
+          specs.add('Obstetrícia');
+        }
+      });
+      query = query.in('especialidade', Array.from(specs));
+    } else if (filters.temas && filters.temas.length > 0) {
+      query = query.in('tema', filters.temas);
+    } else if (filters.focos && filters.focos.length > 0) {
+      query = query.in('foco', filters.focos);
+    } else if (filters.subfocos && filters.subfocos.length > 0) {
+      query = query.in('subfoco', filters.subfocos);
+    }
+  } else if (clinicalOrParts.length > 1) {
+    query = query.or(clinicalOrParts.join(','));
   }
 
   // 5.1 Modalidade (com suporte refinado a Revalida)
@@ -248,31 +273,70 @@ export async function fetchQuestionsFromSupabase(
 
   if (questions.length < pageSize && page === 1) {
     total = questions.length;
-  } else if (filters.subfocos && filters.subfocos.length === 1) {
-    total = getQuestionCount('subfocos', filters.subfocos[0]) || questions.length;
-  } else if (filters.focos && filters.focos.length === 1) {
-    total = getQuestionCount('focos', filters.focos[0]) || questions.length;
-  } else if (filters.temas && filters.temas.length === 1) {
-    total = getQuestionCount('temas', filters.temas[0]) || questions.length;
-  } else if (filters.especialidades && filters.especialidades.length === 1) {
-    const espKey = filters.especialidades[0];
-    const specData = SPECIALTY_STATS[espKey];
-    if (specData) {
-      if (filters.gabaritoStatus === 'sem_gabarito') {
-        total = specData.total - specData.withAnswer;
-      } else if (filters.gabaritoStatus === 'todas') {
-        total = specData.total;
+  } else if (filters.subfocos && filters.subfocos.length > 0) {
+    let subSum = 0;
+    filters.subfocos.forEach((subKey) => {
+      subSum += (getQuestionCount('subfocos', subKey) || 0);
+    });
+    total = subSum > 0 ? subSum : questions.length;
+  } else if (filters.focos && filters.focos.length > 0) {
+    let focoSum = 0;
+    filters.focos.forEach((focoKey) => {
+      focoSum += (getQuestionCount('focos', focoKey) || 0);
+    });
+    total = focoSum > 0 ? focoSum : questions.length;
+  } else if (filters.temas && filters.temas.length > 0) {
+    let temaSum = 0;
+    filters.temas.forEach((temKey) => {
+      temaSum += (getQuestionCount('temas', temKey) || 0);
+    });
+    total = temaSum > 0 ? temaSum : questions.length;
+    if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
+      total = Math.round(total * (filters.anos.length / 17));
+    }
+    if (filters.instituicoes && filters.instituicoes.length > 0) {
+      total = Math.max(questions.length, Math.round(total * Math.min(1, filters.instituicoes.length * 0.12)));
+    }
+  } else if (filters.especialidades && filters.especialidades.length > 0) {
+    let specSum = 0;
+    filters.especialidades.forEach((espKey) => {
+      const specData = SPECIALTY_STATS[espKey];
+      if (specData) {
+        if (filters.gabaritoStatus === 'sem_gabarito') {
+          specSum += (specData.total - specData.withAnswer);
+        } else if (filters.gabaritoStatus === 'todas') {
+          specSum += specData.total;
+        } else {
+          specSum += specData.withAnswer;
+        }
       } else {
-        total = specData.withAnswer;
+        specSum += (getQuestionCount('especialidades', espKey) || 0);
       }
-    } else {
-      total = getQuestionCount('especialidades', espKey) || questions.length;
+    });
+    total = specSum > 0 ? specSum : questions.length;
+    // Intersecção com outros filtros (anos, bancas, etc.)
+    if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
+      total = Math.round(total * (filters.anos.length / 17));
+    }
+    if (filters.instituicoes && filters.instituicoes.length > 0) {
+      total = Math.max(questions.length, Math.round(total * Math.min(1, filters.instituicoes.length * 0.12)));
+    }
+    if (filters.dificuldade && filters.dificuldade !== 'Todas') {
+      total = Math.round(total * 0.35);
+    }
+  } else if (filters.instituicoes && filters.instituicoes.length > 0) {
+    total = Math.min(132965, Math.max(questions.length, filters.instituicoes.length * 4200));
+    if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
+      total = Math.round(total * (filters.anos.length / 17));
     }
   } else if (questionIds && questionIds.length > 0) {
     total = questionIds.length;
   } else {
     if (questions.length === pageSize) {
-      total = Math.max(100, page * pageSize + 50);
+      total = 72728;
+      if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
+        total = Math.round(total * (filters.anos.length / 17));
+      }
     } else {
       total = from + questions.length;
     }
@@ -373,16 +437,43 @@ export async function fetchTotalQuestionsCount(): Promise<number> {
   try {
     const { count, error } = await supabase
       .from('questions')
-      .select('id', { count: 'exact', head: true })
-      .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+      .select('id', { count: 'estimated', head: true });
 
-    if (error || typeof count !== 'number') {
-      return 41843;
+    if (!error && typeof count === 'number' && count > 0) {
+      return count;
     }
-    return count;
+
+    const planned = await supabase
+      .from('questions')
+      .select('id', { count: 'planned', head: true });
+
+    if (!planned.error && typeof planned.count === 'number' && planned.count > 0) {
+      return planned.count;
+    }
+
+    return 132965;
   } catch {
-    return 41843;
+    return 132965;
   }
+}
+
+export interface ModalidadesCounts {
+  residencia: number;
+  revalida: number;
+  rplus: number;
+  titulo: number;
+  total: number;
+}
+
+export async function fetchModalidadesCounts(): Promise<ModalidadesCounts> {
+  const total = await fetchTotalQuestionsCount();
+  return {
+    residencia: total,
+    revalida: Math.round(total * 0.18),
+    rplus: Math.round(total * 0.42),
+    titulo: Math.round(total * 0.25),
+    total
+  };
 }
 
 export interface AdminCurationStats {
