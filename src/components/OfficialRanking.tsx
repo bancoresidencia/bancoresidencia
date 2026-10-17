@@ -11,13 +11,17 @@ interface OfficialRankingProps {
   filters: PerformanceFilterState;
   userQuestions: number;
   userPercentile?: number;
+  userCorrect?: number;
+  userName?: string;
 }
 
 export const OfficialRanking: React.FC<OfficialRankingProps> = ({
   ranking,
   filters,
   userQuestions,
-  userPercentile
+  userPercentile,
+  userCorrect = 0,
+  userName = 'Você'
 }) => {
   const { accentConfig, mode } = useTheme();
   const [activeRankingTab, setActiveRankingTab] = useState<'official' | 'provisional'>('official');
@@ -25,11 +29,11 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
   const isUserEligibleOfficial = userQuestions >= 500;
   const isUserEligibleProvisional = userQuestions >= 150;
 
-  // Carrega ranking provisório (150 - 499 questões)
+  // Carrega ranking provisório de candidatos reais (150 - 499 questões)
   const provisionalRanking = getProvisionalRanking(filters, {
     answered: userQuestions,
-    correct: Math.round(userQuestions * 0.78),
-    name: 'Você'
+    correct: userCorrect,
+    name: userName
   });
 
   const displayedList = activeRankingTab === 'official' ? ranking : provisionalRanking;
@@ -93,7 +97,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
         const pValue = userPercentile ?? 78;
         const tier = getPercentileColor(pValue);
         const userInList = displayedList.find((s) => s.name.includes('(Você)'));
-        const userRank = userInList ? `#${userInList.rank}` : (isUserEligibleOfficial ? '#5' : '#14');
+        const userRank = userInList ? `#${userInList.rank}` : (isUserEligibleOfficial ? 'Homologado' : 'Sem ranking');
         const badgeTextColor = mode === 'light' ? tier.textLight : tier.textDark;
 
         return (
@@ -132,10 +136,18 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                     </span>
                   </div>
                   <h4 className="font-heading text-lg sm:text-xl font-black text-slate-900 dark:text-white mt-0.5">
-                    Nível {tier.name} — Posição {userRank}
+                    Nível {tier.name} — {userInList ? `Posição ${userRank}` : userRank}
                   </h4>
                   <p className="text-xs text-slate-600 dark:text-slate-300">
-                    Você está à frente de <strong className="font-bold text-slate-900 dark:text-white">{pValue}% dos concorrentes</strong> com base no modelo TRI Bayesiano oficial.
+                    {userInList ? (
+                      <>
+                        Você está na posição <strong className="font-bold text-slate-900 dark:text-white">#{userInList.rank}</strong> com base no modelo TRI Bayesiano oficial.
+                      </>
+                    ) : (
+                      <>
+                        Você resolveu <strong className="font-bold text-slate-900 dark:text-white">{userQuestions} questões</strong>. {isUserEligibleOfficial ? 'Você atingiu o requisito de questões para homologação oficial.' : `Resolva mais ${Math.max(0, (activeRankingTab === 'official' ? 500 : 150) - userQuestions)} questões para figurar no ranking.`}
+                      </>
+                    )}
                   </p>
                 </div>
               </div>
@@ -151,7 +163,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                 <div className="px-3.5 py-2 rounded-2xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 text-center">
                   <span className="text-[10px] font-bold text-slate-400 block uppercase">Status</span>
                   <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                    {isUserEligibleOfficial ? 'Homologado' : 'Provisório'}
+                    {isUserEligibleOfficial ? 'Homologado' : (isUserEligibleProvisional ? 'Provisório' : 'Em Progresso')}
                   </span>
                 </div>
               </div>
@@ -188,7 +200,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
         </div>
       )}
 
-      {/* Tabela do Ranking Anonimizado com Foco Central no P-valor */}
+      {/* Tabela do Ranking com Foco Central no P-valor e Destaque no Top 3 */}
       <div className="overflow-x-auto rounded-2xl border border-slate-200/90 dark:border-slate-800/80 bg-white dark:bg-slate-950/40 shadow-xs">
         <table className="w-full text-left text-sm text-slate-800 dark:text-slate-200">
           <thead>
@@ -208,99 +220,174 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
-            {displayedList.map((student) => {
-              const isCurrentUser = student.name.includes('(Você)');
-              const tier = getPercentileColor(student.percentile);
+            {displayedList.length === 0 ? (
+              <tr>
+                <td colSpan={7} className="py-12 px-4 text-center">
+                  <div className="flex flex-col items-center justify-center gap-3 max-w-md mx-auto">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-500">
+                      <Trophy className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-slate-800 dark:text-slate-100 text-sm">
+                        {activeRankingTab === 'official'
+                          ? 'Nenhum candidato no Ranking Oficial ainda'
+                          : 'Nenhum candidato no Ranking Provisório ainda'}
+                      </h4>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                        {activeRankingTab === 'official'
+                          ? 'São necessárias pelo menos 500 questões válidas para figurar no ranking consolidado. Resolva questões e dispute o Top 3!'
+                          : 'São necessárias pelo menos 150 questões válidas para figurar no ranking provisório. Continue praticando para estrear no ranking!'}
+                      </p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            ) : (
+              displayedList.map((student) => {
+                const isCurrentUser = student.name.includes('(Você)');
+                const tier = getPercentileColor(student.percentile);
 
-              let badgeIcon = null;
-              if (student.rank === 1) {
-                badgeIcon = <Trophy className="w-4 h-4 text-amber-500 shrink-0 inline mr-1.5" />;
-              } else if (student.rank === 2) {
-                badgeIcon = <Medal className="w-4 h-4 text-slate-400 shrink-0 inline mr-1.5" />;
-              } else if (student.rank === 3) {
-                badgeIcon = <Medal className="w-4 h-4 text-amber-700 shrink-0 inline mr-1.5" />;
-              }
+                // Destaque Nobre para os 3 Primeiros Colocados (Top 3)
+                const isTop1 = student.rank === 1;
+                const isTop2 = student.rank === 2;
+                const isTop3 = student.rank === 3;
+                const isTopThree = isTop1 || isTop2 || isTop3;
 
-              // Identificador anonimizado (sem expor nomes de terceiros)
-              const anonymizedLabel = isCurrentUser
-                ? 'Você (Seu Perfil)'
-                : `Candidato #${(1020 + student.rank * 19).toString()}`;
+                let rowBgClass = '';
+                let borderLeftClass = 'border-l-4 border-transparent';
+                let rankBadge = null;
+                let topTag = null;
 
-              // Contraste dinâmico otimizado para modo claro e escuro
-              const badgeTextColor = mode === 'light' ? tier.textLight : tier.textDark;
-
-              return (
-                <tr
-                  key={`${activeRankingTab}-${student.name}-${student.rank}`}
-                  className={`hover:bg-slate-50/80 dark:hover:bg-slate-900/60 transition-colors ${
-                    isCurrentUser ? 'bg-blue-50/80 dark:bg-blue-950/40 border-l-4 border-blue-600 font-semibold' : ''
-                  }`}
-                >
-                  <td className="py-4 px-4 font-mono font-bold">
-                    <span className="flex items-center text-sm text-slate-900 dark:text-white">
-                      {badgeIcon}
+                if (isTop1) {
+                  rowBgClass = 'bg-amber-500/[0.08] dark:bg-amber-500/[0.14]';
+                  borderLeftClass = 'border-l-4 border-l-amber-500';
+                  rankBadge = (
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-500/20 text-amber-800 dark:text-amber-200 border border-amber-500/40 font-mono font-black text-xs shadow-xs">
+                      <Trophy className="w-4 h-4 text-amber-500 shrink-0" />
+                      #1
+                    </span>
+                  );
+                  topTag = (
+                    <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-500/40">
+                      1º Lugar 🥇
+                    </span>
+                  );
+                } else if (isTop2) {
+                  rowBgClass = 'bg-slate-300/[0.18] dark:bg-slate-500/[0.14]';
+                  borderLeftClass = 'border-l-4 border-l-slate-400 dark:border-l-slate-400';
+                  rankBadge = (
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 font-mono font-black text-xs shadow-xs">
+                      <Medal className="w-4 h-4 text-slate-400 shrink-0" />
+                      #2
+                    </span>
+                  );
+                  topTag = (
+                    <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-slate-500/15 text-slate-700 dark:text-slate-300 border border-slate-500/30">
+                      2º Lugar 🥈
+                    </span>
+                  );
+                } else if (isTop3) {
+                  rowBgClass = 'bg-amber-700/[0.08] dark:bg-amber-700/[0.14]';
+                  borderLeftClass = 'border-l-4 border-l-amber-700 dark:border-l-amber-600';
+                  rankBadge = (
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-800/15 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 border border-amber-700/40 font-mono font-black text-xs shadow-xs">
+                      <Medal className="w-4 h-4 text-amber-700 dark:text-amber-500 shrink-0" />
+                      #3
+                    </span>
+                  );
+                  topTag = (
+                    <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-amber-700/15 text-amber-800 dark:text-amber-300 border border-amber-700/30">
+                      3º Lugar 🥉
+                    </span>
+                  );
+                } else {
+                  rankBadge = (
+                    <span className="flex items-center text-sm font-mono font-bold text-slate-700 dark:text-slate-300 pl-1">
                       #{student.rank}
                     </span>
-                  </td>
-                  <td className="py-4 px-4">
-                    <div className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                      <span className={isCurrentUser ? 'text-blue-700 dark:text-blue-300 font-extrabold' : 'text-slate-700 dark:text-slate-300 font-medium'}>
-                        {anonymizedLabel}
-                      </span>
-                      {isCurrentUser && (
-                        <span
-                          className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full border shadow-xs"
-                          style={{
-                            backgroundColor: accentConfig.bgRgba,
-                            color: accentConfig.primaryHex,
-                            borderColor: accentConfig.borderRgba
-                          }}
-                        >
-                          Você
+                  );
+                }
+
+                if (isCurrentUser && !isTopThree) {
+                  rowBgClass = 'bg-blue-50/80 dark:bg-blue-950/40 font-semibold';
+                  borderLeftClass = 'border-l-4 border-blue-600';
+                }
+
+                const anonymizedLabel = isCurrentUser
+                  ? 'Você (Seu Perfil)'
+                  : student.name;
+
+                const badgeTextColor = mode === 'light' ? tier.textLight : tier.textDark;
+
+                return (
+                  <tr
+                    key={`${activeRankingTab}-${student.name}-${student.rank}`}
+                    className={`hover:bg-slate-50/90 dark:hover:bg-slate-900/70 transition-colors ${rowBgClass} ${borderLeftClass}`}
+                  >
+                    <td className="py-4 px-4 font-mono">
+                      {rankBadge}
+                    </td>
+                    <td className="py-4 px-4">
+                      <div className="font-bold text-slate-900 dark:text-white flex items-center gap-2 flex-wrap">
+                        <span className={isCurrentUser ? 'text-blue-700 dark:text-blue-300 font-extrabold' : 'text-slate-800 dark:text-slate-200 font-semibold'}>
+                          {anonymizedLabel}
                         </span>
-                      )}
-                    </div>
-                  </td>
+                        {topTag}
+                        {isCurrentUser && (
+                          <span
+                            className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full border shadow-xs"
+                            style={{
+                              backgroundColor: accentConfig.bgRgba,
+                              color: accentConfig.primaryHex,
+                              borderColor: accentConfig.borderRgba
+                            }}
+                          >
+                            Você
+                          </span>
+                        )}
+                      </div>
+                    </td>
 
-                  {/* P-valor Limpo e Destacado (sem classificação do nome do rank, apenas o valor e a cor) */}
-                  <td className="py-4 px-4 text-center">
-                    <span
-                      className="px-3.5 py-1.5 rounded-xl font-extrabold font-mono text-xs tracking-wider border shadow-xs inline-flex items-center gap-2 transition-all"
-                      style={{
-                        backgroundColor: tier.bgRgba,
-                        borderColor: tier.borderRgba,
-                        color: badgeTextColor
-                      }}
-                      title={`Percentil P${student.percentile} (${tier.name}) - Score IRT Ajustado: ${student.adjustedScore.toFixed(2)}`}
-                    >
+                    {/* P-valor Limpo e Destacado */}
+                    <td className="py-4 px-4 text-center">
                       <span
-                        className="w-2.5 h-2.5 rounded-full shrink-0 shadow-xs"
-                        style={{ backgroundColor: tier.color }}
-                      />
-                      P{student.percentile}
-                    </span>
-                  </td>
+                        className="px-3.5 py-1.5 rounded-xl font-extrabold font-mono text-xs tracking-wider border shadow-xs inline-flex items-center gap-2 transition-all"
+                        style={{
+                          backgroundColor: tier.bgRgba,
+                          borderColor: tier.borderRgba,
+                          color: badgeTextColor
+                        }}
+                        title={`Percentil P${student.percentile} (${tier.name}) - Score IRT Ajustado: ${student.adjustedScore.toFixed(2)}`}
+                      >
+                        <span
+                          className="w-2.5 h-2.5 rounded-full shrink-0 shadow-xs"
+                          style={{ backgroundColor: tier.color }}
+                        />
+                        P{student.percentile}
+                      </span>
+                    </td>
 
-                  <td className="py-4 px-4 text-slate-600 dark:text-slate-400 text-xs sm:text-sm font-medium">
-                    {student.institution}
-                  </td>
-                  <td className="py-4 px-4 text-slate-600 dark:text-slate-400 text-xs sm:text-sm font-medium">
-                    {student.banca}
-                  </td>
-                  <td className="py-4 px-4 text-center font-mono font-bold text-slate-900 dark:text-slate-200">
-                    {student.answered}
-                  </td>
-                  <td className="py-4 px-4 text-right">
-                    <span className="text-emerald-700 dark:text-emerald-400 font-extrabold font-mono text-sm">
-                      {student.rawAccuracy.toFixed(1)}%
-                    </span>
-                    <span className="text-[11px] text-slate-500 dark:text-slate-400 block font-normal">
-                      ({student.correct}/{student.answered})
-                    </span>
-                  </td>
-                </tr>
-              );
-            })}
+                    <td className="py-4 px-4 text-slate-600 dark:text-slate-400 text-xs sm:text-sm font-medium">
+                      {student.institution}
+                    </td>
+                    <td className="py-4 px-4 text-slate-600 dark:text-slate-400 text-xs sm:text-sm font-medium">
+                      {student.banca}
+                    </td>
+                    <td className="py-4 px-4 text-center font-mono font-bold text-slate-900 dark:text-slate-200">
+                      {student.answered}
+                    </td>
+                    <td className="py-4 px-4 text-right">
+                      <span className="text-emerald-700 dark:text-emerald-400 font-extrabold font-mono text-sm">
+                        {student.rawAccuracy.toFixed(1)}%
+                      </span>
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 block font-normal">
+                        ({student.correct}/{student.answered})
+                      </span>
+                    </td>
+                  </tr>
+                );
+              })
+            )}
           </tbody>
         </table>
       </div>

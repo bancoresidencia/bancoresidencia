@@ -1284,6 +1284,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         ranking={officialRanking}
         filters={filters}
         userQuestions={stats.totalAnswered}
+        userCorrect={stats.totalCorrect}
+        userName="Você"
       />
     </div>
   );

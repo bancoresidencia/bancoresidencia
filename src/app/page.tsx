@@ -2293,6 +2293,8 @@ export default function Home() {
                 filters={performanceFilters}
                 userQuestions={stats.totalAnswered}
                 userPercentile={simulatedTestPercentile ?? stats.percentileInfo.percentile ?? 78}
+                userCorrect={stats.totalCorrect}
+                userName={studentName}
               />
             </div>
           )}

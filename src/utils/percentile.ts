@@ -378,14 +378,6 @@ export function getOfficialRanking(
     attempts?: UserAttempt[];
   }
 ): RankedStudent[] {
-  let cohort = filterCohort(mockStudentsCohort, filters);
-  if (cohort.length < 3) {
-    cohort = mockStudentsCohort.filter((s) => s.modalidade === filters.modalidade);
-  }
-
-  // Filtragem estrita: >= 500 questões válidas
-  const officialEligible = cohort.filter((s) => s.answered >= OFFICIAL_THRESHOLD);
-
   interface ScoredCandidate {
     name: string;
     institution: string;
@@ -398,25 +390,10 @@ export function getOfficialRanking(
     isCurrentUser?: boolean;
   }
 
-  const list: ScoredCandidate[] = officialEligible.map((s) => {
-    const attempts = createCohortStudentAttempts(s);
-    const theta = calculateIRTAbility(attempts);
-    const se = calculateStandardError(theta, attempts);
-    const adjustedScore = calculateIRTAdjustedScore(theta, se, s.answered);
+  // Lista estrita de candidatos reais (sem inclusão de população simulada)
+  const list: ScoredCandidate[] = [];
 
-    return {
-      name: s.name,
-      institution: s.institution,
-      banca: s.banca,
-      answered: s.answered,
-      correct: s.correct,
-      theta,
-      se,
-      adjustedScore
-    };
-  });
-
-  // Se o aluno atual possuir >= 500 questões, inclui no ranking oficial
+  // Se o aluno atual possuir >= 500 questões válidas, inclui no ranking oficial
   if (currentUserScore && currentUserScore.answered >= OFFICIAL_THRESHOLD) {
     let theta: number;
     let se: number;
@@ -487,6 +464,7 @@ export function getOfficialRanking(
 
 /**
  * 8. RANKING PROVISÓRIO (150 a 499 questões válidas)
+ * Apenas candidatos reais elegíveis
  */
 export function getProvisionalRanking(
   filters: PerformanceFilterState,
@@ -497,48 +475,47 @@ export function getProvisionalRanking(
     attempts?: UserAttempt[];
   }
 ): RankedStudent[] {
-  let cohort = filterCohort(mockStudentsCohort, filters);
-  if (cohort.length < 3) {
-    cohort = mockStudentsCohort.filter((s) => s.modalidade === filters.modalidade);
+  interface ScoredCandidate {
+    name: string;
+    institution: string;
+    banca: string;
+    answered: number;
+    correct: number;
+    theta: number;
+    se: number;
+    adjustedScore: number;
+    isCurrentUser?: boolean;
   }
 
-  // Candidatos provisórios: 150 <= answered < 500
-  const provEligible = cohort.filter((s) => s.answered >= UNRANKED_THRESHOLD && s.answered < OFFICIAL_THRESHOLD);
-
-  const list = provEligible.map((s) => {
-    const attempts = createCohortStudentAttempts(s);
-    const theta = calculateIRTAbility(attempts);
-    const se = calculateStandardError(theta, attempts);
-    const adjustedScore = calculateIRTAdjustedScore(theta, se, s.answered);
-
-    return {
-      name: s.name,
-      institution: s.institution,
-      banca: s.banca,
-      answered: s.answered,
-      correct: s.correct,
-      theta,
-      se,
-      adjustedScore
-    };
-  });
+  // Lista estrita de candidatos reais provisórios
+  const list: ScoredCandidate[] = [];
 
   if (currentUserScore && currentUserScore.answered >= UNRANKED_THRESHOLD && currentUserScore.answered < OFFICIAL_THRESHOLD) {
-    const attempts = createCohortStudentAttempts({
-      id: 'current-user',
-      name: currentUserScore.name,
-      modalidade: filters.modalidade,
-      institution: filters.institutions[0] || 'Geral',
-      banca: filters.banca !== 'Todas' ? filters.banca : 'Múltiplas',
-      answered: currentUserScore.answered,
-      correct: currentUserScore.correct,
-      uniqueAnswered: currentUserScore.answered,
-      reviews: 0,
-      repeated: 0,
-      semester: '2026.1'
-    });
-    const theta = calculateIRTAbility(attempts);
-    const se = calculateStandardError(theta, attempts);
+    let theta: number;
+    let se: number;
+
+    if (currentUserScore.attempts && currentUserScore.attempts.length > 0) {
+      const eligible = getEligibleQuestions(currentUserScore.attempts);
+      theta = calculateIRTAbility(eligible);
+      se = calculateStandardError(theta, eligible);
+    } else {
+      const attempts = createCohortStudentAttempts({
+        id: 'current-user',
+        name: currentUserScore.name,
+        modalidade: filters.modalidade,
+        institution: filters.institutions[0] || 'Geral',
+        banca: filters.banca !== 'Todas' ? filters.banca : 'Múltiplas',
+        answered: currentUserScore.answered,
+        correct: currentUserScore.correct,
+        uniqueAnswered: currentUserScore.answered,
+        reviews: 0,
+        repeated: 0,
+        semester: '2026.1'
+      });
+      theta = calculateIRTAbility(attempts);
+      se = calculateStandardError(theta, attempts);
+    }
+
     const adjustedScore = calculateIRTAdjustedScore(theta, se, currentUserScore.answered);
 
     list.push({
@@ -549,7 +526,8 @@ export function getProvisionalRanking(
       correct: currentUserScore.correct,
       theta,
       se,
-      adjustedScore
+      adjustedScore,
+      isCurrentUser: true
     });
   }
 
