@@ -400,8 +400,8 @@ export default function Home() {
   }, [advancedFilters]);
 
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
-  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(132965);
-  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(132965);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(63211);
+  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(63211);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
   const [hasLoadedSupabaseOnce, setHasLoadedSupabaseOnce] = useState<boolean>(false);
   const [questionsPage, setQuestionsPage] = useState<number>(1);

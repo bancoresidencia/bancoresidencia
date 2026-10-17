@@ -84,7 +84,7 @@ export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean
   }
 
   try {
-    let query = supabase.from('questions').select('id', { count: 'exact', head: true });
+    let query = supabase.from('questions').select('id', { count: 'estimated', head: true });
     if (onlyClassifiedWithAnswer) {
       query = query
         .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
@@ -94,7 +94,7 @@ export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean
         .neq('especialidade', 'Não classificado');
     }
     const { count, error } = await query;
-    if (!error && typeof count === 'number') {
+    if (!error && typeof count === 'number' && count > 0) {
       countCache.set(cacheKey, { count, timestamp: Date.now() });
       return count;
     }
@@ -102,7 +102,7 @@ export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean
     console.warn('Erro ao calcular total de questões:', err);
   }
 
-  return 86311; // Universo auditado padrão ouro
+  return 63211; // Universo oficial com gabarito consolidado e classificação clínica
 }
 
 export async function fetchQuestionsFromSupabase(
@@ -533,15 +533,15 @@ export async function updateQuestionAnswer(
 }
 
 const SPECIALTY_STATS: Record<string, { total: number; withAnswer: number }> = {
-  'Cirurgia': { total: 21229, withAnswer: 6510 },
-  'Cirurgia Geral': { total: 21229, withAnswer: 6510 },
-  'Clínica Médica': { total: 38227, withAnswer: 13074 },
-  'Ginecologia e Obstetrícia': { total: 27338, withAnswer: 8319 },
-  'Ginecologia': { total: 13246, withAnswer: 4047 },
-  'Obstetrícia': { total: 14092, withAnswer: 4272 },
-  'Medicina Preventiva e Social': { total: 22039, withAnswer: 5746 },
-  'Medicina Preventiva': { total: 22039, withAnswer: 5746 },
-  'Pediatria': { total: 24132, withAnswer: 7207 },
+  'Cirurgia': { total: 10636, withAnswer: 10636 },
+  'Cirurgia Geral': { total: 10636, withAnswer: 10636 },
+  'Clínica Médica': { total: 17693, withAnswer: 17693 },
+  'Ginecologia e Obstetrícia': { total: 13028, withAnswer: 13028 },
+  'Ginecologia': { total: 6328, withAnswer: 6328 },
+  'Obstetrícia': { total: 6700, withAnswer: 6700 },
+  'Medicina Preventiva e Social': { total: 10420, withAnswer: 10420 },
+  'Medicina Preventiva': { total: 10420, withAnswer: 10420 },
+  'Pediatria': { total: 11434, withAnswer: 11434 },
   'Urologia': { total: 987, withAnswer: 987 },
 };
 
