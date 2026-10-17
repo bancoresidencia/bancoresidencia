@@ -99,6 +99,23 @@ class BankMatcher:
 
     def _load_user_bank(self):
         print("Indexando questões do banco do usuário que necessitam de gabarito...")
+        # Carrega gabaritos históricos homologados do SQLite (drive_matches e matches_banco)
+        sql_matches = {}
+        try:
+            from .db import get_connection
+            conn = get_connection()
+            c = conn.cursor()
+            for qid, gab in c.execute("SELECT questao_banco_id, gabarito FROM drive_matches WHERE questao_banco_id IS NOT NULL AND gabarito IS NOT NULL"):
+                if gab and gab.strip():
+                    sql_matches[qid] = gab.strip().upper()
+            for qid, gab in c.execute("SELECT questao_banco_id, gabarito FROM matches_banco WHERE questao_banco_id IS NOT NULL AND gabarito IS NOT NULL"):
+                if gab and gab.strip():
+                    sql_matches[qid] = gab.strip().upper()
+            conn.close()
+            print(f"Carregados {len(sql_matches):,} gabaritos homologados históricos do SQLite.")
+        except Exception as e:
+            print(f"Aviso ao consultar gabaritos do SQLite: {e}")
+
         for esp, filepath in QUESTION_FILES.items():
             if not os.path.exists(filepath):
                 continue
@@ -109,6 +126,20 @@ class BankMatcher:
                     self.total_loaded += len(questions)
 
                     for idx, q in enumerate(questions):
+                        qid = q.get('id')
+                        if qid and qid in sql_matches:
+                            gab = sql_matches[qid]
+                            if gab in ['!', 'X', 'ANULADA', '*', '#']:
+                                q['isAnulada'] = True
+                                q['is_anulada'] = True
+                                q['correctAnswer'] = 'ANULADA'
+                                q['correct_answer'] = 'ANULADA'
+                            else:
+                                q['correctAnswer'] = gab
+                                q['correct_answer'] = gab
+                                q['isAnulada'] = False
+                                q['is_anulada'] = False
+
                         ans = (q.get('correctAnswer') or q.get('correct_answer') or '').strip()
                         is_anulada = bool(q.get('isAnulada') or q.get('is_anulada'))
                         
