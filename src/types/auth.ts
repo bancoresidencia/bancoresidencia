@@ -15,6 +15,8 @@ export interface UserAccount {
   subscriptionStatus?: 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive';
   subscriptionExpiresAt?: string;
   createdAt: string;
+  targetExamName?: string;
+  targetExamDate?: string;
 }
 
 export interface AuthState {
@@ -33,4 +35,6 @@ export interface UpdateProfileData {
   dailyGoal?: number;
   phone?: string;
   state?: string;
+  targetExamName?: string;
+  targetExamDate?: string;
 }

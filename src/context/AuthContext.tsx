@@ -18,6 +18,8 @@ export const DEFAULT_DEMO_USER: UserAccount = {
   dailyGoal: 30,
   phone: '(11) 98765-4321',
   state: 'SP',
+  targetExamName: 'ENARE 2026',
+  targetExamDate: '2026-11-01',
   createdAt: '2026-01-15T10:00:00.000Z'
 };
 
@@ -60,6 +62,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const appRole = (supabaseUser.app_metadata?.role as string) || (supabaseUser.user_metadata?.role as string);
       const role = (profile?.role || appRole || 'student') as 'admin' | 'student';
 
+      const targetExamName =
+        (supabaseUser.user_metadata?.target_exam_name as string) ||
+        ((profile as Record<string, unknown>)?.target_exam_name as string) ||
+        (typeof window !== 'undefined' ? localStorage.getItem(`user_target_exam_name_${supabaseUser.id}`) : null) ||
+        undefined;
+
+      const targetExamDate =
+        (supabaseUser.user_metadata?.target_exam_date as string) ||
+        ((profile as Record<string, unknown>)?.target_exam_date as string) ||
+        (typeof window !== 'undefined' ? localStorage.getItem(`user_target_exam_date_${supabaseUser.id}`) : null) ||
+        undefined;
+
       return {
         id: supabaseUser.id,
         name: profile?.name || (supabaseUser.user_metadata?.name as string) || (supabaseUser.email ? supabaseUser.email.split('@')[0] : 'Médico Residente'),
@@ -72,6 +86,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         dailyGoal: profile?.daily_goal || 30,
         phone: profile?.phone || '',
         state: profile?.state || '',
+        targetExamName,
+        targetExamDate,
         createdAt: profile?.created_at || supabaseUser.created_at || new Date().toISOString()
       };
     } catch {
@@ -85,6 +101,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         college: '',
         graduationYear: 2026,
         dailyGoal: 30,
+        targetExamName: (supabaseUser.user_metadata?.target_exam_name as string) || undefined,
+        targetExamDate: (supabaseUser.user_metadata?.target_exam_date as string) || undefined,
         createdAt: supabaseUser.created_at || new Date().toISOString()
       };
     }
@@ -234,26 +252,46 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const updated = { ...user, ...data };
       setUser(updated);
       localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(updated));
+      if (data.targetExamName) localStorage.setItem(`user_target_exam_name_${user.id}`, data.targetExamName);
+      if (data.targetExamDate) localStorage.setItem(`user_target_exam_date_${user.id}`, data.targetExamDate);
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new Event('bancoresidencia_target_exam_changed'));
+      }
       return { success: true, message: 'Perfil demo atualizado!' };
     }
 
     try {
-      const { error } = await supabase
-        .from('profiles')
-        .update({
-          name: data.name,
-          specialty_target: data.specialtyTarget,
-          college: data.college,
-          graduation_year: data.graduationYear,
-          daily_goal: data.dailyGoal,
-          phone: data.phone,
-          state: data.state,
-          avatar_url: data.avatarUrl
-        })
-        .eq('id', user.id);
+      const updatePayload: Record<string, unknown> = {};
+      if (data.name !== undefined) updatePayload.name = data.name;
+      if (data.specialtyTarget !== undefined) updatePayload.specialty_target = data.specialtyTarget;
+      if (data.college !== undefined) updatePayload.college = data.college;
+      if (data.graduationYear !== undefined) updatePayload.graduation_year = data.graduationYear;
+      if (data.dailyGoal !== undefined) updatePayload.daily_goal = data.dailyGoal;
+      if (data.phone !== undefined) updatePayload.phone = data.phone;
+      if (data.state !== undefined) updatePayload.state = data.state;
+      if (data.avatarUrl !== undefined) updatePayload.avatar_url = data.avatarUrl;
 
-      if (error) {
-        return { success: false, message: error.message };
+      if (Object.keys(updatePayload).length > 0) {
+        const { error } = await supabase
+          .from('profiles')
+          .update(updatePayload)
+          .eq('id', user.id);
+
+        if (error) {
+          return { success: false, message: error.message };
+        }
+      }
+
+      if (data.targetExamName || data.targetExamDate) {
+        const metadataUpdate: Record<string, string> = {};
+        if (data.targetExamName) metadataUpdate.target_exam_name = data.targetExamName;
+        if (data.targetExamDate) metadataUpdate.target_exam_date = data.targetExamDate;
+        await supabase.auth.updateUser({ data: metadataUpdate }).catch(() => {});
+        if (typeof window !== 'undefined') {
+          if (data.targetExamName) localStorage.setItem(`user_target_exam_name_${user.id}`, data.targetExamName);
+          if (data.targetExamDate) localStorage.setItem(`user_target_exam_date_${user.id}`, data.targetExamDate);
+          window.dispatchEvent(new Event('bancoresidencia_target_exam_changed'));
+        }
       }
 
       setUser((prev) => (prev ? { ...prev, ...data } : null));

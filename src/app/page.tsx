@@ -11,13 +11,13 @@ import { ListManager } from '@/components/ListManager';
 import { OfficialRanking } from '@/components/OfficialRanking';
 import { Sidebar } from '@/components/Sidebar';
 import { GlobalSearchBar } from '@/components/GlobalSearchBar';
-import { PercentileColorTester } from '@/components/PercentileColorTester';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { AuthScreen } from '@/components/AuthScreen';
 import { LandingPage } from '@/components/LandingPage';
 import { StudentProfileSettings } from '@/components/StudentProfileSettings';
 import { useTheme } from '@/context/ThemeContext';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth, DEFAULT_DEMO_USER } from '@/context/AuthContext';
+import { createClient } from '@/lib/supabase/client';
 
 const OfficialExams = dynamic(
   () => import('@/components/OfficialExams').then((mod) => mod.OfficialExams),
@@ -222,33 +222,25 @@ export default function Home() {
     }
   };
 
-  // Respostas do Usuário com metadados do item e persistência real
-  const [userAnswers, setUserAnswers] = useState<
-    Record<
-      string,
-      {
-        letter: 'A' | 'B' | 'C' | 'D' | 'E';
-        isCorrect: boolean;
-        timestamp: number;
-        difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
-        isAnulada: boolean;
-        specialty?: string;
-        tema?: string;
-        foco?: string;
-        subfoco?: string;
-      }
-    >
-  >(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem('bancoresidencia_user_answers');
-        if (saved) return JSON.parse(saved);
-      } catch (e) {
-        console.error('Erro ao ler respostas salvas:', e);
-      }
-    }
-    return {};
-  });
+  // Chave de armazenamento de respostas com namespace do aluno
+  const getUserAnswersStorageKey = (userId?: string | null) => {
+    return userId ? `bancoresidencia_user_answers_${userId}` : 'bancoresidencia_user_answers_guest';
+  };
+
+  type UserAnswerItem = {
+    letter: 'A' | 'B' | 'C' | 'D' | 'E';
+    isCorrect: boolean;
+    timestamp: number;
+    difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
+    isAnulada: boolean;
+    specialty?: string;
+    tema?: string;
+    foco?: string;
+    subfoco?: string;
+  };
+
+  // Respostas do Usuário com metadados do item e persistência real específica da conta
+  const [userAnswers, setUserAnswers] = useState<Record<string, UserAnswerItem>>({});
 
   // Simulação de questões extras
   const [simulatedExtraAnswers, setSimulatedExtraAnswers] = useState<{ total: number; correct: number; unique: number; reviews: number; repeated: number }>({
@@ -400,6 +392,67 @@ export default function Home() {
   }, [advancedFilters]);
 
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
+
+  // Carrega e sincroniza respostas específicas do aluno quando a conta for carregada ou alterada
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const storageKey = getUserAnswersStorageKey(user?.id);
+    let loaded: Record<string, UserAnswerItem> = {};
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        loaded = JSON.parse(saved);
+      }
+    } catch (e) {
+      console.error('Erro ao ler respostas locais da conta:', e);
+    }
+
+    setUserAnswers(loaded);
+
+    // Se estiver logado em conta real no Supabase, sincroniza com o banco de dados
+    if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
+      const supabase = createClient();
+      supabase
+        .from('user_answers')
+        .select('question_id, selected_option, is_correct, answered_at')
+        .eq('user_id', user.id)
+        .then(({ data, error }) => {
+          if (!error && data && data.length > 0) {
+            setUserAnswers((prev) => {
+              const merged = { ...prev };
+              let changed = false;
+              data.forEach((row) => {
+                if (!merged[row.question_id]) {
+                  changed = true;
+                  const q = supabaseQuestions.find((item) => item.id === row.question_id);
+                  merged[row.question_id] = {
+                    letter: row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E',
+                    isCorrect: row.is_correct,
+                    timestamp: new Date(row.answered_at).getTime(),
+                    difficulty: q?.difficulty || 'Médio',
+                    isAnulada: q?.isAnulada || false,
+                    specialty: q?.especialidade,
+                    tema: q?.tema,
+                    foco: q?.foco,
+                    subfoco: q?.subfoco
+                  };
+                }
+              });
+              if (changed) {
+                try {
+                  localStorage.setItem(storageKey, JSON.stringify(merged));
+                } catch (e) {
+                  console.error(e);
+                }
+                return merged;
+              }
+              return prev;
+            });
+          }
+        });
+    }
+  }, [user?.id, supabaseQuestions]);
   const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(63211);
   const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(63211);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
@@ -559,30 +612,56 @@ export default function Home() {
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     const q = supabaseQuestions.find((item) => item.id === questionId);
+    const answerTimestamp = Date.now();
+    const answerObj = {
+      letter: selectedLetter,
+      isCorrect,
+      timestamp: answerTimestamp,
+      difficulty: q?.difficulty || 'Médio',
+      isAnulada: q?.isAnulada || false,
+      specialty: q?.especialidade,
+      tema: q?.tema,
+      foco: q?.foco,
+      subfoco: q?.subfoco
+    };
+
     setUserAnswers((prev) => {
       const nextAnswers = {
         ...prev,
-        [questionId]: {
-          letter: selectedLetter,
-          isCorrect,
-          timestamp: Date.now(),
-          difficulty: q?.difficulty || 'Médio',
-          isAnulada: q?.isAnulada || false,
-          specialty: q?.especialidade,
-          tema: q?.tema,
-          foco: q?.foco,
-          subfoco: q?.subfoco
-        }
+        [questionId]: answerObj
       };
       if (typeof window !== 'undefined') {
         try {
-          localStorage.setItem('bancoresidencia_user_answers', JSON.stringify(nextAnswers));
+          const storageKey = getUserAnswersStorageKey(user?.id);
+          localStorage.setItem(storageKey, JSON.stringify(nextAnswers));
         } catch (e) {
           console.error(e);
         }
       }
       return nextAnswers;
     });
+
+    // Sincroniza em segundo plano com a tabela user_answers do Supabase para a conta do aluno
+    if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
+      const supabase = createClient();
+      supabase
+        .from('user_answers')
+        .upsert(
+          {
+            user_id: user.id,
+            question_id: questionId,
+            selected_option: selectedLetter,
+            is_correct: isCorrect,
+            answered_at: new Date(answerTimestamp).toISOString()
+          },
+          { onConflict: 'user_id,question_id' }
+        )
+        .then(({ error }) => {
+          if (error) {
+            console.error('Erro ao sincronizar resposta da conta no Supabase:', error);
+          }
+        });
+    }
 
     if (activeListId) {
       setLists((prev) => {
@@ -2130,12 +2209,6 @@ export default function Home() {
           {/* ABA 6: RANKING */}
           {activeTab === 'ranking' && (
             <div className="space-y-6">
-              {/* Testador Integrado de Cores */}
-              <PercentileColorTester
-                currentPercentile={simulatedTestPercentile ?? 78}
-                onSelectTestPercentile={(p) => setSimulatedTestPercentile(p)}
-              />
-
               <OfficialRanking
                 ranking={displayedRanking}
                 filters={performanceFilters}
@@ -2151,8 +2224,6 @@ export default function Home() {
               fontSize={fontSize}
               onChangeFontSize={handleFontSizeChange}
               onLogout={logout}
-              simulatedPercentile={simulatedTestPercentile ?? stats.percentileInfo.percentile ?? 78}
-              onSimulatePercentile={(p) => setSimulatedTestPercentile(p)}
             />
           )}
 

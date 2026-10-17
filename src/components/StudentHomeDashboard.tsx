@@ -27,6 +27,8 @@ import {
 import { UserStats, QuestionList, ActiveTab, Modalidade } from '@/types';
 import { getPercentileColor } from '@/utils/percentile';
 import { useTheme } from '@/context/ThemeContext';
+import { useAuth } from '@/context/AuthContext';
+import { getAccountTargetExam } from '@/utils/userTargetExam';
 
 interface StudentHomeDashboardProps {
   studentName: string;
@@ -75,42 +77,33 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   // Meta Diária de Tempo de Estudo personalizada pelo aluno (em minutos)
   const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(120);
 
-  // Prova alvo e contagem regressiva de dias restantes (exibido ao lado da constância)
-  const [targetExamName, setTargetExamName] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('user_target_exam_name') || 'ENARE 2026';
-    }
-    return 'ENARE 2026';
-  });
+  const { user } = useAuth();
 
-  const [targetDaysLeft, setTargetDaysLeft] = useState<number>(() => {
-    try {
-      const savedDate = typeof window !== 'undefined' ? localStorage.getItem('user_target_exam_date') || '2026-11-01' : '2026-11-01';
-      const target = new Date(savedDate + 'T00:00:00');
-      const now = new Date();
-      const diffMs = target.getTime() - now.getTime();
-      return Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
-    } catch {
-      return 238;
-    }
-  });
+  // Prova alvo e contagem regressiva de dias restantes específica da conta do aluno
+  const examInfo = React.useMemo(() => getAccountTargetExam(user), [user]);
+  const [targetExamName, setTargetExamName] = useState<string>(examInfo.examName);
+  const [targetDaysLeft, setTargetDaysLeft] = useState<number>(examInfo.daysLeft);
 
-  // Atualização em resposta a eventos externos (ex: salvamento de novo alvo em modal)
   useEffect(() => {
-    const handleStorage = () => {
-      try {
-        const savedName = localStorage.getItem('user_target_exam_name') || 'ENARE 2026';
-        const savedDate = localStorage.getItem('user_target_exam_date') || '2026-11-01';
-        setTargetExamName(savedName);
-        const target = new Date(savedDate + 'T00:00:00');
-        const now = new Date();
-        const diffMs = target.getTime() - now.getTime();
-        setTargetDaysLeft(Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24))));
-      } catch {}
+    const updated = getAccountTargetExam(user);
+    setTargetExamName(updated.examName);
+    setTargetDaysLeft(updated.daysLeft);
+  }, [user]);
+
+  // Atualização em resposta a eventos (ex: salvamento de novo alvo em Perfil & Ajustes)
+  useEffect(() => {
+    const handleTargetChange = () => {
+      const updated = getAccountTargetExam(user);
+      setTargetExamName(updated.examName);
+      setTargetDaysLeft(updated.daysLeft);
     };
-    window.addEventListener('storage', handleStorage);
-    return () => window.removeEventListener('storage', handleStorage);
-  }, []);
+    window.addEventListener('bancoresidencia_target_exam_changed', handleTargetChange);
+    window.addEventListener('storage', handleTargetChange);
+    return () => {
+      window.removeEventListener('bancoresidencia_target_exam_changed', handleTargetChange);
+      window.removeEventListener('storage', handleTargetChange);
+    };
+  }, [user]);
 
   // Modal / Edição de Metas sem valores pré-definidos (escolha livre do aluno)
   const [isEditingGoals, setIsEditingGoals] = useState(false);
