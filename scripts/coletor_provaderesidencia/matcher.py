@@ -151,8 +151,14 @@ class BankMatcher:
                     # Injeta o gabarito sem alterar nenhuma outra propriedade
                     if is_anulada:
                         bank_q['isAnulada'] = True
+                        bank_q['is_anulada'] = True
+                        bank_q['correct_answer'] = 'ANULADA'
+                        bank_q['correctAnswer'] = 'ANULADA'
                     else:
                         bank_q['correctAnswer'] = gabarito
+                        bank_q['correct_answer'] = gabarito
+                        bank_q['is_anulada'] = False
+                        bank_q['isAnulada'] = False
                     
                     self.dirty_specialties.add(esp)
                     self.matches_count += 1
