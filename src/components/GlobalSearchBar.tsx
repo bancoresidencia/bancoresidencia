@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { ActiveTab, QuestionList, Question } from '@/types';
-import { medevoHierarchy, medevoInstituicoes } from '@/data/mockQuestions';
+import { clinicalHierarchy, instituicoesSiglas } from '@/data/mockQuestions';
 import { searchQuestionsDirect } from '@/services/questionService';
 
 interface GlobalSearchBarProps {
@@ -127,7 +127,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
     // 1. Questões correspondentes (até 4) carregadas do Supabase
     // 2. Especialidades e Temas correspondentes (até 4)
     const matchingSpecialties: { specialty: string; tema?: string; type: 'esp' | 'tema' }[] = [];
-    for (const esp of medevoHierarchy) {
+    for (const esp of clinicalHierarchy) {
       if (normalize(esp.especialidade).includes(qNorm)) {
         if (!matchingSpecialties.some((m) => m.specialty === esp.especialidade && !m.tema)) {
           matchingSpecialties.push({ specialty: esp.especialidade, type: 'esp' });
@@ -144,7 +144,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
     }
 
     // 3. Bancas e Instituições correspondentes (até 4)
-    const matchingInstitutions = medevoInstituicoes
+    const matchingInstitutions = instituicoesSiglas
       .filter((inst) => normalize(inst).includes(qNorm))
       .slice(0, 4);
 

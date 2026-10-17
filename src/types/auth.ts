@@ -10,7 +10,10 @@ export interface UserAccount {
   dailyGoal: number;
   phone?: string;
   state?: string;
-  role?: 'admin' | 'student';
+  role?: 'admin' | 'curator' | 'student';
+  subscriptionPlan?: 'free' | 'pro' | 'premium';
+  subscriptionStatus?: 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive';
+  subscriptionExpiresAt?: string;
   createdAt: string;
 }
 

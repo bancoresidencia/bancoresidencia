@@ -64,9 +64,12 @@ import {
   UserAttempt,
   Question
 } from '@/types';
-import { fetchQuestionsFromSupabase, fetchTotalQuestionsCount } from '@/services/questionService';
+import { fetchQuestionsFromSupabase, fetchTotalQuestionsCount, reportQuestionIssue } from '@/services/questionService';
 import { calculatePercentile, getOfficialRanking } from '@/utils/percentile';
 import { matchesStudyModalidades } from '@/utils/modalidades';
+import { useToast } from '@/components/Toast';
+import { SubscriptionModal } from '@/components/SubscriptionModal';
+import { useSubscription } from '@/hooks/useSubscription';
 import {
   Stethoscope,
   Menu,
@@ -99,6 +102,16 @@ import {
 export default function Home() {
   const { accentConfig } = useTheme();
   const { user, isAuthenticated, isAdmin, isLoading, loginAsDemo, logout } = useAuth();
+  const { success, warning, info } = useToast();
+  const {
+    isUpgradeModalOpen,
+    setIsUpgradeModalOpen,
+    plan,
+    questionsRemainingToday,
+    canSolveQuestion,
+    incrementDailyCount
+  } = useSubscription();
+
   const [authModal, setAuthModal] = useState<{
     isOpen: boolean;
     mode: 'login' | 'register';
@@ -108,6 +121,7 @@ export default function Home() {
     mode: 'login'
   });
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);
 
@@ -264,6 +278,25 @@ export default function Home() {
     ultimos5Anos: true
   });
 
+  // Deep linking via URL Search Params (?tab=... e ?q=...)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get('tab') as ActiveTab | null;
+      if (tabParam && ['home', 'banco', 'provas', 'desempenho', 'ranking', 'cadernos', 'curadoria'].includes(tabParam)) {
+        setActiveTab(tabParam);
+      }
+      const qParam = params.get('q');
+      if (qParam) {
+        setAdvancedFilters((prev) => ({ ...prev, search: qParam }));
+        setActiveTab('banco');
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
+
   // Filtros de Desempenho e Ranking (Padrão: 6 meses e Residência)
   const [performanceFilters, setPerformanceFilters] = useState<PerformanceFilterState>({
     modalidade: 'Residência',
@@ -315,7 +348,7 @@ export default function Home() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       try {
-        const raw = localStorage.getItem('medevo_saved_questions_folder_map');
+        const raw = localStorage.getItem('bancoresidencia_saved_questions_folder_map');
         if (raw) {
           setSavedQuestionsFolderMap(JSON.parse(raw));
         }
@@ -675,7 +708,7 @@ export default function Home() {
       const nextMap = { ...prev, [questionId]: [...current, folderId] };
       if (typeof window !== 'undefined') {
         try {
-          localStorage.setItem('medevo_saved_questions_folder_map', JSON.stringify(nextMap));
+          localStorage.setItem('bancoresidencia_saved_questions_folder_map', JSON.stringify(nextMap));
         } catch {
           // ignore
         }
@@ -918,12 +951,13 @@ export default function Home() {
         'Medicina Preventiva e Social'
       ];
       const perSpec = Math.floor(simulatedExtraAnswers.total / specs.length);
+      const studentRatio = totalAnswered > 0 ? (totalCorrect / totalAnswered) : 0.70;
       specs.forEach((sp) => {
         if (!specialtyMap[sp]) {
           specialtyMap[sp] = { total: 0, correct: 0 };
         }
         specialtyMap[sp].total += perSpec;
-        specialtyMap[sp].correct += Math.round(perSpec * 0.78);
+        specialtyMap[sp].correct += Math.round(perSpec * studentRatio);
       });
     }
 
@@ -959,9 +993,46 @@ export default function Home() {
       });
     }
 
-    // Sequência de dias (streak) e dias na plataforma
-    const streakDays = totalAnswered > 0 ? 1 : 0;
-    const daysOnPlatform = 1;
+    // Cálculo real de streak de dias consecutivos
+    const answeredTimestamps = Object.values(userAnswers)
+      .map((a) => a.timestamp)
+      .filter((t): t is number => typeof t === 'number' && !isNaN(t));
+
+    const answeredDates = new Set(
+      answeredTimestamps.map((t) => {
+        const d = new Date(t);
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+      })
+    );
+
+    let streakDays = 0;
+    if (answeredDates.size > 0) {
+      const today = new Date();
+      const formatDate = (date: Date) =>
+        `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+
+      const todayStr = formatDate(today);
+      const yesterday = new Date(today);
+      yesterday.setDate(yesterday.getDate() - 1);
+      const yesterdayStr = formatDate(yesterday);
+
+      let cursor: Date | null = null;
+      if (answeredDates.has(todayStr)) {
+        cursor = new Date(today);
+      } else if (answeredDates.has(yesterdayStr)) {
+        cursor = new Date(yesterday);
+      }
+
+      if (cursor) {
+        while (answeredDates.has(formatDate(cursor))) {
+          streakDays++;
+          cursor.setDate(cursor.getDate() - 1);
+        }
+      }
+    }
+
+    // Dias reais na plataforma a partir do histórico de respostas ativas
+    const daysOnPlatform = answeredDates.size > 0 ? answeredDates.size : 1;
     const studyTimeMinutes = Math.round(totalAnswered * 1.5);
 
     return {
@@ -1130,6 +1201,27 @@ export default function Home() {
             <div className="flex items-center gap-2.5 shrink-0">
               <ThemeSelector compact={true} />
 
+              {/* Botões para Visitante Não Logado */}
+              {!user && (
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setAuthModal({ isOpen: true, mode: 'login' })}
+                    className="px-3.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer"
+                  >
+                    Entrar
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setAuthModal({ isOpen: true, mode: 'register' })}
+                    className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105 cursor-pointer"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                  >
+                    Criar Conta
+                  </button>
+                </div>
+              )}
+
               {/* Perfil do Aluno na Borda Superior (Imagem 3) */}
               {user && (
                 <div ref={profileRef} className="relative">
@@ -1277,34 +1369,43 @@ export default function Home() {
 
         {/* Corpo Principal da Aplicação */}
         <main
-          className={`w-full mx-auto px-4 sm:px-6 flex-1 transition-all max-w-6xl ${
-            activeTab === 'banco' && bancoMode === 'filtros'
-              ? 'h-[calc(100vh-4.75rem)] max-h-[calc(100vh-4.75rem)] flex flex-col justify-between py-2 sm:py-2.5 overflow-hidden'
-              : 'py-9 sm:py-10 space-y-9 sm:space-y-11'
+          className={`w-full mx-auto flex-1 transition-all ${
+            activeTab === 'home' && !user
+              ? 'p-0 max-w-none overflow-x-hidden'
+              : activeTab === 'banco' && bancoMode === 'filtros'
+              ? 'px-4 sm:px-6 max-w-6xl h-[calc(100vh-4.75rem)] max-h-[calc(100vh-4.75rem)] flex flex-col justify-between py-2 sm:py-2.5 overflow-hidden'
+              : 'px-4 sm:px-6 max-w-6xl py-9 sm:py-10 space-y-9 sm:space-y-11'
           }`}
         >
-          {/* ABA 1: INÍCIO (TELA INICIAL DO ALUNO BENTO) */}
+          {/* ABA 1: INÍCIO (LANDING PAGE PARA VISITANTES OU DASHBOARD DO ALUNO AUTENTICADO) */}
           {activeTab === 'home' && (
-            <StudentHomeDashboard
-              studentName={studentName}
-              stats={stats}
-              dailyGoal={dailyGoal}
-              onUpdateDailyGoal={(goal) => {
-                setCustomDailyGoal(goal);
-                if (typeof window !== 'undefined') {
-                  localStorage.setItem('bancoresidencia_custom_daily_goal', String(goal));
-                }
-              }}
-              recentList={recentList}
-              allLists={lists}
-              onNavigate={(tab) => {
-                setActiveTab(tab);
-                if (tab === 'banco') setBancoMode('filtros');
-              }}
-              onContinueList={handleContinueList}
-              modalidade={performanceFilters.modalidade}
-              onSimulatePercentile={(p) => setSimulatedTestPercentile(p)}
-            />
+            !user ? (
+              <LandingPage
+                onOpenAuth={(mode = 'login', planTitle) => setAuthModal({ isOpen: true, mode, planTitle })}
+                onLoginDemo={loginAsDemo}
+              />
+            ) : (
+              <StudentHomeDashboard
+                studentName={studentName}
+                stats={stats}
+                dailyGoal={dailyGoal}
+                onUpdateDailyGoal={(goal) => {
+                  setCustomDailyGoal(goal);
+                  if (typeof window !== 'undefined') {
+                    localStorage.setItem('bancoresidencia_custom_daily_goal', String(goal));
+                  }
+                }}
+                recentList={recentList}
+                allLists={lists}
+                onNavigate={(tab) => {
+                  setActiveTab(tab);
+                  if (tab === 'banco') setBancoMode('filtros');
+                }}
+                onContinueList={handleContinueList}
+                modalidade={performanceFilters.modalidade}
+                onSimulatePercentile={(p) => setSimulatedTestPercentile(p)}
+              />
+            )
           )}
 
           {/* ABA 2: BANCO DE QUESTÕES (RESOLUÇÃO SEQUENCIAL INSPIRADA NA IMAGEM 2 OU FILTROS SEPARADOS) */}
@@ -1806,13 +1907,15 @@ export default function Home() {
                             {filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)] && (
                               <button
                                 type="button"
-                                onClick={() => {
-                                  const qId = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id;
+                                onClick={async () => {
+                                  const currentQ = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)];
+                                  if (!currentQ) return;
                                   setReportedQuestionIds((prev) => ({
                                     ...prev,
-                                    [qId]: true
+                                    [currentQ.id]: true
                                   }));
-                                  alert('Questão enviada para auditoria da banca médica.');
+                                  await reportQuestionIssue(currentQ.id, 'Apontamento de erro em questão');
+                                  success('Questão enviada para auditoria da banca médica.', 'Denúncia Registrada');
                                 }}
                                 className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
                                   reportedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
@@ -2054,7 +2157,7 @@ export default function Home() {
           )}
 
           {/* ABA 8: CURADORIA DE GABARITOS (PAINEL ADMINISTRATIVO) */}
-          {activeTab === 'curadoria' && (
+          {activeTab === 'curadoria' && isAdmin && (
             <AdminCuradoriaGabaritos />
           )}
         </main>
@@ -2087,6 +2190,27 @@ export default function Home() {
         onConfirmCreate={handleConfirmCreateCaderno}
         availableQuestionsCount={totalSupabaseCount}
       />
+
+      {/* Modal de Planos & Assinatura */}
+      <SubscriptionModal
+        isOpen={isUpgradeModalOpen}
+        onClose={() => setIsUpgradeModalOpen(false)}
+        currentPlan={plan}
+      />
+
+      {/* Modal de Autenticação (Login / Cadastro) */}
+      {authModal.isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md animate-in fade-in duration-200">
+          <div className="relative w-full max-w-md max-h-[95vh] overflow-y-auto">
+            <AuthScreen
+              initialMode={authModal.mode}
+              selectedPlanTitle={authModal.planTitle}
+              onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
+              onSuccess={() => setAuthModal({ isOpen: false, mode: 'login' })}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

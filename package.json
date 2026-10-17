@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src/",
+    "test": "node --experimental-strip-types scripts/test-irt.ts && node --experimental-strip-types tests/questionService.test.ts",
     "test:irt": "node --experimental-strip-types scripts/test-irt.ts",
+    "test:security": "node --experimental-strip-types tests/questionService.test.ts",
     "pull": "node scripts/safe-pull.mjs",
     "submit": "node scripts/safe-submit.mjs",
     "safe-pull": "node scripts/safe-pull.mjs",
@@ -22,11 +24,10 @@
     "sync:medcurso": "node scripts/sync_medcurso_from_supabase.mjs",
     "upload:medcurso": "node scripts/upload_medcurso_to_supabase.mjs",
     "open:chromium": "node scripts/open_chromium_forced.mjs",
-    "open:medevo": "open_medevo.bat",
-    "demo:medevo": "node scripts/connect_existing_chrome.mjs",
     "open:drive": "node scripts/open_medcurso_drive.mjs"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.117.2",
     "clsx": "^2.1.1",
     "lucide-react": "^1.49.0",

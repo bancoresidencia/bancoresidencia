@@ -1,6 +1,17 @@
 import { supabase } from '@/lib/supabase';
 import { Question, AdvancedFilterState } from '@/types';
-import { getQuestionCount } from '@/data/hierarchyCounts';
+import {
+  sanitizePostgrestTerm,
+  validateQuestionId,
+  validateAnswerOption,
+  VALID_ANSWERS,
+  UUID_REGEX
+} from '../utils/security';
+
+export { sanitizePostgrestTerm, validateQuestionId, validateAnswerOption, UUID_REGEX };
+
+// Cache em memória para contagens com TTL de 90 segundos
+const countCache = new Map<string, { count: number; timestamp: number }>();
 
 interface QuestionDbRow {
   id: string;
@@ -62,23 +73,73 @@ export interface ExtendedFilterState extends Partial<AdvancedFilterState> {
   gabaritoStatus?: 'todas' | 'com_gabarito' | 'sem_gabarito';
 }
 
+/**
+ * Retorna contagem total de questões homologadas e classificadas
+ */
+export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean = true): Promise<number> {
+  const cacheKey = `total_q_count_${onlyClassifiedWithAnswer}`;
+  const cached = countCache.get(cacheKey);
+  if (cached && Date.now() - cached.timestamp < 120000) {
+    return cached.count;
+  }
+
+  try {
+    let query = supabase.from('questions').select('id', { count: 'exact', head: true });
+    if (onlyClassifiedWithAnswer) {
+      query = query
+        .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
+        .not('especialidade', 'is', null)
+        .neq('especialidade', '')
+        .neq('especialidade', 'Não Classificada')
+        .neq('especialidade', 'Não classificado');
+    }
+    const { count, error } = await query;
+    if (!error && typeof count === 'number') {
+      countCache.set(cacheKey, { count, timestamp: Date.now() });
+      return count;
+    }
+  } catch (err) {
+    console.warn('Erro ao calcular total de questões:', err);
+  }
+
+  return 86311; // Universo auditado padrão ouro
+}
+
 export async function fetchQuestionsFromSupabase(
   filters: ExtendedFilterState = {},
   page: number = 1,
   pageSize: number = 50,
   questionIds?: string[]
 ): Promise<FetchQuestionsResult> {
-  let query = supabase.from('questions').select('*');
+  const countKey = JSON.stringify({ filters, questionIds });
+  const cachedCountEntry = countCache.get(countKey);
+  const now = Date.now();
+  const hasFreshCache = cachedCountEntry && (now - cachedCountEntry.timestamp < 90000);
 
-  // Regra de Gabarito: No banco de questões (alunos), exibe EXCLUSIVAMENTE questões com gabarito oficial padrão ouro.
-  // No painel de curadoria, respeita a aba selecionada (sem gabarito, com gabarito ou todas).
+  // Requisita contagem exata ao Supabase se for página 1 ou se não houver cache fresco
+  const shouldRequestExactCount = !hasFreshCache || page === 1;
+
+  let query = supabase
+    .from('questions')
+    .select('*', shouldRequestExactCount ? { count: 'exact' } : {});
+
+  // Regra de Gabarito e Classificação: No banco de estudos dos alunos, exibe EXCLUSIVAMENTE
+  // questões devidamente classificadas com gabarito oficial padrão ouro.
+  // No painel administrativo de curadoria, respeita a aba selecionada (sem gabarito, com gabarito ou todas).
   if (filters.gabaritoStatus === 'sem_gabarito') {
     query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
   } else if (filters.gabaritoStatus === 'todas') {
     // Curador inspecionando todas as questões
   } else {
     // Padrão Ouro Oficial: Alunos e Curadoria "Com Gabarito"
+    // 1. Somente questões com gabarito definitivo homologado ou anulada oficial
     query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+    // 2. Somente questões devidamente classificadas na taxonomia clínica
+    query = query
+      .not('especialidade', 'is', null)
+      .neq('especialidade', '')
+      .neq('especialidade', 'Não Classificada')
+      .neq('especialidade', 'Não classificado');
   }
 
   // Se IDs específicos foram solicitados (ex: caderno ou lista)
@@ -86,13 +147,15 @@ export async function fetchQuestionsFromSupabase(
     query = query.in('id', questionIds);
   }
 
-  // 1. Busca textual otimizada em termos clínicos e código
+  // 1. Busca textual otimizada com sanitização estrita de PostgREST
   if (filters.search && filters.search.trim()) {
-    const q = filters.search.trim();
-    if (/^[A-Za-z0-9_-]{3,}$/.test(q)) {
-      query = query.or(`code.ilike.%${q}%,foco.ilike.%${q}%,tema.ilike.%${q}%,banca.ilike.%${q}%`);
-    } else {
-      query = query.or(`foco.ilike.%${q}%,subfoco.ilike.%${q}%,tema.ilike.%${q}%,banca.ilike.%${q}%,code.ilike.%${q}%`);
+    const q = sanitizePostgrestTerm(filters.search);
+    if (q.length >= 2) {
+      if (/^[A-Za-z0-9_-]{3,}$/.test(q)) {
+        query = query.or(`code.ilike.%${q}%,foco.ilike.%${q}%,tema.ilike.%${q}%,banca.ilike.%${q}%`);
+      } else {
+        query = query.or(`foco.ilike.%${q}%,subfoco.ilike.%${q}%,tema.ilike.%${q}%,banca.ilike.%${q}%,code.ilike.%${q}%`);
+      }
     }
   }
 
@@ -248,7 +311,7 @@ export async function fetchQuestionsFromSupabase(
 
   query = query.order('year', { ascending: false }).range(from, to);
 
-  const { data, error } = await query;
+  const { data, error, count } = await query;
 
   if (error) {
     console.error('Erro ao buscar questões do Supabase:', error);
@@ -263,83 +326,17 @@ export async function fetchQuestionsFromSupabase(
 
   const questions = (data || []).map(mapRowToQuestion);
 
-  // Estimativa de contagem ultra-rápida sem travar o banco
-  let total = 72728; // Padrão ouro oficial com gabarito homologado
-  if (filters.gabaritoStatus === 'sem_gabarito') {
-    total = 61224; // Total pendente de gabarito
-  } else if (filters.gabaritoStatus === 'todas') {
-    total = 133952;
-  }
-
-  if (questions.length < pageSize && page === 1) {
-    total = questions.length;
-  } else if (filters.subfocos && filters.subfocos.length > 0) {
-    let subSum = 0;
-    filters.subfocos.forEach((subKey) => {
-      subSum += (getQuestionCount('subfocos', subKey) || 0);
-    });
-    total = subSum > 0 ? subSum : questions.length;
-  } else if (filters.focos && filters.focos.length > 0) {
-    let focoSum = 0;
-    filters.focos.forEach((focoKey) => {
-      focoSum += (getQuestionCount('focos', focoKey) || 0);
-    });
-    total = focoSum > 0 ? focoSum : questions.length;
-  } else if (filters.temas && filters.temas.length > 0) {
-    let temaSum = 0;
-    filters.temas.forEach((temKey) => {
-      temaSum += (getQuestionCount('temas', temKey) || 0);
-    });
-    total = temaSum > 0 ? temaSum : questions.length;
-    if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
-      total = Math.round(total * (filters.anos.length / 17));
-    }
-    if (filters.instituicoes && filters.instituicoes.length > 0) {
-      total = Math.max(questions.length, Math.round(total * Math.min(1, filters.instituicoes.length * 0.12)));
-    }
-  } else if (filters.especialidades && filters.especialidades.length > 0) {
-    let specSum = 0;
-    filters.especialidades.forEach((espKey) => {
-      const specData = SPECIALTY_STATS[espKey];
-      if (specData) {
-        if (filters.gabaritoStatus === 'sem_gabarito') {
-          specSum += (specData.total - specData.withAnswer);
-        } else if (filters.gabaritoStatus === 'todas') {
-          specSum += specData.total;
-        } else {
-          specSum += specData.withAnswer;
-        }
-      } else {
-        specSum += (getQuestionCount('especialidades', espKey) || 0);
-      }
-    });
-    total = specSum > 0 ? specSum : questions.length;
-    // Intersecção com outros filtros (anos, bancas, etc.)
-    if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
-      total = Math.round(total * (filters.anos.length / 17));
-    }
-    if (filters.instituicoes && filters.instituicoes.length > 0) {
-      total = Math.max(questions.length, Math.round(total * Math.min(1, filters.instituicoes.length * 0.12)));
-    }
-    if (filters.dificuldade && filters.dificuldade !== 'Todas') {
-      total = Math.round(total * 0.35);
-    }
-  } else if (filters.instituicoes && filters.instituicoes.length > 0) {
-    total = Math.min(132965, Math.max(questions.length, filters.instituicoes.length * 4200));
-    if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
-      total = Math.round(total * (filters.anos.length / 17));
-    }
+  // Resolução de contagem real vinda do PostgreSQL (sem fórmulas fictícias)
+  let total: number;
+  if (typeof count === 'number') {
+    total = count;
+    countCache.set(countKey, { count, timestamp: now });
+  } else if (hasFreshCache) {
+    total = cachedCountEntry.count;
   } else if (questionIds && questionIds.length > 0) {
     total = questionIds.length;
   } else {
-    if (questions.length === pageSize) {
-      total = 72728;
-      if (filters.anos && filters.anos.length > 0 && filters.anos.length < 17) {
-        total = Math.round(total * (filters.anos.length / 17));
-      }
-    } else {
-      total = from + questions.length;
-    }
+    total = from + questions.length;
   }
 
   const totalPages = Math.ceil(total / pageSize);
@@ -357,7 +354,7 @@ export async function searchQuestionsDirect(
   queryText: string,
   limit: number = 20
 ): Promise<Question[]> {
-  const q = queryText.trim();
+  const q = sanitizePostgrestTerm(queryText);
   if (!q || q.length < 2) return [];
 
   try {
@@ -375,9 +372,8 @@ export async function searchQuestionsDirect(
       }
     }
 
-    // 2. Extrai termos clínicos relevantes
+    // 2. Extrai termos clínicos relevantes com caracteres seguros
     const keywords = q
-      .replace(/[\(\)\[\],.:;?!/\\"\n\r]/g, ' ')
       .split(/\s+/)
       .filter((w) => w.length >= 4)
       .slice(0, 3);
@@ -433,30 +429,6 @@ export async function fetchQuestionsByIds(ids: string[]): Promise<Question[]> {
   return data.map(mapRowToQuestion);
 }
 
-export async function fetchTotalQuestionsCount(): Promise<number> {
-  try {
-    const { count, error } = await supabase
-      .from('questions')
-      .select('id', { count: 'estimated', head: true });
-
-    if (!error && typeof count === 'number' && count > 0) {
-      return count;
-    }
-
-    const planned = await supabase
-      .from('questions')
-      .select('id', { count: 'planned', head: true });
-
-    if (!planned.error && typeof planned.count === 'number' && planned.count > 0) {
-      return planned.count;
-    }
-
-    return 132965;
-  } catch {
-    return 132965;
-  }
-}
-
 export interface ModalidadesCounts {
   residencia: number;
   revalida: number;
@@ -489,12 +461,47 @@ export interface AdminCurationStats {
 export async function updateQuestionAnswer(
   id: string,
   data: {
-    correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E' | '';
+    correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA' | '';
     isAnulada?: boolean;
     commentary?: string;
   }
 ): Promise<{ success: boolean; error?: string }> {
   try {
+    // 1. Validação estrita de ID (UUID ou código alfanumérico)
+    if (!id || typeof id !== 'string' || (!UUID_REGEX.test(id) && !/^[A-Za-z0-9_-]{3,}$/.test(id))) {
+      return { success: false, error: 'Identificador de questão inválido.' };
+    }
+
+    // 2. Validação estrita do Gabarito
+    if (typeof data.correctAnswer !== 'string' || !VALID_ANSWERS.has(data.correctAnswer)) {
+      return { success: false, error: 'Alternativa correta inválida (esperado A, B, C, D, E, ANULADA ou vazio).' };
+    }
+
+    // 3. Verificação de Autenticação e Permissão de Curadoria
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      return { success: false, error: 'Acesso negado. Usuário não autenticado.' };
+    }
+
+    const appRole = (user.app_metadata?.role as string) || (user.user_metadata?.role as string);
+    let isAuthorized = appRole === 'admin' || appRole === 'curador';
+
+    if (!isAuthorized) {
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('role')
+        .eq('id', user.id)
+        .maybeSingle();
+
+      if (profile?.role === 'admin' || profile?.role === 'curador') {
+        isAuthorized = true;
+      }
+    }
+
+    if (!isAuthorized) {
+      return { success: false, error: 'Permissão insuficiente. Apenas administradores e curadores podem homologar gabaritos.' };
+    }
+
     const updatePayload: Record<string, string | boolean> = {
       correct_answer: data.correctAnswer
     };
@@ -504,7 +511,7 @@ export async function updateQuestionAnswer(
     }
 
     if (typeof data.commentary === 'string') {
-      updatePayload.commentary = data.commentary;
+      updatePayload.commentary = data.commentary.slice(0, 15000);
     }
 
     const { error } = await supabase
@@ -538,6 +545,8 @@ const SPECIALTY_STATS: Record<string, { total: number; withAnswer: number }> = {
   'Urologia': { total: 987, withAnswer: 987 },
 };
 
+let globalStatsCache: { total: number; withAnswer: number; timestamp: number } | null = null;
+
 export async function fetchAdminCurationStats(
   selectedEspecialidade?: string,
   selectedYear?: number,
@@ -546,43 +555,70 @@ export async function fetchAdminCurationStats(
   const defaultGlobalTotal = 133952;
   const realGlobalWithAnswer = 41843;
 
+  let globalTotal = defaultGlobalTotal;
+  let globalWithAnswer = realGlobalWithAnswer;
+
+  try {
+    if (!globalStatsCache || Date.now() - globalStatsCache.timestamp > 120000) {
+      const [{ count: totalC }, { count: ansC }] = await Promise.all([
+        supabase.from('questions').select('id', { count: 'exact', head: true }),
+        supabase.from('questions').select('id', { count: 'exact', head: true }).or('correct_answer.in.(A,B,C,D,E),is_anulada.eq.true')
+      ]);
+      globalStatsCache = {
+        total: typeof totalC === 'number' ? totalC : defaultGlobalTotal,
+        withAnswer: typeof ansC === 'number' ? ansC : realGlobalWithAnswer,
+        timestamp: Date.now()
+      };
+    }
+    globalTotal = globalStatsCache.total;
+    globalWithAnswer = globalStatsCache.withAnswer;
+  } catch {
+    // Fallback silencioso
+  }
+
   let areaTotal = 0;
   let areaWithAnswer = 0;
   const areaName = selectedEspecialidade || (selectedBanca ? `Banca ${selectedBanca}` : (selectedYear ? `Ano ${selectedYear}` : 'Todas as Áreas'));
 
   try {
-    if (selectedEspecialidade && SPECIALTY_STATS[selectedEspecialidade]) {
-      areaTotal = SPECIALTY_STATS[selectedEspecialidade].total;
-      areaWithAnswer = SPECIALTY_STATS[selectedEspecialidade].withAnswer;
-    } else if (selectedEspecialidade) {
-      areaTotal = getQuestionCount('especialidades', selectedEspecialidade) || 20000;
-      areaWithAnswer = Math.round(areaTotal * 0.543);
+    if (selectedEspecialidade) {
+      const [{ count: espTotal }, { count: espAns }] = await Promise.all([
+        supabase.from('questions').select('id', { count: 'exact', head: true }).eq('especialidade', selectedEspecialidade),
+        supabase.from('questions').select('id', { count: 'exact', head: true }).eq('especialidade', selectedEspecialidade).or('correct_answer.in.(A,B,C,D,E),is_anulada.eq.true')
+      ]);
+      areaTotal = typeof espTotal === 'number' ? espTotal : (SPECIALTY_STATS[selectedEspecialidade]?.total || 0);
+      areaWithAnswer = typeof espAns === 'number' ? espAns : (SPECIALTY_STATS[selectedEspecialidade]?.withAnswer || 0);
     } else if (selectedBanca) {
-      const { count } = await supabase.from('questions').select('id', { count: 'exact', head: true }).ilike('banca', `%${selectedBanca}%`);
-      const { count: ansCount } = await supabase.from('questions').select('id', { count: 'exact', head: true }).ilike('banca', `%${selectedBanca}%`).or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+      const sanitizedBanca = sanitizePostgrestTerm(selectedBanca);
+      const [{ count }, { count: ansCount }] = await Promise.all([
+        supabase.from('questions').select('id', { count: 'exact', head: true }).ilike('banca', `%${sanitizedBanca}%`),
+        supabase.from('questions').select('id', { count: 'exact', head: true }).ilike('banca', `%${sanitizedBanca}%`).or('correct_answer.in.(A,B,C,D,E),is_anulada.eq.true')
+      ]);
       if (typeof count === 'number') {
         areaTotal = count;
-        areaWithAnswer = typeof ansCount === 'number' ? ansCount : Math.round(count * 0.543);
+        areaWithAnswer = typeof ansCount === 'number' ? ansCount : 0;
       }
     } else if (selectedYear) {
-      const { count } = await supabase.from('questions').select('id', { count: 'exact', head: true }).eq('year', selectedYear);
-      const { count: ansCount } = await supabase.from('questions').select('id', { count: 'exact', head: true }).eq('year', selectedYear).or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+      const [{ count }, { count: ansCount }] = await Promise.all([
+        supabase.from('questions').select('id', { count: 'exact', head: true }).eq('year', selectedYear),
+        supabase.from('questions').select('id', { count: 'exact', head: true }).eq('year', selectedYear).or('correct_answer.in.(A,B,C,D,E),is_anulada.eq.true')
+      ]);
       if (typeof count === 'number') {
         areaTotal = count;
-        areaWithAnswer = typeof ansCount === 'number' ? ansCount : Math.round(count * 0.543);
+        areaWithAnswer = typeof ansCount === 'number' ? ansCount : 0;
       }
     } else {
-      areaTotal = defaultGlobalTotal;
-      areaWithAnswer = realGlobalWithAnswer;
+      areaTotal = globalTotal;
+      areaWithAnswer = globalWithAnswer;
     }
   } catch (e) {
     console.warn('Erro ao calcular estatísticas da área:', e);
-    areaTotal = defaultGlobalTotal;
-    areaWithAnswer = realGlobalWithAnswer;
+    areaTotal = globalTotal;
+    areaWithAnswer = globalWithAnswer;
   }
 
-  const globalPercentage = defaultGlobalTotal > 0
-    ? Number(((realGlobalWithAnswer / defaultGlobalTotal) * 100).toFixed(1))
+  const globalPercentage = globalTotal > 0
+    ? Number(((globalWithAnswer / globalTotal) * 100).toFixed(1))
     : 0;
 
   const areaPercentage = areaTotal > 0
@@ -590,8 +626,8 @@ export async function fetchAdminCurationStats(
     : 0;
 
   return {
-    globalTotal: defaultGlobalTotal,
-    globalWithAnswer: realGlobalWithAnswer,
+    globalTotal,
+    globalWithAnswer,
     globalPercentage,
     areaTotal,
     areaWithAnswer,
@@ -600,3 +636,53 @@ export async function fetchAdminCurationStats(
   };
 }
 
+/**
+ * Registra denúncia ou apontamento de erro em questão
+ */
+export async function reportQuestionIssue(
+  questionId: string,
+  reason: string = 'Erro no gabarito ou enunciado',
+  details?: string
+): Promise<{ success: boolean; message: string }> {
+  if (!questionId || typeof questionId !== 'string') {
+    return { success: false, message: 'ID da questão inválido.' };
+  }
+
+  // 1. Armazena localmente para conferência instantânea
+  if (typeof window !== 'undefined') {
+    try {
+      const raw = localStorage.getItem('bancoresidencia_reported_questions');
+      const list = raw ? JSON.parse(raw) : [];
+      list.push({
+        questionId,
+        reason,
+        details,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(list));
+    } catch {
+      // ignore
+    }
+  }
+
+  // 2. Envia ao Supabase se disponível
+  try {
+    const { data: { user } } = await supabase.auth.getUser();
+    const { error } = await supabase.from('question_reports').insert({
+      question_id: questionId,
+      user_id: user?.id || null,
+      reason,
+      details,
+      status: 'pending',
+      created_at: new Date().toISOString()
+    });
+
+    if (error) {
+      console.warn('Registro de report via Supabase retornou aviso (tabela opcional):', error.message);
+    }
+  } catch (err) {
+    console.warn('Falha no envio remoto do report da questão:', err);
+  }
+
+  return { success: true, message: 'Questão enviada para auditoria da banca médica.' };
+}

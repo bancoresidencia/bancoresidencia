@@ -1,16 +1,15 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { UserAccount, UpdateProfileData } from '@/types/auth';
+import { createClient } from '@/lib/supabase/client';
 
-const STORAGE_USERS_KEY = 'bancoresidencia_registered_users';
 const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
 
 export const DEFAULT_DEMO_USER: UserAccount = {
   id: 'user-demo-1',
   name: 'Dr. Lucas Rocha',
   email: 'lucas.rocha@med.br',
-  password: 'med123',
   role: 'student',
   avatarUrl: '',
   specialtyTarget: 'Clínica Médica',
@@ -20,22 +19,6 @@ export const DEFAULT_DEMO_USER: UserAccount = {
   phone: '(11) 98765-4321',
   state: 'SP',
   createdAt: '2026-01-15T10:00:00.000Z'
-};
-
-export const DEFAULT_ADMIN_USER: UserAccount = {
-  id: 'user-admin-1',
-  name: 'Administrador MedEvo',
-  email: 'admin@medevo.com',
-  password: 'adminmedevo2026',
-  role: 'admin',
-  avatarUrl: '',
-  specialtyTarget: 'Curadoria de Gabaritos',
-  college: 'MedEvo Curadoria Central',
-  graduationYear: 2026,
-  dailyGoal: 100,
-  phone: '(11) 99999-0000',
-  state: 'SP',
-  createdAt: '2026-01-01T00:00:00.000Z'
 };
 
 interface AuthContextType {
@@ -52,12 +35,11 @@ interface AuthContextType {
     college?: string;
     graduationYear?: number;
   }) => Promise<{ success: boolean; message?: string }>;
-  logout: () => void;
+  logout: () => Promise<void>;
   updateProfile: (data: UpdateProfileData) => Promise<{ success: boolean; message?: string }>;
   updatePassword: (currentPassword: string, newPassword: string) => Promise<{ success: boolean; message?: string }>;
   updateAvatar: (avatarUrl: string) => Promise<{ success: boolean; message?: string }>;
   loginAsDemo: () => void;
-  loginAsAdmin: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -65,67 +47,129 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<UserAccount | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const supabase = createClient();
 
-  useEffect(() => {
+  const mapSupabaseUserToAccount = useCallback(async (supabaseUser: { id: string; email?: string; created_at?: string; user_metadata?: Record<string, unknown>; app_metadata?: Record<string, unknown> }): Promise<UserAccount> => {
     try {
-      const storedUsersRaw = localStorage.getItem(STORAGE_USERS_KEY);
-      let usersList: UserAccount[] = [];
-      if (storedUsersRaw) {
-        usersList = JSON.parse(storedUsersRaw);
-        // Garante que a conta admin sempre exista para acesso imediato no Vercel
-        if (!usersList.some((u) => u.email.toLowerCase() === DEFAULT_ADMIN_USER.email.toLowerCase())) {
-          usersList.push(DEFAULT_ADMIN_USER);
-          localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(usersList));
-        }
-      } else {
-        usersList = [DEFAULT_DEMO_USER, DEFAULT_ADMIN_USER];
-        localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(usersList));
-      }
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('*')
+        .eq('id', supabaseUser.id)
+        .maybeSingle();
 
-      const savedUserRaw = localStorage.getItem(STORAGE_CURRENT_USER_KEY);
-      if (savedUserRaw) {
-        const savedUser = JSON.parse(savedUserRaw);
-        setUser(usersList.find((u) => u.id === savedUser.id) || savedUser);
-      } else {
-        setUser(null);
-      }
+      const appRole = (supabaseUser.app_metadata?.role as string) || (supabaseUser.user_metadata?.role as string);
+      const role = (profile?.role || appRole || 'student') as 'admin' | 'student';
+
+      return {
+        id: supabaseUser.id,
+        name: profile?.name || (supabaseUser.user_metadata?.name as string) || (supabaseUser.email ? supabaseUser.email.split('@')[0] : 'Médico Residente'),
+        email: supabaseUser.email || '',
+        role,
+        avatarUrl: profile?.avatar_url || '',
+        specialtyTarget: profile?.specialty_target || (supabaseUser.user_metadata?.specialty_target as string) || 'Clínica Médica',
+        college: profile?.college || (supabaseUser.user_metadata?.college as string) || '',
+        graduationYear: profile?.graduation_year || (supabaseUser.user_metadata?.graduation_year as number) || 2026,
+        dailyGoal: profile?.daily_goal || 30,
+        phone: profile?.phone || '',
+        state: profile?.state || '',
+        createdAt: profile?.created_at || supabaseUser.created_at || new Date().toISOString()
+      };
     } catch {
-      setUser(null);
-    } finally {
-      setIsLoading(false);
+      return {
+        id: supabaseUser.id,
+        name: (supabaseUser.user_metadata?.name as string) || 'Médico Residente',
+        email: supabaseUser.email || '',
+        role: 'student',
+        avatarUrl: '',
+        specialtyTarget: 'Clínica Médica',
+        college: '',
+        graduationYear: 2026,
+        dailyGoal: 30,
+        createdAt: supabaseUser.created_at || new Date().toISOString()
+      };
     }
-  }, []);
+  }, [supabase]);
 
-  const saveUsersList = (users: UserAccount[]) => {
-    localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(users));
-  };
+  // Sincroniza sessão inicial e ouve alterações de autenticação
+  useEffect(() => {
+    let isMounted = true;
 
-  const saveCurrentUser = (currentUser: UserAccount | null) => {
-    setUser(currentUser);
-    if (currentUser) {
-      localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(currentUser));
-    } else {
-      localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+    async function initSession() {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+
+        if (session?.user && isMounted) {
+          const account = await mapSupabaseUserToAccount(session.user);
+          if (isMounted) setUser(account);
+        } else if (isMounted) {
+          // Checa se há usuário demo local ativo
+          const savedUserRaw = localStorage.getItem(STORAGE_CURRENT_USER_KEY);
+          if (savedUserRaw) {
+            const parsed = JSON.parse(savedUserRaw);
+            if (parsed?.id === DEFAULT_DEMO_USER.id) {
+              setUser(DEFAULT_DEMO_USER);
+            } else {
+              setUser(null);
+            }
+          } else {
+            setUser(null);
+          }
+        }
+      } catch {
+        if (isMounted) setUser(null);
+      } finally {
+        if (isMounted) setIsLoading(false);
+      }
     }
-  };
+
+    initSession();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (session?.user) {
+        const account = await mapSupabaseUserToAccount(session.user);
+        if (isMounted) setUser(account);
+      } else if (event === 'SIGNED_OUT') {
+        if (isMounted) setUser(null);
+        localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+      }
+    });
+
+    return () => {
+      isMounted = false;
+      subscription.unsubscribe();
+    };
+  }, [supabase, mapSupabaseUserToAccount]);
 
   const login = async (email: string, password: string): Promise<{ success: boolean; message?: string }> => {
-    const rawUsers = localStorage.getItem(STORAGE_USERS_KEY);
-    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER];
-
     const normalizedEmail = email.trim().toLowerCase();
-    const foundUser = users.find((u) => u.email.toLowerCase() === normalizedEmail);
 
-    if (!foundUser) {
-      return { success: false, message: 'Nenhuma conta encontrada com este e-mail.' };
+    // Suporte ao usuário de demonstração local
+    if (normalizedEmail === DEFAULT_DEMO_USER.email.toLowerCase() && password === 'med123') {
+      setUser(DEFAULT_DEMO_USER);
+      localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(DEFAULT_DEMO_USER));
+      return { success: true };
     }
 
-    if (foundUser.password !== password) {
-      return { success: false, message: 'Senha incorreta. Verifique suas credenciais.' };
-    }
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: normalizedEmail,
+        password
+      });
 
-    saveCurrentUser(foundUser);
-    return { success: true };
+      if (error) {
+        return { success: false, message: error.message };
+      }
+
+      if (data.user) {
+        const account = await mapSupabaseUserToAccount(data.user);
+        setUser(account);
+        localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+      }
+
+      return { success: true };
+    } catch {
+      return { success: false, message: 'Erro de conexão com o servidor de autenticação.' };
+    }
   };
 
   const register = async (data: {
@@ -136,111 +180,112 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     college?: string;
     graduationYear?: number;
   }): Promise<{ success: boolean; message?: string }> => {
-    const rawUsers = localStorage.getItem(STORAGE_USERS_KEY);
-    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER];
-
     const normalizedEmail = data.email.trim().toLowerCase();
-    const existing = users.find((u) => u.email.toLowerCase() === normalizedEmail);
 
-    if (existing) {
-      return { success: false, message: 'Já existe um cadastro com este endereço de e-mail.' };
+    try {
+      const { data: res, error } = await supabase.auth.signUp({
+        email: normalizedEmail,
+        password: data.password,
+        options: {
+          data: {
+            name: data.name.trim(),
+            specialty_target: data.specialtyTarget || 'Clínica Médica',
+            college: data.college || '',
+            graduation_year: data.graduationYear || new Date().getFullYear()
+          }
+        }
+      });
+
+      if (error) {
+        return { success: false, message: error.message };
+      }
+
+      if (res.user) {
+        const account = await mapSupabaseUserToAccount(res.user);
+        setUser(account);
+      }
+
+      return { success: true };
+    } catch {
+      return { success: false, message: 'Falha ao conectar com o serviço de cadastro.' };
     }
-
-    const newUser: UserAccount = {
-      id: `user-${Date.now()}`,
-      name: data.name.trim(),
-      email: normalizedEmail,
-      password: data.password,
-      avatarUrl: '',
-      specialtyTarget: data.specialtyTarget || 'Clínica Médica',
-      college: data.college || '',
-      graduationYear: data.graduationYear || new Date().getFullYear(),
-      dailyGoal: 30,
-      createdAt: new Date().toISOString()
-    };
-
-    const updatedList = [...users, newUser];
-    saveUsersList(updatedList);
-    saveCurrentUser(newUser);
-
-    return { success: true };
   };
 
-  const logout = () => {
-    saveCurrentUser(null);
+  const logout = async () => {
+    localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+    setUser(null);
+    try {
+      await supabase.auth.signOut();
+    } catch {
+      // ignore
+    }
   };
 
   const loginAsDemo = () => {
-    saveCurrentUser(DEFAULT_DEMO_USER);
-  };
-
-  const loginAsAdmin = () => {
-    saveCurrentUser(DEFAULT_ADMIN_USER);
+    setUser(DEFAULT_DEMO_USER);
+    localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(DEFAULT_DEMO_USER));
   };
 
   const updateProfile = async (data: UpdateProfileData): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
 
-    const rawUsers = localStorage.getItem(STORAGE_USERS_KEY);
-    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER, DEFAULT_ADMIN_USER];
-
-    // Se o e-mail foi alterado, checa duplicidade
-    if (data.email && data.email.toLowerCase() !== user.email.toLowerCase()) {
-      const emailExists = users.some(
-        (u) => u.id !== user.id && u.email.toLowerCase() === data.email!.trim().toLowerCase()
-      );
-      if (emailExists) {
-        return { success: false, message: 'Este e-mail já está sendo utilizado por outro aluno.' };
-      }
+    // Se estiver em modo demo local
+    if (user.id === DEFAULT_DEMO_USER.id) {
+      const updated = { ...user, ...data };
+      setUser(updated);
+      localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(updated));
+      return { success: true, message: 'Perfil demo atualizado!' };
     }
 
-    const updatedUser: UserAccount = {
-      ...user,
-      ...data,
-      email: data.email ? data.email.trim().toLowerCase() : user.email
-    };
+    try {
+      const { error } = await supabase
+        .from('profiles')
+        .update({
+          name: data.name,
+          specialty_target: data.specialtyTarget,
+          college: data.college,
+          graduation_year: data.graduationYear,
+          daily_goal: data.dailyGoal,
+          phone: data.phone,
+          state: data.state,
+          avatar_url: data.avatarUrl
+        })
+        .eq('id', user.id);
 
-    const updatedList = users.map((u) => (u.id === user.id ? updatedUser : u));
-    saveUsersList(updatedList);
-    saveCurrentUser(updatedUser);
+      if (error) {
+        return { success: false, message: error.message };
+      }
 
-    return { success: true, message: 'Perfil atualizado com sucesso!' };
+      setUser((prev) => (prev ? { ...prev, ...data } : null));
+      return { success: true, message: 'Perfil atualizado com sucesso!' };
+    } catch {
+      return { success: false, message: 'Erro ao atualizar dados do perfil.' };
+    }
   };
 
-  const updatePassword = async (
-    currentPassword: string,
-    newPassword: string
-  ): Promise<{ success: boolean; message?: string }> => {
+  const updatePassword = async (currentPassword: string, newPassword: string): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
 
-    if (user.password && user.password !== currentPassword) {
-      return { success: false, message: 'A senha atual informada está incorreta.' };
+    if (user.id === DEFAULT_DEMO_USER.id) {
+      return { success: true, message: 'Senha atualizada na conta de demonstração.' };
     }
 
-    if (newPassword.length < 6) {
-      return { success: false, message: 'A nova senha deve possuir no mínimo 6 caracteres.' };
+    try {
+      const { error } = await supabase.auth.updateUser({ password: newPassword });
+      if (error) {
+        return { success: false, message: error.message };
+      }
+      return { success: true, message: 'Senha alterada com sucesso!' };
+    } catch {
+      return { success: false, message: 'Erro ao conectar ao servidor para alterar senha.' };
     }
-
-    const rawUsers = localStorage.getItem(STORAGE_USERS_KEY);
-    const users: UserAccount[] = rawUsers ? JSON.parse(rawUsers) : [DEFAULT_DEMO_USER, DEFAULT_ADMIN_USER];
-
-    const updatedUser: UserAccount = {
-      ...user,
-      password: newPassword
-    };
-
-    const updatedList = users.map((u) => (u.id === user.id ? updatedUser : u));
-    saveUsersList(updatedList);
-    saveCurrentUser(updatedUser);
-
-    return { success: true, message: 'Senha alterada com sucesso!' };
   };
 
   const updateAvatar = async (avatarUrl: string): Promise<{ success: boolean; message?: string }> => {
     return updateProfile({ avatarUrl });
   };
 
-  const isAdmin = Boolean(user && (user.role === 'admin' || user.email.toLowerCase() === 'admin@medevo.com'));
+  const isAdmin = Boolean(user && user.role === 'admin');
 
   return (
     <AuthContext.Provider
@@ -255,8 +300,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         updateProfile,
         updatePassword,
         updateAvatar,
-        loginAsDemo,
-        loginAsAdmin
+        loginAsDemo
       }}
     >
       {children}

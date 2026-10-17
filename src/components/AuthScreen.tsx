@@ -33,7 +33,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   onClose,
   selectedPlanTitle
 }) => {
-  const { login, register, loginAsDemo, loginAsAdmin } = useAuth();
+  const { login, register, loginAsDemo } = useAuth();
   const { accentConfig } = useTheme();
 
   // 'login' | 'register'
@@ -159,11 +159,6 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
     if (onSuccess) setTimeout(onSuccess, 400);
   };
 
-  const handleQuickAdmin = () => {
-    loginAsAdmin();
-    setSuccessMsg('Acessando com Perfil de Administrador (Curadoria Central)...');
-    if (onSuccess) setTimeout(onSuccess, 400);
-  };
 
   return (
     <div className="min-h-[85vh] flex items-center justify-center p-4 sm:p-6">
@@ -539,15 +534,6 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             <span>Acessar com Conta Demo (Dr. Lucas Rocha - P78)</span>
           </button>
 
-          {/* Botão de Curadoria Admin para Acesso Manual no Vercel */}
-          <button
-            type="button"
-            onClick={handleQuickAdmin}
-            className="w-full py-2.5 px-4 rounded-xl border border-indigo-200 dark:border-indigo-800/80 bg-indigo-50/70 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-indigo-800 dark:text-indigo-300 text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer group mt-2"
-          >
-            <ShieldCheck className="w-4 h-4 text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform" />
-            <span>Acessar como Administrador (Curadoria de Gabaritos)</span>
-          </button>
         </div>
       </div>
     </div>

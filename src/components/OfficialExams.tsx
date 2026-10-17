@@ -44,43 +44,24 @@ const InstitutionLogo: React.FC<{ inst: OfficialInstitution; size?: 'sm' | 'md' 
   size = 'md'
 }) => {
   const { accentConfig } = useTheme();
-  const [imgError, setImgError] = useState(false);
-  const dim = size === 'sm' ? 'w-9 h-9' : 'w-11 h-11';
-
-  if (inst.logoSlug && !imgError) {
-    return (
-      <div
-        className={`${dim} rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center p-1.5 shrink-0 shadow-xs overflow-hidden`}
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={`https://www.medevo.com.br/assets/pulso/institutions/${inst.logoSlug}-192.webp`}
-          alt={inst.shortName}
-          loading="lazy"
-          onError={() => setImgError(true)}
-          className="w-full h-full object-contain"
-        />
-      </div>
-    );
-  }
+  const dim = size === 'sm' ? 'w-9 h-9 text-xs' : 'w-11 h-11 text-sm';
 
   return (
     <div
-      className={`${dim} rounded-xl flex items-center justify-center font-heading font-black text-xs shrink-0 shadow-xs uppercase tracking-tighter`}
+      className={`${dim} rounded-xl flex items-center justify-center font-heading font-black shrink-0 shadow-xs uppercase tracking-tight border border-slate-200/80 dark:border-slate-800 transition-transform group-hover:scale-105`}
       style={{
         backgroundColor: accentConfig.bgRgba,
         color: accentConfig.primaryHex
       }}
     >
-      {inst.shortName.slice(0, 3)}
+      {inst.shortName.slice(0, 4)}
     </div>
   );
 };
 
-// Componente para exibir o ícone como fundo do retângulo do card com degradê de opacidade
+// Componente para exibir a insígnia institucional como fundo do retângulo do card com degradê de opacidade
 const InstitutionCardBackground: React.FC<{ inst: OfficialInstitution }> = ({ inst }) => {
   const { accentConfig } = useTheme();
-  const [imgError, setImgError] = useState(false);
 
   return (
     <div
@@ -94,23 +75,12 @@ const InstitutionCardBackground: React.FC<{ inst: OfficialInstitution }> = ({ in
           WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0) 90%)',
         }}
       >
-        {inst.logoSlug && !imgError ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={`https://www.medevo.com.br/assets/pulso/institutions/${inst.logoSlug}-192.webp`}
-            alt=""
-            loading="lazy"
-            onError={() => setImgError(true)}
-            className="h-20 sm:h-24 w-auto max-w-[70%] object-contain object-left opacity-20 dark:opacity-25 group-hover:opacity-30 dark:group-hover:opacity-35 transition-opacity duration-300"
-          />
-        ) : (
-          <span
-            className="font-heading font-black text-5xl sm:text-6xl uppercase tracking-tighter opacity-15 dark:opacity-20 select-none pl-2"
-            style={{ color: accentConfig.primaryHex }}
-          >
-            {inst.shortName.slice(0, 4)}
-          </span>
-        )}
+        <span
+          className="font-heading font-black text-5xl sm:text-6xl uppercase tracking-tighter opacity-15 dark:opacity-20 select-none pl-2"
+          style={{ color: accentConfig.primaryHex }}
+        >
+          {inst.shortName.slice(0, 4)}
+        </span>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { SpecialtyHierarchy, StudyModalidade, Question } from '@/types';
 
-export const medevoModalidades: StudyModalidade[] = [
+export const studyModalidades: StudyModalidade[] = [
   'Residência Médica',
   'Revalida',
   'Ciclo Básico',
@@ -13,7 +13,7 @@ export const medevoModalidades: StudyModalidade[] = [
   'Título Clínica Médica (TECM)'
 ];
 
-export const medevoTiposProva = [
+export const tiposProva = [
   'Prova 1',
   'Prova 2',
   '2ª Aplicação',
@@ -22,11 +22,11 @@ export const medevoTiposProva = [
   'Segunda Entrada'
 ];
 
-export const medevoAnos = Array.from({ length: 18 }, (_, i) => 2027 - i); // 2027 até 2010
+export const anosLista = Array.from({ length: 18 }, (_, i) => 2027 - i); // 2027 até 2010
 
 import { allInstituicoesSiglas, medicalInstitutionsDirectory, bancasExaminadorasOficiais } from './instituicoesData';
 
-export const medevoInstituicoes: string[] = allInstituicoesSiglas;
+export const instituicoesSiglas: string[] = allInstituicoesSiglas;
 export { medicalInstitutionsDirectory, bancasExaminadorasOficiais };
 
 import { clinicaMedicaHierarchy } from './clinicaMedicaData';
@@ -36,8 +36,8 @@ import { obstetriciaHierarchy } from './obstetriciaData';
 import { ginecologiaHierarchy } from './ginecologiaData';
 import { preventivaHierarchy } from './preventivaData';
 
-// Hierarquia completa extraída do banco Supabase com Especialidade, Tema, Foco e Subfoco
-export const medevoHierarchy: SpecialtyHierarchy[] = [
+// Hierarquia completa padronizada com Especialidade, Tema, Foco e Subfoco
+export const clinicalHierarchy: SpecialtyHierarchy[] = [
   clinicaMedicaHierarchy,
   cirurgiaHierarchy,
   pediatriaHierarchy,
@@ -50,7 +50,7 @@ export const medevoHierarchy: SpecialtyHierarchy[] = [
 // Nenhuma questão sintética/mock é mantida localmente.
 export const mockQuestions: Question[] = [];
 
-export const mockInstitutionsList = medevoInstituicoes;
+export const mockInstitutionsList = instituicoesSiglas;
 export const mockInstitutions = ['Todas', ...mockInstitutionsList];
 export const mockBancas = ['Todas', ...bancasExaminadorasOficiais.map((b) => b.split(' (')[0])];
 export const mockSpecialties = [

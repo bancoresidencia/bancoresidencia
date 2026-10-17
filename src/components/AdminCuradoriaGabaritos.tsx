@@ -50,7 +50,7 @@ const ANOS_LIST = [
 
 export const AdminCuradoriaGabaritos: React.FC = () => {
   const { accentConfig } = useTheme();
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
 
   // Filtros de Curadoria
   const [statusFilter, setStatusFilter] = useState<'sem_gabarito' | 'com_gabarito' | 'todas'>('sem_gabarito');
@@ -72,17 +72,17 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
   const [sessionCuratedCount, setSessionCuratedCount] = useState<number>(0);
   const [feedbackToast, setFeedbackToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
-  // Estatísticas Globais e da Área
+  // Estatísticas Globais e da Área (carregadas em tempo real do banco)
   const [stats, setStats] = useState<AdminCurationStats>({
-    globalTotal: 133952,
-    globalWithAnswer: 41843,
-    globalPercentage: 31.2,
-    areaTotal: 133952,
-    areaWithAnswer: 41843,
-    areaPercentage: 31.2,
+    globalTotal: 0,
+    globalWithAnswer: 0,
+    globalPercentage: 0,
+    areaTotal: 0,
+    areaWithAnswer: 0,
+    areaPercentage: 0,
     areaName: 'Todas as Áreas'
   });
-  const [isLoadingStats, setIsLoadingStats] = useState<boolean>(false);
+  const [isLoadingStats, setIsLoadingStats] = useState<boolean>(true);
 
   // Questão Atual em Análise
   const currentQuestion = useMemo(() => {
@@ -139,11 +139,12 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
     }
   }, [statusFilter, selectedEspecialidade, selectedAno, bancaSearch, querySearch]);
 
-  // Carregar questões e métricas ao alterar filtros
+  // Carregar questões e métricas ao alterar filtros (somente se admin)
   useEffect(() => {
+    if (!isAdmin) return;
     loadQuestions(1);
     loadStats();
-  }, [loadQuestions, loadStats]);
+  }, [isAdmin, loadQuestions, loadStats]);
 
   // Toast de feedback
   const showToast = (message: string, type: 'success' | 'error' = 'success') => {
@@ -259,6 +260,24 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex, questions, autoAdvance]);
 
+  if (!isAdmin) {
+    return (
+      <div className="min-h-[500px] flex items-center justify-center p-6">
+        <div className="max-w-md w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 text-center shadow-xl">
+          <div className="w-16 h-16 rounded-2xl bg-rose-500/10 text-rose-500 flex items-center justify-center mx-auto mb-4">
+            <ShieldCheck className="w-8 h-8" />
+          </div>
+          <h2 className="text-xl font-extrabold text-slate-900 dark:text-white mb-2">
+            Acesso Restrito
+          </h2>
+          <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
+            O painel de homologação e curadoria de gabaritos é exclusivo para administradores autorizados.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6 animate-fadeIn pb-16">
       {/* 1. Header do Painel com Identificação de Admin e Métricas de Progresso */}
@@ -284,7 +303,7 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
                 </span>
               </div>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                Operador: <strong className="text-slate-700 dark:text-slate-300">{user?.name || 'Administrador MedEvo'}</strong> • Curadoria em tempo real simultânea à coleta automatizada
+                Operador: <strong className="text-slate-700 dark:text-slate-300">{user?.name || 'Curador Oficial Banco Residência'}</strong> • Curadoria em tempo real simultânea à coleta automatizada
               </p>
             </div>
           </div>

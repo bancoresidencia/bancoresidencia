@@ -62,7 +62,8 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
       // Fallback para localStorage
       if (typeof window !== 'undefined') {
         try {
-          const localData = localStorage.getItem(`medevo_comments_${questionId}`);
+          const modernKey = `bancoresidencia_comments_${questionId}`;
+          const localData = localStorage.getItem(modernKey);
           if (localData && isMounted) {
             setComments(JSON.parse(localData));
           }
@@ -83,7 +84,7 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
   const persistLocally = (updated: StudentComment[]) => {
     if (typeof window !== 'undefined') {
       try {
-        localStorage.setItem(`medevo_comments_${questionId}`, JSON.stringify(updated));
+        localStorage.setItem(`bancoresidencia_comments_${questionId}`, JSON.stringify(updated));
       } catch {
         // ignore
       }

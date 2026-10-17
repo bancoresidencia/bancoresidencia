@@ -19,7 +19,11 @@ import {
   Save,
   Palette,
   CalendarDays,
-  Clock
+  Clock,
+  Crown,
+  ShieldCheck,
+  Check,
+  Zap
 } from 'lucide-react';
 import { PercentileColorTester } from './PercentileColorTester';
 
@@ -51,7 +55,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   const { accentConfig } = useTheme();
 
   // Abas de Configurações
-  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'percentile'>('profile');
+  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'percentile' | 'subscription'>('profile');
 
   // Estado dos campos de Perfil
   const [name, setName] = useState(user?.name || '');
@@ -266,13 +270,30 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
           </div>
 
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <h1 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">
                 {name || 'Meu Perfil'}
               </h1>
-              <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
-                Aluno Ativo
-              </span>
+              {user?.role === 'admin' ? (
+                <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                  <ShieldCheck className="w-3 h-3 text-amber-500" />
+                  Administrador
+                </span>
+              ) : user?.subscriptionPlan === 'premium' ? (
+                <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-purple-500/15 text-purple-600 dark:text-purple-400 border border-purple-500/30">
+                  <Crown className="w-3 h-3 text-purple-500" />
+                  Assinante Premium
+                </span>
+              ) : user?.subscriptionPlan === 'pro' ? (
+                <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                  <Zap className="w-3 h-3 text-emerald-500" />
+                  Assinante Pro
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700">
+                  Plano Gratuito
+                </span>
+              )}
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 flex items-center gap-1.5">
               <span>{email}</span>
@@ -345,6 +366,22 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
         <button
           type="button"
           onClick={() => {
+            setActiveTab('subscription');
+            clearStatus();
+          }}
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+            activeTab === 'subscription'
+              ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+          }`}
+        >
+          <Crown className="w-3.5 h-3.5 text-amber-500" />
+          <span>Plano & Privilégios</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => {
             setActiveTab('percentile');
             clearStatus();
           }}
@@ -354,7 +391,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
           }`}
         >
-          <Palette className="w-3.5 h-3.5 text-amber-500" />
+          <Palette className="w-3.5 h-3.5 text-sky-500" />
           <span>Cores do Percentil</span>
         </button>
       </div>
@@ -864,6 +901,145 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     />
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ================= ABA DE PLANO, ASSINATURA & PRIVILÉGIOS ================= */}
+      {activeTab === 'subscription' && (
+        <div className="space-y-6">
+          {/* Card Principal de Status do Perfil */}
+          <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 sm:p-7 rounded-3xl shadow-xs space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-slate-800/60">
+              <div className="flex items-center gap-4">
+                <div
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 shadow-sm"
+                  style={{
+                    backgroundColor: user?.role === 'admin' ? 'rgba(245, 158, 11, 0.15)' : accentConfig.bgRgba,
+                    color: user?.role === 'admin' ? '#f59e0b' : accentConfig.primaryHex
+                  }}
+                >
+                  {user?.role === 'admin' ? <ShieldCheck className="w-6 h-6" /> : <Crown className="w-6 h-6" />}
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h2 className="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">
+                      {user?.role === 'admin' ? 'Perfil de Administrador' : 'Perfil do Assinante'}
+                    </h2>
+                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                      Ativo
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                    {user?.role === 'admin'
+                      ? 'Credenciais com privilégios de gestão técnica, curadoria de gabaritos e controle do banco.'
+                      : `Plano ${user?.subscriptionPlan?.toUpperCase() || 'PRO'} • Acesso completo ao banco de questões classificadas e gabaritos.`}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Tipo de Conta:</span>
+                <span className="text-xs font-extrabold px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200/80 dark:border-slate-700">
+                  {user?.role === 'admin' ? 'Administrador da Plataforma' : 'Assinante Oficial'}
+                </span>
+              </div>
+            </div>
+
+            {/* Comparativo de Privilégios e Recursos */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Card Perfil do Assinante */}
+              <div className={`p-5 rounded-2xl border transition-all ${
+                user?.role !== 'admin'
+                  ? 'bg-emerald-500/5 dark:bg-emerald-950/20 border-emerald-500/30 shadow-xs'
+                  : 'bg-slate-50 dark:bg-slate-900/40 border-slate-200 dark:border-slate-800'
+              }`}>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <Zap className="w-4 h-4 text-emerald-500" />
+                    <h3 className="text-sm font-extrabold text-slate-900 dark:text-white">
+                      Perfil do Assinante
+                    </h3>
+                  </div>
+                  {user?.role !== 'admin' && (
+                    <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/80 px-2 py-0.5 rounded-md">
+                      Seu Perfil Atual
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
+                  Desenvolvido para médicos e estudantes em preparação intensiva para Residência Médica, Revalida e Especialidades.
+                </p>
+                <ul className="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                    <span><strong>86.311+ questões classificadas</strong> com gabarito oficial homologado</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                    <span>Filtros avançados multicritério (Banca, Especialidade, Tema, Foco, Ano)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                    <span>Comentários completos padrão-ouro (fisiopatologia e conduta clínica)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                    <span>Estatísticas psicométricas TRI, percentil comparativo e histórico de simulados</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                    <span>Cadernos de estudo personalizados e provas oficiais na íntegra</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Card Perfil do Administrador */}
+              <div className={`p-5 rounded-2xl border transition-all ${
+                user?.role === 'admin'
+                  ? 'bg-amber-500/5 dark:bg-amber-950/20 border-amber-500/30 shadow-xs'
+                  : 'bg-slate-50 dark:bg-slate-900/40 border-slate-200 dark:border-slate-800'
+              }`}>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-amber-500" />
+                    <h3 className="text-sm font-extrabold text-slate-900 dark:text-white">
+                      Perfil do Administrador
+                    </h3>
+                  </div>
+                  {user?.role === 'admin' && (
+                    <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-950/80 px-2 py-0.5 rounded-md">
+                      Seu Perfil Atual
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
+                  Reservado para a equipe médica e de gestão da plataforma para homologação e curadoria contínua.
+                </p>
+                <ul className="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
+                    <span><strong>Aba exclusiva de Curadoria de Gabaritos</strong> no cabeçalho</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
+                    <span>Auditoria das 47.641+ questões pendentes de classificação</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
+                    <span>Homologação e correção de gabaritos divergentes ou anulados</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
+                    <span>Auditoria de segurança, RLS do Supabase e integridade de dados</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
+                    <span>Supervisão de métricas globais e relatórios técnicos do sistema</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

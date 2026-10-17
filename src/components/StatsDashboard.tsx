@@ -35,7 +35,7 @@ import { PerformanceFilterBar } from './PerformanceFilterBar';
 import { OfficialRanking } from './OfficialRanking';
 import { getOfficialRanking, getPercentileColor } from '@/utils/percentile';
 import { useTheme } from '@/context/ThemeContext';
-import { medevoHierarchy } from '@/data/mockQuestions';
+import { clinicalHierarchy } from '@/data/mockQuestions';
 
 interface StatsDashboardProps {
   stats: UserStats;
@@ -198,17 +198,17 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
   // Lista de especialidades presentes na hierarquia
   const specialtiesList = useMemo(() => {
-    const list = medevoHierarchy.map((h) => h.especialidade);
+    const list = clinicalHierarchy.map((h) => h.especialidade);
     return ['Todas', ...list];
   }, []);
 
   // Lista de temas disponíveis para a especialidade selecionada
   const availableTemas = useMemo(() => {
     if (selectedSpecialtyTab === 'Todas') {
-      const allTemas = medevoHierarchy.flatMap((h) => h.temas.map((t) => t.tema));
+      const allTemas = clinicalHierarchy.flatMap((h) => h.temas.map((t) => t.tema));
       return ['Todos', ...Array.from(new Set(allTemas))];
     }
-    const found = medevoHierarchy.find((h) => h.especialidade === selectedSpecialtyTab);
+    const found = clinicalHierarchy.find((h) => h.especialidade === selectedSpecialtyTab);
     if (!found) return ['Todos'];
     return ['Todos', ...found.temas.map((t) => t.tema)];
   }, [selectedSpecialtyTab]);
@@ -231,7 +231,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
     const result: SubfocoPerformance[] = [];
 
-    medevoHierarchy.forEach((h) => {
+    clinicalHierarchy.forEach((h) => {
       if (selectedSpecialtyTab !== 'Todas' && h.especialidade !== selectedSpecialtyTab) {
         return;
       }

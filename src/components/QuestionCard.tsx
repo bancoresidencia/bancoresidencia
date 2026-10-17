@@ -89,7 +89,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   useEffect(() => {
     if (typeof window !== 'undefined') {
       try {
-        const raw = localStorage.getItem('medevo_bookmarked_ids');
+        const raw = localStorage.getItem('bancoresidencia_bookmarked_ids');
         if (raw) {
           const map = JSON.parse(raw);
           setInternalBookmarked(!!map[question.id]);
@@ -110,10 +110,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       const next = !prev;
       if (typeof window !== 'undefined') {
         try {
-          const raw = localStorage.getItem('medevo_bookmarked_ids');
+          const raw = localStorage.getItem('bancoresidencia_bookmarked_ids');
           const map = raw ? JSON.parse(raw) : {};
           map[question.id] = next;
-          localStorage.setItem('medevo_bookmarked_ids', JSON.stringify(map));
+          localStorage.setItem('bancoresidencia_bookmarked_ids', JSON.stringify(map));
         } catch {
           // ignore
         }
@@ -144,7 +144,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('medevo_question_show_details');
+      const saved = localStorage.getItem('bancoresidencia_question_show_details');
       if (saved !== null) {
         setShowDetails(saved === 'true');
       }
@@ -157,7 +157,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setShowDetails((prev) => {
       const next = !prev;
       if (typeof window !== 'undefined') {
-        localStorage.setItem('medevo_question_show_details', String(next));
+        localStorage.setItem('bancoresidencia_question_show_details', String(next));
       }
       return next;
     });
@@ -1003,17 +1003,39 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               placeholder="Digite seu raciocínio clínico, hipótese diagnóstica e condutas aqui..."
               className="w-full h-32 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none font-sans"
             />
-            <button
-              onClick={() => {
-                setShowCommentary(true);
-                setIsAnswered(true);
-                onAnswer(question.id, 'A', true);
-              }}
-              className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl transition-all cursor-pointer shadow-md hover:scale-102 flex items-center gap-2"
-            >
-              <Send className="w-3.5 h-3.5" />
-              <span>Resolver e Ver Padrão de Resposta</span>
-            </button>
+            {!isAnswered ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setShowCommentary(true);
+                  setIsAnswered(true);
+                }}
+                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl transition-all cursor-pointer shadow-md hover:scale-102 flex items-center gap-2"
+              >
+                <Send className="w-3.5 h-3.5" />
+                <span>Ver Padrão de Resposta & Espelho</span>
+              </button>
+            ) : (
+              <div className="pt-2 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center gap-2">
+                <span className="text-xs text-slate-500 font-bold">Autoavaliação do Espelho:</span>
+                <button
+                  type="button"
+                  onClick={() => onAnswer(question.id, 'A', true)}
+                  className="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center gap-1.5 shadow-xs"
+                >
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  <span>Acertei os Critérios</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => onAnswer(question.id, 'E', false)}
+                  className="px-3.5 py-1.5 bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center gap-1.5 shadow-xs"
+                >
+                  <XCircle className="w-3.5 h-3.5" />
+                  <span>Preciso Revisar</span>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}

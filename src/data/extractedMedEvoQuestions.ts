@@ -1,6 +1,6 @@
 import { Question } from '@/types';
 
-export const extractedMedEvoQuestions: Question[] = [
+export const extractedSampleQuestions: Question[] = [
   {
     "id": "9fc73fef-ae2a-4891-80c5-814532de3691",
     "code": "UERJHUPE-2016-01",

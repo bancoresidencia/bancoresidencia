@@ -27,7 +27,7 @@ import {
   MapPin
 } from 'lucide-react';
 import {
-  medevoHierarchy,
+  clinicalHierarchy,
   medicalInstitutionsDirectory
 } from '@/data/mockQuestions';
 import { getQuestionCount } from '@/data/hierarchyCounts';
@@ -253,7 +253,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     if (isSelected) {
       nextSpecs = filters.especialidades.filter((e) => e !== espName);
       // Remove temas, focos e subfocos filhos dessa especialidade
-      const espNode = medevoHierarchy.find((h) => h.especialidade === espName);
+      const espNode = clinicalHierarchy.find((h) => h.especialidade === espName);
       if (espNode) {
         const childTemas = espNode.temas.map((t) => t.tema);
         nextTemas = nextTemas.filter((t) => !childTemas.includes(t));
@@ -284,7 +284,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     if (isSelected) {
       nextTemas = filters.temas.filter((t) => t !== temaName);
       // Remove focos e subfocos filhos desse tema
-      medevoHierarchy.forEach((esp) => {
+      clinicalHierarchy.forEach((esp) => {
         const temaNode = esp.temas.find((t) => t.tema === temaName);
         if (temaNode) {
           const childFocos = temaNode.focos.map((f) => f.foco);
@@ -313,7 +313,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     if (isSelected) {
       nextFocos = filters.focos.filter((f) => f !== focoName);
       // Remove subfocos desse foco
-      medevoHierarchy.forEach((esp) => {
+      clinicalHierarchy.forEach((esp) => {
         esp.temas.forEach((tem) => {
           const focoNode = tem.focos.find((f) => f.foco === focoName);
           if (focoNode) {
@@ -349,7 +349,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     const espMap: Record<string, boolean> = {};
     const temaMap: Record<string, boolean> = {};
     const focoMap: Record<string, boolean> = {};
-    medevoHierarchy.forEach((esp) => {
+    clinicalHierarchy.forEach((esp) => {
       espMap[esp.especialidade] = true;
       esp.temas.forEach((tem) => {
         temaMap[tem.tema] = true;
@@ -370,7 +370,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   };
 
   const handleSelectAllSpecialties = () => {
-    const all = medevoHierarchy.map((h) => h.especialidade);
+    const all = clinicalHierarchy.map((h) => h.especialidade);
     onChange({
       ...filters,
       especialidades: all,
@@ -815,7 +815,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
           {/* Árvore Clínica com Scroll Dedicado */}
           <div className="flex-1 min-h-0 overflow-y-auto pr-1.5 space-y-1 custom-scrollbar text-xs">
-            {medevoHierarchy.map((esp) => {
+            {clinicalHierarchy.map((esp) => {
               const isEspSelected = filters.especialidades.includes(esp.especialidade);
               const isEspExpanded = Boolean(expandedEspec[esp.especialidade]);
               const espCount = getQuestionCount('especialidades', esp.especialidade);
