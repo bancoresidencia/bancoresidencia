@@ -21,6 +21,7 @@ import {
   Sparkles,
   Target,
   BookOpen,
+  ListPlus,
   Play,
   SlidersHorizontal,
   Stethoscope,
@@ -735,7 +736,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
           >
             <BookOpen className="w-3.5 h-3.5 text-blue-500 dark:text-blue-400" />
-            <span>Meus Cadernos (3)</span>
+            <span>Minhas Listas</span>
             <ChevronDown className="w-3 h-3 text-slate-500 dark:text-slate-400" />
           </button>
         </div>
@@ -1582,12 +1583,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           )}
         </div>
 
-        {/* Lado Direito: Resolver (20/50/100) + Salvar Caderno + Botão Primário de Iniciar */}
-        <div className="flex items-center gap-2.5">
-          <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 mr-1">
-            <span>Resolver:</span>
+        {/* Lado Direito: Resolver (20/50/100/200 + customizado até 200) + Salvar Lista + Botão Primário de Iniciar */}
+        <div className="flex flex-wrap items-center gap-2.5">
+          <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
+            <span className="font-semibold">Resolver:</span>
             <div className="flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-              {[20, 50, 100].map((num) => (
+              {[20, 50, 100, 200].map((num) => (
                 <button
                   key={num}
                   type="button"
@@ -1605,15 +1606,32 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 </button>
               ))}
             </div>
+
+            {/* Input numérico personalizado (1 a 200) */}
+            <div className="flex items-center gap-1 ml-0.5">
+              <input
+                type="number"
+                min={1}
+                max={200}
+                value={resolveCount}
+                onChange={(e) => {
+                  const val = parseInt(e.target.value) || 0;
+                  setResolveCount(Math.max(1, Math.min(200, val)));
+                }}
+                className="w-13 text-center font-bold text-xs bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg py-1 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                title="Digitar quantidade (máximo 200)"
+              />
+              <span className="text-[10px] text-slate-400 font-bold">q. (máx 200)</span>
+            </div>
           </div>
 
           <button
             type="button"
             onClick={onCreateListFromFilter}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer shadow-xs"
           >
-            <BookOpen className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-            <span>Salvar Caderno</span>
+            <ListPlus className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+            <span>Salvar Lista</span>
           </button>
 
           <button

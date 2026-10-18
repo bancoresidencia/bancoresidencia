@@ -18,7 +18,6 @@ import {
 } from 'lucide-react';
 import { Folder, QuestionList, AdvancedFilterState } from '@/types';
 import { AdvancedQuestionFilters } from './AdvancedQuestionFilters';
-import { mockQuestions } from '@/data/mockQuestions';
 import { useTheme } from '@/context/ThemeContext';
 
 interface ListManagerProps {
@@ -150,10 +149,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
       <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 p-6 rounded-3xl shadow-sm flex flex-wrap items-center justify-between gap-4">
         <div>
           <h2 className="font-heading text-lg font-bold text-slate-900 dark:text-white">
-            Cadernos de Questões & Árvore de Pastas
+            Listas de Questões & Árvore de Pastas
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-            Organize seus cadernos clínicos por temas, bancas de residência e prioridade
+            Organize suas listas de questões por temas, bancas de residência e pastas
           </p>
         </div>
 
@@ -308,7 +307,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
             Excluir Pasta
           </div>
           <p className="text-xs text-slate-600 dark:text-slate-300">
-            Tem certeza que deseja excluir esta pasta? Os cadernos vinculados a ela serão mantidos na pasta principal.
+            Tem certeza que deseja excluir esta pasta? As listas vinculadas a ela serão mantidas na pasta principal.
           </p>
           <div className="flex justify-end gap-2.5 pt-1">
             <button
@@ -333,7 +332,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
         </div>
       )}
 
-      {/* Modal / Formulário: Editar Caderno de Questões */}
+      {/* Modal / Formulário: Editar Lista de Questões */}
       {editingList && (
         <form
           onSubmit={(e) => {
@@ -346,7 +345,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
           className="bg-white dark:bg-[#0d1527] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
         >
           <div className="flex items-center justify-between text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-            <span>Editar Caderno de Questões</span>
+            <span>Editar Lista de Questões</span>
             <button
               type="button"
               onClick={() => setEditingList(null)}
@@ -358,7 +357,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                Título do Caderno *
+                Título da Lista *
               </label>
               <input
                 type="text"
@@ -377,7 +376,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 onChange={(e) => setEditingList({ ...editingList, folderId: e.target.value || null })}
                 className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
-                <option value="">📁 Nenhuma pasta (Raiz de Cadernos)</option>
+                <option value="">📁 Nenhuma pasta (Raiz de Listas)</option>
                 {rootFolders.map((r) => {
                   const lvl2s = getSubfolders(r.id);
                   return (
@@ -430,10 +429,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
               </div>
               <div>
                 <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white">
-                  Criar Caderno de Questões com Filtros Clínicos
+                  Criar Lista de Questões com Filtros Clínicos
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
-                  Selecione especialidade, tema, subfoco e banco de questões para alimentar seu caderno
+                  Selecione especialidade, tema, subfoco e banco de questões para alimentar sua lista
                 </p>
               </div>
             </div>
@@ -450,7 +449,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                Título do Caderno *
+                Título da Lista *
               </label>
               <input
                 type="text"
@@ -470,7 +469,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 onChange={(e) => setListFolderId(e.target.value ? e.target.value : null)}
                 className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
-                <option value="">📁 Sem pasta (Raiz de Cadernos)</option>
+                <option value="">📁 Sem pasta (Raiz de Listas)</option>
                 {rootFolders.map((r) => {
                   const lvl2s = getSubfolders(r.id);
                   return (
@@ -513,7 +512,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
           <div className="pt-2">
             <div className="flex items-center gap-2 mb-2.5 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
               <Filter className="w-3.5 h-3.5" />
-              <span>Selecione os Critérios do Caderno (Obrigatório)</span>
+              <span>Selecione os Critérios da Lista (Obrigatório)</span>
             </div>
 
             <AdvancedQuestionFilters
@@ -566,7 +565,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               type="submit"
               className="px-5 py-2.5 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 shadow-md shadow-blue-600/30 cursor-pointer"
             >
-              Confirmar e Criar Caderno
+              Confirmar e Criar Lista
             </button>
           </div>
         </form>
@@ -789,7 +788,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
         <div className="md:col-span-2 space-y-3">
           <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-1">
             <span>
-              {filteredLists.length} {filteredLists.length === 1 ? 'caderno encontrado' : 'cadernos encontrados'}
+              {filteredLists.length} {filteredLists.length === 1 ? 'lista encontrada' : 'listas encontradas'}
             </span>
           </div>
 
@@ -848,19 +847,19 @@ export const ListManager: React.FC<ListManagerProps> = ({
                       type="button"
                       onClick={() => setEditingList({ id: list.id, title: list.title, folderId: list.folderId || null })}
                       className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-blue-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-                      title="Editar título ou mover caderno"
+                      title="Editar título ou mover lista"
                     >
                       <Pencil className="w-3.5 h-3.5" />
                     </button>
                     <button
                       type="button"
                       onClick={() => {
-                        if (confirm(`Deseja excluir o caderno "${list.title}"?`)) {
+                        if (confirm(`Deseja excluir a lista "${list.title}"?`)) {
                           onDeleteList?.(list.id);
                         }
                       }}
                       className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-                      title="Excluir caderno"
+                      title="Excluir lista"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>

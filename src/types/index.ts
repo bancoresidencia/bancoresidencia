@@ -236,6 +236,7 @@ export interface FilterState {
 
 export interface QuestionList {
   id: string;
+  userId?: string;
   title: string;
   folderId?: string;
   questionIds: string[];
@@ -244,11 +245,16 @@ export interface QuestionList {
   lastStudiedAt: string;
   inProgress: boolean;
   progressPercentage: number;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 export interface Folder {
   id: string;
+  userId?: string;
   name: string;
   parentId?: string | null;
   color?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }

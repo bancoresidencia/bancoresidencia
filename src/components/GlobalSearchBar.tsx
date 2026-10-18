@@ -471,7 +471,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
                   <div>
                     <div className="flex items-center gap-1.5 px-2 mb-1.5 text-xs font-bold text-slate-600 dark:text-slate-400">
                       <Folder className="w-3.5 h-3.5 text-amber-500" />
-                      Meus Cadernos & Pastas
+                      Minhas Listas & Pastas
                     </div>
                     <div className="space-y-1">
                       {searchResults.lists.map((l) => (

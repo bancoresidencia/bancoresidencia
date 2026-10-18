@@ -64,7 +64,20 @@ import {
   UserAttempt,
   Question
 } from '@/types';
-import { fetchQuestionsFromSupabase, fetchTotalQuestionsCount, reportQuestionIssue } from '@/services/questionService';
+import {
+  fetchQuestionsFromSupabase,
+  fetchTotalQuestionsCount,
+  reportQuestionIssue,
+  fetchQuestionIdsForListCriteria
+} from '@/services/questionService';
+import {
+  loadUserFolders,
+  saveUserFolders,
+  loadUserLists,
+  saveUserLists,
+  deleteUserListFromDb,
+  deleteUserFolderFromDb
+} from '@/services/userListsService';
 import { calculatePercentile, getOfficialRanking } from '@/utils/percentile';
 import { matchesStudyModalidades } from '@/utils/modalidades';
 import { useToast } from '@/components/Toast';
@@ -152,45 +165,35 @@ export default function Home() {
   const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
   const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
 
-  // Pastas e Listas de Questões com persistência local
-  const [folders, setFolders] = useState<Folder[]>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem('bancoresidencia_folders');
-        if (saved) return JSON.parse(saved);
-      } catch (e) {
-        console.error(e);
-      }
-    }
-    return initialFolders;
-  });
-
-  const [lists, setLists] = useState<QuestionList[]>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem('bancoresidencia_lists');
-        if (saved) return JSON.parse(saved);
-      } catch (e) {
-        console.error(e);
-      }
-    }
-    return initialLists;
-  });
-
-  // Salvar pastas e cadernos no localStorage ao alterar
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('bancoresidencia_folders', JSON.stringify(folders));
-    }
-  }, [folders]);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('bancoresidencia_lists', JSON.stringify(lists));
-    }
-  }, [lists]);
-
+  // Pastas e Listas de Questões vinculadas à conta do aluno
+  const [folders, setFolders] = useState<Folder[]>([]);
+  const [lists, setLists] = useState<QuestionList[]>([]);
   const [activeListId, setActiveListId] = useState<string | null>(null);
+  const [sessionQuestionLimit, setSessionQuestionLimit] = useState<number | null>(null);
+  const [isCreatingListLoading, setIsCreatingListLoading] = useState<boolean>(false);
+
+  // Carrega e sincroniza pastas e listas da conta do aluno
+  useEffect(() => {
+    let isCancelled = false;
+    const initUserData = async () => {
+      try {
+        const [userFolds, userLst] = await Promise.all([
+          loadUserFolders(user?.id),
+          loadUserLists(user?.id)
+        ]);
+        if (!isCancelled) {
+          setFolders(userFolds);
+          setLists(userLst);
+        }
+      } catch (err) {
+        console.error('Erro ao sincronizar listas e pastas do aluno:', err);
+      }
+    };
+    initUserData();
+    return () => {
+      isCancelled = true;
+    };
+  }, [user?.id]);
 
   // Tamanho de Fonte das Questões (Menor 'sm' por padrão para maior densidade médica)
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('sm');
@@ -558,17 +561,19 @@ export default function Home() {
       setIsLoadingSupabase(true);
       try {
         let questionIds: string[] | undefined;
+        let effectivePageSize = 50;
         if (activeListId) {
           const currentList = lists.find((l) => l.id === activeListId);
-          if (currentList) {
+          if (currentList && currentList.questionIds.length > 0) {
             questionIds = currentList.questionIds;
+            effectivePageSize = Math.min(200, Math.max(50, currentList.questionIds.length));
           }
         }
 
         const res = await fetchQuestionsFromSupabase(
-          advancedFilters,
-          questionsPage,
-          50,
+          activeListId ? {} : advancedFilters,
+          activeListId ? 1 : questionsPage,
+          effectivePageSize,
           questionIds
         );
         if (!isCancelled) {
@@ -612,6 +617,10 @@ export default function Home() {
       : supabaseQuestions.length > 0
       ? supabaseQuestions
       : [];
+
+    if (activeListId) {
+      return list;
+    }
 
     return list.filter((q) => {
       // 1. Status da questão (userAnswers)
@@ -675,19 +684,39 @@ export default function Home() {
     advancedFilters.ocultarRevisadas,
     userAnswers,
     sessionExclusionSnapshot,
-    bancoMode
+    bancoMode,
+    activeListId
   ]);
 
-  // Janela dinâmica de 50 questões: exibe 50 questões inicialmente. A cada questão resolvida, adiciona +1 ao final.
+  // Resolução sequencial: exibe questões da lista ativa ou respeita o limite avulso do aluno (máx 200)
   const visibleQuestions = useMemo(() => {
+    // 1. Se estiver resolvendo uma lista específica do aluno
+    if (activeListId) {
+      const currentList = lists.find((l) => l.id === activeListId);
+      if (currentList && currentList.questionIds.length > 0) {
+        const idSet = new Set(currentList.questionIds);
+        const listItems = filteredQuestions.filter((q) => idSet.has(q.id));
+        return listItems.slice(0, 200);
+      }
+    }
+
+    // 2. Se estiver em resolução avulsa com limite configurado pelo aluno (ex: 20, 50, 100 ou até 200)
+    if (sessionQuestionLimit) {
+      const targetCount = Math.min(filteredQuestions.length, Math.min(200, sessionQuestionLimit));
+      return filteredQuestions.slice(0, targetCount);
+    }
+
+    // 3. Padrão: Janela deslizante de 50 questões base + 1 a cada acerto/erro (teto 200)
     const solvedInSession = filteredQuestions.filter((q) => !!userAnswers[q.id]).length;
-    // Janela deslizante: 50 questões base + 1 para cada questão resolvida pelo aluno
     const targetCount = Math.min(
-      filteredQuestions.length,
-      Math.max(50 + solvedInSession, currentQuestionIndex + 1)
+      200,
+      Math.min(
+        filteredQuestions.length,
+        Math.max(50 + solvedInSession, currentQuestionIndex + 1)
+      )
     );
     return filteredQuestions.slice(0, targetCount);
-  }, [filteredQuestions, userAnswers, currentQuestionIndex]);
+  }, [filteredQuestions, userAnswers, currentQuestionIndex, activeListId, lists, sessionQuestionLimit]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     const q = supabaseQuestions.find((item) => item.id === questionId);
@@ -792,73 +821,65 @@ export default function Home() {
     setIsCreateCadernoModalOpen(true);
   };
 
-  // Confirmação da criação do caderno customizado com cotas por área e pasta
-  const handleConfirmCreateCaderno = (config: {
+  // Confirmação da criação da lista customizada com cotas reais do Supabase e vinculação à pasta
+  const handleConfirmCreateCaderno = async (config: {
     title: string;
     folderId: string | null;
     questionCountsByItem: Record<string, number>;
     totalQuestions: number;
     startSolvingImmediately: boolean;
   }) => {
-    const pool = supabaseQuestions.length > 0 ? supabaseQuestions : filteredQuestions;
-    const selectedIds: string[] = [];
-    const usedIds = new Set<string>();
+    setIsCreatingListLoading(true);
+    try {
+      const maxToFetch = Math.min(200, Math.max(1, config.totalQuestions));
+      let selectedIds = await fetchQuestionIdsForListCriteria(
+        config.questionCountsByItem,
+        advancedFilters,
+        maxToFetch
+      );
 
-    Object.entries(config.questionCountsByItem).forEach(([itemName, count]) => {
-      if (count <= 0) return;
-      const matching = pool.filter((q) => {
-        if (usedIds.has(q.id)) return false;
-        return (
-          q.especialidade === itemName ||
-          q.specialty === itemName ||
-          q.tema === itemName ||
-          q.foco === itemName ||
-          q.subfoco === itemName
-        );
-      });
+      // Se ainda não tiver IDs (fallback de segurança local)
+      if (selectedIds.length === 0) {
+        const pool = supabaseQuestions.length > 0 ? supabaseQuestions : filteredQuestions;
+        selectedIds = pool.slice(0, maxToFetch).map((q) => q.id);
+      }
 
-      const chosen = matching.slice(0, count);
-      chosen.forEach((q) => {
-        selectedIds.push(q.id);
-        usedIds.add(q.id);
-      });
-    });
+      const newList: QuestionList = {
+        id: `list-${Date.now()}`,
+        userId: user?.id,
+        title: config.title,
+        folderId: config.folderId || undefined,
+        questionIds: selectedIds,
+        totalQuestions: selectedIds.length,
+        completedQuestions: 0,
+        lastStudiedAt: 'Criada agora',
+        inProgress: false,
+        progressPercentage: 0,
+        createdAt: new Date().toISOString()
+      };
 
-    // Se ainda faltar questões ou se nenhuma correspondência direta foi encontrada, completa com as filtradas
-    if (selectedIds.length === 0) {
-      const fallback = (filteredQuestions.length > 0 ? filteredQuestions : pool).slice(0, Math.max(1, config.totalQuestions));
-      fallback.forEach((q) => selectedIds.push(q.id));
-    }
+      const updatedLists = [newList, ...lists];
+      setLists(updatedLists);
+      await saveUserLists(updatedLists, user?.id);
+      setIsCreateCadernoModalOpen(false);
 
-    const newList: QuestionList = {
-      id: `list-${Date.now()}`,
-      title: `${config.title} (${selectedIds.length} questões)`,
-      folderId: config.folderId || undefined,
-      questionIds: selectedIds,
-      totalQuestions: selectedIds.length,
-      completedQuestions: 0,
-      lastStudiedAt: 'Criada agora',
-      inProgress: false,
-      progressPercentage: 0
-    };
-
-    setLists((prev) => [newList, ...prev]);
-    setIsCreateCadernoModalOpen(false);
-
-    if (config.startSolvingImmediately) {
-      setActiveListId(newList.id);
-      setActiveTab('banco');
-      setBancoMode('resolucao');
-      setCurrentQuestionIndex(0);
-      setQuestionTimer(0);
-    } else {
-      setActiveListId(newList.id);
-      setActiveTab('listas');
+      if (config.startSolvingImmediately) {
+        setActiveListId(newList.id);
+        setSessionQuestionLimit(null);
+        setActiveTab('banco');
+        setBancoMode('resolucao');
+        setCurrentQuestionIndex(0);
+        setQuestionTimer(0);
+      }
+    } catch (err) {
+      console.error('Erro ao gerar lista de questões:', err);
+    } finally {
+      setIsCreatingListLoading(false);
     }
   };
 
   // Salvar uma questão individual visualizada em uma pasta específica
-  const handleSaveQuestionToFolder = (questionId: string, folderId: string, folderName: string) => {
+  const handleSaveQuestionToFolder = async (questionId: string, folderId: string, folderName: string) => {
     // 1. Atualiza mapa em memória e localStorage
     setSavedQuestionsFolderMap((prev) => {
       const current = prev[questionId] || [];
@@ -875,118 +896,154 @@ export default function Home() {
     });
 
     // 2. Adiciona à lista correspondente daquela pasta ou cria nova
-    setLists((prev) => {
-      const existingListIndex = prev.findIndex((l) => l.folderId === folderId);
-      if (existingListIndex !== -1) {
-        const targetList = prev[existingListIndex];
-        if (targetList.questionIds.includes(questionId)) {
-          return prev;
-        }
-        const updatedList: QuestionList = {
-          ...targetList,
-          questionIds: [questionId, ...targetList.questionIds],
-          totalQuestions: targetList.questionIds.length + 1,
-          lastStudiedAt: 'Atualizado recentemente'
-        };
-        const nextLists = [...prev];
-        nextLists[existingListIndex] = updatedList;
-        return nextLists;
-      } else {
-        const newList: QuestionList = {
-          id: `list-folder-${folderId}-${Date.now()}`,
-          title: `Questões Salvas - ${folderName}`,
-          folderId,
-          questionIds: [questionId],
-          totalQuestions: 1,
-          completedQuestions: 0,
-          lastStudiedAt: 'Criada recentemente',
-          inProgress: false,
-          progressPercentage: 0
-        };
-        return [newList, ...prev];
+    const existingListIndex = lists.findIndex((l) => l.folderId === folderId);
+    let nextLists: QuestionList[];
+    if (existingListIndex !== -1) {
+      const targetList = lists[existingListIndex];
+      if (targetList.questionIds.includes(questionId)) {
+        return;
       }
-    });
+      const updatedList: QuestionList = {
+        ...targetList,
+        questionIds: [questionId, ...targetList.questionIds],
+        totalQuestions: targetList.questionIds.length + 1,
+        lastStudiedAt: 'Atualizado recentemente',
+        updatedAt: new Date().toISOString()
+      };
+      nextLists = [...lists];
+      nextLists[existingListIndex] = updatedList;
+    } else {
+      const newList: QuestionList = {
+        id: `list-folder-${folderId}-${Date.now()}`,
+        userId: user?.id,
+        title: `Questões Salvas - ${folderName}`,
+        folderId,
+        questionIds: [questionId],
+        totalQuestions: 1,
+        completedQuestions: 0,
+        lastStudiedAt: 'Criada recentemente',
+        inProgress: false,
+        progressPercentage: 0,
+        createdAt: new Date().toISOString()
+      };
+      nextLists = [newList, ...lists];
+    }
+    setLists(nextLists);
+    await saveUserLists(nextLists, user?.id);
   };
 
-  const handleCreateFolder = (name: string, parentId: string | null) => {
+  const handleCreateFolder = async (name: string, parentId: string | null) => {
     const newFolder: Folder = {
       id: `f-${Date.now()}`,
+      userId: user?.id,
       name,
       parentId,
-      color: parentId ? '#10b981' : '#3b82f6'
+      color: parentId ? '#10b981' : '#3b82f6',
+      createdAt: new Date().toISOString()
     };
-    setFolders((prev) => [...prev, newFolder]);
+    const nextFolders = [...folders, newFolder];
+    setFolders(nextFolders);
+    await saveUserFolders(nextFolders, user?.id);
   };
 
-  const handleRenameFolder = (folderId: string, newName: string) => {
-    setFolders((prev) =>
-      prev.map((f) => (f.id === folderId ? { ...f, name: newName } : f))
-    );
+  const handleRenameFolder = async (folderId: string, newName: string) => {
+    const nextFolders = folders.map((f) => (f.id === folderId ? { ...f, name: newName } : f));
+    setFolders(nextFolders);
+    await saveUserFolders(nextFolders, user?.id);
   };
 
   // Exclusão recursiva de pastas em até 3 níveis
-  const handleDeleteFolder = (folderId: string) => {
-    setFolders((prev) => {
-      const toDelete = new Set<string>([folderId]);
-      let addedMore = true;
-      while (addedMore) {
-        addedMore = false;
-        for (const f of prev) {
-          if (f.parentId && toDelete.has(f.parentId) && !toDelete.has(f.id)) {
-            toDelete.add(f.id);
-            addedMore = true;
-          }
+  const handleDeleteFolder = async (folderId: string) => {
+    const toDelete = new Set<string>([folderId]);
+    let addedMore = true;
+    while (addedMore) {
+      addedMore = false;
+      for (const f of folders) {
+        if (f.parentId && toDelete.has(f.parentId) && !toDelete.has(f.id)) {
+          toDelete.add(f.id);
+          addedMore = true;
         }
       }
-      return prev.filter((f) => !toDelete.has(f.id));
-    });
-    setLists((prev) =>
-      prev.map((l) => (l.folderId === folderId ? { ...l, folderId: undefined } : l))
-    );
+    }
+    const nextFolders = folders.filter((f) => !toDelete.has(f.id));
+    setFolders(nextFolders);
+    await saveUserFolders(nextFolders, user?.id);
+    for (const id of toDelete) {
+      await deleteUserFolderFromDb(id);
+    }
+
+    const nextLists = lists.map((l) => (l.folderId && toDelete.has(l.folderId) ? { ...l, folderId: undefined } : l));
+    setLists(nextLists);
+    await saveUserLists(nextLists, user?.id);
   };
 
-  const handleEditList = (listId: string, newTitle: string, newFolderId?: string | null) => {
-    setLists((prev) =>
-      prev.map((l) =>
-        l.id === listId
-          ? {
-              ...l,
-              title: newTitle,
-              folderId: newFolderId !== undefined ? (newFolderId || undefined) : l.folderId
-            }
-          : l
-      )
+  const handleEditList = async (listId: string, newTitle: string, newFolderId?: string | null) => {
+    const nextLists = lists.map((l) =>
+      l.id === listId
+        ? {
+            ...l,
+            title: newTitle,
+            folderId: newFolderId !== undefined ? (newFolderId || undefined) : l.folderId,
+            updatedAt: new Date().toISOString()
+          }
+        : l
     );
+    setLists(nextLists);
+    await saveUserLists(nextLists, user?.id);
   };
 
-  const handleDeleteList = (listId: string) => {
-    setLists((prev) => prev.filter((l) => l.id !== listId));
+  const handleDeleteList = async (listId: string) => {
+    const nextLists = lists.filter((l) => l.id !== listId);
+    setLists(nextLists);
+    await saveUserLists(nextLists, user?.id);
+    await deleteUserListFromDb(listId);
     if (activeListId === listId) {
       setActiveListId(null);
     }
   };
 
-  const handleCreateListWithFilters = (
+  const handleCreateListWithFilters = async (
     title: string,
     folderId: string | null,
     totalQuestions: number,
     appliedFilters: AdvancedFilterState
   ) => {
-    const pool = supabaseQuestions.length > 0 ? supabaseQuestions : filteredQuestions;
-    const chosenIds = pool.slice(0, totalQuestions).map((q) => q.id);
+    setIsCreatingListLoading(true);
+    try {
+      const maxToFetch = Math.min(200, Math.max(1, totalQuestions));
+      const res = await fetchQuestionsFromSupabase(
+        appliedFilters,
+        1,
+        maxToFetch
+      );
+      let chosenIds = res.questions.map((q) => q.id);
 
-    const newList: QuestionList = {
-      id: `list-${Date.now()}`,
-      title,
-      folderId: folderId || undefined,
-      questionIds: chosenIds,
-      totalQuestions: Math.max(totalQuestions, chosenIds.length),
-      completedQuestions: 0,
-      lastStudiedAt: 'Criada recentemente',
-      inProgress: false,
-      progressPercentage: 0
-    };
-    setLists((prev) => [newList, ...prev]);
+      if (chosenIds.length === 0) {
+        const pool = supabaseQuestions.length > 0 ? supabaseQuestions : filteredQuestions;
+        chosenIds = pool.slice(0, maxToFetch).map((q) => q.id);
+      }
+
+      const newList: QuestionList = {
+        id: `list-${Date.now()}`,
+        userId: user?.id,
+        title,
+        folderId: folderId || undefined,
+        questionIds: chosenIds,
+        totalQuestions: chosenIds.length,
+        completedQuestions: 0,
+        lastStudiedAt: 'Criada agora',
+        inProgress: false,
+        progressPercentage: 0,
+        createdAt: new Date().toISOString()
+      };
+      const nextLists = [newList, ...lists];
+      setLists(nextLists);
+      await saveUserLists(nextLists, user?.id);
+    } catch (err) {
+      console.error('Erro ao criar lista com filtros:', err);
+    } finally {
+      setIsCreatingListLoading(false);
+    }
   };
 
   const handleContinueList = (list: QuestionList) => {
@@ -1631,8 +1688,9 @@ export default function Home() {
                       setQuestionTimer(0);
                       setBancoMode('resolucao');
                     }}
-                    onStartSequentialSolving={() => {
+                    onStartSequentialSolving={(limit?: number) => {
                       setActiveListId(null);
+                      setSessionQuestionLimit(limit ? Math.min(200, Math.max(1, limit)) : 200);
                       setBancoMode('resolucao');
                       setCurrentQuestionIndex(0);
                       setQuestionTimer(0);
@@ -2341,6 +2399,7 @@ export default function Home() {
         onCreateFolder={handleCreateFolder}
         onConfirmCreate={handleConfirmCreateCaderno}
         availableQuestionsCount={totalSupabaseCount}
+        isGenerating={isCreatingListLoading}
       />
 
       {/* Modal de Planos & Assinatura */}
