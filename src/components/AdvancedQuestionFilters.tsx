@@ -213,7 +213,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   // Abas de Modalidade sincronizadas com a quantidade real do banco
   const modalidadeTabs = useMemo(() => {
-    const base = totalAvailable || 132965;
+    const base = totalAvailable || 85377;
     return [
       {
         key: 'residencia',
@@ -224,19 +224,19 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       {
         key: 'revalida',
         label: 'Revalida',
-        count: Math.round(base * 0.18).toLocaleString('pt-BR'),
+        count: (1980).toLocaleString('pt-BR'),
         val: 'Revalida' as StudyModalidade
       },
       {
         key: 'rplus',
         label: 'R+ Especialidades',
-        count: Math.round(base * 0.42).toLocaleString('pt-BR'),
+        count: 'Em breve',
         val: 'R+ Clínica Médica' as StudyModalidade
       },
       {
         key: 'titulo',
         label: 'Título de Especialista',
-        count: Math.round(base * 0.25).toLocaleString('pt-BR'),
+        count: 'Em breve',
         val: 'Título Clínica Médica (TECM)' as StudyModalidade
       }
     ];
@@ -441,7 +441,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DE TODOS OS FILTROS) ---
   const displayedQuestionCount = useMemo(() => {
     // 1. Base por seleção clínica ou modalidade (apenas questões com gabarito consolidado)
-    let sum = totalAvailable || 63211;
+    let sum = totalAvailable || 85377;
 
     if (filters.subfocos && filters.subfocos.length > 0) {
       let subSum = 0;

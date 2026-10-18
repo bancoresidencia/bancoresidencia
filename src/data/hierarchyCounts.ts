@@ -1,13 +1,13 @@
 export const hierarchyQuestionCounts = {
   "especialidades": {
-    "Obstetrícia": 6700,
-    "Cirurgia": 10636,
-    "Cirurgia Geral": 10636,
-    "Medicina Preventiva e Social": 10420,
-    "Pediatria": 11434,
-    "Clínica Médica": 17693,
-    "Ginecologia": 6328,
-    "Ginecologia e Obstetrícia": 13028
+    "Obstetrícia": 9050,
+    "Cirurgia": 13660,
+    "Cirurgia Geral": 13660,
+    "Medicina Preventiva e Social": 14172,
+    "Pediatria": 15453,
+    "Clínica Médica": 24503,
+    "Ginecologia": 8539,
+    "Ginecologia e Obstetrícia": 17589
   },
   "temas": {
     "Medicina Fetal": 638,

@@ -515,8 +515,8 @@ export default function Home() {
         });
     }
   }, [user?.id, supabaseQuestions]);
-  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(63211);
-  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(63211);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(85377);
+  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(85377);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
   const [hasLoadedSupabaseOnce, setHasLoadedSupabaseOnce] = useState<boolean>(false);
   const [questionsPage, setQuestionsPage] = useState<number>(1);
