@@ -7,18 +7,17 @@ import {
   Stethoscope,
   Sparkles,
   ArrowRight,
-  CheckCircle2,
   BookOpenCheck,
   BarChart3,
   HelpCircle,
   ShieldCheck,
   Check,
   Zap,
-  Clock,
   X,
   CreditCard,
   UserCheck
 } from 'lucide-react';
+import { LandingDemoQuestionsSection } from '@/components/LandingDemoQuestionsSection';
 
 export interface PricingPlan {
   id: 'mensal' | 'semestral' | 'anual' | 'bienal';
@@ -113,6 +112,36 @@ const PRICING_PLANS: PricingPlan[] = [
       'Acesso liberado no celular, tablet e computador'
     ]
   }
+];
+
+interface FeaturedBanca {
+  id: string;
+  name: string;
+  logo: string;
+  logoSlug?: string;
+}
+
+const TOP_FEATURED_BANCAS: FeaturedBanca[] = [
+  { id: 'enare', name: 'ENARE', logo: 'ENARE', logoSlug: 'enare' },
+  { id: 'usp-sp', name: 'USP-SP', logo: 'USP-SP', logoSlug: 'hcfmusp' },
+  { id: 'unicamp', name: 'UNICAMP', logo: 'UNICAMP', logoSlug: 'hc-unicamp' },
+  { id: 'amrigs', name: 'AMRIGS', logo: 'AMRIGS', logoSlug: 'amrigs' },
+  { id: 'sus-sp', name: 'SUS-SP', logo: 'SUS-SP', logoSlug: 'sus-sp' },
+  { id: 'psu-mg', name: 'PSU-MG', logo: 'PSU-MG', logoSlug: 'aremg' },
+  { id: 'iamspe', name: 'IAMSPE', logo: 'IAMSPE', logoSlug: 'hspe-fmo' },
+  { id: 'uerj', name: 'UERJ', logo: 'UERJ', logoSlug: 'hupe' },
+  { id: 'ufrj', name: 'UFRJ', logo: 'UFRJ' },
+  { id: 'einstein', name: 'EINSTEIN', logo: 'EINSTEIN', logoSlug: 'einstein-hiae' },
+  { id: 'santa-casa-sp', name: 'Santa Casa SP', logo: 'SANTA CASA', logoSlug: 'santa-casa-sp' },
+  { id: 'psu-ce', name: 'PSU-CE / SURCE', logo: 'PSU-CE' },
+  { id: 'ses-pe', name: 'SES-PE', logo: 'SES-PE', logoSlug: 'ses-pe' },
+  { id: 'ses-df', name: 'SES-DF', logo: 'SES-DF', logoSlug: 'ses-df' },
+  { id: 'unifesp', name: 'UNIFESP', logo: 'UNIFESP', logoSlug: 'unifesp-epm' },
+  { id: 'hcpa', name: 'HCPA', logo: 'HCPA', logoSlug: 'hcpa' },
+  { id: 'fmabc', name: 'FMABC', logo: 'FMABC', logoSlug: 'fmabc' },
+  { id: 'uel', name: 'UEL', logo: 'UEL', logoSlug: 'hu-uel' },
+  { id: 'revalida', name: 'Revalida INEP', logo: 'REVALIDA', logoSlug: 'inep-revalida' },
+  { id: 'amp', name: 'AMP', logo: 'AMP', logoSlug: 'amp' }
 ];
 
 interface LandingPageProps {
@@ -246,8 +275,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
           {/* Frase Principal Exigida */}
           <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white max-w-4xl mx-auto leading-[1.15]">
-            <span className="text-blue-600 dark:text-blue-400">+130.000 questões</span> para estudo de residência médica.
-            <span className="block mt-2 sm:mt-3 text-slate-800 dark:text-slate-200">
+            <span className="text-sky-500 dark:text-sky-400 font-black">+130.000 questões</span> para estudo de residência médica.
+            <span className="block mt-2 sm:mt-3 text-slate-800 dark:text-slate-100">
               Sem distrações, apenas estudo.
             </span>
           </h1>
@@ -256,6 +285,51 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           <p className="mt-5 sm:mt-6 text-sm sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
             Filtros cirúrgicos, caderno com todas as provas oficiais na íntegra e acompanhamento detalhado de pontos fracos. Tudo o que você precisa para ser aprovado, sem ruídos.
           </p>
+
+          {/* =========================================================================
+              CARROSSEL INFINITO (MARQUEE) COM AS PRINCIPAIS BANCAS DO ACERVO
+              ========================================================================= */}
+          <div className="relative w-full overflow-hidden mt-10 sm:mt-14 py-3">
+            {/* Fade lateral esquerdo para efeito de profundidade infinito */}
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent dark:from-[#070b14] dark:via-[#070b14]/80 to-transparent z-10" />
+
+            {/* Fade lateral direito */}
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent dark:from-[#070b14] dark:via-[#070b14]/80 to-transparent z-10" />
+
+            {/* Track animado contínuo (Duplicado para loop perfeito) */}
+            <div className="animate-marquee flex items-center gap-3.5 select-none py-1">
+              {[...TOP_FEATURED_BANCAS, ...TOP_FEATURED_BANCAS].map((banca, idx) => (
+                <div
+                  key={`${banca.id}-${idx}`}
+                  onClick={onLoginDemo}
+                  className="h-12 sm:h-14 px-4 sm:px-6 rounded-2xl bg-white dark:bg-white text-slate-900 shadow-md shadow-slate-200/50 dark:shadow-black/60 border border-slate-200/90 dark:border-white/20 hover:border-blue-500 hover:scale-105 transition-all duration-200 cursor-pointer flex items-center justify-center shrink-0 whitespace-nowrap group"
+                  title={banca.name}
+                >
+                  {banca.logoSlug ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={`https://www.medevo.com.br/assets/pulso/institutions/${banca.logoSlug}-192.webp`}
+                      alt={banca.name}
+                      loading="lazy"
+                      className="h-7 sm:h-8 w-auto max-w-[110px] object-contain group-hover:scale-105 transition-transform"
+                      onError={(e) => {
+                        (e.target as HTMLElement).style.display = 'none';
+                        const fallback = (e.target as HTMLElement).nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'inline-block';
+                      }}
+                    />
+                  ) : null}
+                  <span
+                    className={`font-heading font-black text-xs sm:text-sm tracking-wider uppercase text-slate-900 group-hover:text-blue-600 transition-colors ${
+                      banca.logoSlug ? 'hidden' : 'inline-block'
+                    }`}
+                  >
+                    {banca.logo}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
 
           {/* Botões de Ação Imediata */}
           <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
@@ -320,48 +394,16 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               </div>
             </div>
           </div>
-
-          {/* Demonstração Visual Simulado: A Interface Limpa de Resolução */}
-          <div className="mt-12 sm:mt-14 max-w-3xl mx-auto rounded-3xl bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800 p-5 sm:p-7 shadow-2xl text-left relative">
-            <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800/80 pb-3 mb-4">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
-                <span className="text-[11px] font-bold text-slate-400 ml-2">Ambiente de Resolução Focada</span>
-              </div>
-              <div className="flex items-center gap-2 text-[11px] font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 px-2.5 py-1 rounded-xl">
-                <Clock className="w-3.5 h-3.5" />
-                <span>Simulação Real</span>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <div className="flex flex-wrap items-center gap-2 text-[11px]">
-                <span className="font-extrabold px-2.5 py-1 rounded-lg bg-blue-600 text-white">ENARE 2025</span>
-                <span className="font-bold px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Clínica Médica</span>
-                <span className="font-bold px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500">Cardiologia</span>
-              </div>
-              <p className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 leading-relaxed">
-                Homem de 64 anos, com histórico de ICFER (FEVE 32%), comparece à consulta com queixa de dispneia aos moderados esforços. Em uso de Enalapril e Carvedilol em doses otimizadas. Qual a próxima conduta para redução de mortalidade?
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 text-xs">
-                <div className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300">
-                  A) Iniciar Digoxina 0,25mg diária
-                </div>
-                <div className="p-2.5 rounded-xl border border-emerald-500/50 bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 font-bold flex items-center justify-between">
-                  <span>B) Associar Espironolactona e iSGLT2</span>
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                </div>
-              </div>
-              <div className="pt-2 text-[11px] text-slate-500 dark:text-slate-400 flex items-center justify-between">
-                <span>✓ Resolução comentada passo a passo disponível</span>
-                <span className="font-bold text-slate-600 dark:text-slate-300">92% dos alunos acertaram</span>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+
+      {/* =========================================================================
+          SEÇÃO DE QUESTÕES REAIS DA PLATAFORMA (NA PRÁTICA, FAZ SENTIDO)
+          ========================================================================= */}
+      <LandingDemoQuestionsSection
+        onLoginDemo={onLoginDemo}
+        onOpenAuth={onOpenAuth}
+      />
 
       {/* =========================================================================
           SEÇÃO DOS 3 PILARES ESSENCIAIS (RECURSOS DA PLATAFORMA)

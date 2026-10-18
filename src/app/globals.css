@@ -125,3 +125,24 @@ html.light ::-webkit-scrollbar-thumb:hover {
     scroll-behavior: auto !important;
   }
 }
+
+/* Loop Infinito de Bancas (Marquee) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 72s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+

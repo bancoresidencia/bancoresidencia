@@ -44,11 +44,29 @@ const InstitutionLogo: React.FC<{ inst: OfficialInstitution; size?: 'sm' | 'md' 
   size = 'md'
 }) => {
   const { accentConfig } = useTheme();
-  const dim = size === 'sm' ? 'w-9 h-9 text-xs' : 'w-11 h-11 text-sm';
+  const [imgError, setImgError] = useState(false);
+  const dim = size === 'sm' ? 'w-9 h-9' : 'w-11 h-11';
+
+  if (inst.logoSlug && !imgError) {
+    return (
+      <div
+        className={`${dim} rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center p-1.5 shrink-0 shadow-xs overflow-hidden`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`https://www.medevo.com.br/assets/pulso/institutions/${inst.logoSlug}-192.webp`}
+          alt={inst.shortName}
+          loading="lazy"
+          onError={() => setImgError(true)}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    );
+  }
 
   return (
     <div
-      className={`${dim} rounded-xl flex items-center justify-center font-heading font-black shrink-0 shadow-xs uppercase tracking-tight border border-slate-200/80 dark:border-slate-800 transition-transform group-hover:scale-105`}
+      className={`${dim} rounded-xl flex items-center justify-center font-heading font-black text-xs shrink-0 shadow-xs uppercase tracking-tight border border-slate-200/80 dark:border-slate-800 transition-transform group-hover:scale-105`}
       style={{
         backgroundColor: accentConfig.bgRgba,
         color: accentConfig.primaryHex
@@ -59,9 +77,10 @@ const InstitutionLogo: React.FC<{ inst: OfficialInstitution; size?: 'sm' | 'md' 
   );
 };
 
-// Componente para exibir a insígnia institucional como fundo do retângulo do card com degradê de opacidade
+// Componente para exibir a logo institucional como fundo do retângulo do card com degradê de opacidade
 const InstitutionCardBackground: React.FC<{ inst: OfficialInstitution }> = ({ inst }) => {
   const { accentConfig } = useTheme();
+  const [imgError, setImgError] = useState(false);
 
   return (
     <div
@@ -69,18 +88,29 @@ const InstitutionCardBackground: React.FC<{ inst: OfficialInstitution }> = ({ in
       aria-hidden="true"
     >
       <div
-        className="absolute inset-y-0 -left-1 sm:left-0 w-3/4 sm:w-2/3 flex items-center pl-0 sm:pl-1 transition-all duration-300 ease-out group-hover:scale-105 origin-left"
+        className="absolute inset-y-0 -left-1 sm:left-0 w-3/4 sm:w-2/3 flex items-center pl-1 sm:pl-2 transition-all duration-300 ease-out group-hover:scale-105 origin-left"
         style={{
-          maskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0) 90%)',
-          WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0) 90%)',
+          maskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.15) 70%, rgba(0,0,0,0) 95%)',
+          WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.15) 70%, rgba(0,0,0,0) 95%)',
         }}
       >
-        <span
-          className="font-heading font-black text-5xl sm:text-6xl uppercase tracking-tighter opacity-15 dark:opacity-20 select-none pl-2"
-          style={{ color: accentConfig.primaryHex }}
-        >
-          {inst.shortName.slice(0, 4)}
-        </span>
+        {inst.logoSlug && !imgError ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`https://www.medevo.com.br/assets/pulso/institutions/${inst.logoSlug}-192.webp`}
+            alt=""
+            loading="lazy"
+            onError={() => setImgError(true)}
+            className="h-18 sm:h-22 w-auto max-w-[70%] object-contain object-left opacity-20 dark:opacity-25 group-hover:opacity-30 dark:group-hover:opacity-35 transition-opacity duration-300"
+          />
+        ) : (
+          <span
+            className="font-heading font-black text-5xl sm:text-6xl uppercase tracking-tighter opacity-15 dark:opacity-20 select-none pl-2"
+            style={{ color: accentConfig.primaryHex }}
+          >
+            {inst.shortName.slice(0, 4)}
+          </span>
+        )}
       </div>
     </div>
   );

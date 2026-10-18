@@ -182,8 +182,20 @@ async function main() {
       });
 
       if (rpcRes.status === 429) {
-        console.warn(`⚠️ Rate limit (429/PT429) detectado. Pausando 60s para resetar janela de taxa do servidor...`);
-        await sleep(60000);
+        consecutiveErrors++;
+        const errText = await rpcRes.text();
+        if (consecutiveErrors >= 2) {
+          console.warn(`🛑 Limite diário atingido (${errText}). Salvando progresso e sincronizando com Supabase...`);
+          fs.writeFileSync(PROGRESS_PATH, JSON.stringify(progress, null, 2), 'utf8');
+          fs.writeFileSync(OUTPUT_PATH, JSON.stringify(catalog, null, 2), 'utf8');
+          try {
+            execSync('node scripts/ingest_all_references_to_supabase.mjs', { stdio: 'inherit' });
+          } catch {}
+          console.log(`✅ Lote concluído. ${progress.materialsProcessed} materiais processados até agora.`);
+          process.exit(0);
+        }
+        console.warn(`⚠️ Rate limit (429/PT429) detectado. Pausando 15s para confirmação...`);
+        await sleep(15000);
         i--; // repete o item
         continue;
       }

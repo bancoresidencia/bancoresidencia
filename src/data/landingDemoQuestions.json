@@ -1,0 +1,610 @@
+{
+  "residencia": [
+    {
+      "id": "res-1",
+      "banca": "ENARE / EBSERH",
+      "year": 2026,
+      "especialidade": "Clínica Médica",
+      "tema": "Cardiologia",
+      "likes": 312,
+      "dislikes": 12,
+      "statement": "Homem de 64 anos, com histórico de ICFEr (FEVE 32%), comparece à consulta com queixa de dispneia aos moderados esforços (NYHA II). Em uso de Enalapril 20mg 2x/dia e Carvedilol 25mg 2x/dia em doses otimizadas. PA 118x74 mmHg, FC 68 bpm. Exames laboratoriais: Creatinina 1,1 mg/dL, Potássio 4,3 mEq/L. Qual a próxima conduta para redução comprovada de mortalidade cardiovascular?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Iniciar Digoxina 0,25mg diária."
+        },
+        {
+          "letter": "B",
+          "text": "Associar Espironolactona e Dapagliflozina (iSGLT2)."
+        },
+        {
+          "letter": "C",
+          "text": "Substituir Carvedilol por Metoprolol."
+        },
+        {
+          "letter": "D",
+          "text": "Adicionar Furosemida 40mg pela manhã."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Associar Espironolactona e Dapagliflozina (iSGLT2).\n\nRaciocínio Clínico:\nO tratamento quádruplo da ICFEr com redução comprovada de mortalidade inclui: 1) Inibidor do SRAA (IECA/BRA ou preferencialmente INRA/Sacubitril-Valsartana), 2) Betabloqueador (Carvedilol, Succinato de Metoprolol ou Bisoprolol), 3) Antagonista do Receptor Mineralocorticoide (Espironolactona) e 4) Inibidor de SGLT2 (Dapagliflozina ou Empagliflozina).\n\nCom potássio de 4,3 e função renal preservada, a introdução de Espironolactona associada a iSGLT2 completa os 4 pilares farmacológicos modificadores de prognóstico."
+    },
+    {
+      "id": "res-2",
+      "banca": "USP-SP / HCFMUSP",
+      "year": 2025,
+      "especialidade": "Cirurgia Geral",
+      "tema": "Abdome Agudo",
+      "likes": 278,
+      "dislikes": 9,
+      "statement": "Mulher de 42 anos, previamente hígida, procura pronto-socorro com dor em hipocôndrio direito de início há 18 horas, contínua e irradiada para região escapular, acompanhada de febre aferida (38,2 °C) e náuseas. Ao exame físico: abdome doloroso à palpação profunda em hipocôndrio direito, com interrupção abrupta da inspiração profunda pelo examinador. Sem icterícia. Qual o diagnóstico e a conduta definitiva indicada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coledocolitíase; CPRE eletiva."
+        },
+        {
+          "letter": "B",
+          "text": "Colecistite aguda litiásica; Colecistectomia videolaparoscópica precoce."
+        },
+        {
+          "letter": "C",
+          "text": "Colangite bacteriana aguda; Drenagem biliar descompressiva imediata."
+        },
+        {
+          "letter": "D",
+          "text": "Cólica biliar simples; Sintomáticos e dieta hipogordurosa ambulatorial."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Colecistite aguda litiásica; Colecistectomia videolaparoscópica precoce.\n\nRaciocínio Clínico:\nA presença de dor contínua > 6 horas em hipocôndrio direito associada a febre e sinal de Murphy positivo (interrupção da inspiração à palpação do ponto cístico) define o diagnóstico clínico de Colecistite Aguda (Critérios de Tokyo).\n\nConduta Padrão-Ouro:\nInternação, antibioticoterapia venosa e Colecistectomia Videolaparoscópica precoce (idealmente nas primeiras 72 horas do início dos sintomas) para reduzir tempo de internação e complicações infecciosas."
+    },
+    {
+      "id": "res-3",
+      "banca": "UNICAMP",
+      "year": 2025,
+      "especialidade": "Pediatria",
+      "tema": "Pneumologia Pediátrica",
+      "likes": 195,
+      "dislikes": 8,
+      "statement": "Lactente de 4 meses é levado à emergência com coriza e tosse há 3 dias, evoluindo nas últimas 24 horas com taquipneia, tiragem subcostal e sibilos expiratórios difusos à ausculta. Frequência respiratória de 58 irpm, SatO₂ 94% em ar ambiente. É a primeira crise de sibilância da criança. Qual o agente etiológico mais frequente e a conduta preconizada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vírus Sincicial Respiratório (VSR); Suporte clínico, hidratação e desobstrução nasal."
+        },
+        {
+          "letter": "B",
+          "text": "Streptococcus pneumoniae; Amoxicilina via oral por 7 dias."
+        },
+        {
+          "letter": "C",
+          "text": "Vírus Influenza A; Oseltamivir precoce e corticoterapia sistêmica."
+        },
+        {
+          "letter": "D",
+          "text": "Adenovírus; Nebulização contínua com beta-2 agonista de curta duração."
+        }
+      ],
+      "correct_answer": "A",
+      "commentary": "Gabarito: A) Vírus Sincicial Respiratório (VSR); Suporte clínico, hidratação e desobstrução nasal.\n\nRaciocínio Clínico:\nQuadro típico de Bronquiolite Viral Aguda (BVA) no primeiro ano de vida, caracterizado por pródromo catarral seguido de taquipneia, esforço respiratório e sibilância difusa. O VSR é responsável por mais de 60-80% dos casos.\n\nEvidência Científica:\nDiretrizes da SBP e AAP não recomendam broncodilatadores, antibióticos ou corticoides de rotina para BVA primária não complicada. A base do tratamento é oxigenoterapia de suporte se SatO₂ < 90-92%, lavagem nasal e garantia do estado hidroeletrolítico."
+    },
+    {
+      "id": "res-4",
+      "banca": "SURCE / PSU-CE",
+      "year": 2024,
+      "especialidade": "Ginecologia e Obstetrícia",
+      "tema": "Assistência Pré-Natal",
+      "likes": 240,
+      "dislikes": 11,
+      "statement": "Primigesta de 28 anos, com 12 semanas de gestação confirmada por ultrassonografia de primeiro trimestre, comparece à primeira consulta de pré-natal assintomática. Traz urocultura de rotina com contagem de colônias > 100.000 UFC/mL de Escherichia coli sensível à Nitrofurantoína, Cefalexina e Fosfomicina. Qual a conduta indicada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apenas orientar aumento da ingesta hídrica, sem necessidade de antibiótico por ser assintomática."
+        },
+        {
+          "letter": "B",
+          "text": "Tratar com antibioticoterapia adequada e solicitar urocultura de controle após o término."
+        },
+        {
+          "letter": "C",
+          "text": "Repetir a urocultura em 15 dias antes de iniciar qualquer intervenção."
+        },
+        {
+          "letter": "D",
+          "text": "Internar a gestante para antibioticoterapia intravenosa imediata."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Tratar com antibioticoterapia adequada e solicitar urocultura de controle após o término.\n\nRaciocínio Clínico:\nBacteriúria assintomática na gestante DEVE ser tratada sempre! Na gravidez, a estase urinária e alterações hormonais favorecem a progressão de até 30-40% dos casos para pielonefrite aguda, aumentando o risco de trabalho de parto prematuro e sepse maternal.\n\nConduta Obrigatória:\nTratamento por 7 dias (ex.: Nitrofurantoína ou Cefalexina) ou dose única de Fosfomicina, seguido de urocultura de controle após 7-14 dias do término do tratamento."
+    },
+    {
+      "id": "res-5",
+      "banca": "PSU-MG / AREMG",
+      "year": 2024,
+      "especialidade": "Medicina Preventiva",
+      "tema": "Atenção Primária à Saúde",
+      "likes": 215,
+      "dislikes": 7,
+      "statement": "Na Estratégia Saúde da Família (ESF), um médico generalista atende um paciente hipertenso crônico há 8 anos, conhecendo seu contexto familiar, crenças, rede de apoio e expectativas terapêuticas. Esse acompanhamento contínuo ao longo do tempo por uma mesma equipe exemplifica qual atributo essencial da Atenção Primária segundo Starfield?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acesso de Primeiro Contato."
+        },
+        {
+          "letter": "B",
+          "text": "Longitudinalidade."
+        },
+        {
+          "letter": "C",
+          "text": "Integralidade."
+        },
+        {
+          "letter": "D",
+          "text": "Coordenação do Cuidado."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Longitudinalidade.\n\nRaciocínio Clínico:\nA longitudinalidade refere-se à existência de uma fonte continuada de atenção, com a criação de vínculo terapêutico e acompanhamento da pessoa ao longo do tempo, independente da presença ou ausência de uma doença específica. A longitudinalidade reduz hospitalizações desnecessárias e melhora a adesão terapêutica."
+    }
+  ],
+  "revalida": [
+    {
+      "id": "rev-1",
+      "banca": "ENARE / ENAMED",
+      "year": 2026,
+      "especialidade": "Cirurgia do Trauma",
+      "tema": "Pneumotórax Hipertensivo",
+      "likes": 244,
+      "dislikes": 14,
+      "statement": "Paciente de 20 anos, sexo masculino, vítima de colisão 'automóvel a muro', sem cinto de segurança, é atendido ainda na cena pelo Serviço Móvel de Atendimento de Urgência (SAMU). Exame físico: torporoso; saturação de O₂ de 60% em ar ambiente; frequência respiratória de 28 irpm; frequência cardíaca de 112 bpm; PA 90x50 mmHg. Desvio da traqueia para a direita, turgência jugular, hipofonese de bulhas cardíacas e diminuição acentuada do murmúrio vesicular à esquerda. Qual a conduta adequada no atendimento pré-hospitalar?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reposição volêmica agressiva com cristaloides."
+        },
+        {
+          "letter": "B",
+          "text": "Cricotireoidostomia cirúrgica de urgência."
+        },
+        {
+          "letter": "C",
+          "text": "Toracocentese de alívio (descompressão por agulha) no 2º espaço intercostal."
+        },
+        {
+          "letter": "D",
+          "text": "Pericardiocentese subxifoideana guiada por ultrassom."
+        }
+      ],
+      "correct_answer": "C",
+      "commentary": "Gabarito: C) Toracocentese de alívio (descompressão por agulha) no 2º espaço intercostal.\n\nRaciocínio Clínico:\nO paciente apresenta quadro clássico de Pneumotórax Hipertensivo à esquerda com choque obstrutivo (hipotensão 90x50, turgência jugular, desvio contralateral da traqueia para a direita e abolição do murmúrio vesicular à esquerda em paciente vítima de trauma torácico contuso).\n\nConduta Imediata (ATLS):\nA conduta no atendimento pré-hospitalar deve ser a descompressão torácica imediata com agulha (toracocentese de alívio). Tradicionalmente realizada no 2º espaço intercostal na linha hemiclavicular esquerda (ou alternativamente no 4º/5º espaço intercostal entre a linha axilar anterior e média), seguida de drenagem pleural em selo d água no ambiente hospitalar."
+    },
+    {
+      "id": "rev-2",
+      "banca": "INEP Revalida",
+      "year": 2025,
+      "especialidade": "Medicina Preventiva",
+      "tema": "Epidemiologia Clínica",
+      "likes": 189,
+      "dislikes": 10,
+      "statement": "Em uma campanha populacional de rastreamento para detecção precoce de Diabetes Mellitus tipo 2 em indivíduos assintomáticos acima de 45 anos, qual das seguintes características é a mais desejável para o teste de triagem inicial aplicado em larga escala?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Alta especificidade, minimizando falsos-positivos."
+        },
+        {
+          "letter": "B",
+          "text": "Alta sensibilidade, minimizando falsos-negativos."
+        },
+        {
+          "letter": "C",
+          "text": "Alto valor preditivo positivo independente da prevalência."
+        },
+        {
+          "letter": "D",
+          "text": "Razão de verossimilhança negativa superior a 1,0."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Alta sensibilidade, minimizando falsos-negativos.\n\nRaciocínio Clínico:\nEm testes de rastreamento (screening) populacional, a prioridade máxima é identificar o maior número de indivíduos que realmente possuem a condição em estágio subclínico, reduzindo os falsos-negativos. Testes com alta sensibilidade são ideais para triagem, enquanto testes de alta especificidade são utilizados subsequentemente para confirmação diagnóstica."
+    },
+    {
+      "id": "rev-3",
+      "banca": "INEP Revalida",
+      "year": 2024,
+      "especialidade": "Clínica Médica",
+      "tema": "Infectologia",
+      "likes": 270,
+      "dislikes": 15,
+      "statement": "Homem de 35 anos, previamente hígido, procura Unidade de Pronto Atendimento com tosse produtiva há 4 dias, febre de 38,8 °C e dor torácica ventilatório-dependente em hemitórax direito. Ao exame físico: orientado, PA 115x75 mmHg, FC 92 bpm, FR 20 irpm, SatO₂ 96% em ar ambiente. Ausculta pulmonar com estertores crepitantes em base direita. Escores de gravidade CURB-65 = 0. Qual o local de tratamento e o esquema antimicrobiano recomendado pelas diretrizes brasileiras?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Internação em enfermaria; Ceftriaxona + Azitromicina venosa."
+        },
+        {
+          "letter": "B",
+          "text": "Tratamento ambulatorial; Amoxicilina ou Macrolídeo (Azitromicina) via oral."
+        },
+        {
+          "letter": "C",
+          "text": "Internação em UTI; Levofloxacino venoso + Piperacilina-Tazobactam."
+        },
+        {
+          "letter": "D",
+          "text": "Tratamento ambulatorial; Ciprofloxacino via oral por 14 dias."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Tratamento ambulatorial; Amoxicilina ou Macrolídeo (Azitromicina) via oral.\n\nRaciocínio Clínico:\nO paciente apresenta Pneumonia Adquirida na Comunidade (PAC) leve (CURB-65 = 0, paciente lúcido, sem hipotensão, FR < 30 e jovem). A estratificação de risco autoriza tratamento ambulatorial seguro. Em pacientes previamente hígidos e sem uso recente de antibióticos, a monoterapia com Amoxicilina ou Macrolídeo via oral por 5 a 7 dias é a primeira linha indicada pela Sociedade Brasileira de Pneumologia e Tisiologia (SBPT)."
+    },
+    {
+      "id": "rev-4",
+      "banca": "INEP Revalida",
+      "year": 2023,
+      "especialidade": "Ginecologia e Obstetrícia",
+      "tema": "Hemorragias da Primeira Metade",
+      "likes": 228,
+      "dislikes": 6,
+      "statement": "Mulher de 26 anos, primigesta com 8 semanas de amenorreia, procura o pronto-socorro com sangramento vaginal em moderada quantidade e cólicas em hipogástrio. Ao exame especular: colo entreaberto com saída de sangue escuro e fragmentos teciduais ovulares. Ao toque bimanual: colo pérvio para 1 polpa digital, útero menor que o esperado para a idade gestacional. Ultrassonografia transvaginal demonstra eco endometrial espessado (19 mm) e heterogêneo, sem saco gestacional íntegro. Qual o diagnóstico e conduta?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ameaça de abortamento; Repouso absoluto e progesterona natural."
+        },
+        {
+          "letter": "B",
+          "text": "Abortamento incompleto; Esvaziamento uterino por Aspiração Manual Intrauterina (AMIU) ou curetagem."
+        },
+        {
+          "letter": "C",
+          "text": "Gravidez ectópica rota; Laparotomia exploradora de emergência."
+        },
+        {
+          "letter": "D",
+          "text": "Gestação anembrionada; Conduta expectante com repetição de ultrassom em 7 dias."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Abortamento incompleto; Esvaziamento uterino por Aspiração Manual Intrauterina (AMIU) ou curetagem.\n\nRaciocínio Clínico:\nA presença de colo pérvio, eliminação de restos ovulares e eco endometrial heterogêneo > 15 mm na ultrassonografia confirmam Abortamento Incompleto. A conduta mandatória é o esvaziamento uterino por AMIU (técnica preferencial por menor taxa de perfuração uterina e sinéquias) ou curetagem uterina, além da profilaxia de imunoglobulina anti-D se a paciente for Rh negativo."
+    },
+    {
+      "id": "rev-5",
+      "banca": "INEP Revalida",
+      "year": 2022,
+      "especialidade": "Cirurgia Geral",
+      "tema": "Hérnias da Parede Abdominal",
+      "likes": 198,
+      "dislikes": 8,
+      "statement": "Homem de 62 anos comparece à consulta queixando-se de abaulamento indolor na região inguinal direita aos esforços. Ao exame físico na posição ortostática, com a manobra de Valsalva, a ponta do dedo do examinador introduzida no anel inguinal externo é impulsionada pela massa herniária que progride de lateral para medial acompanhando o funículo espermático até a bolsa escrotal. Qual a classificação anatômica dessa hérnia?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hérnia inguinal direta (fraqueza da fáscia transversalis no triângulo de Hesselbach)."
+        },
+        {
+          "letter": "B",
+          "text": "Hérnia inguinal indireta (persistência ou dilatação do conduto peritoniovaginal)."
+        },
+        {
+          "letter": "C",
+          "text": "Hérnia femoral (abaixo do ligamento inguinal no canal femoral)."
+        },
+        {
+          "letter": "D",
+          "text": "Hérnia de Spiegel (borda lateral da bainha do músculo reto abdominal)."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Hérnia inguinal indireta (persistência ou dilatação do conduto peritoniovaginal).\n\nRaciocínio Clínico:\nA hérnia inguinal indireta insinua-se pelo anel inguinal interno, percorre o canal inguinal e toca a PONTA do dedo do examinador durante a manobra de Landivar/Valsalva, podendo descer para a bolsa escrotal (hérnia inguinoescrotal). Já a hérnia direta surge medialmente aos vasos epigástricos inferiores (triângulo de Hesselbach) e toca a POLPA do dedo."
+    }
+  ],
+  "rplus": [
+    {
+      "id": "rplus-1",
+      "banca": "USP / HC / R+ Clínica",
+      "year": 2025,
+      "especialidade": "Neurologia",
+      "tema": "Acidente Vascular Cerebral",
+      "likes": 345,
+      "dislikes": 11,
+      "statement": "Paciente de 61 anos é admitido na Sala de Emergência com hemiparesia completa faciobraquiocrural à direita e afasia global de início súbito há 70 minutos. TC de crânio sem contraste afasta hemorragia (ASPECTS = 9). Angio-TC demonstra oclusão da artéria carótida interna esquerda no segmento intracraniano (T carotídeo). PA = 175x95 mmHg, Glicemia = 118 mg/dL. Não há contraindicações clínicas. Qual a melhor estratégia terapêutica de reperfusão combinada recomendada pelas diretrizes atuais?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trombólise química intravenosa isolada com Alteplase e internação em UTI."
+        },
+        {
+          "letter": "B",
+          "text": "Trombólise intravenosa imediata associada a Trombectomia Mecânica (terapia combinada/bridging)."
+        },
+        {
+          "letter": "C",
+          "text": "Trombectomia mecânica direta sem trombolítico pelo risco aumentado de sangramento."
+        },
+        {
+          "letter": "D",
+          "text": "Antiagregação plaquetária dupla com AAS e Clopidogrel por via oral."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Trombólise intravenosa imediata associada a Trombectomia Mecânica (terapia combinada/bridging).\n\nRaciocínio Clínico Especializado (R+):\nEm pacientes com AVC isquêmico agudo por oclusão de grande vaso (carótida interna terminal ou segmento M1 da cerebral média) admitidos dentro da janela de 4,5 horas, o padrão-ouro é o tratamento em ponte (bridging therapy): início imediato do trombolítico intravenoso (rtPA ou Tenecteplase) sem retardar o encaminhamento imediato para angiografia com Trombectomia Mecânica por cateterismo."
+    },
+    {
+      "id": "rplus-2",
+      "banca": "FUVEST / R+ Cirurgia",
+      "year": 2025,
+      "especialidade": "Urologia",
+      "tema": "Oncologia Urológica",
+      "likes": 289,
+      "dislikes": 9,
+      "statement": "Homem de 68 anos, assintomático, realiza rastreamento e apresenta PSA total de 8,2 ng/mL com relação livre/total de 11%. Toque retal com nódulo endurecido palpável em lobo prostático direito (estágio clínico T2a). Ressonância multiparamétrica revela lesão PI-RADS 5 em zona periférica direita. Biópsia transretal guiada por fusão confirma adenocarcinoma prostático com escore de Gleason 4 + 4 = 8 (Grupo de Grau ISUP 4) em 5 fragmentos. Qual a classificação de risco e conduta recomendada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Baixo risco; Vigilância ativa com dosagem semestral de PSA."
+        },
+        {
+          "letter": "B",
+          "text": "Alto risco; Prostatectomia radical com linfadenectomia pélvica estendida ou Radioterapia + Hormonioterapia."
+        },
+        {
+          "letter": "C",
+          "text": "Risco intermediário favorável; Braquiterapia prostática em monoterapia."
+        },
+        {
+          "letter": "D",
+          "text": "Doença metastática primária; Quimioterapia sistêmica com Docetaxel."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Alto risco; Prostatectomia radical com linfadenectomia pélvica estendida ou Radioterapia + Hormonioterapia.\n\nRaciocínio Clínico (R+ Urologia):\nO paciente apresenta Câncer de Próstata classificado como ALTO RISCO devido ao escore de Gleason 8 (ISUP 4). O tratamento com intenção curativa para alto risco inclui: 1) Prostatectomia radical acompanhada mandatoriamente de linfadenectomia pélvica estendida (para estadiamento nodal preciso), ou 2) Radioterapia externa associada a bloqueio androgênico sistêmico (ADT) por 24 a 36 meses."
+    },
+    {
+      "id": "rplus-3",
+      "banca": "AMRIGS / R+ Clínica",
+      "year": 2024,
+      "especialidade": "Nefrologia",
+      "tema": "Glomerulopatias",
+      "likes": 310,
+      "dislikes": 12,
+      "statement": "Homem de 34 anos apresenta quadro de edema progressivo em membros inferiores e face há 3 semanas. Exames complementares: Proteinúria de 24h = 8,4 g (faixa nefrótica), Albumina sérica = 2,1 g/dL, Colesterol total = 380 mg/dL, Creatinina = 0,9 mg/dL. Sorologias para HIV, Hepatites B e C e FAN são negativas. Biópsia renal à microscopia óptica demonstra espessamento difuso da membrana basal glomerular com spikes à impregnação pela prata, e a imunofluorescência evidencia depósitos granulares subepiteliais de IgG e C3. Qual o diagnóstico e o principal autoanticorpo envolvido na forma primária?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Doença por Lesões Mínimas; anticorpo anti-nefrina."
+        },
+        {
+          "letter": "B",
+          "text": "Nefropatia Membranosa; anticorpo anti-receptor de fosfolipase A2 (anti-PLA2R)."
+        },
+        {
+          "letter": "C",
+          "text": "Glomeruloesclerose Segmentar e Focal (GESF); anticorpo anti-podocina."
+        },
+        {
+          "letter": "D",
+          "text": "Glomerulonefrite Membranoproliferativa; fator nefrítico C3."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Nefropatia Membranosa; anticorpo anti-receptor de fosfolipase A2 (anti-PLA2R).\n\nRaciocínio Clínico (R+ Nefrologia):\nQuadro clássico de Síndrome Nefrótica pura no adulto jovem. A presença de espessamento difuso da membrana basal com projeções em spikes e depósitos subepiteliais de IgG define a Nefropatia Membranosa. Em cerca de 70-80% dos casos primários/idiopáticos, a etiologia é autoimune mediada por autoanticorpos dirigidos contra o receptor da fosfolipase A2 da membrana podocitária (anti-PLA2R)."
+    },
+    {
+      "id": "rplus-4",
+      "banca": "SURCE / R+ Cirurgia",
+      "year": 2024,
+      "especialidade": "Cirurgia Vascular",
+      "tema": "Aneurisma de Aorta Abdominal",
+      "likes": 260,
+      "dislikes": 8,
+      "statement": "Homem de 72 anos, tabagista ativo, assintomático, realiza ultrassonografia de abdome que identifica Aneurisma de Aorta Abdominal infrarrenal fusiforme com diâmetro máximo transverso de 5,8 cm. Angiotomografia confirma colo aórtico proximal de 22 mm de comprimento e angulação de 30°, sem envolvimento das artérias renais ou ilíacas. Qual a indicação e a modalidade terapêutica minimamente invasiva mais indicada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apenas acompanhamento com ultrassonografia semestral, com corte de intervenção em 6,5 cm."
+        },
+        {
+          "letter": "B",
+          "text": "Tratamento cirúrgico indicado (diâmetro > 5,5 cm); Correção endovascular de aneurisma (EVAR)."
+        },
+        {
+          "letter": "C",
+          "text": "Laparotomia exploradora urgente com clampeamento supracelíaco imediato."
+        },
+        {
+          "letter": "D",
+          "text": "Embolização da artéria mesentérica inferior por arteriografia."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Tratamento cirúrgico indicado (diâmetro > 5,5 cm); Correção endovascular de aneurisma (EVAR).\n\nRaciocínio Clínico (R+ Cirurgia Vascular):\nEm homens assintomáticos, o diâmetro aórtico ≥ 5,5 cm estabelece indicação formal de correção cirúrgica pelo risco exponencial de ruptura espontânea. Com anatomia favorável (colo aórtico > 15 mm e angulação < 60°), o reparo endovascular (EVAR) é a abordagem preferencial por apresentar menor morbimortalidade peroperatória e menor tempo de recuperação em relação à cirurgia aberta."
+    },
+    {
+      "id": "rplus-5",
+      "banca": "USP / R+ Terapia Intensiva",
+      "year": 2023,
+      "especialidade": "Terapia Intensiva",
+      "tema": "Choque Séptico e Hemodinâmica",
+      "likes": 380,
+      "dislikes": 16,
+      "statement": "Paciente de 58 anos em choque séptico refratário a ressuscitação volêmica (30 mL/kg de cristaloides balanceados) encontra-se em ventilação mecânica invasiva sob uso de Noradrenalina a 0,45 mcg/kg/min. PA invasiva = 78x42 mmHg (PAM 54 mmHg), FC 122 bpm, Lactato sérico de controle = 4,2 mmol/L. Ecocardiograma point-of-care (POCUS) demonstra ventrículo esquerdo hiperdinâmico sem congestão pulmonar. De acordo com as diretrizes do Surviving Sepsis Campaign (SSC), qual a próxima intervenção farmacológica adjuvante prioritária recomendada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Associar Vasopressina em dose fixa de 0,03 UI/min."
+        },
+        {
+          "letter": "B",
+          "text": "Substituir Noradrenalina por Dopamina em dose alfa."
+        },
+        {
+          "letter": "C",
+          "text": "Adicionar Dobutamina 15 mcg/kg/min imediatamente."
+        },
+        {
+          "letter": "D",
+          "text": "Iniciar infusão em bolus de Fenilefrina 200 mcg."
+        }
+      ],
+      "correct_answer": "A",
+      "commentary": "Gabarito: A) Associar Vasopressina em dose fixa de 0,03 UI/min.\n\nRaciocínio Clínico (R+ UTI):\nNo choque séptico com necessidade de doses crescentes de Noradrenalina (geralmente > 0,25 a 0,5 mcg/kg/min) para manter PAM ≥ 65 mmHg, a Surviving Sepsis Campaign recomenda a introdução precoce de Vasopressina (0,03 UI/min em infusão contínua não titulável) como segundo vasopressor poupador de catecolaminas. Como a contratilidade miocárdica está preservada (VE hiperdinâmico), inotrópicos (Dobutamina) não estão indicados no momento."
+    }
+  ],
+  "internato": [
+    {
+      "id": "res-1",
+      "banca": "ENARE / EBSERH",
+      "year": 2026,
+      "especialidade": "Clínica Médica",
+      "tema": "Cardiologia",
+      "likes": 312,
+      "dislikes": 12,
+      "statement": "Homem de 64 anos, com histórico de ICFEr (FEVE 32%), comparece à consulta com queixa de dispneia aos moderados esforços (NYHA II). Em uso de Enalapril 20mg 2x/dia e Carvedilol 25mg 2x/dia em doses otimizadas. PA 118x74 mmHg, FC 68 bpm. Exames laboratoriais: Creatinina 1,1 mg/dL, Potássio 4,3 mEq/L. Qual a próxima conduta para redução comprovada de mortalidade cardiovascular?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Iniciar Digoxina 0,25mg diária."
+        },
+        {
+          "letter": "B",
+          "text": "Associar Espironolactona e Dapagliflozina (iSGLT2)."
+        },
+        {
+          "letter": "C",
+          "text": "Substituir Carvedilol por Metoprolol."
+        },
+        {
+          "letter": "D",
+          "text": "Adicionar Furosemida 40mg pela manhã."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Associar Espironolactona e Dapagliflozina (iSGLT2).\n\nRaciocínio Clínico:\nO tratamento quádruplo da ICFEr com redução comprovada de mortalidade inclui: 1) Inibidor do SRAA (IECA/BRA ou preferencialmente INRA/Sacubitril-Valsartana), 2) Betabloqueador (Carvedilol, Succinato de Metoprolol ou Bisoprolol), 3) Antagonista do Receptor Mineralocorticoide (Espironolactona) e 4) Inibidor de SGLT2 (Dapagliflozina ou Empagliflozina).\n\nCom potássio de 4,3 e função renal preservada, a introdução de Espironolactona associada a iSGLT2 completa os 4 pilares farmacológicos modificadores de prognóstico."
+    },
+    {
+      "id": "res-2",
+      "banca": "USP-SP / HCFMUSP",
+      "year": 2025,
+      "especialidade": "Cirurgia Geral",
+      "tema": "Abdome Agudo",
+      "likes": 278,
+      "dislikes": 9,
+      "statement": "Mulher de 42 anos, previamente hígida, procura pronto-socorro com dor em hipocôndrio direito de início há 18 horas, contínua e irradiada para região escapular, acompanhada de febre aferida (38,2 °C) e náuseas. Ao exame físico: abdome doloroso à palpação profunda em hipocôndrio direito, com interrupção abrupta da inspiração profunda pelo examinador. Sem icterícia. Qual o diagnóstico e a conduta definitiva indicada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coledocolitíase; CPRE eletiva."
+        },
+        {
+          "letter": "B",
+          "text": "Colecistite aguda litiásica; Colecistectomia videolaparoscópica precoce."
+        },
+        {
+          "letter": "C",
+          "text": "Colangite bacteriana aguda; Drenagem biliar descompressiva imediata."
+        },
+        {
+          "letter": "D",
+          "text": "Cólica biliar simples; Sintomáticos e dieta hipogordurosa ambulatorial."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Colecistite aguda litiásica; Colecistectomia videolaparoscópica precoce.\n\nRaciocínio Clínico:\nA presença de dor contínua > 6 horas em hipocôndrio direito associada a febre e sinal de Murphy positivo (interrupção da inspiração à palpação do ponto cístico) define o diagnóstico clínico de Colecistite Aguda (Critérios de Tokyo).\n\nConduta Padrão-Ouro:\nInternação, antibioticoterapia venosa e Colecistectomia Videolaparoscópica precoce (idealmente nas primeiras 72 horas do início dos sintomas) para reduzir tempo de internação e complicações infecciosas."
+    },
+    {
+      "id": "res-3",
+      "banca": "UNICAMP",
+      "year": 2025,
+      "especialidade": "Pediatria",
+      "tema": "Pneumologia Pediátrica",
+      "likes": 195,
+      "dislikes": 8,
+      "statement": "Lactente de 4 meses é levado à emergência com coriza e tosse há 3 dias, evoluindo nas últimas 24 horas com taquipneia, tiragem subcostal e sibilos expiratórios difusos à ausculta. Frequência respiratória de 58 irpm, SatO₂ 94% em ar ambiente. É a primeira crise de sibilância da criança. Qual o agente etiológico mais frequente e a conduta preconizada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vírus Sincicial Respiratório (VSR); Suporte clínico, hidratação e desobstrução nasal."
+        },
+        {
+          "letter": "B",
+          "text": "Streptococcus pneumoniae; Amoxicilina via oral por 7 dias."
+        },
+        {
+          "letter": "C",
+          "text": "Vírus Influenza A; Oseltamivir precoce e corticoterapia sistêmica."
+        },
+        {
+          "letter": "D",
+          "text": "Adenovírus; Nebulização contínua com beta-2 agonista de curta duração."
+        }
+      ],
+      "correct_answer": "A",
+      "commentary": "Gabarito: A) Vírus Sincicial Respiratório (VSR); Suporte clínico, hidratação e desobstrução nasal.\n\nRaciocínio Clínico:\nQuadro típico de Bronquiolite Viral Aguda (BVA) no primeiro ano de vida, caracterizado por pródromo catarral seguido de taquipneia, esforço respiratório e sibilância difusa. O VSR é responsável por mais de 60-80% dos casos.\n\nEvidência Científica:\nDiretrizes da SBP e AAP não recomendam broncodilatadores, antibióticos ou corticoides de rotina para BVA primária não complicada. A base do tratamento é oxigenoterapia de suporte se SatO₂ < 90-92%, lavagem nasal e garantia do estado hidroeletrolítico."
+    },
+    {
+      "id": "res-4",
+      "banca": "SURCE / PSU-CE",
+      "year": 2024,
+      "especialidade": "Ginecologia e Obstetrícia",
+      "tema": "Assistência Pré-Natal",
+      "likes": 240,
+      "dislikes": 11,
+      "statement": "Primigesta de 28 anos, com 12 semanas de gestação confirmada por ultrassonografia de primeiro trimestre, comparece à primeira consulta de pré-natal assintomática. Traz urocultura de rotina com contagem de colônias > 100.000 UFC/mL de Escherichia coli sensível à Nitrofurantoína, Cefalexina e Fosfomicina. Qual a conduta indicada?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Apenas orientar aumento da ingesta hídrica, sem necessidade de antibiótico por ser assintomática."
+        },
+        {
+          "letter": "B",
+          "text": "Tratar com antibioticoterapia adequada e solicitar urocultura de controle após o término."
+        },
+        {
+          "letter": "C",
+          "text": "Repetir a urocultura em 15 dias antes de iniciar qualquer intervenção."
+        },
+        {
+          "letter": "D",
+          "text": "Internar a gestante para antibioticoterapia intravenosa imediata."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Tratar com antibioticoterapia adequada e solicitar urocultura de controle após o término.\n\nRaciocínio Clínico:\nBacteriúria assintomática na gestante DEVE ser tratada sempre! Na gravidez, a estase urinária e alterações hormonais favorecem a progressão de até 30-40% dos casos para pielonefrite aguda, aumentando o risco de trabalho de parto prematuro e sepse maternal.\n\nConduta Obrigatória:\nTratamento por 7 dias (ex.: Nitrofurantoína ou Cefalexina) ou dose única de Fosfomicina, seguido de urocultura de controle após 7-14 dias do término do tratamento."
+    },
+    {
+      "id": "res-5",
+      "banca": "PSU-MG / AREMG",
+      "year": 2024,
+      "especialidade": "Medicina Preventiva",
+      "tema": "Atenção Primária à Saúde",
+      "likes": 215,
+      "dislikes": 7,
+      "statement": "Na Estratégia Saúde da Família (ESF), um médico generalista atende um paciente hipertenso crônico há 8 anos, conhecendo seu contexto familiar, crenças, rede de apoio e expectativas terapêuticas. Esse acompanhamento contínuo ao longo do tempo por uma mesma equipe exemplifica qual atributo essencial da Atenção Primária segundo Starfield?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acesso de Primeiro Contato."
+        },
+        {
+          "letter": "B",
+          "text": "Longitudinalidade."
+        },
+        {
+          "letter": "C",
+          "text": "Integralidade."
+        },
+        {
+          "letter": "D",
+          "text": "Coordenação do Cuidado."
+        }
+      ],
+      "correct_answer": "B",
+      "commentary": "Gabarito: B) Longitudinalidade.\n\nRaciocínio Clínico:\nA longitudinalidade refere-se à existência de uma fonte continuada de atenção, com a criação de vínculo terapêutico e acompanhamento da pessoa ao longo do tempo, independente da presença ou ausência de uma doença específica. A longitudinalidade reduz hospitalizações desnecessárias e melhora a adesão terapêutica."
+    }
+  ]
+}
