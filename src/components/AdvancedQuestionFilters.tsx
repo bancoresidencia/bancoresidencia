@@ -186,6 +186,18 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   // Estado local para quantidade a resolver
   const [resolveCount, setResolveCount] = useState<number>(50);
+  const [showCustomQtd, setShowCustomQtd] = useState<boolean>(false);
+  const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(true);
+
+  // Formatação em k (ex: 24,5k, 13,7k) conforme imagens 3 e 4
+  const formatCountK = (num: number): string => {
+    if (!num) return '0';
+    if (num >= 1000) {
+      const k = (num / 1000).toFixed(1).replace('.', ',');
+      return `${k}k`;
+    }
+    return num.toString();
+  };
 
   // Busca na árvore clínica
   const [hierarchySearch, setHierarchySearch] = useState<string>('');
@@ -212,36 +224,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   // Modalidade ativa
   const currentModalidade = filters.modalidades[0] || 'Residência Médica';
 
-  // Abas de Modalidade sincronizadas com a quantidade real do banco
-  const modalidadeTabs = useMemo(() => {
-    const base = totalAvailable || 85377;
-    return [
-      {
-        key: 'residencia',
-        label: 'Residência Médica',
-        count: base.toLocaleString('pt-BR'),
-        val: 'Residência Médica' as StudyModalidade
-      },
-      {
-        key: 'revalida',
-        label: 'Revalida',
-        count: (1980).toLocaleString('pt-BR'),
-        val: 'Revalida' as StudyModalidade
-      },
-      {
-        key: 'rplus',
-        label: 'R+ Especialidades',
-        count: 'Em breve',
-        val: 'R+ Clínica Médica' as StudyModalidade
-      },
-      {
-        key: 'titulo',
-        label: 'Título de Especialista',
-        count: 'Em breve',
-        val: 'Título Clínica Médica (TECM)' as StudyModalidade
-      }
-    ];
-  }, [totalAvailable]);
 
   // --- LÓGICA DE MULTI-SELEÇÃO DE ESPECIALIDADES (SOMA / UNIÃO) ---
   const toggleEspecialidade = (espName: string) => {
@@ -550,22 +532,24 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
     // Anos
     if (filters.anos.length > 0) {
-      if (filters.anos.length === 5 && filters.anos.includes(2026) && filters.anos.includes(2022)) {
+      const sorted = [...filters.anos].sort((a, b) => a - b);
+      const isRange = sorted.length > 1 && sorted[sorted.length - 1] - sorted[0] === sorted.length - 1;
+      if (isRange) {
         tags.push({
-          id: 'anos-5',
-          label: 'Ano: 2022–2026 (5 anos)',
+          id: 'anos-range',
+          label: `Anos: ${sorted[0]}–${sorted[sorted.length - 1]}`,
           onRemove: handleClearYears
         });
-      } else if (filters.anos.length === 3 && filters.anos.includes(2026) && filters.anos.includes(2024)) {
+      } else if (filters.anos.length <= 3) {
         tags.push({
-          id: 'anos-3',
-          label: 'Ano: 2024–2026 (3 anos)',
+          id: 'anos-custom',
+          label: `Anos: ${sorted.join(', ')}`,
           onRemove: handleClearYears
         });
       } else {
         tags.push({
           id: 'anos-custom',
-          label: `Anos: ${filters.anos.join(', ')}`,
+          label: `Anos: ${sorted[0]}–${sorted[sorted.length - 1]} (${sorted.length})`,
           onRemove: handleClearYears
         });
       }
@@ -573,14 +557,21 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
     // Especialidades (Soma de várias)
     filters.especialidades.forEach((esp) => {
+      const espNode = clinicalHierarchy.find((h) => h.especialidade === esp);
+      let childCount = 0;
+      if (espNode) {
+        const espTemas = espNode.temas.map((t) => t.tema);
+        childCount = filters.temas.filter((t) => espTemas.includes(t)).length;
+      }
+      const label = childCount > 0 ? `${esp} (${childCount})` : esp;
       tags.push({
         id: `esp-${esp}`,
-        label: esp,
+        label,
         onRemove: () => toggleEspecialidade(esp)
       });
     });
 
-    // Temas
+    // Temas (apenas se a especialidade pai não estiver na tag para evitar redundância, ou todos)
     filters.temas.forEach((tem) => {
       tags.push({
         id: `tem-${tem}`,
@@ -629,7 +620,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     if (filters.tipoQuestao !== 'Todas') {
       tags.push({
         id: 'tipoQ',
-        label: `Formato: ${filters.tipoQuestao}`,
+        label: `Formato: ${filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao}`,
         onRemove: () => onChange({ ...filters, tipoQuestao: 'Todas' })
       });
     }
@@ -656,89 +647,97 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   }, [filters]);
 
   return (
-    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none">
+    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none pb-24">
       {/* =========================================================================
-          1. HEADER SUPERIOR / CARD PRINCIPAL MAIOR (ESTILO IMAGEM 1)
+          1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
          ========================================================================= */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 px-4 sm:px-5 py-2.5 sm:py-3 rounded-3xl shadow-sm shrink-0 space-y-2.5">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          {/* Lado Esquerdo: Seletor de Modalidade (Sincronizado com o banco real) */}
-          <div 
-            className="flex flex-wrap items-center p-1 rounded-2xl gap-1 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
-          >
-            {modalidadeTabs.map((tab) => {
-              const isActive = tab.key === 'rplus'
-                ? currentModalidade.startsWith('R+')
-                : tab.key === 'titulo'
-                ? currentModalidade.startsWith('Título')
-                : currentModalidade === tab.val;
-              return (
-                <button
-                  key={tab.label}
-                  type="button"
-                  onClick={() => onChange({ ...filters, modalidades: [tab.val] })}
-                  className={`flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
-                    isActive
-                      ? 'text-white shadow-md'
-                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800/40'
-                  }`}
-                  style={{
-                    backgroundColor: isActive ? accentConfig.primaryHex : undefined
-                  }}
-                >
-                  <span>{tab.label}</span>
-                  <span
-                    className={`text-[10px] font-mono px-1.5 py-0.5 rounded-md font-bold ${
-                      isActive
-                        ? 'bg-black/25 text-white'
-                        : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-                    }`}
-                  >
-                    {tab.count}
-                  </span>
-                </button>
-              );
-            })}
+      <div className="bg-white dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-3">
+        {/* Lado Esquerdo: Modalidades + Separador + Botões de Ação Rápida */}
+        <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+          {/* Grupo de Modalidades */}
+          <div className="flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80">
+            <button
+              type="button"
+              onClick={() => onChange({ ...filters, modalidades: ['Residência Médica'] })}
+              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+                currentModalidade === 'Residência Médica'
+                  ? 'bg-red-600 text-white shadow-sm'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+              }`}
+            >
+              Residência Médica
+            </button>
+
+            <button
+              type="button"
+              onClick={() => onChange({ ...filters, modalidades: ['Revalida'] })}
+              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer ${
+                currentModalidade === 'Revalida'
+                  ? 'bg-red-600 text-white font-bold shadow-sm'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+              }`}
+            >
+              Revalida
+            </button>
+
+            <button
+              type="button"
+              onClick={() => onChange({ ...filters, modalidades: ['R+ Clínica Médica'] })}
+              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer flex items-center gap-1.5 ${
+                currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')
+                  ? 'bg-red-600 text-white font-bold shadow-sm'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+              }`}
+            >
+              <span>R+ / Título</span>
+              <span className="text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 uppercase">
+                BREVE
+              </span>
+            </button>
           </div>
 
-          {/* Lado Direito: Quantidade de Questões Encontradas */}
-          <div className="flex items-baseline gap-2">
-            <span className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              {displayedQuestionCount.toLocaleString('pt-BR')}
-            </span>
-            <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">questões encontradas</span>
+          {/* Separador Vertical */}
+          <div className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800 mx-1" />
+
+          {/* Botões de Ação Secundária: Filtro IA, Raio-X da Banca, Minhas Listas */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => {}}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800/60 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors cursor-pointer"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-purple-500 dark:text-purple-400" />
+              <span>Filtro IA</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => {}}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-colors cursor-pointer"
+            >
+              <Target className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
+              <span>Raio-X da Banca</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={onCreateListFromFilter}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-[#0f172a] border border-slate-200 dark:border-slate-700/60 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-blue-500 dark:text-blue-400" />
+              <span>Minhas Listas</span>
+            </button>
           </div>
         </div>
 
-        {/* Botões de Ação Secundária: Filtro IA, Raio-X IA, Meus Cadernos */}
-        <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-          <button
-            type="button"
-            onClick={() => {}}
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-bold bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800/50 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors cursor-pointer"
-          >
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Filtro IA</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => {}}
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-bold bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-colors cursor-pointer"
-          >
-            <Target className="w-3.5 h-3.5" />
-            <span>Raio-X IA</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={onCreateListFromFilter}
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-          >
-            <BookOpen className="w-3.5 h-3.5 text-blue-500 dark:text-blue-400" />
-            <span>Minhas Listas</span>
-            <ChevronDown className="w-3 h-3 text-slate-500 dark:text-slate-400" />
-          </button>
+        {/* Lado Direito: Quantidade de Questões Encontradas */}
+        <div className="flex items-baseline gap-1.5 self-end md:self-auto">
+          <span className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight font-sans">
+            {displayedQuestionCount.toLocaleString('pt-BR')}
+          </span>
+          <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+            questões
+          </span>
         </div>
       </div>
 
@@ -759,12 +758,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         <div 
           className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 overflow-hidden h-full min-h-0"
         >
-          {/* Topo do Card de Especialidades */}
+          {/* Topo do Card de Conteúdo */}
           <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-slate-100 dark:border-slate-800/80 mb-2 shrink-0">
             <div className="flex items-center gap-2">
-              <Layers className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
-              <h2 className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
-                Especialidades, Temas, Focos e Subfocos
+              <Layers className="w-4 h-4 text-red-500" />
+              <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight">
+                Conteúdo
               </h2>
             </div>
 
@@ -800,8 +799,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               type="text"
               value={hierarchySearch}
               onChange={(e) => setHierarchySearch(e.target.value)}
-              placeholder="Filtrar árvore clínica (ex: diabetes, sífilis, fórcipe, apendicite, ECG, ATLS...)"
-              className="w-full rounded-xl pl-8.5 pr-8 py-1.5 text-xs text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500/50 transition-all font-sans"
+              placeholder="Filtrar conteúdo (ex: diabetes, sífilis, fórcipe, apendicite, ECG, ATLS...)"
+              className="w-full rounded-xl pl-8.5 pr-8 py-1.5 text-xs text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-1 focus:ring-red-500/50 transition-all font-sans"
             />
             {hierarchySearch && (
               <button
@@ -859,17 +858,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
               return (
                 <div key={esp.especialidade} className="space-y-0.5">
-                  {/* Linha 1: Nível Especialidade */}
+                  {/* Linha 1: Nível Especialidade (Estilo Imagens 3 & 4) */}
                   <div
-                    className={`flex items-center justify-between h-10 px-2.5 py-1 rounded-xl transition-all cursor-pointer border ${
+                    className={`flex items-center justify-between py-3 px-2 border-b border-slate-200 dark:border-slate-800/60 transition-colors cursor-pointer rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/40 ${
                       isEspSelected
-                        ? 'text-slate-900 dark:text-white'
-                        : 'border-transparent hover:bg-slate-50 dark:hover:bg-slate-900/60 text-slate-800 dark:text-slate-200'
+                        ? 'text-slate-900 dark:text-white bg-slate-100/50 dark:bg-slate-900/30'
+                        : 'text-slate-800 dark:text-slate-200'
                     }`}
-                    style={{
-                      backgroundColor: isEspSelected ? accentConfig.bgRgba : undefined,
-                      borderColor: isEspSelected ? accentConfig.borderRgba : undefined
-                    }}
                   >
                     <div className="flex items-center gap-2.5 flex-1 min-w-0">
                       {/* Checkbox */}
@@ -879,17 +874,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           e.stopPropagation();
                           toggleEspecialidade(esp.especialidade);
                         }}
-                        className={`w-4 h-4 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${
+                        className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${
                           isEspSelected
-                            ? 'text-white shadow-xs'
-                            : 'border-slate-300 dark:border-slate-700/70 bg-white dark:bg-slate-950 hover:border-slate-400 dark:hover:border-slate-500'
+                            ? 'bg-red-600 border-red-600 text-white shadow-xs'
+                            : 'border-slate-300 dark:border-slate-700 bg-transparent hover:border-slate-400 dark:hover:border-slate-500'
                         }`}
-                        style={{
-                          backgroundColor: isEspSelected ? accentConfig.primaryHex : undefined,
-                          borderColor: isEspSelected ? accentConfig.primaryHex : undefined
-                        }}
                       >
-                        {isEspSelected && <Check className="w-3 h-3 stroke-[3]" />}
+                        {isEspSelected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
                       </button>
 
                       {/* Botão de Expandir/Recolher */}
@@ -901,7 +892,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             [esp.especialidade]: !prev[esp.especialidade]
                           }))
                         }
-                        className="p-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-white"
+                        className="p-1 rounded text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-white"
                       >
                         {isEspExpanded ? (
                           <ChevronDown className="w-4 h-4 text-slate-500 dark:text-slate-400" />
@@ -912,14 +903,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                       <span
                         onClick={() => toggleEspecialidade(esp.especialidade)}
-                        className="font-bold text-xs truncate select-none text-slate-900 dark:text-white"
+                        className="font-bold text-sm sm:text-base tracking-tight truncate select-none text-slate-900 dark:text-white"
                       >
                         {esp.especialidade}
                       </span>
                     </div>
 
-                    <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 shrink-0">
-                      {espCount.toLocaleString('pt-BR')} questões
+                    {/* Badge de Questões Destacado (Estilo Imagem 4) */}
+                    <span className="px-3.5 py-1 rounded-full bg-[#0a101d] border border-slate-800 text-slate-300 font-mono font-bold text-xs tracking-wide shrink-0">
+                      {formatCountK(espCount)}
                     </span>
                   </div>
 
@@ -1316,85 +1308,162 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </div>
           </div>
 
-          {/* 3. Dificuldade & Formato (Lado a Lado - IMAGEM 2) */}
-          <div className="grid grid-cols-2 gap-3 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-            {/* Dificuldade */}
-            <div className="space-y-1.5">
-              <span className="text-xs font-bold text-slate-900 dark:text-white block">Dificuldade</span>
-              <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                {(['Fácil', 'Médio', 'Difícil'] as QuestionDifficulty[]).map((dif) => {
-                  const isActive = filters.dificuldade === dif;
-                  return (
-                    <button
-                      key={dif}
-                      type="button"
-                      onClick={() =>
-                        onChange({
-                          ...filters,
-                          dificuldade: isActive ? 'Todas' : dif
-                        })
-                      }
-                      className={`py-1 text-center rounded-lg text-[11px] font-medium transition-all cursor-pointer ${
-                        isActive
-                          ? 'text-white font-bold shadow-sm'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800/40'
-                      }`}
-                      style={{
-                        backgroundColor: isActive ? accentConfig.primaryHex : undefined
-                      }}
-                    >
-                      {dif}
-                    </button>
-                  );
-                })}
+          {/* =========================================================================
+              3. CARD COLAPSÁVEL: Dificuldade, Formato e Opções (ESTILO IMAGEM 2)
+             ========================================================================= */}
+          <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all mt-1">
+            {/* Header com Toggle Mostrar/Ocultar */}
+            <div
+              onClick={() => setIsOptionsOpen(!isOptionsOpen)}
+              className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
+            >
+              <div className="flex items-center gap-2">
+                <SlidersHorizontal className="w-4 h-4 text-red-500" />
+                <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
+                  Dificuldade, Formato e Opções
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                {/* Resumo ativo no Badge */}
+                <span className="px-3 py-0.5 rounded-full text-xs font-semibold bg-red-950/40 border border-red-900/60 text-red-300">
+                  {filters.dificuldade !== 'Todas' ? filters.dificuldade : 'Médio'} • {filters.tipoQuestao !== 'Todas' ? (filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao) : 'Discursiva'}
+                </span>
+                <ChevronDown
+                  className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
+                    isOptionsOpen ? 'rotate-180' : ''
+                  }`}
+                />
               </div>
             </div>
 
-            {/* Formato */}
-            <div className="space-y-1.5">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-slate-900 dark:text-white">Formato</span>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 font-medium">Todas</span>
-              </div>
-              <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                {[
-                  { label: 'Todas', val: 'Todas' },
-                  { label: 'Múltipla', val: 'Múltipla escolha' },
-                  { label: 'Discursiva', val: 'Discursiva' }
-                ].map((fmt) => {
-                  const isActive = filters.tipoQuestao === fmt.val;
-                  return (
+            {/* Conteúdo Expandido */}
+            {isOptionsOpen && (
+              <div className="p-3 sm:p-3.5 pt-0 space-y-3 border-t border-slate-200 dark:border-slate-800/50">
+                {/* Linha 1: Dificuldade & Formato */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
+                  {/* Dificuldade */}
+                  <div className="space-y-1.5">
+                    <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Dificuldade</span>
+                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80">
+                      {(['Fácil', 'Médio', 'Difícil'] as QuestionDifficulty[]).map((dif) => {
+                        const isActive = filters.dificuldade === dif;
+                        return (
+                          <button
+                            key={dif}
+                            type="button"
+                            onClick={() =>
+                              onChange({
+                                ...filters,
+                                dificuldade: isActive ? 'Todas' : dif
+                              })
+                            }
+                            className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                              isActive
+                                ? 'bg-red-600 text-white shadow-sm'
+                                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                            }`}
+                          >
+                            {dif}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Formato */}
+                  <div className="space-y-1.5">
+                    <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Formato</span>
+                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80">
+                      {[
+                        { label: 'Todas', val: 'Todas' },
+                        { label: 'Múltipla', val: 'Múltipla escolha' },
+                        { label: 'Discursiva', val: 'Discursiva' }
+                      ].map((fmt) => {
+                        const isActive = filters.tipoQuestao === fmt.val;
+                        return (
+                          <button
+                            key={fmt.label}
+                            type="button"
+                            onClick={() =>
+                              onChange({
+                                ...filters,
+                                tipoQuestao: fmt.val as QuestionType
+                              })
+                            }
+                            className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                              isActive
+                                ? 'bg-red-600 text-white shadow-sm'
+                                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                            }`}
+                          >
+                            {fmt.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Linha 2: Ocultar anuladas / Ocultar revisadas */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between">
+                    <span className="text-xs font-medium text-slate-700 dark:text-slate-300">Ocultar anuladas</span>
                     <button
-                      key={fmt.label}
                       type="button"
+                      role="switch"
+                      aria-checked={filters.ocultarAnuladasErro}
                       onClick={() =>
                         onChange({
                           ...filters,
-                          tipoQuestao: fmt.val as QuestionType
+                          ocultarAnuladasErro: !filters.ocultarAnuladasErro
                         })
                       }
-                      className={`py-1 text-center rounded-lg text-[11px] font-medium transition-all cursor-pointer truncate px-0.5 ${
-                        isActive
-                          ? 'text-white font-bold shadow-sm'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800/40'
+                      className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer ${
+                        filters.ocultarAnuladasErro ? 'bg-red-600' : 'bg-slate-300 dark:bg-slate-700'
                       }`}
-                      style={{
-                        backgroundColor: isActive ? accentConfig.primaryHex : undefined
-                      }}
                     >
-                      {fmt.label}
+                      <span
+                        className={`w-4 h-4 bg-white rounded-full absolute top-0.5 transition-transform ${
+                          filters.ocultarAnuladasErro ? 'left-5.5' : 'left-1'
+                        }`}
+                      />
                     </button>
-                  );
-                })}
+                  </div>
+
+                  <div className="bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between">
+                    <span className="text-xs font-medium text-slate-700 dark:text-slate-300">Ocultar revisadas</span>
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={filters.ocultarRevisadas}
+                      onClick={() =>
+                        onChange({
+                          ...filters,
+                          ocultarRevisadas: !filters.ocultarRevisadas
+                        })
+                      }
+                      className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer ${
+                        filters.ocultarRevisadas ? 'bg-red-600' : 'bg-slate-300 dark:bg-slate-700'
+                      }`}
+                    >
+                      <span
+                        className={`w-4 h-4 bg-white rounded-full absolute top-0.5 transition-transform ${
+                          filters.ocultarRevisadas ? 'left-5.5' : 'left-1'
+                        }`}
+                      />
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* 4. Anos da Prova (Fita Horizontal Única com Rolagem Lateral) */}
           <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-1.5 text-xs font-bold text-slate-900 dark:text-white">
-                <Calendar className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+                <Calendar className="w-3.5 h-3.5 text-red-500" />
                 <span>Anos da Prova</span>
               </div>
               <div className="flex items-center gap-1">
@@ -1403,13 +1472,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   onClick={() => handleSelectUltimosAnos(3)}
                   className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
                     filters.anos.length === 3 && filters.anos.includes(2026)
-                      ? 'text-white shadow-xs'
+                      ? 'bg-red-600 text-white shadow-xs'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
                   }`}
-                  style={{
-                    backgroundColor: filters.anos.length === 3 && filters.anos.includes(2026) ? accentConfig.primaryHex : undefined,
-                    borderColor: filters.anos.length === 3 && filters.anos.includes(2026) ? accentConfig.primaryHex : undefined
-                  }}
                 >
                   Últimos 3
                 </button>
@@ -1418,13 +1483,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   onClick={() => handleSelectUltimosAnos(5)}
                   className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
                     filters.anos.length === 5 && filters.anos.includes(2026)
-                      ? 'text-white shadow-xs'
+                      ? 'bg-red-600 text-white shadow-xs'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
                   }`}
-                  style={{
-                    backgroundColor: filters.anos.length === 5 && filters.anos.includes(2026) ? accentConfig.primaryHex : undefined,
-                    borderColor: filters.anos.length === 5 && filters.anos.includes(2026) ? accentConfig.primaryHex : undefined
-                  }}
                 >
                   Últimos 5
                 </button>
@@ -1433,13 +1494,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   onClick={() => handleSelectUltimosAnos(10)}
                   className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
                     filters.anos.length === 10 && filters.anos.includes(2026)
-                      ? 'text-white shadow-xs'
+                      ? 'bg-red-600 text-white shadow-xs'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
                   }`}
-                  style={{
-                    backgroundColor: filters.anos.length === 10 && filters.anos.includes(2026) ? accentConfig.primaryHex : undefined,
-                    borderColor: filters.anos.length === 10 && filters.anos.includes(2026) ? accentConfig.primaryHex : undefined
-                  }}
                 >
                   Últimos 10
                 </button>
@@ -1464,13 +1521,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     onClick={() => toggleYear(y)}
                     className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
                       isSelected
-                        ? 'text-white shadow-xs'
+                        ? 'bg-red-600 text-white shadow-xs'
                         : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
                     }`}
-                    style={{
-                      backgroundColor: isSelected ? accentConfig.primaryHex : undefined,
-                      borderColor: isSelected ? accentConfig.primaryHex : undefined
-                    }}
                   >
                     {y}
                   </button>
@@ -1478,93 +1531,33 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               })}
             </div>
           </div>
-
-          {/* 5. Toggles (Switches elegantes) */}
-          <div className="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-800/80 text-xs font-medium text-slate-700 dark:text-slate-300">
-            {/* Ocultar anuladas */}
-            <label className="flex items-center gap-2.5 cursor-pointer">
-              <button
-                type="button"
-                role="switch"
-                aria-checked={filters.ocultarAnuladasErro}
-                onClick={() =>
-                  onChange({
-                    ...filters,
-                    ocultarAnuladasErro: !filters.ocultarAnuladasErro
-                  })
-                }
-                className="w-9 h-5 rounded-full transition-colors relative cursor-pointer"
-                style={{
-                  backgroundColor: filters.ocultarAnuladasErro ? accentConfig.primaryHex : (isDark ? '#1e293b' : '#cbd5e1')
-                }}
-              >
-                <span
-                  className={`w-3.5 h-3.5 bg-white rounded-full absolute top-0.5 transition-transform ${
-                    filters.ocultarAnuladasErro ? 'left-4.5' : 'left-1'
-                  }`}
-                />
-              </button>
-              <span>Ocultar anuladas</span>
-            </label>
-
-            {/* Ocultar já revisadas */}
-            <label className="flex items-center gap-2.5 cursor-pointer">
-              <button
-                type="button"
-                role="switch"
-                aria-checked={filters.ocultarRevisadas}
-                onClick={() =>
-                  onChange({
-                    ...filters,
-                    ocultarRevisadas: !filters.ocultarRevisadas
-                  })
-                }
-                className="w-9 h-5 rounded-full transition-colors relative cursor-pointer"
-                style={{
-                  backgroundColor: filters.ocultarRevisadas ? accentConfig.primaryHex : (isDark ? '#1e293b' : '#cbd5e1')
-                }}
-              >
-                <span
-                  className={`w-3.5 h-3.5 bg-white rounded-full absolute top-0.5 transition-transform ${
-                    filters.ocultarRevisadas ? 'left-4.5' : 'left-1'
-                  }`}
-                />
-              </button>
-              <span>Ocultar já revisadas</span>
-            </label>
-          </div>
         </div>
       </div>
 
       {/* =========================================================================
-          3. BARRA DE COMANDO FIXA INFERIOR (ESTILO IMAGEM 1)
+          3. BARRA DE COMANDO FIXA INFERIOR (ESTILO IMAGEM 5)
          ========================================================================= */}
       <div 
-        className="shrink-0 flex flex-wrap items-center justify-between gap-3 px-4 sm:px-5 py-2.5 sm:py-3 rounded-3xl backdrop-blur-md shadow-sm bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80"
+        className="fixed bottom-0 left-0 right-0 z-40 bg-[#070b15]/95 backdrop-blur-md border-t border-slate-800/90 px-4 sm:px-6 py-3 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex flex-wrap items-center justify-between gap-3 select-none"
       >
-        {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar Tudo */}
+        {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar */}
         <div className="flex flex-wrap items-center gap-2">
-          <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300">
-            <SlidersHorizontal className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-            <span>Filtros ativos ({activeTags.length}):</span>
+          <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+            <SlidersHorizontal className="w-3.5 h-3.5 text-red-500 shrink-0" />
+            <span>Filtros ({activeTags.length}):</span>
           </div>
 
-          {/* Tags Ativas Removíveis */}
+          {/* Tags Ativas Removíveis no Estilo Imagem 5 */}
           {activeTags.map((t) => (
             <span
               key={t.id}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-semibold border shadow-xs"
-              style={{
-                backgroundColor: accentConfig.bgRgba,
-                borderColor: accentConfig.borderRgba,
-                color: accentConfig.primaryHex
-              }}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium bg-red-950/40 border border-red-900/60 text-red-200"
             >
               <span>{t.label}</span>
               <button
                 type="button"
                 onClick={t.onRemove}
-                className="hover:opacity-75 cursor-pointer ml-0.5 text-[10px]"
+                className="hover:opacity-75 cursor-pointer ml-0.5 text-xs text-red-400 hover:text-white"
               >
                 ✕
               </button>
@@ -1575,40 +1568,49 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <button
               type="button"
               onClick={onReset}
-              className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium ml-1 cursor-pointer"
+              className="flex items-center gap-1 text-xs text-slate-400 hover:text-white font-medium ml-1 cursor-pointer"
             >
               <RotateCcw className="w-3 h-3" />
-              <span>Limpar tudo</span>
+              <span>Limpar</span>
             </button>
           )}
         </div>
 
-        {/* Lado Direito: Resolver (20/50/100/200 + customizado até 200) + Salvar Lista + Botão Primário de Iniciar */}
-        <div className="flex flex-wrap items-center gap-2.5">
-          <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
-            <span className="font-semibold">Resolver:</span>
-            <div className="flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-              {[20, 50, 100, 200].map((num) => (
-                <button
-                  key={num}
-                  type="button"
-                  onClick={() => setResolveCount(num)}
-                  className={`px-2 py-0.5 rounded-md text-xs font-bold transition-all cursor-pointer ${
-                    resolveCount === num
-                      ? 'text-white shadow-xs'
-                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                  }`}
-                  style={{
-                    backgroundColor: resolveCount === num ? accentConfig.primaryHex : undefined
-                  }}
-                >
-                  {num}
-                </button>
-              ))}
-            </div>
+        {/* Lado Direito: Quantidade (20, 50, 100, Outro) + Salvar Lista + Iniciar (Qtd) */}
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="flex items-center gap-1.5 text-xs text-slate-400">
+            <span className="font-semibold mr-1">Qtd:</span>
+            {[20, 50, 100].map((num) => (
+              <button
+                key={num}
+                type="button"
+                onClick={() => {
+                  setResolveCount(num);
+                  setShowCustomQtd(false);
+                }}
+                className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                  resolveCount === num && !showCustomQtd
+                    ? 'bg-red-600 text-white shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                {num}
+              </button>
+            ))}
 
-            {/* Input numérico personalizado (1 a 200) */}
-            <div className="flex items-center gap-1 ml-0.5">
+            <button
+              type="button"
+              onClick={() => setShowCustomQtd(!showCustomQtd)}
+              className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-700/80 text-slate-400 hover:text-white transition-all cursor-pointer ${
+                showCustomQtd || ![20, 50, 100].includes(resolveCount)
+                  ? 'border-red-600 text-white bg-red-950/30 font-bold'
+                  : ''
+              }`}
+            >
+              Outro
+            </button>
+
+            {showCustomQtd && (
               <input
                 type="number"
                 min={1}
@@ -1618,33 +1620,28 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   const val = parseInt(e.target.value) || 0;
                   setResolveCount(Math.max(1, Math.min(200, val)));
                 }}
-                className="w-13 text-center font-bold text-xs bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg py-1 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
-                title="Digitar quantidade (máximo 200)"
+                className="w-14 text-center font-bold text-xs bg-slate-900 border border-slate-700 rounded-md py-1 text-white focus:outline-none focus:ring-1 focus:ring-red-500 ml-1"
+                placeholder="Qtd"
               />
-              <span className="text-[10px] text-slate-400 font-bold">q. (máx 200)</span>
-            </div>
+            )}
           </div>
 
           <button
             type="button"
             onClick={onCreateListFromFilter}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer shadow-xs"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-200 bg-[#0f172a] hover:bg-slate-800 border border-slate-700/70 transition-colors cursor-pointer shadow-xs"
           >
-            <ListPlus className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+            <ListPlus className="w-4 h-4 text-slate-300" />
             <span>Salvar Lista</span>
           </button>
 
           <button
             type="button"
             onClick={() => onStartSequentialSolving && onStartSequentialSolving(resolveCount)}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white font-extrabold text-xs sm:text-sm shadow-lg transition-all transform hover:scale-102 cursor-pointer active:scale-98"
-            style={{
-              backgroundColor: accentConfig.primaryHex,
-              boxShadow: `0 4px 20px ${accentConfig.bgRgba}`
-            }}
+            className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-white font-bold text-xs sm:text-sm bg-red-600 hover:bg-red-500 shadow-lg shadow-red-900/40 transition-all cursor-pointer active:scale-98"
           >
-            <Play className="w-3.5 h-3.5 fill-white" />
-            <span>Iniciar Resolução ({resolveCount} questões)</span>
+            <Play className="w-4 h-4 fill-white" />
+            <span>Iniciar ({resolveCount})</span>
           </button>
         </div>
       </div>
