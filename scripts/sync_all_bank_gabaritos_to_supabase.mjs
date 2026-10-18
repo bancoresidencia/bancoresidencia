@@ -22,6 +22,7 @@ if (!SUPABASE_URL || !SERVICE_KEY) {
 }
 
 const QUESTION_FILES = [
+  'all_homologated_questions_gold.json',
   'cirurgia_final_questions.json',
   'clinica_medica_final_questions.json',
   'ginecologia_final_questions.json',
@@ -32,23 +33,22 @@ const QUESTION_FILES = [
 ];
 
 async function main() {
-  console.log('=' .repeat(80));
+  console.log('='.repeat(80));
   console.log('🚀 SINCRONIZADOR EM MASSA: GABARITOS LOCAIS -> BANCO SUPABASE');
   console.log('='.repeat(80));
 
   const letterGroups = {
-    'A': [],
-    'B': [],
-    'C': [],
-    'D': [],
-    'E': [],
-    'ANULADA': []
+    'A': new Set(),
+    'B': new Set(),
+    'C': new Set(),
+    'D': new Set(),
+    'E': new Set(),
+    'ANULADA': new Set()
   };
 
   let totalQuestionsInFiles = 0;
-  let totalWithAnswers = 0;
 
-  console.log('\n📂 Lendo arquivos JSON locais e agrupando por gabarito...');
+  console.log('\n📂 Lendo arquivos JSON locais e agrupando por gabarito com deduplicação...');
   for (const filename of QUESTION_FILES) {
     const fpath = path.join(DATA_DIR, filename);
     if (!fs.existsSync(fpath)) continue;
@@ -61,33 +61,40 @@ async function main() {
       if (!qid) continue;
 
       const ans = (q.correctAnswer || q.correct_answer || '').trim().toUpperCase();
-      const isAnulada = Boolean(q.isAnulada || q.is_anulada);
+      const isAnulada = Boolean(q.isAnulada || q.is_anulada || ans === 'ANULADA' || ans === '!');
 
-      if (isAnulada || ans === 'ANULADA' || ans === '!') {
-        letterGroups['ANULADA'].push(qid);
-        totalWithAnswers++;
+      if (isAnulada) {
+        // Remover de letras anteriores se houver
+        ['A', 'B', 'C', 'D', 'E'].forEach(l => letterGroups[l].delete(qid));
+        letterGroups['ANULADA'].add(qid);
       } else if (['A', 'B', 'C', 'D', 'E'].includes(ans)) {
-        letterGroups[ans].push(qid);
-        totalWithAnswers++;
+        if (!letterGroups['ANULADA'].has(qid)) {
+          letterGroups[ans].add(qid);
+        }
       }
     }
   }
 
-  console.log(`📊 Total de questões lidas: ${totalQuestionsInFiles.toLocaleString('pt-BR')}`);
-  console.log(`🎯 Total com gabarito homologado para envio: ${totalWithAnswers.toLocaleString('pt-BR')}`);
-  for (const [key, list] of Object.entries(letterGroups)) {
-    console.log(`   • Gabarito [${key}]: ${list.length.toLocaleString('pt-BR')} questões`);
+  let totalUniqueWithAnswers = 0;
+  for (const [key, set] of Object.entries(letterGroups)) {
+    totalUniqueWithAnswers += set.size;
+    console.log(`   • Gabarito [${key}]: ${set.size.toLocaleString('pt-BR')} questões únicas`);
   }
+  console.log(`🎯 Total de questões únicas homologadas para sincronizar: ${totalUniqueWithAnswers.toLocaleString('pt-BR')}`);
 
-  // Prepara tarefas de atualização em lotes de 100 IDs
+  // Prepara tarefas de atualização em lotes de 50 IDs (limite seguro de URL)
   const tasks = [];
-  const BATCH_SIZE = 100;
+  const BATCH_SIZE = 50;
 
-  for (const [letter, idList] of Object.entries(letterGroups)) {
+  for (const [letter, idSet] of Object.entries(letterGroups)) {
+    const idList = Array.from(idSet);
     for (let i = 0; i < idList.length; i += BATCH_SIZE) {
       const chunk = idList.slice(i, i + BATCH_SIZE);
       const isAnul = letter === 'ANULADA';
-      const body = isAnul ? { is_anulada: true } : { correct_answer: letter, is_anulada: false };
+      const body = isAnul
+        ? { correct_answer: 'ANULADA', is_anulada: true }
+        : { correct_answer: letter, is_anulada: false };
+
       tasks.push({
         ids: chunk,
         body,
@@ -96,10 +103,10 @@ async function main() {
     }
   }
 
-  console.log(`\n📦 Total de requisições PATCH em lote: ${tasks.length.toLocaleString('pt-BR')}`);
-  console.log('⚡ Enviando para o Supabase com 10 conexões concorrentes...');
+  console.log(`\n📦 Total de requisições PATCH em lote: ${tasks.length.toLocaleString('pt-BR')} (lotes de ${BATCH_SIZE})`);
+  console.log('⚡ Enviando para o Supabase com 12 conexões concorrentes...');
 
-  const CONCURRENCY = 10;
+  const CONCURRENCY = 12;
   let completed = 0;
   let totalRowsUpdated = 0;
   let errorCount = 0;
@@ -116,14 +123,15 @@ async function main() {
             'apikey': SERVICE_KEY,
             'Authorization': `Bearer ${SERVICE_KEY}`,
             'Content-Type': 'application/json',
-            'Prefer': 'return=representation'
+            'Prefer': 'count=exact'
           },
           body: JSON.stringify(task.body)
         });
 
         if (res.ok) {
-          const updatedRows = await res.json();
-          totalRowsUpdated += (Array.isArray(updatedRows) ? updatedRows.length : 0);
+          const range = res.headers.get('content-range');
+          const count = range ? parseInt(range.split('/')[1] || '0') : task.ids.length;
+          totalRowsUpdated += count;
           completed++;
           return;
         }
@@ -133,14 +141,14 @@ async function main() {
           console.warn(`\n⚠️ Falha no lote ${task.label}: Status ${res.status} - ${errText.slice(0, 100)}`);
           errorCount++;
         } else {
-          await new Promise(r => setTimeout(r, 1000 * attempt));
+          await new Promise(r => setTimeout(r, 800 * attempt));
         }
       } catch (err) {
         if (attempt === 3) {
           console.warn(`\n⚠️ Erro de rede no lote ${task.label}: ${err.message}`);
           errorCount++;
         } else {
-          await new Promise(r => setTimeout(r, 1000 * attempt));
+          await new Promise(r => setTimeout(r, 800 * attempt));
         }
       }
     }
