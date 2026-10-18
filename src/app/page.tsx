@@ -170,6 +170,7 @@ export default function Home() {
   const [lists, setLists] = useState<QuestionList[]>([]);
   const [activeListId, setActiveListId] = useState<string | null>(null);
   const [sessionQuestionLimit, setSessionQuestionLimit] = useState<number | null>(null);
+  const [sessionQuestionIds, setSessionQuestionIds] = useState<string[] | null>(null);
   const [isCreatingListLoading, setIsCreatingListLoading] = useState<boolean>(false);
 
   // Carrega e sincroniza pastas e listas da conta do aluno
@@ -561,13 +562,19 @@ export default function Home() {
       setIsLoadingSupabase(true);
       try {
         let questionIds: string[] | undefined;
-        let effectivePageSize = 50;
+        let effectivePageSize = sessionQuestionLimit
+          ? Math.min(200, Math.max(50, sessionQuestionLimit))
+          : 50;
+
         if (activeListId) {
           const currentList = lists.find((l) => l.id === activeListId);
           if (currentList && currentList.questionIds.length > 0) {
             questionIds = currentList.questionIds;
             effectivePageSize = Math.min(200, Math.max(50, currentList.questionIds.length));
           }
+        } else if (sessionQuestionIds && sessionQuestionIds.length > 0) {
+          questionIds = sessionQuestionIds;
+          effectivePageSize = Math.min(200, Math.max(50, sessionQuestionIds.length));
         }
 
         const res = await fetchQuestionsFromSupabase(
@@ -606,7 +613,7 @@ export default function Home() {
       isCancelled = true;
       clearTimeout(timer);
     };
-  }, [advancedFilters, activeListId, lists, questionsPage]);
+  }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds]);
 
 
   // Filtragem local complementar para status (resolvidas/não vistas) e fallback
@@ -700,13 +707,24 @@ export default function Home() {
       }
     }
 
-    // 2. Se estiver em resolução avulsa com limite configurado pelo aluno (ex: 20, 50, 100 ou até 200)
+    // 2. Se estiver em resolução avulsa com IDs balanceados por cotas (Round-Robin)
+    if (sessionQuestionIds && sessionQuestionIds.length > 0) {
+      const questionMap = new Map(filteredQuestions.map((q) => [q.id, q]));
+      const ordered = sessionQuestionIds
+        .map((id) => questionMap.get(id))
+        .filter((q): q is Question => Boolean(q));
+      if (ordered.length > 0) {
+        return ordered.slice(0, 200);
+      }
+    }
+
+    // 3. Se estiver em resolução avulsa com limite configurado pelo aluno (ex: 20, 50, 100 ou até 200)
     if (sessionQuestionLimit) {
       const targetCount = Math.min(filteredQuestions.length, Math.min(200, sessionQuestionLimit));
       return filteredQuestions.slice(0, targetCount);
     }
 
-    // 3. Padrão: Janela deslizante de 50 questões base + 1 a cada acerto/erro (teto 200)
+    // 4. Padrão: Janela deslizante de 50 questões base + 1 a cada acerto/erro (teto 200)
     const solvedInSession = filteredQuestions.filter((q) => !!userAnswers[q.id]).length;
     const targetCount = Math.min(
       200,
@@ -716,7 +734,7 @@ export default function Home() {
       )
     );
     return filteredQuestions.slice(0, targetCount);
-  }, [filteredQuestions, userAnswers, currentQuestionIndex, activeListId, lists, sessionQuestionLimit]);
+  }, [filteredQuestions, userAnswers, currentQuestionIndex, activeListId, lists, sessionQuestionLimit, sessionQuestionIds]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     const q = supabaseQuestions.find((item) => item.id === questionId);
@@ -1651,14 +1669,17 @@ export default function Home() {
                 <div className="h-full flex flex-col justify-between min-h-0 animate-in fade-in duration-200">
                   {/* Componente Completo de Filtros Avançados */}
                   <AdvancedQuestionFilters
+                    isSidebarCollapsed={sidebarCollapsed}
                     filters={advancedFilters}
                     onChange={(newFilters) => {
                       setAdvancedFilters(newFilters);
+                      setSessionQuestionIds(null);
                       setQuestionsPage(1);
                       setCurrentQuestionIndex(0);
                     }}
                     onReset={() => {
                       handleResetAdvancedFilters();
+                      setSessionQuestionIds(null);
                       setQuestionsPage(1);
                       setCurrentQuestionIndex(0);
                     }}
@@ -1685,15 +1706,42 @@ export default function Home() {
                         setCurrentQuestionIndex(0);
                       }
                       setActiveListId(null);
+                      setSessionQuestionIds(null);
                       setQuestionTimer(0);
                       setBancoMode('resolucao');
                     }}
-                    onStartSequentialSolving={(limit?: number) => {
+                    onStartSequentialSolving={async (limit?: number, quotas?: Record<string, number>) => {
+                      const finalLimit = limit ? Math.min(200, Math.max(1, limit)) : 200;
                       setActiveListId(null);
-                      setSessionQuestionLimit(limit ? Math.min(200, Math.max(1, limit)) : 200);
-                      setBancoMode('resolucao');
+                      setSessionQuestionLimit(finalLimit);
                       setCurrentQuestionIndex(0);
                       setQuestionTimer(0);
+
+                      const hasQuotas = quotas && Object.keys(quotas).length > 0;
+                      if (hasQuotas) {
+                        try {
+                          setIsLoadingSupabase(true);
+                          const balancedIds = await fetchQuestionIdsForListCriteria(
+                            quotas,
+                            advancedFilters,
+                            finalLimit
+                          );
+                          if (balancedIds && balancedIds.length > 0) {
+                            setSessionQuestionIds(balancedIds);
+                          } else {
+                            setSessionQuestionIds(null);
+                          }
+                        } catch (e) {
+                          console.error('Erro ao gerar questões balanceadas:', e);
+                          setSessionQuestionIds(null);
+                        } finally {
+                          setIsLoadingSupabase(false);
+                        }
+                      } else {
+                        setSessionQuestionIds(null);
+                      }
+
+                      setBancoMode('resolucao');
                     }}
                   />
                 </div>

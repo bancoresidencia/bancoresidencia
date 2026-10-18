@@ -13,6 +13,7 @@ import {
   X,
   ChevronDown,
   ChevronRight,
+  ChevronUp,
   Check,
   RotateCcw,
   Layers,
@@ -25,7 +26,11 @@ import {
   Play,
   SlidersHorizontal,
   Stethoscope,
-  MapPin
+  MapPin,
+  PieChart,
+  Scale,
+  Plus,
+  Minus
 } from 'lucide-react';
 import {
   clinicalHierarchy,
@@ -42,7 +47,8 @@ interface AdvancedQuestionFiltersProps {
   totalFiltered: number;
   onCreateListFromFilter: () => void;
   onSelectDirectQuestion?: (questionId: string) => void;
-  onStartSequentialSolving?: (limit?: number) => void;
+  onStartSequentialSolving?: (limit?: number, quotasByItem?: Record<string, number>) => void;
+  isSidebarCollapsed?: boolean;
 }
 
 // Bancas mais concorridas para acesso rápido em 1 clique (conforme imagem)
@@ -179,7 +185,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   totalAvailable,
   totalFiltered,
   onCreateListFromFilter,
-  onStartSequentialSolving
+  onStartSequentialSolving,
+  isSidebarCollapsed = true
 }) => {
   const { accentConfig, mode } = useTheme();
   const isDark = mode === 'dark';
@@ -189,14 +196,66 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [showCustomQtd, setShowCustomQtd] = useState<boolean>(false);
   const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(true);
 
-  // Formatação em k (ex: 24,5k, 13,7k) conforme imagens 3 e 4
-  const formatCountK = (num: number): string => {
-    if (!num) return '0';
-    if (num >= 1000) {
-      const k = (num / 1000).toFixed(1).replace('.', ',');
-      return `${k}k`;
+  // Mini-seletor de Cotas e Distribuição Proporcional (Round-Robin)
+  const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
+  const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
+
+  // Identificação dinâmica de filtros selecionados para cotas
+  const itemsToConfigure = useMemo(() => {
+    const list: Array<{ id: string; name: string; category: string }> = [];
+
+    if (filters.especialidades && filters.especialidades.length > 0) {
+      filters.especialidades.forEach((esp) => list.push({ id: esp, name: esp, category: 'Especialidade' }));
     }
-    return num.toString();
+    if (filters.temas && filters.temas.length > 0) {
+      filters.temas.forEach((tem) => list.push({ id: tem, name: tem, category: 'Tema' }));
+    }
+    if (filters.focos && filters.focos.length > 0) {
+      filters.focos.forEach((foc) => list.push({ id: foc, name: foc, category: 'Foco' }));
+    }
+    if (filters.subfocos && filters.subfocos.length > 0) {
+      filters.subfocos.forEach((sub) => list.push({ id: sub, name: sub, category: 'Subfoco' }));
+    }
+    if (filters.instituicoes && filters.instituicoes.length > 0) {
+      filters.instituicoes.forEach((inst) => list.push({ id: inst, name: inst, category: 'Banca' }));
+    }
+
+    return list;
+  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos, filters.instituicoes]);
+
+  // Retorna cotas balanceadas automáticas ou personalizadas
+  const getEffectiveQuotas = (): Record<string, number> => {
+    if (itemsToConfigure.length <= 1) return {};
+    const hasManual = itemsToConfigure.some((it) => typeof quotasByItem[it.name] === 'number' && quotasByItem[it.name] > 0);
+    if (hasManual) {
+      return quotasByItem;
+    }
+    const baseCount = Math.floor(resolveCount / itemsToConfigure.length);
+    const remainder = resolveCount % itemsToConfigure.length;
+    const balanced: Record<string, number> = {};
+    itemsToConfigure.forEach((item, idx) => {
+      balanced[item.name] = baseCount + (idx < remainder ? 1 : 0);
+    });
+    return balanced;
+  };
+
+  const handleEquilibrarCotas = () => {
+    if (itemsToConfigure.length === 0) return;
+    const baseCount = Math.floor(resolveCount / itemsToConfigure.length);
+    const remainder = resolveCount % itemsToConfigure.length;
+    const balanced: Record<string, number> = {};
+    itemsToConfigure.forEach((item, idx) => {
+      balanced[item.name] = baseCount + (idx < remainder ? 1 : 0);
+    });
+    setQuotasByItem(balanced);
+  };
+
+  const handleQuotaChange = (itemName: string, val: number) => {
+    const clamped = Math.max(0, Math.min(resolveCount, val));
+    setQuotasByItem((prev) => ({
+      ...prev,
+      [itemName]: clamped
+    }));
   };
 
   // Busca na árvore clínica
@@ -647,7 +706,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   }, [filters]);
 
   return (
-    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none pb-24">
+    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2 font-sans select-none pb-16 sm:pb-14">
       {/* =========================================================================
           1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
          ========================================================================= */}
@@ -860,7 +919,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <div key={esp.especialidade} className="space-y-0.5">
                   {/* Linha 1: Nível Especialidade (Estilo Imagens 3 & 4) */}
                   <div
-                    className={`flex items-center justify-between py-3 px-2 border-b border-slate-200 dark:border-slate-800/60 transition-colors cursor-pointer rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/40 ${
+                    className={`flex items-center justify-between py-2.5 px-2 border-b border-slate-100/30 dark:border-slate-800/40 transition-colors cursor-pointer rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/40 ${
                       isEspSelected
                         ? 'text-slate-900 dark:text-white bg-slate-100/50 dark:bg-slate-900/30'
                         : 'text-slate-800 dark:text-slate-200'
@@ -909,15 +968,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       </span>
                     </div>
 
-                    {/* Badge de Questões Destacado (Estilo Imagem 4) */}
-                    <span className="px-3.5 py-1 rounded-full bg-[#0a101d] border border-slate-800 text-slate-300 font-mono font-bold text-xs tracking-wide shrink-0">
-                      {formatCountK(espCount)}
+                    {/* Badge de Questões - Fundo igual ao quadro geral, número por extenso */}
+                    <span className="px-2.5 py-0.5 rounded-lg bg-transparent border border-slate-200/50 dark:border-slate-800/60 text-slate-500 dark:text-slate-400 font-mono text-xs shrink-0">
+                      {espCount.toLocaleString('pt-BR')}
                     </span>
                   </div>
 
                   {/* Linha 2: Temas (Filhos Indentados) */}
                   {isEspExpanded && (
-                    <div className="pl-5 space-y-1 border-l border-slate-200 dark:border-slate-800 ml-3.5">
+                    <div className="pl-5 space-y-1 border-l border-slate-100/30 dark:border-slate-800/40 ml-3.5">
                       {orderedTemas.map((tem) => {
                         const isTemaSelected =
                           filters.temas.includes(tem.tema) || isEspSelected;
@@ -996,14 +1055,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                 </span>
                               </div>
 
-                              <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 shrink-0">
+                              <span className="px-2 py-0.5 rounded-md bg-transparent border border-slate-200/40 dark:border-slate-800/50 text-[11px] font-mono text-slate-500 dark:text-slate-400 shrink-0">
                                 {temaCount.toLocaleString('pt-BR')}
                               </span>
                             </div>
 
                             {/* Linha 3: Focos (Filhos de Tema) */}
                             {isTemaExpanded && tem.focos.length > 0 && (
-                              <div className="pl-4 space-y-0.5 border-l border-slate-200 dark:border-slate-800 ml-2.5">
+                              <div className="pl-4 space-y-0.5 border-l border-slate-100/30 dark:border-slate-800/40 ml-2.5">
                                 {tem.focos.map((foc) => {
                                   const isFocoSelected =
                                     filters.focos.includes(foc.foco) || isTemaSelected;
@@ -1080,14 +1139,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                           </span>
                                         </div>
 
-                                        <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 ml-2 shrink-0">
+                                        <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-slate-200/30 dark:border-slate-800/40 text-[10px] font-mono text-slate-500 dark:text-slate-400 ml-2 shrink-0">
                                           {focoCount.toLocaleString('pt-BR')}
                                         </span>
                                       </div>
 
                                       {/* Linha 4: Subfocos (Filhos de Foco) */}
                                       {isFocoExpanded && foc.subfocos.length > 0 && (
-                                        <div className="pl-4 space-y-0.5 border-l border-slate-200 dark:border-slate-800 ml-2">
+                                        <div className="pl-4 space-y-0.5 border-l border-slate-100/30 dark:border-slate-800/40 ml-2">
                                           {foc.subfocos.map((sub) => {
                                             const isSubSelected =
                                               filters.subfocos.includes(sub) || isFocoSelected;
@@ -1131,7 +1190,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                   </div>
                                                   <span className="truncate text-slate-800 dark:text-slate-300">{sub}</span>
                                                 </div>
-                                                <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 ml-2 shrink-0">
+                                                <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-slate-200/30 dark:border-slate-800/40 text-[10px] font-mono text-slate-500 dark:text-slate-400 ml-2 shrink-0">
                                                   {subCount.toLocaleString('pt-BR')}
                                                 </span>
                                               </div>
@@ -1164,9 +1223,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           {/* 1. Instituições e Bancas */}
           <div className="space-y-1.5">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-900 dark:text-white">
-                <Building2 className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-                <span>Instituições e Bancas (267 oficiais)</span>
+              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-slate-900 dark:text-white tracking-tight">
+                <Building2 className="w-4 h-4 text-red-500" style={{ color: accentConfig.primaryHex }} />
+                <span>Instituições e Bancas</span>
               </div>
               <button
                 type="button"
@@ -1245,12 +1304,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               </div>
             )}
 
-            {/* Chips das Mais Concorridas (1 clique) */}
-            <div className="space-y-1.5 pt-1">
-              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
-                Mais concorridas (1 clique):
-              </span>
-              <div className="flex flex-wrap gap-1.5">
+            {/* Chips das Mais Concorridas */}
+            <div className="flex flex-wrap gap-1.5 pt-1">
                 {POPULAR_BANCAS_1CLIQUE.map((banca) => {
                   const isSelected = filters.instituicoes.some(
                     (inst) => inst.toLowerCase() === banca.key.toLowerCase()
@@ -1273,7 +1328,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   );
                 })}
               </div>
-            </div>
           </div>
 
           {/* 2. Status da Questão (IMAGEM 2) */}
@@ -1325,9 +1379,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               </div>
 
               <div className="flex items-center gap-2">
-                {/* Resumo ativo no Badge */}
-                <span className="px-3 py-0.5 rounded-full text-xs font-semibold bg-red-950/40 border border-red-900/60 text-red-300">
-                  {filters.dificuldade !== 'Todas' ? filters.dificuldade : 'Médio'} • {filters.tipoQuestao !== 'Todas' ? (filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao) : 'Discursiva'}
+                {/* Resumo ativo no Badge - Estilo Imagem 3 */}
+                <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-[#1e0d14] border border-red-900/70 text-[#f87171] tracking-wide inline-flex items-center">
+                  {filters.dificuldade !== 'Todas' ? filters.dificuldade : 'Difícil'} <span className="mx-1.5 opacity-60">•</span> {filters.tipoQuestao !== 'Todas' ? (filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao) : 'Discursiva'}
                 </span>
                 <ChevronDown
                   className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
@@ -1339,13 +1393,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
             {/* Conteúdo Expandido */}
             {isOptionsOpen && (
-              <div className="p-3 sm:p-3.5 pt-0 space-y-3 border-t border-slate-200 dark:border-slate-800/50">
+              <div className="p-3 sm:p-3.5 pt-0 space-y-3 border-t border-slate-200/40 dark:border-slate-800/50">
                 {/* Linha 1: Dificuldade & Formato */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
                   {/* Dificuldade */}
                   <div className="space-y-1.5">
                     <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Dificuldade</span>
-                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80">
+                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
                       {(['Fácil', 'Médio', 'Difícil'] as QuestionDifficulty[]).map((dif) => {
                         const isActive = filters.dificuldade === dif;
                         return (
@@ -1374,7 +1428,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   {/* Formato */}
                   <div className="space-y-1.5">
                     <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Formato</span>
-                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80">
+                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
                       {[
                         { label: 'Todas', val: 'Todas' },
                         { label: 'Múltipla', val: 'Múltipla escolha' },
@@ -1405,10 +1459,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   </div>
                 </div>
 
-                {/* Linha 2: Ocultar anuladas / Ocultar revisadas */}
+                {/* Linha 2: Ocultar anuladas / Ocultar revisadas (Estilo Imagem 4) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between">
-                    <span className="text-xs font-medium text-slate-700 dark:text-slate-300">Ocultar anuladas</span>
+                  <div className="bg-[#090e1c] border border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
+                    <span className="text-xs font-medium text-slate-200">Ocultar anuladas</span>
                     <button
                       type="button"
                       role="switch"
@@ -1419,20 +1473,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           ocultarAnuladasErro: !filters.ocultarAnuladasErro
                         })
                       }
-                      className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer ${
-                        filters.ocultarAnuladasErro ? 'bg-red-600' : 'bg-slate-300 dark:bg-slate-700'
+                      className={`w-9 h-5 rounded-full transition-colors relative cursor-pointer ${
+                        filters.ocultarAnuladasErro ? 'bg-red-600' : 'bg-slate-700/80'
                       }`}
                     >
                       <span
-                        className={`w-4 h-4 bg-white rounded-full absolute top-0.5 transition-transform ${
-                          filters.ocultarAnuladasErro ? 'left-5.5' : 'left-1'
+                        className={`w-3.5 h-3.5 bg-white rounded-full absolute top-0.75 transition-transform ${
+                          filters.ocultarAnuladasErro ? 'left-4.5' : 'left-1'
                         }`}
                       />
                     </button>
                   </div>
 
-                  <div className="bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between">
-                    <span className="text-xs font-medium text-slate-700 dark:text-slate-300">Ocultar revisadas</span>
+                  <div className="bg-[#090e1c] border border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
+                    <span className="text-xs font-medium text-slate-200">Ocultar revisadas</span>
                     <button
                       type="button"
                       role="switch"
@@ -1443,13 +1497,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           ocultarRevisadas: !filters.ocultarRevisadas
                         })
                       }
-                      className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer ${
-                        filters.ocultarRevisadas ? 'bg-red-600' : 'bg-slate-300 dark:bg-slate-700'
+                      className={`w-9 h-5 rounded-full transition-colors relative cursor-pointer ${
+                        filters.ocultarRevisadas ? 'bg-red-600' : 'bg-slate-700/80'
                       }`}
                     >
                       <span
-                        className={`w-4 h-4 bg-white rounded-full absolute top-0.5 transition-transform ${
-                          filters.ocultarRevisadas ? 'left-5.5' : 'left-1'
+                        className={`w-3.5 h-3.5 bg-white rounded-full absolute top-0.75 transition-transform ${
+                          filters.ocultarRevisadas ? 'left-4.5' : 'left-1'
                         }`}
                       />
                     </button>
@@ -1535,116 +1589,279 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       </div>
 
       {/* =========================================================================
-          3. BARRA DE COMANDO FIXA INFERIOR (ESTILO IMAGEM 5)
+          3. BARRA DE COMANDO FIXA INFERIOR (ESTILO IMAGEM 2)
          ========================================================================= */}
       <div 
-        className="fixed bottom-0 left-0 right-0 z-40 bg-[#070b15]/95 backdrop-blur-md border-t border-slate-800/90 px-4 sm:px-6 py-3 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex flex-wrap items-center justify-between gap-3 select-none"
+        className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
+          isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
+        } bg-[#070c17]/95 backdrop-blur-md border-t border-slate-800/70 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
       >
-        {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar */}
-        <div className="flex flex-wrap items-center gap-2">
-          <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
-            <SlidersHorizontal className="w-3.5 h-3.5 text-red-500 shrink-0" />
-            <span>Filtros ({activeTags.length}):</span>
-          </div>
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3 w-full">
+          {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar (Estilo Imagem 2) */}
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+              <SlidersHorizontal className="w-3.5 h-3.5 text-red-500 shrink-0" />
+              <span>Filtros ({activeTags.length}):</span>
+            </div>
 
-          {/* Tags Ativas Removíveis no Estilo Imagem 5 */}
-          {activeTags.map((t) => (
-            <span
-              key={t.id}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium bg-red-950/40 border border-red-900/60 text-red-200"
-            >
-              <span>{t.label}</span>
-              <button
-                type="button"
-                onClick={t.onRemove}
-                className="hover:opacity-75 cursor-pointer ml-0.5 text-xs text-red-400 hover:text-white"
+            {/* Tags Ativas Removíveis (Estilo Imagem 2) */}
+            {activeTags.map((t) => (
+              <span
+                key={t.id}
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#1e0e15] border border-red-900/60 text-[#fca5a5]"
               >
-                ✕
-              </button>
-            </span>
-          ))}
-
-          {activeTags.length > 0 && (
-            <button
-              type="button"
-              onClick={onReset}
-              className="flex items-center gap-1 text-xs text-slate-400 hover:text-white font-medium ml-1 cursor-pointer"
-            >
-              <RotateCcw className="w-3 h-3" />
-              <span>Limpar</span>
-            </button>
-          )}
-        </div>
-
-        {/* Lado Direito: Quantidade (20, 50, 100, Outro) + Salvar Lista + Iniciar (Qtd) */}
-        <div className="flex flex-wrap items-center gap-3">
-          <div className="flex items-center gap-1.5 text-xs text-slate-400">
-            <span className="font-semibold mr-1">Qtd:</span>
-            {[20, 50, 100].map((num) => (
-              <button
-                key={num}
-                type="button"
-                onClick={() => {
-                  setResolveCount(num);
-                  setShowCustomQtd(false);
-                }}
-                className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
-                  resolveCount === num && !showCustomQtd
-                    ? 'bg-red-600 text-white shadow-sm'
-                    : 'text-slate-400 hover:text-white'
-                }`}
-              >
-                {num}
-              </button>
+                <span>{t.label}</span>
+                <button
+                  type="button"
+                  onClick={t.onRemove}
+                  className="hover:opacity-75 cursor-pointer ml-0.5 text-xs text-[#fca5a5]/80 hover:text-white"
+                >
+                  ✕
+                </button>
+              </span>
             ))}
 
-            <button
-              type="button"
-              onClick={() => setShowCustomQtd(!showCustomQtd)}
-              className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-700/80 text-slate-400 hover:text-white transition-all cursor-pointer ${
-                showCustomQtd || ![20, 50, 100].includes(resolveCount)
-                  ? 'border-red-600 text-white bg-red-950/30 font-bold'
-                  : ''
-              }`}
-            >
-              Outro
-            </button>
-
-            {showCustomQtd && (
-              <input
-                type="number"
-                min={1}
-                max={200}
-                value={resolveCount}
-                onChange={(e) => {
-                  const val = parseInt(e.target.value) || 0;
-                  setResolveCount(Math.max(1, Math.min(200, val)));
-                }}
-                className="w-14 text-center font-bold text-xs bg-slate-900 border border-slate-700 rounded-md py-1 text-white focus:outline-none focus:ring-1 focus:ring-red-500 ml-1"
-                placeholder="Qtd"
-              />
+            {activeTags.length > 0 && (
+              <button
+                type="button"
+                onClick={onReset}
+                className="flex items-center gap-1 text-xs text-slate-400 hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
+              >
+                <RotateCcw className="w-3 h-3" />
+                <span>Limpar</span>
+              </button>
             )}
           </div>
 
-          <button
-            type="button"
-            onClick={onCreateListFromFilter}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-200 bg-[#0f172a] hover:bg-slate-800 border border-slate-700/70 transition-colors cursor-pointer shadow-xs"
-          >
-            <ListPlus className="w-4 h-4 text-slate-300" />
-            <span>Salvar Lista</span>
-          </button>
+          {/* Lado Direito: Cotas + Quantidade + Salvar Lista + Iniciar (Estilo Imagem 2) */}
+          <div className="flex flex-wrap items-center gap-2.5">
+            {itemsToConfigure.length > 1 && (
+              <button
+                type="button"
+                onClick={() => setIsCotasDrawerOpen(!isCotasDrawerOpen)}
+                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
+                  isCotasDrawerOpen
+                    ? 'bg-amber-500/20 border-amber-500 text-amber-300 shadow-sm'
+                    : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300 hover:text-white'
+                }`}
+                title="Personalizar cotas por filtro ou balancear proporcionalmente"
+              >
+                <PieChart className="w-3.5 h-3.5 text-amber-400" />
+                <span>Cotas ({itemsToConfigure.length})</span>
+                <ChevronUp className={`w-3 h-3 transition-transform duration-200 ${isCotasDrawerOpen ? 'rotate-180' : ''}`} />
+              </button>
+            )}
 
-          <button
-            type="button"
-            onClick={() => onStartSequentialSolving && onStartSequentialSolving(resolveCount)}
-            className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-white font-bold text-xs sm:text-sm bg-red-600 hover:bg-red-500 shadow-lg shadow-red-900/40 transition-all cursor-pointer active:scale-98"
-          >
-            <Play className="w-4 h-4 fill-white" />
-            <span>Iniciar ({resolveCount})</span>
-          </button>
+            <div className="flex items-center gap-1.5 text-xs text-slate-400">
+              <span className="font-semibold mr-0.5 text-slate-400">Qtd:</span>
+              {[20, 50, 100].map((num) => (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => {
+                    setResolveCount(num);
+                    setShowCustomQtd(false);
+                  }}
+                  className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    resolveCount === num && !showCustomQtd
+                      ? 'bg-red-600 text-white shadow-xs'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  {num}
+                </button>
+              ))}
+
+              <button
+                type="button"
+                onClick={() => setShowCustomQtd(!showCustomQtd)}
+                className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-700/70 text-slate-400 hover:text-white transition-all cursor-pointer ${
+                  showCustomQtd || ![20, 50, 100].includes(resolveCount)
+                    ? 'border-red-600 text-white bg-red-950/30 font-bold'
+                    : ''
+                }`}
+              >
+                Outr
+              </button>
+
+              {showCustomQtd && (
+                <input
+                  type="number"
+                  min={1}
+                  max={200}
+                  value={resolveCount}
+                  onChange={(e) => {
+                    const val = parseInt(e.target.value) || 0;
+                    setResolveCount(Math.max(1, Math.min(200, val)));
+                  }}
+                  className="w-13 text-center font-bold text-xs bg-slate-900 border border-slate-700 rounded-md py-1 text-white focus:outline-none focus:ring-1 focus:ring-red-500 ml-0.5"
+                  placeholder="Qtd"
+                />
+              )}
+            </div>
+
+            <button
+              type="button"
+              onClick={onCreateListFromFilter}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-200 bg-[#0e1626] hover:bg-slate-800 border border-slate-700/60 transition-colors cursor-pointer shadow-xs"
+            >
+              <ListPlus className="w-4 h-4 text-slate-300" />
+              <span>Salvar Lista</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => {
+                const effectiveQuotas = getEffectiveQuotas();
+                onStartSequentialSolving && onStartSequentialSolving(resolveCount, effectiveQuotas);
+              }}
+              className="flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm bg-red-600 hover:bg-red-500 shadow-md shadow-red-900/30 transition-all cursor-pointer active:scale-98"
+            >
+              <Play className="w-4 h-4 fill-white" />
+              <span>Iniciar ({resolveCount})</span>
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* =========================================================================
+          DRAWER / MINI-SELETOR DE COTAS EXPANSÍVEL (QUANDO MULTI-FILTRO ATIVO)
+         ========================================================================= */}
+      {isCotasDrawerOpen && itemsToConfigure.length > 1 && (
+        <div 
+          className="fixed bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[75vh] z-50 bg-[#0b1120]/95 backdrop-blur-xl border border-slate-700/90 rounded-2xl shadow-2xl p-4 flex flex-col text-slate-100 animate-in slide-in-from-bottom-3 duration-200"
+          style={{ boxShadow: '0 20px 50px rgba(0,0,0,0.6)' }}
+        >
+          {/* Header */}
+          <div className="flex items-center justify-between pb-2.5 border-b border-slate-800">
+            <div className="flex items-center gap-2">
+              <PieChart className="w-4 h-4 text-amber-400" />
+              <div>
+                <h4 className="text-xs font-bold text-white tracking-tight">Distribuição por Filtro Selecionado</h4>
+                <p className="text-[10px] text-slate-400">Escolha a quantidade de cada filtro ou equilibre igualmente</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <button
+                type="button"
+                onClick={handleEquilibrarCotas}
+                className="flex items-center gap-1 text-[11px] font-semibold px-2 py-1 rounded-lg bg-blue-950/50 border border-blue-800/70 text-blue-300 hover:bg-blue-900/60 transition-colors cursor-pointer"
+                title="Dividir igualmente o total entre todos os filtros selecionados"
+              >
+                <Scale className="w-3 h-3 text-blue-400" />
+                <span>Equilibrar (Round-Robin)</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsCotasDrawerOpen(false)}
+                className="p-1 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          {/* Resumo de alocação */}
+          <div className="text-[11px] text-slate-400 py-2 flex items-center justify-between">
+            <span>
+              Total alocado:{' '}
+              <strong className="text-amber-300 font-mono font-bold">
+                {Object.values(getEffectiveQuotas()).reduce((a, b) => a + b, 0)}
+              </strong>{' '}
+              de <strong className="text-white font-mono">{resolveCount}</strong> questões
+            </span>
+            <span className="text-[10px] text-emerald-400 font-semibold bg-emerald-950/40 border border-emerald-800/60 px-1.5 py-0.5 rounded">
+              Intercalação Ativa
+            </span>
+          </div>
+
+          {/* Lista de Filtros com Sliders e Steppers */}
+          <div className="overflow-y-auto max-h-[46vh] space-y-2.5 py-1.5 pr-1 custom-scrollbar">
+            {itemsToConfigure.map((it) => {
+              const effective = getEffectiveQuotas();
+              const currentCount = typeof effective[it.name] === 'number' ? effective[it.name] : 0;
+              const pct = resolveCount > 0 ? Math.round((currentCount / resolveCount) * 100) : 0;
+
+              return (
+                <div key={it.id} className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                  <div className="flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-1.5 truncate max-w-[70%]">
+                      <span className="text-[9.5px] uppercase font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700/60 shrink-0">
+                        {it.category}
+                      </span>
+                      <span className="font-semibold text-slate-200 truncate">{it.name}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <span className="text-xs font-mono font-bold text-amber-400">{currentCount} q</span>
+                      <span className="text-[10px] text-slate-500 font-mono">({pct}%)</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="range"
+                      min={0}
+                      max={resolveCount}
+                      value={currentCount}
+                      onChange={(e) => handleQuotaChange(it.name, parseInt(e.target.value) || 0)}
+                      className="flex-1 h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                    />
+                    <div className="flex items-center gap-0.5 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => handleQuotaChange(it.name, Math.max(0, currentCount - 5))}
+                        className="w-6 h-6 flex items-center justify-center rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                        title="-5 questões"
+                      >
+                        <Minus className="w-3 h-3" />
+                      </button>
+                      <input
+                        type="number"
+                        min={0}
+                        max={resolveCount}
+                        value={currentCount}
+                        onChange={(e) => handleQuotaChange(it.name, parseInt(e.target.value) || 0)}
+                        className="w-11 text-center text-xs font-bold bg-slate-950 border border-slate-700 rounded py-0.5 text-white focus:outline-none"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => handleQuotaChange(it.name, Math.min(resolveCount, currentCount + 5))}
+                        className="w-6 h-6 flex items-center justify-center rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                        title="+5 questões"
+                      >
+                        <Plus className="w-3 h-3" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Footer do Drawer com Iniciar Imediato */}
+          <div className="pt-2.5 border-t border-slate-800 flex items-center justify-between">
+            <button
+              type="button"
+              onClick={() => setIsCotasDrawerOpen(false)}
+              className="text-xs font-medium text-slate-400 hover:text-white cursor-pointer"
+            >
+              Recolher
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setIsCotasDrawerOpen(false);
+                const effectiveQuotas = getEffectiveQuotas();
+                onStartSequentialSolving && onStartSequentialSolving(resolveCount, effectiveQuotas);
+              }}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-white font-bold text-xs bg-red-600 hover:bg-red-500 transition-colors cursor-pointer shadow-md"
+            >
+              <Play className="w-3.5 h-3.5 fill-white" />
+              <span>Iniciar com estas Cotas</span>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* =========================================================================
           MODAL: CATÁLOGO DE INSTITUIÇÕES E BANCAS POR ESTADO (UF) (ESTILO IMAGEM 1)

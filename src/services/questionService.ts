@@ -787,11 +787,12 @@ export async function fetchQuestionIdsForListCriteria(
       .neq('especialidade', 'Não Classificada');
   };
 
-  // 1. Busca questões para cada cota de cada item selecionado
+  // 1. Busca questões para cada cota de cada item selecionado em pools separados
   if (entries.length > 0) {
+    const poolsByItem: string[][] = [];
+
     for (const [itemName, count] of entries) {
-      if (selectedIds.length >= finalMax) break;
-      const needed = Math.min(count, finalMax - selectedIds.length);
+      const needed = Math.min(count, finalMax);
       if (needed <= 0) continue;
 
       try {
@@ -799,8 +800,14 @@ export async function fetchQuestionIdsForListCriteria(
         q = applyGoldFilter(q);
 
         const clean = itemName.trim();
-        // Busca o item em especialidade, tema, foco, subfoco ou banca
-        q = q.or(`especialidade.eq."${clean}",tema.eq."${clean}",foco.eq."${clean}",subfoco.eq."${clean}",banca.ilike."%${clean}%"`);
+        // Resolve aliases de banca e busca em especialidade, tema, foco, subfoco, banca e institution
+        const bancaAliases = resolveBancaList([clean]);
+        const bancaParts = bancaAliases.map((b) => `banca.ilike."%${b}%",institution.ilike."%${b}%"`).join(',');
+        const orClause = bancaParts
+          ? `especialidade.eq."${clean}",tema.eq."${clean}",foco.eq."${clean}",subfoco.eq."${clean}",${bancaParts}`
+          : `especialidade.eq."${clean}",tema.eq."${clean}",foco.eq."${clean}",subfoco.eq."${clean}",banca.ilike."%${clean}%",institution.ilike."%${clean}%"`;
+
+        q = q.or(orClause);
 
         if (filters.anos && filters.anos.length > 0) {
           q = q.in('year', filters.anos);
@@ -813,17 +820,35 @@ export async function fetchQuestionIdsForListCriteria(
 
         const { data, error } = await q;
         if (!error && data) {
+          const itemPool: string[] = [];
           for (const row of data) {
             if (!usedIds.has(row.id)) {
               usedIds.add(row.id);
-              selectedIds.push(row.id);
-              if (selectedIds.length >= finalMax) break;
+              itemPool.push(row.id);
+              if (itemPool.length >= needed) break;
             }
+          }
+          if (itemPool.length > 0) {
+            poolsByItem.push(itemPool);
           }
         }
       } catch (err) {
         console.error(`Erro ao buscar IDs para o item ${itemName}:`, err);
       }
+    }
+
+    // Intercalação Round-Robin para balanceamento perfeito entre todos os filtros selecionados
+    let hasMore = true;
+    let roundIndex = 0;
+    while (hasMore && selectedIds.length < finalMax) {
+      hasMore = false;
+      for (const pool of poolsByItem) {
+        if (roundIndex < pool.length && selectedIds.length < finalMax) {
+          selectedIds.push(pool[roundIndex]);
+          hasMore = true;
+        }
+      }
+      roundIndex++;
     }
   }
 
