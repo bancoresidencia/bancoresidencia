@@ -8,7 +8,23 @@ import {
   UUID_REGEX
 } from '../utils/security';
 
-export { sanitizePostgrestTerm, validateQuestionId, validateAnswerOption, UUID_REGEX };
+import {
+  generateStratifiedQuiz,
+  fetchFacetedHierarchyCounts,
+  hasRightCardActiveFilters,
+  type FacetedHierarchyCountsResult
+} from './stratifiedQuizService';
+
+export {
+  sanitizePostgrestTerm,
+  validateQuestionId,
+  validateAnswerOption,
+  UUID_REGEX,
+  generateStratifiedQuiz,
+  fetchFacetedHierarchyCounts,
+  hasRightCardActiveFilters,
+  type FacetedHierarchyCountsResult
+};
 
 // Cache em memória para contagens com TTL de 90 segundos
 const countCache = new Map<string, { count: number; timestamp: number }>();
@@ -384,20 +400,51 @@ export async function fetchQuestionsFromSupabase(
       if (filters.temas && filters.temas.length > 0) {
         countQuery = countQuery.in('tema', filters.temas);
       }
+      if (filters.focos && filters.focos.length > 0) {
+        countQuery = countQuery.in('foco', filters.focos);
+      }
+      if (filters.subfocos && filters.subfocos.length > 0) {
+        countQuery = countQuery.in('subfoco', filters.subfocos);
+      }
       if (filters.instituicoes && filters.instituicoes.length > 0) {
         const resolved = resolveBancaList(filters.instituicoes);
         if (resolved.length > 0) countQuery = countQuery.in('banca', resolved);
       }
       if (filters.anos && filters.anos.length > 0) {
         countQuery = countQuery.in('year', filters.anos);
+      } else if (filters.ultimos5Anos) {
+        countQuery = countQuery.gte('year', 2020);
       }
       if (filters.dificuldade && filters.dificuldade !== 'Todas') {
         countQuery = countQuery.eq('difficulty', filters.dificuldade);
       }
+      if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
+        countQuery = countQuery.eq('type', filters.tipoQuestao);
+      }
+      if (filters.ocultarAnuladasErro) {
+        countQuery = countQuery.eq('is_anulada', false);
+      }
+      if (filters.modalidades && filters.modalidades.length > 0) {
+        const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
+        const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
+        if (hasRevalida && otherModalidades.length === 0) {
+          countQuery = countQuery.or('modalidade.eq.Revalida,banca.ilike.%Revalida%,institution.ilike.%Revalida%,code.ilike.INEPREVALIDA%');
+        } else if (hasRevalida && otherModalidades.length > 0) {
+          const otherIn = otherModalidades.join(',');
+          countQuery = countQuery.or(`modalidade.in.(${otherIn}),banca.ilike.%Revalida%,institution.ilike.%Revalida%,code.ilike.INEPREVALIDA%`);
+        } else {
+          const isOnlyDefault =
+            filters.modalidades.length === 1 &&
+            filters.modalidades[0] === 'Residência Médica';
+          if (!isOnlyDefault) {
+            countQuery = countQuery.in('modalidade', filters.modalidades);
+          }
+        }
+      }
 
-      // Timeout de segurança de 1.200ms para a contagem exata
+      // Timeout de segurança de 2.500ms para a contagem exata
       const countPromise = countQuery;
-      const timeoutPromise = new Promise<{ count: null }>((resolve) => setTimeout(() => resolve({ count: null }), 1200));
+      const timeoutPromise = new Promise<{ count: null }>((resolve) => setTimeout(() => resolve({ count: null }), 2500));
       const res = await Promise.race([countPromise, timeoutPromise]);
 
       if (res && typeof res.count === 'number') {
@@ -760,150 +807,17 @@ export async function reportQuestionIssue(
 }
 
 /**
- * Busca IDs reais de questões no Supabase com base nas cotas de itens selecionados e filtros gerais.
+ * Busca IDs reais de questões no Supabase aplicando amostragem estratificada,
+ * aleatorização real (sem efeito bloco), interpretação inteligente de cotas com
+ * fallback automático de estoque e intercalação Round-Robin na sequência final.
  * Teto máximo absoluto: 200 questões.
  */
 export async function fetchQuestionIdsForListCriteria(
   quotasByItem: Record<string, number>,
   filters: ExtendedFilterState,
-  maxTotal: number = 200
+  maxTotal: number = 200,
+  answeredQuestionIds?: string[]
 ): Promise<string[]> {
-  const finalMax = Math.min(200, Math.max(1, maxTotal));
-  const selectedIds: string[] = [];
-  const usedIds = new Set<string>();
-
-  const entries = Object.entries(quotasByItem).filter(([, count]) => count > 0);
-
-  // Helper para base padrão ouro
-  const applyGoldFilter = <T extends {
-    or: (filters: string) => T;
-    not: (column: string, operator: string, value: unknown) => T;
-    neq: (column: string, value: unknown) => T;
-  }>(builder: T): T => {
-    return builder
-      .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
-      .not('especialidade', 'is', null)
-      .neq('especialidade', '')
-      .neq('especialidade', 'Não Classificada');
-  };
-
-  // 1. Busca questões para cada cota de cada item selecionado em pools separados
-  if (entries.length > 0) {
-    const poolsByItem: string[][] = [];
-
-    for (const [itemName, count] of entries) {
-      const needed = Math.min(count, finalMax);
-      if (needed <= 0) continue;
-
-      try {
-        let q = supabase.from('questions').select('id');
-        q = applyGoldFilter(q);
-
-        const clean = itemName.trim();
-        // Resolve aliases de banca e busca em especialidade, tema, foco, subfoco, banca e institution
-        const bancaAliases = resolveBancaList([clean]);
-        const bancaParts = bancaAliases.map((b) => `banca.ilike."%${b}%",institution.ilike."%${b}%"`).join(',');
-        const orClause = bancaParts
-          ? `especialidade.eq."${clean}",tema.eq."${clean}",foco.eq."${clean}",subfoco.eq."${clean}",${bancaParts}`
-          : `especialidade.eq."${clean}",tema.eq."${clean}",foco.eq."${clean}",subfoco.eq."${clean}",banca.ilike."%${clean}%",institution.ilike."%${clean}%"`;
-
-        q = q.or(orClause);
-
-        if (filters.anos && filters.anos.length > 0) {
-          q = q.in('year', filters.anos);
-        }
-        if (filters.dificuldade && filters.dificuldade !== 'Todas') {
-          q = q.eq('difficulty', filters.dificuldade);
-        }
-
-        q = q.order('year', { ascending: false }).limit(needed * 2);
-
-        const { data, error } = await q;
-        if (!error && data) {
-          const itemPool: string[] = [];
-          for (const row of data) {
-            if (!usedIds.has(row.id)) {
-              usedIds.add(row.id);
-              itemPool.push(row.id);
-              if (itemPool.length >= needed) break;
-            }
-          }
-          if (itemPool.length > 0) {
-            poolsByItem.push(itemPool);
-          }
-        }
-      } catch (err) {
-        console.error(`Erro ao buscar IDs para o item ${itemName}:`, err);
-      }
-    }
-
-    // Intercalação Round-Robin para balanceamento perfeito entre todos os filtros selecionados
-    let hasMore = true;
-    let roundIndex = 0;
-    while (hasMore && selectedIds.length < finalMax) {
-      hasMore = false;
-      for (const pool of poolsByItem) {
-        if (roundIndex < pool.length && selectedIds.length < finalMax) {
-          selectedIds.push(pool[roundIndex]);
-          hasMore = true;
-        }
-      }
-      roundIndex++;
-    }
-  }
-
-  // 2. Se não atingiu o total ou nenhuma cota foi selecionada, completa usando os filtros combinados gerais
-  if (selectedIds.length < finalMax) {
-    const remaining = finalMax - selectedIds.length;
-    try {
-      let q = supabase.from('questions').select('id');
-      q = applyGoldFilter(q);
-
-      if (filters.especialidades && filters.especialidades.length > 0) {
-        q = q.in('especialidade', filters.especialidades);
-      }
-      if (filters.temas && filters.temas.length > 0) {
-        q = q.in('tema', filters.temas);
-      }
-      if (filters.focos && filters.focos.length > 0) {
-        q = q.in('foco', filters.focos);
-      }
-      if (filters.subfocos && filters.subfocos.length > 0) {
-        q = q.in('subfoco', filters.subfocos);
-      }
-      if (filters.instituicoes && filters.instituicoes.length > 0) {
-        const bancosClean = resolveBancaList(filters.instituicoes);
-        if (bancosClean.length > 0) {
-          q = q.in('banca', bancosClean);
-        }
-      }
-      if (filters.anos && filters.anos.length > 0) {
-        q = q.in('year', filters.anos);
-      }
-      if (filters.dificuldade && filters.dificuldade !== 'Todas') {
-        q = q.eq('difficulty', filters.dificuldade);
-      }
-      if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-        q = q.eq('type', filters.tipoQuestao);
-      }
-
-      q = q.order('year', { ascending: false }).limit(remaining * 2);
-
-      const { data, error } = await q;
-      if (!error && data) {
-        for (const row of data) {
-          if (!usedIds.has(row.id)) {
-            usedIds.add(row.id);
-            selectedIds.push(row.id);
-            if (selectedIds.length >= finalMax) break;
-          }
-        }
-      }
-    } catch (err) {
-      console.error('Erro ao buscar IDs complementares para a lista:', err);
-    }
-  }
-
-  return selectedIds;
+  return generateStratifiedQuiz(quotasByItem, filters, maxTotal, answeredQuestionIds);
 }
 

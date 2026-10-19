@@ -80,9 +80,6 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
     if (filters.subfocos && filters.subfocos.length > 0) {
       filters.subfocos.forEach((sub) => list.push({ id: sub, name: sub, category: 'Subfoco' }));
     }
-    if (filters.instituicoes && filters.instituicoes.length > 0) {
-      filters.instituicoes.forEach((inst) => list.push({ id: inst, name: inst, category: 'Banca' }));
-    }
 
     if (list.length > 0) {
       return list;

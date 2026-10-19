@@ -1717,28 +1717,25 @@ export default function Home() {
                       setCurrentQuestionIndex(0);
                       setQuestionTimer(0);
 
-                      const hasQuotas = quotas && Object.keys(quotas).length > 0;
-                      if (hasQuotas) {
-                        try {
-                          setIsLoadingSupabase(true);
-                          const balancedIds = await fetchQuestionIdsForListCriteria(
-                            quotas,
-                            advancedFilters,
-                            finalLimit
-                          );
-                          if (balancedIds && balancedIds.length > 0) {
-                            setSessionQuestionIds(balancedIds);
-                          } else {
-                            setSessionQuestionIds(null);
-                          }
-                        } catch (e) {
-                          console.error('Erro ao gerar questões balanceadas:', e);
+                      try {
+                        setIsLoadingSupabase(true);
+                        const answeredIds = Object.keys(userAnswers);
+                        const balancedIds = await fetchQuestionIdsForListCriteria(
+                          quotas || {},
+                          advancedFilters,
+                          finalLimit,
+                          answeredIds
+                        );
+                        if (balancedIds && balancedIds.length > 0) {
+                          setSessionQuestionIds(balancedIds);
+                        } else {
                           setSessionQuestionIds(null);
-                        } finally {
-                          setIsLoadingSupabase(false);
                         }
-                      } else {
+                      } catch (e) {
+                        console.error('Erro ao gerar questões balanceadas:', e);
                         setSessionQuestionIds(null);
+                      } finally {
+                        setIsLoadingSupabase(false);
                       }
 
                       setBancoMode('resolucao');

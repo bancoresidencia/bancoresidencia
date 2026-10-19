@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useDeferredValue } from 'react';
+import React, { useState, useMemo, useDeferredValue, useEffect } from 'react';
 import {
   StudyModalidade,
   AdvancedFilterState,
@@ -37,6 +37,10 @@ import {
   medicalInstitutionsDirectory
 } from '@/data/mockQuestions';
 import { getQuestionCount } from '@/data/hierarchyCounts';
+import {
+  fetchFacetedHierarchyCounts,
+  type FacetedHierarchyCountsResult
+} from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
 
 interface AdvancedQuestionFiltersProps {
@@ -200,32 +204,86 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
 
-  // Identificação dinâmica de filtros selecionados para cotas
+  // Faceted Search: Contagens dinâmicas por linha sincronizadas com o banco (apenas filtros do card direito)
+  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+    const timer = setTimeout(async () => {
+      try {
+        const res = await fetchFacetedHierarchyCounts(filters);
+        if (isMounted) {
+          setFacetedCounts(res);
+        }
+      } catch {
+        if (isMounted) setFacetedCounts(null);
+      }
+    }, 250);
+
+    return () => {
+      isMounted = false;
+      clearTimeout(timer);
+    };
+  }, [
+    filters.instituicoes,
+    filters.anos,
+    filters.dificuldade,
+    filters.tipoQuestao,
+    filters.ocultarAnuladasErro,
+    filters.ultimos5Anos,
+    filters.modalidades
+  ]);
+
+  // Identificação dinâmica de filtros selecionados para cotas (evitando duplicar pai e filho)
   const itemsToConfigure = useMemo(() => {
     const list: Array<{ id: string; name: string; category: string }> = [];
+    const selectedSpecs = new Set(filters.especialidades || []);
 
     if (filters.especialidades && filters.especialidades.length > 0) {
       filters.especialidades.forEach((esp) => list.push({ id: esp, name: esp, category: 'Especialidade' }));
     }
+
     if (filters.temas && filters.temas.length > 0) {
-      filters.temas.forEach((tem) => list.push({ id: tem, name: tem, category: 'Tema' }));
+      filters.temas.forEach((tem) => {
+        const parentEsp = clinicalHierarchy.find((h) => h.temas.some((t) => t.tema === tem));
+        if (!parentEsp || !selectedSpecs.has(parentEsp.especialidade)) {
+          list.push({ id: tem, name: tem, category: 'Tema' });
+        }
+      });
     }
+
     if (filters.focos && filters.focos.length > 0) {
-      filters.focos.forEach((foc) => list.push({ id: foc, name: foc, category: 'Foco' }));
+      const selectedTemas = new Set(filters.temas || []);
+      filters.focos.forEach((foc) => {
+        let parentEsp = '';
+        let parentTem = '';
+        clinicalHierarchy.forEach((h) => {
+          h.temas.forEach((t) => {
+            if (t.focos.some((f) => f.foco === foc)) {
+              parentEsp = h.especialidade;
+              parentTem = t.tema;
+            }
+          });
+        });
+        if (!selectedSpecs.has(parentEsp) && !selectedTemas.has(parentTem)) {
+          list.push({ id: foc, name: foc, category: 'Foco' });
+        }
+      });
     }
+
     if (filters.subfocos && filters.subfocos.length > 0) {
       filters.subfocos.forEach((sub) => list.push({ id: sub, name: sub, category: 'Subfoco' }));
     }
-    if (filters.instituicoes && filters.instituicoes.length > 0) {
-      filters.instituicoes.forEach((inst) => list.push({ id: inst, name: inst, category: 'Banca' }));
-    }
 
     return list;
-  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos, filters.instituicoes]);
+  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos]);
 
   // Retorna cotas balanceadas automáticas ou personalizadas
   const getEffectiveQuotas = (): Record<string, number> => {
-    if (itemsToConfigure.length <= 1) return {};
+    if (itemsToConfigure.length === 0) return {};
+    if (itemsToConfigure.length === 1) {
+      return { [itemsToConfigure[0].name]: resolveCount };
+    }
     const hasManual = itemsToConfigure.some((it) => typeof quotasByItem[it.name] === 'number' && quotasByItem[it.name] > 0);
     if (hasManual) {
       return quotasByItem;
@@ -480,96 +538,30 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     });
   };
 
-  // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DE TODOS OS FILTROS) ---
+  // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DO BANCO DE DADOS) ---
   const displayedQuestionCount = useMemo(() => {
-    // 1. Base por seleção clínica ou modalidade (apenas questões com gabarito consolidado)
-    let sum = totalAvailable || 85377;
+    const hasActiveFilters = Boolean(
+      (filters.search && filters.search.trim()) ||
+      (filters.especialidades && filters.especialidades.length > 0) ||
+      (filters.temas && filters.temas.length > 0) ||
+      (filters.focos && filters.focos.length > 0) ||
+      (filters.subfocos && filters.subfocos.length > 0) ||
+      (filters.instituicoes && filters.instituicoes.length > 0) ||
+      (filters.anos && filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length) ||
+      (filters.dificuldade && filters.dificuldade !== 'Todas') ||
+      (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
+      filters.ocultarAnuladasErro ||
+      filters.ultimos5Anos
+    );
 
-    if (filters.subfocos && filters.subfocos.length > 0) {
-      let subSum = 0;
-      filters.subfocos.forEach((sub) => {
-        subSum += getQuestionCount('subfocos', sub) || 0;
-      });
-      sum = subSum > 0 ? subSum : sum;
-    } else if (filters.focos && filters.focos.length > 0) {
-      let focoSum = 0;
-      filters.focos.forEach((foc) => {
-        focoSum += getQuestionCount('focos', foc) || 0;
-      });
-      sum = focoSum > 0 ? focoSum : sum;
-    } else if (filters.temas && filters.temas.length > 0) {
-      let temaSum = 0;
-      filters.temas.forEach((tem) => {
-        temaSum += getQuestionCount('temas', tem) || 0;
-      });
-      sum = temaSum > 0 ? temaSum : sum;
-    } else if (filters.especialidades && filters.especialidades.length > 0) {
-      let espSum = 0;
-      filters.especialidades.forEach((esp) => {
-        espSum += getQuestionCount('especialidades', esp) || 0;
-      });
-      sum = espSum > 0 ? espSum : sum;
-    } else if (currentModalidade === 'Revalida') {
-      sum = Math.round(sum * 0.18);
-    } else if (currentModalidade.startsWith('R+')) {
-      sum = Math.round(sum * 0.42);
-    } else if (currentModalidade.startsWith('Título')) {
-      sum = Math.round(sum * 0.25);
+    if (hasActiveFilters) {
+      return typeof totalFiltered === 'number' ? totalFiltered : 0;
     }
-
-    // INTERSECÇÃO COM FILTROS DA IMAGEM 2:
-    // 1. Anos
-    if (filters.anos && filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length) {
-      sum = Math.round(sum * (filters.anos.length / YEARS_LIST.length));
-    }
-
-    // 2. Instituições / Bancas
-    if (filters.instituicoes && filters.instituicoes.length > 0) {
-      sum = Math.min(sum, Math.max(1, Math.round(sum * Math.min(1, filters.instituicoes.length * 0.08))));
-    }
-
-    // 3. Status da Questão (Imagem 2)
-    if (filters.status === 'Não vistas') {
-      sum = Math.max(1, Math.round(sum * 0.82));
-    } else if (filters.status === 'Resolvidas') {
-      sum = Math.max(1, Math.round(sum * 0.18));
-    } else if (filters.status === 'Acertadas') {
-      sum = Math.max(1, Math.round(sum * 0.13));
-    } else if (filters.status === 'Erradas') {
-      sum = Math.max(1, Math.round(sum * 0.05));
-    } else if (filters.status === 'Ainda não acertadas') {
-      sum = Math.max(1, Math.round(sum * 0.87));
-    }
-
-    // 4. Dificuldade (Imagem 2)
-    if (filters.dificuldade === 'Fácil') {
-      sum = Math.max(1, Math.round(sum * 0.32));
-    } else if (filters.dificuldade === 'Médio') {
-      sum = Math.max(1, Math.round(sum * 0.48));
-    } else if (filters.dificuldade === 'Difícil') {
-      sum = Math.max(1, Math.round(sum * 0.20));
-    }
-
-    // 5. Formato (Imagem 2)
-    if (filters.tipoQuestao === 'Múltipla escolha') {
-      sum = Math.max(1, Math.round(sum * 0.92));
-    } else if (filters.tipoQuestao === 'Discursiva') {
-      sum = Math.max(1, Math.round(sum * 0.08));
-    }
-
-    // 6. Ocultar Anuladas
-    if (filters.ocultarAnuladasErro) {
-      sum = Math.max(1, Math.round(sum * 0.96));
-    }
-
-    // 7. Ocultar Revisadas
-    if (filters.ocultarRevisadas) {
-      sum = Math.max(1, Math.round(sum * 0.93));
-    }
-
-    return Math.max(1, sum);
+    return totalAvailable || 85377;
   }, [
     totalAvailable,
+    totalFiltered,
+    filters.search,
     filters.especialidades,
     filters.temas,
     filters.focos,
@@ -578,11 +570,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     filters.instituicoes,
     filters.dificuldade,
     filters.tipoQuestao,
-    filters.status,
-    filters.modalidades,
     filters.ocultarAnuladasErro,
-    filters.ocultarRevisadas,
-    currentModalidade
+    filters.ultimos5Anos
   ]);
 
   // Filtros ativos para renderizar tags
@@ -877,7 +866,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             {clinicalHierarchy.map((esp) => {
               const isEspSelected = filters.especialidades.includes(esp.especialidade);
               const isEspExpanded = Boolean(expandedEspec[esp.especialidade]);
-              const espCount = getQuestionCount('especialidades', esp.especialidade);
+              const espCount =
+                facetedCounts && typeof facetedCounts.especialidades[esp.especialidade] === 'number'
+                  ? facetedCounts.especialidades[esp.especialidade]
+                  : (getQuestionCount('especialidades', esp.especialidade) || 0);
 
               // Filtragem textual se houver busca
               const qTerm = deferredHierarchySearch.toLowerCase().trim();
@@ -981,7 +973,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         const isTemaSelected =
                           filters.temas.includes(tem.tema) || isEspSelected;
                         const isTemaExpanded = Boolean(expandedTema[tem.tema]) || Boolean(qTerm);
-                        const temaCount = getQuestionCount('temas', tem.tema);
+                        const temaCount =
+                          facetedCounts && typeof facetedCounts.temas[tem.tema] === 'number'
+                            ? facetedCounts.temas[tem.tema]
+                            : (getQuestionCount('temas', tem.tema) || 0);
 
                         if (
                           qTerm &&
@@ -1068,8 +1063,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                     filters.focos.includes(foc.foco) || isTemaSelected;
                                   const isFocoExpanded = Boolean(expandedFoco[foc.foco]) || Boolean(qTerm);
                                   const focoCount =
-                                    getQuestionCount('focos', foc.foco) ||
-                                    Math.round(temaCount / Math.max(1, tem.focos.length));
+                                    facetedCounts && typeof facetedCounts.focos[foc.foco] === 'number'
+                                      ? facetedCounts.focos[foc.foco]
+                                      : (getQuestionCount('focos', foc.foco) ||
+                                         Math.round(temaCount / Math.max(1, tem.focos.length)));
 
                                   if (
                                     qTerm &&
@@ -1151,8 +1148,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                             const isSubSelected =
                                               filters.subfocos.includes(sub) || isFocoSelected;
                                             const subCount =
-                                              getQuestionCount('subfocos', sub) ||
-                                              Math.round(focoCount / Math.max(1, foc.subfocos.length));
+                                              facetedCounts && typeof facetedCounts.subfocos[sub] === 'number'
+                                                ? facetedCounts.subfocos[sub]
+                                                : (getQuestionCount('subfocos', sub) ||
+                                                   Math.round(focoCount / Math.max(1, foc.subfocos.length)));
 
                                             if (
                                               qTerm &&
@@ -1713,7 +1712,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               type="button"
               onClick={() => {
                 const effectiveQuotas = getEffectiveQuotas();
-                onStartSequentialSolving && onStartSequentialSolving(resolveCount, effectiveQuotas);
+                onStartSequentialSolving?.(resolveCount, effectiveQuotas);
               }}
               className="flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm bg-red-600 hover:bg-red-500 shadow-md shadow-red-900/30 transition-all cursor-pointer active:scale-98"
             >
@@ -1852,7 +1851,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => {
                 setIsCotasDrawerOpen(false);
                 const effectiveQuotas = getEffectiveQuotas();
-                onStartSequentialSolving && onStartSequentialSolving(resolveCount, effectiveQuotas);
+                onStartSequentialSolving?.(resolveCount, effectiveQuotas);
               }}
               className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-white font-bold text-xs bg-red-600 hover:bg-red-500 transition-colors cursor-pointer shadow-md"
             >
