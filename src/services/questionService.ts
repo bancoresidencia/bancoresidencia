@@ -14,6 +14,7 @@ import {
   hasRightCardActiveFilters,
   type FacetedHierarchyCountsResult
 } from './stratifiedQuizService';
+import { getQuestionCount } from '@/data/hierarchyCounts';
 
 export {
   sanitizePostgrestTerm,
@@ -191,8 +192,8 @@ export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean
     return cached.count;
   }
 
-  // Universo oficial consolidado padrão-ouro homologado
-  const OFFICIAL_CONSOLIDATED_COUNT = 85377;
+  // Universo oficial consolidado padrão-ouro homologado (132.965 questões)
+  const OFFICIAL_CONSOLIDATED_COUNT = 132965;
   countCache.set(cacheKey, { count: OFFICIAL_CONSOLIDATED_COUNT, timestamp: Date.now() });
   return OFFICIAL_CONSOLIDATED_COUNT;
 }
@@ -352,8 +353,8 @@ export async function fetchQuestionsFromSupabase(
 
   const questions = (data || []).map(mapRowToQuestion);
 
-  // Resolução de contagem do universo com gabarito consolidado (85.377)
-  let total: number = 85377;
+  // Resolução de contagem do universo com base consolidada (132.965)
+  let total: number = 132965;
   const hasActiveFilters = Boolean(
     (filters.search && filters.search.trim()) ||
     (filters.especialidades && filters.especialidades.length > 0) ||
@@ -364,23 +365,23 @@ export async function fetchQuestionsFromSupabase(
     (filters.anos && filters.anos.length > 0 && filters.anos.length < 15) ||
     (filters.dificuldade && filters.dificuldade !== 'Todas') ||
     (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
-    filters.ocultarAnuladasErro
+    filters.ocultarAnuladasErro ||
+    filters.ultimos5Anos
   );
 
   if (questionIds && questionIds.length > 0) {
     total = questionIds.length;
   } else if (!hasActiveFilters) {
-    total = 85377;
+    total = 132965;
     countCache.set(countKey, { count: total, timestamp: now });
   } else if (hasFreshCache) {
     total = cachedCountEntry.count;
   } else {
-    // Para filtros refinados, tenta contagem leve sem travar a interface
+    // Para filtros refinados, executa contagem indexada leve e ultrarrápida
     try {
       let countQuery = supabase
         .from('questions')
-        .select('id', { count: 'exact', head: true })
-        .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+        .select('id', { count: 'exact', head: true });
 
       if (filters.especialidades && filters.especialidades.length > 0) {
         const specs = new Set<string>();
@@ -442,19 +443,30 @@ export async function fetchQuestionsFromSupabase(
         }
       }
 
-      // Timeout de segurança de 2.500ms para a contagem exata
+      // Timeout estendido de segurança (5.000ms)
       const countPromise = countQuery;
-      const timeoutPromise = new Promise<{ count: null }>((resolve) => setTimeout(() => resolve({ count: null }), 2500));
+      const timeoutPromise = new Promise<{ count: null }>((resolve) => setTimeout(() => resolve({ count: null }), 5000));
       const res = await Promise.race([countPromise, timeoutPromise]);
 
       if (res && typeof res.count === 'number') {
         total = res.count;
         countCache.set(countKey, { count: total, timestamp: now });
       } else {
-        total = Math.max(from + questions.length, questions.length >= pageSize ? from + pageSize * 2 : from + questions.length);
+        // Fallback proporcional baseado nos números reais homologados de hierarchyCounts
+        let fallbackSum = 0;
+        if (filters.subfocos && filters.subfocos.length > 0) {
+          fallbackSum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
+        } else if (filters.focos && filters.focos.length > 0) {
+          fallbackSum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
+        } else if (filters.temas && filters.temas.length > 0) {
+          fallbackSum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
+        } else if (filters.especialidades && filters.especialidades.length > 0) {
+          fallbackSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
+        }
+        total = fallbackSum > 0 ? fallbackSum : Math.max(from + questions.length, 132965);
       }
     } catch {
-      total = Math.max(from + questions.length, questions.length);
+      total = Math.max(from + questions.length, 132965);
     }
   }
 

@@ -519,8 +519,8 @@ export default function Home() {
         });
     }
   }, [user?.id, supabaseQuestions]);
-  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(85377);
-  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(85377);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(132965);
+  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(132965);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
   const [hasLoadedSupabaseOnce, setHasLoadedSupabaseOnce] = useState<boolean>(false);
   const [questionsPage, setQuestionsPage] = useState<number>(1);
@@ -572,7 +572,7 @@ export default function Home() {
             questionIds = currentList.questionIds;
             effectivePageSize = Math.min(200, Math.max(50, currentList.questionIds.length));
           }
-        } else if (sessionQuestionIds && sessionQuestionIds.length > 0) {
+        } else if (bancoMode === 'resolucao' && sessionQuestionIds && sessionQuestionIds.length > 0) {
           questionIds = sessionQuestionIds;
           effectivePageSize = Math.min(200, Math.max(50, sessionQuestionIds.length));
         }
@@ -613,7 +613,7 @@ export default function Home() {
       isCancelled = true;
       clearTimeout(timer);
     };
-  }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds]);
+  }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds, bancoMode]);
 
 
   // Filtragem local complementar para status (resolvidas/não vistas) e fallback

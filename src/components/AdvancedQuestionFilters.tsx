@@ -557,7 +557,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     if (hasActiveFilters) {
       return typeof totalFiltered === 'number' ? totalFiltered : 0;
     }
-    return totalAvailable || 85377;
+    return totalAvailable || 132965;
   }, [
     totalAvailable,
     totalFiltered,
@@ -867,8 +867,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               const isEspSelected = filters.especialidades.includes(esp.especialidade);
               const isEspExpanded = Boolean(expandedEspec[esp.especialidade]);
               const espCount =
-                facetedCounts && typeof facetedCounts.especialidades[esp.especialidade] === 'number'
-                  ? facetedCounts.especialidades[esp.especialidade]
+                facetedCounts
+                  ? (typeof facetedCounts.especialidades[esp.especialidade] === 'number'
+                      ? facetedCounts.especialidades[esp.especialidade]
+                      : 0)
                   : (getQuestionCount('especialidades', esp.especialidade) || 0);
 
               // Filtragem textual se houver busca
@@ -974,8 +976,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           filters.temas.includes(tem.tema) || isEspSelected;
                         const isTemaExpanded = Boolean(expandedTema[tem.tema]) || Boolean(qTerm);
                         const temaCount =
-                          facetedCounts && typeof facetedCounts.temas[tem.tema] === 'number'
-                            ? facetedCounts.temas[tem.tema]
+                          facetedCounts
+                            ? (typeof facetedCounts.temas[tem.tema] === 'number'
+                                ? facetedCounts.temas[tem.tema]
+                                : 0)
                             : (getQuestionCount('temas', tem.tema) || 0);
 
                         if (
@@ -1063,8 +1067,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                     filters.focos.includes(foc.foco) || isTemaSelected;
                                   const isFocoExpanded = Boolean(expandedFoco[foc.foco]) || Boolean(qTerm);
                                   const focoCount =
-                                    facetedCounts && typeof facetedCounts.focos[foc.foco] === 'number'
-                                      ? facetedCounts.focos[foc.foco]
+                                    facetedCounts
+                                      ? (typeof facetedCounts.focos[foc.foco] === 'number'
+                                          ? facetedCounts.focos[foc.foco]
+                                          : 0)
                                       : (getQuestionCount('focos', foc.foco) ||
                                          Math.round(temaCount / Math.max(1, tem.focos.length)));
 
@@ -1148,8 +1154,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                             const isSubSelected =
                                               filters.subfocos.includes(sub) || isFocoSelected;
                                             const subCount =
-                                              facetedCounts && typeof facetedCounts.subfocos[sub] === 'number'
-                                                ? facetedCounts.subfocos[sub]
+                                              facetedCounts
+                                                ? (typeof facetedCounts.subfocos[sub] === 'number'
+                                                    ? facetedCounts.subfocos[sub]
+                                                    : 0)
                                                 : (getQuestionCount('subfocos', sub) ||
                                                    Math.round(focoCount / Math.max(1, foc.subfocos.length)));
 
