@@ -88,6 +88,9 @@ export interface FetchQuestionsResult {
 
 export interface ExtendedFilterState extends Partial<AdvancedFilterState> {
   gabaritoStatus?: 'todas' | 'com_gabarito' | 'sem_gabarito';
+  userSolvedIds?: string[];
+  userCorrectIds?: string[];
+  userWrongIds?: string[];
 }
 
 // Mapeamento e normalização ampla de bancas para casamento perfeito com o banco de dados
@@ -212,20 +215,33 @@ export async function fetchQuestionsFromSupabase(
   // Consulta ultrarrápida: não solicita count exact na query pesada de dados para evitar timeout 57014
   let query = supabase.from('questions').select('*');
 
-  // Regra de Gabarito e Classificação: No banco de estudos dos alunos, exibe EXCLUSIVAMENTE
-  // questões devidamente classificadas com gabarito oficial padrão ouro consolidado (85.377).
+  // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
   if (filters.gabaritoStatus === 'sem_gabarito') {
     query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
-  } else if (filters.gabaritoStatus === 'todas') {
-    // Curadoria inspecionando todas
-  } else {
-    // Padrão Ouro Oficial: Gabarito consolidado (A-E ou ANULADA oficial)
+  } else if (filters.gabaritoStatus === 'com_gabarito') {
     query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
-    query = query
-      .not('especialidade', 'is', null)
-      .neq('especialidade', '')
-      .neq('especialidade', 'Não Classificada')
-      .neq('especialidade', 'Não classificado');
+  }
+
+  // Filtro de Status do Aluno via IDs diretos
+  if (filters.status === 'Resolvidas') {
+    if (!filters.userSolvedIds || filters.userSolvedIds.length === 0) {
+      return { questions: [], total: 0, page, pageSize, totalPages: 0 };
+    }
+    query = query.in('id', filters.userSolvedIds.slice(0, 2000));
+  } else if (filters.status === 'Acertadas') {
+    if (!filters.userCorrectIds || filters.userCorrectIds.length === 0) {
+      return { questions: [], total: 0, page, pageSize, totalPages: 0 };
+    }
+    query = query.in('id', filters.userCorrectIds.slice(0, 2000));
+  } else if (filters.status === 'Erradas') {
+    if (!filters.userWrongIds || filters.userWrongIds.length === 0) {
+      return { questions: [], total: 0, page, pageSize, totalPages: 0 };
+    }
+    query = query.in('id', filters.userWrongIds.slice(0, 2000));
+  } else if (filters.status === 'Não vistas') {
+    if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+      query = query.not('id', 'in', `(${filters.userSolvedIds.slice(0, 500).join(',')})`);
+    }
   }
 
   // Se IDs específicos foram solicitados (resolvendo uma lista do aluno)
@@ -244,9 +260,9 @@ export async function fetchQuestionsFromSupabase(
       }
     }
 
-    // 2. Árvore Clínica: Interseção (AND) correta entre Especialidade, Tema, Foco e Subfoco
+    // 2. Árvore Clínica: SOMA / UNIÃO entre ramos diferentes e normalização ampla
+    const specs = new Set<string>();
     if (filters.especialidades && filters.especialidades.length > 0) {
-      const specs = new Set<string>();
       filters.especialidades.forEach((sp) => {
         specs.add(sp);
         if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
@@ -257,20 +273,43 @@ export async function fetchQuestionsFromSupabase(
           specs.add('Ginecologia');
           specs.add('Obstetrícia');
         }
+        if (sp === 'Medicina Preventiva' || sp === 'Medicina Preventiva e Social') {
+          specs.add('Medicina Preventiva e Social');
+          specs.add('Medicina Preventiva');
+        }
       });
-      query = query.in('especialidade', Array.from(specs));
     }
 
+    const contentOrParts: string[] = [];
+    if (specs.size > 0) {
+      const specList = Array.from(specs).map((s) => `"${s}"`).join(',');
+      contentOrParts.push(`especialidade.in.(${specList})`);
+    }
     if (filters.temas && filters.temas.length > 0) {
-      query = query.in('tema', filters.temas);
+      const temaList = filters.temas.map((t) => `"${t}"`).join(',');
+      contentOrParts.push(`tema.in.(${temaList})`);
     }
-
     if (filters.focos && filters.focos.length > 0) {
-      query = query.in('foco', filters.focos);
+      const focoList = filters.focos.map((f) => `"${f}"`).join(',');
+      contentOrParts.push(`foco.in.(${focoList})`);
+    }
+    if (filters.subfocos && filters.subfocos.length > 0) {
+      const subfocoList = filters.subfocos.map((s) => `"${s}"`).join(',');
+      contentOrParts.push(`subfoco.in.(${subfocoList})`);
     }
 
-    if (filters.subfocos && filters.subfocos.length > 0) {
-      query = query.in('subfoco', filters.subfocos);
+    if (contentOrParts.length === 1) {
+      if (specs.size > 0) {
+        query = query.in('especialidade', Array.from(specs));
+      } else if (filters.temas && filters.temas.length > 0) {
+        query = query.in('tema', filters.temas);
+      } else if (filters.focos && filters.focos.length > 0) {
+        query = query.in('foco', filters.focos);
+      } else if (filters.subfocos && filters.subfocos.length > 0) {
+        query = query.in('subfoco', filters.subfocos);
+      }
+    } else if (contentOrParts.length > 1) {
+      query = query.or(contentOrParts.join(','));
     }
 
     // 3. Modalidade (com suporte refinado a Revalida e Residência)
@@ -383,29 +422,82 @@ export async function fetchQuestionsFromSupabase(
         .from('questions')
         .select('id', { count: 'exact', head: true });
 
+      if (filters.gabaritoStatus === 'sem_gabarito') {
+        countQuery = countQuery.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
+      } else if (filters.gabaritoStatus === 'com_gabarito') {
+        countQuery = countQuery.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+      }
+
+      if (filters.status === 'Resolvidas') {
+        if (!filters.userSolvedIds || filters.userSolvedIds.length === 0) {
+          return { questions: [], total: 0, page, pageSize, totalPages: 0 };
+        }
+        countQuery = countQuery.in('id', filters.userSolvedIds.slice(0, 2000));
+      } else if (filters.status === 'Acertadas') {
+        if (!filters.userCorrectIds || filters.userCorrectIds.length === 0) {
+          return { questions: [], total: 0, page, pageSize, totalPages: 0 };
+        }
+        countQuery = countQuery.in('id', filters.userCorrectIds.slice(0, 2000));
+      } else if (filters.status === 'Erradas') {
+        if (!filters.userWrongIds || filters.userWrongIds.length === 0) {
+          return { questions: [], total: 0, page, pageSize, totalPages: 0 };
+        }
+        countQuery = countQuery.in('id', filters.userWrongIds.slice(0, 2000));
+      } else if (filters.status === 'Não vistas') {
+        if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+          countQuery = countQuery.not('id', 'in', `(${filters.userSolvedIds.slice(0, 500).join(',')})`);
+        }
+      }
+
+      const countSpecs = new Set<string>();
       if (filters.especialidades && filters.especialidades.length > 0) {
-        const specs = new Set<string>();
         filters.especialidades.forEach((sp) => {
-          specs.add(sp);
+          countSpecs.add(sp);
           if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
-            specs.add('Cirurgia');
-            specs.add('Cirurgia Geral');
+            countSpecs.add('Cirurgia');
+            countSpecs.add('Cirurgia Geral');
           }
           if (sp === 'Ginecologia e Obstetrícia') {
-            specs.add('Ginecologia');
-            specs.add('Obstetrícia');
+            countSpecs.add('Ginecologia');
+            countSpecs.add('Obstetrícia');
+          }
+          if (sp === 'Medicina Preventiva' || sp === 'Medicina Preventiva e Social') {
+            countSpecs.add('Medicina Preventiva e Social');
+            countSpecs.add('Medicina Preventiva');
           }
         });
-        countQuery = countQuery.in('especialidade', Array.from(specs));
+      }
+
+      const countContentOrParts: string[] = [];
+      if (countSpecs.size > 0) {
+        const specList = Array.from(countSpecs).map((s) => `"${s}"`).join(',');
+        countContentOrParts.push(`especialidade.in.(${specList})`);
       }
       if (filters.temas && filters.temas.length > 0) {
-        countQuery = countQuery.in('tema', filters.temas);
+        const temaList = filters.temas.map((t) => `"${t}"`).join(',');
+        countContentOrParts.push(`tema.in.(${temaList})`);
       }
       if (filters.focos && filters.focos.length > 0) {
-        countQuery = countQuery.in('foco', filters.focos);
+        const focoList = filters.focos.map((f) => `"${f}"`).join(',');
+        countContentOrParts.push(`foco.in.(${focoList})`);
       }
       if (filters.subfocos && filters.subfocos.length > 0) {
-        countQuery = countQuery.in('subfoco', filters.subfocos);
+        const subfocoList = filters.subfocos.map((s) => `"${s}"`).join(',');
+        countContentOrParts.push(`subfoco.in.(${subfocoList})`);
+      }
+
+      if (countContentOrParts.length === 1) {
+        if (countSpecs.size > 0) {
+          countQuery = countQuery.in('especialidade', Array.from(countSpecs));
+        } else if (filters.temas && filters.temas.length > 0) {
+          countQuery = countQuery.in('tema', filters.temas);
+        } else if (filters.focos && filters.focos.length > 0) {
+          countQuery = countQuery.in('foco', filters.focos);
+        } else if (filters.subfocos && filters.subfocos.length > 0) {
+          countQuery = countQuery.in('subfoco', filters.subfocos);
+        }
+      } else if (countContentOrParts.length > 1) {
+        countQuery = countQuery.or(countContentOrParts.join(','));
       }
       if (filters.instituicoes && filters.instituicoes.length > 0) {
         const resolved = resolveBancaList(filters.instituicoes);

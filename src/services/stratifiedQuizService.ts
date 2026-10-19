@@ -399,17 +399,11 @@ export async function generateStratifiedQuiz(
         .from('questions')
         .select('id, especialidade, tema, foco, subfoco, banca, year, difficulty');
 
-      // Padrão Ouro Oficial
+      // Regra de Gabarito: Todas as questões presentes por padrão
       if (filters.gabaritoStatus === 'sem_gabarito') {
         q = q.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
-      } else if (filters.gabaritoStatus === 'todas') {
-        // Inspecionando todas
-      } else {
+      } else if (filters.gabaritoStatus === 'com_gabarito') {
         q = q.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
-        q = q
-          .not('especialidade', 'is', null)
-          .neq('especialidade', '')
-          .neq('especialidade', 'Não Classificada');
       }
 
       // Conteúdo: Especialidade / Tema / Foco / Subfoco
@@ -417,6 +411,8 @@ export async function generateStratifiedQuiz(
         q = q.in('especialidade', ['Cirurgia', 'Cirurgia Geral']);
       } else if (item === 'Ginecologia e Obstetrícia') {
         q = q.in('especialidade', ['Ginecologia e Obstetrícia', 'Ginecologia', 'Obstetrícia']);
+      } else if (item === 'Medicina Preventiva' || item === 'Medicina Preventiva e Social') {
+        q = q.in('especialidade', ['Medicina Preventiva e Social', 'Medicina Preventiva']);
       } else {
         q = q.or(`especialidade.eq."${item}",tema.eq."${item}",foco.eq."${item}",subfoco.eq."${item}"`);
       }

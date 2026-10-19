@@ -88,7 +88,7 @@ def catalogar_provas(session, matcher):
             raw_title = a.get_text(strip=True)
             clean_title = raw_title.replace(badge, '').strip()
 
-            parts = [p.strip() for p in clean_title.split('-')]
+            parts = [p.strip() for p in clean_title.split(' - ')]
             inst_raw = parts[0] if parts else ''
             uf = ''
             ano = None
@@ -277,12 +277,28 @@ def run_collector(limit_provas=None, delay=0.2):
                 continue
 
             total_q = len(q_links)
-            log(f"   -> {total_q} questões detectadas. Coletando sequencialmente com intervalo de segurança...")
+            
+            # Recupera questões que já foram salvas desta prova (caso tenha sido interrompida)
+            conn_q = get_connection()
+            existing_saved = conn_q.execute(
+                "SELECT numero FROM questoes WHERE prova_id = ? AND (gabarito_oficial != '' OR is_anulada = 1)",
+                (prova_id,)
+            ).fetchall()
+            conn_q.close()
+            saved_q_nums = {r[0] for r in existing_saved}
 
-            questoes_ok = 0
+            if saved_q_nums:
+                log(f"   -> {total_q} questões detectadas ({len(saved_q_nums)} já salvas anteriormente). Retomando...")
+            else:
+                log(f"   -> {total_q} questões detectadas. Coletando sequencialmente com intervalo de segurança...")
+
+            questoes_ok = len(saved_q_nums)
             for num, qid in q_links:
                 if not RUNNING:
                     break
+
+                if num in saved_q_nums:
+                    continue
 
                 q_url = URL_BASE_QUESTAO.format(id=qid)
                 q_data, err = extrair_questao(session, q_url, prova_id, num)

@@ -550,6 +550,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       (filters.anos && filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
+      (filters.status && filters.status !== 'Todas') ||
       filters.ocultarAnuladasErro ||
       filters.ultimos5Anos
     );
@@ -570,6 +571,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     filters.instituicoes,
     filters.dificuldade,
     filters.tipoQuestao,
+    filters.status,
     filters.ocultarAnuladasErro,
     filters.ultimos5Anos
   ]);

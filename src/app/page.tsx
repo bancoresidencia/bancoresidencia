@@ -577,8 +577,17 @@ export default function Home() {
           effectivePageSize = Math.min(200, Math.max(50, sessionQuestionIds.length));
         }
 
+        const answeredIds = Object.keys(userAnswers);
+        const correctIds = Object.entries(userAnswers).filter(([_, a]) => a.isCorrect).map(([id]) => id);
+        const wrongIds = Object.entries(userAnswers).filter(([_, a]) => !a.isCorrect).map(([id]) => id);
+
         const res = await fetchQuestionsFromSupabase(
-          activeListId ? {} : advancedFilters,
+          activeListId ? {} : {
+            ...advancedFilters,
+            userSolvedIds: answeredIds,
+            userCorrectIds: correctIds,
+            userWrongIds: wrongIds
+          },
           activeListId ? 1 : questionsPage,
           effectivePageSize,
           questionIds
@@ -613,7 +622,7 @@ export default function Home() {
       isCancelled = true;
       clearTimeout(timer);
     };
-  }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds, bancoMode]);
+  }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds, bancoMode, userAnswers]);
 
 
   // Filtragem local complementar para status (resolvidas/não vistas) e fallback
