@@ -1,24 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+export const dynamic = 'force-dynamic';
 
-if (!supabaseUrl || !supabaseServiceKey) {
-  console.error('ERRO: Credenciais de serviço do Supabase não configuradas no servidor.');
+function getSupabaseAdmin() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
+  return createClient(supabaseUrl, supabaseKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false
+    }
+  });
 }
-
-const supabaseAdmin = createClient(supabaseUrl || '', supabaseServiceKey || '', {
-  auth: {
-    persistSession: false,
-    autoRefreshToken: false
-  }
-});
 
 const VALID_LETTERS = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA', '']);
 
 export async function POST(req: NextRequest) {
   try {
+    const supabaseAdmin = getSupabaseAdmin();
     const body = await req.json();
     const { questionId, correctAnswer, isAnulada, commentary } = body;
 

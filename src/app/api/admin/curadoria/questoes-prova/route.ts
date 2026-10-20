@@ -4,15 +4,18 @@ import fs from 'fs';
 import path from 'path';
 import { Question, StudyModalidade } from '@/types';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+export const dynamic = 'force-dynamic';
 
-const supabaseAdmin = createClient(supabaseUrl || '', supabaseServiceKey || '', {
-  auth: {
-    persistSession: false,
-    autoRefreshToken: false
-  }
-});
+function getSupabaseAdmin() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
+  return createClient(supabaseUrl, supabaseKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false
+    }
+  });
+}
 
 interface QuestionDbRow {
   id: string;
@@ -52,6 +55,7 @@ function getExamIdsIndex(): Record<string, string[]> {
 
 export async function GET(req: NextRequest) {
   try {
+    const supabaseAdmin = getSupabaseAdmin();
     const { searchParams } = new URL(req.url);
     const examKey = searchParams.get('examKey');
     const onlyMissing = searchParams.get('onlyMissing') === 'true';
