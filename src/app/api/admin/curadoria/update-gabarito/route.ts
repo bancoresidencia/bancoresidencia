@@ -55,11 +55,25 @@ export async function POST(req: NextRequest) {
     }
 
     // Gravação direta com service role (bypassa RLS de forma segura)
-    const { data, error } = await supabaseAdmin
+    const { data: initialData, error } = await supabaseAdmin
       .from('questions')
       .update(updatePayload)
       .eq('id', questionId)
       .select('id, code, correct_answer, is_anulada');
+
+    let data = initialData;
+
+    // Fallback: se não encontrou por ID, tentar por código
+    if (!error && (!data || data.length === 0)) {
+      const byCodeRes = await supabaseAdmin
+        .from('questions')
+        .update(updatePayload)
+        .eq('code', questionId)
+        .select('id, code, correct_answer, is_anulada');
+      if (byCodeRes.data && byCodeRes.data.length > 0) {
+        data = byCodeRes.data;
+      }
+    }
 
     if (error) {
       console.error('[API Curadoria] Erro no Supabase update:', error);
@@ -70,8 +84,18 @@ export async function POST(req: NextRequest) {
     }
 
     if (!data || data.length === 0) {
+      const hasServiceKey = Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY);
+      if (!hasServiceKey) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: 'Permissão negada (RLS do Supabase): A variável SUPABASE_SERVICE_ROLE_KEY não está configurada no painel da Vercel (Settings -> Environment Variables). Adicione-a para permitir a curadoria salvar gabaritos diretamente no banco.'
+          },
+          { status: 403 }
+        );
+      }
       return NextResponse.json(
-        { success: false, error: 'Questão não encontrada no Supabase.' },
+        { success: false, error: 'Questão não encontrada no Supabase (verifique se o ID ou código existe).' },
         { status: 404 }
       );
     }
