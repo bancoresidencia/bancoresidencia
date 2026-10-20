@@ -37,6 +37,7 @@ import {
   medicalInstitutionsDirectory
 } from '@/data/mockQuestions';
 import { getQuestionCount } from '@/data/hierarchyCounts';
+import { getInstitutionSupabaseCount } from '@/data/institutionCounts';
 import {
   fetchFacetedHierarchyCounts,
   type FacetedHierarchyCountsResult
@@ -199,6 +200,25 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [resolveCount, setResolveCount] = useState<number>(50);
   const [showCustomQtd, setShowCustomQtd] = useState<boolean>(false);
   const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(true);
+  const [isYearsOpen, setIsYearsOpen] = useState<boolean>(true);
+
+  // Resumo dinâmico de opções selecionadas no card de Dificuldade, Formato e Opções
+  const activeOptionsSummary = useMemo(() => {
+    const parts: string[] = [];
+    if (filters.dificuldade && filters.dificuldade !== 'Todas') {
+      parts.push(filters.dificuldade);
+    }
+    if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
+      parts.push(filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao);
+    }
+    if (filters.ocultarAnuladasErro) {
+      parts.push('Sem anuladas');
+    }
+    if (filters.ocultarRevisadas) {
+      parts.push('Sem revisadas');
+    }
+    return parts;
+  }, [filters.dificuldade, filters.tipoQuestao, filters.ocultarAnuladasErro, filters.ocultarRevisadas]);
 
   // Mini-seletor de Cotas e Distribuição Proporcional (Round-Robin)
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
@@ -320,17 +340,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [hierarchySearch, setHierarchySearch] = useState<string>('');
   const deferredHierarchySearch = useDeferredValue(hierarchySearch);
 
-  // Estados de expansão na árvore hierárquica
-  const [expandedEspec, setExpandedEspec] = useState<Record<string, boolean>>({
-    'Clínica Médica': true,
-    'Cardiologia': true
-  });
-  const [expandedTema, setExpandedTema] = useState<Record<string, boolean>>({
-    'Cardiologia': true
-  });
-  const [expandedFoco, setExpandedFoco] = useState<Record<string, boolean>>({
-    'Insuficiência Cardíaca': true
-  });
+  // Estados de expansão na árvore hierárquica (inicia recolhida)
+  const [expandedEspec, setExpandedEspec] = useState<Record<string, boolean>>({});
+  const [expandedTema, setExpandedTema] = useState<Record<string, boolean>>({});
+  const [expandedFoco, setExpandedFoco] = useState<Record<string, boolean>>({});
 
   // Busca e categoria de instituições
   const [instSearch, setInstSearch] = useState<string>('');
@@ -1227,10 +1240,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1)
            ----------------------------------------------------------------------- */}
         <div 
-          className="rounded-3xl p-3.5 sm:p-4 flex flex-col justify-between shadow-sm overflow-y-auto custom-scrollbar space-y-2 bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 h-full min-h-0"
+          className="rounded-3xl p-3.5 sm:p-4 flex flex-col justify-between shadow-sm bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 overflow-hidden h-full min-h-0 space-y-2"
         >
           {/* 1. Instituições e Bancas */}
-          <div className="space-y-1.5">
+          <div className="space-y-1.5 shrink-0">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-slate-900 dark:text-white tracking-tight">
                 <Building2 className="w-4 h-4 text-red-500" style={{ color: accentConfig.primaryHex }} />
@@ -1339,260 +1352,300 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               </div>
           </div>
 
-          {/* 2. Status da Questão (IMAGEM 2) */}
-          <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-slate-900 dark:text-white">Status da Questão</span>
-              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Todo o banco</span>
+          {/* Scroll Interno Exclusivo para Status, Dificuldade, Formato e Opções */}
+          <div className="flex-1 min-h-0 overflow-y-auto pr-1 custom-scrollbar space-y-2.5">
+            {/* 2. Status da Questão (IMAGEM 2) */}
+            <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-slate-900 dark:text-white">Status da Questão</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Todo o banco</span>
+              </div>
+              <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
+                  (st) => {
+                    const isActive = filters.status === st;
+                    return (
+                      <button
+                        key={st}
+                        type="button"
+                        onClick={() => onChange({ ...filters, status: st })}
+                        className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 ${
+                          isActive
+                            ? 'text-white shadow-sm font-bold'
+                            : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800/40'
+                        }`}
+                        style={{
+                          backgroundColor: isActive ? accentConfig.primaryHex : undefined
+                        }}
+                      >
+                        {st}
+                      </button>
+                    );
+                  }
+                )}
+              </div>
             </div>
-            <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-              {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
-                (st) => {
-                  const isActive = filters.status === st;
-                  return (
-                    <button
-                      key={st}
-                      type="button"
-                      onClick={() => onChange({ ...filters, status: st })}
-                      className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 ${
-                        isActive
-                          ? 'text-white shadow-sm font-bold'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800/40'
-                      }`}
-                      style={{
-                        backgroundColor: isActive ? accentConfig.primaryHex : undefined
-                      }}
-                    >
-                      {st}
-                    </button>
-                  );
-                }
+
+            {/* =========================================================================
+                3. CARD COLAPSÁVEL: Dificuldade, Formato e Opções (ESTILO IMAGEM 2)
+               ========================================================================= */}
+            <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all mt-1">
+              {/* Header com Toggle Mostrar/Ocultar */}
+              <div
+                onClick={() => setIsOptionsOpen(!isOptionsOpen)}
+                className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
+              >
+                <div className="flex items-center gap-2">
+                  <SlidersHorizontal className="w-4 h-4 text-red-500" />
+                  <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
+                    Dificuldade, Formato e Opções
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  {/* Resumo ativo no Badge - Somente se houver seleção */}
+                  {activeOptionsSummary.length > 0 && (
+                    <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-red-50 dark:bg-[#1e0d14] border border-red-200 dark:border-red-900/70 text-red-700 dark:text-[#f87171] tracking-wide inline-flex items-center">
+                      {activeOptionsSummary.join(' • ')}
+                    </span>
+                  )}
+                  <ChevronDown
+                    className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
+                      isOptionsOpen ? 'rotate-180' : ''
+                    }`}
+                  />
+                </div>
+              </div>
+
+              {/* Conteúdo Expandido */}
+              {isOptionsOpen && (
+                <div className="p-3 sm:p-3.5 pt-0 space-y-3 border-t border-slate-200/40 dark:border-slate-800/50">
+                  {/* Linha 1: Dificuldade & Formato */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
+                    {/* Dificuldade */}
+                    <div className="space-y-1.5">
+                      <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Dificuldade</span>
+                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
+                        {(['Fácil', 'Médio', 'Difícil'] as QuestionDifficulty[]).map((dif) => {
+                          const isActive = filters.dificuldade === dif;
+                          return (
+                            <button
+                              key={dif}
+                              type="button"
+                              onClick={() =>
+                                onChange({
+                                  ...filters,
+                                  dificuldade: isActive ? 'Todas' : dif
+                                })
+                              }
+                              className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                                isActive
+                                  ? 'bg-red-600 text-white shadow-sm'
+                                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                              }`}
+                            >
+                              {dif}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {/* Formato */}
+                    <div className="space-y-1.5">
+                      <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Formato</span>
+                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
+                        {[
+                          { label: 'Todas', val: 'Todas' },
+                          { label: 'Múltipla', val: 'Múltipla escolha' },
+                          { label: 'Discursiva', val: 'Discursiva' }
+                        ].map((fmt) => {
+                          const isActive = filters.tipoQuestao === fmt.val;
+                          return (
+                            <button
+                              key={fmt.label}
+                              type="button"
+                              onClick={() =>
+                                onChange({
+                                  ...filters,
+                                  tipoQuestao: fmt.val as QuestionType
+                                })
+                              }
+                              className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                                isActive
+                                  ? 'bg-red-600 text-white shadow-sm'
+                                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                              }`}
+                            >
+                              {fmt.label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Linha 2: Ocultar anuladas / Ocultar revisadas */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="bg-white dark:bg-[#090e1c] border border-slate-300 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
+                      <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">Ocultar anuladas</span>
+                      <button
+                        type="button"
+                        role="switch"
+                        aria-checked={filters.ocultarAnuladasErro}
+                        onClick={() =>
+                          onChange({
+                            ...filters,
+                            ocultarAnuladasErro: !filters.ocultarAnuladasErro
+                          })
+                        }
+                        className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer border ${
+                          filters.ocultarAnuladasErro ? 'bg-red-600 border-red-600' : 'bg-slate-300 dark:bg-slate-700 border-slate-400/70 dark:border-slate-600'
+                        }`}
+                      >
+                        <span
+                          className={`w-4 h-4 bg-white rounded-full shadow-sm ring-1 ring-black/10 absolute top-0.5 transition-transform ${
+                            filters.ocultarAnuladasErro ? 'translate-x-5' : 'translate-x-0.5'
+                          }`}
+                        />
+                      </button>
+                    </div>
+
+                    <div className="bg-white dark:bg-[#090e1c] border border-slate-300 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
+                      <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">Ocultar revisadas</span>
+                      <button
+                        type="button"
+                        role="switch"
+                        aria-checked={filters.ocultarRevisadas}
+                        onClick={() =>
+                          onChange({
+                            ...filters,
+                            ocultarRevisadas: !filters.ocultarRevisadas
+                          })
+                        }
+                        className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer border ${
+                          filters.ocultarRevisadas ? 'bg-red-600 border-red-600' : 'bg-slate-300 dark:bg-slate-700 border-slate-400/70 dark:border-slate-600'
+                        }`}
+                      >
+                        <span
+                          className={`w-4 h-4 bg-white rounded-full shadow-sm ring-1 ring-black/10 absolute top-0.5 transition-transform ${
+                            filters.ocultarRevisadas ? 'translate-x-5' : 'translate-x-0.5'
+                          }`}
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
           </div>
 
-          {/* =========================================================================
-              3. CARD COLAPSÁVEL: Dificuldade, Formato e Opções (ESTILO IMAGEM 2)
-             ========================================================================= */}
-          <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all mt-1">
+          {/* 4. Anos da Prova (Colapsável) */}
+          <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all shrink-0">
             {/* Header com Toggle Mostrar/Ocultar */}
             <div
-              onClick={() => setIsOptionsOpen(!isOptionsOpen)}
+              onClick={() => setIsYearsOpen(!isYearsOpen)}
               className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
             >
               <div className="flex items-center gap-2">
-                <SlidersHorizontal className="w-4 h-4 text-red-500" />
+                <Calendar className="w-4 h-4 text-red-500" />
                 <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
-                  Dificuldade, Formato e Opções
+                  Anos da Prova
                 </span>
               </div>
 
               <div className="flex items-center gap-2">
-                {/* Resumo ativo no Badge - Estilo Imagem 3 */}
-                <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-[#1e0d14] border border-red-900/70 text-[#f87171] tracking-wide inline-flex items-center">
-                  {filters.dificuldade !== 'Todas' ? filters.dificuldade : 'Difícil'} <span className="mx-1.5 opacity-60">•</span> {filters.tipoQuestao !== 'Todas' ? (filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao) : 'Discursiva'}
-                </span>
+                {/* Resumo quando colapsado ou selecionado */}
+                {filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length && (
+                  <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-red-50 dark:bg-[#1e0d14] border border-red-200 dark:border-red-900/70 text-red-700 dark:text-[#f87171] tracking-wide inline-flex items-center">
+                    {filters.anos.length === 3 && filters.anos.includes(2026)
+                      ? 'Últimos 3'
+                      : filters.anos.length === 5 && filters.anos.includes(2026)
+                      ? 'Últimos 5'
+                      : filters.anos.length === 10 && filters.anos.includes(2026)
+                      ? 'Últimos 10'
+                      : `${filters.anos.length} ${filters.anos.length === 1 ? 'ano' : 'anos'}`}
+                  </span>
+                )}
                 <ChevronDown
                   className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
-                    isOptionsOpen ? 'rotate-180' : ''
+                    isYearsOpen ? 'rotate-180' : ''
                   }`}
                 />
               </div>
             </div>
 
             {/* Conteúdo Expandido */}
-            {isOptionsOpen && (
-              <div className="p-3 sm:p-3.5 pt-0 space-y-3 border-t border-slate-200/40 dark:border-slate-800/50">
-                {/* Linha 1: Dificuldade & Formato */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
-                  {/* Dificuldade */}
-                  <div className="space-y-1.5">
-                    <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Dificuldade</span>
-                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
-                      {(['Fácil', 'Médio', 'Difícil'] as QuestionDifficulty[]).map((dif) => {
-                        const isActive = filters.dificuldade === dif;
-                        return (
-                          <button
-                            key={dif}
-                            type="button"
-                            onClick={() =>
-                              onChange({
-                                ...filters,
-                                dificuldade: isActive ? 'Todas' : dif
-                              })
-                            }
-                            className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                              isActive
-                                ? 'bg-red-600 text-white shadow-sm'
-                                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                            }`}
-                          >
-                            {dif}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Formato */}
-                  <div className="space-y-1.5">
-                    <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Formato</span>
-                    <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
-                      {[
-                        { label: 'Todas', val: 'Todas' },
-                        { label: 'Múltipla', val: 'Múltipla escolha' },
-                        { label: 'Discursiva', val: 'Discursiva' }
-                      ].map((fmt) => {
-                        const isActive = filters.tipoQuestao === fmt.val;
-                        return (
-                          <button
-                            key={fmt.label}
-                            type="button"
-                            onClick={() =>
-                              onChange({
-                                ...filters,
-                                tipoQuestao: fmt.val as QuestionType
-                              })
-                            }
-                            className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                              isActive
-                                ? 'bg-red-600 text-white shadow-sm'
-                                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                            }`}
-                          >
-                            {fmt.label}
-                          </button>
-                        );
-                      })}
-                    </div>
+            {isYearsOpen && (
+              <div className="p-3 sm:p-3.5 pt-0 space-y-2.5 border-t border-slate-200/40 dark:border-slate-800/50">
+                <div className="flex items-center justify-between pt-2.5">
+                  <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">Seleção rápida:</span>
+                  <div className="flex items-center gap-1">
+                    <button
+                      type="button"
+                      onClick={() => handleSelectUltimosAnos(3)}
+                      className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
+                        filters.anos.length === 3 && filters.anos.includes(2026)
+                          ? 'bg-red-600 text-white shadow-xs'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
+                      }`}
+                    >
+                      Últimos 3
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleSelectUltimosAnos(5)}
+                      className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
+                        filters.anos.length === 5 && filters.anos.includes(2026)
+                          ? 'bg-red-600 text-white shadow-xs'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
+                      }`}
+                    >
+                      Últimos 5
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleSelectUltimosAnos(10)}
+                      className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
+                        filters.anos.length === 10 && filters.anos.includes(2026)
+                          ? 'bg-red-600 text-white shadow-xs'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
+                      }`}
+                    >
+                      Últimos 10
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleClearYears}
+                      className="text-[10px] px-2 py-0.5 rounded font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+                    >
+                      Todos
+                    </button>
                   </div>
                 </div>
 
-                {/* Linha 2: Ocultar anuladas / Ocultar revisadas (Estilo Imagem 4) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="bg-[#090e1c] border border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
-                    <span className="text-xs font-medium text-slate-200">Ocultar anuladas</span>
-                    <button
-                      type="button"
-                      role="switch"
-                      aria-checked={filters.ocultarAnuladasErro}
-                      onClick={() =>
-                        onChange({
-                          ...filters,
-                          ocultarAnuladasErro: !filters.ocultarAnuladasErro
-                        })
-                      }
-                      className={`w-9 h-5 rounded-full transition-colors relative cursor-pointer ${
-                        filters.ocultarAnuladasErro ? 'bg-red-600' : 'bg-slate-700/80'
-                      }`}
-                    >
-                      <span
-                        className={`w-3.5 h-3.5 bg-white rounded-full absolute top-0.75 transition-transform ${
-                          filters.ocultarAnuladasErro ? 'left-4.5' : 'left-1'
+                {/* Pílulas de Anos em Linha Única Horizontal com Rolagem Lateral */}
+                <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 custom-scrollbar scroll-smooth">
+                  {YEARS_LIST.map((y) => {
+                    const isSelected = filters.anos.includes(y);
+                    return (
+                      <button
+                        key={y}
+                        type="button"
+                        onClick={() => toggleYear(y)}
+                        className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
+                          isSelected
+                            ? 'bg-red-600 text-white shadow-xs'
+                            : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
                         }`}
-                      />
-                    </button>
-                  </div>
-
-                  <div className="bg-[#090e1c] border border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
-                    <span className="text-xs font-medium text-slate-200">Ocultar revisadas</span>
-                    <button
-                      type="button"
-                      role="switch"
-                      aria-checked={filters.ocultarRevisadas}
-                      onClick={() =>
-                        onChange({
-                          ...filters,
-                          ocultarRevisadas: !filters.ocultarRevisadas
-                        })
-                      }
-                      className={`w-9 h-5 rounded-full transition-colors relative cursor-pointer ${
-                        filters.ocultarRevisadas ? 'bg-red-600' : 'bg-slate-700/80'
-                      }`}
-                    >
-                      <span
-                        className={`w-3.5 h-3.5 bg-white rounded-full absolute top-0.75 transition-transform ${
-                          filters.ocultarRevisadas ? 'left-4.5' : 'left-1'
-                        }`}
-                      />
-                    </button>
-                  </div>
+                      >
+                        {y}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             )}
-          </div>
-
-          {/* 4. Anos da Prova (Fita Horizontal Única com Rolagem Lateral) */}
-          <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-900 dark:text-white">
-                <Calendar className="w-3.5 h-3.5 text-red-500" />
-                <span>Anos da Prova</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <button
-                  type="button"
-                  onClick={() => handleSelectUltimosAnos(3)}
-                  className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
-                    filters.anos.length === 3 && filters.anos.includes(2026)
-                      ? 'bg-red-600 text-white shadow-xs'
-                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
-                  }`}
-                >
-                  Últimos 3
-                </button>
-                <button
-                  type="button"
-                  onClick={() => handleSelectUltimosAnos(5)}
-                  className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
-                    filters.anos.length === 5 && filters.anos.includes(2026)
-                      ? 'bg-red-600 text-white shadow-xs'
-                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
-                  }`}
-                >
-                  Últimos 5
-                </button>
-                <button
-                  type="button"
-                  onClick={() => handleSelectUltimosAnos(10)}
-                  className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
-                    filters.anos.length === 10 && filters.anos.includes(2026)
-                      ? 'bg-red-600 text-white shadow-xs'
-                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
-                  }`}
-                >
-                  Últimos 10
-                </button>
-                <button
-                  type="button"
-                  onClick={handleClearYears}
-                  className="text-[10px] px-2 py-0.5 rounded font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
-                >
-                  Todos
-                </button>
-              </div>
-            </div>
-
-            {/* Pílulas de Anos em Linha Única Horizontal com Rolagem Lateral */}
-            <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 custom-scrollbar scroll-smooth">
-              {YEARS_LIST.map((y) => {
-                const isSelected = filters.anos.includes(y);
-                return (
-                  <button
-                    key={y}
-                    type="button"
-                    onClick={() => toggleYear(y)}
-                    className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
-                      isSelected
-                        ? 'bg-red-600 text-white shadow-xs'
-                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
-                    }`}
-                  >
-                    {y}
-                  </button>
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>
@@ -1603,7 +1656,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       <div 
         className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
           isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
-        } bg-[#070c17]/95 backdrop-blur-md border-t border-slate-800/70 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
+        } bg-white/95 dark:bg-[#070c17]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800/70 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
       >
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3 w-full">
           {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar (Estilo Imagem 2) */}
@@ -1617,13 +1670,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             {activeTags.map((t) => (
               <span
                 key={t.id}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#1e0e15] border border-red-900/60 text-[#fca5a5]"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-red-50 dark:bg-[#1e0e15] border border-red-200 dark:border-red-900/60 text-red-700 dark:text-[#fca5a5]"
               >
                 <span>{t.label}</span>
                 <button
                   type="button"
                   onClick={t.onRemove}
-                  className="hover:opacity-75 cursor-pointer ml-0.5 text-xs text-[#fca5a5]/80 hover:text-white"
+                  className="hover:opacity-75 cursor-pointer ml-0.5 text-xs text-red-500 dark:text-[#fca5a5]/80 hover:text-red-700 dark:hover:text-white"
                 >
                   ✕
                 </button>
@@ -1634,7 +1687,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               <button
                 type="button"
                 onClick={onReset}
-                className="flex items-center gap-1 text-xs text-slate-400 hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
+                className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
               >
                 <RotateCcw className="w-3 h-3" />
                 <span>Limpar</span>
@@ -1650,19 +1703,19 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 onClick={() => setIsCotasDrawerOpen(!isCotasDrawerOpen)}
                 className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
                   isCotasDrawerOpen
-                    ? 'bg-amber-500/20 border-amber-500 text-amber-300 shadow-sm'
-                    : 'bg-slate-900 hover:bg-slate-800 border-slate-700/80 text-slate-300 hover:text-white'
+                    ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
+                    : 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                 }`}
                 title="Personalizar cotas por filtro ou balancear proporcionalmente"
               >
-                <PieChart className="w-3.5 h-3.5 text-amber-400" />
+                <PieChart className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
                 <span>Cotas ({itemsToConfigure.length})</span>
                 <ChevronUp className={`w-3 h-3 transition-transform duration-200 ${isCotasDrawerOpen ? 'rotate-180' : ''}`} />
               </button>
             )}
 
-            <div className="flex items-center gap-1.5 text-xs text-slate-400">
-              <span className="font-semibold mr-0.5 text-slate-400">Qtd:</span>
+            <div className="flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
+              <span className="font-semibold mr-0.5 text-slate-600 dark:text-slate-400">Qtd:</span>
               {[20, 50, 100].map((num) => (
                 <button
                   key={num}
@@ -1674,7 +1727,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
                     resolveCount === num && !showCustomQtd
                       ? 'bg-red-600 text-white shadow-xs'
-                      : 'text-slate-400 hover:text-white'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                   }`}
                 >
                   {num}
@@ -1684,13 +1737,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               <button
                 type="button"
                 onClick={() => setShowCustomQtd(!showCustomQtd)}
-                className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-700/70 text-slate-400 hover:text-white transition-all cursor-pointer ${
+                className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-300 dark:border-slate-700/70 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer ${
                   showCustomQtd || ![20, 50, 100].includes(resolveCount)
-                    ? 'border-red-600 text-white bg-red-950/30 font-bold'
+                    ? 'border-red-600 text-white bg-red-600 font-bold'
                     : ''
                 }`}
               >
-                Outr
+                Outro
               </button>
 
               {showCustomQtd && (
@@ -1703,7 +1756,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     const val = parseInt(e.target.value) || 0;
                     setResolveCount(Math.max(1, Math.min(200, val)));
                   }}
-                  className="w-13 text-center font-bold text-xs bg-slate-900 border border-slate-700 rounded-md py-1 text-white focus:outline-none focus:ring-1 focus:ring-red-500 ml-0.5"
+                  className="w-13 text-center font-bold text-xs bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-md py-1 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-red-500 ml-0.5"
                   placeholder="Qtd"
                 />
               )}
@@ -1712,9 +1765,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <button
               type="button"
               onClick={onCreateListFromFilter}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-200 bg-[#0e1626] hover:bg-slate-800 border border-slate-700/60 transition-colors cursor-pointer shadow-xs"
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 hover:bg-slate-200 dark:bg-[#0e1626] dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700/60 transition-colors cursor-pointer shadow-xs"
             >
-              <ListPlus className="w-4 h-4 text-slate-300" />
+              <ListPlus className="w-4 h-4 text-slate-700 dark:text-slate-300" />
               <span>Salvar Lista</span>
             </button>
 
@@ -1738,16 +1791,16 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
          ========================================================================= */}
       {isCotasDrawerOpen && itemsToConfigure.length > 1 && (
         <div 
-          className="fixed bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[75vh] z-50 bg-[#0b1120]/95 backdrop-blur-xl border border-slate-700/90 rounded-2xl shadow-2xl p-4 flex flex-col text-slate-100 animate-in slide-in-from-bottom-3 duration-200"
+          className="fixed bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[75vh] z-50 bg-white/95 dark:bg-[#0b1120]/95 backdrop-blur-xl border border-slate-200 dark:border-slate-700/90 rounded-2xl shadow-2xl p-4 flex flex-col text-slate-900 dark:text-slate-100 animate-in slide-in-from-bottom-3 duration-200"
           style={{ boxShadow: '0 20px 50px rgba(0,0,0,0.6)' }}
         >
           {/* Header */}
-          <div className="flex items-center justify-between pb-2.5 border-b border-slate-800">
+          <div className="flex items-center justify-between pb-2.5 border-b border-slate-200 dark:border-slate-800">
             <div className="flex items-center gap-2">
-              <PieChart className="w-4 h-4 text-amber-400" />
+              <PieChart className="w-4 h-4 text-amber-500 dark:text-amber-400" />
               <div>
-                <h4 className="text-xs font-bold text-white tracking-tight">Distribuição por Filtro Selecionado</h4>
-                <p className="text-[10px] text-slate-400">Escolha a quantidade de cada filtro ou equilibre igualmente</p>
+                <h4 className="text-xs font-bold text-slate-900 dark:text-white tracking-tight">Distribuição por Filtro Selecionado</h4>
+                <p className="text-[10px] text-slate-500 dark:text-slate-400">Escolha a quantidade de cada filtro ou equilibre igualmente</p>
               </div>
             </div>
             <div className="flex items-center gap-1.5">
@@ -1988,7 +2041,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                       {/* Base: Quantidade de Questões em Azul Neon / Destaque */}
                       <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-2 font-mono">
-                        {item.count}
+                        {getInstitutionSupabaseCount(item.sigla, item.key).toLocaleString('pt-BR')} questões
                       </span>
                     </div>
                   );

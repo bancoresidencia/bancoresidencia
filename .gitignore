@@ -42,7 +42,12 @@ next-env.d.ts
 
 # auth & background extraction
 scripts/drive_auth_state.json
+scripts/.*profile*
+scripts/.chrome_profile/
+scripts/.chromium_clean_profile/
+scripts/.chromium_profile/
 data/knowledge/
+
 data/extraction_status.json
 .playwright-mcp/
 .playwright-mcp/

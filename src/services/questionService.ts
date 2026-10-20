@@ -272,6 +272,9 @@ export async function fetchQuestionsFromSupabase(
         if (sp === 'Ginecologia e Obstetrícia') {
           specs.add('Ginecologia');
           specs.add('Obstetrícia');
+        } else if (sp === 'Ginecologia' || sp === 'Obstetrícia') {
+          specs.add(sp);
+          specs.add('Ginecologia e Obstetrícia');
         }
         if (sp === 'Medicina Preventiva' || sp === 'Medicina Preventiva e Social') {
           specs.add('Medicina Preventiva e Social');

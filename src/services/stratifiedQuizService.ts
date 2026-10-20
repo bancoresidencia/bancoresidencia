@@ -229,8 +229,10 @@ export async function fetchFacetedHierarchyCounts(
         const espKeys: string[] = [esp];
         if (esp === 'Cirurgia' || esp === 'Cirurgia Geral') {
           espKeys.push('Cirurgia', 'Cirurgia Geral');
-        } else if (esp === 'Ginecologia' || esp === 'Obstetrícia' || esp === 'Ginecologia e Obstetrícia') {
+        } else if (esp === 'Ginecologia' || esp === 'Obstetrícia') {
           espKeys.push('Ginecologia e Obstetrícia');
+        } else if (esp === 'Ginecologia e Obstetrícia') {
+          espKeys.push('Ginecologia', 'Obstetrícia');
         }
 
         espKeys.forEach((k) => {

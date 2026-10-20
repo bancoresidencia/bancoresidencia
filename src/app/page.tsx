@@ -264,14 +264,14 @@ export default function Home() {
     focos: [],
     subfocos: [],
     instituicoes: [],
-    anos: [2026, 2025, 2024, 2023, 2022],
+    anos: [],
     tipoProva: [],
     status: 'Todas',
     dificuldade: 'Todas',
     tipoQuestao: 'Todas',
     ocultarAnuladasErro: false,
     ocultarRevisadas: false,
-    ultimos5Anos: true
+    ultimos5Anos: false
   });
 
   // Deep linking via URL Search Params (?tab=... e ?q=...)
