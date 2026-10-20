@@ -715,8 +715,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
          ========================================================================= */}
       <div className="bg-white dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-3">
-        {/* Lado Esquerdo: Modalidades + Separador + Botões de Ação Rápida */}
-        <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+        {/* Lado Esquerdo: Modalidades no topo e Botões de Ação Rápida logo abaixo */}
+        <div className="flex flex-col gap-2 items-start">
           {/* Grupo de Modalidades */}
           <div className="flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80">
             <button
@@ -759,11 +759,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </button>
           </div>
 
-          {/* Separador Vertical */}
-          <div className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800 mx-1" />
-
-          {/* Botões de Ação Secundária: Filtro IA, Raio-X da Banca, Minhas Listas */}
-          <div className="flex items-center gap-2">
+          {/* Botões de Ação Secundária: Filtro IA, Raio-X da Banca, Minhas Listas (Abaixo das Modalidades) */}
+          <div className="flex flex-wrap items-center gap-2">
             <button
               type="button"
               onClick={() => {}}
@@ -785,7 +782,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <button
               type="button"
               onClick={onCreateListFromFilter}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-[#0f172a] border border-slate-200 dark:border-slate-700/60 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
             >
               <BookOpen className="w-3.5 h-3.5 text-blue-500 dark:text-blue-400" />
               <span>Minhas Listas</span>
@@ -1240,7 +1237,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1)
            ----------------------------------------------------------------------- */}
         <div 
-          className="rounded-3xl p-3.5 sm:p-4 flex flex-col justify-between shadow-sm bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 overflow-hidden h-full min-h-0 space-y-2"
+          className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 overflow-hidden h-full min-h-0 space-y-3"
         >
           {/* 1. Instituições e Bancas */}
           <div className="space-y-1.5 shrink-0">
@@ -1353,7 +1350,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           </div>
 
           {/* Scroll Interno Exclusivo para Status, Dificuldade, Formato e Opções */}
-          <div className="flex-1 min-h-0 overflow-y-auto pr-1 custom-scrollbar space-y-2.5">
+          <div className="min-h-0 max-h-[460px] overflow-y-auto pr-1 custom-scrollbar space-y-2.5 shrink-0">
             {/* 2. Status da Questão (IMAGEM 2) */}
             <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80">
               <div className="flex items-center justify-between">
@@ -1487,7 +1484,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                   {/* Linha 2: Ocultar anuladas / Ocultar revisadas */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div className="bg-white dark:bg-[#090e1c] border border-slate-300 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
+                    <div className="bg-slate-100 dark:bg-slate-900/90 border border-slate-300/80 dark:border-slate-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
                       <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">Ocultar anuladas</span>
                       <button
                         type="button"
@@ -1499,19 +1496,21 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             ocultarAnuladasErro: !filters.ocultarAnuladasErro
                           })
                         }
-                        className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer border ${
-                          filters.ocultarAnuladasErro ? 'bg-red-600 border-red-600' : 'bg-slate-300 dark:bg-slate-700 border-slate-400/70 dark:border-slate-600'
+                        className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${
+                          filters.ocultarAnuladasErro
+                            ? 'bg-red-600 border-red-600'
+                            : 'bg-slate-300 dark:bg-slate-700 border-slate-400/60 dark:border-slate-600'
                         }`}
                       >
                         <span
-                          className={`w-4 h-4 bg-white rounded-full shadow-sm ring-1 ring-black/10 absolute top-0.5 transition-transform ${
-                            filters.ocultarAnuladasErro ? 'translate-x-5' : 'translate-x-0.5'
+                          className={`w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${
+                            filters.ocultarAnuladasErro ? 'translate-x-5' : 'translate-x-0'
                           }`}
                         />
                       </button>
                     </div>
 
-                    <div className="bg-white dark:bg-[#090e1c] border border-slate-300 dark:border-slate-800/80 rounded-xl p-2.5 px-4 flex items-center justify-between shadow-xs">
+                    <div className="bg-slate-100 dark:bg-slate-900/90 border border-slate-300/80 dark:border-slate-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
                       <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">Ocultar revisadas</span>
                       <button
                         type="button"
@@ -1523,13 +1522,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             ocultarRevisadas: !filters.ocultarRevisadas
                           })
                         }
-                        className={`w-10 h-5.5 rounded-full transition-colors relative cursor-pointer border ${
-                          filters.ocultarRevisadas ? 'bg-red-600 border-red-600' : 'bg-slate-300 dark:bg-slate-700 border-slate-400/70 dark:border-slate-600'
+                        className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${
+                          filters.ocultarRevisadas
+                            ? 'bg-red-600 border-red-600'
+                            : 'bg-slate-300 dark:bg-slate-700 border-slate-400/60 dark:border-slate-600'
                         }`}
                       >
                         <span
-                          className={`w-4 h-4 bg-white rounded-full shadow-sm ring-1 ring-black/10 absolute top-0.5 transition-transform ${
-                            filters.ocultarRevisadas ? 'translate-x-5' : 'translate-x-0.5'
+                          className={`w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${
+                            filters.ocultarRevisadas ? 'translate-x-5' : 'translate-x-0'
                           }`}
                         />
                       </button>
@@ -1765,9 +1766,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <button
               type="button"
               onClick={onCreateListFromFilter}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 bg-slate-100 hover:bg-slate-200 dark:bg-[#0e1626] dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700/60 transition-colors cursor-pointer shadow-xs"
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100 dark:border-slate-700 transition-colors cursor-pointer shadow-xs"
             >
-              <ListPlus className="w-4 h-4 text-slate-700 dark:text-slate-300" />
+              <ListPlus className="w-4 h-4 text-slate-700 dark:text-slate-200" />
               <span>Salvar Lista</span>
             </button>
 

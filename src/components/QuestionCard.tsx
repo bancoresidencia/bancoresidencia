@@ -22,7 +22,8 @@ import {
   Lightbulb,
   Library,
   History,
-  FolderPlus
+  FolderPlus,
+  Check
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { QuestionComments } from './QuestionComments';
@@ -43,12 +44,84 @@ interface QuestionCardProps {
   onCreateFolder?: (name: string, parentId: string | null) => void;
   onSaveToFolder?: (questionId: string, folderId: string, folderName: string) => void;
   savedFolderIds?: string[];
+  activeHighlighterColor?: HighlighterColor;
+  onSelectHighlighterColor?: (color: HighlighterColor) => void;
 }
+
+export type HighlighterColor = 'yellow' | 'green' | 'pink' | 'blue' | 'orange' | 'purple';
+
+export const HIGHLIGHTER_COLORS: Record<
+  HighlighterColor,
+  {
+    name: string;
+    bg: string;
+    border: string;
+    ring: string;
+    markClass: string;
+    hex: string;
+    borderHex: string;
+  }
+> = {
+  yellow: {
+    name: 'Amarelo',
+    bg: 'bg-amber-300',
+    border: 'border-amber-500',
+    ring: 'ring-amber-400/50',
+    markClass: 'bg-amber-300 dark:bg-amber-400 text-black dark:text-black font-semibold border-b-2 border-amber-500',
+    hex: '#fcd34d',
+    borderHex: '#f59e0b'
+  },
+  green: {
+    name: 'Verde',
+    bg: 'bg-emerald-300',
+    border: 'border-emerald-500',
+    ring: 'ring-emerald-400/50',
+    markClass: 'bg-emerald-300 dark:bg-emerald-400 text-black dark:text-black font-semibold border-b-2 border-emerald-500',
+    hex: '#6ee7b7',
+    borderHex: '#10b981'
+  },
+  pink: {
+    name: 'Rosa',
+    bg: 'bg-pink-300',
+    border: 'border-pink-500',
+    ring: 'ring-pink-400/50',
+    markClass: 'bg-pink-300 dark:bg-pink-400 text-black dark:text-black font-semibold border-b-2 border-pink-500',
+    hex: '#f9a8d4',
+    borderHex: '#ec4899'
+  },
+  blue: {
+    name: 'Azul',
+    bg: 'bg-sky-300',
+    border: 'border-sky-500',
+    ring: 'ring-sky-400/50',
+    markClass: 'bg-sky-300 dark:bg-sky-400 text-black dark:text-black font-semibold border-b-2 border-sky-500',
+    hex: '#7dd3fc',
+    borderHex: '#0ea5e9'
+  },
+  orange: {
+    name: 'Laranja',
+    bg: 'bg-orange-300',
+    border: 'border-orange-500',
+    ring: 'ring-orange-400/50',
+    markClass: 'bg-orange-300 dark:bg-orange-400 text-black dark:text-black font-semibold border-b-2 border-orange-500',
+    hex: '#fdba74',
+    borderHex: '#f97316'
+  },
+  purple: {
+    name: 'Roxo',
+    bg: 'bg-purple-300',
+    border: 'border-purple-500',
+    ring: 'ring-purple-400/50',
+    markClass: 'bg-purple-300 dark:bg-purple-400 text-black dark:text-black font-semibold border-b-2 border-purple-500',
+    hex: '#d8b4fe',
+    borderHex: '#a855f7'
+  }
+};
 
 interface TextHighlight {
   id: string;
   text: string;
-  color: 'yellow' | 'green' | 'pink';
+  color: HighlighterColor;
 }
 
 // Verifica se o texto da alternativa é uma imagem (URL ou caminho local)
@@ -76,51 +149,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   folders,
   onCreateFolder,
   onSaveToFolder,
-  savedFolderIds = []
+  savedFolderIds = [],
+  activeHighlighterColor: propHighlighterColor,
+  onSelectHighlighterColor
 }) => {
   const { accentConfig } = useTheme();
 
   // Modal para salvar em pastas de 3 níveis
   const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
-
-  // Estado de favoritar (sincronizado com props e localStorage)
-  const [internalBookmarked, setInternalBookmarked] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const raw = localStorage.getItem('bancoresidencia_bookmarked_ids');
-        if (raw) {
-          const map = JSON.parse(raw);
-          setInternalBookmarked(!!map[question.id]);
-        }
-      } catch {
-        // ignore
-      }
-    }
-  }, [question.id]);
-
-  const isFavorited = isBookmarked !== undefined ? isBookmarked : internalBookmarked;
-
-  const handleToggleBookmark = () => {
-    if (onToggleBookmark) {
-      onToggleBookmark(question.id);
-    }
-    setInternalBookmarked((prev) => {
-      const next = !prev;
-      if (typeof window !== 'undefined') {
-        try {
-          const raw = localStorage.getItem('bancoresidencia_bookmarked_ids');
-          const map = raw ? JSON.parse(raw) : {};
-          map[question.id] = next;
-          localStorage.setItem('bancoresidencia_bookmarked_ids', JSON.stringify(map));
-        } catch {
-          // ignore
-        }
-      }
-      return next;
-    });
-  };
 
   // Estados de resolução da questão (seleção prévia vs confirmação no botão Resolver)
   const [pendingSelected, setPendingSelected] = useState<'A' | 'B' | 'C' | 'D' | 'E' | null>(userAnswer || null);
@@ -135,7 +171,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   // Estados de Marcador de Texto (Highlight)
   const [highlights, setHighlights] = useState<TextHighlight[]>([]);
-  const [activeHighlighterColor, setActiveHighlighterColor] = useState<'yellow' | 'green' | 'pink'>('yellow');
+  const activeHighlighterColor = propHighlighterColor || 'yellow';
 
   const statementRef = useRef<HTMLDivElement>(null);
 
@@ -331,7 +367,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     }
   };
 
-  const addHighlight = (text: string, color: 'yellow' | 'green' | 'pink') => {
+  const addHighlight = (text: string, color: HighlighterColor) => {
     if (!text.trim()) return;
     // Evita duplicar exatamente o mesmo trecho com a mesma cor
     const alreadyExists = highlights.some((h) => h.text === text && h.color === color);
@@ -386,6 +422,70 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setShowCommentary(true);
   };
 
+  // Atalhos de teclado: 1 a 5 para alternativas A a E e Enter para finalizar resolução
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ignora digitação em campos de texto ou elementos editáveis
+      const target = e.target as HTMLElement | null;
+      if (
+        target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.isContentEditable)
+      ) {
+        return;
+      }
+
+      // Ignora se o modal de salvar em pasta estiver aberto
+      if (isFolderModalOpen) return;
+
+      // Teclas 1 a 5 (numéricas do topo ou numpad)
+      const numberToLetter: Record<string, 'A' | 'B' | 'C' | 'D' | 'E'> = {
+        '1': 'A',
+        '2': 'B',
+        '3': 'C',
+        '4': 'D',
+        '5': 'E',
+        Digit1: 'A',
+        Digit2: 'B',
+        Digit3: 'C',
+        Digit4: 'D',
+        Digit5: 'E',
+        Numpad1: 'A',
+        Numpad2: 'B',
+        Numpad3: 'C',
+        Numpad4: 'D',
+        Numpad5: 'E'
+      };
+
+      const letter = numberToLetter[e.key] || numberToLetter[e.code];
+      if (letter) {
+        const hasOption = question.options?.some((opt) => opt.letter === letter);
+        if (hasOption) {
+          if (!isAnswered) {
+            e.preventDefault();
+            handleSelectOption(letter);
+          } else {
+            e.preventDefault();
+            toggleOptionExplanation(letter);
+          }
+        }
+        return;
+      }
+
+      // Tecla Enter para finalizar (confirmar resposta da questão)
+      if (e.key === 'Enter') {
+        if (!isAnswered && pendingSelected) {
+          e.preventDefault();
+          handleConfirmAnswer();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isAnswered, pendingSelected, question, isFolderModalOpen]);
+
   // Mapeamento dinâmico de fontes ergonômicas com alta visibilidade médica
   const statementSizeClass =
     fontSize === 'sm'
@@ -437,19 +537,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           );
 
           if (matchedHl) {
-            const colorClasses =
-              matchedHl.color === 'yellow'
-                ? 'bg-amber-300 dark:bg-amber-400 text-black dark:text-black font-semibold border-b-2 border-amber-500'
-                : matchedHl.color === 'green'
-                ? 'bg-emerald-300 dark:bg-emerald-400 text-black dark:text-black font-semibold border-b-2 border-emerald-500'
-                : 'bg-pink-300 dark:bg-pink-400 text-black dark:text-black font-semibold border-b-2 border-pink-500';
+            const colorConfig = HIGHLIGHTER_COLORS[matchedHl.color] || HIGHLIGHTER_COLORS.yellow;
 
             return (
               <mark
                 key={i}
                 onClick={() => removeHighlight(matchedHl.id)}
                 title="Clique para remover este destaque"
-                className={`cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-85 ${colorClasses}`}
+                style={{
+                  backgroundColor: colorConfig.hex,
+                  borderBottomColor: colorConfig.borderHex
+                }}
+                className="cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-85 text-black font-semibold border-b-2"
               >
                 {part}
               </mark>
@@ -463,95 +562,112 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   const isUserCorrect = isAnswered && pendingSelected === question.correctAnswer;
 
+  const selectionColorClass =
+    activeHighlighterColor === 'green'
+      ? 'selection:bg-emerald-300 dark:selection:bg-emerald-400 selection:text-black dark:selection:text-black'
+      : activeHighlighterColor === 'pink'
+      ? 'selection:bg-pink-300 dark:selection:bg-pink-400 selection:text-black dark:selection:text-black'
+      : activeHighlighterColor === 'blue'
+      ? 'selection:bg-sky-300 dark:selection:bg-sky-400 selection:text-black dark:selection:text-black'
+      : activeHighlighterColor === 'orange'
+      ? 'selection:bg-orange-300 dark:selection:bg-orange-400 selection:text-black dark:selection:text-black'
+      : activeHighlighterColor === 'purple'
+      ? 'selection:bg-purple-300 dark:selection:bg-purple-400 selection:text-black dark:selection:text-black'
+      : 'selection:bg-amber-300 dark:selection:bg-amber-400 selection:text-black dark:selection:text-black';
+
   return (
     <article className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6 relative transition-all">
-      {/* Header com Badges Médicos & Ferramentas da Questão */}
-      <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100 dark:border-slate-800/80">
-        <div className="flex flex-wrap items-center gap-2">
-          {/* Banca e Ano: Sempre visíveis por padrão conforme solicitado */}
-          <span className="text-xs font-bold px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 flex items-center gap-1.5 shadow-xs">
-            <Building className="w-3.5 h-3.5 text-blue-500" />
-            <span>{question.institution}</span>
-            <span className="text-slate-400">•</span>
-            <span>{question.year}</span>
-          </span>
+      {/* Header Reorganizado: Origem da Questão (Esquerda) + Ações e Contador (Direita) */}
+      <div className="flex flex-col gap-3 pb-4 border-b border-slate-100 dark:border-slate-800/80">
+        {/* Linha Principal do Topo */}
+        <div className="flex flex-wrap items-center justify-between gap-2.5">
+          {/* Canto Superior Esquerdo: Origem da Questão (Banca • Ano) */}
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 flex items-center gap-1.5 shadow-xs">
+              <Building className="w-3.5 h-3.5 text-blue-500" />
+              <span>{question.institution}</span>
+              <span className="text-slate-400">•</span>
+              <span>{question.year}</span>
+            </span>
 
-          {/* Botão para Revelar/Ocultar detalhes da questão (Especialidade, Dificuldade, Tema) */}
-          <button
-            type="button"
-            onClick={toggleShowDetails}
-            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
-              showDetails
-                ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800/60 text-blue-700 dark:text-blue-300'
-                : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
-            }`}
-            title={showDetails ? 'Ocultar detalhes extras da questão' : 'Visualizar detalhes extras (especialidade, nível e temas)'}
-          >
-            {showDetails ? (
-              <>
-                <EyeOff className="w-3.5 h-3.5 text-blue-500" />
-                <span>Ocultar Detalhes</span>
-              </>
-            ) : (
-              <>
-                <Eye className="w-3.5 h-3.5 text-slate-400" />
-                <span>Ver Detalhes</span>
-              </>
+            {/* Borracha rápida de limpar destaques se houver marcações na questão */}
+            {highlights.length > 0 && (
+              <button
+                type="button"
+                onClick={clearAllHighlights}
+                title={`Limpar ${highlights.length} marcação(ões) desta questão`}
+                className="flex items-center gap-1 px-2.5 py-1 text-[11px] font-semibold text-rose-600 hover:text-rose-700 dark:text-rose-400 dark:hover:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl transition-colors cursor-pointer border border-rose-200 dark:border-rose-900/50 shadow-xs"
+              >
+                <Eraser className="w-3.5 h-3.5" />
+                <span>Limpar ({highlights.length})</span>
+              </button>
             )}
-          </button>
+          </div>
 
-          {/* Botão de Favoritar a Questão na Barra Superior */}
-          <button
-            type="button"
-            onClick={handleToggleBookmark}
-            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
-              isFavorited
-                ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-300 dark:border-amber-700/60 text-amber-700 dark:text-amber-300'
-                : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
-            }`}
-            title={isFavorited ? 'Remover dos favoritos' : 'Favoritar esta questão'}
-          >
-            <Bookmark
-              className={`w-3.5 h-3.5 transition-transform ${
-                isFavorited ? 'fill-amber-500 text-amber-500 scale-110' : 'text-slate-400'
-              }`}
-            />
-            <span>{isFavorited ? 'Favoritada' : 'Favoritar'}</span>
-          </button>
-
-          {/* Botão de Salvar a Questão em Pasta Personalizada */}
-          {folders && onSaveToFolder && (
+          {/* Canto Superior Direito: Ações (Detalhes, Salvar na Pasta) + Contador da Questão */}
+          <div className="flex items-center gap-2">
+            {/* Botão para Revelar/Ocultar detalhes da questão (Apenas Ícone) */}
             <button
               type="button"
-              onClick={() => setIsFolderModalOpen(true)}
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
-                savedFolderIds.length > 0
-                  ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-300 dark:border-blue-700/60 text-blue-700 dark:text-blue-300'
+              onClick={toggleShowDetails}
+              className={`p-1.5 sm:px-2 sm:py-1.5 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
+                showDetails
+                  ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800/60 text-blue-700 dark:text-blue-300'
                   : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
               }`}
-              title="Salvar esta questão em uma pasta de estudos"
+              title={showDetails ? 'Ocultar detalhes extras da questão' : 'Visualizar detalhes extras (especialidade, nível e temas)'}
             >
-              <FolderPlus
-                className={`w-3.5 h-3.5 transition-transform ${
-                  savedFolderIds.length > 0 ? 'text-blue-600 dark:text-blue-400 scale-110' : 'text-slate-400'
-                }`}
-              />
-              <span>{savedFolderIds.length > 0 ? `Na Pasta (${savedFolderIds.length})` : 'Salvar na Pasta'}</span>
+              {showDetails ? (
+                <EyeOff className="w-3.5 h-3.5 text-blue-500" />
+              ) : (
+                <Eye className="w-3.5 h-3.5 text-slate-400" />
+              )}
             </button>
-          )}
 
-          {/* Badges Extras: Visíveis APENAS se o aluno apertar para ver detalhes */}
-          {showDetails && (
-            <>
+            {/* Botão de Salvar em Pasta Personalizada */}
+            {folders && onSaveToFolder && (
+              <button
+                type="button"
+                onClick={() => setIsFolderModalOpen(true)}
+                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
+                  savedFolderIds.length > 0
+                    ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-300 dark:border-blue-700/60 text-blue-700 dark:text-blue-300'
+                    : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                }`}
+                title="Salvar esta questão em uma pasta de estudos"
+              >
+                <FolderPlus
+                  className={`w-3.5 h-3.5 transition-transform ${
+                    savedFolderIds.length > 0 ? 'text-blue-600 dark:text-blue-400 scale-110' : 'text-slate-400'
+                  }`}
+                />
+                <span className="hidden sm:inline">{savedFolderIds.length > 0 ? `Na Pasta (${savedFolderIds.length})` : 'Salvar na Pasta'}</span>
+              </button>
+            )}
+
+            {/* Contador de Questão (1/50) */}
+            <div className="ml-1 pl-2 border-l border-slate-200 dark:border-slate-800">
+              <span className="text-xs sm:text-sm font-sans font-black text-slate-700 dark:text-slate-300 whitespace-nowrap">
+                {index + 1}/{total}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Linha 2: Badges Médicos & Hierarquia Temática (Visíveis quando showDetails está ativo) */}
+        {showDetails && (
+          <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100 dark:border-slate-800/60 animate-in fade-in duration-150">
+            {/* Badges de Especialidade, Dificuldade e Tipo de Prova */}
+            <div className="flex flex-wrap items-center gap-1.5">
               {(question.especialidade || question.specialty) && (
-                <span className="text-xs font-bold px-3 py-1 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60 shadow-xs animate-in fade-in duration-150">
+                <span className="text-xs font-bold px-3 py-1 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60 shadow-xs">
                   {question.especialidade || question.specialty}
                 </span>
               )}
 
               {question.difficulty && (
                 <span
-                  className={`text-xs font-semibold px-2.5 py-1 rounded-xl border shadow-xs animate-in fade-in duration-150 ${
+                  className={`text-xs font-semibold px-2.5 py-1 rounded-xl border shadow-xs ${
                     question.difficulty === 'Fácil'
                       ? 'bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/50'
                       : question.difficulty === 'Médio'
@@ -564,140 +680,37 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               )}
 
               {question.tipoProva && (
-                <span className="text-xs px-2.5 py-1 rounded-xl bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 font-medium border border-slate-200 dark:border-slate-800 animate-in fade-in duration-150">
+                <span className="text-xs px-2.5 py-1 rounded-xl bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 font-medium border border-slate-200 dark:border-slate-800">
                   {question.tipoProva}
                 </span>
               )}
-            </>
-          )}
-        </div>
+            </div>
 
-        {/* Ferramentas: Marca-texto, Tamanho de Fonte e Contador */}
-        <div className="flex items-center gap-2 sm:gap-3">
-          {/* Seletor do Marca-Texto */}
-          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-900/90 p-1 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold shadow-xs">
-            <span className="flex items-center gap-1 text-[11px] text-slate-600 dark:text-slate-400 px-1 font-semibold">
-              <Highlighter className="w-3.5 h-3.5 text-amber-500" />
-              <span className="hidden sm:inline">Marca-texto:</span>
-            </span>
-            <button
-              type="button"
-              onClick={() => setActiveHighlighterColor('yellow')}
-              title="Marca-texto Amarelo"
-              className={`w-5 h-5 rounded-md transition-all cursor-pointer border ${
-                activeHighlighterColor === 'yellow'
-                  ? 'bg-amber-300 border-amber-500 ring-2 ring-amber-400/40 scale-105'
-                  : 'bg-amber-200 border-amber-300 opacity-60 hover:opacity-100'
-              }`}
-            />
-            <button
-              type="button"
-              onClick={() => setActiveHighlighterColor('green')}
-              title="Marca-texto Verde"
-              className={`w-5 h-5 rounded-md transition-all cursor-pointer border ${
-                activeHighlighterColor === 'green'
-                  ? 'bg-emerald-300 border-emerald-500 ring-2 ring-emerald-400/40 scale-105'
-                  : 'bg-emerald-200 border-emerald-300 opacity-60 hover:opacity-100'
-              }`}
-            />
-            <button
-              type="button"
-              onClick={() => setActiveHighlighterColor('pink')}
-              title="Marca-texto Rosa"
-              className={`w-5 h-5 rounded-md transition-all cursor-pointer border ${
-                activeHighlighterColor === 'pink'
-                  ? 'bg-pink-300 border-pink-500 ring-2 ring-pink-400/40 scale-105'
-                  : 'bg-pink-200 border-pink-300 opacity-60 hover:opacity-100'
-              }`}
-            />
-            {highlights.length > 0 && (
-              <button
-                type="button"
-                onClick={clearAllHighlights}
-                title="Limpar todas as marcações desta questão"
-                className="flex items-center gap-1 text-[10px] text-slate-500 hover:text-rose-600 dark:hover:text-rose-400 px-1 py-0.5 rounded transition-colors cursor-pointer ml-1"
-              >
-                <Eraser className="w-3 h-3" />
-                <span className="hidden md:inline">Limpar ({highlights.length})</span>
-              </button>
+            {/* Tema, Foco e Subfoco Clínico */}
+            {(question.subtheme || question.tema) && (
+              <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
+                <Layers className="w-3.5 h-3.5 text-blue-500" />
+                <span className="font-semibold">Tema:</span>
+                <span className="text-slate-900 dark:text-slate-200 font-bold">
+                  {question.subtheme || question.tema}
+                </span>
+                {question.foco && (
+                  <>
+                    <span className="text-slate-300 dark:text-slate-700">•</span>
+                    <span className="text-purple-600 dark:text-purple-400 font-medium">{question.foco}</span>
+                  </>
+                )}
+                {question.subfoco && (
+                  <>
+                    <span className="text-slate-300 dark:text-slate-700">•</span>
+                    <span className="text-slate-600 dark:text-slate-400 italic">{question.subfoco}</span>
+                  </>
+                )}
+              </div>
             )}
           </div>
-
-          {/* Ajuste de Fonte */}
-          {onChangeFontSize && (
-            <div className="flex items-center gap-0.5 bg-slate-100 dark:bg-slate-900/90 p-1 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold shadow-xs">
-              <span className="text-[10px] text-slate-500 dark:text-slate-400 px-1 font-semibold">Fonte:</span>
-              <button
-                type="button"
-                onClick={() => onChangeFontSize('sm')}
-                title="Fonte Compacta"
-                className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
-                  fontSize === 'sm'
-                    ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
-                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
-                }`}
-              >
-                A-
-              </button>
-              <button
-                type="button"
-                onClick={() => onChangeFontSize('base')}
-                title="Fonte Padrão"
-                className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
-                  fontSize === 'base'
-                    ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
-                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
-                }`}
-              >
-                A
-              </button>
-              <button
-                type="button"
-                onClick={() => onChangeFontSize('lg')}
-                title="Fonte Grande"
-                className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
-                  fontSize === 'lg'
-                    ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
-                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
-                }`}
-              >
-                A+
-              </button>
-            </div>
-          )}
-
-          <span className="text-sm sm:text-base font-sans font-black text-slate-700 dark:text-slate-300">
-            {index + 1}/{total}
-          </span>
-        </div>
+        )}
       </div>
-
-      {/* Tema, Foco e Subfoco Clínico (Exibido apenas se o aluno apertar para ver detalhes) */}
-      {showDetails && (question.subtheme || question.tema) && (
-        <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400 animate-in fade-in duration-150">
-          <Layers className="w-3.5 h-3.5 text-blue-500" />
-          <span className="font-semibold">Tema:</span>
-          <span className="text-slate-900 dark:text-slate-200 font-bold">
-            {question.subtheme || question.tema}
-          </span>
-          {question.foco && (
-            <>
-              <span className="text-slate-300 dark:text-slate-700">•</span>
-              <span className="text-purple-600 dark:text-purple-400 font-medium">
-                {question.foco}
-              </span>
-            </>
-          )}
-          {question.subfoco && (
-            <>
-              <span className="text-slate-300 dark:text-slate-700">•</span>
-              <span className="text-slate-600 dark:text-slate-400 italic">
-                {question.subfoco}
-              </span>
-            </>
-          )}
-        </div>
-      )}
 
       {/* Enunciado Clínico com Marcador de Texto Ativo - Texto Justificado */}
       <div className="relative">
@@ -705,7 +718,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           ref={statementRef}
           onMouseUp={handleStatementMouseUp}
           onTouchEnd={handleStatementMouseUp}
-          className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-justify selection:bg-amber-300 selection:text-black dark:selection:bg-amber-400 dark:selection:text-black`}
+          className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-justify ${selectionColorClass}`}
           style={{ textAlign: 'justify', textJustify: 'inter-word' }}
         >
           {renderHighlightedStatement(question.statement)}
@@ -782,6 +795,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                   <div className="flex items-start gap-3 flex-1">
                     {/* Letra da Alternativa */}
                     <span
+                      title={`Alternativa ${option.letter} (tecla ${['A', 'B', 'C', 'D', 'E'].indexOf(option.letter) + 1})`}
                       className={`${badgeSizeClass} rounded-xl flex items-center justify-center font-extrabold shrink-0 mt-0.5 shadow-xs transition-colors ${
                         isAnswered && isCorrect
                           ? 'bg-emerald-600 text-white'
@@ -922,16 +936,21 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
               <div className="text-xs text-slate-600 dark:text-slate-400">
                 {pendingSelected ? (
-                  <span className="flex items-center gap-1.5">
+                  <span className="flex items-center gap-1.5 flex-wrap">
                     <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
                     <span>
                       Alternativa <strong className="text-blue-600 dark:text-blue-400 font-black">{pendingSelected}</strong> selecionada.
                     </span>
+                    <span className="hidden sm:inline-flex items-center gap-1 text-[11px] text-slate-400 dark:text-slate-500 ml-1">
+                      • Pressione <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-bold border border-slate-300 dark:border-slate-700">Enter ↵</kbd> para finalizar
+                    </span>
                   </span>
                 ) : (
-                  <span className="flex items-center gap-1.5 text-slate-500">
+                  <span className="flex items-center gap-1.5 text-slate-500 flex-wrap">
                     <HelpCircle className="w-3.5 h-3.5" />
-                    <span>Selecione uma alternativa acima e clique em Resolver para confirmar.</span>
+                    <span>
+                      Selecione uma alternativa <span className="hidden sm:inline text-slate-400">(teclas 1 a 5)</span> e finalize com <kbd className="hidden sm:inline px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-bold border border-slate-300 dark:border-slate-700">Enter</kbd>.
+                    </span>
                   </span>
                 )}
               </div>
@@ -940,6 +959,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 type="button"
                 onClick={handleConfirmAnswer}
                 disabled={!pendingSelected}
+                title={pendingSelected ? 'Pressione Enter ou clique para finalizar' : 'Selecione uma alternativa'}
                 className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
                   pendingSelected
                     ? 'text-white hover:scale-102 active:scale-98 shadow-md'
@@ -956,7 +976,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>
-                  {pendingSelected ? 'Resolver Questão' : 'Selecione uma Alternativa'}
+                  {pendingSelected ? 'Resolver (Enter ↵)' : 'Selecione uma Alternativa'}
                 </span>
               </button>
             </div>
