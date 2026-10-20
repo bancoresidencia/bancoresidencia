@@ -60,6 +60,7 @@ __pycache__/
 !data/medcurso_comparacao_resultado.json
 !data/medcurso_all_questoes_folders.json
 !data/medcurso_extraction_status.json
+!data/exam_to_question_ids.json
 /data/official_exams/**/*.pdf
 /data/official_exams/**/*.rar
 /data/official_exams/**/*.zip

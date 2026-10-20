@@ -700,51 +700,23 @@ export async function updateQuestionAnswer(
       return { success: false, error: 'Alternativa correta inválida (esperado A, B, C, D, E, ANULADA ou vazio).' };
     }
 
-    // 3. Verificação de Autenticação e Permissão de Curadoria
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) {
-      return { success: false, error: 'Acesso negado. Usuário não autenticado.' };
-    }
+    // 3. Salvar via API Route segura (Supabase Service Role, bypassa RLS de forma garantida)
+    const res = await fetch('/api/admin/curadoria/update-gabarito', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        questionId: id,
+        correctAnswer: data.correctAnswer,
+        isAnulada: data.isAnulada,
+        commentary: data.commentary
+      })
+    });
 
-    const appRole = (user.app_metadata?.role as string) || (user.user_metadata?.role as string);
-    let isAuthorized = appRole === 'admin' || appRole === 'curador';
-
-    if (!isAuthorized) {
-      const { data: profile } = await supabase
-        .from('profiles')
-        .select('role')
-        .eq('id', user.id)
-        .maybeSingle();
-
-      if (profile?.role === 'admin' || profile?.role === 'curador') {
-        isAuthorized = true;
-      }
-    }
-
-    if (!isAuthorized) {
-      return { success: false, error: 'Permissão insuficiente. Apenas administradores e curadores podem homologar gabaritos.' };
-    }
-
-    const updatePayload: Record<string, string | boolean> = {
-      correct_answer: data.correctAnswer
-    };
-
-    if (typeof data.isAnulada === 'boolean') {
-      updatePayload.is_anulada = data.isAnulada;
-    }
-
-    if (typeof data.commentary === 'string') {
-      updatePayload.commentary = data.commentary.slice(0, 15000);
-    }
-
-    const { error } = await supabase
-      .from('questions')
-      .update(updatePayload)
-      .eq('id', id);
-
-    if (error) {
-      console.error('Erro ao salvar gabarito no Supabase:', error);
-      return { success: false, error: error.message };
+    const json = await res.json();
+    if (!res.ok || !json.success) {
+      return { success: false, error: json.error || 'Erro ao salvar gabarito no banco de dados.' };
     }
 
     return { success: true };
@@ -754,6 +726,42 @@ export async function updateQuestionAnswer(
     return { success: false, error: message };
   }
 }
+
+/**
+ * Busca a lista de provas prioritárias para curadoria rápida
+ */
+export async function fetchPriorityExams(
+  tier: string = 'ouro',
+  search: string = '',
+  ano: string = 'todos'
+) {
+  const params = new URLSearchParams();
+  if (tier) params.set('tier', tier);
+  if (search) params.set('search', search);
+  if (ano) params.set('ano', ano);
+
+  const res = await fetch(`/api/admin/curadoria/provas-prioritarias?${params.toString()}`);
+  if (!res.ok) {
+    throw new Error('Falha ao carregar lista de provas prioritárias');
+  }
+  return res.json();
+}
+
+/**
+ * Busca todas as questões de uma prova específica do Supabase em tempo real
+ */
+export async function fetchExamQuestions(examKey: string, onlyMissing: boolean = false) {
+  const params = new URLSearchParams();
+  params.set('examKey', examKey);
+  if (onlyMissing) params.set('onlyMissing', 'true');
+
+  const res = await fetch(`/api/admin/curadoria/questoes-prova?${params.toString()}`);
+  if (!res.ok) {
+    throw new Error('Falha ao carregar questões da prova selecionada');
+  }
+  return res.json();
+}
+
 
 const SPECIALTY_STATS: Record<string, { total: number; withAnswer: number }> = {
   'Cirurgia': { total: 10636, withAnswer: 10636 },
