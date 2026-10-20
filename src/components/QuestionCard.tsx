@@ -173,6 +173,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   const [highlights, setHighlights] = useState<TextHighlight[]>([]);
   const activeHighlighterColor = propHighlighterColor || 'yellow';
 
+  // Rastreamento da alternativa em hover para atalho de corte/risco (Backspace/Delete)
+  const [hoveredOptionLetter, setHoveredOptionLetter] = useState<string | null>(null);
+
   const statementRef = useRef<HTMLDivElement>(null);
 
   // Visibilidade dos detalhes extras da questão (Banca e Ano aparecem por padrão; demais detalhes apenas se o aluno apertar)
@@ -210,6 +213,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setEliminatedOptions({});
     setExpandedOptions({});
     setHighlights([]);
+    setHoveredOptionLetter(null);
   }
 
   // Alterna expansão da justificativa de uma alternativa específica
@@ -422,7 +426,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setShowCommentary(true);
   };
 
-  // Atalhos de teclado: 1 a 5 para alternativas A a E e Enter para finalizar resolução
+  // Atalhos de teclado: 1 a 5 ou A a E, Enter para finalizar, Backspace/Del para riscar e C para gabarito
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Ignora digitação em campos de texto ou elementos editáveis
@@ -439,8 +443,46 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       // Ignora se o modal de salvar em pasta estiver aberto
       if (isFolderModalOpen) return;
 
-      // Teclas 1 a 5 (numéricas do topo ou numpad)
-      const numberToLetter: Record<string, 'A' | 'B' | 'C' | 'D' | 'E'> = {
+      // Tecla Backspace ou Delete: Riscar / Cortar a alternativa selecionada pelo teclado (ou sob o mouse)
+      if (e.key === 'Backspace' || e.key === 'Delete') {
+        if (!isAnswered) {
+          const targetLetter = (pendingSelected || hoveredOptionLetter) as 'A' | 'B' | 'C' | 'D' | 'E' | null;
+          if (targetLetter) {
+            e.preventDefault();
+            setEliminatedOptions((prev) => {
+              const nextEliminated = !prev[targetLetter];
+              if (nextEliminated && pendingSelected === targetLetter) {
+                setPendingSelected(null);
+              }
+              return {
+                ...prev,
+                [targetLetter]: nextEliminated
+              };
+            });
+            return;
+          }
+        }
+      }
+
+      // Se pressionou C ou G e já respondeu, permite usar como atalho para Comentário do Professor / Gabarito
+      if ((e.key === 'c' || e.key === 'C' || e.key === 'g' || e.key === 'G') && isAnswered) {
+        e.preventDefault();
+        setShowCommentary((prev) => !prev);
+        return;
+      }
+
+      // Se pressionou V e já respondeu, permite alternar justificativa da opção selecionada ou em hover
+      if ((e.key === 'v' || e.key === 'V') && isAnswered) {
+        const targetLetter = (hoveredOptionLetter || pendingSelected || question.correctAnswer) as 'A' | 'B' | 'C' | 'D' | 'E' | undefined;
+        if (targetLetter) {
+          e.preventDefault();
+          toggleOptionExplanation(targetLetter);
+          return;
+        }
+      }
+
+      // Teclas 1 a 5 ou A a E para seleção de alternativas
+      const keyMap: Record<string, 'A' | 'B' | 'C' | 'D' | 'E'> = {
         '1': 'A',
         '2': 'B',
         '3': 'C',
@@ -455,10 +497,25 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         Numpad2: 'B',
         Numpad3: 'C',
         Numpad4: 'D',
-        Numpad5: 'E'
+        Numpad5: 'E',
+        a: 'A',
+        b: 'B',
+        c: 'C',
+        d: 'D',
+        e: 'E',
+        A: 'A',
+        B: 'B',
+        C: 'C',
+        D: 'D',
+        E: 'E',
+        KeyA: 'A',
+        KeyB: 'B',
+        KeyC: 'C',
+        KeyD: 'D',
+        KeyE: 'E'
       };
 
-      const letter = numberToLetter[e.key] || numberToLetter[e.code];
+      const letter = keyMap[e.key] || keyMap[e.code];
       if (letter) {
         const hasOption = question.options?.some((opt) => opt.letter === letter);
         if (hasOption) {
@@ -484,7 +541,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isAnswered, pendingSelected, question, isFolderModalOpen]);
+  }, [isAnswered, pendingSelected, question, isFolderModalOpen, hoveredOptionLetter]);
 
   // Mapeamento dinâmico de fontes ergonômicas com alta visibilidade médica
   const statementSizeClass =
@@ -789,6 +846,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               <div
                 key={option.letter}
                 onClick={() => handleSelectOption(option.letter)}
+                onMouseEnter={() => setHoveredOptionLetter(option.letter)}
+                onMouseLeave={() => setHoveredOptionLetter(null)}
                 className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex flex-col group rounded-2xl cursor-pointer ${optionContainerStyle}`}
               >
                 <div className="flex items-start justify-between w-full gap-3">
@@ -931,35 +990,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             );
           })}
 
-          {/* BARRA DE AÇÃO: BOTÃO "RESOLVER" (Ao selecionar, confirma envio) */}
+          {/* BARRA DE AÇÃO: BOTÃO "RESOLVER" */}
           {!isAnswered ? (
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
-              <div className="text-xs text-slate-600 dark:text-slate-400">
-                {pendingSelected ? (
-                  <span className="flex items-center gap-1.5 flex-wrap">
-                    <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-                    <span>
-                      Alternativa <strong className="text-blue-600 dark:text-blue-400 font-black">{pendingSelected}</strong> selecionada.
-                    </span>
-                    <span className="hidden sm:inline-flex items-center gap-1 text-[11px] text-slate-400 dark:text-slate-500 ml-1">
-                      • Pressione <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-bold border border-slate-300 dark:border-slate-700">Enter ↵</kbd> para finalizar
-                    </span>
-                  </span>
-                ) : (
-                  <span className="flex items-center gap-1.5 text-slate-500 flex-wrap">
-                    <HelpCircle className="w-3.5 h-3.5" />
-                    <span>
-                      Selecione uma alternativa <span className="hidden sm:inline text-slate-400">(teclas 1 a 5)</span> e finalize com <kbd className="hidden sm:inline px-1 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px] text-slate-700 dark:text-slate-300 font-bold border border-slate-300 dark:border-slate-700">Enter</kbd>.
-                    </span>
-                  </span>
-                )}
-              </div>
-
+            <div className="pt-2 flex items-center justify-end">
               <button
                 type="button"
                 onClick={handleConfirmAnswer}
                 disabled={!pendingSelected}
-                title={pendingSelected ? 'Pressione Enter ou clique para finalizar' : 'Selecione uma alternativa'}
+                title={pendingSelected ? 'Resolver questão' : 'Selecione uma alternativa'}
                 className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
                   pendingSelected
                     ? 'text-white hover:scale-102 active:scale-98 shadow-md'
@@ -975,9 +1013,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 }
               >
                 <Send className="w-3.5 h-3.5" />
-                <span>
-                  {pendingSelected ? 'Resolver (Enter ↵)' : 'Selecione uma Alternativa'}
-                </span>
+                <span>Resolver</span>
               </button>
             </div>
           ) : (

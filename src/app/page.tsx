@@ -112,8 +112,10 @@ import {
   Check,
   FolderPlus,
   Clock,
-  ShieldCheck
+  ShieldCheck,
+  Keyboard
 } from 'lucide-react';
+import { KeyboardShortcutsModal } from '@/components/KeyboardShortcutsModal';
 
 export default function Home() {
   const { accentConfig } = useTheme();
@@ -357,6 +359,11 @@ export default function Home() {
   const [activeHighlighterColor, setActiveHighlighterColor] = useState<HighlighterColor>('yellow');
   const [isTopHighlighterMenuOpen, setIsTopHighlighterMenuOpen] = useState<boolean>(false);
   const topHighlighterMenuRef = useRef<HTMLDivElement>(null);
+
+  // Controle de visibilidade da régua sequencial retrátil de questões (Imagem 1)
+  const [isQuestionSequenceOpen, setIsQuestionSequenceOpen] = useState<boolean>(false);
+  // Modal de orientação de atalhos de teclado (Imagem 3)
+  const [isShortcutsModalOpen, setIsShortcutsModalOpen] = useState<boolean>(false);
 
   // Fecha o dropdown de cores do marca-texto da barra superior ao clicar fora
   useEffect(() => {
@@ -768,7 +775,7 @@ export default function Home() {
     return filteredQuestions.slice(0, targetCount);
   }, [filteredQuestions, userAnswers, currentQuestionIndex, activeListId, lists, sessionQuestionLimit, sessionQuestionIds]);
 
-  // Navegação de questões pelo teclado com setas Esquerda (<-) e Direita (->)
+  // Navegação e atalhos globais de questões pelo teclado
   useEffect(() => {
     if (activeTab !== 'banco' || bancoMode !== 'resolucao') return;
 
@@ -783,11 +790,57 @@ export default function Home() {
         return;
       }
 
-      if (e.key === 'ArrowLeft') {
+      // Atalho ? para abrir o modal de atalhos de teclado
+      if (e.key === '?' || (e.key === '/' && e.shiftKey)) {
+        e.preventDefault();
+        setIsShortcutsModalOpen((prev) => !prev);
+        return;
+      }
+
+      // Atalho Q ou P para alternar a exibição da régua de questões
+      if (e.key === 'q' || e.key === 'Q' || e.key === 'p' || e.key === 'P') {
+        e.preventDefault();
+        setIsQuestionSequenceOpen((prev) => !prev);
+        return;
+      }
+
+      // Atalho M para menu de marca-texto
+      if (e.key === 'm' || e.key === 'M') {
+        e.preventDefault();
+        setIsTopHighlighterMenuOpen((prev) => !prev);
+        return;
+      }
+
+      // Atalho B para favoritar a questão atual
+      if (e.key === 'b' || e.key === 'B') {
+        const currQ = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)];
+        if (currQ) {
+          e.preventDefault();
+          setBookmarkedQuestionIds((prev) => ({
+            ...prev,
+            [currQ.id]: !prev[currQ.id]
+          }));
+        }
+        return;
+      }
+
+      // Atalho + ou - para tamanho da fonte
+      if (e.key === '+' || e.key === '=' || e.key === ']') {
+        e.preventDefault();
+        handleFontSizeChange(fontSize === 'sm' ? 'base' : 'lg');
+        return;
+      }
+      if (e.key === '-' || e.key === '_' || e.key === '[') {
+        e.preventDefault();
+        handleFontSizeChange(fontSize === 'lg' ? 'base' : 'sm');
+        return;
+      }
+
+      if (e.key === 'ArrowLeft' || e.key === 'k' || e.key === 'K') {
         e.preventDefault();
         setCurrentQuestionIndex((prev) => Math.max(0, prev - 1));
         setQuestionTimer(0);
-      } else if (e.key === 'ArrowRight') {
+      } else if (e.key === 'ArrowRight' || e.key === 'j' || e.key === 'J') {
         e.preventDefault();
         setCurrentQuestionIndex((prev) => {
           if (prev + 1 < visibleQuestions.length) {
@@ -805,7 +858,7 @@ export default function Home() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeTab, bancoMode, visibleQuestions.length, totalSupabaseCount]);
+  }, [activeTab, bancoMode, visibleQuestions.length, totalSupabaseCount, filteredQuestions, currentQuestionIndex, fontSize]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     const q = supabaseQuestions.find((item) => item.id === questionId);
@@ -2100,306 +2153,386 @@ export default function Home() {
                 <div className="space-y-5 animate-in fade-in duration-200">
                   {visibleQuestions.length > 0 ? (
                     <>
-                      {/* BARRA SUPERIOR SEQUENCIAL (MODELO DA IMAGEM 2) */}
-                      <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-                        {/* Esquerda: Setas e Numeração das Questões em Sequência */}
-                        <div className="flex items-center gap-1.5 overflow-hidden min-w-0">
-                          {/* Seta Anterior */}
-                          <button
-                            type="button"
-                            disabled={Math.min(currentQuestionIndex, visibleQuestions.length - 1) === 0}
-                            onClick={() => {
-                              setCurrentQuestionIndex((prev) => Math.max(0, prev - 1));
-                              setQuestionTimer(0);
-                            }}
-                            className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed shrink-0 transition-colors cursor-pointer"
-                            title="Questão anterior"
-                          >
-                            <ChevronLeft className="w-4 h-4" />
-                          </button>
-
-                          {/* Pílulas de Questão (1, 2, 3...) com indicador de acerto/erro e acompanhamento suave */}
-                          <div
-                            ref={questionScrollContainerRef}
-                            className="flex items-center gap-1 overflow-x-auto no-scrollbar py-0.5 px-0.5 scroll-smooth"
-                          >
-                            {visibleQuestions.map((q, idx) => {
-                              const isCurrent = idx === Math.min(currentQuestionIndex, visibleQuestions.length - 1);
-                              const ans = userAnswers[q.id];
-                              const isAnswered = !!ans;
-                              const isCorrect = ans?.isCorrect;
+                      {/* BARRA SUPERIOR SEQUENCIAL (MODELO DA IMAGEM 2 COM RÉGUA RETRÁTIL DA IMAGEM 1) */}
+                      <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-xs flex flex-col gap-2.5">
+                        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+                          {/* Esquerda: Widget de Progresso Circular Retrátil (Modelo da Imagem 2) */}
+                          <div className="flex items-center gap-3">
+                            {(() => {
+                              const answeredCount = visibleQuestions.filter((q) => !!userAnswers[q.id]).length;
+                              const progressPercent = visibleQuestions.length > 0
+                                ? Math.round((answeredCount / visibleQuestions.length) * 100)
+                                : 0;
 
                               return (
                                 <button
-                                  key={q.id}
-                                  ref={(el) => {
-                                    questionButtonRefs.current[idx] = el;
-                                  }}
                                   type="button"
-                                  onClick={() => {
-                                    setCurrentQuestionIndex(idx);
-                                    setQuestionTimer(0);
-                                  }}
-                                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full font-sans font-black text-sm sm:text-[15px] flex items-center justify-center shrink-0 transition-all cursor-pointer ${
-                                    isCurrent
-                                      ? 'text-white shadow-md ring-2 ring-offset-1 ring-blue-500/40'
-                                      : isAnswered
-                                      ? isCorrect
-                                        ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-700/60'
-                                        : 'bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-300 dark:border-rose-700/60'
-                                      : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
-                                  }`}
-                                  style={isCurrent ? { backgroundColor: accentConfig.primaryHex } : undefined}
-                                  title={`Questão ${idx + 1}${isAnswered ? (isCorrect ? ' (Correta)' : ' (Incorreta)') : ''}`}
+                                  onClick={() => setIsQuestionSequenceOpen((prev) => !prev)}
+                                  className="flex items-center gap-3 p-1 sm:px-3 sm:py-1.5 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-900 border border-transparent hover:border-slate-200 dark:hover:border-slate-800 transition-all cursor-pointer group text-left"
+                                  title={
+                                    isQuestionSequenceOpen
+                                      ? 'Ocultar régua de questões (Q)'
+                                      : 'Ver régua de questões na íntegra (Q)'
+                                  }
                                 >
-                                  {idx + 1}
+                                  {/* Círculo de Progresso com Porcentagem (Estilo Imagem 2) */}
+                                  <div className="relative w-10 h-10 flex items-center justify-center shrink-0">
+                                    <svg className="w-10 h-10 -rotate-90" viewBox="0 0 36 36">
+                                      <path
+                                        className="text-slate-200 dark:text-slate-800"
+                                        strokeWidth="3.2"
+                                        stroke="currentColor"
+                                        fill="none"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <path
+                                        strokeDasharray={`${progressPercent}, 100`}
+                                        strokeWidth="3.2"
+                                        strokeLinecap="round"
+                                        stroke="currentColor"
+                                        fill="none"
+                                        style={{ color: accentConfig.primaryHex }}
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                    </svg>
+                                    <span className="absolute text-[11px] font-black font-sans text-slate-800 dark:text-slate-100 tracking-tighter">
+                                      {progressPercent}%
+                                    </span>
+                                  </div>
+
+                                  {/* Posição e Rótulo Progresso (Estilo Imagem 2) */}
+                                  <div className="flex flex-col">
+                                    <div className="flex items-center gap-1.5">
+                                      <span className="text-sm sm:text-base font-black font-sans text-[#0f274a] dark:text-white leading-tight tracking-tight">
+                                        {answeredCount}/{visibleQuestions.length}
+                                      </span>
+                                      <ChevronDown
+                                        className={`w-3.5 h-3.5 text-slate-400 group-hover:text-blue-500 transition-transform duration-200 ${
+                                          isQuestionSequenceOpen ? 'rotate-180 text-blue-500' : ''
+                                        }`}
+                                      />
+                                    </div>
+                                    <span className="text-[11px] font-medium text-slate-400 dark:text-slate-500 capitalize">
+                                      Progresso
+                                    </span>
+                                  </div>
                                 </button>
                               );
-                            })}
+                            })()}
+                          </div>
 
-                            {/* Ícone para adicionar questão pelo filtro */}
+                          {/* Direita: Ferramentas de Estudo (Marca-Texto 6 cores, Fonte A-/A/A+, Favoritar, Reportar, Atalhos do Teclado, Filtros, Finalizar) */}
+                          <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-2.5 shrink-0 border-t lg:border-t-0 pt-2 lg:pt-0 border-slate-100 dark:border-slate-800">
+                            {/* Marca-texto compacto com 6 cores retrátil */}
+                            <div ref={topHighlighterMenuRef} className="relative inline-flex items-center">
+                              <button
+                                type="button"
+                                onClick={() => setIsTopHighlighterMenuOpen((prev) => !prev)}
+                                title={`Marca-texto ativo: ${HIGHLIGHTER_COLORS[activeHighlighterColor].name}. Clique para alternar cor (M).`}
+                                className="flex items-center gap-1.5 px-2.5 py-1.5 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 rounded-xl transition-all cursor-pointer shadow-xs group"
+                              >
+                                <Highlighter className="w-3.5 h-3.5 text-slate-700 dark:text-slate-300 group-hover:scale-110 transition-transform" />
+                                <span
+                                  className="w-3.5 h-3.5 rounded-full border border-black/15 dark:border-white/20 shadow-xs transition-transform"
+                                  style={{ backgroundColor: HIGHLIGHTER_COLORS[activeHighlighterColor].hex }}
+                                />
+                                <ChevronDown
+                                  className={`w-3 h-3 text-slate-400 transition-transform duration-200 ${
+                                    isTopHighlighterMenuOpen ? 'rotate-180' : ''
+                                  }`}
+                                />
+                              </button>
+
+                              {/* Pílula Flutuante Horizontal Centralizada com as 6 Cores de Marca-texto em Linha */}
+                              {isTopHighlighterMenuOpen && (
+                                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 w-max min-w-max flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800 rounded-full shadow-xl animate-in fade-in zoom-in-95 duration-150">
+                                  {(['yellow', 'green', 'pink', 'blue', 'orange', 'purple'] as HighlighterColor[]).map((colorKey) => {
+                                    const c = HIGHLIGHTER_COLORS[colorKey];
+                                    const isSelected = activeHighlighterColor === colorKey;
+                                    return (
+                                      <button
+                                        key={colorKey}
+                                        type="button"
+                                        onClick={() => {
+                                          setActiveHighlighterColor(colorKey);
+                                          setIsTopHighlighterMenuOpen(false);
+                                        }}
+                                        title={`Marca-texto ${c.name}`}
+                                        style={{
+                                          backgroundColor: c.hex,
+                                          borderColor: isSelected ? c.borderHex : 'transparent'
+                                        }}
+                                        className={`w-6 h-6 rounded-full transition-all cursor-pointer flex items-center justify-center border shrink-0 ${
+                                          isSelected
+                                            ? 'ring-2 ring-blue-500/60 shadow-xs scale-105'
+                                            : 'opacity-90 hover:opacity-100 hover:scale-110'
+                                        }`}
+                                      >
+                                        {isSelected && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
+                                      </button>
+                                    );
+                                  })}
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Seletor de Tamanho de Fonte (A- / A / A+) */}
+                            <div className="flex items-center gap-0.5 bg-slate-50 dark:bg-slate-900 p-1 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold shadow-xs">
+                              <span className="text-[10px] text-slate-500 dark:text-slate-400 px-1 font-semibold">Fonte:</span>
+                              <button
+                                type="button"
+                                onClick={() => handleFontSizeChange('sm')}
+                                title="Fonte Compacta (-)"
+                                className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
+                                  fontSize === 'sm'
+                                    ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
+                                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
+                                }`}
+                              >
+                                A-
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => handleFontSizeChange('base')}
+                                title="Fonte Padrão"
+                                className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
+                                  fontSize === 'base'
+                                    ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
+                                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
+                                }`}
+                              >
+                                A
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => handleFontSizeChange('lg')}
+                                title="Fonte Grande (+)"
+                                className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
+                                  fontSize === 'lg'
+                                    ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
+                                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
+                                }`}
+                              >
+                                A+
+                              </button>
+                            </div>
+
+                            {/* Ações de Questão: Favoritar (Apenas Símbolo Bookmark) e Reportar */}
+                            <div className="flex items-center gap-1 text-slate-500 dark:text-slate-400">
+                              {/* Favoritar: Somente o Símbolo Bookmark */}
+                              {filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)] && (
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    const qId = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id;
+                                    setBookmarkedQuestionIds((prev) => ({
+                                      ...prev,
+                                      [qId]: !prev[qId]
+                                    }));
+                                  }}
+                                  className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
+                                    bookmarkedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
+                                      ? 'text-amber-500'
+                                      : 'text-slate-400 hover:text-amber-500'
+                                  }`}
+                                  title={
+                                    bookmarkedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
+                                      ? 'Remover dos favoritos (B)'
+                                      : 'Favoritar questão (B)'
+                                  }
+                                >
+                                  <Bookmark
+                                    className={`w-4 h-4 transition-transform ${
+                                      bookmarkedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
+                                        ? 'fill-amber-500 text-amber-500 scale-110'
+                                        : ''
+                                    }`}
+                                  />
+                                </button>
+                              )}
+
+                              {/* Reportar */}
+                              {filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)] && (
+                                <button
+                                  type="button"
+                                  onClick={async () => {
+                                    const currentQ = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)];
+                                    if (!currentQ) return;
+                                    setReportedQuestionIds((prev) => ({
+                                      ...prev,
+                                      [currentQ.id]: true
+                                    }));
+                                    await reportQuestionIssue(currentQ.id, 'Apontamento de erro em questão');
+                                    success('Questão enviada para auditoria da banca médica.', 'Denúncia Registrada');
+                                  }}
+                                  className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
+                                    reportedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
+                                      ? 'text-amber-500 fill-amber-500'
+                                      : 'text-slate-400 hover:text-amber-500'
+                                  }`}
+                                  title="Reportar erro na questão (R)"
+                                >
+                                  <Flag
+                                    className={`w-4 h-4 ${
+                                      reportedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
+                                        ? 'fill-amber-500'
+                                        : ''
+                                    }`}
+                                  />
+                                </button>
+                              )}
+                            </div>
+
+                            {/* Botão de Atalhos do Teclado (Imagem 3) */}
+                            <button
+                              type="button"
+                              onClick={() => setIsShortcutsModalOpen(true)}
+                              className="flex items-center gap-1.5 p-2 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs group"
+                              title="Atalhos do Teclado (?)"
+                            >
+                              <Keyboard className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
+                              <span className="hidden sm:inline text-xs font-bold">Atalhos</span>
+                            </button>
+
+                            {/* Botão de Filtros (Apenas Ícones) */}
                             <button
                               type="button"
                               onClick={() => setBancoMode('filtros')}
-                              className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-dashed border-slate-300 dark:border-slate-700 hover:border-blue-500 text-slate-400 hover:text-blue-500 hover:bg-blue-50/60 dark:hover:bg-blue-950/40 flex items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs ml-0.5"
-                              title="Adicionar questões pelo filtro"
+                              className="flex items-center gap-1.5 p-2 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs"
+                              title="Filtros de questões"
                             >
-                              <Plus className="w-3.5 h-3.5" />
+                              <Plus className="w-3.5 h-3.5 text-blue-500" />
+                              <SlidersHorizontal className="w-3.5 h-3.5" />
+                              {activeFiltersCount > 0 && (
+                                <span
+                                  className="px-1.5 py-0.2 rounded-full text-[10px] font-mono text-white font-extrabold"
+                                  style={{ backgroundColor: accentConfig.primaryHex }}
+                                >
+                                  {activeFiltersCount}
+                                </span>
+                              )}
                             </button>
-                          </div>
 
-                          {/* Seta Próxima */}
-                          <button
-                            type="button"
-                            disabled={
-                              currentQuestionIndex >= visibleQuestions.length - 1 &&
-                              visibleQuestions.length >= totalSupabaseCount
-                            }
-                            onClick={() => {
-                              if (currentQuestionIndex + 1 < visibleQuestions.length) {
-                                setCurrentQuestionIndex((prev) => prev + 1);
-                                setQuestionTimer(0);
-                              } else if (visibleQuestions.length < totalSupabaseCount) {
-                                setQuestionsPage((prev) => prev + 1);
-                                setCurrentQuestionIndex((prev) => prev + 1);
-                                setQuestionTimer(0);
-                              }
-                            }}
-                            className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed shrink-0 transition-colors cursor-pointer"
-                            title="Próxima questão"
-                          >
-                            <ChevronRight className="w-4 h-4" />
-                          </button>
-                        </div>
-
-                        {/* Direita: Ferramentas de Estudo (Marca-Texto 6 cores, Fonte A-/A/A+, Favoritar Bookmark, Reportar) + Filtros/Finalizar */}
-                        <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-2.5 shrink-0 border-t lg:border-t-0 pt-2 lg:pt-0 border-slate-100 dark:border-slate-800">
-                          {/* Marca-texto compacto com 6 cores retrátil */}
-                          <div ref={topHighlighterMenuRef} className="relative inline-flex items-center">
+                            {/* Botão Finalizar Resolução Sequencial */}
                             <button
                               type="button"
-                              onClick={() => setIsTopHighlighterMenuOpen((prev) => !prev)}
-                              title={`Marca-texto ativo: ${HIGHLIGHTER_COLORS[activeHighlighterColor].name}. Clique para alternar cor.`}
-                              className="flex items-center gap-1.5 px-2.5 py-1.5 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 rounded-xl transition-all cursor-pointer shadow-xs group"
+                              onClick={() => setBancoMode('resultado')}
+                              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-xs transition-transform hover:scale-105 cursor-pointer"
+                              style={{ backgroundColor: accentConfig.primaryHex }}
+                              title="Finalizar resolução e visualizar resultados e pontos fracos"
                             >
-                              <Highlighter className="w-3.5 h-3.5 text-slate-700 dark:text-slate-300 group-hover:scale-110 transition-transform" />
-                              <span
-                                className="w-3.5 h-3.5 rounded-full border border-black/15 dark:border-white/20 shadow-xs transition-transform"
-                                style={{ backgroundColor: HIGHLIGHTER_COLORS[activeHighlighterColor].hex }}
-                              />
-                              <ChevronDown
-                                className={`w-3 h-3 text-slate-400 transition-transform duration-200 ${
-                                  isTopHighlighterMenuOpen ? 'rotate-180' : ''
-                                }`}
-                              />
+                              <CheckCircle2 className="w-3.5 h-3.5" />
+                              <span>Finalizar</span>
                             </button>
 
-                            {/* Pílula Flutuante Horizontal Centralizada com as 6 Cores de Marca-texto em Linha */}
-                            {isTopHighlighterMenuOpen && (
-                              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 w-max min-w-max flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800 rounded-full shadow-xl animate-in fade-in zoom-in-95 duration-150">
-                                {(['yellow', 'green', 'pink', 'blue', 'orange', 'purple'] as HighlighterColor[]).map((colorKey) => {
-                                  const c = HIGHLIGHTER_COLORS[colorKey];
-                                  const isSelected = activeHighlighterColor === colorKey;
-                                  return (
-                                    <button
-                                      key={colorKey}
-                                      type="button"
-                                      onClick={() => {
-                                        setActiveHighlighterColor(colorKey);
-                                        setIsTopHighlighterMenuOpen(false);
-                                      }}
-                                      title={`Marca-texto ${c.name}`}
-                                      style={{
-                                        backgroundColor: c.hex,
-                                        borderColor: isSelected ? c.borderHex : 'transparent'
-                                      }}
-                                      className={`w-6 h-6 rounded-full transition-all cursor-pointer flex items-center justify-center border shrink-0 ${
-                                        isSelected
-                                          ? 'ring-2 ring-blue-500/60 shadow-xs scale-105'
-                                          : 'opacity-90 hover:opacity-100 hover:scale-110'
-                                      }`}
-                                    >
-                                      {isSelected && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
-                                    </button>
-                                  );
-                                })}
-                              </div>
-                            )}
-                          </div>
-
-                          {/* Seletor de Tamanho de Fonte (A- / A / A+) */}
-                          <div className="flex items-center gap-0.5 bg-slate-50 dark:bg-slate-900 p-1 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold shadow-xs">
-                            <span className="text-[10px] text-slate-500 dark:text-slate-400 px-1 font-semibold">Fonte:</span>
-                            <button
-                              type="button"
-                              onClick={() => handleFontSizeChange('sm')}
-                              title="Fonte Compacta"
-                              className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
-                                fontSize === 'sm'
-                                  ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
-                                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
-                              }`}
-                            >
-                              A-
-                            </button>
-                            <button
-                              type="button"
-                              onClick={() => handleFontSizeChange('base')}
-                              title="Fonte Padrão"
-                              className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
-                                fontSize === 'base'
-                                  ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
-                                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
-                              }`}
-                            >
-                              A
-                            </button>
-                            <button
-                              type="button"
-                              onClick={() => handleFontSizeChange('lg')}
-                              title="Fonte Grande"
-                              className={`px-1.5 py-0.5 rounded-lg transition-all cursor-pointer ${
-                                fontSize === 'lg'
-                                  ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-black'
-                                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
-                              }`}
-                            >
-                              A+
-                            </button>
-                          </div>
-
-                          {/* Ações de Questão: Favoritar (Apenas Símbolo Bookmark) e Reportar */}
-                          <div className="flex items-center gap-1 text-slate-500 dark:text-slate-400">
-                            {/* Favoritar: Somente o Símbolo Bookmark */}
-                            {filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)] && (
+                            {/* Botão Finalizar se for caderno */}
+                            {activeListId && (
                               <button
                                 type="button"
                                 onClick={() => {
-                                  const qId = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id;
-                                  setBookmarkedQuestionIds((prev) => ({
-                                    ...prev,
-                                    [qId]: !prev[qId]
-                                  }));
+                                  setActiveListId(null);
+                                  setActiveTab('listas');
                                 }}
-                                className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
-                                  bookmarkedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
-                                    ? 'text-amber-500'
-                                    : 'text-slate-400 hover:text-amber-500'
-                                }`}
-                                title={
-                                  bookmarkedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
-                                    ? 'Remover dos favoritos'
-                                    : 'Favoritar questão'
-                                }
+                                className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105 cursor-pointer"
+                                style={{ backgroundColor: '#0284c7' }}
                               >
-                                <Bookmark
-                                  className={`w-4 h-4 transition-transform ${
-                                    bookmarkedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
-                                      ? 'fill-amber-500 text-amber-500 scale-110'
-                                      : ''
-                                  }`}
-                                />
-                              </button>
-                            )}
-
-                            {/* Reportar */}
-                            {filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)] && (
-                              <button
-                                type="button"
-                                onClick={async () => {
-                                  const currentQ = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)];
-                                  if (!currentQ) return;
-                                  setReportedQuestionIds((prev) => ({
-                                    ...prev,
-                                    [currentQ.id]: true
-                                  }));
-                                  await reportQuestionIssue(currentQ.id, 'Apontamento de erro em questão');
-                                  success('Questão enviada para auditoria da banca médica.', 'Denúncia Registrada');
-                                }}
-                                className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
-                                  reportedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
-                                    ? 'text-amber-500 fill-amber-500'
-                                    : 'text-slate-400 hover:text-amber-500'
-                                }`}
-                                title="Reportar erro na questão"
-                              >
-                                <Flag
-                                  className={`w-4 h-4 ${
-                                    reportedQuestionIds[filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)].id]
-                                      ? 'fill-amber-500'
-                                      : ''
-                                  }`}
-                                />
+                                Sair do Caderno
                               </button>
                             )}
                           </div>
+                        </div>
 
-                          {/* Botão de Filtros (Apenas Ícones) */}
-                          <button
-                            type="button"
-                            onClick={() => setBancoMode('filtros')}
-                            className="flex items-center gap-1.5 p-2 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs"
-                            title="Filtros de questões"
-                          >
-                            <Plus className="w-3.5 h-3.5 text-blue-500" />
-                            <SlidersHorizontal className="w-3.5 h-3.5" />
-                            {activeFiltersCount > 0 && (
-                              <span
-                                className="px-1.5 py-0.2 rounded-full text-[10px] font-mono text-white font-extrabold"
-                                style={{ backgroundColor: accentConfig.primaryHex }}
-                              >
-                                {activeFiltersCount}
-                              </span>
-                            )}
-                          </button>
-
-                          {/* Botão Finalizar Resolução Sequencial */}
-                          <button
-                            type="button"
-                            onClick={() => setBancoMode('resultado')}
-                            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-xs transition-transform hover:scale-105 cursor-pointer"
-                            style={{ backgroundColor: accentConfig.primaryHex }}
-                            title="Finalizar resolução e visualizar resultados e pontos fracos"
-                          >
-                            <CheckCircle2 className="w-3.5 h-3.5" />
-                            <span>Finalizar</span>
-                          </button>
-
-                          {/* Botão Finalizar se for caderno */}
-                          {activeListId && (
+                        {/* Sequência Retrátil de Questões na Íntegra (Modelo da Imagem 1) */}
+                        {isQuestionSequenceOpen && (
+                          <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-hidden min-w-0 animate-in fade-in slide-in-from-top-1 duration-150">
+                            {/* Seta Anterior */}
                             <button
                               type="button"
+                              disabled={Math.min(currentQuestionIndex, visibleQuestions.length - 1) === 0}
                               onClick={() => {
-                                setActiveListId(null);
-                                setActiveTab('listas');
+                                setCurrentQuestionIndex((prev) => Math.max(0, prev - 1));
+                                setQuestionTimer(0);
                               }}
-                              className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105 cursor-pointer"
-                              style={{ backgroundColor: '#0284c7' }}
+                              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed shrink-0 transition-colors cursor-pointer"
+                              title="Questão anterior (← ou K)"
                             >
-                              Sair do Caderno
+                              <ChevronLeft className="w-4 h-4" />
                             </button>
-                          )}
-                        </div>
+
+                            {/* Pílulas de Questão (1, 2, 3...) com indicador de acerto/erro e acompanhamento suave */}
+                            <div
+                              ref={questionScrollContainerRef}
+                              className="flex items-center gap-1 overflow-x-auto no-scrollbar py-0.5 px-0.5 scroll-smooth flex-1"
+                            >
+                              {visibleQuestions.map((q, idx) => {
+                                const isCurrent = idx === Math.min(currentQuestionIndex, visibleQuestions.length - 1);
+                                const ans = userAnswers[q.id];
+                                const isAnswered = !!ans;
+                                const isCorrect = ans?.isCorrect;
+
+                                return (
+                                  <button
+                                    key={q.id}
+                                    ref={(el) => {
+                                      questionButtonRefs.current[idx] = el;
+                                    }}
+                                    type="button"
+                                    onClick={() => {
+                                      setCurrentQuestionIndex(idx);
+                                      setQuestionTimer(0);
+                                    }}
+                                    className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full font-sans font-black text-sm sm:text-[15px] flex items-center justify-center shrink-0 transition-all cursor-pointer ${
+                                      isCurrent
+                                        ? 'text-white shadow-md ring-2 ring-offset-1 ring-blue-500/40'
+                                        : isAnswered
+                                        ? isCorrect
+                                          ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-700/60'
+                                          : 'bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-300 dark:border-rose-700/60'
+                                        : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                                    }`}
+                                    style={isCurrent ? { backgroundColor: accentConfig.primaryHex } : undefined}
+                                    title={`Questão ${idx + 1}${isAnswered ? (isCorrect ? ' (Correta)' : ' (Incorreta)') : ''}`}
+                                  >
+                                    {idx + 1}
+                                  </button>
+                                );
+                              })}
+
+                              {/* Ícone para adicionar questão pelo filtro */}
+                              <button
+                                type="button"
+                                onClick={() => setBancoMode('filtros')}
+                                className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-dashed border-slate-300 dark:border-slate-700 hover:border-blue-500 text-slate-400 hover:text-blue-500 hover:bg-blue-50/60 dark:hover:bg-blue-950/40 flex items-center justify-center shrink-0 transition-all cursor-pointer shadow-xs ml-0.5"
+                                title="Adicionar questões pelo filtro"
+                              >
+                                <Plus className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+
+                            {/* Seta Próxima */}
+                            <button
+                              type="button"
+                              disabled={
+                                currentQuestionIndex >= visibleQuestions.length - 1 &&
+                                visibleQuestions.length >= totalSupabaseCount
+                              }
+                              onClick={() => {
+                                if (currentQuestionIndex + 1 < visibleQuestions.length) {
+                                  setCurrentQuestionIndex((prev) => prev + 1);
+                                  setQuestionTimer(0);
+                                } else if (visibleQuestions.length < totalSupabaseCount) {
+                                  setQuestionsPage((prev) => prev + 1);
+                                  setCurrentQuestionIndex((prev) => prev + 1);
+                                  setQuestionTimer(0);
+                                }
+                              }}
+                              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed shrink-0 transition-colors cursor-pointer"
+                              title="Próxima questão (→ ou J)"
+                            >
+                              <ChevronRight className="w-4 h-4" />
+                            </button>
+                          </div>
+                        )}
                       </div>
 
                       {/* QUESTÃO ATUAL EM SEQUÊNCIA (CARD FOCADO) */}
@@ -2612,6 +2745,12 @@ export default function Home() {
           </div>
         </div>
       )}
+
+      {/* Modal de Atalhos do Teclado (Imagem 3) */}
+      <KeyboardShortcutsModal
+        isOpen={isShortcutsModalOpen}
+        onClose={() => setIsShortcutsModalOpen(false)}
+      />
     </div>
   );
 }
