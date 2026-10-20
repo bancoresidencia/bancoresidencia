@@ -87,6 +87,10 @@ docs/driveprojetorapido/
 docs/massivobanco/
 data/backups_pre_drive/
 data/provaderesidencia_coleta.db*
+data/questmed_extracted_exams.db*
+*.db
+*.sqlite
+*.sqlite3
 data/*.tmp
 data/*.html
 data/*.pdf
