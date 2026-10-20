@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
-import { Question } from '@/types';
+import { Question, StudyModalidade } from '@/types';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -112,7 +112,7 @@ export async function GET(req: NextRequest) {
       banca: row.banca || '',
       year: row.year || 0,
       tipoProva: row.tipo_prova || 'Prova 1 / Regular',
-      modalidade: row.modalidade || 'Residência Médica',
+      modalidade: (row.modalidade || 'Residência Médica') as StudyModalidade,
       especialidade: row.especialidade || '',
       specialty: row.especialidade || '',
       tema: row.tema || '',
