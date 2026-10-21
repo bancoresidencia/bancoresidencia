@@ -17,17 +17,17 @@
 }
 
 html.dark {
-  --background: #070b14;
-  --foreground: #f1f5f9;
-  --card: #0d1527;
-  --card-foreground: #f1f5f9;
-  --card-border: #1e293b;
-  --muted: #131c31;
-  --muted-foreground: #94a3b8;
+  --background: #09090b;
+  --foreground: #f4f4f5;
+  --card: #121215;
+  --card-foreground: #f4f4f5;
+  --card-border: #27272a;
+  --muted: #18181b;
+  --muted-foreground: #a1a1aa;
   --accent-muted: rgba(37, 99, 235, 0.15);
   --primary-color: #2563eb;
   --primary-hover: #3b82f6;
-  --ring: #3b82f6;
+  --ring: var(--primary-color);
 }
 
 @theme inline {
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #27272a;
   border-radius: 9999px;
 }
 
@@ -83,7 +83,7 @@ html.light ::-webkit-scrollbar-thumb {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #3f3f46;
 }
 
 html.light ::-webkit-scrollbar-thumb:hover {

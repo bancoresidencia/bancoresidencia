@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 
 export type ThemeMode = 'dark' | 'light';
-export type AccentColor = 'blue' | 'green' | 'orange' | 'purple' | 'red';
+export type AccentColor = 'blue' | 'green' | 'orange' | 'purple' | 'red' | 'rose' | 'neutral';
 
 export interface AccentConfig {
   id: AccentColor;
@@ -96,6 +96,36 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeText: 'text-red-600 dark:text-red-400',
     badgeBorder: 'border-red-500/20',
     cssVarValue: '#dc2626'
+  },
+  rose: {
+    id: 'rose',
+    label: 'Rosa Vibrante',
+    primaryHex: '#e11d48',
+    hoverHex: '#be123c',
+    bgRgba: 'rgba(225, 29, 72, 0.14)',
+    borderRgba: 'rgba(225, 29, 72, 0.40)',
+    textClass: 'text-rose-600 dark:text-rose-400',
+    bgClass: 'bg-rose-600 hover:bg-rose-500 text-white',
+    ringClass: 'ring-rose-500/40 border-rose-500/50',
+    badgeBg: 'bg-rose-500/10',
+    badgeText: 'text-rose-600 dark:text-rose-400',
+    badgeBorder: 'border-rose-500/20',
+    cssVarValue: '#e11d48'
+  },
+  neutral: {
+    id: 'neutral',
+    label: 'Grafite Neutro',
+    primaryHex: '#52525b',
+    hoverHex: '#3f3f46',
+    bgRgba: 'rgba(82, 82, 91, 0.16)',
+    borderRgba: 'rgba(82, 82, 91, 0.40)',
+    textClass: 'text-zinc-700 dark:text-zinc-300',
+    bgClass: 'bg-zinc-700 hover:bg-zinc-600 text-white dark:bg-zinc-600 dark:hover:bg-zinc-500',
+    ringClass: 'ring-zinc-500/40 border-zinc-500/50',
+    badgeBg: 'bg-zinc-500/10',
+    badgeText: 'text-zinc-700 dark:text-zinc-300',
+    badgeBorder: 'border-zinc-500/20',
+    cssVarValue: '#52525b'
   }
 };
 
