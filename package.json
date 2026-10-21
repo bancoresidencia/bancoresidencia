@@ -29,7 +29,12 @@
     "fase2:dev1": "node scripts/worker_fase2.mjs --worker=DEV_1",
     "fase2:dev2": "node scripts/worker_fase2.mjs --worker=DEV_2",
     "fase2:status": "node scripts/status_fase2.mjs",
-    "fase2:watch": "node scripts/status_fase2.mjs --watch"
+    "fase2:watch": "node scripts/status_fase2.mjs --watch",
+    "extract:medbrave": "node scripts/extract_medbrave_questions.mjs",
+    "match:medbrave": "node scripts/match_medbrave_strict.mjs",
+    "download:images": "node scripts/download_medbrave_images.mjs",
+    "token:medbrave": "node scripts/set_medbrave_token.mjs",
+    "login:medbrave": "node scripts/open_medevo_login.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

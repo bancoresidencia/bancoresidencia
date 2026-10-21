@@ -3,7 +3,20 @@ import path from 'path';
 import fs from 'fs';
 import { execSync } from 'child_process';
 
-const LOCAL_CHROMIUM = 'C:\\Users\\cnath\\AppData\\Local\\ms-playwright\\chromium-1243\\chrome-win64\\chrome.exe';
+const getLocalChromium = () => {
+  try {
+    const defaultPlaywright = chromium.executablePath();
+    if (fs.existsSync(defaultPlaywright)) return defaultPlaywright;
+  } catch {}
+  const candidates = [
+    path.join(process.env.USERPROFILE || '', 'AppData', 'Local', 'ms-playwright', 'chromium-1243', 'chrome-win64', 'chrome.exe'),
+    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
+  ];
+  return candidates.find(p => fs.existsSync(p));
+};
+
+const LOCAL_CHROMIUM = getLocalChromium();
 const AUTH_STATE_PATH = path.join(process.cwd(), 'scripts', 'drive_auth_state.json');
 
 const rawArgs = process.argv.slice(2);

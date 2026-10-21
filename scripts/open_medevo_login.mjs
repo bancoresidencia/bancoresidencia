@@ -3,11 +3,11 @@ import path from 'path';
 import fs from 'fs';
 
 const CONFIG_PATH = path.join(process.cwd(), 'scripts', 'medevo_config.json');
-const TARGET_URL = 'https://www.medevo.com.br/';
+const TARGET_URL = 'https://app.medbrave.com.br/';
 
 async function main() {
   console.log('===============================================================');
-  console.log('🌐 ABRINDO JANELA PARA LOGIN NO MEDEVO');
+  console.log('🌐 ABRINDO JANELA PARA LOGIN NO MEDBRAVE');
   console.log('⚠️  REGRA DE SEGURANÇA: NENHUMA EXTRAÇÃO SERÁ INICIADA');
   console.log('===============================================================\n');
 
@@ -38,10 +38,10 @@ async function main() {
 
   let sessionCaptured = false;
 
-  // Intercepta qualquer requisição com autenticação para api.medevo.com.br
+  // Intercepta qualquer requisição com autenticação para api.medevo.com.br ou api.medbrave.com.br
   page.on('request', async (req) => {
     const url = req.url();
-    if (url.includes('api.medevo.com.br') || url.includes('supabase.co')) {
+    if (url.includes('medevo.com.br') || url.includes('medbrave.com.br') || url.includes('supabase.co')) {
       const headers = req.headers();
       const auth = headers['authorization'] || headers['Authorization'];
       const apikey = headers['apikey'] || headers['Apikey'];
@@ -88,16 +88,84 @@ async function main() {
   }
 
   console.log('\n👉 A janela está aberta na sua tela.');
-  console.log('👉 Faça seu login normalmente no MedEvo.');
+  console.log('👉 Faça seu login normalmente no MedBrave.');
   console.log('👉 Assim que você acessar, a sessão será detectada automaticamente.');
   console.log('👉 Nenhuma ação de extração será feita.\n');
 
+  // Monitora continuamente localStorage e cookies a cada 1,5s
+  const intervalId = setInterval(async () => {
+    try {
+      if (page.isClosed()) return;
+      
+      const storageData = await page.evaluate(() => {
+        const token = localStorage.getItem('auth_token') || 
+                      localStorage.getItem('authToken') || 
+                      localStorage.getItem('access_token');
+        
+        let supaToken = null;
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && key.includes('auth-token')) {
+            try {
+              const parsed = JSON.parse(localStorage.getItem(key));
+              if (parsed?.access_token) supaToken = parsed.access_token;
+            } catch {}
+          }
+        }
+
+        const allKeys = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          allKeys.push(localStorage.key(i));
+        }
+
+        return { token, supaToken, allKeys };
+      });
+
+      const effectiveToken = storageData.token || storageData.supaToken;
+
+      if (effectiveToken && effectiveToken.length > 20 && effectiveToken !== 'Kdh5WODAhURGFD3u8VKMDn5z8tMRmEFT') {
+        const cookies = await context.cookies();
+        
+        let userId = 'active_user';
+        try {
+          const parts = effectiveToken.split('.');
+          if (parts.length === 3) {
+            const payload = JSON.parse(Buffer.from(parts[1], 'base64').toString('utf8'));
+            userId = payload.sub || payload.user_id || payload.id || userId;
+          }
+        } catch {}
+
+        const configData = {
+          MEDEVO_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ4ZWRwZG1ndmdhdGpkZnhneGlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIyNzk3MTgsImV4cCI6MjA0Nzg1NTcxOH0.cjoaggOXt1kY9WmVNbAipCOQ2dP4PWLP43KMf8cO8Wo',
+          MEDEVO_USER_TOKEN: effectiveToken,
+          USER_ID: userId,
+          cookies: cookies.map(c => ({ name: c.name, value: c.value, domain: c.domain })),
+          captured_at: new Date().toISOString()
+        };
+
+        fs.writeFileSync(CONFIG_PATH, JSON.stringify(configData, null, 2), 'utf8');
+
+        if (!sessionCaptured) {
+          sessionCaptured = true;
+          console.log('\n===============================================================');
+          console.log('🎉 SESSÃO AUTENTICADA DO MEDBRAVE CAPTURADA VIA LOCALSTORAGE!');
+          console.log(`📁 Credenciais salvas em: ${CONFIG_PATH}`);
+          console.log(`🔑 Token: ${effectiveToken.slice(0, 30)}... (Tamanho: ${effectiveToken.length})`);
+          console.log(`👤 Usuário ID: ${userId}`);
+          console.log('✅ Pode fechar o navegador agora ou continuar usando.');
+          console.log('===============================================================\n');
+        }
+      }
+    } catch {}
+  }, 1500);
+
   // Mantém ativo monitorando o fechamento
   await new Promise((resolve) => {
-    page.on('close', resolve);
-    browser.on('disconnected', resolve);
+    page.on('close', () => { clearInterval(intervalId); resolve(); });
+    browser.on('disconnected', () => { clearInterval(intervalId); resolve(); });
   });
 
+  clearInterval(intervalId);
   console.log('🛑 Janela do navegador fechada.');
 }
 

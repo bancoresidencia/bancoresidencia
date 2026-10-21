@@ -98,6 +98,11 @@ data/*.pdf
 scripts/.chrome_test/
 scripts/medevo_session.json
 scripts/medevo_config.json
+*.bak
+data/*.bak
+data/*.jsonl
+data/cruzamento_blindado_log.json
+
 
 # Temporary visual QA screenshots & scratch dumps
 *.png
