@@ -35,18 +35,33 @@ export function getListStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_lists_${userId}` : 'bancoresidencia_lists_guest';
 }
 
-// Pastas padrão iniciais para quando o aluno cria conta ou não possui nenhuma pasta ainda
-export const defaultStudentFolders: Folder[] = [
-  { id: 'f-clinica', name: 'Clínica Médica', parentId: null, color: '#3b82f6' },
-  { id: 'f-cardio', name: 'Cardiologia', parentId: 'f-clinica', color: '#60a5fa' },
-  { id: 'f-cirurgia', name: 'Cirurgia Geral', parentId: null, color: '#10b981' },
-  { id: 'f-pediatria', name: 'Pediatria', parentId: null, color: '#f59e0b' },
-  { id: 'f-go', name: 'Ginecologia e Obstetrícia', parentId: null, color: '#ec4899' },
-  { id: 'f-preventiva', name: 'Medicina Preventiva', parentId: null, color: '#8b5cf6' }
-];
+// IDs de pastas e listas de demonstração/mock legadas que devem ser expurgadas de todas as contas
+const MOCK_FOLDER_IDS = new Set([
+  'f-clinica',
+  'f-cardio',
+  'f-coronariana',
+  'f-cirurgia',
+  'f-abdome',
+  'f-apendicite',
+  'f-pediatria',
+  'f-go',
+  'f-preventiva'
+]);
+
+export const MOCK_LIST_IDS = new Set([
+  'list-1',
+  'list-2',
+  'list-3',
+  'list-4',
+  'list-5'
+]);
+
+// Todo aluno novo começa com 0 pastas e 0 listas pré-criadas
+export const defaultStudentFolders: Folder[] = [];
 
 /**
- * Carrega as pastas do aluno a partir do cache local e sincroniza com o Supabase
+ * Carrega as pastas do aluno a partir do cache local e sincroniza com o Supabase.
+ * Expulsa pastas de mock legadas e garante que novas contas comecem limpas.
  */
 export async function loadUserFolders(userId?: string | null): Promise<Folder[]> {
   const key = getFolderStorageKey(userId);
@@ -56,20 +71,27 @@ export async function loadUserFolders(userId?: string | null): Promise<Folder[]>
     try {
       const saved = localStorage.getItem(key);
       if (saved) {
-        localFolders = JSON.parse(saved);
-      } else {
-        // Fallback para usuário legado sem namespace ou cria default
-        const legacy = localStorage.getItem('bancoresidencia_folders');
-        if (legacy) {
-          localFolders = JSON.parse(legacy);
-          localStorage.setItem(key, legacy);
-        } else {
-          localFolders = defaultStudentFolders;
+        const parsed = JSON.parse(saved) as Folder[];
+        localFolders = Array.isArray(parsed) ? parsed.filter((f) => !MOCK_FOLDER_IDS.has(f.id)) : [];
+        if (localFolders.length !== parsed.length) {
           localStorage.setItem(key, JSON.stringify(localFolders));
         }
+      } else {
+        localFolders = [];
+        localStorage.setItem(key, JSON.stringify([]));
+      }
+
+      // Limpeza de chave legada se contiver mocks
+      const legacy = localStorage.getItem('bancoresidencia_folders');
+      if (legacy) {
+        try {
+          const parsedLegacy = JSON.parse(legacy) as Folder[];
+          const cleanedLegacy = Array.isArray(parsedLegacy) ? parsedLegacy.filter((f) => !MOCK_FOLDER_IDS.has(f.id)) : [];
+          localStorage.setItem('bancoresidencia_folders', JSON.stringify(cleanedLegacy));
+        } catch {}
       }
     } catch {
-      localFolders = defaultStudentFolders;
+      localFolders = [];
     }
   }
 
@@ -85,15 +107,17 @@ export async function loadUserFolders(userId?: string | null): Promise<Folder[]>
 
       if (!error && data && data.length > 0) {
         const rows = data as unknown as DbFolderRow[];
-        const remoteFolders: Folder[] = rows.map((row) => ({
-          id: row.id,
-          userId: row.user_id,
-          name: row.name,
-          parentId: row.parent_id || null,
-          color: row.color || '#3b82f6',
-          createdAt: row.created_at,
-          updatedAt: row.updated_at
-        }));
+        const remoteFolders: Folder[] = rows
+          .filter((row) => !MOCK_FOLDER_IDS.has(row.id))
+          .map((row) => ({
+            id: row.id,
+            userId: row.user_id,
+            name: row.name,
+            parentId: row.parent_id || null,
+            color: row.color || '#3b82f6',
+            createdAt: row.created_at,
+            updatedAt: row.updated_at
+          }));
 
         if (typeof window !== 'undefined') {
           localStorage.setItem(key, JSON.stringify(remoteFolders));
@@ -151,16 +175,24 @@ export async function loadUserLists(userId?: string | null): Promise<QuestionLis
     try {
       const saved = localStorage.getItem(key);
       if (saved) {
-        localLists = JSON.parse(saved);
-      } else {
-        // Fallback para chave legada
-        const legacy = localStorage.getItem('bancoresidencia_lists');
-        if (legacy) {
-          localLists = JSON.parse(legacy);
-          localStorage.setItem(key, legacy);
-        } else {
-          localLists = [];
+        const parsed = JSON.parse(saved) as QuestionList[];
+        localLists = Array.isArray(parsed) ? parsed.filter((l) => !MOCK_LIST_IDS.has(l.id)) : [];
+        if (localLists.length !== parsed.length) {
+          localStorage.setItem(key, JSON.stringify(localLists));
         }
+      } else {
+        localLists = [];
+        localStorage.setItem(key, JSON.stringify([]));
+      }
+
+      // Limpeza de chave legada se contiver mocks
+      const legacy = localStorage.getItem('bancoresidencia_lists');
+      if (legacy) {
+        try {
+          const parsedLegacy = JSON.parse(legacy) as QuestionList[];
+          const cleanedLegacy = Array.isArray(parsedLegacy) ? parsedLegacy.filter((l) => !MOCK_LIST_IDS.has(l.id)) : [];
+          localStorage.setItem('bancoresidencia_lists', JSON.stringify(cleanedLegacy));
+        } catch {}
       }
     } catch (e) {
       console.error('Erro ao ler listas locais:', e);
@@ -180,20 +212,22 @@ export async function loadUserLists(userId?: string | null): Promise<QuestionLis
 
       if (!error && data && data.length > 0) {
         const rows = data as unknown as DbListRow[];
-        const remoteLists: QuestionList[] = rows.map((row) => ({
-          id: row.id,
-          userId: row.user_id,
-          folderId: row.folder_id || undefined,
-          title: row.title,
-          questionIds: row.question_ids || [],
-          totalQuestions: row.total_questions || (row.question_ids ? row.question_ids.length : 0),
-          completedQuestions: row.completed_questions || 0,
-          lastStudiedAt: row.last_studied_at || 'Nunca estudada',
-          inProgress: row.in_progress ?? false,
-          progressPercentage: row.progress_percentage || 0,
-          createdAt: row.created_at,
-          updatedAt: row.updated_at
-        }));
+        const remoteLists: QuestionList[] = rows
+          .filter((row) => !MOCK_LIST_IDS.has(row.id))
+          .map((row) => ({
+            id: row.id,
+            userId: row.user_id,
+            folderId: row.folder_id || undefined,
+            title: row.title,
+            questionIds: row.question_ids || [],
+            totalQuestions: row.total_questions || (row.question_ids ? row.question_ids.length : 0),
+            completedQuestions: row.completed_questions || 0,
+            lastStudiedAt: row.last_studied_at || 'Nunca estudada',
+            inProgress: row.in_progress ?? false,
+            progressPercentage: row.progress_percentage || 0,
+            createdAt: row.created_at,
+            updatedAt: row.updated_at
+          }));
 
         if (typeof window !== 'undefined') {
           localStorage.setItem(key, JSON.stringify(remoteLists));

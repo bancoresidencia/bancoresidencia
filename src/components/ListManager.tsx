@@ -50,10 +50,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
 }) => {
   const { accentConfig } = useTheme();
   const [selectedFolderId, setSelectedFolderId] = useState<string | null>(null);
-  const [openFolderIds, setOpenFolderIds] = useState<Record<string, boolean>>({
-    'f-clinica': true,
-    'f-cirurgia': true
-  });
+  const [openFolderIds, setOpenFolderIds] = useState<Record<string, boolean>>({});
 
   // Modal / Inputs de Criação de Pasta
   const [isCreatingFolder, setIsCreatingFolder] = useState(false);

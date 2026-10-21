@@ -16,7 +16,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
     { id: 'purple', label: 'Roxo', hex: ACCENT_CONFIGS.purple.primaryHex },
     { id: 'red', label: 'Vermelho', hex: ACCENT_CONFIGS.red.primaryHex },
     { id: 'rose', label: 'Rosa', hex: ACCENT_CONFIGS.rose.primaryHex },
-    { id: 'neutral', label: 'Neutra', hex: ACCENT_CONFIGS.neutral.primaryHex },
+    { id: 'neutral', label: 'Monocromático', hex: ACCENT_CONFIGS.neutral.primaryHex },
   ];
 
   // Fechar dropdown ao clicar fora

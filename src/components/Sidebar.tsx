@@ -2,14 +2,14 @@
 
 import React from 'react';
 import {
-  Home,
+  LayoutDashboard,
   FileQuestion,
-  ListFilter,
-  FileCheck2,
-  BarChart2,
+  FolderOpen,
+  ClipboardCheck,
+  BarChart3,
   Trophy,
   Stethoscope,
-  Settings,
+  Sliders,
   BookOpen,
   PanelLeftClose,
   PanelLeftOpen,
@@ -39,51 +39,50 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const { isAdmin } = useAuth();
 
   const menuItems = [
-    { id: 'home', label: 'Início', icon: Home },
+    { id: 'home', label: 'Início', icon: LayoutDashboard },
     { id: 'banco', label: 'Banco de Questões', icon: FileQuestion },
-    { id: 'listas', label: 'Listas & Pastas', icon: ListFilter },
+    { id: 'listas', label: 'Listas & Pastas', icon: FolderOpen },
     { id: 'provas', label: 'Provas na Íntegra', icon: BookOpen },
-    { id: 'simulados', label: 'Simulados Oficiais', icon: FileCheck2 },
-    { id: 'stats', label: 'Meu Desempenho', icon: BarChart2 },
+    { id: 'simulados', label: 'Simulados Oficiais', icon: ClipboardCheck },
+    { id: 'stats', label: 'Meu Desempenho', icon: BarChart3 },
     { id: 'ranking', label: 'Ranking Oficial', icon: Trophy },
-    { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Settings },
+    { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Sliders },
     ...(isAdmin ? [{ id: 'curadoria', label: 'Curadoria de Gabaritos', icon: ShieldCheck }] : [])
   ];
 
   return (
     <aside
       className={`${
-        isCollapsed ? 'w-20' : 'w-64'
-      } bg-white dark:bg-[#070d18] border-r border-slate-200 dark:border-slate-800/80 flex flex-col shrink-0 h-screen max-h-screen sticky top-0 self-start z-40 hidden md:flex transition-all duration-300 ease-in-out select-none overflow-hidden`}
+        isCollapsed ? 'w-16' : 'w-60'
+      } bg-white dark:bg-[#09090b] border-r border-slate-200 dark:border-zinc-800 flex flex-col shrink-0 h-screen max-h-screen sticky top-0 self-start z-40 hidden md:flex transition-all duration-200 ease-in-out select-none overflow-hidden`}
       aria-label="Navegação Principal"
     >
-      {/* 1. Topo: Logo da Plataforma + Botão de Toggle */}
-      <div className={`h-18 w-full border-b border-slate-100 dark:border-slate-800/80 flex items-center ${
-        isCollapsed ? 'justify-center' : 'justify-between px-4'
+      {/* 1. Topo: Logo Flat + Botão de Toggle */}
+      <div className={`h-16 w-full border-b border-slate-100 dark:border-zinc-800/80 flex items-center ${
+        isCollapsed ? 'justify-center' : 'justify-between px-3.5'
       }`}>
         <button
           type="button"
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-3 p-1.5 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-900/60 transition-all cursor-pointer group min-w-0"
+          className="flex items-center gap-2.5 p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer group min-w-0"
           title={`Banco Residência • ${modalidade}`}
           aria-label="Ir para a página inicial"
         >
           <div
-            className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shadow-md shrink-0 transition-transform group-hover:scale-105"
+            className="w-8.5 h-8.5 rounded-lg flex items-center justify-center text-white shrink-0 shadow-xs"
             style={{
-              backgroundColor: accentConfig.primaryHex,
-              boxShadow: `0 4px 14px -2px ${accentConfig.bgRgba}`
+              backgroundColor: accentConfig.primaryHex
             }}
           >
-            <Stethoscope className="w-5 h-5" />
+            <Stethoscope className="w-4.5 h-4.5 stroke-[1.8]" />
           </div>
 
           {!isCollapsed && (
             <div className="text-left overflow-hidden">
-              <span className="font-heading font-extrabold text-sm text-slate-900 dark:text-white tracking-tight block leading-tight truncate">
+              <span className="font-heading font-black text-xs sm:text-sm text-slate-900 dark:text-zinc-100 tracking-tight block leading-tight truncate">
                 Banco Residência
               </span>
-              <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block">
+              <span className="text-[10px] font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-wider block">
                 {modalidade}
               </span>
             </div>
@@ -94,18 +93,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <button
             type="button"
             onClick={onToggleCollapse}
-            className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-850 transition-colors cursor-pointer"
+            className="p-1 rounded-md text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
             title="Recolher barra lateral"
             aria-label="Recolher barra lateral"
           >
-            <PanelLeftClose className="w-4 h-4" />
+            <PanelLeftClose className="w-4 h-4 stroke-[1.8]" />
           </button>
         )}
       </div>
 
-      {/* 2. Navegação Principal */}
-      <div className={`flex-1 py-4 space-y-1.5 overflow-y-auto w-full flex flex-col ${
-        isCollapsed ? 'items-center px-2' : 'px-3'
+      {/* 2. Navegação Principal Flat */}
+      <div className={`flex-1 py-3 space-y-1 overflow-y-auto w-full flex flex-col ${
+        isCollapsed ? 'items-center px-2' : 'px-2.5'
       }`}>
         {menuItems.map((item) => {
           const Icon = item.icon;
@@ -117,65 +116,57 @@ export const Sidebar: React.FC<SidebarProps> = ({
               aria-current={isActive ? 'page' : undefined}
               title={isCollapsed ? item.label : undefined}
               aria-label={item.label}
-              className={`rounded-2xl flex items-center transition-all duration-200 cursor-pointer group relative ${
+              className={`rounded-lg flex items-center transition-colors duration-150 cursor-pointer group relative ${
                 isCollapsed
-                  ? 'w-12 h-12 justify-center'
-                  : 'w-full px-3.5 py-2.5 gap-3 justify-start'
+                  ? 'w-10 h-10 justify-center'
+                  : 'w-full px-2.5 py-2 gap-2.5 justify-start'
               } ${
                 isActive
-                  ? 'text-white shadow-md'
-                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-900/60'
+                  ? 'text-white shadow-xs'
+                  : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100/80 dark:hover:bg-zinc-900'
               }`}
               style={{
-                backgroundColor: isActive ? accentConfig.primaryHex : undefined,
-                boxShadow: isActive ? `0 6px 18px -3px ${accentConfig.bgRgba}` : undefined
+                backgroundColor: isActive ? accentConfig.primaryHex : undefined
               }}
             >
               <Icon
-                className={`w-5 h-5 shrink-0 transition-transform duration-200 group-hover:scale-110 ${
-                  isActive ? 'text-white' : 'text-slate-500 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-slate-200'
+                className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${
+                  isActive ? 'text-white' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
                 }`}
               />
 
               {!isCollapsed && (
-                <span className={`text-xs sm:text-sm font-bold tracking-tight truncate ${
-                  isActive ? 'text-white' : 'text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white'
+                <span className={`text-xs font-bold tracking-tight truncate ${
+                  isActive ? 'text-white' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
                 }`}>
                   {item.label}
                 </span>
-              )}
-
-              {/* Indicador de barra ativa na lateral esquerda quando recolhido */}
-              {isActive && isCollapsed && (
-                <span
-                  className="absolute left-0 top-3 bottom-3 w-1 rounded-r-full bg-white/90"
-                />
               )}
             </button>
           );
         })}
       </div>
 
-      {/* 3. Rodapé com Botão de Expandir/Recolher */}
+      {/* 3. Rodapé com Botão Flat de Expandir/Recolher */}
       {onToggleCollapse && (
-        <div className={`p-3 border-t border-slate-100 dark:border-slate-800/80 w-full flex ${
+        <div className={`p-2.5 border-t border-slate-100 dark:border-zinc-800/80 w-full flex ${
           isCollapsed ? 'justify-center' : 'justify-between items-center'
         }`}>
           <button
             type="button"
             onClick={onToggleCollapse}
-            className={`flex items-center gap-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-900/60 transition-colors cursor-pointer ${
-              isCollapsed ? 'p-2.5' : 'px-3 py-2 w-full text-xs font-semibold'
+            className={`flex items-center gap-2 rounded-lg text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer ${
+              isCollapsed ? 'p-2' : 'px-2.5 py-1.5 w-full text-xs font-semibold'
             }`}
             title={isCollapsed ? 'Expandir barra lateral' : 'Recolher barra lateral'}
             aria-label={isCollapsed ? 'Expandir barra lateral' : 'Recolher barra lateral'}
           >
             {isCollapsed ? (
-              <PanelLeftOpen className="w-5 h-5" />
+              <PanelLeftOpen className="w-4 h-4 stroke-[1.8]" />
             ) : (
               <>
-                <PanelLeftClose className="w-4 h-4 shrink-0 text-slate-400" />
-                <span className="truncate">Recolher barra</span>
+                <PanelLeftClose className="w-3.5 h-3.5 shrink-0 stroke-[1.8] text-slate-400" />
+                <span className="truncate text-xs">Recolher barra</span>
               </>
             )}
           </button>

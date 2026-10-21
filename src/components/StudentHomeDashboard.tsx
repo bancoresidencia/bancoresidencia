@@ -624,8 +624,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         </div>
       </section>
 
-      {/* 5. Cadernos Recentes */}
-      <section className="bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs space-y-3.5">
+      {/* 5. Cadernos Recentes em Lista */}
+      <section className="bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs space-y-3">
         <div className="flex items-center justify-between pb-2.5 border-b border-slate-100 dark:border-zinc-800/80">
           <div className="flex items-center gap-2">
             <div
@@ -648,35 +648,57 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3">
-          {allLists.slice(0, 4).map((list) => (
-            <div
-              key={list.id}
-              className="p-3 rounded-xl border border-slate-200/90 dark:border-zinc-800 bg-slate-50/70 dark:bg-zinc-900/40 hover:border-slate-300 dark:hover:border-zinc-700 flex items-center justify-between gap-3 transition-all"
-            >
-              <div className="min-w-0 flex-1">
-                <div className="text-xs font-bold text-slate-900 dark:text-zinc-100 truncate">
-                  {list.title}
-                </div>
-                <div className="flex items-center gap-2 text-[11px] text-slate-500 dark:text-zinc-400 mt-0.5">
-                  <span>{list.completedQuestions}/{list.totalQuestions}</span>
-                  <span>•</span>
-                  <span className="font-semibold text-slate-700 dark:text-zinc-300">{list.progressPercentage}%</span>
-                </div>
-              </div>
-
-              <button
-                onClick={() => onContinueList(list)}
-                className="shrink-0 text-xs px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer hover:opacity-90 active:scale-95 text-white shadow-xs"
-                style={{
-                  backgroundColor: accentConfig.primaryHex
-                }}
+        {allLists && allLists.length > 0 ? (
+          <div className="divide-y divide-slate-100 dark:divide-zinc-800/80 border border-slate-200/80 dark:border-zinc-800 rounded-xl overflow-hidden bg-slate-50/40 dark:bg-zinc-900/20">
+            {allLists.slice(0, 5).map((list) => (
+              <div
+                key={list.id}
+                className="p-3 sm:px-4 flex items-center justify-between gap-3 hover:bg-slate-100/60 dark:hover:bg-zinc-800/40 transition-colors"
               >
-                Continuar
-              </button>
-            </div>
-          ))}
-        </div>
+                <div className="min-w-0 flex-1 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-4">
+                  <div className="min-w-0 flex-1">
+                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-zinc-100 truncate">
+                      {list.title}
+                    </div>
+                    <div className="flex items-center gap-2 text-[11px] text-slate-500 dark:text-zinc-400 mt-0.5">
+                      <span>{list.completedQuestions}/{list.totalQuestions} questões</span>
+                      <span>•</span>
+                      <span className="font-semibold text-slate-700 dark:text-zinc-300">{list.progressPercentage}%</span>
+                      {list.lastStudiedAt && (
+                        <span className="hidden sm:inline text-slate-400 dark:text-zinc-500">• {list.lastStudiedAt}</span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Barra de progresso compacta integrada à linha */}
+                  <div className="w-20 sm:w-28 bg-slate-200 dark:bg-zinc-800 rounded-full h-1.5 overflow-hidden shrink-0">
+                    <div
+                      className="h-1.5 rounded-full transition-all duration-500"
+                      style={{
+                        width: `${list.progressPercentage}%`,
+                        backgroundColor: accentConfig.primaryHex
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => onContinueList(list)}
+                  className="shrink-0 text-xs px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer hover:opacity-90 active:scale-95 text-white shadow-xs ml-2"
+                  style={{
+                    backgroundColor: accentConfig.primaryHex
+                  }}
+                >
+                  Continuar
+                </button>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="py-6 text-center text-xs text-slate-400 dark:text-zinc-500">
+            Nenhum caderno criado ainda. Seus cadernos de estudo aparecerão listados aqui.
+          </div>
+        )}
       </section>
     </div>
   );

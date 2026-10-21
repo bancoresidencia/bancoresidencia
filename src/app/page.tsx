@@ -1180,6 +1180,11 @@ export default function Home() {
       };
       const nextLists = [newList, ...lists];
       setLists(nextLists);
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('bancoresidencia_last_active_list_id', newList.id);
+        } catch {}
+      }
       await saveUserLists(nextLists, user?.id);
     } catch (err) {
       console.error('Erro ao criar lista com filtros:', err);
@@ -1190,6 +1195,11 @@ export default function Home() {
 
   const handleContinueList = (list: QuestionList) => {
     setActiveListId(list.id);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('bancoresidencia_last_active_list_id', list.id);
+      } catch {}
+    }
     setActiveTab('banco');
     setBancoMode('resolucao');
     setCurrentQuestionIndex(0);
@@ -1409,7 +1419,26 @@ export default function Home() {
     };
   }, [userAnswers, simulatedExtraAnswers, performanceFilters, simulatedTestPercentile, supabaseQuestions]);
 
-  const recentList = lists.find((l) => l.inProgress && l.completedQuestions < l.totalQuestions) || lists[0];
+  // Procura a última lista que o aluno estava resolvendo (por ID persistido, em andamento, ou mais recente)
+  const recentList = useMemo(() => {
+    if (!lists || lists.length === 0) return undefined;
+    let savedLastId: string | null = null;
+    if (typeof window !== 'undefined') {
+      try {
+        savedLastId = localStorage.getItem('bancoresidencia_last_active_list_id');
+      } catch {}
+    }
+    if (savedLastId) {
+      const match = lists.find((l) => l.id === savedLastId);
+      if (match) return match;
+    }
+    if (activeListId) {
+      const match = lists.find((l) => l.id === activeListId);
+      if (match) return match;
+    }
+    const inProgress = lists.find((l) => l.inProgress && l.completedQuestions < l.totalQuestions);
+    return inProgress || lists[0];
+  }, [lists, activeListId]);
 
   const officialRanking = getOfficialRanking(performanceFilters, {
     answered: stats.totalAnswered,
