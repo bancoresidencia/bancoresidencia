@@ -250,6 +250,10 @@ export default function Home() {
 
   // Respostas do Usuário com metadados do item e persistência real específica da conta
   const [userAnswers, setUserAnswers] = useState<Record<string, UserAnswerItem>>({});
+  const userAnswersRef = useRef(userAnswers);
+  useEffect(() => {
+    userAnswersRef.current = userAnswers;
+  }, [userAnswers]);
 
   // Simulação de questões extras
   const [simulatedExtraAnswers, setSimulatedExtraAnswers] = useState<{ total: number; correct: number; unique: number; reviews: number; repeated: number }>({
@@ -342,14 +346,12 @@ export default function Home() {
   const [sessionExclusionSnapshot, setSessionExclusionSnapshot] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
-    if (bancoMode === 'resolucao') {
-      const snapshot: Record<string, boolean> = {};
-      Object.keys(userAnswers).forEach((id) => {
-        snapshot[id] = true;
-      });
-      setSessionExclusionSnapshot(snapshot);
-    }
-  }, [bancoMode]);
+    const snapshot: Record<string, boolean> = {};
+    Object.keys(userAnswersRef.current).forEach((id) => {
+      snapshot[id] = true;
+    });
+    setSessionExclusionSnapshot(snapshot);
+  }, [bancoMode, advancedFilters]);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [questionTimer, setQuestionTimer] = useState<number>(0);
@@ -607,9 +609,10 @@ export default function Home() {
           effectivePageSize = Math.min(200, Math.max(50, sessionQuestionIds.length));
         }
 
-        const answeredIds = Object.keys(userAnswers);
-        const correctIds = Object.entries(userAnswers).filter(([_, a]) => a.isCorrect).map(([id]) => id);
-        const wrongIds = Object.entries(userAnswers).filter(([_, a]) => !a.isCorrect).map(([id]) => id);
+        const currentUserAnswers = userAnswersRef.current;
+        const answeredIds = Object.keys(currentUserAnswers);
+        const correctIds = Object.entries(currentUserAnswers).filter(([_, a]) => a.isCorrect).map(([id]) => id);
+        const wrongIds = Object.entries(currentUserAnswers).filter(([_, a]) => !a.isCorrect).map(([id]) => id);
 
         const res = await fetchQuestionsFromSupabase(
           activeListId ? {} : {
@@ -625,6 +628,11 @@ export default function Home() {
         if (!isCancelled) {
           if (questionsPage === 1) {
             setSupabaseQuestions(res.questions);
+            const snapshot: Record<string, boolean> = {};
+            answeredIds.forEach((id) => {
+              snapshot[id] = true;
+            });
+            setSessionExclusionSnapshot(snapshot);
           } else {
             setSupabaseQuestions((prev) => {
               const existingIds = new Set(prev.map((q) => q.id));
@@ -652,7 +660,7 @@ export default function Home() {
       isCancelled = true;
       clearTimeout(timer);
     };
-  }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds, bancoMode, userAnswers]);
+  }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds, bancoMode]);
 
 
   // Filtragem local complementar para status (resolvidas/não vistas) e fallback
@@ -675,19 +683,15 @@ export default function Home() {
       const isCorrect = answer?.isCorrect === true;
       const isWrong = isResolved && !isCorrect;
 
-      // Se estiver no modo de resolução sequencial ativo, uma questão respondida nesta sessão
-      // NÃO é removida instantaneamente para permitir que o aluno visualize a resposta, feedback e justificativas.
-      // A questão só não aparecerá mais quando o aluno sair da sessão e iniciar novamente.
+      // Se a questão foi respondida antes da carga desta lista/sessão, ela é considerada "já vista".
+      // Se ela foi respondida durante a navegação/sessão atual (não estava no snapshot quando carregou),
+      // mantemos ela visível para que o aluno possa conferir o gabarito, justificativas e refazer.
       const isResolvedBeforeSession = sessionExclusionSnapshot[q.id] === true;
 
       if (advancedFilters.status === 'Não vistas') {
-        if (bancoMode === 'resolucao') {
-          if (isResolvedBeforeSession) return false;
-        } else {
-          if (isResolved) return false;
-        }
+        if (isResolvedBeforeSession) return false;
       }
-      if (advancedFilters.status === 'Resolvidas' && !isResolved) return false;
+      if (advancedFilters.status === 'Resolvidas' && !isResolved && !isResolvedBeforeSession) return false;
       if (advancedFilters.status === 'Acertadas' && !isCorrect) return false;
       if (advancedFilters.status === 'Erradas' && !isWrong) return false;
       if (advancedFilters.status === 'Ainda não acertadas' && isCorrect) return false;
@@ -711,11 +715,7 @@ export default function Home() {
 
       // 5. Ocultar já revisadas
       if (advancedFilters.ocultarRevisadas) {
-        if (bancoMode === 'resolucao') {
-          if (isResolvedBeforeSession) return false;
-        } else {
-          if (isResolved) return false;
-        }
+        if (isResolvedBeforeSession) return false;
       }
 
       return true;
@@ -863,12 +863,14 @@ export default function Home() {
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     const q = supabaseQuestions.find((item) => item.id === questionId);
     const answerTimestamp = Date.now();
+    const isAnuladaQuestion = Boolean(q?.isAnulada || q?.correctAnswer === 'ANULADA');
+    const finalIsCorrect = isAnuladaQuestion ? true : isCorrect;
     const answerObj = {
       letter: selectedLetter,
-      isCorrect,
+      isCorrect: finalIsCorrect,
       timestamp: answerTimestamp,
       difficulty: q?.difficulty || 'Médio',
-      isAnulada: q?.isAnulada || false,
+      isAnulada: isAnuladaQuestion,
       specialty: q?.especialidade,
       tema: q?.tema,
       foco: q?.foco,
@@ -901,7 +903,7 @@ export default function Home() {
             user_id: user.id,
             question_id: questionId,
             selected_option: selectedLetter,
-            is_correct: isCorrect,
+            is_correct: finalIsCorrect,
             answered_at: new Date(answerTimestamp).toISOString()
           },
           { onConflict: 'user_id,question_id' }
@@ -1902,7 +1904,9 @@ export default function Home() {
                     const sessionQuestions = filteredQuestions;
                     const sessionAnswered = sessionQuestions.filter((q) => userAnswers[q.id]);
                     const sessionCorrect = sessionAnswered.filter((q) => userAnswers[q.id]?.isCorrect);
-                    const sessionIncorrect = sessionAnswered.filter((q) => !userAnswers[q.id]?.isCorrect);
+                    const sessionIncorrect = sessionAnswered.filter(
+                      (q) => !userAnswers[q.id]?.isCorrect && !q.isAnulada && q.correctAnswer !== 'ANULADA'
+                    );
                     const answeredCount = sessionAnswered.length;
                     const correctCount = sessionCorrect.length;
                     const incorrectCount = sessionIncorrect.length;

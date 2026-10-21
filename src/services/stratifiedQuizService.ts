@@ -108,7 +108,8 @@ export async function fetchFacetedHierarchyCounts(
         if (filters.anos && filters.anos.length > 0) {
           qSpec = qSpec.in('year', filters.anos);
         } else if (filters.ultimos5Anos) {
-          qSpec = qSpec.gte('year', 2020);
+          const minYear = new Date().getFullYear() - 4;
+          qSpec = qSpec.gte('year', minYear);
         }
         if (filters.dificuldade && filters.dificuldade !== 'Todas') {
           qSpec = qSpec.eq('difficulty', filters.dificuldade);
@@ -181,7 +182,8 @@ export async function fetchFacetedHierarchyCounts(
     if (filters.anos && filters.anos.length > 0) {
       q = q.in('year', filters.anos);
     } else if (filters.ultimos5Anos) {
-      q = q.gte('year', 2020);
+      const minYear = new Date().getFullYear() - 4;
+      q = q.gte('year', minYear);
     }
 
     // Dificuldade
@@ -426,7 +428,8 @@ export async function generateStratifiedQuiz(
       if (filters.anos && filters.anos.length > 0) {
         q = q.in('year', filters.anos);
       } else if (filters.ultimos5Anos) {
-        q = q.gte('year', 2020);
+        const minYear = new Date().getFullYear() - 4;
+        q = q.gte('year', minYear);
       }
       if (filters.dificuldade && filters.dificuldade !== 'Todas') {
         q = q.eq('difficulty', filters.dificuldade);

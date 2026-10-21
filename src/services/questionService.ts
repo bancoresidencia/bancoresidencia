@@ -370,7 +370,8 @@ export async function fetchQuestionsFromSupabase(
 
     // 10. Últimos 5 anos
     if (filters.ultimos5Anos) {
-      query = query.gte('year', 2020);
+      const minYear = new Date().getFullYear() - 4;
+      query = query.gte('year', minYear);
     }
   }
 
@@ -509,7 +510,8 @@ export async function fetchQuestionsFromSupabase(
       if (filters.anos && filters.anos.length > 0) {
         countQuery = countQuery.in('year', filters.anos);
       } else if (filters.ultimos5Anos) {
-        countQuery = countQuery.gte('year', 2020);
+        const minYear = new Date().getFullYear() - 4;
+        countQuery = countQuery.gte('year', minYear);
       }
       if (filters.dificuldade && filters.dificuldade !== 'Todas') {
         countQuery = countQuery.eq('difficulty', filters.dificuldade);
