@@ -24,7 +24,12 @@
     "sync:medcurso": "node scripts/sync_medcurso_from_supabase.mjs",
     "upload:medcurso": "node scripts/upload_medcurso_to_supabase.mjs",
     "open:chromium": "node scripts/open_chromium_forced.mjs",
-    "open:drive": "node scripts/open_medcurso_drive.mjs"
+    "open:drive": "node scripts/open_medcurso_drive.mjs",
+    "fase2:init": "node scripts/init_fase2_supabase_motor.mjs",
+    "fase2:dev1": "node scripts/worker_fase2.mjs --worker=DEV_1",
+    "fase2:dev2": "node scripts/worker_fase2.mjs --worker=DEV_2",
+    "fase2:status": "node scripts/status_fase2.mjs",
+    "fase2:watch": "node scripts/status_fase2.mjs --watch"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

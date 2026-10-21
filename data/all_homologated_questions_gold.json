@@ -466512,5 +466512,649 @@
       "official_answer": "A",
       "source": "Fundatec 647"
     }
+  },
+  {
+    "id": "620d852c-38f3-40f5-8063-310cb2325f5c",
+    "specialty": "data/ginecologia_final_questions.json",
+    "code": "HOB-2023-GIN-6813",
+    "correct_answer": "A",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
+      "question_number": 51,
+      "official_answer": "A",
+      "hits": 3
+    }
+  },
+  {
+    "id": "feed5638-cee4-40b8-870d-10ed37bc1d7b",
+    "specialty": "data/ginecologia_final_questions.json",
+    "code": "SMS-2023-GIN-8299",
+    "correct_answer": "D",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2023_PROVA_ACESSO_DIRETO",
+      "question_number": 95,
+      "official_answer": "D",
+      "hits": 4
+    }
+  },
+  {
+    "id": "c20fc8ea-82ed-4354-89d3-b7446daf1fe1",
+    "specialty": "data/ginecologia_final_questions.json",
+    "code": "HEDA-2022-GIN-8460",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 83,
+      "official_answer": "B",
+      "hits": 16
+    }
+  },
+  {
+    "id": "8716bd10-0af1-4d27-8e7a-278486bfb1b6",
+    "specialty": "data/ginecologia_final_questions.json",
+    "code": "HEDA-2022-GIN-11033",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 90,
+      "official_answer": "B",
+      "hits": 4
+    }
+  },
+  {
+    "id": "b6a5bd9a-a1e5-4afe-9ba3-a6cd67111e80",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HFA-2020-CIR-1539",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 68,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "dea43ca0-5d7a-492c-b3fe-2ba0ff2028ec",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "UNIVERSIDADE-2021-CIR-2418",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2017_PROVA_ACESSO_DIRETO",
+      "question_number": 26,
+      "official_answer": "E",
+      "hits": 4
+    }
+  },
+  {
+    "id": "31e1200e-daa7-431e-b2ca-c99cf7dbf6c2",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HFA-2020-CIR-3467",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 68,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "1c5a254b-bd4e-446f-850d-d828758ce37e",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HEDA-2022-CIR-6296",
+    "correct_answer": "A",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 65,
+      "official_answer": "A",
+      "hits": 16
+    }
+  },
+  {
+    "id": "a0b10fc3-76bb-4ca3-a39b-646c3043e27b",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HEDA-2022-CIR-6884",
+    "correct_answer": "A",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 64,
+      "official_answer": "A",
+      "hits": 16
+    }
+  },
+  {
+    "id": "ed572778-053d-4344-9bba-606bd7b9f792",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HFA-2020-CIR-7485",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 68,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "10e22dee-a09f-4874-8d6e-449bde85cd07",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HFA-2020-CIR-7703",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 68,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "e3dcabbb-7e46-444f-983b-7915a01be751",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HFA-2020-CIR-8486",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 68,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "af82b7bf-17a5-4dac-9c9d-1af9d77099de",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HFA-2020-CIR-10142",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 68,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "5b82c581-f9bf-4f7b-9522-6fac7b7336a9",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HFA-2020-CIR-11754",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 68,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "df584597-ad12-4413-a2be-ecc80f7b031c",
+    "specialty": "data/cirurgia_final_questions.json",
+    "code": "HAOC-2021-CIR-16588",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 62,
+      "official_answer": "C",
+      "hits": 3
+    }
+  },
+  {
+    "id": "7f41afc4-4edb-459b-afd4-e448b9725bba",
+    "specialty": "data/pediatria_final_questions.json",
+    "code": "UNIVERSIDADE-2023-PED-1227",
+    "correct_answer": "D",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2023_PROVA_ACESSO_DIRETO",
+      "question_number": 18,
+      "official_answer": "D",
+      "hits": 4
+    }
+  },
+  {
+    "id": "5ef83174-136c-4272-9c9f-f2a99e11d90e",
+    "specialty": "data/pediatria_final_questions.json",
+    "code": "FACULDADEDEM-2023-PED-1759",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
+      "question_number": 73,
+      "official_answer": "B",
+      "hits": 6
+    }
+  },
+  {
+    "id": "2ff286d8-0c57-4c3b-84f2-a75b2ed48b42",
+    "specialty": "data/pediatria_final_questions.json",
+    "code": "HEDA-2022-PED-8916",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 44,
+      "official_answer": "B",
+      "hits": 15
+    }
+  },
+  {
+    "id": "af9b373b-a94a-4712-960c-2bf821638509",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HMMSJP-2023-MPS-0005",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "59745377-6929-4969-b964-2aa1cf9818a8",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HMMSJP-2023-MPS-0059",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "a5cce6ee-a253-454c-b573-c7e9f09d00ea",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HOSPITALUNIM-2023-MPS-0092",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "6f2b655e-320a-4aa0-83a6-23fbbf96c0bd",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "UNIVERSIDADE-2020-MPS-0133",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "3be203bc-2142-4232-ab6d-16bbc4527051",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HOSBOS-2025-MPS-0541",
+    "correct_answer": "A",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 89,
+      "official_answer": "A",
+      "hits": 3
+    }
+  },
+  {
+    "id": "000a387c-647b-4819-a685-163f435ab3e0",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "CENTROUNIVER-2022-MPS-1365",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "82a766c5-134c-49ff-978e-3751520cde4f",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HEJAYMENEVES-2022-MPS-1650",
+    "correct_answer": "A",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 91,
+      "official_answer": "A",
+      "hits": 3
+    }
+  },
+  {
+    "id": "adf879c7-5cf5-4422-a878-6e7ace8428e7",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HRPRESIDENTE-2024-MPS-3175",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2021_PROVA_ACESSO_DIRETO",
+      "question_number": 84,
+      "official_answer": "B",
+      "hits": 4
+    }
+  },
+  {
+    "id": "0daeb647-9b6d-4d0a-9020-16b6e8614b75",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HAS-2026-MPS-3953",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "a2d47ba2-c2b6-44ff-8d2c-725f69c7baa0",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HSLRP-2021-MPS-4712",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "b9f69534-bf47-4b81-8141-880b8352f1c7",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "UNIVERSIDADE-2021-MPS-4732",
+    "correct_answer": "A",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 91,
+      "official_answer": "A",
+      "hits": 3
+    }
+  },
+  {
+    "id": "8c53a58a-30ef-4adf-9cfc-50af9f2dbd4d",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "SISESUS-2021-MPS-6019",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "aee1562b-0763-4d88-897a-c16a240ea5e1",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "CENTROUNIVER-2023-MPS-7883",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "07ad5b38-679e-499d-9aaf-fcd61cefcc25",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "IOG-2021-MPS-9150",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2018_PROVA_ACESSO_DIRETO",
+      "question_number": 8,
+      "official_answer": "B",
+      "hits": 9
+    }
+  },
+  {
+    "id": "0844e0f0-5b10-48fb-9ece-014b56f33455",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "IOG-2021-MPS-9322",
+    "correct_answer": "D",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2018_PROVA_ACESSO_DIRETO",
+      "question_number": 4,
+      "official_answer": "D",
+      "hits": 7
+    }
+  },
+  {
+    "id": "7dffc993-1a5f-4823-a99f-4e01e65c77ea",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "IHOA-2020-MPS-10516",
+    "correct_answer": "D",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2018_PROVA_ACESSO_DIRETO",
+      "question_number": 98,
+      "official_answer": "D",
+      "hits": 6
+    }
+  },
+  {
+    "id": "024dd6f9-b4f1-4d05-9c0a-286d47303e34",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HEDA-2022-MPS-12878",
+    "correct_answer": "A",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 27,
+      "official_answer": "A",
+      "hits": 9
+    }
+  },
+  {
+    "id": "16fc74f5-4612-4fd2-a794-27cbd37d7129",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "CERMAM-2021-MPS-13990",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "6736fa64-a915-4b8e-81bf-5e8194f64151",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HEDA-2022-MPS-14602",
+    "correct_answer": "C",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 23,
+      "official_answer": "C",
+      "hits": 6
+    }
+  },
+  {
+    "id": "85c6e953-25a8-4221-b808-d14055e36f51",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "UERJHUPE-2024-MPS-14626",
+    "correct_answer": "D",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
+      "question_number": 24,
+      "official_answer": "D",
+      "hits": 8
+    }
+  },
+  {
+    "id": "5acdde01-0b59-46d0-8772-909ae68e582a",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "SMSCURITIBA-2019-MPS-14852",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2018_PROVA_ACESSO_DIRETO",
+      "question_number": 17,
+      "official_answer": "B",
+      "hits": 3
+    }
+  },
+  {
+    "id": "9a5161f0-ad74-4be9-ade2-be40cc82bce6",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "UNIVERSIDADE-2021-MPS-16282",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2021_PROVA_ACESSO_DIRETO",
+      "question_number": 84,
+      "official_answer": "B",
+      "hits": 4
+    }
+  },
+  {
+    "id": "b4b95828-9a64-4729-80fb-e9eaa6e88813",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "HRPRESIDENTE-2024-MPS-18743",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2021_PROVA_ACESSO_DIRETO",
+      "question_number": 84,
+      "official_answer": "B",
+      "hits": 4
+    }
+  },
+  {
+    "id": "b18787a7-2ecf-421b-8340-a25d5c763c97",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "CENTROUNIVER-2025-MPS-21761",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2021_PROVA_ACESSO_DIRETO",
+      "question_number": 81,
+      "official_answer": "B",
+      "hits": 5
+    }
+  },
+  {
+    "id": "1623dba7-7387-4e8e-a814-f052b60d4f1f",
+    "specialty": "data/medicina_preventiva_final_questions.json",
+    "code": "UFMTREVALIDA-2019-MPS-21862",
+    "correct_answer": "E",
+    "audit": {
+      "verified": true,
+      "banca": "SES",
+      "booklet": "SES_PE_SES_PE_2019_PROVA_ACESSO_DIRETO",
+      "question_number": 100,
+      "official_answer": "E",
+      "hits": 3
+    }
+  },
+  {
+    "id": "c2325442-2baf-4f99-a5b1-22233360c1ba",
+    "specialty": "data/clinica_medica_final_questions.json",
+    "code": "HEDA-2022-CLM-2592",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 17,
+      "official_answer": "B",
+      "hits": 11
+    }
+  },
+  {
+    "id": "0f024558-c55c-4a75-a3ea-b428f9274039",
+    "specialty": "data/clinica_medica_final_questions.json",
+    "code": "HEDA-2022-CLM-9962",
+    "correct_answer": "B",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 25,
+      "official_answer": "B",
+      "hits": 14
+    }
+  },
+  {
+    "id": "01c6bdcb-5d05-4705-af61-58a7e2f542b7",
+    "specialty": "data/clinica_medica_final_questions.json",
+    "code": "HEDA-2022-CLM-20416",
+    "correct_answer": "D",
+    "audit": {
+      "verified": true,
+      "banca": "USP",
+      "booklet": "USP_USP_2022_PV",
+      "question_number": 6,
+      "official_answer": "D",
+      "hits": 16
+    }
   }
 ]
