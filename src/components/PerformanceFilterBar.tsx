@@ -43,7 +43,7 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
   };
 
   return (
-    <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
+    <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800/80 pb-4">
         <div className="flex items-center gap-2.5">
           <div
@@ -93,7 +93,7 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
           <select
             value={filters.modalidade}
             onChange={(e) => onChange({ ...filters, modalidade: e.target.value as Modalidade })}
-            className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white font-medium rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer shadow-sm"
+            className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-white font-medium rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer shadow-sm"
           >
             <option value="Residência">Residência Médica</option>
             <option value="Revalida">Revalida</option>
@@ -110,7 +110,7 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
           <select
             value={filters.period}
             onChange={(e) => onChange({ ...filters, period: e.target.value as PeriodFilter })}
-            className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white font-medium rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer shadow-sm"
+            className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-white font-medium rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer shadow-sm"
           >
             <option value="7d">Últimos 7 dias</option>
             <option value="30d">Últimos 30 dias</option>
@@ -142,7 +142,7 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
           <button
             type="button"
             onClick={() => setIsOpenInstitutions(!isOpenInstitutions)}
-            className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-left text-slate-900 dark:text-white font-medium rounded-xl px-3 py-2.5 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer shadow-sm"
+            className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-left text-zinc-900 dark:text-white font-medium rounded-xl px-3 py-2.5 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer shadow-sm"
           >
             <span className="truncate text-xs">
               {filters.institutions.length === 0
@@ -201,7 +201,7 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
           <select
             value={filters.banca}
             onChange={(e) => onChange({ ...filters, banca: e.target.value })}
-            className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white font-medium rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer shadow-sm"
+            className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-white font-medium rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer shadow-sm"
           >
             {mockBancas.map((banca) => (
               <option key={banca} value={banca}>{banca}</option>

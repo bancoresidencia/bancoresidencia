@@ -714,7 +714,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       {/* =========================================================================
           1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
          ========================================================================= */}
-      <div className="bg-white dark:bg-[#0a0f1d] border border-slate-200 dark:border-slate-800/80 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-3">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-3">
         {/* Lado Esquerdo: Modalidades no topo e Botões de Ação Rápida logo abaixo */}
         <div className="flex flex-col gap-2 items-start">
           {/* Grupo de Modalidades */}
@@ -816,7 +816,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA ESQUERDA (57%): ESPECIALIDADES, TEMAS E SUBFOCOS
            ----------------------------------------------------------------------- */}
         <div 
-          className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 overflow-hidden h-full min-h-0"
+          className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0"
         >
           {/* Topo do Card de Conteúdo */}
           <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-slate-100 dark:border-slate-800/80 mb-2 shrink-0">
@@ -860,7 +860,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               value={hierarchySearch}
               onChange={(e) => setHierarchySearch(e.target.value)}
               placeholder="Filtrar conteúdo (ex: diabetes, sífilis, fórcipe, apendicite, ECG, ATLS...)"
-              className="w-full rounded-xl pl-8.5 pr-8 py-1.5 text-xs text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-1 focus:ring-red-500/50 transition-all font-sans"
+              className="w-full rounded-xl pl-8.5 pr-8 py-1.5 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] transition-all font-sans"
             />
             {hierarchySearch && (
               <button
@@ -1237,7 +1237,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1)
            ----------------------------------------------------------------------- */}
         <div 
-          className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 overflow-hidden h-full min-h-0 space-y-3"
+          className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 space-y-3"
         >
           {/* 1. Instituições e Bancas */}
           <div className="space-y-1.5 shrink-0">
@@ -1262,7 +1262,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 value={instSearch}
                 onChange={(e) => setInstSearch(e.target.value)}
                 placeholder="Buscar banca por sigla, nome ou estado (ex: ENARE, USP, SURCE, SP...)"
-                className="w-full rounded-xl pl-9 pr-8 py-1.5 text-xs text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:outline-none font-sans"
+                className="w-full rounded-xl pl-9 pr-8 py-1.5 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] font-sans"
               />
               {instSearch && (
                 <button
@@ -1421,8 +1421,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
                     {/* Dificuldade */}
                     <div className="space-y-1.5">
-                      <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Dificuldade</span>
-                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
+                      <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block">Dificuldade</span>
+                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-[var(--bg-input)] border border-zinc-200/50 dark:border-zinc-800/80">
                         {(['Fácil', 'Médio', 'Difícil'] as QuestionDifficulty[]).map((dif) => {
                           const isActive = filters.dificuldade === dif;
                           return (
@@ -1438,7 +1438,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                               className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
                                 isActive
                                   ? 'bg-red-600 text-white shadow-sm'
-                                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                               }`}
                             >
                               {dif}
@@ -1450,8 +1450,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                     {/* Formato */}
                     <div className="space-y-1.5">
-                      <span className="text-xs font-bold text-slate-700 dark:text-slate-300 block">Formato</span>
-                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-[#0a0f1d] border border-slate-200/50 dark:border-slate-800/80">
+                      <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block">Formato</span>
+                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-[var(--bg-input)] border border-zinc-200/50 dark:border-zinc-800/80">
                         {[
                           { label: 'Todas', val: 'Todas' },
                           { label: 'Múltipla', val: 'Múltipla escolha' },
@@ -1935,7 +1935,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           style={{ backgroundColor: isDark ? 'rgba(3, 7, 18, 0.88)' : 'rgba(15, 23, 42, 0.65)', backdropFilter: 'blur(8px)' }}
         >
           <div 
-            className="rounded-3xl max-w-4xl w-full p-5 sm:p-6 shadow-2xl flex flex-col bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 text-slate-900 dark:text-slate-100"
+            className="rounded-3xl max-w-4xl w-full p-5 sm:p-6 shadow-2xl flex flex-col bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 text-zinc-900 dark:text-zinc-100"
             style={{ 
               maxHeight: '88vh' 
             }}

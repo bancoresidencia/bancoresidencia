@@ -146,9 +146,9 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
       {/* =========================================================================
           CARD INTERATIVO DA QUESTÃO (ESTILO EXATO DA PLATAFORMA)
           ========================================================================= */}
-      <div className="rounded-3xl bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-black/70 overflow-hidden transition-all duration-200">
+      <div className="rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 shadow-xl shadow-zinc-200/50 dark:shadow-black/70 overflow-hidden transition-all duration-200">
         {/* Barra Superior do Card */}
-        <div className="flex flex-wrap items-center justify-between gap-4 p-5 sm:p-6 border-b border-slate-100 dark:border-slate-800/70 bg-slate-50/60 dark:bg-[#0e172a]/60">
+        <div className="flex flex-wrap items-center justify-between gap-4 p-5 sm:p-6 border-b border-zinc-100 dark:border-zinc-800/70 bg-zinc-50/60 dark:bg-zinc-900/60">
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 font-mono">
             <span className="text-blue-600 dark:text-blue-400 font-black">
               {TABS.find((t) => t.id === activeTab)?.label}
@@ -250,9 +250,9 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
               const isOptionCorrect = option.letter === currentQuestion.correct_answer;
 
               let optionStyle =
-                'bg-slate-50/70 dark:bg-[#090f1d] border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 hover:border-blue-500/60 hover:bg-blue-50/30 dark:hover:bg-blue-950/20';
+                'bg-zinc-50/70 dark:bg-[var(--bg-input)] border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:border-[var(--primary-color)]/60 hover:bg-zinc-100 dark:hover:bg-zinc-800/40';
               let badgeStyle =
-                'bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300';
+                'bg-white dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300';
 
               if (isAnswered) {
                 if (isOptionCorrect) {
@@ -265,7 +265,7 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
                   badgeStyle = 'bg-rose-600 text-white border-rose-600';
                 } else {
                   optionStyle =
-                    'opacity-60 bg-slate-50/40 dark:bg-[#070d18] border-slate-200 dark:border-slate-800/60 text-slate-500 dark:text-slate-400';
+                    'opacity-60 bg-zinc-50/40 dark:bg-[var(--bg-page)] border-zinc-200 dark:border-zinc-800/60 text-zinc-500 dark:text-zinc-400';
                 }
               }
 
@@ -302,7 +302,7 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
               PAINEL DE RESOLUÇÃO COMENTADA PADRÃO-OURO (REVELADO AO RESPONDER)
               ========================================================================= */}
           {isAnswered && (
-            <div className="mt-6 p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-[#090f1d] border border-slate-200 dark:border-slate-800 space-y-4 animate-fadeIn">
+            <div className="mt-6 p-5 sm:p-6 rounded-2xl bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 space-y-4 animate-fadeIn">
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
                   {isCorrect ? (

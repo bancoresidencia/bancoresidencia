@@ -1458,7 +1458,7 @@ export default function Home() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-[#070b14]">
+      <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
         <div className="flex flex-col items-center gap-3">
           <div
             className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg animate-pulse"
@@ -1474,7 +1474,7 @@ export default function Home() {
 
   if (!isAuthenticated || !user) {
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 flex flex-col">
+      <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col">
         <LandingPage
           onOpenAuth={(mode = 'login', planTitle) => {
             setAuthModal({ isOpen: true, mode, planTitle });
@@ -1501,7 +1501,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 flex font-sans transition-colors duration-200">
+    <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex font-sans transition-colors duration-200">
       {/* 1. Barra Lateral de Navegação Retrátil (Sidebar) */}
       <Sidebar
         activeTab={activeTab}
@@ -1519,7 +1519,7 @@ export default function Home() {
       {/* Conteúdo Principal à Direita da Sidebar */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Barra Superior Mobile e Header Geral com Glassmorphism */}
-        <header className="sticky top-0 z-30 bg-white/85 dark:bg-[#070b14]/85 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/80 transition-colors duration-200">
+        <header className="sticky top-0 z-30 bg-[var(--bg-card)]/85 dark:bg-[var(--bg-card)]/85 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800/80 transition-colors duration-200">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-3">
             {/* Botão Mobile para abrir navegação quando em telas pequenas */}
             <div className="md:hidden flex items-center shrink-0">
@@ -1637,8 +1637,8 @@ export default function Home() {
 
                   {/* Dropdown Menu com Ajustar Perfil e Sair (como na Imagem 2 e 3) */}
                   {profileDropdownOpen && (
-                    <div className="absolute right-0 top-full mt-2 w-64 bg-white dark:bg-[#0c1424] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
-                      <div className="flex items-center gap-3 p-2 border-b border-slate-100 dark:border-slate-800/80">
+                    <div className="absolute right-0 top-full mt-2 w-64 bg-white dark:bg-[var(--bg-card)] rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
+                      <div className="flex items-center gap-3 p-2 border-b border-zinc-100 dark:border-zinc-800/80">
                         {user.avatarUrl ? (
                           // eslint-disable-next-line @next/next/no-img-element
                           <img
@@ -1717,7 +1717,7 @@ export default function Home() {
 
           {/* Menu Mobile Expandido */}
           {mobileMenuOpen && (
-            <div className="md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#070b14] px-4 py-3 space-y-1.5 shadow-lg">
+            <div className="md:hidden border-b border-zinc-200 dark:border-zinc-800 bg-[var(--bg-card)] dark:bg-[var(--bg-card)] px-4 py-3 space-y-1.5 shadow-lg">
               {[
                 { id: 'home', label: 'Início' },
                 { id: 'banco', label: 'Banco de Questões' },
@@ -1947,7 +1947,7 @@ export default function Home() {
                     return (
                       <>
                         {/* Header com Resumo Geral */}
-                        <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 shadow-xs space-y-6">
+                        <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs space-y-6">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-6">
                             <div className="flex items-center gap-3.5">
                               <div
@@ -2036,7 +2036,7 @@ export default function Home() {
                         </div>
 
                         {/* SEÇÃO PRINCIPAIS PONTOS A SEREM MELHOR ESTUDADOS */}
-                        <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 shadow-xs space-y-5">
+                        <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs space-y-5">
                           <div className="flex items-center gap-3">
                             <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center shrink-0">
                               <AlertTriangle className="w-5 h-5" />
@@ -2149,7 +2149,7 @@ export default function Home() {
                         </div>
 
                         {/* Barra de Ações Inferior: Retornar à tela de filtros */}
-                        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-3xl bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 shadow-xs">
+                        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
                           <button
                             type="button"
                             onClick={() => {
@@ -2183,7 +2183,7 @@ export default function Home() {
                   {visibleQuestions.length > 0 ? (
                     <>
                       {/* BARRA SUPERIOR SEQUENCIAL (MODELO DA IMAGEM 2 COM RÉGUA RETRÁTIL DA IMAGEM 1) */}
-                      <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-xs flex flex-col gap-2.5">
+                      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-xs flex flex-col gap-2.5">
                         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
                           {/* Esquerda: Widget de Progresso Circular Retrátil (Modelo da Imagem 2) */}
                           <div className="flex items-center gap-3">
@@ -2274,7 +2274,7 @@ export default function Home() {
 
                               {/* Pílula Flutuante Horizontal Centralizada com as 6 Cores de Marca-texto em Linha */}
                               {isTopHighlighterMenuOpen && (
-                                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 w-max min-w-max flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800 rounded-full shadow-xl animate-in fade-in zoom-in-95 duration-150">
+                                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 w-max min-w-max flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-full shadow-xl animate-in fade-in zoom-in-95 duration-150">
                                   {(['yellow', 'green', 'pink', 'blue', 'orange', 'purple'] as HighlighterColor[]).map((colorKey) => {
                                     const c = HIGHLIGHTER_COLORS[colorKey];
                                     const isSelected = activeHighlighterColor === colorKey;
@@ -2631,7 +2631,7 @@ export default function Home() {
                       </div>
                     </>
                   ) : (
-                    <div className="text-center py-20 bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800 rounded-3xl p-8 space-y-4 shadow-sm">
+                    <div className="text-center py-20 bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 space-y-4 shadow-sm">
                       <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-900 text-slate-400 flex items-center justify-center mx-auto">
                         <HelpCircle className="w-6 h-6" />
                       </div>
@@ -2726,7 +2726,7 @@ export default function Home() {
 
         {/* Rodapé Moderno */}
         {!(activeTab === 'banco' && bancoMode === 'filtros') && (
-          <footer className="border-t border-slate-200 dark:border-slate-800/80 bg-white dark:bg-[#070d18] py-6 text-center text-xs text-slate-500 dark:text-slate-400 transition-colors">
+          <footer className="border-t border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-[var(--bg-card)] py-6 text-center text-xs text-zinc-500 dark:text-zinc-400 transition-colors">
             <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />

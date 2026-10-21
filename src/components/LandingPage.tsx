@@ -165,11 +165,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#070b14] text-slate-900 dark:text-slate-100 flex flex-col selection:bg-blue-500 selection:text-white transition-colors duration-200">
+    <div className="min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-white transition-colors duration-200">
       {/* =========================================================================
           BARRA DE NAVEGAÇÃO SUPERIOR
           ========================================================================= */}
-      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 dark:bg-[#070b14]/85 border-b border-slate-200/80 dark:border-slate-800/80 transition-all">
+      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 dark:bg-[var(--bg-page)]/85 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-4">
           {/* Logo e Nome */}
           <div className="flex items-center gap-3">
@@ -259,7 +259,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       {/* =========================================================================
           HERO SECTION PRINCIPAL (FRASE DE IMPACTO + VISUAL DE ESTUDO)
           ========================================================================= */}
-      <section className="relative overflow-hidden pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-slate-200/80 dark:border-slate-800/80 bg-gradient-to-b from-white via-slate-50 to-slate-100 dark:from-[#090f1d] dark:via-[#070b14] dark:to-[#060911]">
+      <section className="relative overflow-hidden pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50 to-zinc-100 dark:from-[var(--bg-input)] dark:via-[var(--bg-page)] dark:to-black">
         {/* Glow de fundo */}
         <div
           className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] rounded-full blur-3xl opacity-20 pointer-events-none"
@@ -291,10 +291,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               ========================================================================= */}
           <div className="relative w-full overflow-hidden mt-10 sm:mt-14 py-3">
             {/* Fade lateral esquerdo para efeito de profundidade infinito */}
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent dark:from-[#070b14] dark:via-[#070b14]/80 to-transparent z-10" />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-zinc-50 via-zinc-50/80 to-transparent dark:from-[var(--bg-page)] dark:via-[var(--bg-page)]/80 to-transparent z-10" />
 
             {/* Fade lateral direito */}
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent dark:from-[#070b14] dark:via-[#070b14]/80 to-transparent z-10" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-zinc-50 via-zinc-50/80 to-transparent dark:from-[var(--bg-page)] dark:via-[var(--bg-page)]/80 to-transparent z-10" />
 
             {/* Track animado contínuo (Duplicado para loop perfeito) */}
             <div className="animate-marquee flex items-center gap-3.5 select-none py-1">
@@ -358,38 +358,38 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
           {/* Faixa de Métricas Essenciais */}
           <div className="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[#0c1424]/90 border border-slate-200/80 dark:border-slate-800/80 shadow-xs text-center">
-              <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-heading">
+            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
+              <div className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-heading">
                 +130.000
               </div>
-              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 mt-0.5">
+              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
                 Questões no Acervo
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[#0c1424]/90 border border-slate-200/80 dark:border-slate-800/80 shadow-xs text-center">
-              <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-heading">
+            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
+              <div className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-heading">
                 100%
               </div>
-              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 mt-0.5">
+              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
                 Provas Oficiais na Íntegra
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[#0c1424]/90 border border-slate-200/80 dark:border-slate-800/80 shadow-xs text-center">
-              <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-heading">
+            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
+              <div className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-heading">
                 5 Áreas
               </div>
-              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 mt-0.5">
+              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
                 Especialidades & Subfocos
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[#0c1424]/90 border border-slate-200/80 dark:border-slate-800/80 shadow-xs text-center">
+            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
               <div className="text-xl sm:text-2xl font-black text-emerald-600 dark:text-emerald-400 font-heading">
                 0% Ruído
               </div>
-              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 mt-0.5">
+              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
                 Sem Distrações
               </div>
             </div>
@@ -423,7 +423,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {/* PILAR 1: FUNÇÃO DAS QUESTÕES */}
-          <div id="questoes" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div id="questoes" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105 duration-200"
@@ -461,7 +461,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           </div>
 
           {/* PILAR 2: CADERNO DE TODAS AS PROVAS */}
-          <div id="provas" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div id="provas" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-indigo-600 shadow-md transition-transform group-hover:scale-105 duration-200">
                 <BookOpenCheck className="w-6 h-6" />
@@ -496,7 +496,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           </div>
 
           {/* PILAR 3: ACOMPANHAMENTO DETALHADO */}
-          <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-emerald-600 shadow-md transition-transform group-hover:scale-105 duration-200">
                 <BarChart3 className="w-6 h-6" />
@@ -535,17 +535,17 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       {/* =========================================================================
           SEÇÃO DE PLANOS DE PAGAMENTO (MENSAL, SEMESTRAL, ANUAL, BIENAL)
           ========================================================================= */}
-      <section id="planos" className="py-16 sm:py-24 border-t border-slate-200/80 dark:border-slate-800/80 bg-white/60 dark:bg-[#080d19]/60">
+      <section id="planos" className="py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-white/60 dark:bg-[var(--bg-page)]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-700 dark:text-blue-300 text-xs font-extrabold mb-3">
               <Zap className="w-3.5 h-3.5" />
               <span>Acesso Imediato a Todas as Funções</span>
             </div>
-            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-zinc-900 dark:text-white">
               Escolha o plano ideal para a sua jornada
             </h2>
-            <p className="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            <p className="mt-3 text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
               Sem pegadinhas ou recursos bloqueados: todos os planos incluem 100% das funções da plataforma.
             </p>
           </div>
@@ -561,10 +561,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   key={plan.id}
                   className={`relative rounded-3xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 ${
                     isAnual
-                      ? 'bg-white dark:bg-[#0d1629] border-2 border-blue-500 shadow-xl shadow-blue-500/10 lg:-translate-y-2'
+                      ? 'bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500 shadow-xl shadow-blue-500/10 lg:-translate-y-2'
                       : isBienal
-                      ? 'bg-white dark:bg-[#0c1424] border-2 border-emerald-500/80 shadow-lg shadow-emerald-500/5'
-                      : 'bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 shadow-md hover:shadow-lg'
+                      ? 'bg-white dark:bg-[var(--bg-card)] border-2 border-emerald-500/80 shadow-lg shadow-emerald-500/5'
+                      : 'bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-lg'
                   }`}
                 >
                   {/* Selo de Destaque Superior */}
@@ -718,7 +718,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       {/* =========================================================================
           RODAPÉ DA PÁGINA INICIAL
           ========================================================================= */}
-      <footer className="border-t border-slate-200 dark:border-slate-800/80 bg-white dark:bg-[#060911] py-8 text-xs text-slate-500 dark:text-slate-400 mt-auto transition-colors">
+      <footer className="border-t border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-[var(--bg-card)] py-8 text-xs text-zinc-500 dark:text-zinc-400 mt-auto transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div
@@ -768,7 +768,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           ========================================================================= */}
       {selectedPlanModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fadeIn">
-          <div className="w-full max-w-md bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl p-6 sm:p-7 relative space-y-5 animate-in fade-in zoom-in-95 duration-150">
+          <div className="w-full max-w-md bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl p-6 sm:p-7 relative space-y-5 animate-in fade-in zoom-in-95 duration-150">
             {/* Botão Fechar */}
             <button
               type="button"

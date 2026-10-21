@@ -128,13 +128,11 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-2xl border border-slate-700/80 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in zoom-in-95 duration-150 text-white"
-        style={{ backgroundColor: '#0d1527' }}
+        className="w-full max-w-2xl border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in zoom-in-95 duration-150 bg-white dark:bg-[var(--bg-card)] text-zinc-900 dark:text-zinc-100"
       >
         {/* Header - Totalmente opaco */}
         <div
-          className="relative px-6 py-4.5 border-b border-slate-800/90 flex items-center justify-between"
-          style={{ backgroundColor: '#080e1b' }}
+          className="relative px-6 py-4.5 border-b border-zinc-100 dark:border-zinc-800/90 flex items-center justify-between bg-zinc-50 dark:bg-[var(--bg-input)]"
         >
           <div className="flex items-center gap-3.5">
             <div
@@ -149,7 +147,7 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h2 className="text-base font-black font-sans text-white tracking-tight">
+                <h2 className="text-base font-black font-sans text-zinc-900 dark:text-white tracking-tight">
                   Atalhos do Teclado
                 </h2>
                 <span
@@ -163,7 +161,7 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
                   Produtividade
                 </span>
               </div>
-              <p className="text-xs text-slate-400 font-medium mt-0.5">
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 font-medium mt-0.5">
                 Navegue e resolva questões com máxima agilidade sem precisar do mouse
               </p>
             </div>
@@ -172,36 +170,34 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="w-8 h-8 rounded-xl flex items-center justify-center text-slate-400 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700/60 transition-colors cursor-pointer"
+            className="w-8 h-8 rounded-xl flex items-center justify-center text-zinc-400 hover:text-zinc-700 dark:hover:text-white bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700 transition-colors cursor-pointer"
             title="Fechar (Esc)"
           >
             <X className="w-4 h-4" />
           </button>
         </div>
 
-        {/* Content - Totalmente opaco com cards sólidos */}
-        <div className="p-6 overflow-y-auto space-y-6" style={{ backgroundColor: '#0d1527' }}>
+        {/* Content - Totalmente adaptável */}
+        <div className="p-6 overflow-y-auto space-y-6 bg-white dark:bg-[var(--bg-card)]">
           {SHORTCUT_GROUPS.map((group) => (
             <div key={group.category} className="space-y-2.5">
-              <h3 className="text-[11px] font-black uppercase tracking-wider text-slate-400 font-sans px-1">
+              <h3 className="text-[11px] font-black uppercase tracking-wider text-zinc-500 dark:text-zinc-400 font-sans px-1">
                 {group.category}
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {group.items.map((item, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center justify-between gap-3 p-3 rounded-2xl border border-slate-700/70 hover:border-slate-600 transition-all shadow-sm group"
-                    style={{ backgroundColor: '#131e36' }}
+                    className="flex items-center justify-between gap-3 p-3 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-[var(--bg-input)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all shadow-sm group"
                   >
-                    <span className="text-xs font-semibold text-slate-200 group-hover:text-white transition-colors leading-snug">
+                    <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors leading-snug">
                       {item.description}
                     </span>
                     <div className="flex items-center gap-1.5 shrink-0">
                       {item.keys.map((k) => (
                         <kbd
                           key={k}
-                          className="px-2.5 py-1 rounded-xl border border-slate-700 font-mono text-[11px] font-black text-slate-100 tracking-tight shadow-xs"
-                          style={{ backgroundColor: '#080e1b' }}
+                          className="px-2.5 py-1 rounded-xl border border-zinc-300 dark:border-zinc-700 font-mono text-[11px] font-black text-zinc-800 dark:text-zinc-200 tracking-tight shadow-xs bg-white dark:bg-[var(--bg-card)]"
                         >
                           {k}
                         </kbd>
@@ -214,13 +210,12 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
           ))}
         </div>
 
-        {/* Footer - Totalmente opaco */}
+        {/* Footer */}
         <div
-          className="px-6 py-3.5 border-t border-slate-800/90 flex items-center justify-between text-xs text-slate-400"
-          style={{ backgroundColor: '#080e1b' }}
+          className="px-6 py-3.5 border-t border-zinc-100 dark:border-zinc-800/90 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 bg-zinc-50 dark:bg-[var(--bg-input)]"
         >
           <span className="flex items-center gap-1.5">
-            Pressione <kbd className="px-1.5 py-0.5 rounded-lg border border-slate-700 text-slate-200 font-mono text-[10px] font-bold" style={{ backgroundColor: '#131e36' }}>?</kbd> a qualquer momento para abrir ou fechar
+            Pressione <kbd className="px-1.5 py-0.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 font-mono text-[10px] font-bold bg-white dark:bg-[var(--bg-card)]">?</kbd> a qualquer momento para abrir ou fechar
           </span>
           <button
             type="button"

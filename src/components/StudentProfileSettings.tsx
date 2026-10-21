@@ -224,7 +224,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   return (
     <div className="space-y-6 max-w-4xl mx-auto">
       {/* Título e Header da Seção */}
-      <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 sm:p-7 rounded-3xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-6 sm:p-7 rounded-3xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <div className="relative group">
             {avatarPreview ? (
@@ -397,7 +397,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       {activeTab === 'profile' && (
         <form onSubmit={handleSaveProfile} className="space-y-6">
           {/* Card de Gerenciamento de Foto */}
-          <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 rounded-3xl shadow-xs space-y-4">
+          <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-6 rounded-3xl shadow-xs space-y-4">
             <h2 className="text-xs font-extrabold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
               <Camera className="w-4 h-4 text-blue-500" />
               <span>Foto de Perfil & Avatar</span>
@@ -490,7 +490,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
           </div>
 
           {/* Card de Dados Pessoais */}
-          <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 rounded-3xl shadow-xs space-y-4">
+          <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-6 rounded-3xl shadow-xs space-y-4">
             <h2 className="text-xs font-extrabold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
               <User className="w-4 h-4 text-blue-500" />
               <span>Informações do Aluno</span>
@@ -506,7 +506,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-3.5 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white"
+                  className="w-full px-3.5 py-2.5 text-xs bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] text-zinc-900 dark:text-white"
                 />
               </div>
 
@@ -523,7 +523,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full pl-9 pr-3.5 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white"
+                    className="w-full pl-9 pr-3.5 py-2.5 text-xs bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] text-zinc-900 dark:text-white"
                   />
                 </div>
               </div>
@@ -641,7 +641,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       {/* ================= ABA 2: SEGURANÇA & SENHA ================= */}
       {activeTab === 'password' && (
         <form onSubmit={handleSavePassword} className="space-y-6">
-          <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 rounded-3xl shadow-xs space-y-4">
+          <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-6 rounded-3xl shadow-xs space-y-4">
             <h2 className="text-xs font-extrabold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
               <Shield className="w-4 h-4 text-emerald-500" />
               <span>Modificar Senha de Acesso</span>
@@ -716,7 +716,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       {/* ================= ABA 3: METAS & PREFERÊNCIAS DE ESTUDO ================= */}
       {activeTab === 'study' && (
         <div className="space-y-6">
-          <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 rounded-3xl shadow-xs space-y-5">
+          <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-6 rounded-3xl shadow-xs space-y-5">
             <h2 className="text-xs font-extrabold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
               <Target className="w-4 h-4 text-amber-500" />
               <span>Metas Diárias & Preferências de Visualização</span>
@@ -890,7 +890,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       {activeTab === 'subscription' && (
         <div className="space-y-6">
           {/* Card Principal de Status do Perfil */}
-          <div className="bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 p-6 sm:p-7 rounded-3xl shadow-xs space-y-6">
+          <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-6 sm:p-7 rounded-3xl shadow-xs space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-slate-800/60">
               <div className="flex items-center gap-4">
                 <div

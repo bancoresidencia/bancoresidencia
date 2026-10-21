@@ -7,9 +7,7 @@ import {
   FolderPlus,
   Check,
   ChevronRight,
-  ChevronDown,
-  Sparkles,
-  HelpCircle
+  ChevronDown
 } from 'lucide-react';
 import { Folder, Question } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
@@ -85,7 +83,7 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
       <div
-        className="w-full max-w-lg bg-white dark:bg-[#0b1324] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden"
+        className="w-full max-w-lg bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-send-folder-title"
@@ -93,7 +91,14 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
         {/* Cabeçalho */}
         <div className="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-800">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-2xl bg-blue-50 dark:bg-blue-950/50 flex items-center justify-center text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
+            <div
+              className="w-9 h-9 rounded-2xl flex items-center justify-center border shadow-xs"
+              style={{
+                backgroundColor: accentConfig.bgRgba,
+                borderColor: accentConfig.borderRgba,
+                color: accentConfig.primaryHex
+              }}
+            >
               <FolderPlus className="w-4 h-4" />
             </div>
             <div>
@@ -150,7 +155,8 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
             <button
               type="button"
               onClick={() => setIsCreatingNewFolder(!isCreatingNewFolder)}
-              className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 cursor-pointer"
+              className="text-xs font-bold hover:underline flex items-center gap-1 cursor-pointer"
+              style={{ color: accentConfig.primaryHex }}
             >
               <FolderPlus className="w-3.5 h-3.5" />
               <span>Nova Pasta</span>
@@ -165,13 +171,13 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
                 value={newFolderName}
                 onChange={(e) => setNewFolderName(e.target.value)}
                 placeholder="Nome da pasta (ex: Minhas Revisões R1)..."
-                className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3 py-2 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                 autoFocus
               />
               <select
                 value={newFolderParentId || ''}
                 onChange={(e) => setNewFolderParentId(e.target.value || null)}
-                className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                className="w-full bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3 py-2 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
               >
                 <option value="">📁 Pasta Maior (Nível 1 - Raiz)</option>
                 {rootFolders.map((r) => {

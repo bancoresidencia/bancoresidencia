@@ -61,7 +61,7 @@ export const MockExams: React.FC<MockExamsProps> = ({ onStartExam }) => {
   return (
     <div className="space-y-6">
       {/* Header Banner do Simulado */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 p-6 sm:p-7 rounded-3xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 p-6 sm:p-7 rounded-3xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h2 className="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
@@ -84,7 +84,7 @@ export const MockExams: React.FC<MockExamsProps> = ({ onStartExam }) => {
         {exams.map((exam) => (
           <div
             key={exam.id}
-            className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 rounded-3xl p-6 sm:p-7 shadow-sm transition-all flex flex-col justify-between space-y-5"
+            className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-3xl p-6 sm:p-7 shadow-sm transition-all flex flex-col justify-between space-y-5"
           >
             <div className="space-y-3">
               <div className="flex items-center justify-between gap-2">

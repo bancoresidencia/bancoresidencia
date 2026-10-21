@@ -3,17 +3,22 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #fafafa;
+  --foreground: #18181b;
   --card: #ffffff;
-  --card-foreground: #0f172a;
-  --card-border: #e2e8f0;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
+  --card-foreground: #18181b;
+  --card-border: #e4e4e7;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
   --accent-muted: rgba(37, 99, 235, 0.08);
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
   --ring: #2563eb;
+  --bg-page: #fafafa;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --border-input: #e4e4e7;
+  --ring-focus: var(--primary-color);
 }
 
 html.dark {
@@ -28,6 +33,43 @@ html.dark {
   --primary-color: #2563eb;
   --primary-hover: #3b82f6;
   --ring: var(--primary-color);
+  --bg-page: #09090b;
+  --bg-card: #121215;
+  --bg-input: #18181b;
+  --border-input: #27272a;
+  --ring-focus: var(--primary-color);
+}
+
+/* Modo Monocromático Estrito (Preto e Branco Puro) */
+html.theme-monochrome.dark {
+  --primary-color: #f4f4f5;
+  --primary-hover: #ffffff;
+  --ring: #f4f4f5;
+  --ring-focus: #f4f4f5;
+  --glow-color: rgba(255, 255, 255, 0.08);
+  --accent-muted: rgba(255, 255, 255, 0.06);
+}
+
+html.theme-monochrome:not(.dark) {
+  --primary-color: #18181b;
+  --primary-hover: #09090b;
+  --ring: #18181b;
+  --ring-focus: #18181b;
+  --glow-color: rgba(0, 0, 0, 0.08);
+  --accent-muted: rgba(0, 0, 0, 0.04);
+}
+
+.input-adaptive {
+  background-color: var(--bg-input);
+  border-color: var(--card-border);
+  color: var(--foreground);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input-adaptive:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--glow-color);
 }
 
 @theme inline {

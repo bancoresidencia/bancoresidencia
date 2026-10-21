@@ -19,6 +19,14 @@ export interface AccentConfig {
   badgeText: string;
   badgeBorder: string;
   cssVarValue: string;
+  surfaceDark: string;
+  cardDark: string;
+  inputDark: string;
+  borderDark: string;
+  surfaceLight: string;
+  cardLight: string;
+  inputLight: string;
+  borderLight: string;
 }
 
 export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
@@ -35,7 +43,15 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeBg: 'bg-blue-500/10',
     badgeText: 'text-blue-600 dark:text-blue-400',
     badgeBorder: 'border-blue-500/20',
-    cssVarValue: '#2563eb'
+    cssVarValue: '#2563eb',
+    surfaceDark: '#090b10',
+    cardDark: '#11141c',
+    inputDark: '#151922',
+    borderDark: '#232b3a',
+    surfaceLight: '#f8faff',
+    cardLight: '#ffffff',
+    inputLight: '#ffffff',
+    borderLight: '#e2e8f4'
   },
   green: {
     id: 'green',
@@ -50,7 +66,15 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeBg: 'bg-emerald-500/10',
     badgeText: 'text-emerald-600 dark:text-emerald-400',
     badgeBorder: 'border-emerald-500/20',
-    cssVarValue: '#059669'
+    cssVarValue: '#059669',
+    surfaceDark: '#080c0a',
+    cardDark: '#101512',
+    inputDark: '#141c17',
+    borderDark: '#1e2e24',
+    surfaceLight: '#f7fbf9',
+    cardLight: '#ffffff',
+    inputLight: '#ffffff',
+    borderLight: '#e2ede6'
   },
   orange: {
     id: 'orange',
@@ -65,7 +89,15 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeBg: 'bg-orange-500/10',
     badgeText: 'text-orange-600 dark:text-orange-400',
     badgeBorder: 'border-orange-500/20',
-    cssVarValue: '#ea580c'
+    cssVarValue: '#ea580c',
+    surfaceDark: '#0c0a08',
+    cardDark: '#151210',
+    inputDark: '#1c1714',
+    borderDark: '#302620',
+    surfaceLight: '#fffaf7',
+    cardLight: '#ffffff',
+    inputLight: '#ffffff',
+    borderLight: '#f0e6de'
   },
   purple: {
     id: 'purple',
@@ -80,7 +112,15 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeBg: 'bg-purple-500/10',
     badgeText: 'text-purple-600 dark:text-purple-400',
     badgeBorder: 'border-purple-500/20',
-    cssVarValue: '#7c3aed'
+    cssVarValue: '#7c3aed',
+    surfaceDark: '#0b0910',
+    cardDark: '#131119',
+    inputDark: '#181522',
+    borderDark: '#29223a',
+    surfaceLight: '#fbf9ff',
+    cardLight: '#ffffff',
+    inputLight: '#ffffff',
+    borderLight: '#e9e3f4'
   },
   red: {
     id: 'red',
@@ -95,7 +135,15 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeBg: 'bg-red-500/10',
     badgeText: 'text-red-600 dark:text-red-400',
     badgeBorder: 'border-red-500/20',
-    cssVarValue: '#dc2626'
+    cssVarValue: '#dc2626',
+    surfaceDark: '#0c0808',
+    cardDark: '#151010',
+    inputDark: '#1c1414',
+    borderDark: '#302020',
+    surfaceLight: '#fff9f9',
+    cardLight: '#ffffff',
+    inputLight: '#ffffff',
+    borderLight: '#f2e2e2'
   },
   rose: {
     id: 'rose',
@@ -110,7 +158,15 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeBg: 'bg-pink-500/10',
     badgeText: 'text-pink-600 dark:text-pink-400',
     badgeBorder: 'border-pink-400/25',
-    cssVarValue: '#ec4899'
+    cssVarValue: '#ec4899',
+    surfaceDark: '#0c080a',
+    cardDark: '#151012',
+    inputDark: '#1c1417',
+    borderDark: '#302027',
+    surfaceLight: '#fff8fa',
+    cardLight: '#ffffff',
+    inputLight: '#ffffff',
+    borderLight: '#f3e1e8'
   },
   neutral: {
     id: 'neutral',
@@ -125,7 +181,15 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     badgeBg: 'bg-zinc-500/10 dark:bg-zinc-400/15',
     badgeText: 'text-zinc-800 dark:text-zinc-200',
     badgeBorder: 'border-zinc-400/25',
-    cssVarValue: '#18181b'
+    cssVarValue: '#18181b',
+    surfaceDark: '#09090b',
+    cardDark: '#121215',
+    inputDark: '#18181b',
+    borderDark: '#27272a',
+    surfaceLight: '#fafafa',
+    cardLight: '#ffffff',
+    inputLight: '#ffffff',
+    borderLight: '#e4e4e7'
   }
 };
 
@@ -166,18 +230,46 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const applyThemeToDOM = (themeMode: ThemeMode, themeAccent: AccentColor) => {
     try {
       const root = document.documentElement;
-      if (themeMode === 'dark') {
+      const isDark = themeMode === 'dark';
+      if (isDark) {
         root.classList.add('dark');
         root.classList.remove('light');
       } else {
         root.classList.remove('dark');
         root.classList.add('light');
       }
+
+      if (themeAccent === 'neutral') {
+        root.classList.add('theme-monochrome');
+      } else {
+        root.classList.remove('theme-monochrome');
+      }
+
       const config = ACCENT_CONFIGS[themeAccent] || ACCENT_CONFIGS.blue;
-      root.style.setProperty('--primary-color', config.primaryHex);
-      root.style.setProperty('--primary-hover', config.hoverHex);
-      root.style.setProperty('--glow-color', config.bgRgba);
-      root.style.setProperty('--accent-muted', config.bgRgba);
+      const pageBg = isDark ? config.surfaceDark : config.surfaceLight;
+      const cardBg = isDark ? config.cardDark : config.cardLight;
+      const inputBg = isDark ? config.inputDark : config.inputLight;
+      const cardBorder = isDark ? config.borderDark : config.borderLight;
+      const primaryHex = themeAccent === 'neutral'
+        ? (isDark ? '#f4f4f5' : '#18181b')
+        : config.primaryHex;
+      const primaryHover = themeAccent === 'neutral'
+        ? (isDark ? '#ffffff' : '#27272a')
+        : config.hoverHex;
+      const glowRgba = themeAccent === 'neutral'
+        ? (isDark ? 'rgba(255, 255, 255, 0.10)' : 'rgba(24, 24, 27, 0.10)')
+        : config.bgRgba;
+
+      root.style.setProperty('--primary-color', primaryHex);
+      root.style.setProperty('--primary-hover', primaryHover);
+      root.style.setProperty('--glow-color', glowRgba);
+      root.style.setProperty('--accent-muted', glowRgba);
+      root.style.setProperty('--bg-page', pageBg);
+      root.style.setProperty('--bg-card', cardBg);
+      root.style.setProperty('--bg-input', inputBg);
+      root.style.setProperty('--card-border', cardBorder);
+      root.style.setProperty('--border-input', cardBorder);
+      root.style.setProperty('--ring-focus', primaryHex);
     } catch {
       // ignore
     }

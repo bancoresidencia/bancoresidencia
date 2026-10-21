@@ -190,7 +190,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       {/* 1. CABEÇALHO BENTO CARD UNIFICADO */}
-      <div className="bento-card bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-xs space-y-5">
+      <div className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-7 shadow-xs space-y-5">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3.5">
             <div
@@ -275,7 +275,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                   }
                 }}
                 placeholder="Busque por instituição ou sigla (Ex.: USP, UNICAMP, ENARE, SUS-SP, AMRIGS)..."
-                className="w-full bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl pl-10 pr-9 py-2.5 text-xs text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-xs"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-2xl pl-10 pr-9 py-2.5 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] shadow-xs"
               />
               {searchQuery && (
                 <button
@@ -296,7 +296,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
               <select
                 value={selectedState}
                 onChange={(e) => setSelectedState(e.target.value)}
-                className="bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl px-3 py-2 text-xs font-bold text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-xs cursor-pointer"
+                className="bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-2xl px-3 py-2 text-xs font-bold text-zinc-700 dark:text-zinc-200 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] shadow-xs cursor-pointer"
               >
                 {availableStates.map((st) => (
                   <option key={st} value={st}>
@@ -336,7 +336,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
       {selectedInstitution ? (
         <div className="space-y-6">
           {/* Trilha / Breadcrumbs com Botão Voltar */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800/80 shadow-xs">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 shadow-xs">
             <div className="flex items-center gap-3">
               <button
                 type="button"
@@ -384,7 +384,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
           </div>
 
           {/* Banner Resumo da Instituição */}
-          <div className="bento-card bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <InstitutionLogo inst={selectedInstitution} />
               <div>
@@ -434,7 +434,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                     className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl font-mono font-bold text-xs transition-all cursor-pointer shrink-0 border ${
                       isActive
                         ? 'text-white shadow-xs border-transparent'
-                        : 'bg-white dark:bg-[#070d18] border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700'
+                        : 'bg-white dark:bg-[var(--bg-card)] border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700'
                     }`}
                     style={{
                       backgroundColor: isActive ? accentConfig.primaryHex : undefined
@@ -478,7 +478,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                   return (
                     <div
                       key={exam.id}
-                      className={`bento-card bg-white dark:bg-[#070d18] border rounded-3xl p-5 sm:p-6 transition-all duration-200 flex flex-col justify-between space-y-4 shadow-xs ${
+                      className={`bento-card bg-white dark:bg-[var(--bg-card)] border rounded-3xl p-5 sm:p-6 transition-all duration-200 flex flex-col justify-between space-y-4 shadow-xs ${
                         isSelected
                           ? 'ring-2 ring-blue-500 border-transparent shadow-md'
                           : 'border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700'
@@ -567,7 +567,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                     key={inst.id}
                     type="button"
                     onClick={() => handleSelectInstitution(inst)}
-                    className="relative overflow-hidden bento-card bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 rounded-3xl p-4 sm:p-5 transition-all duration-200 text-left flex items-center group cursor-pointer hover:shadow-md"
+                    className="relative overflow-hidden bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-3xl p-4 sm:p-5 transition-all duration-200 text-left flex items-center group cursor-pointer hover:shadow-md"
                   >
                     <InstitutionCardBackground inst={inst} />
 
@@ -596,7 +596,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                   <button
                     type="button"
                     onClick={() => setVisibleCount((prev) => prev + 36)}
-                    className="px-6 py-2.5 rounded-2xl bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors cursor-pointer shadow-xs"
+                    className="px-6 py-2.5 rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-800/60 transition-colors cursor-pointer shadow-xs"
                   >
                     Ver mais instituições ({filteredInstitutions.length - visibleCount} restantes)
                   </button>
@@ -604,7 +604,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
               )}
             </>
           ) : (
-            <div className="bento-card bg-white dark:bg-[#070d18] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-10 text-center space-y-2">
+            <div className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-10 text-center space-y-2">
               <Building2 className="w-8 h-8 text-slate-400 mx-auto" />
               <h3 className="font-heading font-black text-sm text-slate-900 dark:text-white">
                 Nenhuma instituição encontrada

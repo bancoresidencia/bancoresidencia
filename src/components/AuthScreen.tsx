@@ -162,7 +162,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
   return (
     <div className="min-h-[85vh] flex items-center justify-center p-4 sm:p-6">
-      <div className="w-full max-w-xl bg-white dark:bg-[#0c1424] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl shadow-xl overflow-hidden transition-all duration-300">
+      <div className="w-full max-w-xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl shadow-xl overflow-hidden transition-all duration-300">
         {/* Cabeçalho Visual da Marca */}
         <div className="relative p-6 sm:p-8 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
           <div className="flex items-center justify-between">
@@ -518,7 +518,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               <div className="w-full border-t border-slate-200 dark:border-slate-800" />
             </div>
             <div className="relative flex justify-center text-[11px] uppercase tracking-wider font-bold">
-              <span className="bg-white dark:bg-[#0c1424] px-3 text-slate-400">
+              <span className="bg-white dark:bg-[var(--bg-card)] px-3 text-zinc-400">
                 Ou acesso rápido
               </span>
             </div>

@@ -230,7 +230,7 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
                 }
                 rows={3}
                 maxLength={1000}
-                className="w-full p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-xs sm:text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 resize-none font-sans"
+                className="w-full p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] resize-none font-sans"
               />
               <div className="absolute bottom-2.5 right-3 text-[10px] text-slate-400">
                 {newComment.length}/1000

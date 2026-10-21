@@ -143,7 +143,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
   return (
     <div className="space-y-6">
       {/* Barra de Título e Botões de Ação */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 p-6 rounded-3xl shadow-sm flex flex-wrap items-center justify-between gap-4">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 p-6 rounded-3xl shadow-sm flex flex-wrap items-center justify-between gap-4">
         <div>
           <h2 className="font-heading text-lg font-bold text-slate-900 dark:text-white">
             Listas de Questões & Árvore de Pastas
@@ -183,13 +183,13 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
       {/* Modal / Formulário: Nova Pasta */}
       {isCreatingFolder && (
-        <form onSubmit={handleSaveFolder} className="bg-white dark:bg-[#0d1527] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg">
+        <form onSubmit={handleSaveFolder} className="bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg">
           <div className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
             Criar Nova Pasta de Estudos
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
                 Nome da Pasta ou Assunto *
               </label>
               <input
@@ -198,17 +198,17 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 placeholder="Ex: Cardiologia, UTI, Doenças Valvares..."
                 value={newFolderName}
                 onChange={(e) => setNewFolderName(e.target.value)}
-                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
                 Pasta Pai (Opcional para Subpasta)
               </label>
               <select
                 value={folderParentId || ''}
                 onChange={(e) => setFolderParentId(e.target.value ? e.target.value : null)}
-                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
               >
                 <option value="">📁 Pasta Maior (Nível 1 - Raiz)</option>
                 {rootFolders.map((r) => {
@@ -255,20 +255,20 @@ export const ListManager: React.FC<ListManagerProps> = ({
               setEditingFolder(null);
             }
           }}
-          className="bg-white dark:bg-[#0d1527] border-2 border-emerald-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
+          className="bg-white dark:bg-[var(--bg-card)] border-2 border-emerald-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
         >
           <div className="flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
             <span>Renomear Pasta de Estudos</span>
             <button
               type="button"
               onClick={() => setEditingFolder(null)}
-              className="text-slate-400 hover:text-slate-600 dark:hover:text-white"
+              className="text-zinc-400 hover:text-zinc-600 dark:hover:text-white"
             >
               <X className="w-4 h-4" />
             </button>
           </div>
           <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+            <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
               Novo Nome da Pasta *
             </label>
             <input
@@ -276,7 +276,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               required
               value={editingFolder.name}
               onChange={(e) => setEditingFolder({ ...editingFolder, name: e.target.value })}
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
           </div>
           <div className="flex justify-end gap-2.5 pt-1">
@@ -299,7 +299,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
       {/* Modal / Confirmação: Excluir Pasta */}
       {deletingFolderId && (
-        <div className="bg-white dark:bg-[#0d1527] border-2 border-rose-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150">
+        <div className="bg-white dark:bg-[var(--bg-card)] border-2 border-rose-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150">
           <div className="text-xs font-bold text-rose-600 dark:text-rose-400 uppercase tracking-wider">
             Excluir Pasta
           </div>
@@ -339,21 +339,21 @@ export const ListManager: React.FC<ListManagerProps> = ({
               setEditingList(null);
             }
           }}
-          className="bg-white dark:bg-[#0d1527] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
+          className="bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
         >
           <div className="flex items-center justify-between text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
             <span>Editar Lista de Questões</span>
             <button
               type="button"
               onClick={() => setEditingList(null)}
-              className="text-slate-400 hover:text-slate-600 dark:hover:text-white"
+              className="text-zinc-400 hover:text-zinc-600 dark:hover:text-white"
             >
               <X className="w-4 h-4" />
             </button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
                 Título da Lista *
               </label>
               <input
@@ -361,17 +361,17 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 required
                 value={editingList.title}
                 onChange={(e) => setEditingList({ ...editingList, title: e.target.value })}
-                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
                 Mover para Pasta
               </label>
               <select
                 value={editingList.folderId || ''}
                 onChange={(e) => setEditingList({ ...editingList, folderId: e.target.value || null })}
-                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
               >
                 <option value="">📁 Nenhuma pasta (Raiz de Listas)</option>
                 {rootFolders.map((r) => {
@@ -418,17 +418,17 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
       {/* Modal / Formulário Completo: Criar Nova Lista COM FILTROS OBRIGATÓRIOS */}
       {isCreatingList && (
-        <form onSubmit={handleSaveList} className="bg-white dark:bg-[#0d1527] border-2 border-blue-500/70 p-6 sm:p-7 rounded-3xl space-y-5 shadow-2xl">
-          <div className="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
+        <form onSubmit={handleSaveList} className="bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500/70 p-6 sm:p-7 rounded-3xl space-y-5 shadow-2xl">
+          <div className="flex items-center justify-between pb-4 border-b border-zinc-100 dark:border-zinc-800">
             <div className="flex items-center gap-2.5">
               <div className="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center">
                 <SlidersHorizontal className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white">
+                <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-white">
                   Criar Lista de Questões com Filtros Clínicos
                 </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">
                   Selecione especialidade, tema, subfoco e banco de questões para alimentar sua lista
                 </p>
               </div>
@@ -436,7 +436,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
             <button
               type="button"
               onClick={() => setIsCreatingList(false)}
-              className="p-2 text-slate-400 hover:text-slate-700 dark:hover:text-white rounded-xl border border-slate-200 dark:border-slate-800 cursor-pointer"
+              className="p-2 text-zinc-400 hover:text-zinc-700 dark:hover:text-white rounded-xl border border-zinc-200 dark:border-zinc-800 cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
@@ -445,7 +445,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
           {/* Dados Gerais da Lista */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
                 Título da Lista *
               </label>
               <input
@@ -454,17 +454,17 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 placeholder="Ex: Treino Intenso de Cardiologia e HAS..."
                 value={newListTitle}
                 onChange={(e) => setNewListTitle(e.target.value)}
-                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
                 Pasta de Destino
               </label>
               <select
                 value={listFolderId || ''}
                 onChange={(e) => setListFolderId(e.target.value ? e.target.value : null)}
-                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
               >
                 <option value="">📁 Sem pasta (Raiz de Listas)</option>
                 {rootFolders.map((r) => {
@@ -491,7 +491,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               </select>
             </div>
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
                 Meta de Questões
               </label>
               <input
@@ -500,7 +500,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 max={200}
                 value={listQuestionCount}
                 onChange={(e) => setListQuestionCount(Number(e.target.value))}
-                className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
           </div>
@@ -571,7 +571,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
       {/* Estrutura: Pastas e Subpastas na Esquerda, Listas na Direita */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Painel de Pastas e Subpastas */}
-        <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-5 space-y-3 shadow-sm h-fit">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-5 space-y-3 shadow-sm h-fit">
           <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300">
             <span>Árvore de Assuntos</span>
             <button
@@ -795,7 +795,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               return (
                 <div
                   key={list.id}
-                  className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 rounded-2xl p-5 transition-all shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+                  className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-2xl p-5 transition-all shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
                 >
                   <div className="space-y-2 flex-1 min-w-0">
                     <div className="flex items-center gap-2">

@@ -319,7 +319,7 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
   return (
     <div className="space-y-6 animate-fadeIn pb-16">
       {/* 1. Header do Painel com Status de Conexão Supabase */}
-      <div className="bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-7 shadow-sm">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-7 shadow-sm">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-slate-800/80">
           <div className="flex items-center gap-3.5">
             <div
@@ -649,7 +649,7 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
 
       {/* 2. Cabeçalho e Régua Numérica da Prova Selecionada */}
       {selectedExam && (
-        <div className="bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 shadow-sm space-y-4">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 shadow-sm space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800/80">
             <div>
               <div className="flex items-center gap-2">
@@ -731,7 +731,7 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
                     title={`Questão ${idx + 1}: ${hasAnswer ? 'Gabarito [' + q.correctAnswer + ']' : isAnulada ? 'Anulada' : 'Sem Gabarito'}`}
                     className={`w-8 h-8 rounded-xl font-mono text-xs font-bold border transition-all cursor-pointer flex items-center justify-center ${badgeColor} ${
                       isSelected
-                        ? 'ring-2 ring-indigo-500 ring-offset-2 dark:ring-offset-[#0c1424] font-black scale-105'
+                        ? 'ring-2 ring-indigo-500 ring-offset-2 dark:ring-offset-[var(--bg-card)] font-black scale-105'
                         : ''
                     }`}
                   >
@@ -746,16 +746,16 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
 
       {/* 3. Área Principal: Visualização da Questão & Painel de Atribuição de Gabarito */}
       {isLoadingQuestions ? (
-        <div className="bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-12 text-center shadow-sm">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-12 text-center shadow-sm">
           <div className="inline-block animate-spin text-indigo-600 dark:text-indigo-400 mb-3">
             <RotateCcw className="w-8 h-8" />
           </div>
-          <p className="text-sm font-bold text-slate-700 dark:text-slate-300">
+          <p className="text-sm font-bold text-zinc-700 dark:text-zinc-300">
             Buscando questões da prova diretamente do Supabase...
           </p>
         </div>
       ) : !currentQuestion ? (
-        <div className="bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-12 text-center shadow-sm space-y-3">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-12 text-center shadow-sm space-y-3">
           <div className="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto">
             <CheckCircle2 className="w-8 h-8" />
           </div>
@@ -779,7 +779,7 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Coluna Esquerda (2 colunas): Enunciado e Classificações da Questão */}
           <div className="lg:col-span-2 space-y-5">
-            <div className="bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 shadow-sm space-y-4">
+            <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 shadow-sm space-y-4">
               {/* Barra Superior: Código, Status Atual e Navegação Sequencial */}
               <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100 dark:border-slate-800/80">
                 <div className="flex items-center gap-2">
@@ -954,13 +954,13 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
 
           {/* Coluna Direita (1 coluna): Painel Rápido de Atribuição de Gabarito & Atalhos */}
           <div className="space-y-5">
-            <div className="bg-white dark:bg-[#0c1424] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 shadow-sm sticky top-24 space-y-5">
+            <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 shadow-sm sticky top-24 space-y-5">
               <div>
-                <h3 className="font-heading font-extrabold text-base text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+                <h3 className="font-heading font-extrabold text-base text-zinc-900 dark:text-white tracking-tight flex items-center gap-2">
                   <Flame className="w-4 h-4 text-amber-500" />
                   Atribuir / Gravar no Supabase
                 </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
                   Clique na letra ou pressione no teclado para gravar:
                 </p>
               </div>
@@ -977,8 +977,8 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
                       onClick={() => handleAssignAnswer(letter, false)}
                       className={`h-14 rounded-2xl font-heading font-black text-xl flex flex-col items-center justify-center transition-all cursor-pointer shadow-sm ${
                         isSelected
-                          ? 'bg-emerald-600 text-white ring-2 ring-emerald-500 ring-offset-2 dark:ring-offset-[#0c1424]'
-                          : 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-850 dark:hover:bg-slate-800 text-slate-800 dark:text-white'
+                          ? 'bg-emerald-600 text-white ring-2 ring-emerald-500 ring-offset-2 dark:ring-offset-[var(--bg-card)]'
+                          : 'bg-zinc-100 hover:bg-zinc-200 dark:bg-[var(--bg-input)] dark:hover:bg-zinc-800 text-zinc-800 dark:text-white'
                       }`}
                     >
                       <span>{letter}</span>

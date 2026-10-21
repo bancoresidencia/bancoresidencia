@@ -633,14 +633,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       : 'selection:bg-amber-300 dark:selection:bg-amber-400 selection:text-black dark:selection:text-black';
 
   return (
-    <article className="bento-card bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6 relative transition-all">
+    <article className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6 relative transition-all">
       {/* Header Reorganizado: Origem da Questão (Esquerda) + Ações e Contador (Direita) */}
-      <div className="flex flex-col gap-3 pb-4 border-b border-slate-100 dark:border-slate-800/80">
+      <div className="flex flex-col gap-3 pb-4 border-b border-zinc-100 dark:border-zinc-800/80">
         {/* Linha Principal do Topo */}
         <div className="flex flex-wrap items-center justify-between gap-2.5">
           {/* Canto Superior Esquerdo: Origem da Questão (Banca • Ano) */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 flex items-center gap-1.5 shadow-xs">
+            <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center gap-1.5 shadow-xs">
               <Building className="w-3.5 h-3.5 text-blue-500" />
               <span>{question.institution}</span>
               <span className="text-slate-400">•</span>
@@ -788,7 +788,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           {(question.images || (question.imageUrl ? [question.imageUrl] : [])).map((imgUrl, i) => (
             <div
               key={i}
-              className="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/80 p-3 max-w-2xl shadow-inner"
+              className="rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 p-3 max-w-2xl shadow-inner"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -812,7 +812,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
             // Estilos condicionais (Antes de Responder vs Depois de Responder)
             let optionContainerStyle =
-              'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/60 hover:bg-slate-50/80 dark:hover:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200 shadow-xs';
+              'border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[var(--bg-card)] hover:bg-zinc-50/80 dark:hover:bg-zinc-900/60 hover:border-zinc-300 dark:hover:border-zinc-700 text-zinc-800 dark:text-zinc-200 shadow-xs';
 
             const isExplanationExpanded = !!expandedOptions[option.letter];
             const explanationText = optionExplanations[option.letter];
@@ -823,7 +823,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                   'border-blue-500 dark:border-blue-400 bg-blue-50/70 dark:bg-blue-950/50 text-blue-950 dark:text-blue-100 ring-2 ring-blue-500/30 shadow-sm font-semibold';
               } else if (isEliminated) {
                 optionContainerStyle =
-                  'border-slate-200 dark:border-slate-800/60 bg-slate-50/80 dark:bg-slate-950/30 text-slate-400 dark:text-slate-500 opacity-60';
+                  'border-zinc-200 dark:border-zinc-800/60 bg-zinc-50/80 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 opacity-60';
               }
             } else {
               // Já respondeu
@@ -835,10 +835,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                   'border-rose-500/80 bg-rose-50/80 dark:bg-rose-950/50 text-rose-950 dark:text-rose-200 ring-2 ring-rose-500/30 shadow-sm';
               } else if (isExplanationExpanded) {
                 optionContainerStyle =
-                  'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 shadow-sm';
+                  'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 shadow-sm';
               } else {
                 optionContainerStyle =
-                  'opacity-70 hover:opacity-100 border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-950/30 text-slate-600 dark:text-slate-400';
+                  'opacity-70 hover:opacity-100 border-zinc-200 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/30 text-zinc-600 dark:text-zinc-400';
               }
             }
 
@@ -1051,13 +1051,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       ) : (
         /* Questão Dissertativa */
         <div className="pt-2 space-y-3">
-          <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 space-y-3">
+          <div className="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 block">
               Questão Dissertativa
             </span>
             <textarea
               placeholder="Digite seu raciocínio clínico, hipótese diagnóstica e condutas aqui..."
-              className="w-full h-32 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none font-sans"
+              className="w-full h-32 p-4 rounded-xl bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] resize-none font-sans"
             />
             {!isAnswered ? (
               <button
@@ -1066,7 +1066,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                   setShowCommentary(true);
                   setIsAnswered(true);
                 }}
-                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl transition-all cursor-pointer shadow-md hover:scale-102 flex items-center gap-2"
+                className="px-5 py-2.5 text-white text-xs font-bold rounded-xl transition-all cursor-pointer shadow-md hover:scale-102 flex items-center gap-2"
+                style={{ backgroundColor: accentConfig.primaryHex }}
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>Ver Padrão de Resposta & Espelho</span>
@@ -1180,7 +1181,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
               {/* Referências e Fontes da Literatura Médica Oficial */}
               {references && references.length > 0 && (
-                <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-[11px] text-slate-600 dark:text-slate-400 space-y-1">
+                <div className="p-3.5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 text-[11px] text-zinc-600 dark:text-zinc-400 space-y-1">
                   <div className="flex items-center gap-1.5 font-bold text-slate-700 dark:text-slate-300">
                     <Library className="w-3.5 h-3.5 text-slate-500" />
                     <span>Base Teórica & Diretrizes Médicas:</span>

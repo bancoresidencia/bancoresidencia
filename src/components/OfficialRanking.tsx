@@ -39,7 +39,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
   const displayedList = activeRankingTab === 'official' ? ranking : provisionalRanking;
 
   return (
-    <div className="bg-white dark:bg-[#0d1527] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+    <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
       {/* Cabeçalho do Ranking */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800/80 pb-5">
         <div className="flex items-center gap-3">

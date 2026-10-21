@@ -166,7 +166,7 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
       <div
-        className="w-full max-w-2xl bg-white dark:bg-[#0b1324] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden"
+        className="w-full max-w-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-list-title"
@@ -207,7 +207,7 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
               value={listTitle}
               onChange={(e) => setListTitle(e.target.value)}
               placeholder="Ex: Treino R1 Cirurgia e Trauma, Simulado Pediatria..."
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 font-sans"
+              className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] font-sans"
             />
           </div>
 
@@ -236,13 +236,13 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
                     value={newFolderName}
                     onChange={(e) => setNewFolderName(e.target.value)}
                     placeholder="Nome da pasta..."
-                    className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3 py-2 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                     autoFocus
                   />
                   <select
                     value={newFolderParentId || ''}
                     onChange={(e) => setNewFolderParentId(e.target.value || null)}
-                    className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                    className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3 py-2 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
                   >
                     <option value="">📁 Pasta Raiz (Nível 1)</option>
                     {rootFolders.map((r) => {
@@ -283,7 +283,7 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
             <select
               value={selectedFolderId || ''}
               onChange={(e) => setSelectedFolderId(e.target.value || null)}
-              className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+              className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
             >
               <option value="">📁 Sem pasta (Salvar na raiz de listas)</option>
               {rootFolders.map((r) => {
@@ -391,7 +391,7 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
                         max={200}
                         value={count}
                         onChange={(e) => handleSetCount(item.id, parseInt(e.target.value) || 0)}
-                        className="w-14 text-center font-sans font-bold text-xs bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg py-1 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        className="w-14 text-center font-sans font-bold text-xs bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-lg py-1 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)]"
                       />
                       <button
                         type="button"

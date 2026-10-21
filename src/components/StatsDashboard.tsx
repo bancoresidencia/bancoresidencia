@@ -366,7 +366,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   return (
     <div className="space-y-6">
       {/* 0. SELETOR AVANÇADO DE PERÍODO (RÁPIDO, POR SEMANA OU POR MÊS ESPECÍFICO) */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 p-5 sm:p-6 rounded-3xl shadow-xs space-y-4">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-5 sm:p-6 rounded-3xl shadow-xs space-y-4">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 shadow-xs">
@@ -515,7 +515,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       {/* 1. CARDS KPI PRINCIPAIS DINÂMICOS CONFORME O PERÍODO */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {/* Card 1: Volume no Período */}
-        <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
           <div>
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
@@ -551,7 +551,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         </div>
 
         {/* Card 2: Total de Acertos no Período */}
-        <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
           <div>
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
@@ -581,7 +581,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         </div>
 
         {/* Card 3: Taxa de Acerto no Período */}
-        <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
           <div>
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
@@ -612,7 +612,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       </div>
 
       {/* 2. CARD DO MODELO ESTATÍSTICO IRT (TRI) & PERCENTIL BAYESIANO */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-xs space-y-6">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-xs space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
           <div className="flex items-center gap-3">
             <div
@@ -803,7 +803,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       </div>
 
       {/* 3. ANÁLISE DETALHADA POR FOCO E SUBFOCO (PRIORIZADO PELO QUE MAIS ERROU) */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 sm:p-8 shadow-xs space-y-6">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-xs space-y-6">
         {/* Cabeçalho da Seção */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
           <div className="flex items-center gap-3.5">
@@ -920,7 +920,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 setSelectedTemaFilter(e.target.value);
                 setCurrentPage(1);
               }}
-              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
             >
               <option value="Todos">Todos os Temas ({availableTemas.length - 1} disponíveis)</option>
               {availableTemas.filter((t) => t !== 'Todos').map((tema) => (
@@ -942,7 +942,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 setMasteryFilter(e.target.value as 'todos' | 'criticos' | 'atencao' | 'dominados');
                 setCurrentPage(1);
               }}
-              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
             >
               <option value="todos">Todos os Níveis</option>
               <option value="criticos">🔴 Críticos (&lt; 60% acertos)</option>
@@ -962,7 +962,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 setHierarchySortBy(e.target.value as 'errors' | 'accuracy_asc' | 'accuracy_desc' | 'total');
                 setCurrentPage(1);
               }}
-              className="w-full px-3 py-2 rounded-xl text-xs font-bold bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+              className="w-full px-3 py-2 rounded-xl text-xs font-bold bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
             >
               <option value="errors">🚨 O que Mais Errou (Prioridade)</option>
               <option value="accuracy_asc">📉 Menor Rendimento (% Acerto)</option>
@@ -986,7 +986,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   setCurrentPage(1);
                 }}
                 placeholder="Ex: Apendicite, IAM..."
-                className="w-full pl-8 pr-3 py-2 rounded-xl text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full pl-8 pr-3 py-2 rounded-xl text-xs bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
           </div>
@@ -1149,7 +1149,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
       {/* 4. GRÁFICOS DE EVOLUÇÃO E DISTRIBUIÇÃO */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 shadow-xs">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs">
           <div className="flex items-center justify-between mb-5">
             <div>
               <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white">
@@ -1187,7 +1187,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         </div>
 
         {/* Gráfico de Distribuição por Grande Área */}
-        <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 shadow-xs">
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs">
           <div className="flex items-center justify-between mb-5">
             <div>
               <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white">
@@ -1241,7 +1241,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       </div>
 
       {/* 5. TABELA DE PERFORMANCE POR ESPECIALIDADE */}
-      <div className="bg-white dark:bg-[#0d1527] border border-slate-200/90 dark:border-slate-800/80 rounded-3xl p-6 shadow-xs">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs">
         <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white mb-4">
           Resumo Consolidado por Grande Área
         </h3>
