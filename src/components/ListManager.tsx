@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Folder as FolderIcon,
   FolderPlus,
@@ -19,6 +19,7 @@ import {
 import { Folder, QuestionList, AdvancedFilterState } from '@/types';
 import { AdvancedQuestionFilters } from './AdvancedQuestionFilters';
 import { useTheme } from '@/context/ThemeContext';
+import { fetchQuestionsFromSupabase } from '@/services/questionService';
 
 interface ListManagerProps {
   folders: Folder[];
@@ -82,6 +83,27 @@ export const ListManager: React.FC<ListManagerProps> = ({
     ultimos5Anos: false
   });
   const [filterError, setFilterError] = useState<string | null>(null);
+  const [dynamicFilteredCount, setDynamicFilteredCount] = useState<number>(132965);
+
+  useEffect(() => {
+    if (!isCreatingList) return;
+    let active = true;
+    const timeoutId = setTimeout(async () => {
+      try {
+        const res = await fetchQuestionsFromSupabase(listFilters, 1, 1);
+        if (active && res && typeof res.total === 'number') {
+          setDynamicFilteredCount(res.total);
+        }
+      } catch {
+        // Fallback mantém contagem anterior
+      }
+    }, 250);
+
+    return () => {
+      active = false;
+      clearTimeout(timeoutId);
+    };
+  }, [listFilters, isCreatingList]);
 
   // Estados de Edição/Exclusão de Pasta
   const [editingFolder, setEditingFolder] = useState<{ id: string; name: string } | null>(null);
@@ -161,7 +183,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
             }}
             className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-bold transition-all cursor-pointer shadow-xs"
           >
-            <FolderPlus className="w-4 h-4 text-blue-500" />
+            <FolderPlus className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
             <span>Nova Pasta</span>
           </button>
           <button
@@ -183,8 +205,9 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
       {/* Modal / Formulário: Nova Pasta */}
       {isCreatingFolder && (
-        <form onSubmit={handleSaveFolder} className="bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg">
-          <div className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+        <form onSubmit={handleSaveFolder} className="bg-white dark:bg-[var(--bg-card)] border-2 p-6 rounded-3xl space-y-4 shadow-lg"
+        style={{ borderColor: `${accentConfig.primaryHex}50` }}>
+          <div className="text-xs font-bold uppercase tracking-wider" style={{ color: accentConfig.primaryHex }}>
             Criar Nova Pasta de Estudos
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -237,7 +260,8 @@ export const ListManager: React.FC<ListManagerProps> = ({
             </button>
             <button
               type="submit"
-              className="px-5 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 cursor-pointer shadow-sm"
+              className="px-5 py-2 rounded-xl text-xs font-bold text-white cursor-pointer shadow-sm"
+              style={{ backgroundColor: accentConfig.primaryHex }}
             >
               Salvar Pasta
             </button>
@@ -255,9 +279,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
               setEditingFolder(null);
             }
           }}
-          className="bg-white dark:bg-[var(--bg-card)] border-2 border-emerald-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
+          className="bg-white dark:bg-[var(--bg-card)] border-2 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
+          style={{ borderColor: `${accentConfig.primaryHex}50` }}
         >
-          <div className="flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+          <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider" style={{ color: accentConfig.primaryHex }}>
             <span>Renomear Pasta de Estudos</span>
             <button
               type="button"
@@ -289,7 +314,8 @@ export const ListManager: React.FC<ListManagerProps> = ({
             </button>
             <button
               type="submit"
-              className="px-5 py-2 rounded-xl text-xs font-bold bg-emerald-600 text-white hover:bg-emerald-500 cursor-pointer shadow-sm"
+              className="px-5 py-2 rounded-xl text-xs font-bold text-white cursor-pointer shadow-sm"
+              style={{ backgroundColor: accentConfig.primaryHex }}
             >
               Salvar Novo Nome
             </button>
@@ -339,9 +365,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
               setEditingList(null);
             }
           }}
-          className="bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500/50 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
+          className="bg-white dark:bg-[var(--bg-card)] border-2 p-6 rounded-3xl space-y-4 shadow-lg animate-in fade-in duration-150"
+          style={{ borderColor: `${accentConfig.primaryHex}50` }}
         >
-          <div className="flex items-center justify-between text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+          <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider" style={{ color: accentConfig.primaryHex }}>
             <span>Editar Lista de Questões</span>
             <button
               type="button"
@@ -408,7 +435,8 @@ export const ListManager: React.FC<ListManagerProps> = ({
             </button>
             <button
               type="submit"
-              className="px-5 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 cursor-pointer shadow-sm"
+              className="px-5 py-2 rounded-xl text-xs font-bold text-white cursor-pointer shadow-sm"
+              style={{ backgroundColor: accentConfig.primaryHex }}
             >
               Salvar Alterações
             </button>
@@ -418,10 +446,17 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
       {/* Modal / Formulário Completo: Criar Nova Lista COM FILTROS OBRIGATÓRIOS */}
       {isCreatingList && (
-        <form onSubmit={handleSaveList} className="bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500/70 p-6 sm:p-7 rounded-3xl space-y-5 shadow-2xl">
+        <form
+          onSubmit={handleSaveList}
+          className="bg-white dark:bg-[var(--bg-card)] border-2 p-6 sm:p-7 rounded-3xl space-y-5 shadow-2xl"
+          style={{ borderColor: `${accentConfig.primaryHex}aa` }}
+        >
           <div className="flex items-center justify-between pb-4 border-b border-zinc-100 dark:border-zinc-800">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center">
+              <div
+                className="w-9 h-9 rounded-xl flex items-center justify-center"
+                style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
+              >
                 <SlidersHorizontal className="w-5 h-5" />
               </div>
               <div>
@@ -507,9 +542,14 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
           {/* Filtros Clínicos Embutidos */}
           <div className="pt-2">
-            <div className="flex items-center gap-2 mb-2.5 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
-              <Filter className="w-3.5 h-3.5" />
-              <span>Selecione os Critérios da Lista (Obrigatório)</span>
+            <div className="flex items-center justify-between mb-2.5">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider" style={{ color: accentConfig.timeAccent.hex }}>
+                <Filter className="w-3.5 h-3.5" />
+                <span>Selecione os Critérios da Lista (Obrigatório)</span>
+              </div>
+              <span className="text-xs font-bold text-slate-700 dark:text-slate-300">
+                Questões disponíveis no filtro: <span className="font-mono" style={{ color: accentConfig.primaryHex }}>{dynamicFilteredCount.toLocaleString('pt-BR')}</span>
+              </span>
             </div>
 
             <AdvancedQuestionFilters
@@ -535,8 +575,9 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 })
               }
               totalAvailable={132965}
-              totalFiltered={132965}
+              totalFiltered={dynamicFilteredCount}
               onCreateListFromFilter={() => {}}
+              embedded={true}
             />
           </div>
 
@@ -560,7 +601,11 @@ export const ListManager: React.FC<ListManagerProps> = ({
             </button>
             <button
               type="submit"
-              className="px-5 py-2.5 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-500 shadow-md shadow-blue-600/30 cursor-pointer"
+              className="px-5 py-2.5 rounded-xl text-xs font-bold text-white shadow-md cursor-pointer hover:opacity-95"
+              style={{
+                backgroundColor: accentConfig.primaryHex,
+                boxShadow: `0 4px 14px ${accentConfig.bgRgba}`
+              }}
             >
               Confirmar e Criar Lista
             </button>
@@ -577,7 +622,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
             <button
               onClick={() => setSelectedFolderId(null)}
               className={`text-xs hover:underline cursor-pointer ${
-                selectedFolderId === null ? 'text-blue-600 dark:text-blue-400 font-bold' : 'text-slate-400'
+                selectedFolderId === null ? 'font-bold' : 'text-slate-400'
               }`}
             >
               Ver Todas
@@ -615,7 +660,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                       ) : (
                         <span className="w-3.5" />
                       )}
-                      <FolderIcon className="w-4 h-4 text-blue-500" />
+                      <FolderIcon className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                       <span className="truncate">{root.name}</span>
                     </div>
                     <div className="flex items-center gap-1.5 shrink-0">
@@ -625,7 +670,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                           e.stopPropagation();
                           setEditingFolder({ id: root.id, name: root.name });
                         }}
-                        className="p-1 text-slate-400 hover:text-blue-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                        className="p-1 text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
                         title="Renomear pasta"
                       >
                         <Pencil className="w-3 h-3" />
@@ -664,7 +709,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                               }}
                               className={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs cursor-pointer transition-colors ${
                                 isSubSelected
-                                  ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-bold'
+                                  ? 'font-bold'
                                   : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
                               }`}
                             >
@@ -687,7 +732,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                 ) : (
                                   <div className="w-2.5" />
                                 )}
-                                <FolderIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                                <FolderIcon className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.timeAccent.hex }} />
                                 <span className="truncate">{sub.name}</span>
                               </div>
                               <div className="flex items-center gap-1 shrink-0">
@@ -697,7 +742,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                     e.stopPropagation();
                                     setEditingFolder({ id: sub.id, name: sub.name });
                                   }}
-                                  className="p-0.5 text-slate-400 hover:text-blue-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                  className="p-0.5 text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
                                   title="Renomear subpasta"
                                 >
                                   <Pencil className="w-2.5 h-2.5" />
@@ -730,12 +775,12 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                       onClick={() => setSelectedFolderId(subSub.id)}
                                       className={`flex items-center justify-between px-2 py-1 rounded-md text-[11px] cursor-pointer transition-colors ${
                                         isSubSubSelected
-                                          ? 'bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 font-bold'
+                                          ? 'font-bold'
                                           : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
                                       }`}
                                     >
                                       <div className="flex items-center gap-1.5 min-w-0">
-                                        <FolderIcon className="w-3 h-3 text-purple-500 shrink-0" />
+                                        <FolderIcon className="w-3 h-3 shrink-0" style={{ color: accentConfig.energyAccent.hex }} />
                                         <span className="truncate">{subSub.name}</span>
                                       </div>
                                       <div className="flex items-center gap-1 shrink-0">
@@ -745,7 +790,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                             e.stopPropagation();
                                             setEditingFolder({ id: subSub.id, name: subSub.name });
                                           }}
-                                          className="p-0.5 text-slate-400 hover:text-purple-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                          className="p-0.5 text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
                                           title="Renomear pasta nível 3"
                                         >
                                           <Pencil className="w-2 h-2" />
@@ -800,16 +845,16 @@ export const ListManager: React.FC<ListManagerProps> = ({
                   <div className="space-y-2 flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       {folderObj && (
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/40">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border" style={{ color: accentConfig.primaryHex, borderColor: `${accentConfig.primaryHex}40`, backgroundColor: accentConfig.bgRgba }}>
                           {folderObj.name}
                         </span>
                       )}
                       {list.progressPercentage === 100 ? (
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border flex items-center gap-1" style={{ color: accentConfig.accuracyAccent.hex, borderColor: `${accentConfig.accuracyAccent.hex}40`, backgroundColor: accentConfig.accuracyAccent.bgRgba }}>
                           <CheckCircle2 className="w-3 h-3" /> Concluída
                         </span>
                       ) : (
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800 flex items-center gap-1">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border flex items-center gap-1" style={{ color: accentConfig.timeAccent.hex, borderColor: `${accentConfig.timeAccent.hex}40`, backgroundColor: accentConfig.timeAccent.bgRgba }}>
                           <Clock className="w-3 h-3" /> Em Andamento
                         </span>
                       )}
@@ -843,7 +888,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                     <button
                       type="button"
                       onClick={() => setEditingList({ id: list.id, title: list.title, folderId: list.folderId || null })}
-                      className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-blue-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+                      className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                       title="Editar título ou mover lista"
                     >
                       <Pencil className="w-3.5 h-3.5" />

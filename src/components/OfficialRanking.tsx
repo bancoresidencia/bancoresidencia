@@ -13,6 +13,7 @@ interface OfficialRankingProps {
   userPercentile?: number;
   userCorrect?: number;
   userName?: string;
+  onSimulateDemoQuestions?: (amount: number) => void;
 }
 
 export const OfficialRanking: React.FC<OfficialRankingProps> = ({
@@ -21,7 +22,8 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
   userQuestions,
   userPercentile,
   userCorrect = 0,
-  userName = 'Você'
+  userName = 'Você',
+  onSimulateDemoQuestions
 }) => {
   const { accentConfig, mode } = useTheme();
   const [activeRankingTab, setActiveRankingTab] = useState<'official' | 'provisional'>('official');
@@ -51,11 +53,18 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
               <h3 className="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white tracking-tight">
                 Ranking de Candidatos
               </h3>
-              <span className={`text-[10px] uppercase font-black px-2.5 py-0.5 rounded-full border ${
-                activeRankingTab === 'official'
-                  ? 'bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/30'
-                  : 'bg-blue-500/10 text-blue-700 dark:text-blue-400 border-blue-500/30'
-              }`}>
+              <span
+                className="text-[10px] uppercase font-black px-2.5 py-0.5 rounded-full border"
+                style={activeRankingTab === 'official' ? {
+                  backgroundColor: 'rgba(245, 158, 11, 0.12)',
+                  color: '#f59e0b',
+                  borderColor: 'rgba(245, 158, 11, 0.35)'
+                } : {
+                  backgroundColor: accentConfig.bgRgba,
+                  color: accentConfig.primaryHex,
+                  borderColor: accentConfig.borderRgba
+                }}
+              >
                 {activeRankingTab === 'official' ? 'Oficial (≥500 Q)' : 'Provisório (150–499 Q)'}
               </span>
             </div>
@@ -83,9 +92,10 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
             onClick={() => setActiveRankingTab('provisional')}
             className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeRankingTab === 'provisional'
-                ? 'bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
+                ? 'bg-white dark:bg-slate-800 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
             }`}
+            style={activeRankingTab === 'provisional' ? { color: accentConfig.primaryHex } : undefined}
           >
             ⚡ Provisório
           </button>
@@ -174,20 +184,40 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
 
       {/* Alerta Informativo de Elegibilidade */}
       {activeRankingTab === 'official' && !isUserEligibleOfficial && (
-        <div className="p-4 sm:p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 flex items-start gap-3.5">
-          <ShieldAlert className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
-          <div className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-            <span className="font-bold text-amber-800 dark:text-amber-300">Homologação Oficial (≥500 questões):</span> Para figurar oficialmente no ranking consolidado, é exigido um mínimo de <strong>500 questões válidas</strong>. Você resolveu <strong>{userQuestions}</strong> (faltam <strong>{Math.max(0, 500 - userQuestions)}</strong>).
-            {isUserEligibleProvisional ? (
-              <span className="block mt-1 text-blue-700 dark:text-blue-400 font-medium">
-                👉 Seu percentil atual é provisório e você já participa da aba <strong>Ranking Provisório</strong>!
-              </span>
-            ) : (
-              <span className="block mt-1 text-slate-600 dark:text-slate-400">
-                Continue praticando para alcançar 150 questões e liberar seu percentil provisório!
-              </span>
-            )}
+        <div className="p-4 sm:p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="flex items-start gap-3.5">
+            <ShieldAlert className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+            <div className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+              <span className="font-bold text-amber-800 dark:text-amber-300">Homologação Oficial (≥500 questões):</span> Para figurar oficialmente no ranking consolidado, é exigido um mínimo de <strong>500 questões válidas</strong>. Você resolveu <strong>{userQuestions}</strong> (faltam <strong>{Math.max(0, 500 - userQuestions)}</strong>).
+              {isUserEligibleProvisional ? (
+                <span className="block mt-1 text-blue-700 dark:text-blue-400 font-medium">
+                  👉 Seu percentil atual é provisório e você já participa da aba <strong>Ranking Provisório</strong>!
+                </span>
+              ) : (
+                <span className="block mt-1 text-slate-600 dark:text-slate-400">
+                  Continue praticando para alcançar 150 questões e liberar seu percentil provisório!
+                </span>
+              )}
+            </div>
           </div>
+          {onSimulateDemoQuestions && (
+            <div className="flex sm:flex-col gap-2 shrink-0 w-full sm:w-auto">
+              <button
+                type="button"
+                onClick={() => onSimulateDemoQuestions(150)}
+                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-600 hover:bg-amber-500 text-white transition-all cursor-pointer shadow-xs text-center"
+              >
+                Simular +150
+              </button>
+              <button
+                type="button"
+                onClick={() => onSimulateDemoQuestions(500)}
+                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-800 dark:bg-slate-700 hover:bg-slate-700 dark:hover:bg-slate-600 text-white transition-all cursor-pointer shadow-xs text-center"
+              >
+                Simular +500
+              </button>
+            </div>
+          )}
         </div>
       )}
 

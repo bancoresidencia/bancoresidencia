@@ -54,6 +54,7 @@ interface AdvancedQuestionFiltersProps {
   onSelectDirectQuestion?: (questionId: string) => void;
   onStartSequentialSolving?: (limit?: number, quotasByItem?: Record<string, number>) => void;
   isSidebarCollapsed?: boolean;
+  embedded?: boolean;
 }
 
 // Bancas mais concorridas para acesso rápido em 1 clique (conforme imagem)
@@ -191,7 +192,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   totalFiltered,
   onCreateListFromFilter,
   onStartSequentialSolving,
-  isSidebarCollapsed = true
+  isSidebarCollapsed = true,
+  embedded = false
 }) => {
   const { accentConfig, mode } = useTheme();
   const isDark = mode === 'dark';
@@ -724,9 +726,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => onChange({ ...filters, modalidades: ['Residência Médica'] })}
               className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 currentModalidade === 'Residência Médica'
-                  ? 'bg-red-600 text-white shadow-sm'
+                  ? 'text-white shadow-sm'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
               }`}
+              style={{
+                backgroundColor: currentModalidade === 'Residência Médica' ? accentConfig.primaryHex : undefined
+              }}
             >
               Residência Médica
             </button>
@@ -736,9 +741,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => onChange({ ...filters, modalidades: ['Revalida'] })}
               className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer ${
                 currentModalidade === 'Revalida'
-                  ? 'bg-red-600 text-white font-bold shadow-sm'
+                  ? 'text-white font-bold shadow-sm'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
               }`}
+              style={{
+                backgroundColor: currentModalidade === 'Revalida' ? accentConfig.primaryHex : undefined
+              }}
             >
               Revalida
             </button>
@@ -748,9 +756,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => onChange({ ...filters, modalidades: ['R+ Clínica Médica'] })}
               className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer flex items-center gap-1.5 ${
                 currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')
-                  ? 'bg-red-600 text-white font-bold shadow-sm'
+                  ? 'text-white font-bold shadow-sm'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
               }`}
+              style={{
+                backgroundColor: (currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')) ? accentConfig.primaryHex : undefined
+              }}
             >
               <span>R+ / Título</span>
               <span className="text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 uppercase">
@@ -784,7 +795,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={onCreateListFromFilter}
               className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
             >
-              <BookOpen className="w-3.5 h-3.5 text-blue-500 dark:text-blue-400" />
+              <BookOpen className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               <span>Minhas Listas</span>
             </button>
           </div>
@@ -821,7 +832,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           {/* Topo do Card de Conteúdo */}
           <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-slate-100 dark:border-slate-800/80 mb-2 shrink-0">
             <div className="flex items-center gap-2">
-              <Layers className="w-4 h-4 text-red-500" />
+              <Layers className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
               <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight">
                 Conteúdo
               </h2>
@@ -941,9 +952,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         }}
                         className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${
                           isEspSelected
-                            ? 'bg-red-600 border-red-600 text-white shadow-xs'
+                            ? 'text-white shadow-xs'
                             : 'border-slate-300 dark:border-slate-700 bg-transparent hover:border-slate-400 dark:hover:border-slate-500'
                         }`}
+                        style={{
+                          backgroundColor: isEspSelected ? accentConfig.primaryHex : undefined,
+                          borderColor: isEspSelected ? accentConfig.primaryHex : undefined
+                        }}
                       >
                         {isEspSelected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
                       </button>
@@ -1243,7 +1258,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           <div className="space-y-1.5 shrink-0">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-slate-900 dark:text-white tracking-tight">
-                <Building2 className="w-4 h-4 text-red-500" style={{ color: accentConfig.primaryHex }} />
+                <Building2 className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                 <span>Instituições e Bancas</span>
               </div>
               <button
@@ -1349,51 +1364,51 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               </div>
           </div>
 
-          {/* Scroll Interno Exclusivo para Status, Dificuldade, Formato e Opções */}
-          <div className="min-h-0 max-h-[460px] overflow-y-auto pr-1 custom-scrollbar space-y-2.5 shrink-0">
-            {/* 2. Status da Questão (IMAGEM 2) */}
-            <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-slate-900 dark:text-white">Status da Questão</span>
-                <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Todo o banco</span>
-              </div>
-              <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
-                  (st) => {
-                    const isActive = filters.status === st;
-                    return (
-                      <button
-                        key={st}
-                        type="button"
-                        onClick={() => onChange({ ...filters, status: st })}
-                        className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 ${
-                          isActive
-                            ? 'text-white shadow-sm font-bold'
-                            : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800/40'
-                        }`}
-                        style={{
-                          backgroundColor: isActive ? accentConfig.primaryHex : undefined
-                        }}
-                      >
-                        {st}
-                      </button>
-                    );
-                  }
-                )}
-              </div>
+          {/* 2. Status da Questão */}
+          <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80 shrink-0">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-slate-900 dark:text-white">Status da Questão</span>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Todo o banco</span>
             </div>
+            <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
+                (st) => {
+                  const isActive = filters.status === st;
+                  return (
+                    <button
+                      key={st}
+                      type="button"
+                      onClick={() => onChange({ ...filters, status: st })}
+                      className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 ${
+                        isActive
+                          ? 'text-white shadow-sm font-bold'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800/40'
+                      }`}
+                      style={{
+                        backgroundColor: isActive ? accentConfig.primaryHex : undefined
+                      }}
+                    >
+                      {st}
+                    </button>
+                  );
+                }
+              )}
+            </div>
+          </div>
 
-            {/* =========================================================================
-                3. CARD COLAPSÁVEL: Dificuldade, Formato e Opções (ESTILO IMAGEM 2)
-               ========================================================================= */}
-            <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all mt-1">
+          {/* =========================================================================
+              ROLAGEM CONJUNTA: Dificuldade/Formato/Opções + Anos da Prova (IMAGEM 3)
+             ========================================================================= */}
+          <div className="min-h-0 flex-1 overflow-y-auto pr-1.5 custom-scrollbar space-y-2.5">
+            {/* 3. CARD COLAPSÁVEL: Dificuldade, Formato e Opções */}
+            <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all">
               {/* Header com Toggle Mostrar/Ocultar */}
               <div
                 onClick={() => setIsOptionsOpen(!isOptionsOpen)}
                 className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
               >
                 <div className="flex items-center gap-2">
-                  <SlidersHorizontal className="w-4 h-4 text-red-500" />
+                  <SlidersHorizontal className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                   <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
                     Dificuldade, Formato e Opções
                   </span>
@@ -1402,7 +1417,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <div className="flex items-center gap-2">
                   {/* Resumo ativo no Badge - Somente se houver seleção */}
                   {activeOptionsSummary.length > 0 && (
-                    <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-red-50 dark:bg-[#1e0d14] border border-red-200 dark:border-red-900/70 text-red-700 dark:text-[#f87171] tracking-wide inline-flex items-center">
+                    <span
+                      className="px-3.5 py-1 rounded-full text-xs font-semibold tracking-wide inline-flex items-center border"
+                      style={{
+                        backgroundColor: accentConfig.bgRgba,
+                        borderColor: accentConfig.borderRgba,
+                        color: accentConfig.primaryHex
+                      }}
+                    >
                       {activeOptionsSummary.join(' • ')}
                     </span>
                   )}
@@ -1437,9 +1459,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                               }
                               className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
                                 isActive
-                                  ? 'bg-red-600 text-white shadow-sm'
+                                  ? 'text-white shadow-sm'
                                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                               }`}
+                              style={{
+                                backgroundColor: isActive ? accentConfig.primaryHex : undefined
+                              }}
                             >
                               {dif}
                             </button>
@@ -1470,9 +1495,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                               }
                               className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
                                 isActive
-                                  ? 'bg-red-600 text-white shadow-sm'
+                                  ? 'text-white shadow-sm'
                                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                               }`}
+                              style={{
+                                backgroundColor: isActive ? accentConfig.primaryHex : undefined
+                              }}
                             >
                               {fmt.label}
                             </button>
@@ -1498,9 +1526,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         }
                         className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${
                           filters.ocultarAnuladasErro
-                            ? 'bg-red-600 border-red-600'
+                            ? ''
                             : 'bg-slate-300 dark:bg-slate-700 border-slate-400/60 dark:border-slate-600'
                         }`}
+                        style={{
+                          backgroundColor: filters.ocultarAnuladasErro ? accentConfig.primaryHex : undefined,
+                          borderColor: filters.ocultarAnuladasErro ? accentConfig.primaryHex : undefined
+                        }}
                       >
                         <span
                           className={`w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${
@@ -1524,9 +1556,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         }
                         className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${
                           filters.ocultarRevisadas
-                            ? 'bg-red-600 border-red-600'
+                            ? ''
                             : 'bg-slate-300 dark:bg-slate-700 border-slate-400/60 dark:border-slate-600'
                         }`}
+                        style={{
+                          backgroundColor: filters.ocultarRevisadas ? accentConfig.primaryHex : undefined,
+                          borderColor: filters.ocultarRevisadas ? accentConfig.primaryHex : undefined
+                        }}
                       >
                         <span
                           className={`w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${
@@ -1539,253 +1575,269 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 </div>
               )}
             </div>
-          </div>
 
-          {/* 4. Anos da Prova (Colapsável) */}
-          <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all shrink-0">
-            {/* Header com Toggle Mostrar/Ocultar */}
-            <div
-              onClick={() => setIsYearsOpen(!isYearsOpen)}
-              className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
-            >
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-red-500" />
-                <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
-                  Anos da Prova
-                </span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                {/* Resumo quando colapsado ou selecionado */}
-                {filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length && (
-                  <span className="px-3.5 py-1 rounded-full text-xs font-semibold bg-red-50 dark:bg-[#1e0d14] border border-red-200 dark:border-red-900/70 text-red-700 dark:text-[#f87171] tracking-wide inline-flex items-center">
-                    {filters.anos.length === 3 && filters.anos.includes(2026)
-                      ? 'Últimos 3'
-                      : filters.anos.length === 5 && filters.anos.includes(2026)
-                      ? 'Últimos 5'
-                      : filters.anos.length === 10 && filters.anos.includes(2026)
-                      ? 'Últimos 10'
-                      : `${filters.anos.length} ${filters.anos.length === 1 ? 'ano' : 'anos'}`}
+            {/* 4. CARD COLAPSÁVEL: Anos da Prova */}
+            <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all">
+              {/* Header com Toggle Mostrar/Ocultar */}
+              <div
+                onClick={() => setIsYearsOpen(!isYearsOpen)}
+                className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
+              >
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
+                  <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
+                    Anos da Prova
                   </span>
-                )}
-                <ChevronDown
-                  className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
-                    isYearsOpen ? 'rotate-180' : ''
-                  }`}
-                />
-              </div>
-            </div>
+                </div>
 
-            {/* Conteúdo Expandido */}
-            {isYearsOpen && (
-              <div className="p-3 sm:p-3.5 pt-0 space-y-2.5 border-t border-slate-200/40 dark:border-slate-800/50">
-                <div className="flex items-center justify-between pt-2.5">
-                  <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">Seleção rápida:</span>
-                  <div className="flex items-center gap-1">
-                    <button
-                      type="button"
-                      onClick={() => handleSelectUltimosAnos(3)}
-                      className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
-                        filters.anos.length === 3 && filters.anos.includes(2026)
-                          ? 'bg-red-600 text-white shadow-xs'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
-                      }`}
+                <div className="flex items-center gap-2">
+                  {/* Resumo quando colapsado ou selecionado */}
+                  {filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length && (
+                    <span
+                      className="px-3.5 py-1 rounded-full text-xs font-semibold tracking-wide inline-flex items-center border"
+                      style={{
+                        backgroundColor: accentConfig.bgRgba,
+                        borderColor: accentConfig.borderRgba,
+                        color: accentConfig.primaryHex
+                      }}
                     >
-                      Últimos 3
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => handleSelectUltimosAnos(5)}
-                      className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
-                        filters.anos.length === 5 && filters.anos.includes(2026)
-                          ? 'bg-red-600 text-white shadow-xs'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
-                      }`}
-                    >
-                      Últimos 5
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => handleSelectUltimosAnos(10)}
-                      className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
-                        filters.anos.length === 10 && filters.anos.includes(2026)
-                          ? 'bg-red-600 text-white shadow-xs'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
-                      }`}
-                    >
-                      Últimos 10
-                    </button>
-                    <button
-                      type="button"
-                      onClick={handleClearYears}
-                      className="text-[10px] px-2 py-0.5 rounded font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
-                    >
-                      Todos
-                    </button>
+                      {filters.anos.length === 3 && filters.anos.includes(2026)
+                        ? 'Últimos 3'
+                        : filters.anos.length === 5 && filters.anos.includes(2026)
+                        ? 'Últimos 5'
+                        : filters.anos.length === 10 && filters.anos.includes(2026)
+                        ? 'Últimos 10'
+                        : `${filters.anos.length} ${filters.anos.length === 1 ? 'ano' : 'anos'}`}
+                    </span>
+                  )}
+                  <ChevronDown
+                    className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
+                      isYearsOpen ? 'rotate-180' : ''
+                    }`}
+                  />
+                </div>
+              </div>
+
+              {/* Conteúdo Expandido */}
+              {isYearsOpen && (
+                <div className="p-3 sm:p-3.5 pt-0 space-y-2.5 border-t border-slate-200/40 dark:border-slate-800/50">
+                  <div className="flex items-center justify-between pt-2.5">
+                    <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">Seleção rápida:</span>
+                    <div className="flex items-center gap-1">
+                      {[3, 5, 10].map((count) => {
+                        const isQuickActive = filters.anos.length === count && filters.anos.includes(2026);
+                        return (
+                          <button
+                            key={count}
+                            type="button"
+                            onClick={() => handleSelectUltimosAnos(count)}
+                            className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
+                              isQuickActive
+                                ? 'text-white shadow-xs'
+                                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
+                            }`}
+                            style={{
+                              backgroundColor: isQuickActive ? accentConfig.primaryHex : undefined
+                            }}
+                          >
+                            Últimos {count}
+                          </button>
+                        );
+                      })}
+                      <button
+                        type="button"
+                        onClick={handleClearYears}
+                        className="text-[10px] px-2 py-0.5 rounded font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+                      >
+                        Todos
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Pílulas de Anos em Linha Única Horizontal com Rolagem Lateral */}
+                  <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 custom-scrollbar scroll-smooth">
+                    {YEARS_LIST.map((y) => {
+                      const isSelected = filters.anos.includes(y);
+                      return (
+                        <button
+                          key={y}
+                          type="button"
+                          onClick={() => toggleYear(y)}
+                          className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
+                            isSelected
+                              ? 'text-white shadow-xs'
+                              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
+                          }`}
+                          style={{
+                            backgroundColor: isSelected ? accentConfig.primaryHex : undefined
+                          }}
+                        >
+                          {y}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
-
-                {/* Pílulas de Anos em Linha Única Horizontal com Rolagem Lateral */}
-                <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 custom-scrollbar scroll-smooth">
-                  {YEARS_LIST.map((y) => {
-                    const isSelected = filters.anos.includes(y);
-                    return (
-                      <button
-                        key={y}
-                        type="button"
-                        onClick={() => toggleYear(y)}
-                        className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
-                          isSelected
-                            ? 'bg-red-600 text-white shadow-xs'
-                            : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
-                        }`}
-                      >
-                        {y}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </div>
 
       {/* =========================================================================
-          3. BARRA DE COMANDO FIXA INFERIOR (ESTILO IMAGEM 2)
+          3. BARRA DE COMANDO FIXA INFERIOR (ESTILO IMAGEM 2) - OCULTA SE EMBEDDED
          ========================================================================= */}
-      <div 
-        className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
-          isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
-        } bg-white/95 dark:bg-[#070c17]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800/70 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
-      >
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3 w-full">
-          {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar (Estilo Imagem 2) */}
-          <div className="flex flex-wrap items-center gap-2">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
-              <SlidersHorizontal className="w-3.5 h-3.5 text-red-500 shrink-0" />
-              <span>Filtros ({activeTags.length}):</span>
-            </div>
+      {!embedded && (
+        <div 
+          className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
+            isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
+          } bg-white/95 dark:bg-[#070c17]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800/70 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
+        >
+          <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3 w-full">
+            {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar (Estilo Imagem 2) */}
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+                <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.primaryHex }} />
+                <span>Filtros ({activeTags.length}):</span>
+              </div>
 
-            {/* Tags Ativas Removíveis (Estilo Imagem 2) */}
-            {activeTags.map((t) => (
-              <span
-                key={t.id}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-red-50 dark:bg-[#1e0e15] border border-red-200 dark:border-red-900/60 text-red-700 dark:text-[#fca5a5]"
-              >
-                <span>{t.label}</span>
-                <button
-                  type="button"
-                  onClick={t.onRemove}
-                  className="hover:opacity-75 cursor-pointer ml-0.5 text-xs text-red-500 dark:text-[#fca5a5]/80 hover:text-red-700 dark:hover:text-white"
-                >
-                  ✕
-                </button>
-              </span>
-            ))}
-
-            {activeTags.length > 0 && (
-              <button
-                type="button"
-                onClick={onReset}
-                className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
-              >
-                <RotateCcw className="w-3 h-3" />
-                <span>Limpar</span>
-              </button>
-            )}
-          </div>
-
-          {/* Lado Direito: Cotas + Quantidade + Salvar Lista + Iniciar (Estilo Imagem 2) */}
-          <div className="flex flex-wrap items-center gap-2.5">
-            {itemsToConfigure.length > 1 && (
-              <button
-                type="button"
-                onClick={() => setIsCotasDrawerOpen(!isCotasDrawerOpen)}
-                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
-                  isCotasDrawerOpen
-                    ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
-                    : 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
-                }`}
-                title="Personalizar cotas por filtro ou balancear proporcionalmente"
-              >
-                <PieChart className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
-                <span>Cotas ({itemsToConfigure.length})</span>
-                <ChevronUp className={`w-3 h-3 transition-transform duration-200 ${isCotasDrawerOpen ? 'rotate-180' : ''}`} />
-              </button>
-            )}
-
-            <div className="flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
-              <span className="font-semibold mr-0.5 text-slate-600 dark:text-slate-400">Qtd:</span>
-              {[20, 50, 100].map((num) => (
-                <button
-                  key={num}
-                  type="button"
-                  onClick={() => {
-                    setResolveCount(num);
-                    setShowCustomQtd(false);
+              {/* Tags Ativas Removíveis (Estilo Imagem 2) */}
+              {activeTags.map((t) => (
+                <span
+                  key={t.id}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border"
+                  style={{
+                    backgroundColor: accentConfig.bgRgba,
+                    borderColor: accentConfig.borderRgba,
+                    color: accentConfig.primaryHex
                   }}
-                  className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
-                    resolveCount === num && !showCustomQtd
-                      ? 'bg-red-600 text-white shadow-xs'
-                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                  }`}
                 >
-                  {num}
-                </button>
+                  <span>{t.label}</span>
+                  <button
+                    type="button"
+                    onClick={t.onRemove}
+                    className="hover:opacity-75 cursor-pointer ml-0.5 text-xs"
+                    style={{ color: accentConfig.primaryHex }}
+                  >
+                    ✕
+                  </button>
+                </span>
               ))}
 
-              <button
-                type="button"
-                onClick={() => setShowCustomQtd(!showCustomQtd)}
-                className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-300 dark:border-slate-700/70 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer ${
-                  showCustomQtd || ![20, 50, 100].includes(resolveCount)
-                    ? 'border-red-600 text-white bg-red-600 font-bold'
-                    : ''
-                }`}
-              >
-                Outro
-              </button>
-
-              {showCustomQtd && (
-                <input
-                  type="number"
-                  min={1}
-                  max={200}
-                  value={resolveCount}
-                  onChange={(e) => {
-                    const val = parseInt(e.target.value) || 0;
-                    setResolveCount(Math.max(1, Math.min(200, val)));
-                  }}
-                  className="w-13 text-center font-bold text-xs bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-md py-1 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-red-500 ml-0.5"
-                  placeholder="Qtd"
-                />
+              {activeTags.length > 0 && (
+                <button
+                  type="button"
+                  onClick={onReset}
+                  className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
+                >
+                  <RotateCcw className="w-3 h-3" />
+                  <span>Limpar</span>
+                </button>
               )}
             </div>
 
-            <button
-              type="button"
-              onClick={onCreateListFromFilter}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100 dark:border-slate-700 transition-colors cursor-pointer shadow-xs"
-            >
-              <ListPlus className="w-4 h-4 text-slate-700 dark:text-slate-200" />
-              <span>Salvar Lista</span>
-            </button>
+            {/* Lado Direito: Cotas + Quantidade + Salvar Lista + Iniciar (Estilo Imagem 2) */}
+            <div className="flex flex-wrap items-center gap-2.5">
+              {itemsToConfigure.length > 1 && (
+                <button
+                  type="button"
+                  onClick={() => setIsCotasDrawerOpen(!isCotasDrawerOpen)}
+                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
+                    isCotasDrawerOpen
+                      ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
+                      : 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                  title="Personalizar cotas por filtro ou balancear proporcionalmente"
+                >
+                  <PieChart className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
+                  <span>Cotas ({itemsToConfigure.length})</span>
+                  <ChevronUp className={`w-3 h-3 transition-transform duration-200 ${isCotasDrawerOpen ? 'rotate-180' : ''}`} />
+                </button>
+              )}
 
-            <button
-              type="button"
-              onClick={() => {
-                const effectiveQuotas = getEffectiveQuotas();
-                onStartSequentialSolving?.(resolveCount, effectiveQuotas);
-              }}
-              className="flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm bg-red-600 hover:bg-red-500 shadow-md shadow-red-900/30 transition-all cursor-pointer active:scale-98"
-            >
-              <Play className="w-4 h-4 fill-white" />
-              <span>Iniciar ({resolveCount})</span>
-            </button>
+              <div className="flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
+                <span className="font-semibold mr-0.5 text-slate-600 dark:text-slate-400">Qtd:</span>
+                {[20, 50, 100].map((num) => (
+                  <button
+                    key={num}
+                    type="button"
+                    onClick={() => {
+                      setResolveCount(num);
+                      setShowCustomQtd(false);
+                    }}
+                    className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                      resolveCount === num && !showCustomQtd
+                        ? 'text-white shadow-xs'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                    style={{
+                      backgroundColor: resolveCount === num && !showCustomQtd ? accentConfig.primaryHex : undefined
+                    }}
+                  >
+                    {num}
+                  </button>
+                ))}
+
+                <button
+                  type="button"
+                  onClick={() => setShowCustomQtd(!showCustomQtd)}
+                  className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-300 dark:border-slate-700/70 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer ${
+                    showCustomQtd || ![20, 50, 100].includes(resolveCount)
+                      ? 'text-white font-bold'
+                      : ''
+                  }`}
+                  style={{
+                    backgroundColor: (showCustomQtd || ![20, 50, 100].includes(resolveCount)) ? accentConfig.primaryHex : undefined,
+                    borderColor: (showCustomQtd || ![20, 50, 100].includes(resolveCount)) ? accentConfig.primaryHex : undefined
+                  }}
+                >
+                  Outro
+                </button>
+
+                {showCustomQtd && (
+                  <input
+                    type="number"
+                    min={1}
+                    max={200}
+                    value={resolveCount}
+                    onChange={(e) => {
+                      const val = parseInt(e.target.value) || 0;
+                      setResolveCount(Math.max(1, Math.min(200, val)));
+                    }}
+                    className="w-13 text-center font-bold text-xs bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-md py-1 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] ml-0.5"
+                    placeholder="Qtd"
+                  />
+                )}
+              </div>
+
+              <button
+                type="button"
+                onClick={onCreateListFromFilter}
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100 dark:border-slate-700 transition-colors cursor-pointer shadow-xs"
+              >
+                <ListPlus className="w-4 h-4 text-slate-700 dark:text-slate-200" />
+                <span>Salvar Lista</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  const effectiveQuotas = getEffectiveQuotas();
+                  onStartSequentialSolving?.(resolveCount, effectiveQuotas);
+                }}
+                className="flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98 hover:opacity-95"
+                style={{
+                  backgroundColor: accentConfig.primaryHex,
+                  boxShadow: `0 4px 14px ${accentConfig.bgRgba}`
+                }}
+              >
+                <Play className="w-4 h-4 fill-white" />
+                <span>Iniciar ({resolveCount})</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* =========================================================================
           DRAWER / MINI-SELETOR DE COTAS EXPANSÍVEL (QUANDO MULTI-FILTRO ATIVO)
@@ -1917,7 +1969,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 const effectiveQuotas = getEffectiveQuotas();
                 onStartSequentialSolving?.(resolveCount, effectiveQuotas);
               }}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-white font-bold text-xs bg-red-600 hover:bg-red-500 transition-colors cursor-pointer shadow-md"
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-white font-bold text-xs transition-colors cursor-pointer shadow-md hover:opacity-95"
+              style={{
+                backgroundColor: accentConfig.primaryHex
+              }}
             >
               <Play className="w-3.5 h-3.5 fill-white" />
               <span>Iniciar com estas Cotas</span>
@@ -1943,7 +1998,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             {/* Header: Ícone + Título + Fechar */}
             <div className="flex items-center justify-between pb-3.5 border-b border-slate-200 dark:border-slate-800">
               <div className="flex items-center gap-2.5">
-                <MapPin className="w-5 h-5 text-blue-500 dark:text-blue-400" />
+                <MapPin className="w-5 h-5" style={{ color: accentConfig.primaryHex }} />
                 <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight">
                   Catálogo de Instituições e Bancas por Estado (UF)
                 </h3>

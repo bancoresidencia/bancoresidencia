@@ -79,7 +79,9 @@ import {
   deleteUserFolderFromDb
 } from '@/services/userListsService';
 import { calculatePercentile, getOfficialRanking } from '@/utils/percentile';
+import { saveRecentOfficialExam } from '@/services/recentExamsService';
 import { matchesStudyModalidades } from '@/utils/modalidades';
+import { OfficialExamItem } from '@/types/officialExams';
 import { useToast } from '@/components/Toast';
 import { SubscriptionModal } from '@/components/SubscriptionModal';
 import { useSubscription } from '@/hooks/useSubscription';
@@ -1208,7 +1210,23 @@ export default function Home() {
     setQuestionTimer(0);
   };
 
-  const handleStartOfficialExam = (institution: string, year: number) => {
+  const handleStartOfficialExam = (
+    institution: string,
+    year: number,
+    banca?: string,
+    examDetails?: OfficialExamItem
+  ) => {
+    saveRecentOfficialExam({
+      id: `${institution}-${year}`,
+      institution,
+      institutionFullName: banca || institution,
+      year,
+      modality: 'acesso_direto',
+      totalQuestions: examDetails?.questionCount || 100,
+      answeredQuestions: 0,
+      correctAnswers: 0,
+      status: 'em_andamento'
+    });
     setAdvancedFilters((prev) => ({
       ...prev,
       instituicoes: [institution],
@@ -1283,29 +1301,56 @@ export default function Home() {
       };
     }
 
-    // Mapa de grandes áreas com especialidades médicas padrão
+    // Mapa das 6 especialidades médicas oficiais dos filtros
     const specialtyMap: Record<string, { total: number; correct: number }> = {
       'Clínica Médica': { total: 0, correct: 0 },
       'Cirurgia Geral': { total: 0, correct: 0 },
       'Pediatria': { total: 0, correct: 0 },
-      'Ginecologia e Obstetrícia': { total: 0, correct: 0 },
+      'Ginecologia': { total: 0, correct: 0 },
+      'Obstetrícia': { total: 0, correct: 0 },
       'Medicina Preventiva e Social': { total: 0, correct: 0 }
     };
+
+    const themeMap: Record<string, { specialty: string; tema: string; total: number; correct: number }> = {};
 
     // Mapeamento dinâmico baseado nas questões resolvidas pelo usuário
     Object.entries(userAnswers).forEach(([qid, ans]) => {
       let spec = ans.specialty;
-      if (!spec) {
+      let tema = ans.tema;
+      if (!spec || !tema) {
         const q = supabaseQuestions.find((item) => item.id === qid);
-        spec = q?.especialidade;
+        if (!spec) spec = q?.especialidade;
+        if (!tema) tema = q?.tema;
       }
       if (spec) {
+        // Normaliza "Ginecologia e Obstetrícia" para uma das 6 se aplicável
+        if (spec === 'Ginecologia e Obstetrícia') {
+          if (tema && (tema.toLowerCase().includes('obstet') || tema.toLowerCase().includes('parto') || tema.toLowerCase().includes('gesta') || tema.toLowerCase().includes('fetal'))) {
+            spec = 'Obstetrícia';
+          } else {
+            spec = 'Ginecologia';
+          }
+        } else if (spec === 'Cirurgia') {
+          spec = 'Cirurgia Geral';
+        }
+
         if (!specialtyMap[spec]) {
           specialtyMap[spec] = { total: 0, correct: 0 };
         }
         specialtyMap[spec].total += 1;
         if (ans.isCorrect) {
           specialtyMap[spec].correct += 1;
+        }
+
+        if (tema) {
+          const themeKey = `${spec}:::${tema}`;
+          if (!themeMap[themeKey]) {
+            themeMap[themeKey] = { specialty: spec, tema, total: 0, correct: 0 };
+          }
+          themeMap[themeKey].total += 1;
+          if (ans.isCorrect) {
+            themeMap[themeKey].correct += 1;
+          }
         }
       }
     });
@@ -1315,8 +1360,8 @@ export default function Home() {
         'Clínica Médica',
         'Cirurgia Geral',
         'Pediatria',
+        'Ginecologia',
         'Obstetrícia',
-        'Ginecologia e Obstetrícia',
         'Medicina Preventiva e Social'
       ];
       const perSpec = Math.floor(simulatedExtraAnswers.total / specs.length);
@@ -1335,6 +1380,14 @@ export default function Home() {
       total: val.total,
       correct: val.correct,
       accuracy: val.total > 0 ? (val.correct / val.total) * 100 : 0
+    }));
+
+    const byTheme = Object.values(themeMap).map((item) => ({
+      specialty: item.specialty,
+      tema: item.tema,
+      total: item.total,
+      correct: item.correct,
+      accuracy: item.total > 0 ? (item.correct / item.total) * 100 : 0
     }));
 
     // Histórico diário real dos últimos 7 dias baseado em timestamps
@@ -1417,7 +1470,8 @@ export default function Home() {
       studyTimeMinutes,
       percentileInfo,
       historyByDay,
-      bySpecialty
+      bySpecialty,
+      byTheme
     };
   }, [userAnswers, simulatedExtraAnswers, performanceFilters, simulatedTestPercentile, supabaseQuestions]);
 
@@ -1792,6 +1846,7 @@ export default function Home() {
                 onContinueList={handleContinueList}
                 modalidade={performanceFilters.modalidade}
                 onSimulatePercentile={(p) => setSimulatedTestPercentile(p)}
+                onStartOfficialExam={handleStartOfficialExam}
               />
             )
           )}
@@ -2696,6 +2751,7 @@ export default function Home() {
               onResetFilters={handleResetPerformanceFilters}
               onSimulateDemoQuestions={handleSimulateDemoQuestions}
               onNavigateToBancoWithSubfoco={handleNavigateToBancoWithSubfoco}
+              onNavigateToRanking={() => setActiveTab('ranking')}
             />
           )}
 
@@ -2709,6 +2765,7 @@ export default function Home() {
                 userPercentile={simulatedTestPercentile ?? stats.percentileInfo.percentile ?? 78}
                 userCorrect={stats.totalCorrect}
                 userName={studentName}
+                onSimulateDemoQuestions={handleSimulateDemoQuestions}
               />
             </div>
           )}

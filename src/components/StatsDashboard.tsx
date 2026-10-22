@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import {
   BarChart,
   Bar,
@@ -11,31 +11,34 @@ import {
   PieChart,
   Pie,
   Cell,
-  Legend
+  CartesianGrid
 } from 'recharts';
 import {
-  Award,
-  CheckCircle2,
   Calendar,
-  Lock,
-  Sparkles,
-  TrendingUp,
-  ShieldCheck,
   Search,
-  BookOpen,
-  ArrowRight,
   Filter,
   AlertTriangle,
-  AlertCircle,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Clock,
+  RotateCcw,
+  Check,
+  ChevronDown,
+  Sparkles,
+  Stethoscope,
+  Target,
+  BarChart3,
+  ArrowUpRight,
+  ArrowDownRight,
+  CircleCheck,
+  Play,
+  X,
+  BookOpen,
+  ArrowUpDown
 } from 'lucide-react';
-import { UserStats, PerformanceFilterState, PeriodFilter } from '@/types';
-import { PerformanceFilterBar } from './PerformanceFilterBar';
-import { OfficialRanking } from './OfficialRanking';
-import { getOfficialRanking, getPercentileColor } from '@/utils/percentile';
+import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
-import { clinicalHierarchy } from '@/data/mockQuestions';
+import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
 
 interface StatsDashboardProps {
   stats: UserStats;
@@ -44,87 +47,84 @@ interface StatsDashboardProps {
   onResetFilters: () => void;
   onSimulateDemoQuestions?: (amount: number) => void;
   onNavigateToBancoWithSubfoco?: (specialty: string, tema: string, subfoco: string) => void;
+  onNavigateToRanking?: () => void;
 }
 
-const COLORS = ['#2563eb', '#10b981', '#f59e0b', '#ec4899', '#8b5cf6'];
-
-// Dados mockados de semanas específicas para avaliação temporal detalhada
-const weeksList = [
-  { id: 'w-current', label: 'Semana Atual (28/09 a 04/10)', factor: 0.25, dailyData: [
-    { date: 'Seg', answered: 25, correct: 20 },
-    { date: 'Ter', answered: 32, correct: 26 },
-    { date: 'Qua', answered: 28, correct: 22 },
-    { date: 'Qui', answered: 35, correct: 28 },
-    { date: 'Sex', answered: 40, correct: 33 },
-    { date: 'Sáb', answered: 18, correct: 14 },
-    { date: 'Dom', answered: 16, correct: 13 }
-  ] },
-  { id: 'w-prev1', label: 'Semana Passada (21/09 a 27/09)', factor: 0.32, dailyData: [
-    { date: 'Seg', answered: 30, correct: 24 },
-    { date: 'Ter', answered: 42, correct: 34 },
-    { date: 'Qua', answered: 38, correct: 31 },
-    { date: 'Qui', answered: 45, correct: 36 },
-    { date: 'Sex', answered: 35, correct: 28 },
-    { date: 'Sáb', answered: 22, correct: 18 },
-    { date: 'Dom', answered: 15, correct: 11 }
-  ] },
-  { id: 'w-prev2', label: 'Semana 38 (14/09 a 20/09)', factor: 0.28, dailyData: [
-    { date: 'Seg', answered: 28, correct: 22 },
-    { date: 'Ter', answered: 35, correct: 28 },
-    { date: 'Qua', answered: 30, correct: 24 },
-    { date: 'Qui', answered: 36, correct: 29 },
-    { date: 'Sex', answered: 32, correct: 25 },
-    { date: 'Sáb', answered: 14, correct: 10 },
-    { date: 'Dom', answered: 10, correct: 7 }
-  ] },
-  { id: 'w-prev3', label: 'Semana 37 (07/09 a 13/09)', factor: 0.26, dailyData: [
-    { date: 'Seg', answered: 20, correct: 16 },
-    { date: 'Ter', answered: 25, correct: 19 },
-    { date: 'Qua', answered: 30, correct: 23 },
-    { date: 'Qui', answered: 28, correct: 21 },
-    { date: 'Sex', answered: 32, correct: 26 },
-    { date: 'Sáb', answered: 18, correct: 13 },
-    { date: 'Dom', answered: 12, correct: 9 }
-  ] }
+// 6 Especialidades Médicas Oficiais dos Filtros da Plataforma
+export const SIX_FILTER_SPECIALTIES = [
+  { id: 'clinica', nome: 'Clínica Médica', cor: '#3B82F6' },
+  { id: 'cirurgia', nome: 'Cirurgia Geral', cor: '#10B981' },
+  { id: 'pediatria', nome: 'Pediatria', cor: '#F59E0B' },
+  { id: 'ginecologia', nome: 'Ginecologia', cor: '#EC4899' },
+  { id: 'obstetricia', nome: 'Obstetrícia', cor: '#8B5CF6' },
+  { id: 'preventiva', nome: 'Medicina Preventiva e Social', cor: '#06B6D4' }
 ];
 
-// Dados mockados de meses específicos
-const monthsList = [
-  { id: 'm-10-2026', label: 'Outubro 2026 (Mês Atual)', factor: 0.35, dailyData: [
-    { date: 'Sem 1', answered: 194, correct: 156 },
-    { date: 'Sem 2', answered: 180, correct: 144 },
-    { date: 'Sem 3', answered: 0, correct: 0 },
-    { date: 'Sem 4', answered: 0, correct: 0 }
-  ] },
-  { id: 'm-09-2026', label: 'Setembro 2026', factor: 0.72, dailyData: [
-    { date: 'Sem 1', answered: 210, correct: 168 },
-    { date: 'Sem 2', answered: 225, correct: 182 },
-    { date: 'Sem 3', answered: 195, correct: 154 },
-    { date: 'Sem 4', answered: 230, correct: 185 }
-  ] },
-  { id: 'm-08-2026', label: 'Agosto 2026', factor: 0.68, dailyData: [
-    { date: 'Sem 1', answered: 185, correct: 145 },
-    { date: 'Sem 2', answered: 198, correct: 156 },
-    { date: 'Sem 3', answered: 212, correct: 171 },
-    { date: 'Sem 4', answered: 205, correct: 160 }
-  ] },
-  { id: 'm-07-2026', label: 'Julho 2026', factor: 0.55, dailyData: [
-    { date: 'Sem 1', answered: 140, correct: 108 },
-    { date: 'Sem 2', answered: 165, correct: 130 },
-    { date: 'Sem 3', answered: 175, correct: 138 },
-    { date: 'Sem 4', answered: 180, correct: 142 }
-  ] }
-];
+// Dados temporais parametrizados por período
+const quickPeriodConfig: Record<string, { factor: number; label: string; trendVolume: string; trendAproveitamento: string }> = {
+  '7d': { factor: 0.22, label: '7D', trendVolume: '+18.0%', trendAproveitamento: '-2.1%' },
+  '30d': { factor: 0.52, label: '30D', trendVolume: '+24.5%', trendAproveitamento: '+4.2%' },
+  'mes': { factor: 0.42, label: 'Mês', trendVolume: '+16.3%', trendAproveitamento: '+3.1%' },
+  '6m': { factor: 0.85, label: '6M', trendVolume: '+29.0%', trendAproveitamento: '+3.8%' },
+  '2026.1': { factor: 0.75, label: '2026.1', trendVolume: '+22.4%', trendAproveitamento: '+1.9%' },
+  '2026.2': { factor: 0.90, label: '2026.2', trendVolume: '+31.2%', trendAproveitamento: '+2.8%' },
+  'all': { factor: 1.0, label: 'Tudo', trendVolume: '+14.2%', trendAproveitamento: '+5.4%' }
+};
 
-// Multiplicadores dos atalhos rápidos
-const quickPeriodConfig: Record<string, { factor: number; label: string }> = {
-  '7d': { factor: 0.22, label: 'Últimos 7 dias' },
-  '30d': { factor: 0.52, label: 'Últimos 30 dias' },
-  'mes': { factor: 0.42, label: 'Mês Atual' },
-  '6m': { factor: 1.0, label: 'Últimos 6 meses (Padrão)' },
-  '2026.1': { factor: 0.88, label: 'Semestre 2026.1' },
-  '2026.2': { factor: 0.70, label: 'Semestre 2026.2' },
-  'all': { factor: 1.35, label: 'Histórico Completo' }
+type StatsSubTab = 'overview' | 'specialties' | 'weaknesses';
+
+interface CustomBarTooltipProps {
+  active?: boolean;
+  payload?: Array<{
+    payload: {
+      label: string;
+      resolvidas: number;
+      acertos: number;
+      erros: number;
+    };
+  }>;
+  label?: string;
+}
+
+const CustomBarTooltip: React.FC<CustomBarTooltipProps> = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    const data = payload[0].payload;
+    const taxa = data.resolvidas > 0 ? ((data.acertos / data.resolvidas) * 100).toFixed(1) : '0.0';
+    return (
+      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[175px] text-xs">
+        <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
+          <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider">{label}</span>
+          <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-800/60 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700">
+            {taxa}% acerto
+          </span>
+        </div>
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between">
+            <span className="text-slate-600 dark:text-zinc-400 flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-slate-400 dark:bg-zinc-400" />
+              Resolvidas:
+            </span>
+            <span className="font-bold text-slate-900 dark:text-white font-mono">{data.resolvidas}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              Acertos:
+            </span>
+            <span className="font-bold text-emerald-600 dark:text-emerald-400 font-mono">{data.acertos}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-rose-600 dark:text-rose-400 flex items-center gap-1.5 font-medium">
+              <span className="w-2 h-2 rounded-full bg-rose-500" />
+              Erros:
+            </span>
+            <span className="font-bold text-rose-600 dark:text-rose-400 font-mono">{data.erros}</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return null;
 };
 
 export const StatsDashboard: React.FC<StatsDashboardProps> = ({
@@ -132,1161 +132,1544 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   filters,
   onFilterChange,
   onResetFilters,
-  onSimulateDemoQuestions,
   onNavigateToBancoWithSubfoco
 }) => {
-  const { accentConfig, mode } = useTheme();
+  const { mode, accentConfig } = useTheme();
 
-  // Modos de Visualização Temporal: 'quick' (atalhos rápidos), 'week' (semana específica), 'month' (mês específico)
-  const [temporalViewMode, setTemporalViewMode] = useState<'quick' | 'week' | 'month'>('quick');
-  const [selectedWeekId, setSelectedWeekId] = useState<string>('w-current');
-  const [selectedMonthId, setSelectedMonthId] = useState<string>('m-10-2026');
+  // Sub-abas principais: Visão Geral | Especialidades | Raio-X de Erros
+  const [activeSubTab, setActiveSubTab] = useState<StatsSubTab>('overview');
 
-  // Filtros e Ordenação da Análise Profunda de Especialidades/Temas/Focos/Subfocos
-  const [selectedSpecialtyTab, setSelectedSpecialtyTab] = useState<string>('Todas');
-  const [selectedTemaFilter, setSelectedTemaFilter] = useState<string>('Todos');
-  const [hierarchySearch, setHierarchySearch] = useState<string>('');
-  const [hierarchySortBy, setHierarchySortBy] = useState<'errors' | 'accuracy_asc' | 'accuracy_desc' | 'total'>('errors');
-  const [masteryFilter, setMasteryFilter] = useState<'todos' | 'criticos' | 'atencao' | 'dominados'>('todos');
+  // Alternador do modo de visualização do gráfico temporal
+  const [chartMode, setChartMode] = useState<'empilhado' | 'comparativo'>('empilhado');
+
+  // Controle de expansão da tabela sanfona de especialidades
+  const [expandedAreas, setExpandedAreas] = useState<string[]>(['clinica', 'ginecologia', 'cirurgia']);
+
+  // Hover ativo no gráfico Donut de Especialidades
+  const [hoveredPieIndex, setHoveredPieIndex] = useState<number | null>(null);
+
+  // Controle do menu dropdown flutuante de instituições & bancas
+  const [isFilterDropdownOpen, setIsFilterDropdownOpen] = useState(false);
+  const [instSearch, setInstSearch] = useState('');
+
+  // Filtros da aba Raio-X de Erros
+  const [selectedAreaFilter, setSelectedAreaFilter] = useState<string>('Todas');
+  const [selectedStatusFilter, setSelectedStatusFilter] = useState<'todos' | 'criticos' | 'atencao'>('todos');
+  const [subfocoSearch, setSubfocoSearch] = useState<string>('');
+  const [sortConfig, setSortConfig] = useState<{ key: 'errors' | 'accuracy' | 'total'; direction: 'asc' | 'desc' }>({
+    key: 'errors',
+    direction: 'desc'
+  });
+  const [dataScope, setDataScope] = useState<'pessoal' | 'global'>('pessoal');
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 12;
+  const itemsPerPage = 10;
 
-  // Cálculo das métricas ativas de acordo com a visão selecionada (Rápida, Semana ou Mês)
+  // Modal de Recuperação Ativa
+  const [trainingModal, setTrainingModal] = useState<{
+    titulo: string;
+    subtitulo: string;
+    erros: number;
+    rendimento: number;
+    specialty?: string;
+    tema?: string;
+    subfoco?: string;
+  } | null>(null);
+  const [trainingMode, setTrainingMode] = useState<'erradas' | 'ineditas'>('erradas');
+
+  // Toggle para expandir/recolher área específica
+  const toggleExpandArea = useCallback((id: string) => {
+    setExpandedAreas((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+    );
+  }, []);
+
+  // Expandir todas ou recolher todas as áreas
+  const toggleExpandAll = useCallback(() => {
+    setExpandedAreas((prev) =>
+      prev.length === SIX_FILTER_SPECIALTIES.length ? [] : SIX_FILTER_SPECIALTIES.map((e) => e.id)
+    );
+  }, []);
+
+  // Métricas ativas com base no período
   const activeMetrics = useMemo(() => {
-    let factor = 1.0;
-    let label = '';
-    let chartData = stats.historyByDay;
+    const q = quickPeriodConfig[filters.period] || quickPeriodConfig['all'];
+    const factor = q.factor;
 
-    if (temporalViewMode === 'quick') {
-      const q = quickPeriodConfig[filters.period] || quickPeriodConfig['6m'];
-      factor = q.factor;
-      label = q.label;
-      chartData = stats.historyByDay;
-    } else if (temporalViewMode === 'week') {
-      const w = weeksList.find((item) => item.id === selectedWeekId) || weeksList[0];
-      factor = w.factor;
-      label = w.label;
-      chartData = w.dailyData;
-    } else {
-      const m = monthsList.find((item) => item.id === selectedMonthId) || monthsList[0];
-      factor = m.factor;
-      label = m.label;
-      chartData = m.dailyData;
-    }
-
-    const answered = Math.max(1, Math.round(stats.totalAnswered * factor));
-    const correct = Math.round(stats.totalCorrect * factor);
+    const baseAnswered = stats.totalAnswered || 0;
+    const answered = Math.round(baseAnswered * factor);
+    const correct = Math.round((stats.totalCorrect || 0) * factor);
     const incorrect = Math.max(0, answered - correct);
-    const accuracy = answered > 0 ? (correct / answered) * 100 : stats.accuracyRate;
-    const unique = Math.round(stats.uniqueAnswered * factor);
-    const reviews = Math.round(stats.reviews * factor);
-    const repeated = Math.round(stats.repeated * factor);
+    const accuracy = answered > 0 ? (correct / answered) * 100 : stats.accuracyRate || 0;
+    const unique = Math.round((stats.uniqueAnswered || baseAnswered) * factor);
+    const ineditas = Math.round(unique * 0.9);
+
+    // Mapeia histórico diário enriquecido com chaves para gráfico empilhado e comparativo
+    const chartData = (stats.historyByDay && stats.historyByDay.length > 0 ? stats.historyByDay : [
+      { date: 'Seg', answered: 14, correct: 11 },
+      { date: 'Ter', answered: 22, correct: 17 },
+      { date: 'Qua', answered: 18, correct: 14 },
+      { date: 'Qui', answered: 28, correct: 22 },
+      { date: 'Sex', answered: 25, correct: 20 },
+      { date: 'Sáb', answered: 12, correct: 9 },
+      { date: 'Hoje', answered: 15, correct: 12 }
+    ]).map((d) => {
+      const ans = Math.round(d.answered * factor);
+      const cor = Math.round(d.correct * factor);
+      const err = Math.max(0, ans - cor);
+      return {
+        label: d.date,
+        date: d.date,
+        answered: ans,
+        correct: cor,
+        resolvidas: ans,
+        acertos: cor,
+        erros: err
+      };
+    });
 
     return {
       factor,
-      label,
+      label: q.label,
+      trendVolume: q.trendVolume,
+      trendAproveitamento: q.trendAproveitamento,
       answered,
       correct,
       incorrect,
       accuracy,
       unique,
-      reviews,
-      repeated,
+      ineditas,
       chartData
     };
-  }, [temporalViewMode, filters.period, selectedWeekId, selectedMonthId, stats]);
+  }, [filters.period, stats]);
 
-  // Lista de especialidades presentes na hierarquia
-  const specialtiesList = useMemo(() => {
-    const list = clinicalHierarchy.map((h) => h.especialidade);
-    return ['Todas', ...list];
-  }, []);
+  // Especialidades mapeadas com as cores dinâmicas do tema ativo
+  const dynamicSpecialties = useMemo(() => {
+    return SIX_FILTER_SPECIALTIES.map((spec, index) => ({
+      ...spec,
+      cor: accentConfig?.chartPalette?.[index] || spec.cor
+    }));
+  }, [accentConfig]);
 
-  // Lista de temas disponíveis para a especialidade selecionada
-  const availableTemas = useMemo(() => {
-    if (selectedSpecialtyTab === 'Todas') {
-      const allTemas = clinicalHierarchy.flatMap((h) => h.temas.map((t) => t.tema));
-      return ['Todos', ...Array.from(new Set(allTemas))];
+  // Agregação das 6 Especialidades e seus respectivos Temas Resolvidos
+  // Regra crítica: SOMENTE temas com questões resolvidas (> 0) são listados na tabela
+  const specialtiesBreakdown = useMemo(() => {
+    // Mapa de temas resolvidos reais obtidos do stats.byTheme ou calculados do histórico
+    const themeAnswerMap: Record<string, { total: number; correct: number }> = {};
+
+    if (stats.byTheme && stats.byTheme.length > 0) {
+      stats.byTheme.forEach((item) => {
+        let specName = item.specialty;
+        if (specName === 'Cirurgia') specName = 'Cirurgia Geral';
+        const key = `${specName}:::${item.tema}`;
+        themeAnswerMap[key] = { total: item.total, correct: item.correct };
+      });
     }
-    const found = clinicalHierarchy.find((h) => h.especialidade === selectedSpecialtyTab);
-    if (!found) return ['Todos'];
-    return ['Todos', ...found.temas.map((t) => t.tema)];
-  }, [selectedSpecialtyTab]);
 
-  // Dados consolidados e detalhados de Focos e Subfocos com ordenação pelo que mais errou
+    return dynamicSpecialties.map((specConfig) => {
+      // Localiza o nó da hierarquia correspondente
+      const hierarchyNode = clinicalHierarchy.find((h) =>
+        h.especialidade === specConfig.nome ||
+        (specConfig.nome === 'Cirurgia Geral' && h.especialidade === 'Cirurgia')
+      );
+
+      const catalogTemas = hierarchyNode?.temas || [];
+
+      // Filtra e computa APENAS os temas que possuem resolução de questões
+      const temasResolvidos = catalogTemas
+        .map((t) => {
+          const key = `${specConfig.nome}:::${t.tema}`;
+          const recorded = themeAnswerMap[key];
+
+          // Se houver registro real em stats.byTheme, usa-o
+          let total = recorded ? Math.round(recorded.total * activeMetrics.factor) : 0;
+          let correct = recorded ? Math.round(recorded.correct * activeMetrics.factor) : 0;
+
+          // Se o usuário tiver resolvido questões nesta especialidade geral mas não tiver byTheme granular,
+          // faz uma distribuição representativa proporcional baseada no volume da especialidade
+          if (total === 0 && (!stats.byTheme || stats.byTheme.length === 0)) {
+            const specStat = stats.bySpecialty?.find((s) => s.specialty === specConfig.nome || (specConfig.nome === 'Cirurgia Geral' && s.specialty === 'Cirurgia'));
+            if (specStat && specStat.total > 0) {
+              const specTotal = Math.round(specStat.total * activeMetrics.factor);
+              // Mapeia apenas alguns temas-chave da especialidade com base no volume para não inflar artificialmente
+              const hash = (t.tema.length * 7 + specConfig.nome.length) % 10;
+              if (hash < 4 && specTotal > 0) {
+                total = Math.max(1, Math.round(specTotal * 0.25));
+                correct = Math.round(total * (specStat.accuracy / 100));
+              }
+            }
+          }
+
+          const errors = Math.max(0, total - correct);
+          const taxa = total > 0 ? (correct / total) * 100 : 0;
+
+          return {
+            nome: t.tema,
+            resolvidas: total,
+            acertos: correct,
+            erros: errors,
+            taxa
+          };
+        })
+        .filter((t) => t.resolvidas > 0); // "so contabilize na tabela quando for havendo a resolução das questoes daquele tema"
+
+      // Totais da especialidade
+      let specResolvidas = temasResolvidos.reduce((acc, curr) => acc + curr.resolvidas, 0);
+      let specAcertos = temasResolvidos.reduce((acc, curr) => acc + curr.acertos, 0);
+
+      // Se a soma dos temas for 0, mas stats.bySpecialty tiver valor direto:
+      if (specResolvidas === 0) {
+        const directStat = stats.bySpecialty?.find((s) => s.specialty === specConfig.nome || (specConfig.nome === 'Cirurgia Geral' && s.specialty === 'Cirurgia'));
+        if (directStat && directStat.total > 0) {
+          specResolvidas = Math.round(directStat.total * activeMetrics.factor);
+          specAcertos = Math.round(directStat.correct * activeMetrics.factor);
+        }
+      }
+
+      const specErros = Math.max(0, specResolvidas - specAcertos);
+      const specTaxa = specResolvidas > 0 ? (specAcertos / specResolvidas) * 100 : 0;
+
+      return {
+        id: specConfig.id,
+        nome: specConfig.nome,
+        cor: specConfig.cor,
+        resolvidas: specResolvidas,
+        acertos: specAcertos,
+        erros: specErros,
+        taxa: specTaxa,
+        temas: temasResolvidos
+      };
+    });
+  }, [stats, activeMetrics, dynamicSpecialties]);
+
+  // Volume total somado das 6 especialidades para base do Donut
+  const totalSpecialtiesVolume = useMemo(() => {
+    const sum = specialtiesBreakdown.reduce((acc, curr) => acc + curr.resolvidas, 0);
+    return Math.max(1, sum);
+  }, [specialtiesBreakdown]);
+
+  // Dados formatados para o Donut Chart Recharts
+  const donutData = useMemo(() => {
+    return specialtiesBreakdown.map((s) => ({
+      name: s.nome,
+      value: s.resolvidas > 0 ? s.resolvidas : 0,
+      cor: s.cor,
+      taxa: s.taxa
+    }));
+  }, [specialtiesBreakdown]);
+
+  // Estatísticas detalhadas de subfocos para a aba Raio-X de Erros
   const hierarchyDetailedStats = useMemo(() => {
-    interface SubfocoPerformance {
+    interface SubfocoItem {
+      id: string;
       specialty: string;
       tema: string;
-      foco: string;
       subfoco: string;
       total: number;
       correct: number;
       errors: number;
       accuracy: number;
-      dominantDifficulty: 'Fácil' | 'Médio' | 'Difícil';
-      masteryStatus: 'Excelente' | 'Bom' | 'Atenção' | 'Crítico';
-      priority: 'Alta' | 'Média' | 'Baixa';
+      status: 'critico' | 'atencao' | 'dominado';
     }
 
-    const result: SubfocoPerformance[] = [];
+    const items: SubfocoItem[] = [];
 
     clinicalHierarchy.forEach((h) => {
-      if (selectedSpecialtyTab !== 'Todas' && h.especialidade !== selectedSpecialtyTab) {
+      let specName = h.especialidade;
+      if (specName === 'Cirurgia') specName = 'Cirurgia Geral';
+
+      // Filtro por grande área das 6 especialidades
+      if (selectedAreaFilter !== 'Todas' && specName !== selectedAreaFilter) {
         return;
       }
 
       h.temas.forEach((t) => {
-        if (selectedTemaFilter !== 'Todos' && t.tema !== selectedTemaFilter) {
-          return;
-        }
-
         t.focos.forEach((f) => {
-          f.subfocos.forEach((sf, sfIndex) => {
-            // Se houver busca por texto, filtra
-            if (hierarchySearch.trim()) {
-              const query = hierarchySearch.toLowerCase();
+          f.subfocos.forEach((sf, sfIdx) => {
+            if (subfocoSearch.trim()) {
+              const query = subfocoSearch.toLowerCase();
               const match =
                 sf.toLowerCase().includes(query) ||
+                t.tema.toLowerCase().includes(query) ||
                 f.foco.toLowerCase().includes(query) ||
-                t.tema.toLowerCase().includes(query);
+                specName.toLowerCase().includes(query);
               if (!match) return;
             }
 
-            // Geração de métricas sintéticas realistas e consistentes para o subfoco
-            const baseMultiplier = (h.especialidade.length + t.tema.length + sf.length + sfIndex * 7) % 17;
-            const subfocoTotal = Math.max(8, Math.round(12 + baseMultiplier * 2.2));
-            const subfocoAccuracyRaw = 55 + (baseMultiplier * 3.1) % 43; // entre 55% e 96%
-            const subfocoAccuracy = Math.min(97.5, Math.max(42.0, subfocoAccuracyRaw));
-            const subfocoCorrect = Math.round((subfocoTotal * subfocoAccuracy) / 100);
-            const subfocoErrors = Math.max(0, subfocoTotal - subfocoCorrect);
+            // Cálculo sintético calibrado baseado nos multiplicadores clínicos do banco
+            const baseMultiplier = (specName.length + t.tema.length + sf.length + sfIdx * 7) % 19;
+            const total = Math.max(8, Math.round(14 + baseMultiplier * 2.1));
+            const accuracyRaw = 52 + ((baseMultiplier * 3.3) % 44);
+            const accuracy = Math.min(96.5, Math.max(44.0, accuracyRaw));
+            const correct = Math.round((total * accuracy) / 100);
+            const errors = Math.max(0, total - correct);
 
-            let dominantDifficulty: 'Fácil' | 'Médio' | 'Difícil' = 'Médio';
-            if (baseMultiplier % 3 === 0) dominantDifficulty = 'Difícil';
-            else if (baseMultiplier % 3 === 1) dominantDifficulty = 'Fácil';
+            let status: 'critico' | 'atencao' | 'dominado' = 'dominado';
+            if (accuracy < 60) status = 'critico';
+            else if (accuracy < 75) status = 'atencao';
 
-            let masteryStatus: 'Excelente' | 'Bom' | 'Atenção' | 'Crítico' = 'Bom';
-            if (subfocoAccuracy >= 80) masteryStatus = 'Excelente';
-            else if (subfocoAccuracy >= 70) masteryStatus = 'Bom';
-            else if (subfocoAccuracy >= 50) masteryStatus = 'Atenção';
-            else masteryStatus = 'Crítico';
-
-            let priority: 'Alta' | 'Média' | 'Baixa' = 'Baixa';
-            if (masteryStatus === 'Crítico' || subfocoErrors >= 5) {
-              priority = 'Alta';
-            } else if (masteryStatus === 'Atenção' || subfocoErrors >= 3) {
-              priority = 'Média';
-            }
-
-            result.push({
-              specialty: h.especialidade,
+            items.push({
+              id: `${specName}-${t.tema}-${sf}`,
+              specialty: specName,
               tema: t.tema,
-              foco: f.foco,
               subfoco: sf,
-              total: subfocoTotal,
-              correct: subfocoCorrect,
-              errors: subfocoErrors,
-              accuracy: subfocoAccuracy,
-              dominantDifficulty,
-              masteryStatus,
-              priority
+              total,
+              correct,
+              errors,
+              accuracy,
+              status
             });
           });
         });
       });
     });
 
-    // Filtro por Nível de Domínio / Classificação de Rendimento
-    let filtered = result;
-    if (masteryFilter === 'criticos') {
-      filtered = filtered.filter((r) => r.masteryStatus === 'Crítico' || r.accuracy < 60);
-    } else if (masteryFilter === 'atencao') {
-      filtered = filtered.filter((r) => r.masteryStatus === 'Atenção' || (r.accuracy >= 60 && r.accuracy < 75));
-    } else if (masteryFilter === 'dominados') {
-      filtered = filtered.filter((r) => r.accuracy >= 75);
+    // Filtro por status
+    let filtered = items;
+    if (selectedStatusFilter === 'criticos') {
+      filtered = filtered.filter((i) => i.status === 'critico');
+    } else if (selectedStatusFilter === 'atencao') {
+      filtered = filtered.filter((i) => i.status === 'atencao');
     }
 
-    // Ordenação com prioridade absoluta para o que mais errou por padrão
+    // Ordenação dinâmica configurável
     filtered.sort((a, b) => {
-      if (hierarchySortBy === 'errors') {
-        if (b.errors !== a.errors) return b.errors - a.errors;
-        return a.accuracy - b.accuracy;
+      let valA = a.errors;
+      let valB = b.errors;
+      if (sortConfig.key === 'accuracy') {
+        valA = a.accuracy;
+        valB = b.accuracy;
+      } else if (sortConfig.key === 'total') {
+        valA = a.total;
+        valB = b.total;
       }
-      if (hierarchySortBy === 'accuracy_asc') {
-        return a.accuracy - b.accuracy;
+
+      if (sortConfig.direction === 'asc') {
+        return valA > valB ? 1 : -1;
       }
-      if (hierarchySortBy === 'accuracy_desc') {
-        return b.accuracy - a.accuracy;
-      }
-      if (hierarchySortBy === 'total') {
-        return b.total - a.total;
-      }
-      return 0;
+      return valA < valB ? 1 : -1;
     });
 
     return filtered;
-  }, [selectedSpecialtyTab, selectedTemaFilter, hierarchySearch, masteryFilter, hierarchySortBy]);
+  }, [selectedAreaFilter, selectedStatusFilter, subfocoSearch, sortConfig]);
 
-  // Resumo diagnóstico dos subfocos filtrados
+  // Contagem de subfocos críticos no período
+  const criticalCount = useMemo(() => {
+    return hierarchyDetailedStats.filter((s) => s.status === 'critico').length;
+  }, [hierarchyDetailedStats]);
+
+  // Resumo diagnóstico do Raio-X
   const diagnosticSummary = useMemo(() => {
-    const totalSubfocos = hierarchyDetailedStats.length;
-    const criticalCount = hierarchyDetailedStats.filter((s) => s.priority === 'Alta' || s.accuracy < 60).length;
-    const totalErrors = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.errors, 0);
-    const totalQuestions = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.total, 0);
-    const totalCorrect = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.correct, 0);
-    const averageAccuracy = totalQuestions > 0 ? (totalCorrect / totalQuestions) * 100 : 0;
+    const totalErros = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.errors, 0);
+    const totalQuestoes = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.total, 0);
+    const totalAcertos = hierarchyDetailedStats.reduce((acc, curr) => acc + curr.correct, 0);
+    const mediaAproveitamento = totalQuestoes > 0 ? (totalAcertos / totalQuestoes) * 100 : 0;
 
     return {
-      totalSubfocos,
-      criticalCount,
-      totalErrors,
-      averageAccuracy
+      totalErros,
+      mediaAproveitamento
     };
   }, [hierarchyDetailedStats]);
 
   // Paginação dos subfocos
   const totalPages = Math.max(1, Math.ceil(hierarchyDetailedStats.length / itemsPerPage));
-  const paginatedHierarchyStats = useMemo(() => {
+  const paginatedSubfocos = useMemo(() => {
     const start = (currentPage - 1) * itemsPerPage;
     return hierarchyDetailedStats.slice(start, start + itemsPerPage);
   }, [hierarchyDetailedStats, currentPage, itemsPerPage]);
 
-  const officialRanking = getOfficialRanking(filters, {
-    answered: stats.totalAnswered,
-    correct: stats.totalCorrect,
-    name: 'Você'
-  });
+  // Alternador de ordenação de colunas da tabela
+  const handleSort = (key: 'errors' | 'accuracy' | 'total') => {
+    setSortConfig((prev) => ({
+      key,
+      direction: prev.key === key && prev.direction === 'desc' ? 'asc' : 'desc'
+    }));
+  };
 
-  const { percentileInfo } = stats;
-  const tier = getPercentileColor(percentileInfo.percentile);
+  // Filtragem de instituições no drawer
+  const filteredInstitutions = useMemo(() => {
+    if (!instSearch.trim()) return mockInstitutionsList;
+    return mockInstitutionsList.filter((inst) =>
+      inst.toLowerCase().includes(instSearch.toLowerCase().trim())
+    );
+  }, [instSearch]);
 
-  // Cores de alto contraste para modo claro e escuro
-  const tierTextColor = mode === 'light' ? tier.textLight : tier.textDark;
+  const toggleInstitution = (inst: string) => {
+    const next = filters.institutions.includes(inst)
+      ? filters.institutions.filter((item) => item !== inst)
+      : [...filters.institutions, inst];
+    onFilterChange({ ...filters, institutions: next });
+  };
+
+
 
   return (
     <div className="space-y-6">
-      {/* 0. SELETOR AVANÇADO DE PERÍODO (RÁPIDO, POR SEMANA OU POR MÊS ESPECÍFICO) */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-5 sm:p-6 rounded-3xl shadow-xs space-y-4">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 shadow-xs">
-              <Calendar className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h3 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-white">
-                  Acompanhamento de Desempenho por Período
-                </h3>
-                <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 shadow-xs">
-                  {activeMetrics.label}
-                </span>
-              </div>
-              <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
-                Avalie métricas de acertos por semana específica, mês a mês ou intervalos rápidos
-              </p>
-            </div>
-          </div>
+      {/* =========================================================================
+          BARRA SUPERIOR: NAVEGAÇÃO DE ABAS + PERÍODO + FILTROS DE BANCAS
+      ========================================================================== */}
+      <div className="sticky top-0 z-20 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[var(--bg-page)]/95 backdrop-blur-md border-b border-[var(--card-border)] flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+        {/* Lado Esquerdo: Abas Principais Segmentadas */}
+        <div className="flex items-center gap-1.5 bg-[var(--bg-card)] p-1.5 rounded-xl border border-[var(--card-border)] w-fit">
+          <button
+            type="button"
+            onClick={() => setActiveSubTab('overview')}
+            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+              activeSubTab === 'overview'
+                ? 'text-white shadow-lg'
+                : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
+            }`}
+            style={activeSubTab === 'overview' ? { backgroundColor: accentConfig.primaryHex } : undefined}
+          >
+            <BarChart3 className="w-3.5 h-3.5" />
+            <span>Visão Geral</span>
+          </button>
 
-          {/* Abas de Modo de Visualização Temporal */}
-          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-900 p-1 rounded-2xl border border-slate-200 dark:border-slate-800 self-start lg:self-auto">
-            <button
-              type="button"
-              onClick={() => setTemporalViewMode('quick')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                temporalViewMode === 'quick'
-                  ? 'bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 shadow-xs font-extrabold'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+          <button
+            type="button"
+            onClick={() => setActiveSubTab('specialties')}
+            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+              activeSubTab === 'specialties'
+                ? 'text-white shadow-lg'
+                : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
+            }`}
+            style={activeSubTab === 'specialties' ? { backgroundColor: accentConfig.primaryHex } : undefined}
+          >
+            <Stethoscope className="w-3.5 h-3.5" />
+            <span>Especialidades</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setActiveSubTab('weaknesses')}
+            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+              activeSubTab === 'weaknesses'
+                ? 'text-white shadow-lg'
+                : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
+            }`}
+            style={activeSubTab === 'weaknesses' ? { backgroundColor: accentConfig.primaryHex } : undefined}
+          >
+            <Target className="w-3.5 h-3.5" />
+            <span>Raio-X de Erros</span>
+            <span
+              className={`px-1.5 py-0.2 rounded-full text-[10px] font-bold ${
+                activeSubTab === 'weaknesses'
+                  ? 'bg-white/20 text-white'
+                  : 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20'
               }`}
             >
-              Atalhos Rápidos
-            </button>
-            <button
-              type="button"
-              onClick={() => setTemporalViewMode('week')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                temporalViewMode === 'week'
-                  ? 'bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 shadow-xs font-extrabold'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-            >
-              📅 Por Semana
-            </button>
-            <button
-              type="button"
-              onClick={() => setTemporalViewMode('month')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                temporalViewMode === 'month'
-                  ? 'bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 shadow-xs font-extrabold'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-            >
-              🗓️ Por Mês
-            </button>
-          </div>
-        </div>
-
-        {/* Sub-barras contextuais de seleção dependendo do modo */}
-        <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center gap-2">
-          {temporalViewMode === 'quick' && (
-            <div className="flex flex-wrap items-center gap-1.5">
-              <span className="text-xs font-bold text-slate-500 mr-1">Intervalo:</span>
-              {[
-                { id: '7d', label: '7 Dias' },
-                { id: '30d', label: '30 Dias' },
-                { id: 'mes', label: 'Mês Atual' },
-                { id: '6m', label: '6 Meses' },
-                { id: '2026.1', label: '2026.1' },
-                { id: 'all', label: 'Histórico Completo' }
-              ].map((periodItem) => {
-                const isSelected = filters.period === periodItem.id;
-                return (
-                  <button
-                    key={periodItem.id}
-                    type="button"
-                    onClick={() => onFilterChange({ ...filters, period: periodItem.id as PeriodFilter })}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                      isSelected
-                        ? 'bg-blue-600 text-white shadow-xs scale-102 font-extrabold'
-                        : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
-                    }`}
-                  >
-                    {periodItem.label}
-                  </button>
-                );
-              })}
-            </div>
-          )}
-
-          {temporalViewMode === 'week' && (
-            <div className="flex flex-wrap items-center gap-1.5 w-full">
-              <span className="text-xs font-bold text-slate-500 mr-1">Selecione a Semana:</span>
-              {weeksList.map((week) => {
-                const isSelected = selectedWeekId === week.id;
-                return (
-                  <button
-                    key={week.id}
-                    type="button"
-                    onClick={() => setSelectedWeekId(week.id)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                      isSelected
-                        ? 'bg-blue-600 text-white shadow-xs scale-102 font-extrabold'
-                        : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
-                    }`}
-                  >
-                    {week.label}
-                  </button>
-                );
-              })}
-            </div>
-          )}
-
-          {temporalViewMode === 'month' && (
-            <div className="flex flex-wrap items-center gap-1.5 w-full">
-              <span className="text-xs font-bold text-slate-500 mr-1">Selecione o Mês:</span>
-              {monthsList.map((m) => {
-                const isSelected = selectedMonthId === m.id;
-                return (
-                  <button
-                    key={m.id}
-                    type="button"
-                    onClick={() => setSelectedMonthId(m.id)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                      isSelected
-                        ? 'bg-blue-600 text-white shadow-xs scale-102 font-extrabold'
-                        : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
-                    }`}
-                  >
-                    {m.label}
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Barra de Filtros Complementar */}
-      <PerformanceFilterBar
-        filters={filters}
-        onChange={onFilterChange}
-        onReset={onResetFilters}
-      />
-
-      {/* 1. CARDS KPI PRINCIPAIS DINÂMICOS CONFORME O PERÍODO */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {/* Card 1: Volume no Período */}
-        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
-          <div>
-            <div className="flex items-center justify-between">
-              <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
-                Volume no Período
-              </span>
-              <div
-                className="w-9 h-9 rounded-xl flex items-center justify-center shadow-xs"
-                style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
-              >
-                <Award className="w-4.5 h-4.5" />
-              </div>
-            </div>
-            <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-4xl font-black font-sans tracking-tight text-slate-900 dark:text-white">
-                {activeMetrics.answered}
-              </span>
-              <span className="text-xs text-slate-500 font-medium">questões</span>
-            </div>
-            <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
-              {activeMetrics.unique} resoluções únicas • {activeMetrics.reviews} revisões
-            </p>
-          </div>
-
-          <div className="w-full bg-slate-100 dark:bg-slate-800/80 rounded-full h-1.5 overflow-hidden">
-            <div
-              className="h-1.5 rounded-full transition-all duration-700"
-              style={{
-                width: `${Math.min(100, Math.round((activeMetrics.answered / 500) * 100))}%`,
-                backgroundColor: accentConfig.primaryHex
-              }}
-            />
-          </div>
-        </div>
-
-        {/* Card 2: Total de Acertos no Período */}
-        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
-          <div>
-            <div className="flex items-center justify-between">
-              <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
-                Acertos no Período
-              </span>
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shadow-xs">
-                <CheckCircle2 className="w-4.5 h-4.5" />
-              </div>
-            </div>
-            <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-4xl font-black font-sans tracking-tight text-emerald-600 dark:text-emerald-400">
-                {activeMetrics.correct}
-              </span>
-              <span className="text-xs text-slate-500">acertos</span>
-            </div>
-            <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
-              {activeMetrics.incorrect} questões erradas no período
-            </p>
-          </div>
-
-          <div className="w-full bg-slate-100 dark:bg-slate-800/80 rounded-full h-1.5 overflow-hidden">
-            <div
-              className="bg-emerald-500 h-1.5 rounded-full transition-all duration-700"
-              style={{ width: `${Math.min(100, activeMetrics.accuracy)}%` }}
-            />
-          </div>
-        </div>
-
-        {/* Card 3: Taxa de Acerto no Período */}
-        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs flex flex-col justify-between space-y-4">
-          <div>
-            <div className="flex items-center justify-between">
-              <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
-                Taxa de Acerto (%)
-              </span>
-              <div className="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shadow-xs">
-                <Sparkles className="w-4.5 h-4.5" />
-              </div>
-            </div>
-            <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-4xl font-black font-sans tracking-tight text-slate-900 dark:text-white">
-                {activeMetrics.accuracy.toFixed(1)}%
-              </span>
-              <span className="text-xs text-slate-500">aproveitamento</span>
-            </div>
-            <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
-              Desempenho bruto no intervalo ({activeMetrics.label})
-            </p>
-          </div>
-
-          <div className="w-full bg-slate-100 dark:bg-slate-800/80 rounded-full h-1.5 overflow-hidden">
-            <div
-              className="bg-blue-600 h-1.5 rounded-full transition-all duration-700"
-              style={{ width: `${Math.min(100, activeMetrics.accuracy)}%` }}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* 2. CARD DO MODELO ESTATÍSTICO IRT (TRI) & PERCENTIL BAYESIANO */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-xs space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-xs"
-              style={{ backgroundColor: tier.bgRgba, color: tier.color }}
-            >
-              <Award className="w-6 h-6" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h3 className="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white tracking-tight">
-                  Modelo Estatístico IRT 2PL & Percentil Oficial
-                </h3>
-                <span
-                  className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider border shadow-xs"
-                  style={{
-                    backgroundColor: tier.bgRgba,
-                    borderColor: tier.borderRgba,
-                    color: tierTextColor
-                  }}
-                >
-                  {percentileInfo.statusLabel || (percentileInfo.status === 'official' ? 'Ranking Oficial' : percentileInfo.status === 'provisional' ? 'Ranking Provisório' : 'Sem Ranking')}
-                </span>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-0.5">
-                Estimativa Bayesiana MAP (θ) ponderada por dificuldade e regularização de incerteza
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2 text-xs font-mono bg-slate-50 dark:bg-slate-900 px-3.5 py-2 rounded-2xl border border-slate-200 dark:border-slate-800">
-            <ShieldCheck className="w-4 h-4 text-emerald-500" />
-            <span className="text-slate-700 dark:text-slate-300 font-semibold">
-              Validação Ativa: 0 anuladas • Sem duplicatas
+              {criticalCount}
             </span>
-          </div>
+          </button>
         </div>
 
-        {/* Conteúdo do Percentil */}
-        {percentileInfo.status === 'unranked' || percentileInfo.status === 'locked' ? (
-          <div className="p-6 rounded-2xl bg-amber-50/60 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/40 flex flex-col sm:flex-row items-center justify-between gap-5">
-            <div className="flex items-start gap-4">
-              <Lock className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
-              <div className="space-y-1.5">
-                <div className="text-base font-bold text-slate-900 dark:text-white">
-                  Continue resolvendo questões para liberar seu percentil
-                </div>
-                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed max-w-xl">
-                  Para participar do <strong>Ranking Provisório</strong>, é necessário resolver pelo menos <strong>150 questões válidas</strong>. Você resolveu <strong>{percentileInfo.validQuestionsCount || stats.totalAnswered} questões válidas</strong>.
-                  Faltam <strong className="text-amber-700 dark:text-amber-400">{percentileInfo.missingForNextTier || Math.max(0, 150 - stats.totalAnswered)} questões</strong> para desbloqueio!
-                </p>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  Ao atingir 500 questões válidas, seu percentil torna-se consolidado no Ranking Oficial.
-                </p>
-              </div>
-            </div>
-
-            {onSimulateDemoQuestions && (
-              <div className="shrink-0 flex flex-col gap-2 w-full sm:w-auto">
-                <button
-                  onClick={() => onSimulateDemoQuestions(150)}
-                  className="px-4 py-2.5 text-xs font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-all cursor-pointer text-center shadow-md shadow-blue-600/20"
-                >
-                  Simular +150 (Provisório)
-                </button>
-                <button
-                  onClick={() => onSimulateDemoQuestions(500)}
-                  className="px-4 py-2 text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl transition-all cursor-pointer text-center"
-                >
-                  Simular +500 (Oficial)
-                </button>
-              </div>
-            )}
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-            {/* Box Principal de P-valor */}
-            <div className="lg:col-span-2 space-y-4">
-              <div className="flex items-baseline gap-4">
-                <span
-                  className="text-5xl sm:text-6xl font-black font-sans tracking-tight flex items-center gap-3"
-                  style={{ color: tierTextColor }}
-                >
-                  <span className="w-4 h-4 rounded-full shadow-xs" style={{ backgroundColor: tier.color }} />
-                  P{percentileInfo.percentile}
-                </span>
-                <div>
-                  <span className="text-base sm:text-lg font-bold text-slate-900 dark:text-white block">
-                    {percentileInfo.status === 'provisional' ? 'Percentil Provisório:' : 'Percentil Oficial:'} À frente de{' '}
-                    <strong style={{ color: tierTextColor }}>{percentileInfo.percentile}%</strong> dos concorrentes.
-                  </span>
-                  <span className="text-xs text-slate-600 dark:text-slate-400">
-                    Faixa: <strong>{tier.name}</strong> ({tier.rangeLabel}) • População elegível: <strong>{percentileInfo.eligibleTotalStudents} candidatos</strong>
-                  </span>
-                </div>
-              </div>
-
-              {/* Barra de Progresso do Percentil */}
-              <div className="w-full bg-slate-100 dark:bg-slate-900 rounded-full h-3 overflow-hidden border border-slate-200 dark:border-slate-800">
-                <div
-                  className="h-3 rounded-full transition-all duration-700 ease-out"
-                  style={{
-                    width: `${Math.max(5, percentileInfo.percentile || 0)}%`,
-                    backgroundColor: tier.color
-                  }}
-                />
-              </div>
-
-              {/* Grid com métricas aprofundadas da IRT */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
-                  <div className="text-[10px] font-bold text-slate-500 uppercase">Habilidade (θ)</div>
-                  <div className="text-base font-extrabold font-sans text-slate-900 dark:text-white">
-                    {percentileInfo.theta !== undefined ? (percentileInfo.theta > 0 ? `+${percentileInfo.theta.toFixed(2)}` : percentileInfo.theta.toFixed(2)) : '+1.42'}
-                  </div>
-                  <div className="text-[10px] text-slate-500">Escala z latente</div>
-                </div>
-
-                <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
-                  <div className="text-[10px] font-bold text-slate-500 uppercase">Incerteza (SE)</div>
-                  <div className="text-base font-extrabold font-sans text-slate-900 dark:text-white">
-                    ±{percentileInfo.standard_error !== undefined ? percentileInfo.standard_error.toFixed(2) : '0.12'}
-                  </div>
-                  <div className="text-[10px] text-slate-500">Erro padrão Fisher</div>
-                </div>
-
-                <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
-                  <div className="text-[10px] font-bold text-slate-500 uppercase">Confiabilidade</div>
-                  <div className="text-base font-extrabold font-sans text-emerald-600 dark:text-emerald-400">
-                    {percentileInfo.reliability !== undefined ? `${(percentileInfo.reliability * 100).toFixed(1)}%` : '88.5%'}
-                  </div>
-                  <div className="text-[10px] text-slate-500">Precisão de teste</div>
-                </div>
-
-                <div className="p-3 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
-                  <div className="text-[10px] font-bold text-slate-500 uppercase">Score Ajustado</div>
-                  <div className="text-base font-extrabold font-sans text-blue-600 dark:text-blue-400">
-                    {percentileInfo.adjustedScore.toFixed(2)}
-                  </div>
-                  <div className="text-[10px] text-slate-500">Shrinkage + volume</div>
-                </div>
-              </div>
-
-              {percentileInfo.status === 'provisional' && (
-                <div className="p-3 rounded-xl bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900 text-xs text-blue-800 dark:text-blue-300">
-                  ⚡ <strong>Ranking Provisório:</strong> Faltam <strong>{percentileInfo.missingForOfficial} questões</strong> para homologação definitiva no Ranking Oficial (≥500).
-                </div>
-              )}
-            </div>
-
-            {/* Box Lateral com Status da Homologação */}
-            <div className="bg-slate-50 dark:bg-slate-900/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3">
-              <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">
-                Elegibilidade do Ranking
-              </div>
-              <div className="text-xl font-black text-slate-900 dark:text-white font-sans flex items-center gap-2">
-                {percentileInfo.status === 'official' ? (
-                  <>
-                    <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-                    <span>Oficial Homologado</span>
-                  </>
-                ) : (
-                  <>
-                    <Sparkles className="w-5 h-5 text-blue-500" />
-                    <span>Provisório Ativo</span>
-                  </>
-                )}
-              </div>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                Baseado em <strong>{percentileInfo.validQuestionsCount || stats.totalAnswered} questões válidas</strong> com dificuldade conhecida (Fácil, Média, Difícil).
-              </p>
-              {onSimulateDemoQuestions && (
-                <button
-                  onClick={() => onSimulateDemoQuestions(100)}
-                  className="w-full mt-2 py-2.5 text-xs font-bold rounded-xl transition-all cursor-pointer shadow-sm hover:scale-102"
-                  style={{
-                    backgroundColor: accentConfig.bgRgba,
-                    color: accentConfig.primaryHex,
-                    border: `1px solid ${accentConfig.borderRgba}`
-                  }}
-                >
-                  + Simular mais 100 questões
-                </button>
-              )}
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* 3. ANÁLISE DETALHADA POR FOCO E SUBFOCO (PRIORIZADO PELO QUE MAIS ERROU) */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-xs space-y-6">
-        {/* Cabeçalho da Seção */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 shadow-xs">
-              <BookOpen className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h3 className="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
-                  Diagnóstico Detalhado por Foco e Subfoco
-                </h3>
-                <span className="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border border-rose-200 dark:border-rose-900/60">
-                  Prioridade por Erros
-                </span>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-0.5">
-                Classificação por maior volume de erros e menor rendimento para direcionar revisões estratégicas
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 shrink-0">
-            <span className="font-sans font-bold text-slate-700 dark:text-slate-200">{hierarchyDetailedStats.length}</span> subfocos encontrados
-          </div>
-        </div>
-
-        {/* 3 Cards de Resumo Diagnóstico */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-rose-50/60 dark:bg-rose-950/20 border border-rose-200/70 dark:border-rose-900/40 rounded-2xl p-4 flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
-              <AlertTriangle className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="text-2xl font-black font-sans text-rose-700 dark:text-rose-300 leading-tight">
-                {diagnosticSummary.criticalCount}
-              </div>
-              <div className="text-[11px] font-bold text-rose-800/80 dark:text-rose-400 uppercase tracking-wider mt-0.5">
-                Pontos Fracos Prioritários
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-amber-50/60 dark:bg-amber-950/20 border border-amber-200/70 dark:border-amber-900/40 rounded-2xl p-4 flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
-              <AlertCircle className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="text-2xl font-black font-sans text-amber-700 dark:text-amber-300 leading-tight">
-                {diagnosticSummary.totalErrors}
-              </div>
-              <div className="text-[11px] font-bold text-amber-800/80 dark:text-amber-400 uppercase tracking-wider mt-0.5">
-                Total de Erros Mapeados
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/70 dark:border-blue-900/40 rounded-2xl p-4 flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
-              <TrendingUp className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="text-2xl font-black font-sans text-blue-700 dark:text-blue-300 leading-tight">
-                {diagnosticSummary.averageAccuracy.toFixed(1)}%
-              </div>
-              <div className="text-[11px] font-bold text-blue-800/80 dark:text-blue-400 uppercase tracking-wider mt-0.5">
-                Rendimento Médio no Filtro
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Barra de Filtro por Grande Área (Pills Horizontais Limpos) */}
-        <div className="space-y-2">
-          <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
-            <Filter className="w-3.5 h-3.5" />
-            Grande Área Médica
-          </span>
-
-          <div className="flex flex-wrap items-center gap-1.5">
-            {specialtiesList.map((spec) => {
-              const isSelected = selectedSpecialtyTab === spec;
+        {/* Lado Direito: Período + Modalidade + Drawer de Bancas & Reset [Imagem 5] */}
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Seletor de Período em Pílulas */}
+          <div className="flex items-center bg-[var(--bg-card)] border border-[var(--card-border)] rounded-xl p-1">
+            <span className="text-[11px] text-slate-500 dark:text-zinc-500 px-2 flex items-center gap-1 font-medium">
+              <Calendar className="w-3 h-3 text-slate-400 dark:text-zinc-500" />
+              Período:
+            </span>
+            {[
+              { id: '7d', label: '7D' },
+              { id: '30d', label: '30D' },
+              { id: '2026.2', label: '2026.2' },
+              { id: 'all', label: 'Tudo' }
+            ].map((p) => {
+              const isSelected = filters.period === p.id;
               return (
                 <button
-                  key={spec}
+                  key={p.id}
                   type="button"
-                  onClick={() => {
-                    setSelectedSpecialtyTab(spec);
-                    setSelectedTemaFilter('Todos');
-                    setCurrentPage(1);
-                  }}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  onClick={() => onFilterChange({ ...filters, period: p.id as PeriodFilter })}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                     isSelected
-                      ? 'bg-indigo-600 text-white shadow-xs font-extrabold scale-102'
-                      : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
+                      ? 'text-white shadow-sm font-bold'
+                      : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
                   }`}
+                  style={isSelected ? { backgroundColor: accentConfig.primaryHex } : undefined}
                 >
-                  {spec}
+                  {p.label}
                 </button>
               );
             })}
           </div>
-        </div>
 
-        {/* Filtros Funcionais e Seletores Compactos (Sem Avalanche de Chips) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-          {/* Seletor Elegante de Tema */}
-          <div>
-            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
-              Tema Clínico
-            </label>
-            <select
-              value={selectedTemaFilter}
-              onChange={(e) => {
-                setSelectedTemaFilter(e.target.value);
-                setCurrentPage(1);
-              }}
-              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
+          {/* Modalidade */}
+          <select
+            value={filters.modalidade}
+            onChange={(e) => onFilterChange({ ...filters, modalidade: e.target.value as Modalidade })}
+            aria-label="Modalidade de estudo"
+            className="bg-[var(--bg-card)] border border-[var(--card-border)] text-xs font-medium rounded-xl px-3 py-1.5 text-slate-800 dark:text-zinc-200 focus:outline-none focus:border-[var(--primary-color)] cursor-pointer"
+          >
+            <option value="Residência">Residência Médica</option>
+            <option value="Revalida">Revalida</option>
+            <option value="Graduação / Internato">Graduação</option>
+          </select>
+
+          {/* Dropdown / Drawer de Bancas & Instituições [Imagem 5] */}
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setIsFilterDropdownOpen(!isFilterDropdownOpen)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] border border-[var(--card-border)] text-slate-700 dark:text-zinc-300 hover:border-slate-400 dark:hover:border-zinc-700 transition-colors cursor-pointer"
             >
-              <option value="Todos">Todos os Temas ({availableTemas.length - 1} disponíveis)</option>
-              {availableTemas.filter((t) => t !== 'Todos').map((tema) => (
-                <option key={tema} value={tema}>
-                  {tema}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Filtro por Classificação de Rendimento */}
-          <div>
-            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
-              Classificação / Domínio
-            </label>
-            <select
-              value={masteryFilter}
-              onChange={(e) => {
-                setMasteryFilter(e.target.value as 'todos' | 'criticos' | 'atencao' | 'dominados');
-                setCurrentPage(1);
-              }}
-              className="w-full px-3 py-2 rounded-xl text-xs font-semibold bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
-            >
-              <option value="todos">Todos os Níveis</option>
-              <option value="criticos">🔴 Críticos (&lt; 60% acertos)</option>
-              <option value="atencao">🟡 Em Atenção (60% a 74%)</option>
-              <option value="dominados">🟢 Dominados (≥ 75%)</option>
-            </select>
-          </div>
-
-          {/* Ordenação por Prioridade (O que mais errou por padrão) */}
-          <div>
-            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
-              Ordenar Lista
-            </label>
-            <select
-              value={hierarchySortBy}
-              onChange={(e) => {
-                setHierarchySortBy(e.target.value as 'errors' | 'accuracy_asc' | 'accuracy_desc' | 'total');
-                setCurrentPage(1);
-              }}
-              className="w-full px-3 py-2 rounded-xl text-xs font-bold bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
-            >
-              <option value="errors">🚨 O que Mais Errou (Prioridade)</option>
-              <option value="accuracy_asc">📉 Menor Rendimento (% Acerto)</option>
-              <option value="accuracy_desc">📈 Maior Rendimento (% Acerto)</option>
-              <option value="total">📚 Mais Questões Resolvidas</option>
-            </select>
-          </div>
-
-          {/* Busca textual de Subfoco */}
-          <div>
-            <label className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
-              Buscar Subfoco ou Foco
-            </label>
-            <div className="relative">
-              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-              <input
-                type="text"
-                value={hierarchySearch}
-                onChange={(e) => {
-                  setHierarchySearch(e.target.value);
-                  setCurrentPage(1);
-                }}
-                placeholder="Ex: Apendicite, IAM..."
-                className="w-full pl-8 pr-3 py-2 rounded-xl text-xs bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Tabela de Alto Desempenho e Rendimento */}
-        {paginatedHierarchyStats.length > 0 ? (
-          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
-            <table className="w-full text-left text-sm text-slate-800 dark:text-slate-200">
-              <thead>
-                <tr className="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-400 uppercase tracking-wider font-extrabold text-[11px]">
-                  <th className="py-3 px-4">Prioridade</th>
-                  <th className="py-3 px-4">Subfoco & Foco</th>
-                  <th className="py-3 px-4">Grande Área / Tema</th>
-                  <th className="py-3 px-4 text-center">Questões & Erros</th>
-                  <th className="py-3 px-4 text-center">Rendimento</th>
-                  <th className="py-3 px-4 text-right">Ação</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
-                {paginatedHierarchyStats.map((row, index) => {
-                  const priorityBadge = {
-                    Alta: 'bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border-rose-300 dark:border-rose-800',
-                    Média: 'bg-amber-50 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300 border-amber-300 dark:border-amber-800',
-                    Baixa: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800'
-                  }[row.priority];
-
-                  return (
-                    <tr
-                      key={`${row.subfoco}-${index}`}
-                      className="hover:bg-slate-50/70 dark:hover:bg-slate-900/50 transition-colors"
-                    >
-                      {/* 1. Prioridade e Status */}
-                      <td className="py-3.5 px-4 whitespace-nowrap">
-                        <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider border ${priorityBadge}`}>
-                          {row.priority === 'Alta' && <AlertTriangle className="w-3 h-3 text-rose-500" />}
-                          {row.priority === 'Alta' ? 'Prioridade Alta' : row.priority === 'Média' ? 'Atenção' : 'Consolidado'}
-                        </span>
-                      </td>
-
-                      {/* 2. Subfoco & Foco */}
-                      <td className="py-3.5 px-4">
-                        <div className="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">
-                          {row.subfoco}
-                        </div>
-                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                          {row.foco}
-                        </div>
-                      </td>
-
-                      {/* 3. Área & Tema */}
-                      <td className="py-3.5 px-4">
-                        <span className="text-[11px] font-bold text-indigo-700 dark:text-indigo-400 block">
-                          {row.specialty}
-                        </span>
-                        <span className="text-xs text-slate-600 dark:text-slate-400 font-medium truncate max-w-[180px] block">
-                          {row.tema}
-                        </span>
-                      </td>
-
-                      {/* 4. Questões & Erros (Destaque em Vermelho nos Erros com Fonte Inter) */}
-                      <td className="py-3.5 px-4 text-center whitespace-nowrap">
-                        <div className="flex items-center justify-center gap-1 font-sans font-bold text-xs text-rose-600 dark:text-rose-400">
-                          <span>{row.errors} erros</span>
-                        </div>
-                        <div className="text-[10px] font-sans text-slate-500 font-normal">
-                          {row.correct} acertos de {row.total} q.
-                        </div>
-                      </td>
-
-                      {/* 5. Rendimento com Barra de Progresso e Fonte Inter */}
-                      <td className="py-3.5 px-4 text-center min-w-[120px]">
-                        <span className="font-sans font-black text-xs text-slate-900 dark:text-white block">
-                          {row.accuracy.toFixed(1)}%
-                        </span>
-                        <div className="w-24 mx-auto bg-slate-100 dark:bg-slate-800 rounded-full h-1.5 mt-1.5 overflow-hidden">
-                          <div
-                            className={`h-1.5 rounded-full transition-all ${
-                              row.accuracy >= 75
-                                ? 'bg-emerald-500'
-                                : row.accuracy >= 60
-                                ? 'bg-amber-500'
-                                : 'bg-rose-500'
-                            }`}
-                            style={{ width: `${row.accuracy}%` }}
-                          />
-                        </div>
-                      </td>
-
-                      {/* 6. Ação: Treinar Subfoco */}
-                      <td className="py-3.5 px-4 text-right whitespace-nowrap">
-                        {onNavigateToBancoWithSubfoco ? (
-                          <button
-                            type="button"
-                            onClick={() => onNavigateToBancoWithSubfoco(row.specialty, row.tema, row.subfoco)}
-                            className="px-3 py-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-white hover:bg-blue-600 dark:hover:bg-blue-600 border border-blue-200 dark:border-blue-800 rounded-xl transition-all inline-flex items-center gap-1.5 cursor-pointer shadow-2xs"
-                          >
-                            <span>Treinar</span>
-                            <ArrowRight className="w-3.5 h-3.5" />
-                          </button>
-                        ) : (
-                          <span className="text-[11px] text-slate-400 font-medium">Mapeado</span>
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <div className="text-center py-12 border border-dashed border-slate-200 dark:border-slate-800 rounded-2xl">
-            <BookOpen className="w-10 h-10 text-slate-300 dark:text-slate-600 mx-auto mb-2" />
-            <p className="text-sm font-bold text-slate-700 dark:text-slate-300">
-              Nenhum subfoco encontrado com os filtros selecionados
-            </p>
-            <p className="text-xs text-slate-500 mt-1">
-              Tente alterar a grande área, o tema ou o nível de domínio.
-            </p>
-          </div>
-        )}
-
-        {/* Paginação e Contador */}
-        {totalPages > 1 && (
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-            <div className="text-xs text-slate-500 dark:text-slate-400">
-              Mostrando <strong className="text-slate-700 dark:text-slate-200 font-sans">{((currentPage - 1) * itemsPerPage) + 1}</strong> a{' '}
-              <strong className="text-slate-700 dark:text-slate-200 font-sans">
-                {Math.min(currentPage * itemsPerPage, hierarchyDetailedStats.length)}
-              </strong>{' '}
-              de <strong className="text-slate-700 dark:text-slate-200 font-sans">{hierarchyDetailedStats.length}</strong> subfocos
-            </div>
-
-            <div className="flex items-center gap-1.5">
-              <button
-                type="button"
-                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-                disabled={currentPage === 1}
-                className="p-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-850 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
-                title="Página Anterior"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <span className="text-xs font-bold text-slate-700 dark:text-slate-300 px-2 font-sans">
-                {currentPage} / {totalPages}
+              <Filter className="w-3 h-3 text-slate-400 dark:text-zinc-500" />
+              <span>
+                {filters.institutions.length > 0
+                  ? `${filters.institutions.length} Inst.`
+                  : filters.banca !== 'Todas as Bancas'
+                  ? filters.banca
+                  : 'Todas'}
               </span>
+              <ChevronDown className="w-3 h-3 text-slate-500 dark:text-zinc-400" />
+            </button>
+
+            {isFilterDropdownOpen && (
+              <div className="absolute right-0 z-40 mt-1.5 w-72 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-3.5 space-y-3 animate-in fade-in zoom-in-95 duration-150">
+                <div>
+                  <label className="text-[10px] font-bold text-slate-500 dark:text-zinc-400 uppercase tracking-wider block mb-1">
+                    Banca Examinadora
+                  </label>
+                  <select
+                    value={filters.banca}
+                    onChange={(e) => onFilterChange({ ...filters, banca: e.target.value })}
+                    className="w-full bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-medium rounded-lg px-2.5 py-1.5 text-slate-800 dark:text-zinc-200 focus:outline-none"
+                  >
+                    {mockBancas.map((b) => (
+                      <option key={b} value={b}>
+                        {b}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-[10px] font-bold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">
+                      Instituições ({filters.institutions.length || 'Todas'})
+                    </label>
+                    {filters.institutions.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => onFilterChange({ ...filters, institutions: [] })}
+                        className="text-[10px] text-blue-600 dark:text-blue-400 hover:underline cursor-pointer font-semibold"
+                      >
+                        Limpar
+                      </button>
+                    )}
+                  </div>
+                  <input
+                    type="text"
+                    value={instSearch}
+                    onChange={(e) => setInstSearch(e.target.value)}
+                    placeholder="Buscar instituição..."
+                    className="w-full px-2.5 py-1.5 text-xs rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 placeholder:text-slate-400 dark:placeholder:text-zinc-500 mb-1.5 focus:outline-none"
+                  />
+                  <div className="max-h-36 overflow-y-auto space-y-1 pr-1">
+                    {filteredInstitutions.slice(0, 30).map((inst) => {
+                      const isChecked = filters.institutions.includes(inst);
+                      return (
+                        <label
+                          key={inst}
+                          onClick={() => toggleInstitution(inst)}
+                          className="flex items-center gap-2 px-2 py-1 rounded-lg hover:bg-slate-100 dark:hover:bg-[#1A1A20] cursor-pointer text-xs text-slate-700 dark:text-zinc-300"
+                        >
+                          <div
+                            className={`w-3.5 h-3.5 rounded border flex items-center justify-center transition-colors ${
+                              isChecked
+                                ? 'text-white shadow-xs'
+                                : 'border-slate-300 dark:border-zinc-600'
+                            }`}
+                            style={isChecked ? {
+                              backgroundColor: accentConfig.primaryHex,
+                              borderColor: accentConfig.primaryHex
+                            } : undefined}
+                          >
+                            {isChecked && <Check className="w-2.5 h-2.5" />}
+                          </div>
+                          <span className="truncate">{inst}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setIsFilterDropdownOpen(false)}
+                  className="w-full py-1.5 text-xs font-bold text-center text-white rounded-xl cursor-pointer shadow-sm transition-opacity hover:opacity-95"
+                  style={{ backgroundColor: accentConfig.primaryHex }}
+                >
+                  Aplicar
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Botão Redefinir Filtros [Imagem 5] */}
+          <button
+            type="button"
+            onClick={onResetFilters}
+            title="Redefinir filtros"
+            className="p-2 rounded-xl text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white bg-[var(--bg-card)] border border-[var(--card-border)] hover:border-slate-400 dark:hover:border-zinc-700 transition-colors cursor-pointer"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      </div>
+
+      {/* =========================================================================
+          ABA 1: VISÃO GERAL (4 KPIS + GRÁFICO TEMPORAL DUAL)
+      ========================================================================== */}
+      {activeSubTab === 'overview' && (
+        <div className="space-y-6 animate-in fade-in duration-200">
+          {/* Grid de 4 KPIs Estratégicos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Card 1: Volume Resolvido */}
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400">
+                    Volume Resolvido
+                  </span>
+                  <span className="inline-flex items-center gap-0.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">
+                    <ArrowUpRight className="w-3 h-3" />
+                    {activeMetrics.trendVolume}
+                  </span>
+                </div>
+                <div className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-mono">
+                  {activeMetrics.answered}
+                </div>
+                <p className="text-xs text-slate-600 dark:text-zinc-400">
+                  {activeMetrics.unique} únicas e{' '}
+                  <span className="text-slate-800 dark:text-zinc-200 font-medium">{activeMetrics.ineditas} inéditas</span>
+                </p>
+              </div>
+              <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full transition-all duration-500"
+                  style={{
+                    width: `${Math.min(100, Math.round((activeMetrics.answered / 500) * 100))}%`,
+                    backgroundColor: accentConfig.primaryHex
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Card 2: Acertos Líquidos */}
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400">
+                    Acertos Líquidos
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-[#1B1B20] border border-slate-200 dark:border-zinc-800 px-2 py-0.5 rounded-full">
+                    <CircleCheck className="w-3 h-3 text-emerald-500 dark:text-emerald-400" />
+                    Consistente
+                  </span>
+                </div>
+                <div className="text-4xl font-extrabold text-emerald-600 dark:text-emerald-400 tracking-tight mb-1 font-mono">
+                  {activeMetrics.correct}
+                </div>
+                <p className="text-xs text-slate-600 dark:text-zinc-400">
+                  <span className="text-rose-600 dark:text-rose-400 font-medium">{activeMetrics.incorrect} erros</span> mapeados no período
+                </p>
+              </div>
+              <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="bg-emerald-500 h-full rounded-full transition-all duration-500"
+                  style={{ width: `${Math.min(100, activeMetrics.accuracy)}%` }}
+                />
+              </div>
+            </div>
+
+            {/* Card 3: Aproveitamento (com marcador de meta em 80%) */}
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400">
+                    Aproveitamento
+                  </span>
+                  <span
+                    className={`inline-flex items-center gap-0.5 text-[11px] font-semibold px-2 py-0.5 rounded-full ${
+                      activeMetrics.trendAproveitamento.startsWith('+')
+                        ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20'
+                        : 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border border-amber-500/20'
+                    }`}
+                  >
+                    {activeMetrics.trendAproveitamento.startsWith('+') ? (
+                      <ArrowUpRight className="w-3 h-3" />
+                    ) : (
+                      <ArrowDownRight className="w-3 h-3" />
+                    )}
+                    {activeMetrics.trendAproveitamento}
+                  </span>
+                </div>
+                <div className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-mono">
+                  {activeMetrics.accuracy.toFixed(1)}%
+                </div>
+                <p className="text-xs text-slate-600 dark:text-zinc-400">
+                  Taxa bruta (meta:{' '}
+                  <span className="text-emerald-600 dark:text-emerald-400 font-medium">≥ 80% ideal</span>)
+                </p>
+              </div>
+              <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full relative">
+                <div
+                  className="bg-emerald-500 h-full rounded-full transition-all duration-500"
+                  style={{ width: `${Math.min(100, activeMetrics.accuracy)}%` }}
+                />
+                <div
+                  title="Meta de 80%"
+                  className="w-0.5 h-3 bg-slate-900 dark:bg-white absolute -top-0.5 rounded shadow-xs"
+                  style={{ left: '80%' }}
+                />
+              </div>
+            </div>
+
+            {/* Card 4: Ritmo Médio */}
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400">
+                    Ritmo Médio
+                  </span>
+                  <span
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold px-2 py-0.5 rounded-full"
+                    style={{ color: accentConfig.timeAccent.hex, backgroundColor: accentConfig.timeAccent.bgRgba }}
+                  >
+                    <Clock className="w-3 h-3" />
+                    Ideal &lt; 2m 30s
+                  </span>
+                </div>
+                <div className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-mono">
+                  1m 48s
+                </div>
+                <p className="text-xs text-slate-600 dark:text-zinc-400">Tempo médio / questão</p>
+              </div>
+              <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full transition-all duration-500 w-[65%]"
+                  style={{ backgroundColor: accentConfig.timeAccent.hex }}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Gráfico de Evolução Temporal Dual */}
+          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-6 space-y-5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-2.5">
+                  <h2 className="text-base font-bold text-slate-900 dark:text-white">
+                    Evolução Temporal ({activeMetrics.label})
+                  </h2>
+                  <span className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 dark:bg-[#1C1C22] text-slate-600 dark:text-zinc-400 border border-slate-200 dark:border-[#27272F]">
+                    Histórico do Período
+                  </span>
+                </div>
+                <p className="text-xs text-slate-600 dark:text-zinc-400 mt-1">
+                  Proporção limpa de questões resolvidas, acertos e erros ao longo do período selecionado
+                </p>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-4">
+                {/* Alternador Empilhado vs Comparativo */}
+                <div className="flex items-center bg-slate-100 dark:bg-[#0C0C0E] p-1 rounded-lg border border-slate-200 dark:border-[#222227] text-[11px]">
+                  <button
+                    type="button"
+                    onClick={() => setChartMode('empilhado')}
+                    className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
+                      chartMode === 'empilhado' ? 'bg-white dark:bg-[#222228] text-slate-900 dark:text-white shadow-xs' : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                    }`}
+                  >
+                    Empilhado (Acertos + Erros)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setChartMode('comparativo')}
+                    className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
+                      chartMode === 'comparativo' ? 'bg-white dark:bg-[#222228] text-slate-900 dark:text-white shadow-xs' : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                    }`}
+                  >
+                    Volume vs Acertos
+                  </button>
+                </div>
+
+                {/* Legenda Dinâmica */}
+                {chartMode === 'empilhado' ? (
+                  <div className="flex items-center gap-3 text-xs">
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
+                      <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: accentConfig.primaryHex }} />
+                      Acertos
+                    </span>
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
+                      <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
+                      Erros
+                    </span>
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-3 text-xs">
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
+                      <span className="w-2.5 h-2.5 rounded-full bg-slate-500 dark:bg-zinc-600" />
+                      Resolvidas (Total)
+                    </span>
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
+                      <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: accentConfig.primaryHex }} />
+                      Acertos
+                    </span>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="h-72 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={activeMetrics.chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }} barGap={8}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke={mode === 'dark' ? '#1F1F25' : '#E2E8F0'} />
+                  <XAxis dataKey="label" axisLine={{ stroke: mode === 'dark' ? '#27272A' : '#CBD5E1' }} tickLine={false} tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 12 }} dy={8} />
+                  <YAxis axisLine={false} tickLine={false} tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 12 }} />
+                  <Tooltip cursor={{ fill: mode === 'dark' ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)', radius: 8 }} content={<CustomBarTooltip />} />
+
+                  {chartMode === 'empilhado' ? (
+                    <>
+                      <Bar dataKey="acertos" stackId="a" fill={accentConfig.primaryHex} radius={[0, 0, 6, 6]} maxBarSize={52} />
+                      <Bar dataKey="erros" stackId="a" fill="#EF4444" radius={[6, 6, 0, 0]} maxBarSize={52} />
+                    </>
+                  ) : (
+                    <>
+                      <Bar dataKey="resolvidas" fill={mode === 'dark' ? '#3F3F46' : '#94A3B8'} radius={[6, 6, 0, 0]} maxBarSize={40} />
+                      <Bar dataKey="acertos" fill={accentConfig.primaryHex} radius={[6, 6, 0, 0]} maxBarSize={40} />
+                    </>
+                  )}
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* =========================================================================
+          ABA 2: ESPECIALIDADES & TEMAS (DONUT 6 ÁREAS + TABELA SANFONA) [Imagens 1 e 2]
+      ========================================================================== */}
+      {activeSubTab === 'specialties' && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 animate-in fade-in duration-200">
+          {/* Coluna Esquerda: Gráfico Donut de 6 Fatias [Imagem 1] */}
+          <div className="lg:col-span-4 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <h2 className="text-base font-bold text-slate-900 dark:text-white">Distribuição por Grande Área</h2>
+              <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
+                Proporção do volume estudado nas 6 especialidades centrais
+              </p>
+            </div>
+
+            <div className="h-64 w-full relative my-4 flex items-center justify-center">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={donutData}
+                    dataKey="value"
+                    nameKey="name"
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={68}
+                    outerRadius={95}
+                    paddingAngle={3}
+                    onMouseEnter={(_, index) => setHoveredPieIndex(index)}
+                    onMouseLeave={() => setHoveredPieIndex(null)}
+                    stroke="none"
+                  >
+                    {donutData.map((entry, index) => (
+                      <Cell
+                        key={`cell-${index}`}
+                        fill={entry.cor}
+                        opacity={hoveredPieIndex === null || hoveredPieIndex === index ? 1 : 0.35}
+                        className="transition-opacity duration-200 cursor-pointer"
+                      />
+                    ))}
+                  </Pie>
+                </PieChart>
+              </ResponsiveContainer>
+
+              {/* Centro Reativo com Estatísticas */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center px-6">
+                {hoveredPieIndex !== null && donutData[hoveredPieIndex] ? (
+                  <>
+                    <span className="text-[11px] font-semibold text-slate-600 dark:text-zinc-400 line-clamp-1 max-w-[130px]">
+                      {donutData[hoveredPieIndex].name}
+                    </span>
+                    <span className="text-2xl font-extrabold text-slate-900 dark:text-white mt-0.5 font-mono">
+                      {donutData[hoveredPieIndex].value}
+                    </span>
+                    <span className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
+                      {((donutData[hoveredPieIndex].value / totalSpecialtiesVolume) * 100).toFixed(1)}% do total
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-[11px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-500">
+                      Volume Total
+                    </span>
+                    <span className="text-3xl font-extrabold text-slate-900 dark:text-white mt-0.5 font-mono">
+                      {totalSpecialtiesVolume === 1 && activeMetrics.answered === 0 ? 0 : totalSpecialtiesVolume}
+                    </span>
+                    <span className="text-[11px] text-slate-600 dark:text-zinc-400">6 Especialidades</span>
+                  </>
+                )}
+              </div>
+            </div>
+
+            {/* Legenda Vertical com as 6 Áreas */}
+            <div className="space-y-2 pt-3 border-t border-[var(--card-border)]">
+              {specialtiesBreakdown.map((item, idx) => {
+                const pct = ((item.resolvidas / totalSpecialtiesVolume) * 100).toFixed(1);
+                return (
+                  <div
+                    key={item.id}
+                    onMouseEnter={() => setHoveredPieIndex(idx)}
+                    onMouseLeave={() => setHoveredPieIndex(null)}
+                    className="flex items-center justify-between text-xs py-1 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800/40 transition-colors cursor-pointer"
+                  >
+                    <div className="flex items-center gap-2.5 truncate">
+                      <span className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: item.cor }} />
+                      <span className="text-slate-800 dark:text-zinc-200 font-medium truncate">{item.nome}</span>
+                    </div>
+                    <div className="flex items-center gap-3 shrink-0">
+                      <span className="text-slate-500 dark:text-zinc-400 font-mono">{item.resolvidas} q.</span>
+                      <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-mono">
+                        {item.resolvidas > 0 ? pct : '0.0'}%
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Coluna Direita: Tabela Sanfona Especialidade ➔ Tema [Imagem 2] */}
+          <div className="lg:col-span-8 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
+                <div>
+                  <h2 className="text-base font-bold text-slate-900 dark:text-white">Quadro Geral & Aproveitamento por Especialidade</h2>
+                  <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
+                    Clique em qualquer Especialidade para expandir seus temas resolvidos e iniciar treinos direcionados
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={toggleExpandAll}
+                  className="text-xs font-semibold px-3 py-1.5 rounded-lg btn-secondary-adaptive cursor-pointer self-start sm:self-auto shadow-xs"
+                >
+                  {expandedAreas.length === SIX_FILTER_SPECIALTIES.length ? 'Recolher Todas' : 'Expandir Todas'}
+                </button>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b border-slate-200 dark:border-[#1F1F25] text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400">
+                      <th className="pb-3 pl-2">Especialidade / Tema</th>
+                      <th className="pb-3 text-center">Resolvidas</th>
+                      <th className="pb-3 text-center">Acertos / Erros</th>
+                      <th className="pb-3 w-44">Aproveitamento</th>
+                      <th className="pb-3 text-right pr-2">Ação</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 dark:divide-[#1A1A20] text-xs">
+                    {specialtiesBreakdown.map((area) => {
+                      const isExpanded = expandedAreas.includes(area.id);
+                      return (
+                        <React.Fragment key={area.id}>
+                          {/* Linha da Especialidade-Mãe */}
+                          <tr
+                            onClick={() => toggleExpandArea(area.id)}
+                            className="hover:bg-slate-50 dark:hover:bg-[#18181D] transition-colors cursor-pointer group"
+                          >
+                            <td className="py-3.5 pl-2 font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
+                              <span className="text-slate-400 dark:text-zinc-500 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
+                                {isExpanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+                              </span>
+                              <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: area.cor }} />
+                              <span>{area.nome}</span>
+                              <span className="text-[10px] font-normal text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-[#1C1C22] border border-slate-200 dark:border-zinc-800 px-1.5 py-0.5 rounded">
+                                {area.temas.length} temas estudados
+                              </span>
+                            </td>
+                            <td className="py-3.5 text-center font-semibold text-slate-800 dark:text-zinc-200 font-mono">
+                              {area.resolvidas}
+                            </td>
+                            <td className="py-3.5 text-center font-mono">
+                              <span className="text-emerald-600 dark:text-emerald-400 font-bold">{area.acertos}</span>
+                              <span className="text-slate-400 dark:text-zinc-600 mx-1">/</span>
+                              <span className="text-rose-600 dark:text-rose-400 font-medium">{area.erros}</span>
+                            </td>
+                            <td className="py-3.5">
+                              <div className="flex items-center gap-2.5">
+                                <div className="flex-1 bg-slate-100 dark:bg-[#1F1F26] h-2 rounded-full overflow-hidden">
+                                  <div
+                                    className="h-full rounded-full transition-all duration-300"
+                                    style={{ width: `${area.taxa}%`, backgroundColor: area.cor }}
+                                  />
+                                </div>
+                                <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-mono">
+                                  {area.taxa.toFixed(1)}%
+                                </span>
+                              </div>
+                            </td>
+                            <td
+                              className="py-3.5 pr-2 text-right"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setTrainingModal({
+                                  titulo: area.nome,
+                                  subtitulo: 'Caderno Inteligente da Especialidade',
+                                  erros: area.erros,
+                                  rendimento: area.taxa,
+                                  specialty: area.nome
+                                });
+                              }}
+                            >
+                              <button
+                                type="button"
+                                className="text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 font-bold inline-flex items-center gap-1 px-2.5 py-1 rounded-lg hover:bg-rose-500/10 transition-colors cursor-pointer"
+                              >
+                                <span>Treinar</span>
+                                <ChevronRight className="w-3.5 h-3.5" />
+                              </button>
+                            </td>
+                          </tr>
+
+                          {/* Linhas-Filhas: Temas Resolvidos (Renderizados SOMENTE se resolvidas > 0) */}
+                          {isExpanded && (
+                            <>
+                              {area.temas.length > 0 ? (
+                                area.temas.map((tema, idx) => (
+                                  <tr
+                                    key={`${area.id}-tema-${idx}`}
+                                    className="bg-slate-50/80 hover:bg-slate-100/90 dark:bg-[#0E0E11] dark:hover:bg-[#141419] text-slate-700 dark:text-zinc-300 transition-colors"
+                                  >
+                                    <td className="py-2.5 pl-10 pr-2 flex items-center gap-2 text-xs text-slate-700 dark:text-zinc-300">
+                                      <span className="w-1.5 h-1.5 rounded-full bg-slate-400 dark:bg-zinc-600" />
+                                      <span>{tema.nome}</span>
+                                    </td>
+                                    <td className="py-2.5 text-center text-slate-600 dark:text-zinc-400 font-mono">{tema.resolvidas}</td>
+                                    <td className="py-2.5 text-center font-mono">
+                                      <span className="text-emerald-600 dark:text-emerald-400 font-semibold">{tema.acertos}</span>
+                                      <span className="text-slate-400 dark:text-zinc-600 mx-1">/</span>
+                                      <span className="text-rose-600 dark:text-rose-400">{tema.erros}</span>
+                                    </td>
+                                    <td className="py-2.5">
+                                      <div className="flex items-center gap-2.5">
+                                        <div className="flex-1 bg-slate-200 dark:bg-[#1A1A20] h-1.5 rounded-full overflow-hidden">
+                                          <div
+                                            className={`h-full rounded-full transition-all duration-300 ${
+                                              tema.taxa < 65 ? 'bg-rose-500' : tema.taxa < 75 ? 'bg-amber-500' : 'bg-emerald-500'
+                                            }`}
+                                            style={{ width: `${tema.taxa}%` }}
+                                          />
+                                        </div>
+                                        <span
+                                          className={`font-semibold w-12 text-right font-mono ${
+                                            tema.taxa < 65 ? 'text-rose-600 dark:text-rose-400' : tema.taxa < 75 ? 'text-amber-600 dark:text-amber-400' : 'text-emerald-600 dark:text-emerald-400'
+                                          }`}
+                                        >
+                                          {tema.taxa.toFixed(1)}%
+                                        </span>
+                                      </div>
+                                    </td>
+                                    <td className="py-2.5 pr-2 text-right">
+                                      <button
+                                        type="button"
+                                        onClick={() =>
+                                          setTrainingModal({
+                                            titulo: tema.nome,
+                                            subtitulo: area.nome,
+                                            erros: tema.erros,
+                                            rendimento: tema.taxa,
+                                            specialty: area.nome,
+                                            tema: tema.nome
+                                          })
+                                        }
+                                        className="text-slate-500 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400 font-semibold inline-flex items-center gap-1 px-2 py-0.5 rounded hover:bg-rose-500/10 transition-colors cursor-pointer"
+                                      >
+                                        <span>Focar</span>
+                                        <ChevronRight className="w-3.5 h-3.5" />
+                                      </button>
+                                    </td>
+                                  </tr>
+                                ))
+                              ) : (
+                                <tr className="bg-slate-50/80 dark:bg-[#0E0E11] text-slate-500 dark:text-zinc-500">
+                                  <td colSpan={5} className="py-3 pl-10 pr-4 text-xs italic">
+                                    Nenhum tema resolvido nesta especialidade ainda. Resolva questões no Banco para mapear seu desempenho.
+                                  </td>
+                                </tr>
+                              )}
+                            </>
+                          )}
+                        </React.Fragment>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mt-4 pt-3 border-t border-slate-200 dark:border-[#1F1F25] flex flex-wrap items-center justify-between text-[11px] text-slate-500 dark:text-zinc-500 gap-2">
+              <span>Taxonomia oficial integrada aos filtros do Banco Residência (6 Especialidades).</span>
+              <div className="flex items-center gap-3 font-medium">
+                <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                  ≥ 75% Seguro
+                </span>
+                <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400">
+                  <span className="w-2 h-2 rounded-full bg-amber-500" />
+                  65-74% Atenção
+                </span>
+                <span className="flex items-center gap-1 text-rose-600 dark:text-rose-400">
+                  <span className="w-2 h-2 rounded-full bg-rose-500" />
+                  &lt; 65% Crítico
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* =========================================================================
+          ABA 3: RAIO-X DE ERROS & SUBFOCOS CRÍTICOS
+      ========================================================================== */}
+      {activeSubTab === 'weaknesses' && (
+        <div className="space-y-5 animate-in fade-in duration-200">
+          {/* Topo com 3 Mini-KPIs */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex items-center gap-4">
+              <div className="w-11 h-11 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-500 shrink-0">
+                <AlertTriangle className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center justify-between">
+                  <div className="text-3xl font-extrabold text-rose-500 font-mono">
+                    {dataScope === 'pessoal' ? criticalCount : '3.140'}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setDataScope(dataScope === 'pessoal' ? 'global' : 'pessoal')}
+                    className="text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-800/40 text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white border border-[var(--card-border)] cursor-pointer"
+                  >
+                    {dataScope === 'pessoal' ? 'Meus Dados' : 'Base Global'}
+                  </button>
+                </div>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400 mt-0.5">
+                  Subfocos Críticos (&lt; 60%)
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex items-center gap-4">
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
+                style={{
+                  color: accentConfig.energyAccent.hex,
+                  backgroundColor: accentConfig.energyAccent.bgRgba,
+                  border: `1px solid ${accentConfig.energyAccent.borderRgba}`
+                }}
+              >
+                <Target className="w-5 h-5" />
+              </div>
+              <div>
+                <div
+                  className="text-3xl font-extrabold font-mono"
+                  style={{ color: accentConfig.energyAccent.hex }}
+                >
+                  {dataScope === 'pessoal' ? diagnosticSummary.totalErros : '28.993'}
+                </div>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400 mt-0.5">
+                  Total de Erros Mapeados ({activeMetrics.label})
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex items-center gap-4">
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
+                style={{
+                  color: accentConfig.primaryHex,
+                  backgroundColor: accentConfig.bgRgba,
+                  border: `1px solid ${accentConfig.borderRgba}`
+                }}
+              >
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <div>
+                <div
+                  className="text-3xl font-extrabold font-mono"
+                  style={{ color: accentConfig.primaryHex }}
+                >
+                  {diagnosticSummary.mediaAproveitamento.toFixed(1)}%
+                </div>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400 mt-0.5">
+                  Rendimento Médio no Filtro
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card Destaque: Ponto Mais Crítico Detectado com Efeito Pulsante */}
+          {hierarchyDetailedStats.length > 0 && (
+            <div className="bg-gradient-to-r from-rose-500/10 via-[var(--bg-card)] to-[var(--bg-card)] border border-rose-500/30 rounded-2xl p-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="space-y-1">
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
+                  <span className="font-semibold text-slate-700 dark:text-zinc-300">Ponto mais crítico detectado:</span>
+                  <span className="font-bold text-rose-600 dark:text-rose-400">{hierarchyDetailedStats[0].subfoco}</span>
+                </div>
+                <p className="text-xs text-slate-600 dark:text-zinc-400 pl-4">
+                  {hierarchyDetailedStats[0].errors} erros acumulados ({hierarchyDetailedStats[0].accuracy.toFixed(1)}% acerto) em {hierarchyDetailedStats[0].specialty} • {hierarchyDetailedStats[0].tema}
+                </p>
+              </div>
               <button
                 type="button"
-                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-                disabled={currentPage === totalPages}
-                className="p-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-850 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
-                title="Próxima Página"
+                onClick={() =>
+                  setTrainingModal({
+                    titulo: hierarchyDetailedStats[0].subfoco,
+                    subtitulo: `${hierarchyDetailedStats[0].specialty} • ${hierarchyDetailedStats[0].tema}`,
+                    erros: hierarchyDetailedStats[0].errors,
+                    rendimento: hierarchyDetailedStats[0].accuracy,
+                    specialty: hierarchyDetailedStats[0].specialty,
+                    tema: hierarchyDetailedStats[0].tema,
+                    subfoco: hierarchyDetailedStats[0].subfoco
+                  })
+                }
+                className="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-lg shadow-rose-600/25 flex items-center gap-2 transition-all shrink-0 cursor-pointer"
               >
+                <span>Treinar Esse Subfoco</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
-          </div>
-        )}
-      </div>
+          )}
 
-      {/* 4. GRÁFICOS DE EVOLUÇÃO E DISTRIBUIÇÃO */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs">
-          <div className="flex items-center justify-between mb-5">
-            <div>
-              <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white">
-                Evolução no Período Selecionado
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400">
-                {activeMetrics.label}: Volume de resolução e taxa de acertos
-              </p>
-            </div>
-            <div className="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shadow-xs">
-              <TrendingUp className="w-4.5 h-4.5" />
+          {/* Barra de Filtros: 6 Especialidades + Status + Busca Textual */}
+          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-4 space-y-3">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+              {/* Pílulas das 6 Especialidades */}
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0">
+                {['Todas', ...SIX_FILTER_SPECIALTIES.map((s) => s.nome)].map((spec) => (
+                  <button
+                    key={spec}
+                    type="button"
+                    onClick={() => {
+                      setSelectedAreaFilter(spec);
+                      setCurrentPage(1);
+                    }}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
+                      selectedAreaFilter === spec
+                        ? 'bg-rose-600 text-white shadow-sm'
+                        : 'bg-slate-100 dark:bg-[#18181C] text-slate-700 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 border border-slate-200 dark:border-[#242429]'
+                    }`}
+                  >
+                    {spec === 'Medicina Preventiva e Social' ? 'Preventiva' : spec}
+                  </button>
+                ))}
+              </div>
+
+              {/* Status e Busca */}
+              <div className="flex flex-wrap items-center gap-2.5">
+                <div className="flex items-center bg-slate-100 dark:bg-[#0C0C0E] p-1 rounded-xl border border-slate-200 dark:border-[#222227] text-xs">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedStatusFilter('todos')}
+                    className={`px-2.5 py-1 rounded-lg font-medium transition-colors cursor-pointer ${
+                      selectedStatusFilter === 'todos' ? 'bg-white dark:bg-[#222228] text-slate-900 dark:text-white shadow-xs' : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                    }`}
+                  >
+                    Todos
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedStatusFilter('criticos')}
+                    className={`px-2.5 py-1 rounded-lg font-medium flex items-center gap-1.5 transition-colors cursor-pointer ${
+                      selectedStatusFilter === 'criticos'
+                        ? 'bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/30 font-semibold'
+                        : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                    Críticos
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedStatusFilter('atencao')}
+                    className={`px-2.5 py-1 rounded-lg font-medium flex items-center gap-1.5 transition-colors cursor-pointer ${
+                      selectedStatusFilter === 'atencao'
+                        ? 'bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 font-semibold'
+                        : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                    Atenção
+                  </button>
+                </div>
+
+                <div className="relative flex-1 sm:w-60">
+                  <Search className="w-3.5 h-3.5 text-slate-400 dark:text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                  <input
+                    type="text"
+                    value={subfocoSearch}
+                    onChange={(e) => {
+                      setSubfocoSearch(e.target.value);
+                      setCurrentPage(1);
+                    }}
+                    placeholder="Buscar subfoco ou tema..."
+                    className="w-full bg-slate-50 dark:bg-[#0C0C0E] border border-slate-200 dark:border-[#222227] focus:border-rose-500/50 rounded-xl pl-8 pr-3 py-1.5 text-xs text-slate-800 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="h-68 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={activeMetrics.chartData}>
-                <XAxis dataKey="date" stroke={mode === 'light' ? '#475569' : '#94a3b8'} fontSize={12} tickLine={false} />
-                <YAxis stroke={mode === 'light' ? '#475569' : '#94a3b8'} fontSize={12} tickLine={false} />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: mode === 'light' ? '#ffffff' : '#0f172a',
-                    borderColor: mode === 'light' ? '#cbd5e1' : '#334155',
-                    borderRadius: '12px',
-                    boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)',
-                    color: mode === 'light' ? '#0f172a' : '#f8fafc'
-                  }}
-                  labelStyle={{ fontWeight: 'bold' }}
-                />
-                <Bar dataKey="answered" name="Resolvidas" fill="#2563eb" radius={[6, 6, 0, 0]} />
-                <Bar dataKey="correct" name="Acertos" fill="#10b981" radius={[6, 6, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-
-        {/* Gráfico de Distribuição por Grande Área */}
-        <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs">
-          <div className="flex items-center justify-between mb-5">
-            <div>
-              <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white">
-                Distribuição por Grande Área
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400">
-                Proporção das 5 grandes áreas da residência
-              </p>
-            </div>
-            <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shadow-xs">
-              <Award className="w-4.5 h-4.5" />
-            </div>
-          </div>
-
-          <div className="h-68 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
-                <Pie
-                  data={stats.bySpecialty.map((s) => ({
-                    name: s.specialty,
-                    value: Math.max(1, Math.round(s.total * activeMetrics.factor))
-                  }))}
-                  cx="50%"
-                  cy="50%"
-                  innerRadius={55}
-                  outerRadius={85}
-                  paddingAngle={4}
-                  dataKey="value"
-                >
-                  {stats.bySpecialty.map((_, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          {/* Tabela de Subfocos */}
+          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-[var(--card-border)] bg-slate-100/70 dark:bg-zinc-900/40 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400">
+                    <th className="py-3.5 pl-5 w-28">Status</th>
+                    <th className="py-3.5">Subfoco Clínico & Tema</th>
+                    <th className="py-3.5">Grande Área</th>
+                    <th
+                      onClick={() => handleSort('errors')}
+                      className="py-3.5 cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors select-none"
+                    >
+                      <div className="inline-flex items-center gap-1">
+                        <span>Erros</span>
+                        <ArrowUpDown className="w-3 h-3 text-rose-500" />
+                      </div>
+                    </th>
+                    <th
+                      onClick={() => handleSort('accuracy')}
+                      className="py-3.5 w-44 cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors select-none"
+                    >
+                      <div className="inline-flex items-center gap-1">
+                        <span>Rendimento</span>
+                        <ArrowUpDown className="w-3 h-3 text-rose-500" />
+                      </div>
+                    </th>
+                    <th className="py-3.5 pr-5 text-right">Ação</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 dark:divide-[#1A1A20] text-xs">
+                  {paginatedSubfocos.map((item) => (
+                    <tr key={item.id} className="hover:bg-slate-50 dark:hover:bg-[#17171C] transition-colors group">
+                      <td className="py-4 pl-5">
+                        {item.status === 'critico' && (
+                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30">
+                            <AlertTriangle className="w-3 h-3" />
+                            Crítico
+                          </span>
+                        )}
+                        {item.status === 'atencao' && (
+                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                            Atenção
+                          </span>
+                        )}
+                        {item.status === 'dominado' && (
+                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                            Seguro
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-4 pr-4">
+                        <div className="font-bold text-slate-900 dark:text-white group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">
+                          {item.subfoco}
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-zinc-500 mt-0.5">{item.tema}</div>
+                      </td>
+                      <td className="py-4">
+                        <div className="font-semibold text-slate-800 dark:text-zinc-200">{item.specialty}</div>
+                      </td>
+                      <td className="py-4 font-mono">
+                        <div className="font-bold text-rose-600 dark:text-rose-400">{item.errors} erros</div>
+                        <div className="text-[11px] text-slate-500 dark:text-zinc-500">
+                          {item.correct}/{item.total} q.
+                        </div>
+                      </td>
+                      <td className="py-4">
+                        <div className="flex flex-col gap-1.5">
+                          <span className="font-bold text-slate-900 dark:text-white font-mono">{item.accuracy.toFixed(1)}%</span>
+                          <div className="w-32 bg-slate-200 dark:bg-[#1F1F26] h-1.5 rounded-full overflow-hidden">
+                            <div
+                              className={`h-full rounded-full ${
+                                item.accuracy < 60 ? 'bg-rose-500' : item.accuracy < 75 ? 'bg-amber-500' : 'bg-emerald-500'
+                              }`}
+                              style={{ width: `${item.accuracy}%` }}
+                            />
+                          </div>
+                        </div>
+                      </td>
+                      <td className="py-4 pr-5 text-right">
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setTrainingModal({
+                              titulo: item.subfoco,
+                              subtitulo: `${item.specialty} • ${item.tema}`,
+                              erros: item.errors,
+                              rendimento: item.accuracy,
+                              specialty: item.specialty,
+                              tema: item.tema,
+                              subfoco: item.subfoco
+                            })
+                          }
+                          className="text-rose-600 dark:text-rose-400 hover:text-white hover:bg-rose-600 font-bold inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-rose-500/30 transition-all cursor-pointer"
+                        >
+                          <span>Treinar</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </button>
+                      </td>
+                    </tr>
                   ))}
-                </Pie>
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: mode === 'light' ? '#ffffff' : '#0f172a',
-                    borderColor: mode === 'light' ? '#cbd5e1' : '#334155',
-                    borderRadius: '12px',
-                    color: mode === 'light' ? '#0f172a' : '#f8fafc'
-                  }}
-                />
-                <Legend
-                  verticalAlign="bottom"
-                  height={36}
-                  formatter={(val) => <span className="text-xs text-slate-700 dark:text-slate-300 font-medium">{val}</span>}
-                />
-              </PieChart>
-            </ResponsiveContainer>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Paginação e Contador */}
+            <div className="px-5 py-3.5 border-t border-slate-200 dark:border-[#1F1F25] bg-slate-50 dark:bg-[#101013] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-zinc-500">
+              <span>
+                Mostrando <strong className="text-slate-800 dark:text-zinc-300">{paginatedSubfocos.length}</strong> de{' '}
+                <strong className="text-slate-800 dark:text-zinc-300">{hierarchyDetailedStats.length}</strong> subfocos mapeados
+              </span>
+
+              {totalPages > 1 && (
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                    disabled={currentPage === 1}
+                    className="p-1 rounded-lg border border-slate-200 dark:border-zinc-800 disabled:opacity-30 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300 cursor-pointer"
+                  >
+                    <ChevronLeft className="w-3.5 h-3.5" />
+                  </button>
+                  <span className="font-mono text-slate-600 dark:text-zinc-400 font-semibold">
+                    {currentPage} / {totalPages}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                    disabled={currentPage === totalPages}
+                    className="p-1 rounded-lg border border-slate-200 dark:border-zinc-800 disabled:opacity-30 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300 cursor-pointer"
+                  >
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
-      {/* 5. TABELA DE PERFORMANCE POR ESPECIALIDADE */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xs">
-        <h3 className="font-heading text-base font-bold text-slate-900 dark:text-white mb-4">
-          Resumo Consolidado por Grande Área
-        </h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm text-slate-800 dark:text-slate-200">
-            <thead>
-              <tr className="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-400 uppercase tracking-wider font-extrabold text-[11px]">
-                <th className="py-3 px-4">Grande Área</th>
-                <th className="py-3 px-4 text-center">Questões</th>
-                <th className="py-3 px-4 text-center">Acertos</th>
-                <th className="py-3 px-4 text-right">Taxa de Acerto</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-              {stats.bySpecialty.map((item) => (
-                <tr key={item.specialty} className="hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-colors">
-                  <td className="py-3.5 px-4 font-bold text-slate-900 dark:text-white">
-                    {item.specialty}
-                  </td>
-                  <td className="py-3.5 px-4 text-center font-mono font-semibold text-slate-900 dark:text-white">
-                    {Math.round(item.total * activeMetrics.factor)}
-                  </td>
-                  <td className="py-3.5 px-4 text-center font-mono font-semibold text-emerald-600 dark:text-emerald-400">
-                    {Math.round(item.correct * activeMetrics.factor)}
-                  </td>
-                  <td className="py-3.5 px-4 text-right">
-                    <span className="font-mono font-extrabold text-sm text-slate-900 dark:text-white">
-                      {item.accuracy.toFixed(1)}%
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      {/* =========================================================================
+          MODAL DE RECUPERAÇÃO ATIVA (DISPARADO POR "TREINAR" OU "FOCAR")
+      ========================================================================== */}
+      {trainingModal && (
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-150">
+          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200">
+            <div className="flex items-start justify-between gap-4">
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-rose-500/15 border border-rose-500/30 flex items-center justify-center text-rose-500 shrink-0">
+                  <Play className="w-4 h-4 fill-rose-500" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
+                    Sessão de Recuperação Ativa
+                  </span>
+                  <h3 className="text-sm font-bold text-slate-900 dark:text-white leading-snug">{trainingModal.titulo}</h3>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setTrainingModal(null)}
+                className="text-slate-400 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-white p-1 cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-[#18181D] border border-slate-200 dark:border-[#24242C] rounded-xl p-4 space-y-2 text-xs">
+              <div className="flex justify-between">
+                <span className="text-slate-500 dark:text-zinc-400">Área / Especialidade:</span>
+                <span className="font-semibold text-slate-800 dark:text-zinc-200">{trainingModal.subtitulo}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500 dark:text-zinc-400">Erros registrados:</span>
+                <span className="font-bold text-rose-600 dark:text-rose-400 font-mono">{trainingModal.erros} questões</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500 dark:text-zinc-400">Aproveitamento atual:</span>
+                <span className="font-bold text-emerald-600 dark:text-emerald-400 font-mono">
+                  {trainingModal.rendimento.toFixed(1)}% (Meta: 80%)
+                </span>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400">
+                Modo do Caderno Gerado:
+              </label>
+              <div className="grid grid-cols-2 gap-2 text-xs">
+                <div
+                  onClick={() => setTrainingMode('erradas')}
+                  className={`p-3 rounded-xl border cursor-pointer transition-all ${
+                    trainingMode === 'erradas'
+                      ? 'bg-rose-500/15 border-rose-500 text-rose-700 dark:text-rose-300 font-semibold shadow-xs'
+                      : 'bg-slate-100 dark:bg-[#18181C] border-slate-200 dark:border-[#25252C] text-slate-700 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                  }`}
+                >
+                  Refazer Erradas + Similares (15 q.)
+                </div>
+                <div
+                  onClick={() => setTrainingMode('ineditas')}
+                  className={`p-3 rounded-xl border cursor-pointer transition-all ${
+                    trainingMode === 'ineditas'
+                      ? 'bg-rose-500/15 border-rose-500 text-rose-700 dark:text-rose-300 font-semibold shadow-xs'
+                      : 'bg-slate-100 dark:bg-[#18181C] border-slate-200 dark:border-[#25252C] text-slate-700 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                  }`}
+                >
+                  Somente Inéditas do Foco (20 q.)
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-end gap-2 pt-2">
+              <button
+                type="button"
+                onClick={() => setTrainingModal(null)}
+                className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white cursor-pointer"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  if (onNavigateToBancoWithSubfoco) {
+                    onNavigateToBancoWithSubfoco(
+                      trainingModal.specialty || '',
+                      trainingModal.tema || '',
+                      trainingModal.subfoco || ''
+                    );
+                  }
+                  setTrainingModal(null);
+                }}
+                className="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-rose-600/30 flex items-center gap-2 cursor-pointer transition-all"
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Iniciar Bateria Agora</span>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      {/* 6. TABELA DE RANKING INTEGRADA */}
-      <OfficialRanking
-        ranking={officialRanking}
-        filters={filters}
-        userQuestions={stats.totalAnswered}
-        userCorrect={stats.totalCorrect}
-        userName="Você"
-      />
+      )}
     </div>
   );
 };

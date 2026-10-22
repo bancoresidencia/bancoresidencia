@@ -41,7 +41,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
   lists = [],
   placeholder = 'Pesquisa geral (questões, temas, especialidades, bancas)...'
 }) => {
-  const { accentConfig } = useTheme();
+  const { accentConfig, mode } = useTheme();
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [matchingQuestions, setMatchingQuestions] = useState<Question[]>([]);
@@ -301,9 +301,16 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
                   </div>
                 </div>
 
-                <div className="p-3 bg-blue-50/60 dark:bg-blue-950/20 rounded-xl border border-blue-100 dark:border-blue-900/40 text-xs text-blue-800 dark:text-blue-300 flex items-start gap-2.5">
-                  <HelpCircle className="w-4 h-4 shrink-0 text-blue-500 mt-0.5" />
-                  <p className="leading-relaxed">
+                <div
+                  className="p-3 rounded-xl border text-xs flex items-start gap-2.5"
+                  style={{
+                    backgroundColor: accentConfig.bgRgba,
+                    borderColor: accentConfig.borderRgba,
+                    color: mode === 'light' ? accentConfig.primaryHex : undefined
+                  }}
+                >
+                  <HelpCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: accentConfig.primaryHex }} />
+                  <p className="leading-relaxed text-slate-700 dark:text-slate-300">
                     Você pode pesquisar por <strong>enunciados de questões</strong>, <strong>doenças</strong> (ex: Pré-eclâmpsia, Apendicite), <strong>instituições</strong> (ex: ENARE, USP, UNICAMP) ou <strong>especialidades</strong>.
                   </p>
                 </div>
@@ -318,7 +325,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
                   <div>
                     <div className="flex items-center justify-between px-2 mb-1.5 text-xs font-bold text-slate-600 dark:text-slate-400">
                       <span className="flex items-center gap-1.5">
-                        <Layers className="w-3.5 h-3.5 text-blue-500" />
+                        <Layers className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                         Questões no Acervo ({searchResults.questions.length})
                       </span>
                     </div>
@@ -361,7 +368,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
                               {q.statement}
                             </p>
                           </div>
-                          <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-500 group-hover:translate-x-0.5 transition-all shrink-0 mt-2" />
+                          <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-[var(--primary-color)] group-hover:translate-x-0.5 transition-all shrink-0 mt-2" />
                         </button>
                       ))}
                     </div>

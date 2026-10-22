@@ -656,7 +656,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           {/* Canto Superior Esquerdo: Origem da Questão (Banca • Ano) + Status Resolvida */}
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center gap-1.5 shadow-xs">
-              <Building className="w-3.5 h-3.5 text-blue-500" />
+              <Building className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               <span>{question.institution}</span>
               <span className="text-slate-400">•</span>
               <span>{question.year}</span>
@@ -723,13 +723,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               onClick={toggleShowDetails}
               className={`p-1.5 sm:px-2 sm:py-1.5 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
                 showDetails
-                  ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800/60 text-blue-700 dark:text-blue-300'
-                  : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                  ? 'shadow-xs'
+                  : 'btn-secondary-adaptive hover:scale-105'
               }`}
+              style={showDetails ? {
+                backgroundColor: accentConfig.bgRgba,
+                borderColor: accentConfig.borderRgba,
+                color: accentConfig.primaryHex
+              } : undefined}
               title={showDetails ? 'Ocultar detalhes extras da questão' : 'Visualizar detalhes extras (especialidade, nível e temas)'}
             >
               {showDetails ? (
-                <EyeOff className="w-3.5 h-3.5 text-blue-500" />
+                <EyeOff className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               ) : (
                 <Eye className="w-3.5 h-3.5 text-slate-400" />
               )}
@@ -742,15 +747,21 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 onClick={() => setIsFolderModalOpen(true)}
                 className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
                   savedFolderIds.length > 0
-                    ? 'bg-blue-50 dark:bg-blue-950/40 border-blue-300 dark:border-blue-700/60 text-blue-700 dark:text-blue-300'
-                    : 'bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
+                    ? 'shadow-xs'
+                    : 'btn-secondary-adaptive hover:scale-102'
                 }`}
+                style={savedFolderIds.length > 0 ? {
+                  backgroundColor: accentConfig.bgRgba,
+                  borderColor: accentConfig.borderRgba,
+                  color: accentConfig.primaryHex
+                } : undefined}
                 title="Salvar esta questão em uma pasta de estudos"
               >
                 <FolderPlus
-                  className={`w-3.5 h-3.5 transition-transform ${
-                    savedFolderIds.length > 0 ? 'text-blue-600 dark:text-blue-400 scale-110' : 'text-slate-400'
-                  }`}
+                  className="w-3.5 h-3.5 transition-transform"
+                  style={{
+                    color: savedFolderIds.length > 0 ? accentConfig.primaryHex : undefined
+                  }}
                 />
                 <span className="hidden sm:inline">{savedFolderIds.length > 0 ? `Na Pasta (${savedFolderIds.length})` : 'Salvar na Pasta'}</span>
               </button>
@@ -800,7 +811,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             {/* Tema, Foco e Subfoco Clínico */}
             {(question.subtheme || question.tema) && (
               <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
-                <Layers className="w-3.5 h-3.5 text-blue-500" />
+                <Layers className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                 <span className="font-semibold">Tema:</span>
                 <span className="text-slate-900 dark:text-slate-200 font-bold">
                   {question.subtheme || question.tema}
@@ -906,6 +917,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 onMouseEnter={() => setHoveredOptionLetter(option.letter)}
                 onMouseLeave={() => setHoveredOptionLetter(null)}
                 className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex flex-col group rounded-2xl cursor-pointer ${optionContainerStyle}`}
+                style={!isAnswered && isPending ? {
+                  borderColor: accentConfig.selectionAccent.borderHex,
+                  backgroundColor: accentConfig.selectionAccent.bgRgba,
+                  boxShadow: `0 0 0 2px ${accentConfig.borderRgba}`
+                } : undefined}
               >
                 <div className="flex items-start justify-between w-full gap-3">
                   <div className="flex items-start gap-3 flex-1">
@@ -920,11 +936,15 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                           : isAnswered && isPending && !isCorrect
                           ? 'bg-rose-600 text-white'
                           : isPending
-                          ? 'bg-blue-600 text-white ring-2 ring-blue-400/50'
+                          ? 'text-white shadow-sm'
                           : isEliminated
                           ? 'bg-slate-100 dark:bg-slate-900 text-slate-400 line-through'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700'
                       }`}
+                      style={!isAnswered && isPending ? {
+                        backgroundColor: accentConfig.primaryHex,
+                        boxShadow: `0 0 0 2px ${accentConfig.borderRgba}`
+                      } : undefined}
                     >
                       {option.letter}
                     </span>
@@ -1192,7 +1212,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         <div className="pt-2">
           <button
             onClick={() => setShowCommentary(!showCommentary)}
-            className="flex items-center gap-2 text-xs sm:text-sm font-bold text-blue-600 dark:text-blue-400 hover:underline transition-colors cursor-pointer"
+            className="flex items-center gap-2 text-xs sm:text-sm font-bold hover:underline transition-colors cursor-pointer"
+            style={{ color: accentConfig.primaryHex }}
           >
             <BookOpen className="w-4 h-4" />
             <span>

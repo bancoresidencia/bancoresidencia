@@ -5,6 +5,13 @@ import React, { createContext, useContext, useState, useEffect, useRef } from 'r
 export type ThemeMode = 'dark' | 'light';
 export type AccentColor = 'blue' | 'green' | 'orange' | 'purple' | 'red' | 'rose' | 'neutral';
 
+export interface AccentSemanticToken {
+  hex: string;
+  bgRgba: string;
+  borderRgba: string;
+  textClass: string;
+}
+
 export interface AccentConfig {
   id: AccentColor;
   label: string;
@@ -27,6 +34,16 @@ export interface AccentConfig {
   cardLight: string;
   inputLight: string;
   borderLight: string;
+  // Tokens Semânticos Harmônicos
+  timeAccent: AccentSemanticToken;
+  accuracyAccent: AccentSemanticToken;
+  energyAccent: AccentSemanticToken;
+  selectionAccent: {
+    hex: string;
+    borderHex: string;
+    bgRgba: string;
+  };
+  chartPalette: string[];
 }
 
 export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
@@ -51,7 +68,31 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     surfaceLight: '#f8faff',
     cardLight: '#ffffff',
     inputLight: '#ffffff',
-    borderLight: '#e2e8f4'
+    borderLight: '#e2e8f4',
+    timeAccent: {
+      hex: '#0ea5e9',
+      bgRgba: 'rgba(14, 165, 233, 0.14)',
+      borderRgba: 'rgba(14, 165, 233, 0.35)',
+      textClass: 'text-sky-500 dark:text-sky-400'
+    },
+    accuracyAccent: {
+      hex: '#14b8a6',
+      bgRgba: 'rgba(20, 184, 166, 0.14)',
+      borderRgba: 'rgba(20, 184, 166, 0.35)',
+      textClass: 'text-teal-600 dark:text-teal-400'
+    },
+    energyAccent: {
+      hex: '#f59e0b',
+      bgRgba: 'rgba(245, 158, 11, 0.14)',
+      borderRgba: 'rgba(245, 158, 11, 0.35)',
+      textClass: 'text-amber-500 dark:text-amber-400'
+    },
+    selectionAccent: {
+      hex: '#2563eb',
+      borderHex: '#3b82f6',
+      bgRgba: 'rgba(37, 99, 235, 0.12)'
+    },
+    chartPalette: ['#2563eb', '#38bdf8', '#14b8a6', '#6366f1', '#f59e0b', '#ec4899']
   },
   green: {
     id: 'green',
@@ -74,7 +115,31 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     surfaceLight: '#f7fbf9',
     cardLight: '#ffffff',
     inputLight: '#ffffff',
-    borderLight: '#e2ede6'
+    borderLight: '#e2ede6',
+    timeAccent: {
+      hex: '#2dd4bf',
+      bgRgba: 'rgba(45, 212, 191, 0.14)',
+      borderRgba: 'rgba(45, 212, 191, 0.35)',
+      textClass: 'text-teal-500 dark:text-teal-400'
+    },
+    accuracyAccent: {
+      hex: '#84cc16',
+      bgRgba: 'rgba(132, 204, 22, 0.14)',
+      borderRgba: 'rgba(132, 204, 22, 0.35)',
+      textClass: 'text-lime-600 dark:text-lime-400'
+    },
+    energyAccent: {
+      hex: '#d97706',
+      bgRgba: 'rgba(217, 119, 6, 0.14)',
+      borderRgba: 'rgba(217, 119, 6, 0.35)',
+      textClass: 'text-amber-600 dark:text-amber-400'
+    },
+    selectionAccent: {
+      hex: '#059669',
+      borderHex: '#10b981',
+      bgRgba: 'rgba(5, 150, 105, 0.12)'
+    },
+    chartPalette: ['#059669', '#10b981', '#2dd4bf', '#84cc16', '#d97706', '#06b6d4']
   },
   orange: {
     id: 'orange',
@@ -97,7 +162,31 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     surfaceLight: '#fffaf7',
     cardLight: '#ffffff',
     inputLight: '#ffffff',
-    borderLight: '#f0e6de'
+    borderLight: '#f0e6de',
+    timeAccent: {
+      hex: '#fbbf24',
+      bgRgba: 'rgba(251, 191, 36, 0.14)',
+      borderRgba: 'rgba(251, 191, 36, 0.35)',
+      textClass: 'text-amber-500 dark:text-amber-400'
+    },
+    accuracyAccent: {
+      hex: '#10b981',
+      bgRgba: 'rgba(16, 185, 129, 0.14)',
+      borderRgba: 'rgba(16, 185, 129, 0.35)',
+      textClass: 'text-emerald-600 dark:text-emerald-400'
+    },
+    energyAccent: {
+      hex: '#f97316',
+      bgRgba: 'rgba(249, 115, 22, 0.14)',
+      borderRgba: 'rgba(249, 115, 22, 0.35)',
+      textClass: 'text-orange-500 dark:text-orange-400'
+    },
+    selectionAccent: {
+      hex: '#ea580c',
+      borderHex: '#f97316',
+      bgRgba: 'rgba(234, 88, 12, 0.12)'
+    },
+    chartPalette: ['#ea580c', '#f97316', '#fbbf24', '#10b981', '#78716c', '#38bdf8']
   },
   purple: {
     id: 'purple',
@@ -120,7 +209,31 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     surfaceLight: '#fbf9ff',
     cardLight: '#ffffff',
     inputLight: '#ffffff',
-    borderLight: '#e9e3f4'
+    borderLight: '#e9e3f4',
+    timeAccent: {
+      hex: '#a78bfa',
+      bgRgba: 'rgba(167, 139, 250, 0.14)',
+      borderRgba: 'rgba(167, 139, 250, 0.35)',
+      textClass: 'text-purple-400 dark:text-purple-300'
+    },
+    accuracyAccent: {
+      hex: '#2dd4bf',
+      bgRgba: 'rgba(45, 212, 191, 0.14)',
+      borderRgba: 'rgba(45, 212, 191, 0.35)',
+      textClass: 'text-teal-400 dark:text-teal-300'
+    },
+    energyAccent: {
+      hex: '#fb923c',
+      bgRgba: 'rgba(251, 146, 60, 0.14)',
+      borderRgba: 'rgba(251, 146, 60, 0.35)',
+      textClass: 'text-orange-400 dark:text-orange-300'
+    },
+    selectionAccent: {
+      hex: '#7c3aed',
+      borderHex: '#8b5cf6',
+      bgRgba: 'rgba(124, 58, 237, 0.12)'
+    },
+    chartPalette: ['#7c3aed', '#a78bfa', '#2dd4bf', '#c084fc', '#fb923c', '#06b6d4']
   },
   red: {
     id: 'red',
@@ -143,22 +256,46 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     surfaceLight: '#fff9f9',
     cardLight: '#ffffff',
     inputLight: '#ffffff',
-    borderLight: '#f2e2e2'
+    borderLight: '#f2e2e2',
+    timeAccent: {
+      hex: '#94a3b8',
+      bgRgba: 'rgba(148, 163, 184, 0.14)',
+      borderRgba: 'rgba(148, 163, 184, 0.35)',
+      textClass: 'text-slate-400 dark:text-slate-300'
+    },
+    accuracyAccent: {
+      hex: '#34d399',
+      bgRgba: 'rgba(52, 211, 153, 0.14)',
+      borderRgba: 'rgba(52, 211, 153, 0.35)',
+      textClass: 'text-emerald-500 dark:text-emerald-400'
+    },
+    energyAccent: {
+      hex: '#fb923c',
+      bgRgba: 'rgba(251, 146, 60, 0.14)',
+      borderRgba: 'rgba(251, 146, 60, 0.35)',
+      textClass: 'text-amber-500 dark:text-amber-400'
+    },
+    selectionAccent: {
+      hex: '#dc2626',
+      borderHex: '#ef4444',
+      bgRgba: 'rgba(220, 38, 38, 0.12)'
+    },
+    chartPalette: ['#dc2626', '#f87171', '#fb923c', '#94a3b8', '#34d399', '#38bdf8']
   },
   rose: {
     id: 'rose',
     label: 'Rosa',
-    primaryHex: '#ec4899',
-    hoverHex: '#db2777',
-    bgRgba: 'rgba(236, 72, 153, 0.15)',
-    borderRgba: 'rgba(236, 72, 153, 0.45)',
-    textClass: 'text-pink-500 dark:text-pink-400',
-    bgClass: 'bg-pink-500 hover:bg-pink-600 text-white',
-    ringClass: 'ring-pink-400/40 border-pink-400/50',
-    badgeBg: 'bg-pink-500/10',
-    badgeText: 'text-pink-600 dark:text-pink-400',
-    badgeBorder: 'border-pink-400/25',
-    cssVarValue: '#ec4899',
+    primaryHex: '#e11d48',
+    hoverHex: '#be123c',
+    bgRgba: 'rgba(225, 29, 72, 0.14)',
+    borderRgba: 'rgba(225, 29, 72, 0.35)',
+    textClass: 'text-rose-500 dark:text-rose-400',
+    bgClass: 'bg-rose-600 hover:bg-rose-700 text-white',
+    ringClass: 'ring-rose-400/40 border-rose-400/50',
+    badgeBg: 'bg-rose-500/10',
+    badgeText: 'text-rose-600 dark:text-rose-400',
+    badgeBorder: 'border-rose-400/25',
+    cssVarValue: '#e11d48',
     surfaceDark: '#0c080a',
     cardDark: '#151012',
     inputDark: '#1c1417',
@@ -166,7 +303,31 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     surfaceLight: '#fff8fa',
     cardLight: '#ffffff',
     inputLight: '#ffffff',
-    borderLight: '#f3e1e8'
+    borderLight: '#f3e1e8',
+    timeAccent: {
+      hex: '#c084fc',
+      bgRgba: 'rgba(192, 132, 252, 0.12)',
+      borderRgba: 'rgba(192, 132, 252, 0.35)',
+      textClass: 'text-purple-400 dark:text-purple-300'
+    },
+    accuracyAccent: {
+      hex: '#2dd4bf',
+      bgRgba: 'rgba(45, 212, 191, 0.12)',
+      borderRgba: 'rgba(45, 212, 191, 0.35)',
+      textClass: 'text-teal-400 dark:text-teal-300'
+    },
+    energyAccent: {
+      hex: '#fb923c',
+      bgRgba: 'rgba(251, 146, 60, 0.12)',
+      borderRgba: 'rgba(251, 146, 60, 0.35)',
+      textClass: 'text-orange-400 dark:text-orange-300'
+    },
+    selectionAccent: {
+      hex: '#e11d48',
+      borderHex: '#f43f5e',
+      bgRgba: 'rgba(225, 29, 72, 0.12)'
+    },
+    chartPalette: ['#e11d48', '#f43f5e', '#c084fc', '#2dd4bf', '#fb923c', '#38bdf8']
   },
   neutral: {
     id: 'neutral',
@@ -189,7 +350,31 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     surfaceLight: '#fafafa',
     cardLight: '#ffffff',
     inputLight: '#ffffff',
-    borderLight: '#e4e4e7'
+    borderLight: '#e4e4e7',
+    timeAccent: {
+      hex: '#a1a1aa',
+      bgRgba: 'rgba(161, 161, 170, 0.12)',
+      borderRgba: 'rgba(161, 161, 170, 0.30)',
+      textClass: 'text-zinc-400 dark:text-zinc-300'
+    },
+    accuracyAccent: {
+      hex: '#f4f4f5',
+      bgRgba: 'rgba(244, 244, 245, 0.12)',
+      borderRgba: 'rgba(244, 244, 245, 0.30)',
+      textClass: 'text-zinc-100 dark:text-white'
+    },
+    energyAccent: {
+      hex: '#eab308',
+      bgRgba: 'rgba(234, 179, 8, 0.12)',
+      borderRgba: 'rgba(234, 179, 8, 0.30)',
+      textClass: 'text-amber-400/90 dark:text-amber-300/90'
+    },
+    selectionAccent: {
+      hex: '#52525b',
+      borderHex: '#71717a',
+      bgRgba: 'rgba(255, 255, 255, 0.08)'
+    },
+    chartPalette: ['#f4f4f5', '#d4d4d8', '#a1a1aa', '#71717a', '#52525b', '#3f3f46']
   }
 };
 
@@ -262,14 +447,29 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
       root.style.setProperty('--primary-color', primaryHex);
       root.style.setProperty('--primary-hover', primaryHover);
+      root.style.setProperty('--accent-primary', primaryHex);
+      root.style.setProperty('--accent-hover', primaryHover);
       root.style.setProperty('--glow-color', glowRgba);
       root.style.setProperty('--accent-muted', glowRgba);
+      root.style.setProperty('--accent-subtle', glowRgba);
+      root.style.setProperty('--accent-border', config.borderRgba);
       root.style.setProperty('--bg-page', pageBg);
       root.style.setProperty('--bg-card', cardBg);
       root.style.setProperty('--bg-input', inputBg);
       root.style.setProperty('--card-border', cardBorder);
       root.style.setProperty('--border-input', cardBorder);
       root.style.setProperty('--ring-focus', primaryHex);
+
+      // Tokens Semânticos Harmônicos
+      root.style.setProperty('--time-accent-color', config.timeAccent.hex);
+      root.style.setProperty('--time-accent-bg', config.timeAccent.bgRgba);
+      root.style.setProperty('--time-accent-border', config.timeAccent.borderRgba);
+      root.style.setProperty('--accuracy-accent-color', config.accuracyAccent.hex);
+      root.style.setProperty('--accuracy-accent-bg', config.accuracyAccent.bgRgba);
+      root.style.setProperty('--accuracy-accent-border', config.accuracyAccent.borderRgba);
+      root.style.setProperty('--energy-accent-color', config.energyAccent.hex);
+      root.style.setProperty('--energy-accent-bg', config.energyAccent.bgRgba);
+      root.style.setProperty('--energy-accent-border', config.energyAccent.borderRgba);
     } catch {
       // ignore
     }
@@ -316,14 +516,14 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     applyThemeToDOM(mode, newAccent);
   };
 
-  const accentConfig = ACCENT_CONFIGS[accent];
+  const activeConfig = ACCENT_CONFIGS[accent] || ACCENT_CONFIGS.blue;
 
   return (
     <ThemeContext.Provider
       value={{
         mode,
         accent,
-        accentConfig,
+        accentConfig: activeConfig,
         toggleMode,
         setMode,
         setAccent
@@ -334,18 +534,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   );
 };
 
-export const useTheme = () => {
+export const useTheme = (): ThemeContextType => {
   const context = useContext(ThemeContext);
   if (!context) {
-    // Fallback gracioso caso chamado fora do provider
-    return {
-      mode: 'dark' as ThemeMode,
-      accent: 'blue' as AccentColor,
-      accentConfig: ACCENT_CONFIGS.blue,
-      toggleMode: () => {},
-      setMode: () => {},
-      setAccent: () => {}
-    };
+    throw new Error('useTheme deve ser utilizado dentro de um ThemeProvider');
   }
   return context;
 };
