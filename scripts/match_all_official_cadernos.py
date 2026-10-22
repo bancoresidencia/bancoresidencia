@@ -300,25 +300,30 @@ for sf in specialty_files:
                 banca_prefix = b_key.split('_')[0]
                 ans = None
                 
-                # Match no dicionário de gabaritos da banca
+                # Match no dicionário de gabaritos da banca com rigor de ano e caderno
+                candidate_keys = []
                 for g_key, g_dict in official_keys.items():
                     if banca_prefix in g_key:
-                        # Se tiver ano correspondente no nome do caderno e do gabarito
+                        # 1. Ano deve bater exatamente
                         year_match = False
                         for yr in ['2020', '2021', '2022', '2023', '2024', '2025', '2026']:
                             if yr in b_key and yr in g_key:
                                 year_match = True
                                 break
-                        if year_match and qn in g_dict:
-                            ans = g_dict[qn]
-                            break
+                        if not year_match:
+                            continue
                             
-                # Fallback se gabarito único para a banca
-                if not ans:
-                    for g_key, g_dict in official_keys.items():
-                        if banca_prefix in g_key and qn in g_dict:
-                            ans = g_dict[qn]
-                            break
+                        # 2. Se for Caderno 2, priorizar GB 2
+                        is_cad2_b = any(x in b_key.lower() for x in ['_2', 'cad2', 'pv_2'])
+                        is_cad2_g = any(x in g_key.lower() for x in ['_2', 'cad2', 'gb_2'])
+                        if is_cad2_b == is_cad2_g and qn in g_dict:
+                            candidate_keys.append((g_key, g_dict[qn], 2))
+                        elif qn in g_dict:
+                            candidate_keys.append((g_key, g_dict[qn], 1))
+                            
+                if candidate_keys:
+                    candidate_keys.sort(key=lambda x: x[2], reverse=True)
+                    ans = candidate_keys[0][1]
                             
                 if ans:
                     if ans == 'ANULADA':

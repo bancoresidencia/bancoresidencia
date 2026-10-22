@@ -63963,21 +63963,22 @@
         "text": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-alternativa-3.webp"
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
+    "correctAnswer": "B",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 75 (Prova A1). Correspondência 100% com caderno de prova oficial.",
     "imageUrl": "/images/questoes/ginecologia/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-01.webp",
     "images": [
       "/images/questoes/ginecologia/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-01.webp"
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 75,
+      "official_answer": "B"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -112862,7 +112863,7 @@
     "subfoco": "Diagnóstico: USG e Ressonância Magnética",
     "difficulty": "Médio",
     "type": "Múltipla escolha",
-    "isAnulada": false,
+    "isAnulada": true,
     "statement": "A uma paciente com suspeita clínica e ultrassonográfica de adenomiose foi solicitada a realização de uma histeroscopia, que demonstrou cavidade uterina normal e endométrio de aspecto proliferativo. Realizou, também, uma biópsia de endométrio em parede posterior. Com base nesse caso hipotético, assinale a alternativa correta.",
     "options": [
       {
@@ -112886,7 +112887,7 @@
         "text": "A biópsia endometrial não tem relevância para o diagnóstico de adenomiose."
       }
     ],
-    "correctAnswer": "E",
+    "correctAnswer": "ANULADA",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "correct_answer": "ANULADA",
     "mainErrorReason": "",
@@ -112904,7 +112905,8 @@
       "source": "Quadrix Oficial Definitivo 2022"
     },
     "tipo_prova": "Prova 1",
-    "tipoProva": "Prova 1"
+    "tipoProva": "Prova 1",
+    "is_anulada": true
   },
   {
     "id": "0b4d6c75-8789-4261-87de-8a9d07b9cf51",
@@ -122374,17 +122376,17 @@
         "text": "realizar teste molecular."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - IADES SES-DF 2025 Questão 51 (Prova Tipo A). Correspondência oficial.",
-    "correct_answer": "D",
+    "correctAnswer": "A",
+    "commentary": "Gabarito Oficial Definitivo Homologado - SES-DF 2025 Questão 52. Diante de citologia com LSIL em mulher com mais de 25 anos, a conduta correta é repetir exame citopatológico em 6 meses (Alternativa A).",
+    "correct_answer": "A",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
       "source": "official_exam_pdf",
       "exam_id": "SES_DF_2025",
-      "question_number": 51,
-      "answer": "D"
+      "question_number": 52,
+      "answer": "A"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -143499,10 +143501,10 @@
         "text": "3."
       }
     ],
-    "correctAnswer": "X",
+    "correctAnswer": "ANULADA",
     "commentary": "Gabarito Oficial Definitivo Homologado - Residência Médica UERJ 2026 Questão 43. Correspondência com caderno oficial Acesso Direto.",
     "is_anulada": true,
-    "correct_answer": "X",
+    "correct_answer": "ANULADA",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
@@ -155994,21 +155996,22 @@
         "text": "Estrogênio e progesterona combinados, contínuo."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
+    "correctAnswer": "B",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 79 (Prova A1). Correspondência 100% com caderno de prova oficial.",
     "imageUrl": "/images/questoes/ginecologia/mulher-34-anos-de-idade-1g-1p-refere-ciclos-menstruais-regul-01.webp",
     "images": [
       "/images/questoes/ginecologia/mulher-34-anos-de-idade-1g-1p-refere-ciclos-menstruais-regul-01.webp"
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 79,
+      "official_answer": "B"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -158421,17 +158424,17 @@
         "text": "realizar teste molecular de pesquisa de HPV."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - IADES SES-DF 2025 Questão 51 (Prova Tipo A). Correspondência oficial.",
-    "correct_answer": "D",
+    "correctAnswer": "A",
+    "commentary": "Gabarito Oficial Definitivo Homologado - SES-DF 2025 Questão 52. Diante de citologia com LSIL em mulher com mais de 25 anos, a conduta correta é repetir exame citopatológico em 6 meses (Alternativa A).",
+    "correct_answer": "A",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
       "source": "official_exam_pdf",
       "exam_id": "SES_DF_2025",
-      "question_number": 51,
-      "answer": "D"
+      "question_number": 52,
+      "answer": "A"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -186698,17 +186701,18 @@
         "text": "Contraceptivo hormonal combinado."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
-    "correct_answer": "D",
+    "correctAnswer": "B",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 81 (Prova A1). Correspondência 100% com caderno de prova oficial.",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 81,
+      "official_answer": "B"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -223026,12 +223030,8 @@
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
-      "verified": true,
-      "banca": "INEP",
-      "booklet": "INEP_INEP_2020_PV_2",
-      "question_number": 63,
-      "official_answer": "C",
-      "hits": 3
+      "verified": false,
+      "rejected_reason": "Mismatched exam year and low n-gram hits"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -226121,7 +226121,7 @@
     "subfoco": "Fatores de Risco e Proteção",
     "difficulty": "Médio",
     "type": "Múltipla escolha",
-    "isAnulada": false,
+    "isAnulada": true,
     "statement": "Nos países ricos vem aumentando, de forma significativa, o número de mulheres com câncer do endométrio e diminuindo o número de mulheres com câncer de colo uterino. Em razão dessa situação, são avaliados os fatores de risco associados ao câncer do endométrio. Constituem fatores de risco para essa afecção:",
     "options": [
       {
@@ -226145,7 +226145,7 @@
         "text": "nuliparidade; tumor produtor de estrogênio; lúpus eritematoso; e vitiligo."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "ANULADA",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "correct_answer": "ANULADA",
     "mainErrorReason": "",
@@ -226163,7 +226163,8 @@
       "source": "Quadrix Oficial Definitivo 2022"
     },
     "tipo_prova": "Prova 1",
-    "tipoProva": "Prova 1"
+    "tipoProva": "Prova 1",
+    "is_anulada": true
   },
   {
     "id": "7d476eff-3540-4a8b-bce0-b44188146365",
@@ -295993,16 +295994,17 @@
       }
     ],
     "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 80 (Prova A1). Correspondência 100% com caderno de prova oficial.",
     "correct_answer": "D",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 80,
+      "official_answer": "D"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -297759,21 +297761,22 @@
         "text": "Progesterona."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
+    "correctAnswer": "B",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 75 (Prova A1). Correspondência 100% com caderno de prova oficial.",
     "imageUrl": "/images/questoes/ginecologia/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-01.webp",
     "images": [
       "/images/questoes/ginecologia/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-01.webp"
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 75,
+      "official_answer": "B"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -307149,21 +307152,22 @@
         "text": "Reforço do esfíncter uretral."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
+    "correctAnswer": "B",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 74 (Prova A1). Correspondência 100% com caderno de prova oficial.",
     "imageUrl": "/images/questoes/ginecologia/mulher-54-anos-de-idade-apresenta-queixa-de-perda-de-urina-a-01.webp",
     "images": [
       "/images/questoes/ginecologia/mulher-54-anos-de-idade-apresenta-queixa-de-perda-de-urina-a-01.webp"
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 74,
+      "official_answer": "B"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -310277,12 +310281,8 @@
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1",
     "official_audit": {
-      "verified": true,
-      "banca": "SES",
-      "booklet": "SES_PE_SES_PE_2022_PROVA_ACESSO_DIRETO",
-      "question_number": 51,
-      "official_answer": "A",
-      "hits": 3
+      "verified": false,
+      "rejected_reason": "Mismatched exam year and low n-gram hits"
     }
   },
   {
@@ -369082,17 +369082,18 @@
         "text": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-26-anos-de-idade-apresenta-diagnostico-de-lesao-epite-alternativa-3.webp"
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
-    "correct_answer": "D",
+    "correctAnswer": "A",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 84 (Prova A1). Correspondência 100% com caderno de prova oficial.",
+    "correct_answer": "A",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 13,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 84,
+      "official_answer": "A"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -372764,21 +372765,22 @@
         "text": "Proporcionar o crescimento endometrial de forma adequada."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
+    "correctAnswer": "B",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 75 (Prova A1). Correspondência 100% com caderno de prova oficial.",
     "imageUrl": "/images/questoes/ginecologia/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-01.webp",
     "images": [
       "/images/questoes/ginecologia/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-01.webp"
     ],
-    "correct_answer": "D",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 75,
+      "official_answer": "B"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -403746,17 +403748,18 @@
         "text": "Isoflavona."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
-    "correct_answer": "D",
+    "correctAnswer": "C",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 82 (Prova A1). Correspondência 100% com caderno de prova oficial.",
+    "correct_answer": "C",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 82,
+      "official_answer": "C"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -493247,17 +493250,18 @@
         "text": "Progesterona natural."
       }
     ],
-    "correctAnswer": "D",
-    "commentary": "Gabarito Oficial Definitivo Homologado - USP Questão 3. Correspondência 100% com caderno de prova oficial.",
-    "correct_answer": "D",
+    "correctAnswer": "B",
+    "commentary": "Gabarito Oficial Definitivo Homologado - FUVEST/USP 2025 Questão 75 (Prova A1). Correspondência 100% com caderno de prova oficial.",
+    "correct_answer": "B",
     "mainErrorReason": "",
     "takeHomeMessage": "",
     "official_audit": {
       "verified": true,
-      "exam_id": "USP_2025",
-      "question_number": 3,
-      "hits": 15,
-      "answer": "D"
+      "source": "FUVEST_USP_2025_A1",
+      "banca": "FUVEST/USP",
+      "exam_id": "USP_2025_A1",
+      "question_number": 75,
+      "official_answer": "B"
     },
     "tipo_prova": "Prova 1",
     "tipoProva": "Prova 1"
@@ -587781,7 +587785,7 @@
         "text": "Prolapso apical, IUE mista e rotura perineal. Realizar colpoplastia posterior."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "ANULADA",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "imageUrl": "/images/questoes/ginecologia/paciente-de-60-anos-de-idade-chega-ao-consultorio-com-queixa-01.webp",
     "images": [
@@ -587989,7 +587993,7 @@
         "text": "Aumento das ectopias cervicais."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "ANULADA",
     "commentary": "Gabarito oficial em processo de homologação por provas públicas.",
     "is_anulada": true,
     "correct_answer": "ANULADA",

@@ -770,30 +770,30 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </button>
           </div>
 
-          {/* Botões de Ação Secundária: Filtro IA, Raio-X da Banca, Minhas Listas (Abaixo das Modalidades) */}
+          {/* Botões de Ação Secundária: Filtro IA, Raio-X da Banca, Minhas Listas */}
           <div className="flex flex-wrap items-center gap-2">
             <button
               type="button"
               onClick={() => {}}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800/60 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-900/40 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs hover:border-[var(--primary-color)]/40"
             >
-              <Sparkles className="w-3.5 h-3.5 text-purple-500 dark:text-purple-400" />
+              <Sparkles className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               <span>Filtro IA</span>
             </button>
 
             <button
               type="button"
               onClick={() => {}}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs hover:border-[var(--primary-color)]/40"
             >
-              <Target className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
+              <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               <span>Raio-X da Banca</span>
             </button>
 
             <button
               type="button"
               onClick={onCreateListFromFilter}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs hover:border-[var(--primary-color)]/40"
             >
               <BookOpen className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               <span>Minhas Listas</span>
@@ -803,10 +803,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
         {/* Lado Direito: Quantidade de Questões Encontradas */}
         <div className="flex items-baseline gap-1.5 self-end md:self-auto">
-          <span className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight font-sans">
+          <span className="text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight font-sans">
             {displayedQuestionCount.toLocaleString('pt-BR')}
           </span>
-          <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+          <span className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-normal">
             questões
           </span>
         </div>
@@ -830,10 +830,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0"
         >
           {/* Topo do Card de Conteúdo */}
-          <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-slate-100 dark:border-slate-800/80 mb-2 shrink-0">
+          <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-zinc-100 dark:border-zinc-800/80 mb-2 shrink-0">
             <div className="flex items-center gap-2">
               <Layers className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
-              <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight">
+              <h2 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-white tracking-tight">
                 Conteúdo
               </h2>
             </div>
@@ -842,21 +842,21 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               <button
                 type="button"
                 onClick={handleSelectAllSpecialties}
-                className="px-2 py-0.5 rounded-lg text-[11px] font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer"
+                className="px-2.5 py-1 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer"
               >
                 Selecionar todas
               </button>
               <button
                 type="button"
                 onClick={handleExpandAll}
-                className="px-2 py-0.5 rounded-lg text-[11px] font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer"
+                className="px-2.5 py-1 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer"
               >
                 Expandir
               </button>
               <button
                 type="button"
                 onClick={handleCollapseAll}
-                className="px-2 py-0.5 rounded-lg text-[11px] font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer"
+                className="px-2.5 py-1 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer"
               >
                 Recolher
               </button>
@@ -936,10 +936,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <div key={esp.especialidade} className="space-y-0.5">
                   {/* Linha 1: Nível Especialidade (Estilo Imagens 3 & 4) */}
                   <div
-                    className={`flex items-center justify-between py-2.5 px-2 border-b border-slate-100/30 dark:border-slate-800/40 transition-colors cursor-pointer rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900/40 ${
+                    className={`flex items-center justify-between py-2.5 px-2 border-b border-zinc-100/40 dark:border-zinc-800/50 transition-colors cursor-pointer rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-900/40 ${
                       isEspSelected
-                        ? 'text-slate-900 dark:text-white bg-slate-100/50 dark:bg-slate-900/30'
-                        : 'text-slate-800 dark:text-slate-200'
+                        ? 'text-zinc-900 dark:text-zinc-50 bg-zinc-100/60 dark:bg-zinc-900/40'
+                        : 'text-zinc-800 dark:text-zinc-200'
                     }`}
                   >
                     <div className="flex items-center gap-2.5 flex-1 min-w-0">
@@ -953,7 +953,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${
                           isEspSelected
                             ? 'text-white shadow-xs'
-                            : 'border-slate-300 dark:border-slate-700 bg-transparent hover:border-slate-400 dark:hover:border-slate-500'
+                            : 'border-zinc-300 dark:border-zinc-700 bg-transparent hover:border-zinc-400 dark:hover:border-zinc-500'
                         }`}
                         style={{
                           backgroundColor: isEspSelected ? accentConfig.primaryHex : undefined,
@@ -972,32 +972,32 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             [esp.especialidade]: !prev[esp.especialidade]
                           }))
                         }
-                        className="p-1 rounded text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-white"
+                        className="p-1 rounded text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200"
                       >
                         {isEspExpanded ? (
-                          <ChevronDown className="w-4 h-4 text-slate-500 dark:text-slate-400" />
+                          <ChevronDown className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
                         ) : (
-                          <ChevronRight className="w-4 h-4 text-slate-400 dark:text-slate-500" />
+                          <ChevronRight className="w-4 h-4 text-zinc-400 dark:text-zinc-500" />
                         )}
                       </button>
 
                       <span
                         onClick={() => toggleEspecialidade(esp.especialidade)}
-                        className="font-bold text-sm sm:text-base tracking-tight truncate select-none text-slate-900 dark:text-white"
+                        className="font-bold text-sm sm:text-base tracking-tight truncate select-none text-zinc-900 dark:text-zinc-100"
                       >
                         {esp.especialidade}
                       </span>
                     </div>
 
                     {/* Badge de Questões - Fundo igual ao quadro geral, número por extenso */}
-                    <span className="px-2.5 py-0.5 rounded-lg bg-transparent border border-slate-200/50 dark:border-slate-800/60 text-slate-500 dark:text-slate-400 font-mono text-xs shrink-0">
+                    <span className="px-2.5 py-0.5 rounded-lg bg-transparent border border-zinc-200/60 dark:border-zinc-800/70 text-zinc-500 dark:text-zinc-400 font-mono text-xs shrink-0">
                       {espCount.toLocaleString('pt-BR')}
                     </span>
                   </div>
 
                   {/* Linha 2: Temas (Filhos Indentados) */}
                   {isEspExpanded && (
-                    <div className="pl-5 space-y-1 border-l border-slate-100/30 dark:border-slate-800/40 ml-3.5">
+                    <div className="pl-5 space-y-1 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-3.5">
                       {orderedTemas.map((tem) => {
                         const isTemaSelected =
                           filters.temas.includes(tem.tema) || isEspSelected;
@@ -1027,8 +1027,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             <div
                               className={`flex items-center justify-between p-1.5 rounded-lg transition-colors cursor-pointer ${
                                 isTemaSelected
-                                  ? 'text-slate-900 dark:text-white font-medium'
-                                  : 'hover:bg-slate-50 dark:hover:bg-slate-900/60 text-slate-700 dark:text-slate-300'
+                                  ? 'text-zinc-900 dark:text-white font-medium'
+                                  : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300'
                               }`}
                               style={{
                                 backgroundColor: isTemaSelected ? accentConfig.bgRgba : undefined
@@ -1041,10 +1041,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                     e.stopPropagation();
                                     toggleTema(tem.tema);
                                   }}
-                                  className={`w-3.5 h-3.5 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${
+                                  className={`w-4 h-4 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${
                                     isTemaSelected
                                       ? 'text-white'
-                                      : 'border-slate-300 dark:border-slate-700/70 bg-white dark:bg-slate-950 hover:border-slate-400 dark:hover:border-slate-500'
+                                      : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-500'
                                   }`}
                                   style={{
                                     backgroundColor: isTemaSelected ? accentConfig.primaryHex : undefined,
@@ -1063,7 +1063,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                         [tem.tema]: !prev[tem.tema]
                                       }))
                                     }
-                                    className="p-0.5 rounded text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-white"
+                                    className="p-0.5 rounded text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200"
                                   >
                                     {isTemaExpanded ? (
                                       <ChevronDown className="w-3.5 h-3.5" />
@@ -1075,20 +1075,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                                 <span
                                   onClick={() => toggleTema(tem.tema)}
-                                  className="font-medium text-xs truncate text-slate-800 dark:text-slate-200"
+                                  className="font-medium text-xs truncate text-zinc-800 dark:text-zinc-200"
                                 >
                                   {tem.tema === 'Endocrinologia' || tem.tema.startsWith('Endocrino') ? 'Endocrinologia e Metabologia' : tem.tema}
                                 </span>
                               </div>
 
-                              <span className="px-2 py-0.5 rounded-md bg-transparent border border-slate-200/40 dark:border-slate-800/50 text-[11px] font-mono text-slate-500 dark:text-slate-400 shrink-0">
+                              <span className="px-2 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[11px] font-mono text-zinc-500 dark:text-zinc-400 shrink-0">
                                 {temaCount.toLocaleString('pt-BR')}
                               </span>
                             </div>
 
                             {/* Linha 3: Focos (Filhos de Tema) */}
                             {isTemaExpanded && tem.focos.length > 0 && (
-                              <div className="pl-4 space-y-0.5 border-l border-slate-100/30 dark:border-slate-800/40 ml-2.5">
+                              <div className="pl-4 space-y-0.5 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-2.5">
                                 {tem.focos.map((foc) => {
                                   const isFocoSelected =
                                     filters.focos.includes(foc.foco) || isTemaSelected;
@@ -1113,10 +1113,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                     <div key={foc.foco} className="space-y-0.5">
                                       {/* Linha do Foco */}
                                       <div
-                                        className={`flex items-center justify-between p-1 rounded-md text-[11.5px] cursor-pointer transition-colors ${
+                                        className={`flex items-center justify-between p-1 rounded-md text-xs cursor-pointer transition-colors ${
                                           isFocoSelected
-                                            ? 'text-slate-900 dark:text-white font-medium'
-                                            : 'hover:bg-slate-50 dark:hover:bg-slate-900/60 text-slate-700 dark:text-slate-300'
+                                            ? 'text-zinc-900 dark:text-white font-medium'
+                                            : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300'
                                         }`}
                                         style={{
                                           backgroundColor: isFocoSelected ? accentConfig.bgRgba : undefined
@@ -1129,17 +1129,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                               e.stopPropagation();
                                               toggleFoco(foc.foco);
                                             }}
-                                            className={`w-3.5 h-3.5 rounded-sm border flex items-center justify-center shrink-0 transition-all ${
+                                            className={`w-4 h-4 rounded-md border flex items-center justify-center shrink-0 transition-all ${
                                               isFocoSelected
                                                 ? 'text-white'
-                                                : 'border-slate-300 dark:border-slate-700/70 bg-white dark:bg-slate-950 hover:border-slate-400 dark:hover:border-slate-500'
+                                                : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-500'
                                             }`}
                                             style={{
                                               backgroundColor: isFocoSelected ? accentConfig.primaryHex : undefined,
                                               borderColor: isFocoSelected ? accentConfig.primaryHex : undefined
                                             }}
                                           >
-                                            {isFocoSelected && <Check className="w-2 h-2 stroke-[3]" />}
+                                            {isFocoSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
                                           </button>
 
                                           {foc.subfocos.length > 0 && (
@@ -1151,32 +1151,32 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                   [foc.foco]: !prev[foc.foco]
                                                 }))
                                               }
-                                              className="p-0.5 rounded text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-white"
+                                              className="p-0.5 rounded text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200"
                                             >
                                               {isFocoExpanded ? (
-                                                <ChevronDown className="w-3 h-3" />
+                                                <ChevronDown className="w-3.5 h-3.5" />
                                               ) : (
-                                                <ChevronRight className="w-3 h-3" />
+                                                <ChevronRight className="w-3.5 h-3.5" />
                                               )}
                                             </button>
                                           )}
 
                                           <span
                                             onClick={() => toggleFoco(foc.foco)}
-                                            className="font-medium text-[11.5px] truncate text-slate-800 dark:text-slate-200"
+                                            className="font-medium text-xs truncate text-zinc-800 dark:text-zinc-200"
                                           >
                                             {foc.foco}
                                           </span>
                                         </div>
 
-                                        <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-slate-200/30 dark:border-slate-800/40 text-[10px] font-mono text-slate-500 dark:text-slate-400 ml-2 shrink-0">
+                                        <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[10px] font-mono text-zinc-500 dark:text-zinc-400 ml-2 shrink-0">
                                           {focoCount.toLocaleString('pt-BR')}
                                         </span>
                                       </div>
 
                                       {/* Linha 4: Subfocos (Filhos de Foco) */}
                                       {isFocoExpanded && foc.subfocos.length > 0 && (
-                                        <div className="pl-4 space-y-0.5 border-l border-slate-100/30 dark:border-slate-800/40 ml-2">
+                                        <div className="pl-4 space-y-0.5 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-2">
                                           {foc.subfocos.map((sub) => {
                                             const isSubSelected =
                                               filters.subfocos.includes(sub) || isFocoSelected;
@@ -1200,18 +1200,18 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                               <div
                                                 key={sub}
                                                 onClick={() => toggleSubfoco(sub)}
-                                                className={`flex items-center justify-between p-1 rounded-md text-[11px] cursor-pointer transition-colors ${
+                                                className={`flex items-center justify-between py-1.5 px-2 rounded-lg text-xs cursor-pointer transition-colors ${
                                                   isSubSelected
-                                                    ? 'font-semibold text-slate-900 dark:text-white'
-                                                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-900/60'
+                                                    ? 'font-semibold text-zinc-900 dark:text-white'
+                                                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/60'
                                                 }`}
                                               >
-                                                <div className="flex items-center gap-2 truncate">
+                                                <div className="flex items-center gap-2 truncate min-w-0" title={sub}>
                                                   <div
-                                                    className={`w-3 h-3 rounded-sm border flex items-center justify-center shrink-0 ${
+                                                    className={`w-3.5 h-3.5 rounded-md border flex items-center justify-center shrink-0 ${
                                                       isSubSelected
                                                         ? 'text-white'
-                                                        : 'border-slate-300 dark:border-slate-700/70 bg-white dark:bg-slate-950'
+                                                        : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
                                                     }`}
                                                     style={{
                                                       backgroundColor: isSubSelected ? accentConfig.primaryHex : undefined,
@@ -1219,12 +1219,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                     }}
                                                   >
                                                     {isSubSelected && (
-                                                      <Check className="w-2 h-2 stroke-[3]" />
+                                                      <Check className="w-2.5 h-2.5 stroke-[3]" />
                                                     )}
                                                   </div>
-                                                  <span className="truncate text-slate-800 dark:text-slate-300">{sub}</span>
+                                                  <span className="truncate text-zinc-800 dark:text-zinc-300">{sub}</span>
                                                 </div>
-                                                <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-slate-200/30 dark:border-slate-800/40 text-[10px] font-mono text-slate-500 dark:text-slate-400 ml-2 shrink-0">
+                                                <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[10px] font-mono text-zinc-500 dark:text-zinc-400 ml-2 shrink-0">
                                                   {subCount.toLocaleString('pt-BR')}
                                                 </span>
                                               </div>
@@ -1257,21 +1257,22 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           {/* 1. Instituições e Bancas */}
           <div className="space-y-1.5 shrink-0">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-slate-900 dark:text-white tracking-tight">
+              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
                 <Building2 className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                 <span>Instituições e Bancas</span>
               </div>
               <button
                 type="button"
                 onClick={() => setShowAllUfModal(true)}
-                className="text-[11px] font-semibold cursor-pointer hover:underline text-blue-600 dark:text-blue-400"
+                className="text-[11px] font-semibold cursor-pointer hover:underline transition-colors"
+                style={{ color: accentConfig.primaryHex }}
               >
                 Ver todas por UF &gt;
               </button>
             </div>
 
             <div className="relative">
-              <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500" />
+              <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
               <input
                 type="text"
                 value={instSearch}
@@ -1283,7 +1284,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <button
                   type="button"
                   onClick={() => setInstSearch('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 dark:hover:text-white"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"
                 >
                   <X className="w-3 h-3" />
                 </button>
@@ -1293,7 +1294,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             {/* Sugestões de Busca se digitou */}
             {filteredBancasSearch.length > 0 && (
               <div 
-                className="p-2 rounded-xl space-y-1 text-xs bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md"
+                className="p-2 rounded-xl space-y-1 text-xs bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-md"
               >
                 {filteredBancasSearch.map((b) => (
                   <button
@@ -1303,7 +1304,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       toggleInstituicao(b.sigla);
                       setInstSearch('');
                     }}
-                    className="w-full text-left px-2 py-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800/50 text-slate-800 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white flex items-center justify-between"
+                    className="w-full text-left px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white flex items-center justify-between"
                   >
                     <span>{b.sigla} - {b.nome}</span>
                     <span className="text-[10px] font-semibold" style={{ color: accentConfig.primaryHex }}>+ Adicionar</span>
@@ -1349,7 +1350,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       key={banca.key}
                       type="button"
                       onClick={() => toggleInstituicao(banca.key)}
-                      className="px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all cursor-pointer flex items-center gap-1"
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all cursor-pointer flex items-center gap-1 border ${
+                        isSelected
+                          ? 'text-white shadow-xs'
+                          : 'bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/70 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-zinc-100'
+                      }`}
                       style={{
                         backgroundColor: isSelected ? accentConfig.primaryHex : undefined,
                         borderColor: isSelected ? accentConfig.primaryHex : undefined,
@@ -1365,12 +1370,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           </div>
 
           {/* 2. Status da Questão */}
-          <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800/80 shrink-0">
+          <div className="space-y-2 pt-2 border-t border-zinc-100 dark:border-zinc-800/80 shrink-0">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-slate-900 dark:text-white">Status da Questão</span>
-              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Todo o banco</span>
+              <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100">Status da Questão</span>
+              <span className="text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">Todo o banco</span>
             </div>
-            <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+            <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
               {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
                 (st) => {
                   const isActive = filters.status === st;
@@ -1382,7 +1387,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 ${
                         isActive
                           ? 'text-white shadow-sm font-bold'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800/40'
+                          : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50'
                       }`}
                       style={{
                         backgroundColor: isActive ? accentConfig.primaryHex : undefined
@@ -1401,15 +1406,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
              ========================================================================= */}
           <div className="min-h-0 flex-1 overflow-y-auto pr-1.5 custom-scrollbar space-y-2.5">
             {/* 3. CARD COLAPSÁVEL: Dificuldade, Formato e Opções */}
-            <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all">
+            <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50 dark:bg-zinc-900/40 overflow-hidden transition-all">
               {/* Header com Toggle Mostrar/Ocultar */}
               <div
                 onClick={() => setIsOptionsOpen(!isOptionsOpen)}
-                className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
+                className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-900/70 transition-colors select-none"
               >
                 <div className="flex items-center gap-2">
                   <SlidersHorizontal className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
-                  <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
+                  <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
                     Dificuldade, Formato e Opções
                   </span>
                 </div>
@@ -1429,7 +1434,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     </span>
                   )}
                   <ChevronDown
-                    className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
+                    className={`w-4 h-4 text-zinc-400 transition-transform duration-200 ${
                       isOptionsOpen ? 'rotate-180' : ''
                     }`}
                   />
@@ -1438,7 +1443,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
               {/* Conteúdo Expandido */}
               {isOptionsOpen && (
-                <div className="p-3 sm:p-3.5 pt-0 space-y-3 border-t border-slate-200/40 dark:border-slate-800/50">
+                <div className="p-3 sm:p-3.5 pt-0 space-y-3 border-t border-zinc-200/50 dark:border-zinc-800/60">
                   {/* Linha 1: Dificuldade & Formato */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
                     {/* Dificuldade */}
@@ -1496,7 +1501,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                               className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${
                                 isActive
                                   ? 'text-white shadow-sm'
-                                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                               }`}
                               style={{
                                 backgroundColor: isActive ? accentConfig.primaryHex : undefined
@@ -1512,8 +1517,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                   {/* Linha 2: Ocultar anuladas / Ocultar revisadas */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div className="bg-slate-100 dark:bg-slate-900/90 border border-slate-300/80 dark:border-slate-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
-                      <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">Ocultar anuladas</span>
+                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
+                      <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Ocultar anuladas</span>
                       <button
                         type="button"
                         role="switch"
@@ -1527,7 +1532,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${
                           filters.ocultarAnuladasErro
                             ? ''
-                            : 'bg-slate-300 dark:bg-slate-700 border-slate-400/60 dark:border-slate-600'
+                            : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
                         }`}
                         style={{
                           backgroundColor: filters.ocultarAnuladasErro ? accentConfig.primaryHex : undefined,
@@ -1542,8 +1547,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       </button>
                     </div>
 
-                    <div className="bg-slate-100 dark:bg-slate-900/90 border border-slate-300/80 dark:border-slate-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
-                      <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">Ocultar revisadas</span>
+                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
+                      <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Ocultar revisadas</span>
                       <button
                         type="button"
                         role="switch"
@@ -1557,7 +1562,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${
                           filters.ocultarRevisadas
                             ? ''
-                            : 'bg-slate-300 dark:bg-slate-700 border-slate-400/60 dark:border-slate-600'
+                            : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
                         }`}
                         style={{
                           backgroundColor: filters.ocultarRevisadas ? accentConfig.primaryHex : undefined,
@@ -1577,15 +1582,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </div>
 
             {/* 4. CARD COLAPSÁVEL: Anos da Prova */}
-            <div className="rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 overflow-hidden transition-all">
+            <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50 dark:bg-zinc-900/40 overflow-hidden transition-all">
               {/* Header com Toggle Mostrar/Ocultar */}
               <div
                 onClick={() => setIsYearsOpen(!isYearsOpen)}
-                className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-900/70 transition-colors select-none"
+                className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-900/70 transition-colors select-none"
               >
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
-                  <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
+                  <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
                     Anos da Prova
                   </span>
                 </div>
@@ -1611,7 +1616,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     </span>
                   )}
                   <ChevronDown
-                    className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
+                    className={`w-4 h-4 text-zinc-400 transition-transform duration-200 ${
                       isYearsOpen ? 'rotate-180' : ''
                     }`}
                   />
@@ -1620,9 +1625,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
               {/* Conteúdo Expandido */}
               {isYearsOpen && (
-                <div className="p-3 sm:p-3.5 pt-0 space-y-2.5 border-t border-slate-200/40 dark:border-slate-800/50">
+                <div className="p-3 sm:p-3.5 pt-0 space-y-2.5 border-t border-zinc-200/50 dark:border-zinc-800/60">
                   <div className="flex items-center justify-between pt-2.5">
-                    <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">Seleção rápida:</span>
+                    <span className="text-[11px] font-medium text-zinc-500 dark:text-zinc-400">Seleção rápida:</span>
                     <div className="flex items-center gap-1">
                       {[3, 5, 10].map((count) => {
                         const isQuickActive = filters.anos.length === count && filters.anos.includes(2026);
@@ -1634,7 +1639,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${
                               isQuickActive
                                 ? 'text-white shadow-xs'
-                                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
+                                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800'
                             }`}
                             style={{
                               backgroundColor: isQuickActive ? accentConfig.primaryHex : undefined
@@ -1647,7 +1652,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       <button
                         type="button"
                         onClick={handleClearYears}
-                        className="text-[10px] px-2 py-0.5 rounded font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+                        className="text-[10px] px-2 py-0.5 rounded font-semibold text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800"
                       >
                         Todos
                       </button>
@@ -1666,7 +1671,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
                             isSelected
                               ? 'text-white shadow-xs'
-                              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
+                              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800'
                           }`}
                           style={{
                             backgroundColor: isSelected ? accentConfig.primaryHex : undefined
@@ -1691,12 +1696,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         <div 
           className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
             isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
-          } bg-white/95 dark:bg-[#070c17]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800/70 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
+          } bg-white/95 dark:bg-[#09090b]/95 backdrop-blur-md border-t border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
         >
           <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3 w-full">
             {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar (Estilo Imagem 2) */}
             <div className="flex flex-wrap items-center gap-2">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-700 dark:text-zinc-300">
                 <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.primaryHex }} />
                 <span>Filtros ({activeTags.length}):</span>
               </div>
@@ -1728,7 +1733,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <button
                   type="button"
                   onClick={onReset}
-                  className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
+                  className="flex items-center gap-1 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
                 >
                   <RotateCcw className="w-3 h-3" />
                   <span>Limpar</span>
@@ -1745,7 +1750,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
                     isCotasDrawerOpen
                       ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
-                      : 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                      : 'bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white'
                   }`}
                   title="Personalizar cotas por filtro ou balancear proporcionalmente"
                 >
@@ -1755,8 +1760,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 </button>
               )}
 
-              <div className="flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
-                <span className="font-semibold mr-0.5 text-slate-600 dark:text-slate-400">Qtd:</span>
+              <div className="flex items-center gap-1.5 text-xs text-zinc-600 dark:text-zinc-400">
+                <span className="font-semibold mr-0.5 text-zinc-600 dark:text-zinc-400">Qtd:</span>
                 {[20, 50, 100].map((num) => (
                   <button
                     key={num}
@@ -1768,7 +1773,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
                       resolveCount === num && !showCustomQtd
                         ? 'text-white shadow-xs'
-                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                     }`}
                     style={{
                       backgroundColor: resolveCount === num && !showCustomQtd ? accentConfig.primaryHex : undefined
@@ -1781,7 +1786,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <button
                   type="button"
                   onClick={() => setShowCustomQtd(!showCustomQtd)}
-                  className={`px-2.5 py-1 rounded-md text-xs font-medium border border-slate-300 dark:border-slate-700/70 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer ${
+                  className={`px-2.5 py-1 rounded-md text-xs font-medium border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer ${
                     showCustomQtd || ![20, 50, 100].includes(resolveCount)
                       ? 'text-white font-bold'
                       : ''
@@ -1804,7 +1809,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       const val = parseInt(e.target.value) || 0;
                       setResolveCount(Math.max(1, Math.min(200, val)));
                     }}
-                    className="w-13 text-center font-bold text-xs bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-md py-1 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] ml-0.5"
+                    className="w-13 text-center font-bold text-xs bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-md py-1 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] ml-0.5"
                     placeholder="Qtd"
                   />
                 )}
@@ -1813,9 +1818,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               <button
                 type="button"
                 onClick={onCreateListFromFilter}
-                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100 dark:border-slate-700 transition-colors cursor-pointer shadow-xs"
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-100 dark:border-zinc-700 transition-colors cursor-pointer shadow-xs"
               >
-                <ListPlus className="w-4 h-4 text-slate-700 dark:text-slate-200" />
+                <ListPlus className="w-4 h-4 text-zinc-700 dark:text-zinc-200" />
                 <span>Salvar Lista</span>
               </button>
 
@@ -1844,32 +1849,37 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
          ========================================================================= */}
       {isCotasDrawerOpen && itemsToConfigure.length > 1 && (
         <div 
-          className="fixed bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[75vh] z-50 bg-white/95 dark:bg-[#0b1120]/95 backdrop-blur-xl border border-slate-200 dark:border-slate-700/90 rounded-2xl shadow-2xl p-4 flex flex-col text-slate-900 dark:text-slate-100 animate-in slide-in-from-bottom-3 duration-200"
+          className="fixed bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[75vh] z-50 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-4 flex flex-col text-zinc-900 dark:text-zinc-100 animate-in slide-in-from-bottom-3 duration-200"
           style={{ boxShadow: '0 20px 50px rgba(0,0,0,0.6)' }}
         >
           {/* Header */}
-          <div className="flex items-center justify-between pb-2.5 border-b border-slate-200 dark:border-slate-800">
+          <div className="flex items-center justify-between pb-2.5 border-b border-zinc-200 dark:border-zinc-800">
             <div className="flex items-center gap-2">
               <PieChart className="w-4 h-4 text-amber-500 dark:text-amber-400" />
               <div>
-                <h4 className="text-xs font-bold text-slate-900 dark:text-white tracking-tight">Distribuição por Filtro Selecionado</h4>
-                <p className="text-[10px] text-slate-500 dark:text-slate-400">Escolha a quantidade de cada filtro ou equilibre igualmente</p>
+                <h4 className="text-xs font-bold text-zinc-900 dark:text-white tracking-tight">Distribuição por Filtro Selecionado</h4>
+                <p className="text-[10px] text-zinc-500 dark:text-zinc-400">Escolha a quantidade de cada filtro ou equilibre igualmente</p>
               </div>
             </div>
             <div className="flex items-center gap-1.5">
               <button
                 type="button"
                 onClick={handleEquilibrarCotas}
-                className="flex items-center gap-1 text-[11px] font-semibold px-2 py-1 rounded-lg bg-blue-950/50 border border-blue-800/70 text-blue-300 hover:bg-blue-900/60 transition-colors cursor-pointer"
+                className="flex items-center gap-1 text-[11px] font-semibold px-2 py-1 rounded-lg border transition-colors cursor-pointer"
+                style={{
+                  backgroundColor: accentConfig.bgRgba,
+                  borderColor: accentConfig.borderRgba,
+                  color: accentConfig.primaryHex
+                }}
                 title="Dividir igualmente o total entre todos os filtros selecionados"
               >
-                <Scale className="w-3 h-3 text-blue-400" />
+                <Scale className="w-3 h-3" style={{ color: accentConfig.primaryHex }} />
                 <span>Equilibrar (Round-Robin)</span>
               </button>
               <button
                 type="button"
                 onClick={() => setIsCotasDrawerOpen(false)}
-                className="p-1 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+                className="p-1 text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-lg transition-colors cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -1877,10 +1887,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           </div>
 
           {/* Resumo de alocação */}
-          <div className="text-[11px] text-slate-400 py-2 flex items-center justify-between">
+          <div className="text-[11px] text-zinc-400 py-2 flex items-center justify-between">
             <span>
               Total alocado:{' '}
-              <strong className="text-amber-300 font-mono font-bold">
+              <strong className="text-amber-400 font-mono font-bold">
                 {Object.values(getEffectiveQuotas()).reduce((a, b) => a + b, 0)}
               </strong>{' '}
               de <strong className="text-white font-mono">{resolveCount}</strong> questões
@@ -1898,17 +1908,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               const pct = resolveCount > 0 ? Math.round((currentCount / resolveCount) * 100) : 0;
 
               return (
-                <div key={it.id} className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                <div key={it.id} className="p-2.5 rounded-xl bg-zinc-900/90 border border-zinc-800 space-y-1.5">
                   <div className="flex items-center justify-between text-xs">
                     <div className="flex items-center gap-1.5 truncate max-w-[70%]">
-                      <span className="text-[9.5px] uppercase font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700/60 shrink-0">
+                      <span className="text-[9.5px] uppercase font-bold px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-400 border border-zinc-700/60 shrink-0">
                         {it.category}
                       </span>
-                      <span className="font-semibold text-slate-200 truncate">{it.name}</span>
+                      <span className="font-semibold text-zinc-200 truncate">{it.name}</span>
                     </div>
                     <div className="flex items-center gap-1.5 shrink-0">
                       <span className="text-xs font-mono font-bold text-amber-400">{currentCount} q</span>
-                      <span className="text-[10px] text-slate-500 font-mono">({pct}%)</span>
+                      <span className="text-[10px] text-zinc-500 font-mono">({pct}%)</span>
                     </div>
                   </div>
 
@@ -1919,13 +1929,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       max={resolveCount}
                       value={currentCount}
                       onChange={(e) => handleQuotaChange(it.name, parseInt(e.target.value) || 0)}
-                      className="flex-1 h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                      className="flex-1 h-1.5 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-amber-500"
                     />
                     <div className="flex items-center gap-0.5 shrink-0">
                       <button
                         type="button"
                         onClick={() => handleQuotaChange(it.name, Math.max(0, currentCount - 5))}
-                        className="w-6 h-6 flex items-center justify-center rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                        className="w-6 h-6 flex items-center justify-center rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition-colors cursor-pointer"
                         title="-5 questões"
                       >
                         <Minus className="w-3 h-3" />
@@ -1936,12 +1946,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         max={resolveCount}
                         value={currentCount}
                         onChange={(e) => handleQuotaChange(it.name, parseInt(e.target.value) || 0)}
-                        className="w-11 text-center text-xs font-bold bg-slate-950 border border-slate-700 rounded py-0.5 text-white focus:outline-none"
+                        className="w-11 text-center text-xs font-bold bg-zinc-950 border border-zinc-700 rounded py-0.5 text-white focus:outline-none"
                       />
                       <button
                         type="button"
                         onClick={() => handleQuotaChange(it.name, Math.min(resolveCount, currentCount + 5))}
-                        className="w-6 h-6 flex items-center justify-center rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                        className="w-6 h-6 flex items-center justify-center rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition-colors cursor-pointer"
                         title="+5 questões"
                       >
                         <Plus className="w-3 h-3" />
@@ -1954,11 +1964,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           </div>
 
           {/* Footer do Drawer com Iniciar Imediato */}
-          <div className="pt-2.5 border-t border-slate-800 flex items-center justify-between">
+          <div className="pt-2.5 border-t border-zinc-800 flex items-center justify-between">
             <button
               type="button"
               onClick={() => setIsCotasDrawerOpen(false)}
-              className="text-xs font-medium text-slate-400 hover:text-white cursor-pointer"
+              className="text-xs font-medium text-zinc-400 hover:text-white cursor-pointer"
             >
               Recolher
             </button>
@@ -1987,7 +1997,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       {showAllUfModal && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5"
-          style={{ backgroundColor: isDark ? 'rgba(3, 7, 18, 0.88)' : 'rgba(15, 23, 42, 0.65)', backdropFilter: 'blur(8px)' }}
+          style={{ backgroundColor: isDark ? 'rgba(9, 9, 11, 0.85)' : 'rgba(15, 23, 42, 0.65)', backdropFilter: 'blur(8px)' }}
         >
           <div 
             className="rounded-3xl max-w-4xl w-full p-5 sm:p-6 shadow-2xl flex flex-col bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 text-zinc-900 dark:text-zinc-100"
@@ -1996,24 +2006,24 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             }}
           >
             {/* Header: Ícone + Título + Fechar */}
-            <div className="flex items-center justify-between pb-3.5 border-b border-slate-200 dark:border-slate-800">
+            <div className="flex items-center justify-between pb-3.5 border-b border-zinc-200 dark:border-zinc-800">
               <div className="flex items-center gap-2.5">
                 <MapPin className="w-5 h-5" style={{ color: accentConfig.primaryHex }} />
-                <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight">
+                <h3 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
                   Catálogo de Instituições e Bancas por Estado (UF)
                 </h3>
               </div>
               <button
                 type="button"
                 onClick={() => setShowAllUfModal(false)}
-                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors cursor-pointer"
+                className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors cursor-pointer"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             {/* Abas Horizontais de UF (Todas as 27 UFs + Nacional + Todas) */}
-            <div className="flex flex-wrap items-center gap-1 py-2 border-b border-slate-200 dark:border-slate-800">
+            <div className="flex flex-wrap items-center gap-1 py-2 border-b border-zinc-200 dark:border-zinc-800">
               {UF_LIST.map((uf) => {
                 const isUfActive = selectedUfTab.toLowerCase() === uf.toLowerCase();
                 return (
@@ -2024,7 +2034,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                       isUfActive
                         ? 'text-white shadow-md'
-                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/40 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/40 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800'
                     }`}
                     style={{
                       backgroundColor: isUfActive ? accentConfig.primaryHex : undefined,
@@ -2053,8 +2063,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       onClick={() => toggleInstituicao(item.key)}
                       className={`rounded-2xl p-3.5 flex flex-col justify-between transition-all cursor-pointer border ${
                         isChecked
-                          ? 'border-[accentConfig.primaryHex]'
-                          : 'bg-slate-50 dark:bg-slate-900/60 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
+                          ? 'shadow-xs'
+                          : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
                       }`}
                       style={{
                         backgroundColor: isChecked ? accentConfig.bgRgba : undefined,
@@ -2064,11 +2074,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       {/* Topo do Card: Sigla + Badge UF + Checkbox Quadrado */}
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex items-center gap-1.5">
-                          <span className="text-sm font-bold text-slate-900 dark:text-white tracking-tight">
+                          <span className="text-sm font-bold text-zinc-900 dark:text-white tracking-tight">
                             {item.sigla}
                           </span>
                           <span 
-                            className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-400"
+                            className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-400"
                           >
                             {item.uf}
                           </span>
@@ -2079,7 +2089,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all shrink-0 ${
                             isChecked
                               ? 'text-white'
-                              : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'
+                              : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950'
                           }`}
                           style={{
                             backgroundColor: isChecked ? accentConfig.primaryHex : undefined,
@@ -2091,12 +2101,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       </div>
 
                       {/* Meio: Nome Completo da Instituição */}
-                      <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1 mt-1 font-normal">
+                      <p className="text-xs text-zinc-500 dark:text-zinc-400 line-clamp-1 mt-1 font-normal">
                         {item.nome}
                       </p>
 
-                      {/* Base: Quantidade de Questões em Azul Neon / Destaque */}
-                      <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-2 font-mono">
+                      {/* Base: Quantidade de Questões com a cor do tema */}
+                      <span
+                        className="text-xs font-semibold mt-2 font-mono"
+                        style={{ color: accentConfig.primaryHex }}
+                      >
                         {getInstitutionSupabaseCount(item.sigla, item.key).toLocaleString('pt-BR')} questões
                       </span>
                     </div>
@@ -2106,8 +2119,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </div>
 
             {/* Rodapé do Modal */}
-            <div className="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
-              <span className="text-xs text-slate-500 dark:text-slate-400">
+            <div className="pt-3 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
+              <span className="text-xs text-zinc-500 dark:text-zinc-400">
                 {filters.instituicoes.length}{' '}
                 {filters.instituicoes.length === 1
                   ? 'instituição selecionada'

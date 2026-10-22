@@ -76,7 +76,35 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   modalidade,
   onStartOfficialExam
 }) => {
-  const { accentConfig, mode } = useTheme();
+  const { accentConfig } = useTheme();
+
+  // Animação suave e flat do aproveitamento ao carregar a página (sem pesar o site)
+  const [animatedAccuracy, setAnimatedAccuracy] = useState<number>(0);
+  useEffect(() => {
+    const target = stats.totalAnswered > 0 ? (stats.accuracyRate || 0) : 0;
+    if (target === 0) return;
+    let startTime: number | null = null;
+    const duration = 750; // ms
+    let animId: number;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Curva suave ease-out cubic
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      setAnimatedAccuracy(Number((target * easeOut).toFixed(1)));
+
+      if (progress < 1) {
+        animId = requestAnimationFrame(animate);
+      } else {
+        setAnimatedAccuracy(target);
+      }
+    };
+
+    animId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animId);
+  }, [stats.accuracyRate, stats.totalAnswered]);
 
   // Saudação dinâmica com base no horário
   const getGreeting = () => {
@@ -380,17 +408,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       <section>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
           {/* Card 1: Metas Diárias */}
-          <div className="bento-card bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-4 shadow-xs flex flex-col justify-between space-y-3">
+          <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-[180px] space-y-3.5">
             <div>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center gap-2">
                   <div
-                    className="w-7 h-7 rounded-lg flex items-center justify-center shadow-xs"
+                    className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
                     style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
                   >
-                    <Target className="w-3.5 h-3.5" />
+                    <Target className="w-4 h-4" />
                   </div>
-                  <span className="text-[11px] font-bold text-slate-600 dark:text-zinc-400 uppercase tracking-wider">
+                  <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 uppercase tracking-wider">
                     Metas Diárias
                   </span>
                 </div>
@@ -398,19 +426,19 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 <button
                   type="button"
                   onClick={handleToggleEditGoals}
-                  className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-[10px] font-bold border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-900 text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
+                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer"
                   title="Ajustar metas de questões e tempo"
                 >
-                  <SlidersHorizontal className="w-2.5 h-2.5" />
+                  <SlidersHorizontal className="w-3 h-3" />
                   <span>{isEditingGoals ? 'Fechar' : 'Ajustar'}</span>
                 </button>
               </div>
 
               {isEditingGoals ? (
-                <form onSubmit={handleSaveCustomGoals} className="pt-2 space-y-2 animate-in fade-in duration-150">
+                <form onSubmit={handleSaveCustomGoals} className="pt-2.5 space-y-2 animate-in fade-in duration-150">
                   <div className="grid grid-cols-2 gap-2 text-xs">
                     <div>
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block mb-1">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block mb-1">
                         Questões
                       </label>
                       <input
@@ -419,12 +447,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         max="1000"
                         value={customGoalQuestions}
                         onChange={(e) => setCustomGoalQuestions(Number(e.target.value))}
-                        className="w-full px-2 py-1 rounded-lg border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-900 text-slate-900 dark:text-white font-sans font-bold text-xs focus:outline-none focus:ring-1 focus:ring-zinc-400"
+                        className="w-full px-2 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-900 dark:text-white font-sans font-bold text-xs focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)]"
                         required
                       />
                     </div>
                     <div>
-                      <label className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block mb-1">
+                      <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block mb-1">
                         Tempo (min)
                       </label>
                       <input
@@ -433,7 +461,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         max="1440"
                         value={customGoalTime}
                         onChange={(e) => setCustomGoalTime(Number(e.target.value))}
-                        className="w-full px-2 py-1 rounded-lg border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-900 text-slate-900 dark:text-white font-sans font-bold text-xs focus:outline-none focus:ring-1 focus:ring-zinc-400"
+                        className="w-full px-2 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-900 dark:text-white font-sans font-bold text-xs focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)]"
                         required
                       />
                     </div>
@@ -441,36 +469,36 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   <div className="flex items-center gap-1.5 pt-1">
                     <button
                       type="submit"
-                      className="flex-1 flex items-center justify-center gap-1 py-1 px-2.5 rounded-lg text-xs font-bold text-white shadow-xs transition-opacity hover:opacity-90 cursor-pointer"
+                      className="flex-1 flex items-center justify-center gap-1 py-1.5 px-2.5 rounded-lg text-xs font-bold text-white shadow-xs transition-opacity hover:opacity-90 cursor-pointer"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
-                      <Check className="w-3 h-3" />
+                      <Check className="w-3.5 h-3.5" />
                       <span>Salvar</span>
                     </button>
                     <button
                       type="button"
                       onClick={() => setIsEditingGoals(false)}
-                      className="p-1 rounded-lg border border-slate-200 dark:border-zinc-800 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200"
+                      className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200"
                     >
-                      <X className="w-3 h-3" />
+                      <X className="w-3.5 h-3.5" />
                     </button>
                   </div>
                 </form>
               ) : (
-                <div className="pt-2 grid grid-cols-2 gap-2 divide-x divide-slate-100 dark:divide-zinc-800/80">
-                  <div className="pr-1 space-y-1">
-                    <div className="flex items-center justify-between text-[10px] font-bold text-slate-500 dark:text-zinc-400">
+                <div className="pt-3 grid grid-cols-2 gap-3 divide-x divide-zinc-100 dark:divide-zinc-800/80">
+                  <div className="pr-1 space-y-1.5">
+                    <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
                       <span className="flex items-center gap-1">
-                        <Target className="w-3 h-3" style={{ color: accentConfig.primaryHex }} />
+                        <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                         Questões
                       </span>
-                      <span className="font-sans font-bold text-slate-800 dark:text-zinc-200">
+                      <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs">
                         {todayAnswered}/{dailyGoal}
                       </span>
                     </div>
-                    <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-1.5 overflow-hidden border border-slate-200/60 dark:border-zinc-800">
+                    <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
                       <div
-                        className="h-1.5 rounded-full transition-all duration-500 ease-out"
+                        className="h-2 rounded-full transition-all duration-500 ease-out"
                         style={{
                           width: `${goalPercentage}%`,
                           backgroundColor: accentConfig.primaryHex
@@ -479,22 +507,22 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
                   </div>
 
-                  <div className="pl-2 space-y-1">
-                    <div className="flex items-center justify-between text-[10px] font-bold text-slate-500 dark:text-zinc-400">
+                  <div className="pl-3 space-y-1.5">
+                    <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
                       <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" style={{ color: accentConfig.timeAccent.hex }} />
+                        <Clock className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                         Tempo
                       </span>
-                      <span className="font-sans font-bold text-slate-800 dark:text-zinc-200">
+                      <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs">
                         {todayStudyMinutes}m/{dailyTimeGoal}m
                       </span>
                     </div>
-                    <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-1.5 overflow-hidden border border-slate-200/60 dark:border-zinc-800">
+                    <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
                       <div
-                        className="h-1.5 rounded-full transition-all duration-500 ease-out"
+                        className="h-2 rounded-full transition-all duration-500 ease-out"
                         style={{
                           width: `${timeGoalPercentage}%`,
-                          backgroundColor: accentConfig.timeAccent.hex
+                          backgroundColor: accentConfig.primaryHex
                         }}
                       />
                     </div>
@@ -503,150 +531,170 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               )}
             </div>
 
-            <div className="pt-2 flex items-center justify-between text-[10px] text-slate-500 dark:text-zinc-400 border-t border-slate-100 dark:border-zinc-800/80">
-              <span>Conclusão diária</span>
-              <span className="font-bold text-slate-800 dark:text-zinc-200 font-sans">
+            <div className="pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
+              <span className="text-[11px] font-medium">Conclusão diária</span>
+              <span className="font-bold text-zinc-800 dark:text-zinc-200 font-sans text-xs">
                 {Math.round((goalPercentage + timeGoalPercentage) / 2)}%
               </span>
             </div>
           </div>
 
-          {/* Card 2: Aproveitamento com Acento de Precisão */}
-          <div className="bento-card bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-4 shadow-xs flex flex-col justify-between space-y-3">
+          {/* Card 2: Aproveitamento com Animação Flat e Adaptação ao Tema */}
+          <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-[180px] space-y-3.5">
             <div>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center gap-2">
                   <div
-                    className="w-7 h-7 rounded-lg flex items-center justify-center shadow-xs"
+                    className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
                     style={{
-                      backgroundColor: accentConfig.accuracyAccent.bgRgba,
-                      color: accentConfig.accuracyAccent.hex
+                      backgroundColor: accentConfig.bgRgba,
+                      color: accentConfig.primaryHex
                     }}
                   >
-                    <Award className="w-3.5 h-3.5" />
+                    <Award className="w-4 h-4" />
                   </div>
-                  <span className="text-[11px] font-bold text-slate-600 dark:text-zinc-400 uppercase tracking-wider">
+                  <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 uppercase tracking-wider">
                     Aproveitamento
                   </span>
                 </div>
                 <span
-                  className="text-[10px] px-2 py-0.5 rounded-md font-bold border"
+                  className="text-[10px] px-2.5 py-0.5 rounded-md font-bold border transition-colors"
                   style={{
-                    backgroundColor: accentConfig.accuracyAccent.bgRgba,
-                    borderColor: accentConfig.accuracyAccent.borderRgba,
-                    color: accentConfig.accuracyAccent.hex
+                    backgroundColor: accentConfig.bgRgba,
+                    borderColor: accentConfig.borderRgba,
+                    color: accentConfig.primaryHex
                   }}
                 >
                   Geral
                 </span>
               </div>
 
-              <div className="pt-1.5 flex items-baseline gap-2">
+              <div className="pt-2 flex items-baseline gap-2">
                 <span
                   className="text-2xl sm:text-3xl font-black font-sans tracking-tight"
-                  style={{ color: accentConfig.accuracyAccent.hex }}
+                  style={{ color: accentConfig.primaryHex }}
                 >
-                  {stats.totalAnswered > 0 ? `${stats.accuracyRate.toFixed(1)}%` : '0.0%'}
+                  {stats.totalAnswered > 0 ? `${animatedAccuracy.toFixed(1)}%` : '0.0%'}
                 </span>
-                <span className="text-xs text-slate-400 dark:text-zinc-500 font-medium">acertos</span>
+                <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium">acertos</span>
               </div>
 
-              <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-1.5 overflow-hidden border border-slate-200/60 dark:border-zinc-800 mt-2">
+              <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800 mt-2.5">
                 <div
-                  className="h-1.5 rounded-full transition-all duration-700 ease-out"
+                  className="h-2 rounded-full transition-all duration-700 ease-out"
                   style={{
-                    width: `${Math.min(100, Math.max(0, stats.accuracyRate))}%`,
-                    backgroundColor: accentConfig.accuracyAccent.hex
+                    width: `${Math.min(100, Math.max(0, animatedAccuracy))}%`,
+                    backgroundColor: accentConfig.primaryHex
                   }}
                 />
               </div>
             </div>
 
-            <div className="pt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-zinc-400 border-t border-slate-100 dark:border-zinc-800/80">
-              <span><strong className="font-sans font-bold text-slate-800 dark:text-zinc-200">{stats.totalAnswered}</strong> resolvidas</span>
+            <div className="pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
+              <span className="text-[11px]"><strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{stats.totalAnswered}</strong> resolvidas</span>
               <span
-                className="font-bold font-sans"
-                style={{ color: accentConfig.accuracyAccent.hex }}
+                className="font-bold font-sans text-xs"
+                style={{ color: accentConfig.primaryHex }}
               >
                 {stats.totalCorrect} corretas
               </span>
             </div>
           </div>
 
-          {/* Card 3: Percentil Oficial */}
+          {/* Card 3: Percentil Oficial Destacado e Compacto */}
           <div
-            className="bento-card bg-white dark:bg-[#121215] rounded-2xl p-4 shadow-xs flex flex-col justify-between space-y-3 border transition-all duration-300"
-            style={{
-              borderColor: stats.percentileInfo.status !== 'locked' ? percentileTier.borderRgba : undefined
-            }}
+            className="bento-card bg-white dark:bg-[#121215] rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-[180px] space-y-3.5 border border-zinc-200/90 dark:border-zinc-800 transition-all duration-300"
           >
             <div>
               <div className="flex items-center justify-between">
-                <span className="text-[11px] font-bold text-slate-600 dark:text-zinc-400 uppercase tracking-wider">
-                  Percentil Oficial
-                </span>
-                <span className="text-[10px] font-sans text-slate-500 dark:text-zinc-400 font-bold">
-                  {percentileTier.rangeLabel}
-                </span>
+                <div className="flex items-center gap-2">
+                  <div
+                    className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
+                    style={{
+                      backgroundColor: accentConfig.bgRgba,
+                      color: accentConfig.primaryHex
+                    }}
+                  >
+                    <Medal className="w-4 h-4" />
+                  </div>
+                  <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 uppercase tracking-wider">
+                    Percentil Oficial
+                  </span>
+                </div>
+                {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
+                  <span
+                    className="text-[10px] font-bold font-sans px-2.5 py-0.5 rounded-md border"
+                    style={{
+                      backgroundColor: accentConfig.bgRgba,
+                      borderColor: accentConfig.borderRgba,
+                      color: accentConfig.primaryHex
+                    }}
+                  >
+                    Top {Math.max(1, 100 - (stats.percentileInfo.percentile || 0))}%
+                  </span>
+                ) : (
+                  <span
+                    className="text-[10px] font-bold font-sans px-2 py-0.5 rounded-md border text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900"
+                  >
+                    {percentileTier.rangeLabel}
+                  </span>
+                )}
               </div>
 
               {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
-                <div className="pt-1.5 space-y-2">
-                  <div className="flex items-center gap-2.5">
-                    <div
-                      className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border shadow-xs"
+                <div className="pt-2 space-y-2.5">
+                  <div className="flex items-baseline gap-2.5">
+                    <span
+                      className="text-2xl sm:text-3xl font-black font-sans tracking-tight"
+                      style={{ color: accentConfig.primaryHex }}
+                    >
+                      P{stats.percentileInfo.percentile}
+                    </span>
+                    <span
+                      className="text-xs font-bold px-2 py-0.5 rounded-md border"
                       style={{
-                        backgroundColor: percentileTier.bgRgba,
-                        borderColor: percentileTier.borderRgba,
-                        color: mode === 'light' ? percentileTier.textLight : percentileTier.color
+                        backgroundColor: accentConfig.bgRgba,
+                        borderColor: accentConfig.borderRgba,
+                        color: accentConfig.primaryHex
                       }}
                     >
-                      <Medal className="w-4 h-4 stroke-[2.2]" />
-                    </div>
-                    <div className="min-w-0">
-                      <div
-                        className="text-lg sm:text-xl font-black tracking-tight truncate font-sans"
-                        style={{ color: mode === 'light' ? percentileTier.textLight : percentileTier.textDark }}
-                      >
-                        Nível {percentileTier.name}
-                      </div>
-                    </div>
+                      Nível {percentileTier.name}
+                    </span>
                   </div>
-                  <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-1.5 overflow-hidden border border-slate-200/60 dark:border-zinc-800">
+                  <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
                     <div
-                      className="h-1.5 rounded-full transition-all duration-500"
+                      className="h-2 rounded-full transition-all duration-700 ease-out"
                       style={{
                         width: `${Math.max(5, stats.percentileInfo.percentile || 0)}%`,
-                        backgroundColor: percentileTier.color
+                        backgroundColor: accentConfig.primaryHex
                       }}
                     />
                   </div>
                 </div>
               ) : (
-                <div className="pt-1.5 space-y-2">
-                  <div className="flex items-center gap-2.5">
-                    <div
-                      className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border shadow-xs"
+                <div className="pt-2 space-y-2.5">
+                  <div className="flex items-baseline justify-between">
+                    <div className="flex items-baseline gap-1.5">
+                      <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100">
+                        {stats.percentileInfo.missingForApprox}
+                      </span>
+                      <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">questões restantes</span>
+                    </div>
+                    <span
+                      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold border"
                       style={{
-                        backgroundColor: accentConfig.energyAccent.bgRgba,
-                        borderColor: accentConfig.energyAccent.borderRgba,
-                        color: accentConfig.energyAccent.hex
+                        backgroundColor: accentConfig.bgRgba,
+                        borderColor: accentConfig.borderRgba,
+                        color: accentConfig.primaryHex
                       }}
                     >
-                      <Clock className="w-4 h-4" />
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <div className="text-xs font-bold text-slate-800 dark:text-zinc-200">
-                        Calibrando
-                      </div>
-                      <div className="text-[10px] text-slate-500 dark:text-zinc-400">
-                        Faltam {stats.percentileInfo.missingForApprox} quest.
-                      </div>
-                    </div>
+                      <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: accentConfig.primaryHex }} />
+                      Calibrando
+                    </span>
                   </div>
-                  <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-1.5 overflow-hidden border border-slate-200/60 dark:border-zinc-800">
+                  <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
                     <div
-                      className="h-1.5 rounded-full transition-all duration-500"
+                      className="h-2 rounded-full transition-all duration-700 ease-out"
                       style={{
                         width: `${Math.max(
                           5,
@@ -657,7 +705,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             )
                           )
                         )}%`,
-                        backgroundColor: accentConfig.energyAccent.hex
+                        backgroundColor: accentConfig.primaryHex
                       }}
                     />
                   </div>
@@ -665,35 +713,25 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               )}
             </div>
 
-            <div className="pt-2 flex items-center justify-between text-xs border-t border-slate-100 dark:border-zinc-800/80">
+            <div className="pt-2.5 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80">
               {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
-                <div className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-400 text-[10px]">
-                  <span
-                    className="font-bold font-sans px-1.5 py-0.2 rounded text-[10px] border"
-                    style={{
-                      backgroundColor: percentileTier.bgRgba,
-                      borderColor: percentileTier.borderRgba,
-                      color: mode === 'light' ? percentileTier.textLight : percentileTier.textDark
-                    }}
-                  >
-                    P{stats.percentileInfo.percentile}
-                  </span>
-                  <span>À frente de {stats.percentileInfo.percentile}%</span>
-                </div>
+                <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                  À frente de <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{stats.percentileInfo.percentile}%</strong> dos candidatos
+                </span>
               ) : (
-                <span className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">
-                  Em calibração
+                <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                  Progresso TRI: <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{150 - (stats.percentileInfo.missingForApprox || 150)}/150</strong>
                 </span>
               )}
 
               <button
                 type="button"
                 onClick={() => onNavigate('ranking')}
-                className="text-[11px] font-bold hover:underline cursor-pointer flex items-center gap-0.5 shrink-0 ml-auto"
+                className="text-xs font-bold hover:underline cursor-pointer flex items-center gap-1 shrink-0 ml-auto transition-colors"
                 style={{ color: accentConfig.primaryHex }}
               >
-                <span>Ranking</span>
-                <ArrowRight className="w-3 h-3" />
+                <span>Ranking Oficial</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
           </div>
@@ -1384,9 +1422,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             )}
           </div>
         )}
-      </section>\n\n{/* 4. Acesso Rápido (Cards Compactos com Altura Contida) */}
+      </section>
+
+      {/* 4. Acesso Rápido (Cards Ergonômicos com Tema Dinâmico) */}
       <section className="space-y-2.5">
-        <h3 className="text-[11px] font-bold text-slate-500 dark:text-zinc-500 uppercase tracking-wider px-1">
+        <h3 className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider px-1">
           Acesso Rápido
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3">
@@ -1396,19 +1436,20 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               <button
                 key={card.tab}
                 onClick={() => onNavigate(card.tab as ActiveTab)}
-                className="bento-card text-left bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 p-3 sm:p-3.5 rounded-xl transition-all cursor-pointer flex items-center gap-3 group shadow-xs hover:-translate-y-0.5"
+                className="bento-card text-left bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-300 dark:hover:border-zinc-700 p-3 sm:p-3.5 rounded-xl transition-all cursor-pointer flex items-center gap-3 group shadow-xs hover:-translate-y-0.5"
               >
                 <div
-                  className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 transition-transform group-hover:scale-105"
+                  className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-105 border shadow-2xs"
                   style={{
-                    backgroundColor: `${card.accentColor}18`,
-                    color: card.accentColor
+                    backgroundColor: accentConfig.bgRgba,
+                    borderColor: accentConfig.borderRgba,
+                    color: accentConfig.primaryHex
                   }}
                 >
                   <Icon className="w-4 h-4" />
                 </div>
 
-                <h4 className="font-heading text-xs font-bold text-slate-800 dark:text-zinc-200 group-hover:text-slate-900 dark:group-hover:text-white transition-colors leading-tight truncate">
+                <h4 className="font-heading text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors leading-tight truncate">
                   {card.title}
                 </h4>
               </button>
