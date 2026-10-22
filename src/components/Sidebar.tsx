@@ -13,7 +13,8 @@ import {
   BookOpen,
   PanelLeftClose,
   PanelLeftOpen,
-  ShieldCheck
+  ShieldCheck,
+  AlertOctagon
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
@@ -26,14 +27,17 @@ interface SidebarProps {
   streakDays: number;
   isCollapsed?: boolean;
   onToggleCollapse?: () => void;
+  pendingErrorsCount?: number;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
   activeTab,
   onNavigate,
   modalidade,
+  streakDays,
   isCollapsed = true,
   onToggleCollapse,
+  pendingErrorsCount = 0
 }) => {
   const { accentConfig } = useTheme();
   const { isAdmin } = useAuth();
@@ -41,6 +45,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const menuItems = [
     { id: 'home', label: 'Início', icon: LayoutDashboard },
     { id: 'banco', label: 'Banco de Questões', icon: FileQuestion },
+    {
+      id: 'caderno_erros',
+      label: 'Caderno de Erros',
+      icon: AlertOctagon,
+      badge: pendingErrorsCount > 0 ? pendingErrorsCount : undefined
+    },
     { id: 'listas', label: 'Listas & Pastas', icon: FolderOpen },
     { id: 'provas', label: 'Provas na Íntegra', icon: BookOpen },
     { id: 'simulados', label: 'Simulados Oficiais', icon: ClipboardCheck },
@@ -129,18 +139,37 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 backgroundColor: isActive ? accentConfig.primaryHex : undefined
               }}
             >
-              <Icon
-                className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${
-                  isActive ? 'text-white' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
-                }`}
-              />
+              <div className="relative">
+                <Icon
+                  className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${
+                    isActive ? 'text-white' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
+                  }`}
+                />
+                {isCollapsed && item.badge !== undefined && (
+                  <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-rose-500 ring-2 ring-white dark:ring-[#09090b]" />
+                )}
+              </div>
 
               {!isCollapsed && (
-                <span className={`text-xs font-bold tracking-tight truncate ${
-                  isActive ? 'text-white' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
-                }`}>
-                  {item.label}
-                </span>
+                <>
+                  <span className={`text-xs font-bold tracking-tight truncate ${
+                    isActive ? 'text-white' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
+                  }`}>
+                    {item.label}
+                  </span>
+
+                  {item.badge !== undefined && (
+                    <span
+                      className={`ml-auto text-[10px] font-extrabold px-1.5 py-0.2 rounded-md font-mono ${
+                        isActive
+                          ? 'bg-white/20 text-white'
+                          : 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/25'
+                      }`}
+                    >
+                      {item.badge}
+                    </span>
+                  )}
+                </>
               )}
             </button>
           );

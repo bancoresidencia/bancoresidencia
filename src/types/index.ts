@@ -101,7 +101,35 @@ export interface Question {
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
 export type PeriodFilter = '7d' | '30d' | 'mes' | '6m' | '2026.1' | '2026.2' | 'all';
-export type ActiveTab = 'home' | 'banco' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria';
+export type ActiveTab = 'home' | 'banco' | 'caderno_erros' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria';
+
+export type ErrorReasonType =
+  | 'lacuna_teorica'
+  | 'desatencao'
+  | 'duvida_entre_duas'
+  | 'interpretacao'
+  | 'pegadinha'
+  | 'tempo_esgotado'
+  | 'outro';
+
+export interface UserAnswerItem {
+  letter: 'A' | 'B' | 'C' | 'D' | 'E';
+  isCorrect: boolean;
+  timestamp: number;
+  difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
+  isAnulada: boolean;
+  specialty?: string;
+  tema?: string;
+  foco?: string;
+  subfoco?: string;
+  banca?: string;
+  year?: number | string;
+  code?: string;
+  errorReason?: ErrorReasonType;
+  studentNotes?: string;
+  statusRetrial?: 'pendente' | 'recuperado';
+  lastRetriedAt?: number;
+}
 
 export interface PerformanceFilterState {
   institutions: string[];

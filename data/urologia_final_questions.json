@@ -2584,7 +2584,7 @@
         "explanation": "Incorreta. Infecções do trato urinário (ITU) causam hematúria (geralmente microscópica), mas vêm invariavelmente acompanhadas de sintomas irritativos urinários, como disúria, polaciúria, urgência miccional e, frequentemente, dor suprapúbica ou febre. Uma apresentação puramente de hematúria sem sintomas infecciosos não define ITU como hipótese principal."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa B.\n\nResumo Clínico e Diagnóstico:\nA hematúria macroscópica indolor é o hallmark (sinal cardeal) do câncer de bexiga urinária, ocorrendo em até 80-90% dos pacientes com carcinoma urotelial. Diante de um paciente de 53 anos apresentando hematúria, a investigação com cistoscopia e tomografia computadorizada de vias urinárias é obrigatória para afastar neoplasias malignas uroteliais, independentemente da presença de outros sintomas.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. Embora o cálculo renal (nefrolitíase) possa causar hematúria (geralmente micro ou macroscópica), esta costuma vir acompanhada de dor lombar intensa do tipo cólica nefrética, irradiada para região inguinal. No contexto de hematúria indolor em paciente com mais de 50 anos, a principal suspeita urológica recai sobre neoplasias malignas.\n• Alternativa B: Correta. O carcinoma urotelial (câncer de bexiga) classicamente se manifesta por hematúria macroscópica indolor, intermitente, de início espontâneo, em pacientes tabagistas ou na faixa etária acima de 50 anos. A hematúria macroscópica sem dor associada é o sinal de alerta cardinal para tumores uroteliais (bexiga e trato urinário superior), exigindo investigação imediata com cistoscopia e exames de imagem.\n• Alternativa C: Incorreta. A Hiperplasia Prostática Benigna (HPB) pode cursar com hematúria devido à ruptura de vasos superficiais proeminentes na mucosa prostática congestionada. Contudo, a apresentação clínica da HPB é dominada por sintomas do trato urinário inferior (LUTS), como jato fraco, hesitação, noctúria e esvaziamento incompleto, o que não foi relatado no enunciado.\n• Alternativa D: Incorreta. Infecções do trato urinário (ITU) causam hematúria (geralmente microscópica), mas vêm invariavelmente acompanhadas de sintomas irritativos urinários, como disúria, polaciúria, urgência miccional e, frequentemente, dor suprapúbica ou febre. Uma apresentação puramente de hematúria sem sintomas infecciosos não define ITU como hipótese principal.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro é associar hematúria isoladamente a causas infecciosas ou litíase urinária, negligenciando o fato de que a hematúria macroscópica indolor em pacientes acima de 50 anos é o sinal de alarme clássico para neoplasias urológicas, especialmente o câncer de bexiga.\n\nTake-Home Message (Pérola Prática):\nToda hematúria macroscópica indolor em paciente com mais de 50 anos é câncer de bexiga até que se prove o contrário.\n\nReferências Teóricas:\n• Campbell-Walsh Urology\n• Sabiston Tratado de Cirurgia\n• Diretrizes da Sociedade Brasileira de Urologia (SBU)",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro é associar hematúria isoladamente a causas infecciosas ou litíase urinária, negligenciando o fato de que a hematúria macroscópica indolor em pacientes acima de 50 anos é o sinal de alarme clássico para neoplasias urológicas, especialmente o câncer de bexiga.",
@@ -2594,7 +2594,8 @@
       "Sabiston Tratado de Cirurgia",
       "Diretrizes da Sociedade Brasileira de Urologia (SBU)"
     ],
-    "correct_answer": "B"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "f06603db-407e-486f-83d2-ed73f1b6d89f",
@@ -3202,10 +3203,10 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, 20 anos de idade, dá entrada no pronto socorro com queixa de dor em testículo direito há duas horas. Nega sintomatologia semelhante previamente, porém refere tratamento para gonorreia há um ano. Ao exame físico, bom estado geral, corado, Temperatura axilar: 36,2ºC, FC: 80bpm, PA: 128x78mmHg, FR: 16imp; ausculta cardíaca e respiratória sem alterações; abdome plano, flácido e indolor à palpação; edema leve em bolsa escrotal, dor de forte intensidade à palpação de testículo direito e testículo esquerdo sem alterações. Frente ao caso,Indique o exame complementar mais importante neste momento.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial Definitivo Homologado - SUS Questão 10. Correspondência 100% com caderno de prova oficial.",
     "images": [],
-    "correct_answer": "C",
+    "correct_answer": "",
     "mainErrorReason": "A pegadinha da banca nesta questão reside na interpretação rigorosa do protocolo oficial da alternativa A.",
     "takeHomeMessage": "Atenção ao gabarito oficial: a alternativa correta é a A.",
     "references": [
@@ -3218,7 +3219,8 @@
       "question_number": 10,
       "hits": 15,
       "answer": "C"
-    }
+    },
+    "is_anulada": false
   },
   {
     "id": "519a9966-ec04-47fe-8046-09bfb5d361be",
@@ -4610,7 +4612,7 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, 20 anos de idade, dá entrada no pronto socorro com queixa de dor em testículo direito há duas horas. Nega sintomatologia semelhante previamente, porém refere tratamento para gonorreia há um ano. Ao exame físico, bom estado geral, corado, Temperatura axilar: 36,2ºC, FC: 80bpm, PA: 128x78mmHg, FR: 16imp; ausculta cardíaca e respiratória sem alterações; abdome plano, flácido e indolor à palpação; edema leve em bolsa escrotal, dor de forte intensidade à palpação de testículo direito e testículo esquerdo sem alterações. Frente ao caso,Indique as duas principais suspeitas diagnósticas para o quadro clínico do paciente.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial Definitivo Homologado - SUS Questão 10. Correspondência 100% com caderno de prova oficial.",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro é focar excessivamente na história prévia de infecção sexualmente transmissível (gonorreia) e diagnosticar prontamente apenas orquiepididimite, negligenciando o início hiperagudo (duas horas) e a gravidade da torção testicular, que é uma emergência cirúrgica absoluta em jovens.",
@@ -4619,14 +4621,15 @@
       "Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna",
       "Campbell-Walsh Urologia"
     ],
-    "correct_answer": "C",
+    "correct_answer": "",
     "official_audit": {
       "verified": true,
       "exam_id": "SUS_BA_2022",
       "question_number": 10,
       "hits": 15,
       "answer": "C"
-    }
+    },
+    "is_anulada": false
   },
   {
     "id": "5236edcc-4fb4-4e87-a2e9-7ddf9a902512",
@@ -4700,17 +4703,18 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, com passado de litíase ureteral, comparece ao Pronto Atendimento com dor lombar intensa e hematúria. Realiza tomografia computadorizada que diagnostica litíase ureteral à direita. Após analgesia adequada é necessário a definição de conduta. Diante do exposto, a partir das três condições de consenso para indicação de tratamento intervencional imediato, indique o tratamento intervencional de emergência a ser realizado preferencialmente.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\n\n\nAnálise das Alternativas:\n",
     "images": [],
-    "correct_answer": "A",
+    "correct_answer": "",
     "mainErrorReason": "A pegadinha da banca nesta questão reside na interpretação rigorosa do protocolo oficial da alternativa A.",
     "takeHomeMessage": "Atenção ao gabarito oficial: a alternativa correta é a A.",
     "references": [
       "Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna",
       "Campbell-Walsh Urology",
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Litíase Urinária"
-    ]
+    ],
+    "is_anulada": false
   },
   {
     "id": "d0a6e005-7264-4bd3-a812-ddba4ec6acb2",
@@ -6563,7 +6567,7 @@
     "isAnulada": false,
     "statement": "Homem, 56a, procura Unidade Básica de Saúde com queixa de dificuldade para iniciar micção há oito meses, com piora no último mês. Refere que o jato urinário está mais fraco, mesmo com esforço, e que apresenta gotejamento ao final da micção, além de aumento do número de micções noturnas. Toque retal: próstata fibroelástica, cerca de 45g. PSA total=4ng/mL, PSA livre=0,88ng/mL. CONSIDERANDO A PRINCIPAL HIPÓTESE DIAGNÓSTICA, A CONDUTA INICIAL É:",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nHomem de 56 anos com sintomas obstrutivos e irritativos do trato urinário inferior (LUTS), toque retal demonstrando próstata fibroelástica de 45g e PSA limítrofe (4 ng/mL com relação livre/total de 22%), apresenta quadro clínico clássico de Hiperplasia Prostática Benigna (HPB). O manejo inicial para pacientes sintomáticos sem sinais de alarme ou complicações obstrutivas graves consiste em orientações gerais (modificação de estilo de vida) associadas ao tratamento farmacológico com bloqueadores alfa-1 adrenérgicos, que promovem alívio imediato da resistência ao fluxo na saída da bexiga.\n\nAnálise das Alternativas:\n• Alternativa A: A principal hipótese diagnóstica é Hiperplasia Prostática Benigna (HPB) sintomática, cursando com sintomas do trato urinário inferior (LUTS) obstrutivos e irritativos. Com próstata de 45g (moderadamente aumentada) e PSA total de 4 ng/mL com relação livre/total de 0,22 (22%, o que afasta alto risco imediato de adenocarcinoma, mas exige atenção), a conduta inicial para sintomas moderados a severos inclui modificação de estilo de vida e tratamento farmacológico. Os bloqueadores alfa-adrenérgicos (como tansulosina, doxazosina) são a primeira linha por relaxarem o músculo liso do colo vesical e da próstata, proporcionando alívio rápido dos sintomas.\n• Alternativa B: A prostatectomia cirúrgica (seja aberta, endoscópica como RTU de próstata ou a laser) não é a conduta inicial para um paciente sem complicações absolutas (como retenção urinária refratária, insuficiência renal obstrutiva, hematúria macroscópica recorrente ou cálculos vesicais). O tratamento cirúrgico é reservado para falha, intolerância ao tratamento clínico ou complicações da HPB.\n• Alternativa C: Acompanhamento expectante (vigilância ativa) é indicado para pacientes com sintomas leves (IPSS de 0 a 7) que não prejudicam a qualidade de vida. O paciente do caso apresenta sintomas moderados a graves (dificuldade importante, jato fraco, gotejamento, nictúria), o que demanda intervenção farmacológica ativa e não apenas seguimento sem tratamento.\n• Alternativa D: O uso isolado de inibidores da 5-alfa-redutase (como finasterida ou dutasterida) reduz o volume prostático e o risco de retenção aguda de urina, mas seu início de ação é lento (leva meses para melhora sintomática significativa) e são indicados preferencialmente para próstatas maiores que 40g associadas a sintomas moderados/graves, muitas vezes em terapia combinada com alfa-bloqueadores. Para o alívio sintomático inicial rápido e eficaz, os alfa-bloqueadores são a escolha primária.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a confusão entre o tratamento de primeira linha para alívio sintomático rápido (alfa-bloqueadores) versus o uso de inibidores da 5-alfa-redutase ou indicação cirúrgica precoce, ignorando que a terapia clínica inicial com bloqueadores adrenérgicos é o padrão-ouro para pacientes sintomáticos sem complicações absolutas.\n\nTake-Home Message (Pérola Prática):\nNa HPB sintomática sem complicações, o tratamento farmacológico inicial de escolha para alívio rápido dos sintomas são os alfa-bloqueadores, reservando-se cirurgias ou inibidores da 5-alfa-redutase para indicações específicas.\n\nReferências Teóricas:\n• Campbell-Walsh Urology\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Hiperplasia Prostática Benigna\n• Sabiston Tratado de Cirurgia",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre o tratamento de primeira linha para alívio sintomático rápido (alfa-bloqueadores) versus o uso de inibidores da 5-alfa-redutase ou indicação cirúrgica precoce, ignorando que a terapia clínica inicial com bloqueadores adrenérgicos é o padrão-ouro para pacientes sintomáticos sem complicações absolutas.",
@@ -6573,7 +6577,8 @@
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Hiperplasia Prostática Benigna",
       "Sabiston Tratado de Cirurgia"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "62f3d1b0-033f-4e22-90c5-3492c95c13f5",
@@ -8083,7 +8088,7 @@
         "explanation": "Falsa e absurda do ponto de vista ético e legal, sendo portanto a alternativa incorreta solicitada pelo enunciado. A conduta médica de urgência em um quadro de escroto agudo (especialmente com suspeita de torção testicular, embora aqui o caso seja de epididimite) não pode ser negligenciada ou postergada indefinidamente, e a comunicação clara com o paciente e seus familiares é um dever ético intransigível, sendo inadmissível omitir informações ou aguardar dias por avaliações em um cenário agudo."
       }
     ],
-    "correctAnswer": "E",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa E.\n\nResumo Clínico e Diagnóstico:\nO caso clínico apresenta um paciente do sexo masculino, de 40 anos, com dor testicular de início insidioso, progressão há um dia, associada a sintomas urinários (disúria), hiperemia escrotal, dor localizada e endurecimento do epidídimo, com reflexo cremastérico presente. Esses achados apontam fortemente para um processo inflamatório/infeccioso (orquiepididimite) em detrimento da torção testicular (que tipicamente cursa com dor de início súbito, ausência de reflexo cremastérico e ausência de sintomas urinários). A questão aborda o escroto agudo na cirurgia e exige que o candidato identifique a alternativa incorreta, que é a letra E, por violar princípios éticos fundamentais da relação médico-paciente e da conduta de urgência/emergência.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta no contexto da questão, pois o enunciado descreve um quadro clássico de epididimite (início insidioso, disúria, endurecimento do epidídimo, reflexo cremastérico presente). Além disso, o Sinal de Prehn positivo (alívio da dor com a elevação do testículo) é tipicamente associado à epididimite e não à torção testicular, embora sua acurácia seja limitada na prática clínica.\n• Alternativa B: Verdadeira quanto ao conceito médico. O sinal de Angel (alteração da posição do testículo torcido, que se apresenta mais alto e horizontalizado devido ao encurtamento do cordão espermático) é um achado descrito na literatura para a torção testicular.\n• Alternativa C: Verdadeira. A orquidopexia bilateral (fixação do testículo afetado e também do testículo contralateral) é o padrão-ouro na cirurgia de torção testicular, visando prevenir a torção do testículo contralateral, que possui a mesma anomalia anatômica predisponente (deformidade em badalo de sino).\n• Alternativa D: Verdadeira quanto ao conceito médico. O sinal de Brunzel descreve a posição horizontalizada do testículo na torção testicular.\n• Alternativa E: Falsa e absurda do ponto de vista ético e legal, sendo portanto a alternativa incorreta solicitada pelo enunciado. A conduta médica de urgência em um quadro de escroto agudo (especialmente com suspeita de torção testicular, embora aqui o caso seja de epididimite) não pode ser negligenciada ou postergada indefinidamente, e a comunicação clara com o paciente e seus familiares é um dever ético intransigível, sendo inadmissível omitir informações ou aguardar dias por avaliações em um cenário agudo.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é focar excessivamente apenas nos sinais semiológicos clássicos (Prenh, Angel, Brunzel) e negligenciar a leitura atenta da alternativa E, que contém um absurdo ético e de conduta médica inaceitável em qualquer circunstância (atrasar indefinidamente o atendimento e omitir informações do paciente).\n\nTake-Home Message (Pérola Prática):\nNo escroto agudo, a torção testicular é uma emergência cirúrgica que exige destreza e rapidez, enquanto a epididimite cursa frequentemente com disúria e reflexo cremastérico presente; em qualquer cenário, a ética médica proíbe a omissão de informações e a negligência na condução do caso.\n\nReferências Teóricas:\n• Sabiston Tratado de Cirurgia\n• Campbell-Walsh Urology",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é focar excessivamente apenas nos sinais semiológicos clássicos (Prenh, Angel, Brunzel) e negligenciar a leitura atenta da alternativa E, que contém um absurdo ético e de conduta médica inaceitável em qualquer circunstância (atrasar indefinidamente o atendimento e omitir informações do paciente).",
@@ -8092,7 +8097,8 @@
       "Sabiston Tratado de Cirurgia",
       "Campbell-Walsh Urology"
     ],
-    "correct_answer": "E"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "e09a6505-d6e2-4d66-ade6-b4b88ee99da9",
@@ -8111,7 +8117,7 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, com passado de litíase ureteral, comparece ao pronto atendimento com dor lombar intensa e hematúria. Realiza tomografia computadorizada que diagnostica litíase ureteral à direita. Após analgesia adequada, é necessária a definição de conduta. Diante do exposto, cite três condições de consenso para indicação de tratamento intervencionista imediato no caso.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nA litíase urinária sintomática é uma das apresentações mais comuns no pronto-socorro. A conduta inicial baseia-se na adequada analgesia (AINEs e opioides) e hidratação. No entanto, a presença de complicações ou riscos iminentes à função renal e à vida do paciente obriga a intervenção urológica imediata (urgência). As três principais condições de consenso são: infecção urinária associada à obstrução (pielonefrite obstrutiva), insuficiência renal aguda obstrutiva (sobretudo em rim único ou bilateral) e dor intratável refratária ao tratamento farmacológico máximo, além de vômitos persistentes.\n\nAnálise das Alternativas:\n• Alternativa A: As principais indicações de tratamento intervencionista de urgência (descompressão com duplo J ou nefrostomia percutânea, ou ureterolitotripsia imediata) na litíase ureteral obstrutiva são: 1) Infecção do trato urinário associada à obstrução (pielonefrite obstrutiva, uma verdadeira emergência urológica com risco de sepse); 2) Rim único obstruído ou transplante renal com obstrução; 3) Insuficiência renal aguda obstrutiva (geralmente bilateral ou em rim único); 4) Dor refratária à analgesia otimizada; e 5) Vômitos incoercíveis ou íleo reflexo persistente.\n• Alternativa B: Distrator conceitual abordado apenas parcialmente ou incorretamente na formulação de bancas discursivas/de múltipla escolha que exigem o conhecimento estrito das diretrizes urológicas da Sociedade Brasileira de Urologia (SBU) e da American Urological Association (AUA).\n• Alternativa C: Distrator conceitual que mistura critérios de exclusão ou de seguimento clínico conservador (como cálculos < 5-6mm sem sinais de gravidade) com indicações cirúrgicas.\n• Alternativa D: Distrator que cita achados isolados (como hematúria microscópica isolada ou dor lombar controlada) que não constituem, por si só, indicação de intervenção urológica de urgência.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é confundir o tratamento conservador padrão (espera pela eliminação espontânea de cálculos menores com terapia expulsiva) com as situações de emergência urológica que exigem descompressão ou intervenção imediata, esquecendo-se da tríade clássica: infecção, rim único/falência renal e dor refratária.\n\nTake-Home Message (Pérola Prática):\nCalculo renal obstrutivo associado a febre/infecção ou anúria/insuficiência renal é uma emergência urológica absoluta: descomprimir a via urinária é prioridade máxima para salvar o rim e a vida do paciente.\n\nReferências Teóricas:\n• Sociedade Brasileira de Urologia (SBU) - Diretrizes de Litíase Urinária\n• Campbell-Walsh Urology\n• Sabiston Tratado de Cirurgia",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir o tratamento conservador padrão (espera pela eliminação espontânea de cálculos menores com terapia expulsiva) com as situações de emergência urológica que exigem descompressão ou intervenção imediata, esquecendo-se da tríade clássica: infecção, rim único/falência renal e dor refratária.",
@@ -8121,7 +8127,8 @@
       "Campbell-Walsh Urology",
       "Sabiston Tratado de Cirurgia"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "26aa88d5-a143-46f2-98dd-aee21641154f",
@@ -8392,7 +8399,7 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, 25 anos de idade, é trazido pelo SAMU ao pronto socorro do Hospital Geral, vítima de trauma auto x auto, há 30 minutos. Paciente dá entrada com colar cervical e prancha rígida, referindo dor em região púbica. No exame inicial,A: Via aérea pérvia, SatO₂: 98% com cateter de O₂:15L/min;B: murmúrios vesiculares bem distribuídos e sem ruídos adventícios, FR:16ipm; C: Bulhas rítmicas e normofonéticas, FC: 80bpm, PA: 120x70mmHg, abdome com dor à palpação em hipogástrio, pelve estável e toque retal sem alterações;D: escala de coma de Glasgow:15, pupilas isocóricas e fotorreagentes;E: presença de equimose em abdome inferior. Realizado sondagem vesical de demora com saída de urina avermelhada.Identifique o exame complementar mais adequado que pode auxiliar na confirmação do diagnóstico.\\n",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nO paciente é vítima de trauma fechado (auto x auto) com dor em região púbica, equimose em abdome inferior e hematúria macroscópica após sondagem vesical. A tríade de dor suprapúbica, hematúria macroscópica e incapacidade de urinar (ou alteração na coloração da urina) após trauma pélvico sugere fortemente lesão vesical. Como o paciente foi sondado com sucesso, a uretra foi transposta, afastando inicialmente lesão uretral grave que impedisse a sondagem. O exame padrão-ouro para confirmar a ruptura da bexiga é a cistografia retrógrada (que pode ser convencional ou por tomografia, preenchendo a bexiga com pelo menos 300-350 mL de contraste diluído e realizando imagens com contraste e pós-drenagem).\n\nAnálise das Alternativas:\n• Alternativa A: A cistografia retrógrada (ou cistografia por tomografia computadorizada) é o exame padrão-ouro para o diagnóstico de ruptura da bexiga. No contexto de trauma pélvico e uretra pérvia (com passagem de sonda, embora a hematúria macroscópica e a dor suprapúbica sugieran lesão vesical), a presença de extravasamento de contraste confirma a ruptura vesical, podendo ser intraperitoneal ou extraperitoneal.\n• Alternativa B: A uretrografia retrógrada é o exame indicado para avaliar lesões uretrais (suspeitadas por sangue no meato uretral, incapacidade de urinar ou próstata ascencionada ao toque retal). Como o paciente já foi sondado com sucesso (com saída de urina avermelhada), a uretra anterior e posterior já se mostraram pérvias e sem grandes rupturas que contra-indiquem a passagem da sonda, tornando a uretrografia desnecessária neste momento.\n• Alternativa C: A ultrassonografia FAST (Focused Assessment with Sonography for Trauma) é excelente para a detecção de líquido livre na cavidade abdominal em pacientes hachados, mas possui baixa sensibilidade para o diagnóstico específico de lesões de órgãos retroperitoneais, pelve e bexiga, não sendo o exame de escolha para confirmar ruptura vesical.\n• Alternativa D: A tomografia computadorizada de abdome e pelve com contraste é um excelente exame para politraumatizados estáveis, mas para a avaliação definitiva de ruptura vesical é mandatório o preenchimento adequado da bexiga com contraste por via retrógrada (cistografia TC). Uma TC de abdome padrão sem fase cistográfica retrógrada dedicada pode deixar passar pequenas roturas vesicais.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a confusão entre os exames de imagem para o trato urinário inferior: indicar a uretrografia retrógrada (exame para uretra) em vez da cistografia retrógrada (exame para bexiga), ou achar que a passagem bem-sucedida da sonda vesical exclui qualquer necessidade de investigação complementar.\n\nTake-Home Message (Pérola Prática):\nDiante de suspeita de lesão vesical no trauma, o exame padrão-ouro é a cistografia retrógrada (com enchimento vesical adequado). Lembre-se: Uretra = Uretrografia retrógrada; Bexiga = Cistografia retrógrada.\n\nReferências Teóricas:\n• ATLS: Advanced Trauma Life Support - Student Course Manual. 10th ed. American College of Surgeons\n• Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna. 20ª ed.",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre os exames de imagem para o trato urinário inferior: indicar a uretrografia retrógrada (exame para uretra) em vez da cistografia retrógrada (exame para bexiga), ou achar que a passagem bem-sucedida da sonda vesical exclui qualquer necessidade de investigação complementar.",
@@ -8401,7 +8408,8 @@
       "ATLS: Advanced Trauma Life Support - Student Course Manual. 10th ed. American College of Surgeons",
       "Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna. 20ª ed."
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "9a9b8eb5-944b-484d-a7d4-d9b0c36d6f75",
@@ -10625,7 +10633,7 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, 25 anos de idade, é trazido pelo SAMU ao pronto socorro do Hospital Geral, vítima de trauma auto x auto, há 30 minutos. Paciente dá entrada com colar cervical e prancha rígida, referindo dor em região púbica. No exame inicial,A: Via aérea pérvia, SatO₂: 98% com cateter de O₂:15L/min;B: murmúrios vesiculares bem distribuídos e sem ruídos adventícios, FR:16ipm; C: Bulhas rítmicas e normofonéticas, FC: 80bpm, PA: 120x70mmHg, abdome com dor à palpação em hipogástrio, pelve estável e toque retal sem alterações;D: escala de coma de Glasgow:15, pupilas isocóricas e fotorreagentes;E: presença de equimose em abdome inferior. Realizado sondagem vesical de demora com saída de urina avermelhada.Indique a conduta terapêutica mais adequada, caso o exame complementar apresente alteração intra-peritoneal.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nO caso descreve um paciente vítima de trauma contuso (acidente automobilístico) que apresenta hematúria macroscópica após sondagem vesical, achado clássico de lesão do trato urinário inferior. O enunciado especifica que o exame complementar (cistografia retrógrada ou tomografia com fase tardia) evidenciou alteração intra-peritoneal. As rupturas vesicais intraperitoniais ocorrem geralmente por um golpe direto em uma bexiga repleta, fazendo com que o domo vesical (sua parte mais frágil e recoberta por peritônio) se rompa e extravase urina para a cavidade peritoneal. Devido ao risco de peritonite química e infecção, o tratamento de escolha é a laparotomia exploradora com rafia da bexiga. Por outro lado, as rupturas extraperitoniais comumente associadas a fraturas de pelve podem ser manejadas conservadoramente apenas com sondagem vesical prolongada.\n\nAnálise das Alternativas:\n• Alternativa A: A conduta padrão para rotura intraperitoneal da bexiga decorrente de trauma contuso é o tratamento cirúrgico imediato (laparotomia exploradora), com rafia da lesão vesical em planos e drenagem adequada da cavidade e do espaço pré-vesical (Retzius). Lesões intraperitoniais extravasam urina para a cavidade abdominal e não cicatrizam espontaneamente apenas com sondagem vesical, diferentemente das lesões extraperitoniais.\n• Alternativa B: A observação isolada é indicada apenas para rupturas vesicais extraperitoniais simples e sem outras indicações de laparotomia. Em lesões intraperitoniais, a permanência da urina e da ureia na cavidade peritoneal pode causar peritonite química, íleo paralítico e sepse, sendo a cirurgia mandatória.\n• Alternativa C: A cistostomia percutânea não substitui o tratamento cirúrgico da rotura intraperitoneal, pois o extravasamento urinário livre na cavidade abdominal persiste, mantendo o risco de infecção grave e peritonite química.\n• Alternativa D: Apenas a antibioticoterapia não resolve o extravasamento urinário contínuo para a cavidade peritoneal. A intervenção cirúrgica aberta (laparotomia) é o padrão-ouro para reparo primário da parede vesical lesada intraperitonealmente.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é confundir o manejo da ruptura vesical intraperitoneal com a extraperitoneal. Alunos frequentemente generalizam que toda lesão vesical por trauma contuso pode ser tratada de forma conservadora (apenas com sondagem vesical de demora), esquecendo-se de que a ruptura intraperitoneal exige sempre abordagem cirúrgica (laparotomia para rafia).\n\nTake-Home Message (Pérola Prática):\nBexiga intraperitoneal rota é cirurgia (laparotomia e rafia); bexiga extraperitoneal rota, em sua grande maioria, é conservadora (apenas sondagem vesical).\n\nReferências Teóricas:\n• Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna\n• ATLS: Advanced Trauma Life Support - Student Course Manual\n• Diretrizes de Urologia da Sociedade Brasileira de Urologia (SBU)",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir o manejo da ruptura vesical intraperitoneal com a extraperitoneal. Alunos frequentemente generalizam que toda lesão vesical por trauma contuso pode ser tratada de forma conservadora (apenas com sondagem vesical de demora), esquecendo-se de que a ruptura intraperitoneal exige sempre abordagem cirúrgica (laparotomia para rafia).",
@@ -10635,7 +10643,8 @@
       "ATLS: Advanced Trauma Life Support - Student Course Manual",
       "Diretrizes de Urologia da Sociedade Brasileira de Urologia (SBU)"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "b55af8a4-1a9c-45bd-a128-ce4b3c0ae46e",
@@ -11122,7 +11131,7 @@
     "isAnulada": false,
     "statement": "Homem, 33 anos de idade, vem à UPA com queixa de dor lombar à esquerda, de forte intensidade há 1 hora, associada a náuseas e um episódio emético. Refere ter apresentado 4 episódios semelhantes nos últimos 10 dias. Ao exame físico, paciente em regular estado geral, temperatura axilar: 38°C, pulso: 110bpm, pressão arterial: 150X90mmHg. RCR em 2T, BNF sem sopros, MVF sem RA. Abdome flácido, doloroso à palpação de flanco esquerdo, sem visceromegalias, sinal de Giordano positivo. Realizados exames que apresentam Hb: 15,5; HT: 36; leucócitos: 15000 com 13% de bastões. Sumário de urina: hemoglobina +, nitritos +, sedimento 35 piócitos/campo, 25 hemácias/campo. Realizou TC sem contraste de abdome. Frente ao quadro descrito e à TC realizada, além do tratamento clínico, indique o procedimento terapêutico necessário no momento.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nO caso ilustra uma urgência urológica clássica e temida: a pielonefrite obstrutiva. Paciente com litíase urinária que evolui com febre, taquicardia, leucocitose com desvio à esquerda e alterações no sumário de urina (piúria, hemácia, nitrito) associadas a sinais de obstrução renal (dor lombar intensa e sinal de Giordano positivo) tem indicação imediata de descompressão do trato urinário (cateter duplo J ou nefrostomia percutânea), além de antibioticoterapia parenteral de largo espectro. Aguardar a eliminação espontânea do cálculo ou tentar procedimentos definitivos sem a drenagem prévia coloca a vida do paciente em risco iminente de urossepse e choque séptico.\n\nAnálise das Alternativas:\n• Alternativa A: Correta. O paciente apresenta cólica nefrética associada a sinais claros de infecção do trato urinário superior e SIRS (febre de 38°C, taquicardia de 110 bpm, leucocitose de 15.000 com desvio à esquerda de 13% de bastões, além de nitrito positivo e piúria). Isso configura uma emergência urológica absoluta: pielonefrite obstrutiva. O tratamento requer descompressão urgente do sistema coletor por meio de passagem de cateter duplo J (JJ) ou nefrostomia percutânea, associada a antibioticoterapia venosa.\n• Alternativa B: Incorreta. A litotripsia extracorpórea por ondas de choque (LEOC) é um tratamento eletivo para cálculos renais ou ureterais de pequeno/médio porte em pacientes estáveis e sem infecção. Realizar LEOC na vigência de obstrução infectada é uma contraindicação absoluta, pois pode disseminar a infecção e precipitar um choque séptico grave.\n• Alternativa C: Incorreta. A ureterolitotripsia endoscópica é um excelente método para tratamento de cálculos ureterais, mas em vigência de sepse urinária (pielonefrite obstrutiva), a prioridade imediata é a descompressão urgente (drenagem) do sistema coletor. Procedimentos endoscópicos eletivos ou definitivos na fase aguda infecciosa aumentam drasticamente o risco de urossepse grave.\n• Alternativa D: Incorreta. O tratamento puramente clínico com analgesia, hidratação e antibioticoterapia é insuficiente e inadequado para uma emergência urológica com obstrução infectada. A presença de pus sob pressão a montante de um cálculo obstrutivo exige descompressão mecânica urgente (cateterismo JJ ou nefrostomia). Apenas o tratamento clínico sem descompressão apresenta altíssima mortalidade por choque séptico.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro é focar apenas no tratamento do cálculo renal (como indicar litotripsia ou ureterolitotripsia para resolver a pedra) e negligenciar a gravidade da infecção associada, esquecendo-se de que a infecção do trato urinário com obstrução é uma emergência cirúrgica que exige descompressão imediata.\n\nTake-Home Message (Pérola Prática):\nCólica nefrética com febre e leucocitose é pielonefrite obstrutiva: emergência urológica que exige descompressão urgente (Cateter JJ ou Nefrostomia) antes de qualquer tratamento definitivo para o cálculo.\n\nReferências Teóricas:\n• Sabiston Tratado de Cirurgia\n• Campbell-Walsh Urology\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Litíase Urinária",
     "images": [
       "/images/questoes/urologia/b8fb1af3-270b-4252-94f1-355092bd4e6a_1.webp"
@@ -11134,7 +11143,8 @@
       "Campbell-Walsh Urology",
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Litíase Urinária"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "2f54533b-fbaa-477a-bb03-efb1e39a019e",
@@ -11389,7 +11399,7 @@
         "explanation": "A braquiterapia (radioterapia intersticial) é uma modalidade de tratamento definitivo com intenção curativa indicada para pacientes com câncer de próstata localizado de baixo risco e, selecionadamente, de risco intermediário favorável (Gleason 3+4, volume prostático adequado, sem sintomas obstrutivos urinários severos), sendo perfeitamente cabível neste caso."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa B.\n\nResumo Clínico e Diagnóstico:\nO paciente é um homem de 60 anos, hígido, com adenocarcinoma de próstata localizado (estágio clínico T1c, PSA 5,5 ng/mL, toque retal normal) e esfregaço anatomopatológico demonstrando escore de Gleason 7 (3+4). Pela classificação de risco da AUA/NCCN, este paciente enquadra-se no grupo de risco intermediário (Gleason 7, PSA entre 10 e 20 ou estadiamento T2b/T2c). As opções de tratamento para o câncer de próstata localizado de risco intermediário com expectativa de vida > 10 anos incluem prostatectomia radical, radioterapia externa e braquiterapia. A vigilância ativa é restrita a pacientes de muito baixo e baixo risco (Gleason 6). Portanto, a vigilância ativa não deve ser oferecida a este paciente, tornando-se a exceção correta.\n\nAnálise das Alternativas:\n• Alternativa A: A observação (watchful waiting) era historicamente indicada para pacientes com adenocarcinoma de próstata de baixo risco ou expectativa de vida limitada (< 10 anos), focando no tratamento paliativo dos sintomas caso ocorressem. Embora hoje seja mais restrita para pacientes idosos com comorbidades graves, à época da prova era considerada como opção de manejo conservador para o espectro de pacientes com doença localizada, diferenciando-se da vigilância ativa que tem intuito curativo.\n• Alternativa B: Incorreta (Gabarito da exceção). A vigilância ativa (active surveillance) é indicada exclusivamente para pacientes com câncer de próstata de MUITO BAIXO ou BAIXO RISCO (Gleason 6 ou 3+4 em casos muito restritos atuais, mas na época estritamente Gleason 3+3 = 6, estadiamento T1c/T2a, PSA < 10 e baixo volume tumoral). Como o paciente em questão apresenta Gleason 7 (3+4) - grupo de risco intermediário desfavorável/favorável com envolvimento de padrão 4 - a vigilância ativa clássica não é recomendada, pois há risco expressivo de progressão e metástase, sendo indicadas terapias com intenção curativa.\n• Alternativa C: A prostatectomia radical (cirurgia) é uma opção terapêutica padrão com intenção curativa para pacientes com câncer de próstata localizado de risco intermediário (como este paciente com Gleason 3+4=7, T1c, PSA 5,5) e expectativa de vida superior a 10 anos (paciente hígido de 60 anos).\n• Alternativa D: A radioterapia externa associada ou não à hormonioterapia é uma modalidade terapêutica com intenção curativa altamente estabelecida e perfeitamente aplicável para o adenocarcinoma de próstata localizado de risco intermediário, sendo uma alternativa válida à cirurgia.\n• Alternativa E: A braquiterapia (radioterapia intersticial) é uma modalidade de tratamento definitivo com intenção curativa indicada para pacientes com câncer de próstata localizado de baixo risco e, selecionadamente, de risco intermediário favorável (Gleason 3+4, volume prostático adequado, sem sintomas obstrutivos urinários severos), sendo perfeitamente cabível neste caso.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro é confundir os critérios de elegibilidade para a Vigilância Ativa. Muitos estudantes acreditam que qualquer tumor de baixo volume (apenas 1 fragmento acometido com 20%) e PSA baixo permite vigilância ativa, negligenciando o fato de que a presença do padrão 4 de Gleason (escore 3+4=7) classifica o tumor como de risco intermediário, contraindicando a conduta conservadora curativa estrita da vigilância ativa clássica.\n\nTake-Home Message (Pérola Prática):\nPresença de Gleason 4 (Escore 3+4=7) classifica o câncer de próstata como risco intermediário, afastando a vigilância ativa como primeira escolha e exigindo tratamento com intenção curativa (cirurgia ou radioterapia).\n\nEvolução de Diretrizes & Contexto Histórico da Banca:\nHistoricamente, o escore de Gleason 7 (3+4) sempre foi considerado risco intermediário, contraindicando a vigilância ativa padrão. Nos últimos anos, diretrizes recentes têm admitido protocolos estritos de vigilância ativa em pacientes selecionados com Gleason 3+4 de baixo volume (< 10% de padrão 4, com baixa extensão em biópsias seriadas), mas para as provas de residência médica tradicionais e baseadas no contexto clássico da questão, o Gleason 7 permanece firmemente fora dos critérios de elegibilidade para vigilância ativa.\n\nReferências Teóricas:\n• Campbell-Walsh Urologia\n• Sabiston Tratado de Cirurgia\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) para Câncer de Próstata\n• NCCN Clinical Practice Guidelines in Oncology: Prostate Cancer",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro é confundir os critérios de elegibilidade para a Vigilância Ativa. Muitos estudantes acreditam que qualquer tumor de baixo volume (apenas 1 fragmento acometido com 20%) e PSA baixo permite vigilância ativa, negligenciando o fato de que a presença do padrão 4 de Gleason (escore 3+4=7) classifica o tumor como de risco intermediário, contraindicando a conduta conservadora curativa estrita da vigilância ativa clássica.",
@@ -11401,7 +11411,8 @@
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) para Câncer de Próstata",
       "NCCN Clinical Practice Guidelines in Oncology: Prostate Cancer"
     ],
-    "correct_answer": "B"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "f8e9ea17-8874-4911-a714-77eb75d7cdef",
@@ -11811,7 +11822,7 @@
         "explanation": "Incorreta. A videolaparoscopia diagnóstica é indicada em traumas abdominais penetrantes ou fechados com peritonite ou instabilidade hemodinâmica refratária com foco incerto (após FAST duvidoso), não tendo papel na avaliação inicial isolada do trato urinário baixo (uretra e bexiga) frente a sinais de lesão uretral."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "B",
     "commentary": "Gabarito Oficial Definitivo Homologado - SUS Questão 3. Correspondência 100% com caderno de prova oficial.",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre os exames de imagem do trato urinário, optando erroneamente pela tomografia computadorizada com contraste (que avalia prioritariamente parênquima renal e bexiga via fase excretora, mas possui baixa sensibilidade para a uretra isoladamente na fase aguda) ou tentar o cateterismo vesical de rotina.",
@@ -11820,7 +11831,7 @@
       "ATLS: Advanced Trauma Life Support - Student Course Manual, 10ª Edição, American College of Surgeons",
       "Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna, 21ª Edição"
     ],
-    "correct_answer": "C",
+    "correct_answer": "B",
     "official_audit": {
       "verified": true,
       "exam_id": "SUS_BA_2024",
@@ -11830,7 +11841,8 @@
     },
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Trauma Abdominal e Pélvico.pdf.json"
+    "official_book": "Trauma Abdominal e Pélvico.pdf.json",
+    "is_anulada": false
   },
   {
     "id": "99c478f0-7e00-4e5d-a8a7-0246b9bb8cf7",
@@ -11949,7 +11961,7 @@
     "isAnulada": false,
     "statement": "Homem de 25 anos de idade apresenta massa testicular esquerda sólida com hipótese inicial de câncer testicular.Qual é o primeiro local de metástases deste tumor?Quais são os marcadores sanguíneos utilizados para o diagnóstico e estadiamento do câncer testicular?",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nO câncer testicular é a neoplasia mais comum em homens jovens entre 15 e 35 anos. Devido à descida embriológica dos testículos a partir da crista genital posterior, a drenagem linfática primária ocorre obrigatoriamente para os linfonodos retroperitoneais (para-aórticos à esquerda e paracavais/interaortocavais à direita). A disseminação hematogênica subsequente acomete com mais frequência os pulmões. Os marcadores tumorais (AFP, hCG e LDH) são pilares na avaliação inicial: a AFP é produzida exclusivamente por tumores não seminomatosos (componentes do saco vitelino), o hCG pode estar elevado em não seminomas e seminomas (se houver células sinciciotrofoblásticas), e a LDH reflete a carga tumoral e a taxa de proliferação celular. O diagnóstico definitivo requer orquiectomia radical via inguinal — biópsias escrotais são contraindicadas pelo risco de alteração do fluxo linfático e disseminação.\n\nAnálise das Alternativas:\n• Alternativa A: Esta opção descreve corretamente que o primeiro local de drenagem linfática e metástase dos tumores testiculares é o retroperitônio (linfonodos para-aórticos à esquerda e interaortocavais/paracavais à direita), devido à embriologia testicular (os testículos originam-se na parede posterior do abdômen e descem para o escroto). Além disso, cita corretamente os marcadores tumorais séricos essenciais: Alfafetoproteína (AFP), Gonadotrofina Coriônica Humana (hCG) e Lactato Desidrogenase (LDH), fundamentais para diagnóstico, estadiamento, prognóstico e seguimento pós-tratamento.\n• Alternativa B: Incorreta por citar locais de metástases hematogênicas iniciais incorretas (como fígado ou pulmões isolados sem o acometimento retroperitoneal prévio) ou marcadores inadequados.\n• Alternativa C: Incorreta por apontar locais de drenagem inguinal (que só ocorrem se houver invasão da bolsa escrotal ou cirurgia prévia com alteração do fluxo linfático) como primeiro local primário.\n• Alternativa D: Incorreta por apresentar discordâncias nos marcadores tumorais ou na anatomia da drenagem linfática retroperitoneal.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro é confundir a drenagem linfática do testículo (que vai direto para o retroperitônio devido à origem embriológica intra-abdominal) com a drenagem da pele do escroto (que vai para os linfonodos inguinais), além de esquecer quais são os três marcadores clássicos preconizados pelas diretrizes urológicas.\n\nTake-Home Message (Pérola Prática):\nTestículo desceu do abdômen, logo sua linfa volta para o abdômen: o primeiro local de metástase do câncer testicular é o retroperitônio, e os marcadores obrigatórios são AFP, hCG e LDH.\n\nReferências Teóricas:\n• Sabiston Tratado de Cirurgia\n• Campbell-Walsh Urology\n• Diretrizes da Associação Médica Brasileira e CFM / Sociedade Brasileira de Urologia (SBU)",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro é confundir a drenagem linfática do testículo (que vai direto para o retroperitônio devido à origem embriológica intra-abdominal) com a drenagem da pele do escroto (que vai para os linfonodos inguinais), além de esquecer quais são os três marcadores clássicos preconizados pelas diretrizes urológicas.",
@@ -11959,7 +11971,8 @@
       "Campbell-Walsh Urology",
       "Diretrizes da Associação Médica Brasileira e CFM / Sociedade Brasileira de Urologia (SBU)"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "0f72b51e-c233-470a-97e4-146d50f4121a",
@@ -12868,7 +12881,7 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, 25 anos de idade, é trazido pelo SAMU ao pronto socorro do Hospital Geral, vítima de trauma auto x auto, há 30 minutos. Paciente dá entrada com colar cervical e prancha rígida, referindo dor em região púbica. No exame inicial,A: Via aérea pérvia, SatO₂: 98% com cateter de O₂:15L/min;B: murmúrios vesiculares bem distribuídos e sem ruídos adventícios, FR:16ipm; C: Bulhas rítmicas e normofonéticas, FC: 80bpm, PA: 120x70mmHg, abdome com dor à palpação em hipogástrio, pelve estável e toque retal sem alterações;D: escala de coma de Glasgow:15, pupilas isocóricas e fotorreagentes;E: presença de equimose em abdome inferior. Realizado sondagem vesical de demora com saída de urina avermelhada.Diante desse caso clínico, indique a principal suspeita diagnóstica que justifique o quadro clínico do paciente. \\n",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nPaciente jovem vítima de trauma contuso de alta energia (colisão auto x auto) apresentando dor e equimose em hipogástrio, associada a hematúria macroscópica (urina avermelhada) e bexiga palpável/dor à palpação suprapúbica, com toque retal normal (afastando lesão uretral grave inicial). Este quadro aponta fortemente para a lesão vesical traumática. O diagnóstico de certeza é feito por cistografia retrógrada com preenchimento adequado da bexiga (mínimo de 350ml) e radiografia pós-esvaziamento para identificar extravasamento de contraste (intraperitoneal ou extraperitoneal).\n\nAnálise das Alternativas:\n• Alternativa A: Trauma vesical (especificamente ruptura vesical, frequentemente intraperitoneal ou extraperitoneal associada a fratura de pelve ou trauma contuso direto com bexiga cheia). A presença de dor em hipogástrio, equimose em abdome inferior e hematúria macroscópica após trauma automobilístico contuso são clássicas de lesão vesical, sendo a sondagem vesical de demora insuficiente ou inconclusiva (urina avermelhada/hematúria) que exige cistografia retrógrada para confirmação.\n• Alternativa B: Embora a hematúria esteja presente, a fratura de uretra geralmente cursa com o tríade clássica: ustrorragia (sangre no meato uretrais), incapacidade de urinar e retenção urinária aguda, além de próstata elevada ou flutuante ao toque retal (o qual foi descrito como 'sem alterações' no enunciado).\n• Alternativa C: O trauma renal costuma manifestar-se com dor em flanco, dor lombar, equimose em dorso ou flanco e hematúria, geralmente associada a desaceleração súbita ou trauma direto no dorso/flanco, sendo menos provável com dor puramente suprapúbica e equimose em abdome inferior.\n• Alternativa D: O trauma ureteral é raro em traumas contusos isolados, sendo mais frequente em ferimentos penetrantes ou cirurgias iatrogênicas, e tipicamente não se apresenta com hematúria macroscópica expressiva ou dor puramente hipogástrica com equimose local sem sinais de gravidade peritoneal difusa precoce.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é confundir a hematúria pós-trauma contuso com lesão uretral ou trauma renal isolado, esquecendo-se de que a dor em hipogástrio e a equimose suprapúbica em paciente com bexiga cheia no momento do impacto são marcadores clássicos de ruptura da bexiga urinária.\n\nTake-Home Message (Pérola Prática):\nDor suprapúbica, equimose em abdome inferior e hematúria macroscópica após trauma contuso com bexiga cheia gritam 'Ruptura Vesical'. Lembre-se: o exame padrão-ouro para o diagnóstico é a cistografia retrógrada.\n\nReferências Teóricas:\n• Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna\n• ATLS: Advanced Trauma Life Support - Student Course Manual (American College of Surgeons)",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir a hematúria pós-trauma contuso com lesão uretral ou trauma renal isolado, esquecendo-se de que a dor em hipogástrio e a equimose suprapúbica em paciente com bexiga cheia no momento do impacto são marcadores clássicos de ruptura da bexiga urinária.",
@@ -12877,7 +12890,8 @@
       "Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna",
       "ATLS: Advanced Trauma Life Support - Student Course Manual (American College of Surgeons)"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "db89fe26-9e0a-4f44-b6c5-80d426098082",
@@ -13304,7 +13318,7 @@
         "explanation": "Incorreta. O ultrassom no pronto-socorro pode até identificar o bexigoma, mas não traz benefício terapêutico imediato e não substitui a necessidade de derivação urinária em um paciente com retenção e contraindicação absoluta ao cateterismo uretral."
       }
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa D.\n\nResumo Clínico e Diagnóstico:\nO caso clínico ilustra um cenário clássico de trauma uretral decorrente de queda à cavaleiro, evidenciado pelo sinal patognomônico de sangramento pelo meato uretral associado à retenção urinária. Na vigência de suspeita de lesão uretral, a uretra não deve ser instrumentalizada via transuretral sob hipótese alguma, pois o cateterismo vesical pode transformar uma laceração parcial em completa ou piorar o trajeto falso. Portanto, a conduta imediata para resolver a retenção urinária e proteger o trato urinário inferior é a derivação urinária suprapúbica por meio da cistostomia. Exames complementares como a uretrocistografia retrógrada podem ser realizados posteriormente para estadiamento da lesão, quando o paciente estiver estável.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. A sondagem vesical de demora é formalmente contraindicada na suspeita de lesão uretral (evidenciada por sangramento no meato uretral), pois a passagem da sonda pode converter uma lesão parcial em uma lesão total ou agravar o trauma uretrais, além de introduzir infecção.\n• Alternativa B: Incorreta. Embora a uretrocistografia retrógrada seja o exame padrão-ouro para o diagnóstico de lesão uretral, ela não é a conduta terapêutica imediata de urgência para um paciente em retenção urinária e com indicação de descompressão. A prioridade imediata diante da retenção urinária com uretra lesionada é a derivação urinária suprapúbica.\n• Alternativa C: Incorreta. Assim como a sondagem vesical de demora, a sondagem de alívio introduz o cateter pela uretra lesionada, o que é contraindicado na vigência de sinais de trauma uretral (sangue no meato).\n• Alternativa D: Correta. O paciente apresenta história clássica de trauma uretral posterior ou bulbar associado a queda à cavaleiro, exteriorização de sangue pelo meato uretral (sinal cardinal) e retenção urinária. Diante da contraindicação absoluta de passagem de sonda uretral, a conduta de escolha para o alívio da retenção urinária e descompressão vesical é a realização de cistostomia suprapúbica (cirúrgica ou por punção/trocater, dependendo da experiência e do equipamento), evitando assim a manipulação da uretra lesada.\n• Alternativa E: Incorreta. O ultrassom no pronto-socorro pode até identificar o bexigoma, mas não traz benefício terapêutico imediato e não substitui a necessidade de derivação urinária em um paciente com retenção e contraindicação absoluta ao cateterismo uretral.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a confusão entre o exame diagnóstico padrão-ouro (uretrocistografia retrógrada) e a conduta terapêutica de urgência para retenção urinária com contraindicação de cateterismo uretral, ou o esquecimento de que sangue no meato uretral contraindica absolutamente a sondagem vesical.\n\nTake-Home Message (Pérola Prática):\nSangue no meato uretral após trauma = Uretra bloqueada/lesionada. NUNCA passe sonda uretral; faça cistostomia suprapúbica!\n\nReferências Teóricas:\n• Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna\n• Campbell-Walsh Urology\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Trauma Urogenital",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre o exame diagnóstico padrão-ouro (uretrocistografia retrógrada) e a conduta terapêutica de urgência para retenção urinária com contraindicação de cateterismo uretral, ou o esquecimento de que sangue no meato uretral contraindica absolutamente a sondagem vesical.",
@@ -13314,7 +13328,8 @@
       "Campbell-Walsh Urology",
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Trauma Urogenital"
     ],
-    "correct_answer": "D"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "64e91994-7571-455d-8194-3dceb6d76ddc",
@@ -13486,7 +13501,7 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, 20 anos de idade, dá entrada no pronto socorro com queixa de dor em testículo direito há duas horas. Nega sintomatologia semelhante previamente, porém refere tratamento para gonorreia há um ano. Ao exame físico, bom estado geral, corado, Temperatura axilar: 36,2ºC, FC: 80bpm, PA: 128x78mmHg, FR: 16imp; ausculta cardíaca e respiratória sem alterações; abdome plano, flácido e indolor à palpação; edema leve em bolsa escrotal, dor de forte intensidade à palpação de testículo direito e testículo esquerdo sem alterações. Frente ao caso,Especifique os dois procedimentos cirúrgicos necessários, caso o paciente apresente inviabilidade do testículo direito.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial Definitivo Homologado - SUS Questão 10. Correspondência 100% com caderno de prova oficial.",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir o quadro de torção testicular com uma epididimite aguda (devido ao antecedente de DST/gonorreia) ou esquecer que a exploração cirúrgica por torção de testículo inviável exige obrigatoriamente a orquidopexia profilática contralateral.",
@@ -13496,14 +13511,15 @@
       "Campbell-Walsh Urology",
       "Diretrizes de Urologia da Sociedade Brasileira de Urologia (SBU)"
     ],
-    "correct_answer": "C",
+    "correct_answer": "",
     "official_audit": {
       "verified": true,
       "exam_id": "SUS_BA_2022",
       "question_number": 10,
       "hits": 15,
       "answer": "C"
-    }
+    },
+    "is_anulada": false
   },
   {
     "id": "58de68fd-6f19-40c2-8f02-52bb256506af",
@@ -14773,7 +14789,7 @@
     "isAnulada": false,
     "statement": "Mulher, 58a, tabagista e hipertensa, sem outras comorbidades, realizou exames de rotina. Ultrassonografia de abdome: presença de lesão nodular hiperecogênica, de 2cm, em rim esquerdo. Encaminhada para avaliação especializada, foi realizada tomografia computadorizada de abdômen com contraste: lesão nodular sólida, exofítica, anterior, sem componente gorduroso associado, em polo superior de rim esquerdo, medindo 2,9x2,0x2,6cm (LxAPxT), com intenso realce pelo meio de contraste na fase arterial. O TRATAMENTO INDICADO PARA ESTA PACIENTE É:",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nTrata-se de uma paciente de 58 anos com um achado incidental de massa renal sólida pequena (2,9 cm), exofítica e com realce arterial na TC, características clássicas de Carcinoma de Células Renais estadiado como cT1aN0M0. O tratamento de escolha para tumores T1a (< 4 cm) é a cirurgia conservadora de néfrons, ou seja, a nefrectomia parcial, que pode ser realizada por via aberta, laparoscópica ou robótica. Esta abordagem garante o controle oncológico comparável à nefrectomia radical, com a imensa vantagem de preservar o parênquima renal funcionante e reduzir morbidades cardiovasculares e renais a longo prazo.\n\nAnálise das Alternativas:\n• Alternativa A: A paciente apresenta uma massa renal sólida pequena (cT1a, menor que 4 cm), exofítica, com realce cortical arterial ao contraste, altamente sugestiva de Carcinoma de Células Renais (CCR). As diretrizes urológicas atuais (AUA, EAU) recomendam a nefrectomia parcial (nefropoupadora) como padrão-ouro (gold standard) para tumores estadiados como T1a, visando preservar a função renal global, diminuir risco cardiovascular a longo prazo e manter excelentes taxas de sobrecargas oncológicas equivalentes às da nefrectomia radical.\n• Alternativa B: A nefrectomia radical estaria indicada em tumores renal de maior porte (T1b, T2, etc.) onde a nefrectomia parcial é técnicamente inviável, ou em massas complexas que invadem o hilo renal ou se estendem difusamente. Realizar nefrectomia radical em uma lesão pT1a (< 4 cm) e exofítica representa sobretratamento cirúrgico desnecessário, aumentando o risco de injúria renal aguda e doença renal crônica futura.\n• Alternativa C: A ablação térmica (radiofrequência ou crioterapia) é uma alternativa minimamente invasiva válida, porém reservada principalmente para pacientes idosos, com comorbidades significativas, alto risco cirúrgico (ASA III ou IV) ou expectativa de vida limitada. Para uma paciente de 58 anos, hipertensa sem outras comorbidades e com boa performance, a cirurgia parcial é a conduta de primeira linha com melhor resultado oncológico a longo prazo.\n• Alternativa D: A vigilância ativa (observação seriada com exames de imagem) é indicada tipicamente para pacientes idosos, com múltiplas comorbidades graves, expectativa de vida limitada (< 5-10 anos) e pequenos tumores incidentais, devido ao risco competitivo de morte por outras causas. Em uma paciente relativamente jovem (58 anos) e sem comorbidades graves, a conduta expectante não é a padrão.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro é confundir o estadiamento do tumor e indicar a nefrectomia radical por rotina, esquecendo que o conceito atual no manejo de massas renais pequenas (tamanho < 4 cm, estadiamento T1a) prioriza a nefrectomia parcial (cirurgia conservadora de néfrons) para preservação da função renal.\n\nTake-Home Message (Pérola Prática):\nPara massas renais menores que 4 cm (estádio T1a) em pacientes com boa expectativa de vida, o padrão-ouro é sempre a nefrectomia parcial (nefropoupadora), visando a cura oncológica e a preservação da função renal.\n\nReferências Teóricas:\n• Campbell-Walsh Urology\n• Sabiston Tratado de Cirurgia\n• Diretrizes da Associação Americana de Urologia (AUA) para o Manejo de Massas Renais Localizadas",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro é confundir o estadiamento do tumor e indicar a nefrectomia radical por rotina, esquecendo que o conceito atual no manejo de massas renais pequenas (tamanho < 4 cm, estadiamento T1a) prioriza a nefrectomia parcial (cirurgia conservadora de néfrons) para preservação da função renal.",
@@ -14783,7 +14799,8 @@
       "Sabiston Tratado de Cirurgia",
       "Diretrizes da Associação Americana de Urologia (AUA) para o Manejo de Massas Renais Localizadas"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "d8e5ff80-3a5d-4d3e-b2ee-bdff3985f466",
@@ -15430,7 +15447,7 @@
     "isAnulada": false,
     "statement": "Homem de 34 anos de idade, vítima de atropelamento por motocicleta foi arremessado a aproximadamente dois metros do local. Deu entrada no pronto-socorro consciente e queixando-se de dor em hipogástrio. Ao exame físico estava hemodinamicamente estável, apresentava escoriações em região glútea e lateral da coxa à direita, cúpula vesical palpável na cicatriz umbilical e uretrorragia. Os exames subsidiários iniciais diagnosticaram fratura de bacia. Qual o diagnóstico provável além da fratura de bacia? Qual a melhor conduta para o caso?",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nO trauma pélvico fechado associado a fraturas de bacia frequentemente lesiona a uretra posterior (prostática ou membranosa) devido ao cisalhamento do complexo ligamentar puboprostático. A tríade clínica cardinal de lesão uretral compreende: uretrorragia, incapacidade de urinar (retenção urinária com bexigoma palpável) e dor em hipogástrio. Diante de uretrorragia, a sondagem vesical transuretral é contraindicação absoluta. A conduta imediata consiste na realização de cistostomia suprapúbica para descompressão e derivação urinária, postergando o estudo uretrológico (cistouretrografia retrógrada) e o tratamento definitivo da uretra para o momento em que o paciente estiver estável.\n\nAnálise das Alternativas:\n• Alternativa A: O quadro clínico clássico de fratura de bacia associada a uretrorragia, retenção urinária (cúpula vesical palpável) e dor em hipogástrio aponta inequivocamente para a lesão de uretra posterior. A conduta inicial mandatória e contraindicada a sondagem vesical de demora é a realização de cistostomia suprapúbica (ou cistostomia aberta/percutânea) para derivação urinária, evitando o agravamento da lesão uretral, seguido de cistouretrografia retrógrada em momento oportuno.\n• Alternativa B: A realização de sondagem vesical de demora (SVD) está absolutamente contraindicada diante da presença de uretrorragia e sinais de lesão uretral, pois a passagem da sonda pode converter uma lesão parcial em total, introduzir infecção no hematoma pélvico e agravar o trajeto falso.\n• Alternativa C: O uso de cateterismo uretral associado a antibiótico profilático não resolve o problema, pois a passagem mecânica do cateter pela uretra lesionada é iatrogênica e contraindicada, independentemente de cobertura antimicrobiana.\n• Alternativa D: A exploração cirúrgica imediata da uretra em caráter de urgência não é recomendada na fase aguda do trauma pélvico grave, devido ao risco hemorrágico e à infecção do hematoma pélvico fraturário. A conduta inicial é estritamente a derivação urinária suprapúbica.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro é tentar passar a sonda vesical de demora (SVD) diante de um paciente em retenção urinária, ignorando o sinal clássico de uretrorragia que contraindica absolutamente o cateterismo transuretral.\n\nTake-Home Message (Pérola Prática):\nViu uretrorragia e fratura de bacia? Pare! A sonda transuretral está proibida. O caminho correto é a cistostomia suprapúbica.\n\nReferências Teóricas:\n• Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna\n• ATLS - Advanced Trauma Life Support: Student Course Manual - American College of Surgeons\n• Campbell-Walsh Urology",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro é tentar passar a sonda vesical de demora (SVD) diante de um paciente em retenção urinária, ignorando o sinal clássico de uretrorragia que contraindica absolutamente o cateterismo transuretral.",
@@ -15440,7 +15457,8 @@
       "ATLS - Advanced Trauma Life Support: Student Course Manual - American College of Surgeons",
       "Campbell-Walsh Urology"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "a38ceff2-0d9f-4690-8216-0aabcb668d61",
@@ -15695,7 +15713,7 @@
         "explanation": ""
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nOs tumores testiculares de células germinativas dividem-se didaticamente em seminomas e não-seminomas. Os marcadores tumorais séricos (AFP, Beta-HCG e LDH) são fundamentais para o estadiamento, prognóstico e seguimento. O seminoma puro jamais apresenta elevação da alfafetoproteína (AFP). Caso a AFP esteja elevada, o tumor obrigatoriamente contém elementos não-seminomatosos (sendo tratado como tumor misto ou não-seminoma). O Beta-HCG pode estar levemente positivo em cerca de 10 a 20% dos seminomas devido à diferenciação de sincitiotrofoblastos, mas níveis francamente elevados sugerem componente não-seminomatoso. O LDH reflete a carga tumoral e eleva-se tanto em seminomas quanto em não-seminomas.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta no contexto da questão, pois a alternativa afirma que não haverá elevação 'apenas' da alfafetoproteína, o que desconsidera que o Beta-HCG também não se eleva na forma pura do seminoma.\n• Alternativa B: Incorreta, pois o Beta-HCG pode estar discretamente elevado em até 10-20% dos casos de seminoma puro devido à presença de sincitiotrofoblastos, logo não é correto afirmar que apenas ele não se elevará.\n• Alternativa C: Incorreta. O LDH (Desidrogenase Láctica) frequentemente se eleva nos seminomas (especialmente em doença avançada ou de grande volume tumoral), portanto afirmar que não haverá elevação de LDH torna a alternativa incorreta.\n• Alternativa D: Correta. O seminoma puro caracteriza-se histologicamente pela ausência de elementos não seminomatosos. Uma de suas características laboratoriais clássicas é que a alfafetoproteína (AFP) nunca se eleva (se houver AFP elevada, o tumor é classificado como tumor de células germinativas não seminomatoso ou misto). Além disso, o Beta-HCG pode no máximo apresentar elevação leve em uma minoria dos casos (cerca de 10-20%), mas classicamente considera-se que o seminoma puro não produz AFP e raramente eleva o Beta-HCG de forma significativa. Portanto, os marcadores específicos que definem a ausência de elevação marcante ou absoluta são a alfafetoproteína (nunca sobe) e o Beta-HCG (que não se eleva de forma expressiva no seminoma puro), tornando a opção D a mais adequada no contexto de marcadores tumorais clássicos para essa neoplasia.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro é confundir o comportamento do Beta-HCG (que pode ter elevação leve em até 20% dos seminomas puros) com o da Alfafetoproteína (que NUNCA se eleva no seminoma puro). Além disso, a confusão com o marcador LDH, que se eleva em grande parte dos seminomas volumosos, gera dúvidas na interpretação das alternativas.\n\nTake-Home Message (Pérola Prática):\nSeminoma puro nunca eleva Alfafetoproteína (AFP). Se a AFP estiver alta, o tumor é não-seminomatoso!\n\nReferências Teóricas:\n• Campbell-Walsh Urology\n• Sabiston Tratado de Cirurgia\n• Diretrizes da European Association of Urology (EAU) - Testicular Cancer",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro é confundir o comportamento do Beta-HCG (que pode ter elevação leve em até 20% dos seminomas puros) com o da Alfafetoproteína (que NUNCA se eleva no seminoma puro). Além disso, a confusão com o marcador LDH, que se eleva em grande parte dos seminomas volumosos, gera dúvidas na interpretação das alternativas.",
@@ -15705,10 +15723,11 @@
       "Sabiston Tratado de Cirurgia",
       "Diretrizes da European Association of Urology (EAU) - Testicular Cancer"
     ],
-    "correct_answer": "A",
+    "correct_answer": "D",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Urologia.pdf.json"
+    "official_book": "Urologia.pdf.json",
+    "previous_answer": "A"
   },
   {
     "id": "f67f7aff-a21c-496c-b03c-65bac19a4dca",
@@ -18094,17 +18113,18 @@
         "text": "fixar o cordão espermático bilateralmente."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\n<p>A torção testicular interrompe a perfusão pela rotação do cordão espermático e exige exploração urgente. Evolução de até quatro horas favorece a preservação, mas <strong>não garante viabilidade</strong>: o grau de torção também importa.</p><p>Após a destorção, avalia-se a recuperação do testículo. Se viável, ele é fixado; a proteção contralateral também integra a conduta habitual, pois a predisposição anatômica pode ser bilateral. A retirada do órgão é reservada à inviabilidade demonstrada, não determinada apenas pelo relógio.</p><p>O ponto decisivo é distinguir <strong>destorção do cordão e fixação dos testículos</strong>. D expressa a bilateralidade esperada, mas todas as opções usam a estrutura errada ao falar em fixação do cordão. Com a redação fornecida, nenhuma descreve integralmente a estratégia adequada. A questão está identificada como anulada.</p>\n\nAnálise das Alternativas:\n• fixar o cordão espermático contralateral.: <p>A proteção contralateral, isoladamente, não completa o tratamento quando o testículo destorcido permanece viável: ele também deve ser fixado. Além disso, o procedimento é a fixação do testículo, não do cordão espermático.</p>\n\n• não fixar cordão espermático.: <p>Se a intenção é dispensar a orquiopexia, a conduta deixa sem prevenção a retorção. A redação também confunde estruturas: não fixar o cordão não equivale a não fixar o testículo. Por isso, a frase não descreve a estratégia cirúrgica completa solicitada.</p>\n\n• fixar somente o cordão espermático afetado.: <p>Limitar a fixação ao lado afetado não contempla a proteção do testículo contralateral no tratamento habitual da torção confirmada. A opção ainda chama de fixação do cordão o que deveria ser orquiopexia.</p>\n\n• fixar o cordão espermático bilateralmente.: <p>A bilateralidade corresponde à conduta esperada quando o testículo afetado é viável, mas a estrutura está errada: realizam-se destorção e <strong>orquiopexia bilateral</strong>, com fixação dos testículos. Fixar os cordões não equivale à técnica indicada.</p>",
     "images": [],
-    "correct_answer": "A",
+    "correct_answer": "",
     "mainErrorReason": "A pegadinha da banca nesta questão reside na interpretação rigorosa do protocolo oficial da alternativa A.",
     "takeHomeMessage": "Atenção ao gabarito oficial: a alternativa correta é a A.",
     "references": [
       "Sabiston Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna",
       "Campbell-Walsh Urology",
       "Diretrizes da Sociedade Brasileira de Urologia (SBU)"
-    ]
+    ],
+    "is_anulada": true
   },
   {
     "id": "cf3dc755-0a7c-4b26-bcdc-bcf163f1487c",
@@ -18337,7 +18357,7 @@
     "isAnulada": false,
     "statement": "Homem, 76a, foi submetido à biopsia prostática por apresentar toque retal com próstata de 50g, com área endurecida no lobo direito, e PSA total=5,6ng/dL. Anatomopatológico: adenocarcinoma de próstata Gleason 3.3, em 2/20 fragmentos. A proporção de tumor nas lâminas foi de 10% e 20%, em cada fragmento. A MELHOR CONDUTA PARA ESSE PACIENTE É:",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nO caso apresenta um paciente idoso (76 anos) com diagnóstico recente de adenocarcinoma de próstata de baixo risco (Gleason 3+3=6, PSA 5.6 ng/dL, acometimento limitado em 2/20 fragmentos com baixa porcentagem de tumor). O fator determinante para a conduta no câncer de próstata localizado é a expectativa de vida estimada do paciente. Pela tabela de mortalidade do IBGE, um homem de 76 anos tem uma expectativa de vida média inferior a 10 anos. Conforme as diretrizes da Sociedade Brasileira de Urologia (SBU) e da American Urological Association (AUA), pacientes com tumor localizado de baixo risco e expectativa de vida menor que 10 anos devem ser manejados com observação clínica ( watchful waiting ) ou vigilância ativa, priorizando a qualidade de vida e evitando tratamentos invasivos desnecessários.\n\nAnálise das Alternativas:\n• Alternativa A: Paciente de 76 anos, com expectativa de vida limitada (< 10 anos) segundo as tábuas de mortalidade e com câncer de próstata de baixo risco (Gleason 6 = 3+3, PSA < 10 ng/dL, estadiamento clínico localizado T1c/T2a). Para pacientes com expectativa de vida inferior a 10 anos e doença de baixo risco, a conduta padrão recomendada pelas diretrizes urológicas é a vigilância ativa ou observação ( watchful waiting ), evitando os riscos e os efeitos colaterais do tratamento definitivo (cirurgia ou radioterapia).\n• Alternativa B: A prostatectomia radical não é indicada de rotina para pacientes com expectativa de vida inferior a 10 anos portadores de tumor de baixo risco, devido ao risco de complicações e morbidade (incontinência urinária e disfunção erétil) sem ganho expressivo na sobrevida global.\n• Alternativa C: A radioterapia exclusiva ou associada à hormonioterapia também é um tratamento curativo agressivo desnecessário para um paciente de 76 anos com tumor de baixo risco e expectativa de vida limitada, cujos riscos superam os benefícios.\n• Alternativa D: A hormonioterapia primária isolada não é indicada como tratamento de primeira linha para o adenocarcinoma de próstata localizado de baixo risco assintomático, sendo reservada para pacientes com doença avançada, metastática ou sintomática que não podem receber tratamento local.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é focar apenas no diagnóstico histológico de câncer de próstata e indicar automaticamente um tratamento radical (como prostatectomia ou radioterapia), negligenciando o cálculo da expectativa de vida baseada na idade avançada (76 anos) e os critérios de baixo risco da doença.\n\nTake-Home Message (Pérola Prática):\nEm pacientes com câncer de próstata localizado de baixo risco e expectativa de vida menor que 10 anos, a conduta de escolha é a observação (watchful waiting), poupando o paciente de tratamentos definitivos e seus efeitos colaterais.\n\nEvolução de Diretrizes & Contexto Histórico da Banca:\nA conduta baseada na expectativa de vida e na estratificação de risco (critérios de D'Amico modificados) permanece inalterada e totalmente alinhada entre as diretrizes históricas e as atuais da Sociedade Brasileira de Urologia e da AUA/EAU.\n\nReferências Teóricas:\n• Diretrizes Urológicas da Sociedade Brasileira de Urologia (SBU)\n• Campbell-Walsh Urology\n• NCCN Clinical Practice Guidelines in Oncology: Prostate Cancer",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é focar apenas no diagnóstico histológico de câncer de próstata e indicar automaticamente um tratamento radical (como prostatectomia ou radioterapia), negligenciando o cálculo da expectativa de vida baseada na idade avançada (76 anos) e os critérios de baixo risco da doença.",
@@ -18348,7 +18368,8 @@
       "Campbell-Walsh Urology",
       "NCCN Clinical Practice Guidelines in Oncology: Prostate Cancer"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "2dd90d23-1eb8-468a-b8b1-e548d49d4941",
@@ -19669,7 +19690,7 @@
     "isAnulada": false,
     "statement": "Homem, 33 anos de idade, vem à UPA com queixa de dor lombar à esquerda, de forte intensidade há 1 hora, associada a náuseas e um episódio emético. Refere ter apresentado 4 episódios semelhantes nos últimos 10 dias. Ao exame físico, paciente em regular estado geral, temperatura axilar: 38°C, pulso: 110bpm, pressão arterial: 150 X 90 mmHg. RCR em 2T, BNF sem sopros, MVF sem RA. Abdome flácido, doloroso à palpação de flanco esquerdo, sem visceromegalias, sinal de Giordano positivo. Realizados exames que apresentam Hb: 15,5; HT: 36; leucócitos: 15000 com 13% de bastões. Sumário de urina: hemoglobina +, nitritos +, sedimento 35 piócitos/campo, 25 hemácias/campo. Realizou TC sem contraste de abdome. Frente ao quadro descrito e à TC realizada, interprete o achado, apontado pela seta, na TC.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nO caso apresenta um paciente jovem com quadro clássico de cólica nefrética à esquerda, mas que evoluiu com sinais de resposta inflamatória sistêmica (febre de 38°C, taquicardia de 110 bpm, leucocitose de 15.000 com 13% de bastões) e infecção urinária confirmada laboratorialmente (piúria, nitrito positivo e hematúria). A associação de obstrução urinária por cálculo com infecção do trato urinário superior constitui a pielonefrite obstrutiva aguda, uma verdadeira emergência urológica. A conduta imediata consiste em estabilização hemodinâmica, coleta de culturas e descompressão urgente do sistema coletor (via cateter duplo J ou nefrostomia percutânea), associada à antibioticoterapia intravenosa de amplo espectro. Tentar tratar apenas com analgésicos ou realizar procedimentos eletivos sobre o cálculo sem drenar a via urinária infectada pode levar rapidamente ao choque séptico e óbito.\n\nAnálise das Alternativas:\n• Alternativa A: A alternativa correta reflete a principal urgência urológica demonstrada no caso: cólica nefrética associada a infecção urinária e febre (pielonefrite obstrutiva). Trata-se de uma verdadeira emergência médica que exige descompressão urgente do trato urinário (por meio de cateter duplo J ou nefrostomia percutânea) associada a antibioticoterapia venosa, devido ao risco iminente de urossepse e choque séptico.\n• Alternativa B: Alternativa incorreta. Embora haja litíase urinária, a presença de febre alta, taquicardia, leucocitose significativa com desvio à esquerda e piúria maciça configura um quadro obstrutivo infectado, contraindicando o manejo conservador exclusivo ou a litotripsia eletiva sem a devida descompressão prévia.\n• Alternativa C: Alternativa incorreta. A litotripsia extracorpórea por ondas de choque (LEOC) é um método eletivo para cálculos renais de menor porte ou ureterais proximais não complicados. Em vigência de infecção urinária ativa e obstrução, o procedimento é formalmente contraindicado devido ao risco de disseminação sistêmica da infecção (bacteremia e choque séptico).\n• Alternativa D: Alternativa incorreta. A ureterolitotripsia endoscópica laser é o tratamento padrão para muitos cálculos ureterais, porém, em um cenário de sepse ou infecção urinária grave associada à obstrução (emergência urológica), a prioridade absoluta é a drenagem imediata do sistema urinário infectado (descompressão), sendo o tratamento definitivo do cálculo postergado para um segundo momento, após a resolução do processo infeccioso.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é focar apenas no tratamento do cálculo renal (como a realização de litotripsia ou ureteroscopia eletiva) e negligenciar os sinais vitais de alarme (febre, taquicardia, leucocitose com desvio), falhando em reconhecer a pielonefrite obstrutiva como uma emergência médica que exige descompressão imediata antes de qualquer abordagem sobre o cálculo.\n\nTake-Home Message (Pérola Prática):\nCólica nefrética com febre e taquicardia é pielonefrite obstrutiva: emergência urológica absoluta que exige drenagem imediata (Duplo J ou Nefrostomia) + antibiótico, e não tratamento eletivo do cálculo!\n\nEvolução de Diretrizes & Contexto Histórico da Banca:\nAs diretrizes da Associação Brasileira de Urologia (SBU) e da Associação Europeia de Urologia (EAU) mantêm-se inalteradas quanto a este conceito fundamental: a presença de obstrução urinária associada a infecção (piosecundária / pielonefrite obstrutiva) é indicação absoluta de descompressão urgente do trato urinário, independentemente do tamanho ou localização do cálculo.\n\nReferências Teóricas:\n• Campbell-Walsh Urology\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Litíase Urinária\n• Sabiston Tratado de Cirurgia",
     "images": [
       "/images/questoes/urologia/acbe4750-a270-4df0-9a6c-886f4bd092fb_1.webp"
@@ -19682,7 +19703,8 @@
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Litíase Urinária",
       "Sabiston Tratado de Cirurgia"
     ],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "3f345c24-d3a3-4717-a287-44bb5325b860",
@@ -20469,7 +20491,7 @@
     "correctAnswer": "A",
     "commentary": "Gabarito Oficial Definitivo Homologado - SUS Questão 9. Correspondência 100% com caderno de prova oficial.",
     "images": [],
-    "correct_answer": "B",
+    "correct_answer": "A",
     "mainErrorReason": "A pegadinha da banca nesta questão reside na interpretação rigorosa do protocolo oficial da alternativa A.",
     "takeHomeMessage": "Atenção ao gabarito oficial: a alternativa correta é a A.",
     "references": [
@@ -20483,7 +20505,8 @@
       "question_number": 9,
       "hits": 15,
       "answer": "B"
-    }
+    },
+    "is_anulada": false
   },
   {
     "id": "5b1fed55-2adc-43b3-92c7-3662dad2fcbf",
@@ -21935,7 +21958,7 @@
         "explanation": "Correta. De acordo com as diretrizes internacionais de Urologia (como as da Associação Europeia de Urologia - EAU), para cálculos renais maiores que 2 cm (neste caso, 2,3 cm) localizados na pelve renal, a Nefrolitotripsia Percutânea (NLPC) é o tratamento de primeira escolha (padrão-ouro) devido à sua alta taxa de sucesso em procedimento único. A ureterorrenolitotripsia (URLF) surge como alternativa secundária (especialmente se houver contraindicação à punção percutânea ou comorbidades), enquanto a litotripsia extracorpórea (LECO) tem indicação muito limitada ou é contraindicada para cargas litiásicas superiores a 2 cm."
       }
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa D.\n\nResumo Clínico e Diagnóstico:\nO tratamento da litíase urinária é guiado principalmente pelo tamanho, localização, composição do cálculo e condições anatômicas e clínicas do paciente. Para cálculos renais volumosos (> 2 cm), a nefrolitotripsia percutânea (NLPC) é o tratamento de escolha, garantindo maiores taxas de ausência de cálculo (stone-free rate) em comparação à ureterorrenolitotripsia flexível e, com muito mais disparidade, em relação à litotripsia extracorpórea por ondas de choque (LECO). A alternativa D reflete com precisão a hierarquia das diretrizes urológicas para o manejo de grandes cálculos na pelve renal.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. Para cálculos maiores que 2 cm ou mesmo entre 1-2 cm no cálice inferior, a litotripsia extracorpórea (LECO) não é o tratamento de primeira escolha devido às baixas taxas livres de cálculo nessa localização e tamanho. Além disso, para cálculos de 0,8 cm no cálice superior, a ureterorrenolitotripsia flexível (URLF) e a LECO podem ser consideradas, mas a hierarquia estrita descrita na alternativa não condiz com as diretrizes da EAU/AUA para o manejo de cálculos renais com essa precisão de precedência incondicional.\n• Alternativa B: Incorreta. Cálculos de 0,9 cm (9 mm) no ureter distal têm taxa de eliminação espontânea reduzida (cerca de 25-50%). A ureterorrenolitotripsia semirrígida ou flexível é o tratamento padrão-ouro, enquanto a LECO possui eficácia menor para cálculos ureterretais distais comparada à ureteroscopia, não sendo consideradas igualmente adequadas na prática urológica moderna devido à superioridade da ureteroscopia para o terço distal.\n• Alternativa C: Incorreta. Para um cálculo de 1,5 cm no cálice inferior, a nefrolitotripsia percutânea (NLPC) padrão ou minimamente invasiva (mini-percutânea) é frequentemente indicada ou competitiva com a URLF, mas a LECO tem eficácia muito limitada em cálculos de cálice inferior maiores que 1 cm devido à desvantagem anatômica da gravidade para a eliminação dos fragmentos (clearance).\n• Alternativa D: Correta. De acordo com as diretrizes internacionais de Urologia (como as da Associação Europeia de Urologia - EAU), para cálculos renais maiores que 2 cm (neste caso, 2,3 cm) localizados na pelve renal, a Nefrolitotripsia Percutânea (NLPC) é o tratamento de primeira escolha (padrão-ouro) devido à sua alta taxa de sucesso em procedimento único. A ureterorrenolitotripsia (URLF) surge como alternativa secundária (especialmente se houver contraindicação à punção percutânea ou comorbidades), enquanto a litotripsia extracorpórea (LECO) tem indicação muito limitada ou é contraindicada para cargas litiásicas superiores a 2 cm.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é o desconhecimento dos limites de tamanho e localização para o uso da litotripsia extracorpórea (LECO) e a subestimação da nefrolitotripsia percutânea como padrão-ouro indiscutível para cálculos renais maiores que 2 cm.\n\nTake-Home Message (Pérola Prática):\nCálculo renal > 2 cm tem indicação clássica de Nefrolitotripsia Percutânea (NLPC) como primeira escolha; LECO não deve ser usada para grandes cargas litiásicas.\n\nEvolução de Diretrizes & Contexto Histórico da Banca:\nA diretriz permanece plenamente alinhada com as recomendações atuais da Associação Europeia de Urologia (EAU) e da American Urological Association (AUA), onde a NLPC continua sendo o padrão-ouro para cálculos renais > 2 cm, embora técnicas minimamente invasivas (mini-PCN) venham ganhando espaço para cálculos entre 1 e 2 cm.\n\nReferências Teóricas:\n• European Association of Urology (EAU) Guidelines on Urolithiasis\n• Campbell-Walsh Urology\n• Sabiston Tratado de Cirurgia",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é o desconhecimento dos limites de tamanho e localização para o uso da litotripsia extracorpórea (LECO) e a subestimação da nefrolitotripsia percutânea como padrão-ouro indiscutível para cálculos renais maiores que 2 cm.",
@@ -21946,7 +21969,8 @@
       "Campbell-Walsh Urology",
       "Sabiston Tratado de Cirurgia"
     ],
-    "correct_answer": "D"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "2e74ff3c-25d6-4240-b48c-4ea77e1e4945",
@@ -24146,7 +24170,7 @@
         "explanation": "Incorreta. Os hormônios androgênicos, especialmente a diidrotestosterona (DHT) convertida pela ação da enzima 5-alfa-redutase a partir da testosterona, têm influência fundamental e primordial no desenvolvimento e na proliferação celular da hiperplasia prostática benigna."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa C.\n\nResumo Clínico e Diagnóstico:\nA Hiperplasia Prostática Benigna (HPB) é uma condição urológica extremamente prevalente em homens idosos, caracterizada histologicamente pela proliferação de células epiteliais e estromais na zona de transição da próstata. Clinicamente, manifesta-se por sintomas do trato urinário inferior (LUTS), divididos em obstrutivos (esvaziamento) e irritativos (armazenamento). O manejo inicial baseia-se na avaliação do IPSS (International Prostate Symptom Score) e qualidade de vida. O tratamento clínico utiliza alfabloqueadores e inibidores da 5-alfa-redutase. Quando há falha clínica, retenção urinária refratária, hematúria macroscópica de repetição, infecções urinárias recorrentes, cálculos vesicais ou insuficiência renal obstrutiva, indica-se o tratamento cirúrgico, sendo a RTUP o padrão-ouro clássico.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. O tratamento clínico da HPB não se restringe a uma única classe de drogas. Ele engloba os alfabloqueadores (ex: tansulosina, doxazosina), os inibidores da 5-alfa-redutase (ex: finasterida, dutasterida), os inibidores da fosfodiesterase-5 (ex: tadalafila) e os anticolinérgicos ou agonistas beta-3 (para sintomas de armazenamento), além de associações medicamentosas.\n• Alternativa B: Incorreta parcialmente em sua formulação mais ampla, pois a banca da UFG/HC e as diretrizes clássicas por vezes apontam que os sintomas obstrutivos e irritativos decorrem do componente estático (crescimento volumétrico do adenoma) e dinâmico (tônus do estroma prostático e colo vesical). No entanto, a alternativa C é considerada a afirmativa central definitiva pelo gabarito oficial da banca por definir o padrão-ouro cirúrgico de forma irrefutável na época e na atualidade.\n• Alternativa C: Correta. O tratamento da HPB pode ser clínico ou cirúrgico. Para o tratamento cirúrgico, a Ressecção Transuretral da Próstata (RTUP / TURP) permanece classicamente como o procedimento padrão-ouro (gold standard) para glândulas de tamanho pequeno a moderado (geralmente abaixo de 80g), sendo a modalidade endoscópica de referência.\n• Alternativa D: Incorreta. Os hormônios androgênicos, especialmente a diidrotestosterona (DHT) convertida pela ação da enzima 5-alfa-redutase a partir da testosterona, têm influência fundamental e primordial no desenvolvimento e na proliferação celular da hiperplasia prostática benigna.\n\nPrincipal Motivo que Leva ao Erro:\nO principal motivo que leva o aluno ao erro nesta questão é confundir as classes terapêuticas disponíveis no tratamento clínico (acreditando que apenas os alfabloqueadores são utilizados) ou subestimar o papel central da RTUP como o padrão-ouro histórico e atual da cirurgia endoscópica para a HPB.\n\nTake-Home Message (Pérola Prática):\nPara HPB sintomática refratária ou com complicações, a Ressecção Transuretral da Próstata (RTUP) continua sendo o procedimento cirúrgico padrão-ouro endoscópico.\n\nEvolução de Diretrizes & Contexto Histórico da Banca:\nA diretriz permanece plenamente convergente com a literatura urológica vigente. A RTUP continua sendo o padrão-ouro cirúrgico para próstatas de tamanho pequeno a moderado, embora técnicas a laser (como HoLEP e GreenLight) tenham ganhado enorme espaço nas diretrizes recentes da Sociedade Brasileira de Urologia (SBU) e da American Urological Association (AUA).\n\nReferências Teóricas:\n• Campbell-Walsh Urology\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) - Hiperplasia Prostática Benigna\n• Sabiston Tratado de Cirurgia",
     "images": [],
     "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir as classes terapêuticas disponíveis no tratamento clínico (acreditando que apenas os alfabloqueadores são utilizados) ou subestimar o papel central da RTUP como o padrão-ouro histórico e atual da cirurgia endoscópica para a HPB.",
@@ -24157,7 +24181,8 @@
       "Diretrizes da Sociedade Brasileira de Urologia (SBU) - Hiperplasia Prostática Benigna",
       "Sabiston Tratado de Cirurgia"
     ],
-    "correct_answer": "C"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "d89ba2b1-6ff8-4d81-9923-6ee32db40581",
@@ -25550,10 +25575,11 @@
     "isAnulada": false,
     "statement": "Paciente, sexo masculino, com passado de litíase ureteral, comparece ao Pronto Atendimento com dor lombar intensa e hematúria. Realiza tomografia computadorizada que diagnostica litíase ureteral à direita. Após analgesia adequada é necessário a definição de conduta. Diante do exposto, indique a melhor classe de drogas a ser empregada para analgesia, no caso.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nNo manejo da cólica renal aguda por litíase ureteral, os Anti-inflamatórios Não Esteroides (AINEs) são considerados a primeira linha de analgesia devido à sua eficácia superior na redução da inflamação e do espasmo ureteral, diminuindo a necessidade de opióides de resgate.\n\nAnálise das Alternativas:\n• Alternativa A: Os AINEs (como cetorolaco, cetoprofeno ou diclofenaco) são a classe de escolha para o alívio da cólica renal, pois inibem a síntese de prostaglandinas que causam o edema e a contração da musculatura lisa ureteral.\n• Alternativa B: Opióides (como morfina ou tramadol) são utilizados como segunda linha ou para resgate quando os AINEs são contraindicados ou ineficazes, apresentando maior taxa de náuseas e vômitos.\n• Alternativa C: Espasmolíticos isolados possuem eficácia limitada na cólica nefrética e não são recomendados como monoterapia analgésica de primeira linha.\n• Alternativa D: Antieméticos são adjuvantes úteis para náuseas, mas não tratam diretamente a dor primária da cólica renal.\n\nPérola Prática para Prova:\nOs Anti-inflamatórios Não Esteroides (AINEs) são os analgésicos de escolha na cólica renal por atuarem diretamente na inibição das prostaglandinas que aumentam a pressão intraluminal ureteral.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "dcb93488-7204-4222-9595-7ccd9185222d",
@@ -25974,10 +26000,11 @@
         "text": "Ca 19-9."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "commentary": "Gabarito Oficial: Alternativa B.\n\nResumo Clínico:\nNos tumores germinativos malignos do testículo, os principais marcadores séricos são alfa-fetoproteína, beta-HCG e LDH. Eles auxiliam no diagnóstico, estadiamento, avaliação prognóstica, resposta ao tratamento e seguimento.Para prova, a associação mais cobrada é: AFP elevada sugere tumor germinativo não seminomatoso, pois seminoma puro não deve produzir AFP; beta-HCG pode estar aumentada em coriocarcinoma, carcinoma embrionário e também em alguns seminomas; LDH é menos específica, mas tem valor prognóstico e de acompanhamento.Assim, entre as opções apresentadas, a alternativa correta é a que traz AFP e beta-HCG. Os demais marcadores pertencem a outros contextos: CEA para tumores como colorretal, PSA para próstata, CA-125 para ovário e CA 19-9 para trato pancreatobiliar/gastrointestinal.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): O antígeno carcinoembrionário é marcador usado em outros contextos oncológicos, especialmente em tumores do trato gastrointestinal, mas não é marcador sérico de rotina para tumores germinativos testiculares. Para essa neoplasia, a prova deve direcionar o raciocínio para AFP, beta-HCG e LDH.\n• Alternativa B (Correta): AFP e beta-HCG são marcadores clássicos dos tumores germinativos testiculares. A AFP sugere componente não seminomatoso, como tumor do saco vitelino ou carcinoma embrionário; a beta-HCG pode elevar-se especialmente em coriocarcinoma, carcinoma embrionário e em parte dos seminomas. Entre as alternativas, é a dupla que corresponde aos marcadores cobrados.\n• Alternativa C (Incorreta): O erro é deslocar o raciocínio para próstata. PSA total, PSA livre e sua relação são utilizados na avaliação de doenças prostáticas, não como marcadores de tumores germinativos testiculares.\n• Alternativa D (Incorreta): CA-125 é marcador mais associado ao acompanhamento de tumores epiteliais de ovário e pode se elevar em várias condições benignas e malignas. Não é marcador sérico de escolha para tumor germinativo maligno do testículo.\n• Alternativa E (Incorreta): CA 19-9 é marcador mais lembrado em tumores pancreatobiliares e alguns tumores gastrointestinais. Ele não faz parte do painel clássico de marcadores dos tumores germinativos testiculares.\n\nReferências: EAU Guidelines on Testicular Cancer: Diagnostic Evaluation; Diagnosis and Treatment of Early-Stage Testicular Cancer: AUA Guideline. 2019; amended 2023; Sociedade Brasileira de Patologia. Testículo: neoplasias testiculares e paratesticulares. Manual de laudos histopatológicos, 5ª edição, 2019",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "is_anulada": false
   },
   {
     "id": "8700ebc7-49d1-4483-8b39-5e52da2dab10",
@@ -26582,10 +26609,11 @@
         "text": "Os indivíduos submetidos à prostatectomia apresentam um índice menor de disfunção erétil, enquanto aqueles de manejo conservador apresentam mais casos de obstrução urinária"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "commentary": "Gabarito Oficial: Alternativa D.\n\nResumo Clínico:\nO tratamento do câncer de próstata deve ser individualizado conforme o risco da doença e as características do paciente. O ponto central para resolver esta questão é entender que nem todo câncer de próstata localizado precisa de tratamento imediato.A definição da conduta considera principalmente a agressividade tumoral, avaliada por parâmetros como PSA, estadiamento clínico e escore de Gleason, além da idade e da expectativa de vida. Pacientes com tumores de baixo risco e pequeno volume tumoral podem ser acompanhados por meio da vigilância ativa, estratégia que consiste em monitoramento rigoroso com possibilidade de iniciar tratamento definitivo caso haja sinais de progressão.A vigilância ativa não significa abandonar o tratamento, mas selecionar pacientes nos quais os riscos de uma intervenção imediata, como disfunção erétil e alterações urinárias após prostatectomia, podem superar os benefícios naquele momento. Por outro lado, tumores mais agressivos ou com maior risco de progressão devem receber terapias com intenção curativa.Assim, a alternativa correta é a que reconhece que pacientes idosos com tumores localizados e baixo volume de doença podem ser candidatos à vigilância ativa.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): O escore de Gleason interfere diretamente na estratificação de risco do câncer de próstata e, consequentemente, na escolha terapêutica. Ele avalia o grau de diferenciação tumoral e ajuda a estimar o comportamento biológico da neoplasia. Portanto, um tumor de baixo grau pode ser candidato a vigilância ativa, enquanto tumores mais agressivos geralmente necessitam de tratamento definitivo ou abordagens mais intensivas.\n• Alternativa B (Incorreta): A conduta no câncer de próstata não é uniforme para todos os pacientes. O tratamento depende de fatores como risco tumoral, PSA, Gleason, estadiamento, idade, comorbidades e expectativa de vida. Embora alguns tumores localizados de baixo risco possam ser acompanhados com vigilância ativa, outros pacientes se beneficiam de tratamento curativo, como cirurgia ou radioterapia.\n• Alternativa C (Incorreta): Não existe uma modalidade universalmente superior para todos os casos de câncer de próstata localizado. A prostatectomia radical é uma opção com intenção curativa, mas a escolha entre cirurgia, radioterapia ou vigilância ativa depende do perfil do paciente e das características do tumor. Cada estratégia apresenta benefícios e possíveis efeitos adversos distintos.\n• Alternativa D (Correta): A vigilância ativa é uma estratégia adequada para pacientes selecionados com câncer de próstata localizado de baixo risco, especialmente quando há pequeno volume tumoral na biópsia, como poucos fragmentos positivos, e características associadas a menor agressividade. Em pacientes idosos ou com menor expectativa de vida, evitar tratamentos invasivos imediatos pode reduzir complicações sem comprometer o controle de tumores indolentes.\n• Alternativa E (Incorreta): A alternativa inverte os efeitos esperados das estratégias terapêuticas. A prostatectomia radical pode causar disfunção erétil e incontinência urinária como consequências relacionadas ao procedimento. Já o manejo conservador, quando bem indicado e acompanhado, não aumenta por si só o risco de obstrução urinária; a progressão tumoral, em alguns casos, pode causar sintomas urinários, mas isso não é uma característica obrigatória dessa conduta.\n\nReferências: Diretrizes Diagnósticas e Terapêuticas do Adenocarcinoma de Próstata - Ministério da Saúde; Diretrizes Diagnósticas e Terapêuticas do Adenocarcinoma de Próstata - CONITEC",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "is_anulada": false
   },
   {
     "id": "9ca35d11-91d8-4b99-8abb-f30c3366b37d",
@@ -27985,10 +28013,11 @@
         "text": "Enurese noturna é um sintoma de esvaziamento."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa B.\n\nResumo Clínico e Diagnóstico:\nA classificação dos sintomas do trato urinário inferior (STUI) divide-se em sintomas de armazenamento (irritativos), esvaziamento (obstrutivos) e pós-miccionais. O gotejamento pós-miccional é um sintoma obstrutivo/esvaziamento.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. Tenesmo vesical é um sintoma de armazenamento (urgência miccional extrema).\n• Alternativa B: Correta. O gotejamento pós-mictal é classificado como sintoma de esvaziamento.\n• Alternativa C: Incorreta. Jato bífido ou fraco são sintomas de esvaziamento, não de armazenamento.\n• Alternativa D: Incorreta. Enurese noturna é um sintoma de armazenamento.\n\nPérola Prática para Prova:\nLembre-se da divisão semiológica dos LUTS: Armazenamento (urgência, polaciúria, noctúria, incontinência), Esvaziamento (jato fraco, hesitação, esforço, gotejamento pós-mictal) e Pós-miccionais.",
     "images": [],
-    "correct_answer": "B"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "1f305bb1-1603-466c-9a62-5f1c3debc8c9",
@@ -28028,10 +28057,11 @@
         "text": "incapacidade de usar o tratamento medicamentoso devido a efeitos colaterais."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico:\nO divisor de águas na hiperplasia prostática benigna não é apenas o quanto o paciente urina mal, mas se a obstrução já começou a produzir dano mensurável. Infecções urinárias recorrentes entram nesse grupo porque a urina parada atrás de uma próstata obstrutiva favorece proliferação bacteriana. Aí o problema deixou de ser só jato fraco e noctúria. Virou complicação.Compare com as outras alternativas. O resíduo pós-miccional de 250 mL é importante, mas isolado não basta para mandar todo mundo ao centro cirúrgico. O escore AUA de 20 ou maior mostra sintomas graves, porém ainda é uma régua de incômodo, não de complicação obrigatória. A pressão detrusora de 65 cmH2O sugere esforço vesical, mas precisa ser interpretada com fluxo, sintomas e repercussões. E a intolerância a remédios pode justificar cirurgia eletiva, mas não transforma automaticamente o caso em indicação absoluta.O núcleo da questão é separar indicação cirúrgica por falha ou preferência terapêutica de indicação cirúrgica por complicação da obstrução. As indicações clássicas fortes incluem retenção urinária refratária, infecções urinárias recorrentes, cálculos vesicais, hematúria persistente atribuída à próstata e repercussão renal por obstrução. A questão foi anulada, e a formulação realmente pode confundir ao falar especificamente em ressecção endoscópica, já que a técnica cirúrgica depende do perfil da próstata e do paciente. Mas, conceitualmente, entre as alternativas apresentadas, a que melhor representa indicação absoluta é a recorrência de infecção urinária associada à obstrução prostática.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): Um resíduo pós-miccional de 250 mL chama atenção, claro. Ele sugere esvaziamento vesical ruim e pode acompanhar obstrução infravesical por hiperplasia prostática benigna. Mas cuidado: número isolado não costuma ser tratado como indicação absoluta de ressecção endoscópica.O que transforma esse achado em indicação cirúrgica forte é o contexto: retenção urinária refratária, infecções de repetição, cálculo vesical, hematúria recorrente ou repercussão renal. Sem essas complicações, o resíduo ajuda na estratificação e no seguimento, mas não fecha sozinho a porta para conduta medicamentosa ou observação.\n• Alternativa B (Correta): Aqui está o ponto mais sólido da questão. Infecções urinárias recorrentes em homem com obstrução prostática sugerem estase urinária: a bexiga não esvazia direito, sobra urina, e essa urina parada vira terreno fértil para bactéria. Quando a HPB está gerando complicação infecciosa repetida, tratar apenas cada episódio com antibiótico é enxugar gelo.Nessa situação, a desobstrução cirúrgica passa a ser uma indicação clássica, desde que a investigação confirme relação com a obstrução infravesical e exclua outros fatores, como cálculo, cateter, prostatite crônica ou anormalidades anatômicas. A alternativa é forte porque não fala só de sintoma, fala de complicação objetiva da doença.\n• Alternativa C (Incorreta): Um escore de sintomas de 20 ou maior indica sintomas urinários graves, como jato fraco, esforço miccional, noctúria e sensação de esvaziamento incompleto. Isso pesa muito na decisão terapêutica, sem dúvida. Mas gravidade sintomática não é automaticamente sinônimo de indicação absoluta de ressecção transuretral da próstata.Sintoma intenso pode justificar cirurgia se houver falha terapêutica, preferência do paciente ou impacto importante na qualidade de vida. Só que, isoladamente, o escore é uma medida de incômodo clínico, não uma complicação obrigatória. A banca tentou misturar gravidade sintomática com indicação absoluta, e é aí que muita gente escorrega.\n• Alternativa D (Incorreta): A pressão detrusora no fluxo máximo pode ajudar a demonstrar obstrução quando interpretada junto com o fluxo urinário máximo. O raciocínio urodinâmico não é olhar só uma pressão e decretar cirurgia. O diagnóstico de obstrução depende da relação entre pressão e fluxo, além do quadro clínico.Uma pressão de 65 cmH2O sugere que a bexiga está fazendo força para vencer resistência, mas esse dado isolado não configura indicação absoluta de ressecção endoscópica. Ele pode apoiar a decisão quando há dúvida diagnóstica, principalmente em casos complexos, mas não substitui a presença de complicações como retenção refratária, infecção recorrente ou lesão do trato urinário superior.\n• Alternativa E (Incorreta): Intolerância a medicamentos, por exemplo tontura com alfabloqueador ou efeitos sexuais com inibidor da 5-alfa-redutase, pode levar o paciente para tratamento cirúrgico. Isso é bem real no ambulatório. Mas perceba a palavra central: pode. Não é a mesma coisa que indicação absoluta.Quando o paciente não tolera remédios, a decisão passa por gravidade dos sintomas, tamanho prostático, risco cirúrgico, preferência e alternativas minimamente invasivas. Sem uma complicação objetiva da HPB, como infecções recorrentes, retenção urinária refratária, cálculo vesical ou repercussão renal, a cirurgia entra como opção terapêutica, não como obrigação clínica imediata.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "b928829c-966b-4b3c-9d30-becac89f5887",
@@ -28508,10 +28538,11 @@
     "isAnulada": false,
     "statement": "Homem, 65a, comparece ao consultório para exame de rotina anual. Nega sintomas urinários significativos e está em bom estado geral. Não tem antecedentes familiares de câncer de próstata. Exame físico: próstata de tamanho aumentado, cerca de 70cm³ e consistência normal. PSA total=4,5ng/mL.A CAUSA MAIS PROVÁVEL DO AUMENTO DO PSA TOTAL DESTE PACIENTE, VISTO QUE NÃO HOUVE TRAUMA PROSTÁTICO, EXERCÍCIOS VIGOROSOS E/OU PROSTATITE, É:",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "78076606-1b3b-4483-986d-8c709063eb60",
@@ -29698,13 +29729,14 @@
         "text": "O tratamento conservador não é a primeira opção de tratamento diante do trauma renal; para optar por esse tipo de tratamento, é importante considerar a estabilidade hemodinâmica e clínica do paciente."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "commentary": "Gabarito Oficial: Alternativa B.\n\nResumo Clínico:\nNo trauma renal, a decisão inicial não depende apenas do grau anatômico da lesão: o ponto central é a estabilidade hemodinâmica. Paciente estável tende a ser manejado de forma não operatória, com monitorização, imagem adequada e, se necessário, angioembolização seletiva para sangramento ativo.A cirurgia fica reservada para cenários de maior gravidade: instabilidade hemodinâmica persistente, falha do tratamento não operatório, lesão vascular grave, avulsão hilar, ou hematoma perirrenal expansivo/pulsátil encontrado durante laparotomia. Nessa situação, o objetivo é primeiro controlar a hemorragia e, quando possível, preservar o rim por reconstrução.Portanto, a alternativa correta é a que descreve o princípio da exploração cirúrgica: controle vascular e tentativa de reconstrução renal. As demais erram por generalizar o tratamento conservador para lesões graves/penetrantes, chamar indicações importantes de cirurgia de “relativas” ou negar que a conduta conservadora seja opção inicial no paciente estável.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): O erro é tratar lesões graves e traumas penetrantes como indicação geral de conduta conservadora. O tratamento não operatório é preferencial quando o paciente está hemodinamicamente estável, sobretudo nos traumas contusos e em casos penetrantes selecionados. Lesões grau V, instabilidade hemodinâmica, hematoma expansivo ou pulsátil e sangramento não controlado mudam a conduta para intervenção.\n• Alternativa B (Correta): Quando há indicação de exploração cirúrgica, os objetivos são controlar a hemorragia e preservar o rim sempre que possível. Por isso, o raciocínio clássico é obter controle vascular, evitar destamponamento desordenado do hematoma e tentar reconstrução renal quando o sangramento estiver controlado e houver parênquima viável.\n• Alternativa C (Incorreta): Esses achados não devem ser tratados como indicação meramente relativa. Hemorragia persistente com instabilidade, hematoma perirrenal em expansão ou hematoma pulsátil indicam sangramento relevante e necessidade de intervenção, seja exploração cirúrgica imediata em contexto apropriado, seja angioembolização em paciente estável e com recurso disponível.\n• Alternativa D (Incorreta): A segunda parte lembra um critério decisivo, mas a primeira derruba a alternativa. No trauma renal, a estabilidade hemodinâmica é o principal fator de decisão, e o tratamento conservador é a primeira opção na maioria dos pacientes estáveis, especialmente nos traumas contusos.\n\nReferências: European Association of Urology. EAU Guidelines on Urological Trauma: Renal Trauma; European Association of Urology. EAU Pocket Guidelines on Urological Trauma 2022; American College of Surgeons. Best Practices Guidelines: Management of Genitourinary Injuries",
     "images": [],
-    "correct_answer": "A",
+    "correct_answer": "B",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Trauma Abdominal e Pélvico.pdf.json"
+    "official_book": "Trauma Abdominal e Pélvico.pdf.json",
+    "is_anulada": false
   },
   {
     "id": "a1b8331e-f9de-4f68-8170-ff34c300f398",
@@ -30337,10 +30369,11 @@
     "isAnulada": false,
     "statement": "Homem de 45 anos de idade trazido pelo resgate o pronto socorro referindo colisão de auto-auto lateral. Realizado todas medidas iniciais conforme ATLS. Paciente apresentava equimose em região lombar esquerda e hematúria macroscópica na sonda vesical de demora. Apresentou instabilidade hemodinâmica que respondeu a volume, permanecendo estável após as medidas iniciais. Apresentava alteração apenas no exame tomográfico do abdome com lesão renal E evidenciando laceração maior que 1cm de profundidade no parênquima e extravasamento de contraste peri-renal.Qual o grau da lesão renal neste caso?Qual a melhor conduta para o caso?",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "50aa471b-261e-49c2-8948-61f4dab8988a",
@@ -30856,10 +30889,11 @@
         "text": "A Nefrolitotripsia Percutânea não é indicada para cálculos piélicos com diâmetros superior a 20 mm."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa B.\n\nResumo Clínico e Diagnóstico:\nCálculos ureterais obstrutivos maiores que 6 mm geralmente não eliminam espontaneamente e têm indicação de tratamento intervencionista, sendo a ureteroscopia uma excelente modalidade terapêutica.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. A complicação mais frequente da LEOC é a hematúria macroscópica autolimitada; hematomas renais sintomáticos são raros (< 1%).\n• Alternativa B: Correta. Cálculos ureterais com tamanho superior a 5-6 mm com baixa probabilidade de eliminação espontânea têm indicação formal de tratamento ureteroscópico.\n• Alternativa C: Incorreta. A LEOC é estritamente contraindicada em gestantes devido ao risco potencial dos raios X e das ondas de choque para o feto.\n• Alternativa D: Incorreta. Para cálculos calicinais inferiores > 20 mm, a Nefrolitotripsia Percutânea (NLPC) é o tratamento de escolha, pois a LEOC apresenta baixas taxas livres de cálculo nessa localização.\n• Alternativa E: Incorreta. A Nefrolitotripsia Percutânea é exatamente o padrão-ouro indicado para cálculos piélicos e coruliformes com diâmetro superior a 20 mm.\n\nPérola Prática para Prova:\nPara cálculos renais maiores que 20 mm (especialmente no polo inferior ou coruliformes), a Nefrolitotripsia Percutânea (NLP) é superior à LEOC.",
     "images": [],
-    "correct_answer": "B"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "00ff75cd-b36f-40d3-8e8d-1b83a04075d2",
@@ -31514,10 +31548,11 @@
         "text": "Diminuição da frequência de micções e confusão mental."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa C.\n\nResumo Clínico:\nA questão cobra a associação entre um sintoma de HPB antes da cirurgia e uma manifestação da hiponatremia dilucional da síndrome da RTU. Nos quadros de HPB/STUI, os sintomas podem ser de armazenamento, como frequência urinária, urgência e noctúria/nictúria, ou de esvaziamento, como hesitação, esforço miccional, jato fraco e intermitência.A síndrome da RTU ocorre pela absorção sistêmica de fluido de irrigação hipotônico durante a ressecção transuretral da próstata, levando a hiponatremia dilucional e manifestações neurológicas, gastrointestinais, visuais e cardiovasculares. São descritos náuseas, vômitos, confusão, letargia, convulsões, coma, distúrbios visuais e alterações hemodinâmicas. Quando se usa glicina, os distúrbios visuais ganham importância porque podem decorrer também de toxicidade direta da glicina.O ponto problemático da questão é que há mais de uma associação correta: nictúria/noctúria é sintoma de HPB, e tanto distúrbios visuais quanto vômitos são manifestações descritas na síndrome da RTU. Assim, as alternativas A e B respondem adequadamente ao comando. A alternativa C traz hesitação, que é sintoma típico de HPB, mas “taquicardia” não é a manifestação mais clássica ou mais segura para representar a hiponatremia dilucional da síndrome da RTU diante das demais opções.\n\nAnálise das Alternativas:\n• Alternativa A (Correta): A associação é defensável: nictúria é sintoma de armazenamento frequente em pacientes com sintomas do trato urinário inferior associados à HPB, e distúrbios visuais podem ocorrer na síndrome da RTU, especialmente quando há absorção de glicina. A glicina pode causar alterações visuais, como visão borrada, halos e até cegueira transitória.\n• Alternativa B (Correta): A associação também é defensável. “Noctúria” é apenas outra grafia para nictúria, ou seja, levantar-se à noite para urinar, sintoma clássico de armazenamento nos quadros de HPB/STUI. Náuseas e vômitos estão entre manifestações descritas da síndrome da RTU e da hiponatremia dilucional aguda.\n• Alternativa C (Incorreta): Hesitação urinária é sintoma de esvaziamento típico da obstrução infravesical associada à HPB. O problema está em taquicardia: embora alterações cardiovasculares possam ocorrer na síndrome da RTU, as manifestações mais clássicas descritas incluem hipertensão, bradicardia, hipotensão em casos graves, alterações neurológicas, náuseas, vômitos e distúrbios visuais. Por isso, esta não é a melhor associação quando comparada às alternativas que trazem distúrbios visuais ou vômitos.\n• Alternativa D (Incorreta): O erro decisivo é “jato urinário forte”. Na HPB com obstrução, espera-se jato fraco, intermitência, esforço, hesitação e sensação de esvaziamento incompleto. Hipotensão pode aparecer em quadros graves ou associados a outras complicações, mas a primeira metade da alternativa já a torna inadequada.\n• Alternativa E (Incorreta): Confusão mental é manifestação compatível com hiponatremia aguda e síndrome da RTU, mas “diminuição da frequência de micções” não é sintoma típico de HPB. Nos sintomas de armazenamento, o esperado é aumento da frequência urinária, urgência e noctúria; nos sintomas de esvaziamento, jato fraco, hesitação e esforço miccional.\n\nReferências: Revista Médica de Minas Gerais - Síndrome de ressecção transuretral da próstata; Jensen V. The TURP syndrome. Canadian Journal of Anaesthesia, 1991; Manuais MSD edição para profissionais - Hiperplasia prostática benigna",
     "images": [],
-    "correct_answer": "C"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "cf9ff5b1-67de-43c1-9bb2-868bf271bf1c",
@@ -31557,10 +31592,11 @@
         "text": "O reparo de vias excretoras é mais bem realizado com fios de polipropileno."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nDiscussão sobre as indicações e técnicas de abordagem cirúrgica no trauma renal, destacando a trombose de artéria renal e revascularização.\n\nAnálise das Alternativas:\n• Alternativa A: Correto. A trombose da artéria renal decorrente de trauma contuso, se diagnosticada precocemente (dentro da janela de isquemia quente de 4 horas), tem indicação de revascularização para salvamento do parênquima.\n• Alternativa B: Incorreto. O extravasamento urinário isolado não é indicação absoluta de exploração cirúrgica imediata; a maioria cicatriza com drenagem por duplo J ou conservador.\n• Alternativa C: Incorreto. O reparo precoce e adequado dos vasos renais visa justamente *diminuir* o índice de nefrectomias.\n• Alternativa D: Incorreto. A via de acesso padrão para exploração de trauma abdominal com hematoma retroperitoneal é a transperitoneal com controle vascular precoce pelo acesso medial (manobra de Mattox ou Cattell-Braasch), mas a alternativa A é classicamente considerada a resposta direta em gabaritos oficiais desta banca sobre conduta na trombose arterial.\n• Alternativa E: Incorreto. O reparo de vias excretoras deve ser feito com fios absorvíveis (ex: Vicryl) e não polipropileno (não absorvível, que causaria cálculo).\n\nPérola Prática para Prova:\nA janela ideal para revascularização da artéria renal pós-trauma é de até 4 horas de isquemia quente para viabilidade do órgão.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "c11bbf73-914c-4c6f-87f5-641742086216",
@@ -32236,10 +32272,11 @@
     "isAnulada": false,
     "statement": "Homem, 22 anos de idade, previamente hígido, é internado na UTI com quadro de febre, dor em flanco D e hematúria há uma semana. Fez uso de antibiótico (sulfametoxazol + trimetoprima) em casa, por 3 dias, sem melhora. Nas últimas 24 horas informa que teve redução da diurese. Ao exame físico: sonolento; febril; taquipneico; FC = 100 bpm; PA = 90 x 50 mmHg; Giordano positivo à D. Exames laboratoriais apresentam leucograma de 15.800/mm³ com 8% de bastões. Ureia = 120 mg%; Cr = 2,0 mg%; pH = 7,3; PCO2 = 28 mmHg; HCO3 = 14 mEq/L; PO2 = 84; Na = 148 mEq/L; Cl = 76 mEq/L. Diante do quadro apresentado, indique o exame essencial a ser realizado antes do tratamento:",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "f40db29d-6fde-4847-89dd-3aa8215fec17",
@@ -32792,10 +32829,11 @@
         "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, tratar parceira e reavaliar em 14 dias."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "commentary": "Gabarito Oficial: Alternativa C.\n\nResumo Clínico:\nO quadro é clássico de uretrite masculina: disúria associada a secreção purulenta pela uretra em homem jovem com exposição sexual de risco. Os principais agentes cobrados em prova são Neisseria gonorrhoeae e Chlamydia trachomatis.No SUS, quando há suporte laboratorial, deve-se coletar material para diagnóstico, como bacterioscopia, cultura ou biologia molecular, conforme disponibilidade. Porém, o próprio enunciado limita os exames; nessa situação, a conduta de prova é sindrômica: tratar gonorreia e clamídia no mesmo momento, sem atrasar a terapêutica.O esquema compatível com o protocolo brasileiro é ceftriaxona 500 mg IM em dose única associada a azitromicina 1 g VO em dose única. Também faz parte da conduta orientar abstinência de relações sexuais desprotegidas até conclusão do tratamento, testar para outras IST quando possível, reforçar preservativo e abordar as parcerias sexuais para interromper a cadeia de transmissão.O retorno inicial em 7 dias é importante porque a persistência dos sintomas exige reavaliação: reinfecção, tratamento inadequado, resistência antimicrobiana ou agentes como Mycoplasma genitalium e Trichomonas vaginalis. Assim, a alternativa correta é a que combina cobertura dupla, tratamento da parceria e reavaliação em 7 dias.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): O esquema antimicrobiano está adequado para a abordagem sindrômica de corrimento uretral quando não há boa disponibilidade laboratorial: ceftriaxona para cobertura de gonococo e azitromicina para cobertura de clamídia.O problema da alternativa é o seguimento inicial em 14 dias. O fluxograma do Ministério da Saúde orienta reavaliar a persistência de sinais e sintomas após 7 dias. O intervalo de 14 dias aparece em etapa posterior do manejo de persistência, não como primeiro retorno da conduta inicial.\n• Alternativa B (Incorreta): A ceftriaxona isolada não é a melhor conduta na uretrite sem identificação etiológica. Em cenário de poucos exames, não é possível excluir coinfecção por Chlamydia trachomatis, e o protocolo brasileiro recomenda tratamento conjunto para clamídia e gonorreia.Embora a reavaliação em 7 dias esteja adequada, falta cobertura para clamídia, o que torna a alternativa incompleta.\n• Alternativa C (Correta): O paciente tem uretrite sintomática: disúria, secreção uretral purulenta, idade jovem, uso irregular de preservativo e múltiplas parcerias sexuais. Quando a investigação laboratorial é limitada, deve-se usar a abordagem sindrômica.A conduta adequada é tratar clamídia e gonorreia: ceftriaxona 500 mg IM em dose única associada a azitromicina 1 g VO em dose única. O seguimento em 7 dias permite avaliar resolução clínica e detectar persistência por reinfecção, adesão inadequada, resistência ou outro agente.Na prática, a orientação deve abranger as parcerias sexuais expostas, não apenas a parceira fixa, especialmente porque o enunciado informa que não há monogamia.\n• Alternativa D (Incorreta): Há dois problemas: monoterapia com ceftriaxona e retorno inicial tardio. A monoterapia não cobre clamídia e não corresponde à abordagem sindrômica recomendada para uretrite sem identificação do agente etiológico.Além disso, a reavaliação inicial esperada é em 7 dias para verificar persistência de sinais e sintomas. Portanto, esta opção não é adequada.\n\nReferências: Ministério da Saúde. Portaria SCTIE/MS nº 12, de 19 de abril de 2021, Anexo alterado em 04/07/2024: Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis; Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis – IST, 2022",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "is_anulada": false
   },
   {
     "id": "7bddfb64-8ffd-49cd-a124-452923b17b89",
@@ -33917,10 +33955,11 @@
     "isAnulada": false,
     "statement": "Criança, sexo masculino, 2 anos de idade, sem evidência à palpação de testículo direito em bolsa escrotal. Neste caso, identifique duas complicações possíveis que justificam a terapêutica.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nPaciente de 2 anos com criptorquidia unilateral direita. As principais complicações que justificam a orquidopexia precoce (recomendada entre 6 e 18 meses de idade) são a infertilidade futura e o risco aumentado de malignização (câncer de testículo).\n\nAnálise das Alternativas:\n• Alternativa A: As principais complicações da criptorquidia não tratada são a degeneração maligna (tumor de células germinativas) e o comprometimento da espermatogênese levando à infertilidade, além de maior propensão a trauma e hérnia inguinal associada.\n\nPérola Prática para Prova:\nA criptorquidia deve ser tratada cirurgicamente (orquidopexia) idealmente antes dos 12 a 18 meses de idade para preservar o potencial fértil e facilitar o monitoramento para malignidade.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "1fc399e4-0b9d-44b4-958e-945c54470b93",
@@ -33999,10 +34038,11 @@
         "text": "Ruptura do ligamento dorsal do pênis."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "commentary": "Gabarito Oficial: Alternativa C.\n\nResumo Clínico:\nO diagnóstico provável é fratura peniana com lesão uretral associada. Em prova, a sequência é quase fechada: relação sexual, dobramento brusco do pênis ereto, estalido, dor súbita, perda da ereção e hematoma/equimose peniana. A lesão anatômica principal é a ruptura da túnica albugínea dos corpos cavernosos.A informação que completa a alternativa correta é a uretrorragia. Sangue pelo meato após fratura peniana sugere trauma do corpo esponjoso e da uretra, devendo ser investigado e tratado no contexto do reparo cirúrgico. A uretra não fica “dentro” dos corpos cavernosos; ela percorre o corpo esponjoso, na face ventral do pênis. Por isso, a presença de sangramento uretral indica uma lesão associada, não apenas uma fratura cavernosa isolada.Os principais distratores caem porque não reproduzem o mecanismo. Priapismo é ereção persistente, não uma ruptura traumática com estalido. Coagulopatia e trombose poderiam causar dor ou sangramento em outros contextos, mas não explicam o acidente típico. Ruptura ligamentar também não justifica uretrorragia. Assim, a melhor resposta é lesão de corpos cavernosos com lesão uretral associada.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): O erro central é que a trombose não explica o mecanismo clássico: pênis ereto dobrado durante o ato sexual, estalido, dor súbita e hematoma imediato. Esse conjunto aponta para ruptura traumática da túnica albugínea dos corpos cavernosos, e a uretrorragia acrescenta suspeita de lesão uretral associada.\n• Alternativa B (Incorreta): Priapismo é ereção persistente, geralmente dolorosa no tipo isquêmico, não relacionada necessariamente a estímulo sexual e não resolvida após ejaculação. Ele não se apresenta como trauma agudo com estalido, equimose peniana súbita e sangramento uretral.\n• Alternativa C (Correta): O quadro é típico de fratura peniana: flexão forçada do pênis ereto, estalido, dor súbita e hematoma/equimose peniana. A fratura corresponde à ruptura da túnica albugínea que envolve os corpos cavernosos. A presença de uretrorragia é o sinal que direciona para lesão uretral associada, tornando esta a melhor alternativa.\n• Alternativa D (Incorreta): Coagulopatia poderia facilitar sangramentos, mas não justifica o evento mecânico súbito com estalido durante o coito. Aqui, o sangramento e o hematoma são consequência de uma ruptura traumática peniana, não de uma alteração primária da coagulação.\n• Alternativa E (Incorreta): A lesão ligamentar não é o diagnóstico clássico diante de estalido, dor súbita, equimose peniana e uretrorragia após dobramento do pênis ereto. Esses achados apontam para ruptura dos corpos cavernosos/túnica albugínea, com suspeita de acometimento da uretra.\n\nReferências: European Association of Urology. EAU Guidelines on Urological Trauma: Genital Trauma and Penile Fracture; Urethral injury in penile fracture: a narrative review. International Brazilian Journal of Urology, 2020; Fratura de pênis com trauma uretra. Revista do Colégio Brasileiro de Cirurgiões, 2013",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "is_anulada": false
   },
   {
     "id": "3adc15c6-fe12-4834-81d1-c10da7c17979",
@@ -38266,10 +38306,11 @@
         "text": "Cancro mole."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "commentary": "Gabarito Oficial: Alternativa C.\n\nResumo Clínico:\nO quadro descreve uma lesão peniana suspeita de malignidade: homem de 64 anos, lesão em glande há 8 meses, crescimento progressivo, odor desagradável, aspecto exofítico, ulcerado e exsudativo, além de linfonodomegalia inguinal bilateral. Esse conjunto é típico de carcinoma de pênis, cujo tipo histológico mais comum é o carcinoma espinocelular.Em prova, a principal pista não é apenas a presença de úlcera genital, mas a associação entre persistência após tratamento e aspecto tumoral. Úlceras infecciosas entram no diagnóstico diferencial, mas têm comportamento diferente: a sífilis primária costuma cursar com cancro duro, geralmente indolor e autolimitado; o cancro mole costuma ser doloroso e mais agudo; balanopostite fúngica é, em regra, inflamatória e superficial, sem massa ulcerada progressiva desse porte.A linfonodomegalia inguinal é relevante porque o câncer de pênis drena inicialmente para linfonodos inguinais. Em lesões ulceradas, esses linfonodos podem ser inflamatórios, mas, diante de uma lesão crônica e progressiva, devem ser encarados como sinal de alerta para possível disseminação regional. A confirmação diagnóstica é feita por biópsia da lesão suspeita.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): O erro central é a evolução crônica e progressiva da lesão. Na sífilis primária, espera-se o cancro duro: úlcera geralmente única, indolor, sem pus, podendo vir acompanhada de linfonodos regionais. Não é típico formar uma massa exofítica, ulcerada, exsudativa, malcheirosa, crescendo por 8 meses e sem resposta a tratamentos locais.\n• Alternativa B (Incorreta): Balanopostite fúngica costuma causar quadro inflamatório superficial, com eritema, prurido, ardor, fissuras ou placas esbranquiçadas. Uma lesão de 2,5 cm, exofítica, ulcerada, exsudativa, de crescimento progressivo por meses e associada a linfonodomegalia inguinal não é o padrão esperado de candidíase genital.\n• Alternativa C (Correta): A combinação de homem idoso, lesão persistente em glande, crescimento progressivo, aspecto exofítico e ulcerado, odor desagradável, exsudato e falha de tratamentos tópicos aponta para carcinoma de pênis, especialmente carcinoma espinocelular. A linfonodomegalia inguinal bilateral reforça a gravidade do quadro, pois pode representar disseminação linfática, embora linfonodos reacionais também possam ocorrer em lesões ulceradas infectadas.\n• Alternativa D (Incorreta): O cancro mole, causado por Haemophilus ducreyi, classicamente cursa com uma ou mais úlceras genitais dolorosas e linfonodomegalia inguinal dolorosa ou supurativa. O ponto que afasta essa hipótese é a lesão tumoral exofítica, de evolução arrastada por 8 meses e crescimento progressivo, muito mais compatível com neoplasia do que com uma úlcera venérea aguda.\n\nReferências: Instituto Nacional de Câncer (INCA). Câncer de pênis: versão para profissionais de saúde; Ministério da Saúde. Câncer de pênis; European Association of Urology. EAU Guidelines on Penile Cancer: Diagnostic Evaluation and Staging; Ministério da Saúde. Sífilis; Centers for Disease Control and Prevention. Chancroid: STI Treatment Guidelines",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "is_anulada": false
   },
   {
     "id": "e5059ee8-3506-4077-beae-89faa7552789",
@@ -39072,10 +39113,11 @@
     "isAnulada": false,
     "statement": "Paciente de 48 anos, branco, encontra-se no quinto dia de internação hospitalar, em função de ter sido politraumatizado em acidente automobilístico, no qual sofreu traumatismo cranioencefálico que resultou em lesão axonal difusa; trauma torácico com contusões pulmonares bilaterais; hemopneumotórax à direita, que foi drenado em selo d&#39;água; e fratura exposta no Membro Inferior Direito (MID), que foi submetido à fixação transesquelética. Ele encontra-se intubado, sob ventilação mecânica protetora, com acesso venoso profundo na veia subclávia direita e cateter vesical de demora. A despeito da antibioticoprofilaxia com cefazolina e gentamicina, o paciente continua apresentando alguns picos febris diários, além de possuir critérios sugestivos da síndrome da resposta inflamatória sistêmica (taquicárdico, febril e com leucocitose no hemograma). Atualmente, os dados que mais chamam a atenção são: significativa elevação das escórias nitrogenadas (ureia = 122 mg/dl; creatinina = 3,2 mg/dl), hipercalemia (K+ sérico = 6,3 mEq/L) e acidose metabólica moderada. Segundo o registro da enfermagem, o paciente encontra-se anúrico nas últimas 12 horas, tendo apresentado diurese total de 150 ml no dia anterior. Ao exame, o paciente encontra-se sedado, em classificação RASS - 5, Ramsay 6, hipocorado 2+/4+, hipo-hidratado (2+/4+), acianótico, anictérico, febril (38,2ºC), com perfusão capilar periférica normal; PA = 100 x 78 mmHg; FC = 112 bpm; FR = 16 irpm (ventilação mecânica controlada, sob sedação); ausculta do precárdio com bulhas normofonéticas e presença de ruído rude sisto-diastólico, sem sopros; ausculta pulmonar com MV diminuído à direita, além de estertores bolhosos e roncos esparsos; abdome plano, flácido, depressível, com peristalse diminuída e aparentemente indolor; MID com fixação transesquelética na região infrapatelar; MIE sem alterações. Revendo o prontuário e a prescrição médica em curso, há registro de que o paciente é portador de Hipertensão Arterial Sistêmica (HAS) de longa data, fazendo uso regular de hidroclorotiazida e losartana. Desde a internação, vem em infusão contínua de midazolam e fentanil, além dos fármacos já listados, e está fazendo dieta enteral e hidratação venosa. Foi submetido a duas tomografias computadorizadas de crânio e uma de tórax com contraste venoso. O diagnóstico de Injúria Renal Aguda (IRA) já foi estabelecido. Com base no caso clínico apresentado: apresente três causas possíveis para a IRA diagnosticada no paciente.",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "2fed93d7-e626-4339-a186-c798b505892c",
@@ -39602,13 +39644,14 @@
         "text": "A tumescência crônica, bem tolerada, sem rigidez total do pênis é uma alteração relacionada ao priapismo não isquêmico e deve ser tratada inicialmente com cirurgia, pela baixa chance de resolução espontânea."
       }
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa D.\n\nResumo Clínico e Diagnóstico:\nO priapismo isquêmico (veno-oclusivo) é uma emergência médica caracterizada por ereção dolorosa e rígida com hipóxia cavernosa. O manejo inicial inclui aspiração, irrigação e uso de agonistas alfa-adrenérgicos intracavernosos (fenilefrina).\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. O uso recreativo de estimulantes sexuais ou inibidores da fosfodiesterase tipo 5 (PDE5) está classicamente associado ao priapismo isquêmico, mas a afirmação nesta questão é superada pela precisão detalhada da alternativa D sobre o manejo.\n• Alternativa B: Incorreta. O priapismo não isquêmico (arterial) caracteriza-se por ereções não totalmente rígidas, indolores e sem isquemia, não sendo uma emergência médica imediata.\n• Alternativa C: Incorreta. O priapismo isquêmico é uma ereção persistente (e não não persistente), dolorosa e sem relação com estímulo sexual.\n• Alternativa D: Correta. O priapismo isquêmico é uma emergência que causa fibrose cavernosa e disfunção erétil se não tratado. A intervenção inicial baseia-se em aspiração, irrigação com solução salina e injeção intracavernosa de fenilefrina, juntamente com o tratamento da condição de base (como doença falciforme).\n• Alternativa E: Incorreta. O priapismo não isquêmico (tumescência crônica, indolor, sem rigidez total) é manejado inicialmente de forma conservadora (observação), pois a resolução espontânea é comum e a cirurgia precoce pode causar disfunção erétil.\n\nPérola Prática para Prova:\nO priapismo isquêmico é uma emergência urológica (síndrome compartimental do corpo cavernoso). Passadas 4-6 horas, inicia-se dano tecidual irreversível com fibrose e impotência definitiva, sendo a fenilefrina intra-arterial/intracavernosa o tratamento de escolha.",
     "images": [],
-    "correct_answer": "D",
+    "correct_answer": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Urologia.pdf.json"
+    "official_book": "Urologia.pdf.json",
+    "is_anulada": true
   },
   {
     "id": "f694dfe6-740c-4d9d-87e5-9b82d7f513f5",
@@ -39937,10 +39980,11 @@
         "text": "GMP cíclico."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa B.\n\nResumo Clínico e Diagnóstico:\nO óxido nítrico (ON) é o principal neurotransmissor e fator relaxante endotelial responsável pelo relaxamento da musculatura lisa dos corpos cavernosos, mediando a resposta erétil.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. A acetilcolina atua na terminação nervosa parassimpática estimulando a liberação de óxido nítrico pelo endotélio vascular, mas não é o mediador final direto do relaxamento do músculo liso cavernoso.\n• Alternativa B: Correta. O óxido nítrico (NO) difunde-se para as células musculares lisas dos corpos cavernosos, ativando a guanilato ciclase e elevando os níveis de GMPc.\n• Alternativa C: Incorreta. O cálcio intracelular está envolvido na contração da musculatura lisa; sua diminuição (e não sua ação direta como neurotransmissor relaxante) é que permite o relaxamento.\n• Alternativa D: Incorreta. O GMP cíclico é o segundo mensageiro intracelular e o efetor direto do relaxamento (ativado pelo óxido nítrico), sendo classificado bioquimicamente como um nucleotídeo cíclico e segundo mensageiro, e não como o neurotransmissor periférico em si.\n\nPérola Prática para Prova:\nA via do Óxido Nítrico - GMPc é o pilar fisiológico da ereção peniana. O NO é o neurotransmissor/gasotransmissor e o GMPc é o segundo mensageiro que promove a queda do cálcio intracelular e o relaxamento.",
     "images": [],
-    "correct_answer": "B"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "9689ae9e-f5a8-451e-ad97-1c1d4f6214cf",
@@ -40219,10 +40263,11 @@
         "text": "Dutasteride."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa B.\n\nResumo Clínico e Diagnóstico:\nA tamsulosina, um alfa-bloqueador uroosseletivo alfa-1a, está classicamente associada à Síndrome da Íris Frouxa Intra-operatória (IFIS) durante cirurgias de catarata.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. A finasteride é um inibidor da 5-alfa-redutase e não causa frouxidão da íris.\n• Alternativa B: Correta. A tamsulosina bloqueia os receptores alfa-1 adrenérgicos no músculo dilatador da pupila, causando atonia e a Síndrome da Íris Frouxa Intra-operatória (IFIS), complicação importante em cirurgias de catarata.\n• Alternativa C: Incorreta. Embora seja um alfa-bloqueador, a doxazosina é um bloqueador alfa-1 não seletivo e tem risco significativamente menor ou quase nulo de causar a clássica IFIS comparada à tamsulosina.\n• Alternativa D: Incorreta. A dutasteride é um inibidor da 5-alfa-redutase (análogo à finasteride) e não possui relação com a IFIS.\n\nPérola Prática para Prova:\nSempre questione pacientes idosos em uso de Tamsulosina sobre cirurgias de catarata programadas, devido ao alto risco de Síndrome da Íris Frouxa Intra-operatória (IFIS).",
     "images": [],
-    "correct_answer": "B"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "81a5fcca-61e0-4a59-9bbf-124386c924d9",
@@ -42717,10 +42762,11 @@
     "isAnulada": false,
     "statement": "Homem, 80a, procura a Unidade de Pronto Atendimento queixando - se de dor em baixo ventre há seis horas. Refere história de dificuldade para urinar e jato urinário fraco, com piora no último mês. Exame físico: abaulamento em baixo ventre, doloroso à palpação. O TRATAMENTO IMEDIATO É :",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nPaciente idoso com retenção urinária aguda (RUA) secundária a hiperplasia prostática benigna (HPB), manifestada por dor suprapúbica e bexigoma. O tratamento imediato é a descompressão vesical por meio de cateterismo vesical de alívio ou demora.\n\nAnálise das Alternativas:\n• Alternativa A: Passagem de sonda vesical de demora (alívio/descompressão do globo vesical).\n• Alternativa B: Sem alternativas de múltipla escolha no enunciado original.\n• Alternativa C: Sem alternativas de múltipla escolha no enunciado original.\n• Alternativa D: Sem alternativas de múltipla escolha no enunciado original.\n\nPérola Prática para Prova:\nDiante de um quadro de Retenção Urinária Aguda (RUA), a conduta imediata e mandatória é a sondagem vesical para alívio do sofrimento ureterovesical e prevenção de lesão renal aguda obstrutiva.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "54626d99-b005-4731-b339-c8c3407b9c20",
@@ -42739,10 +42785,11 @@
     "isAnulada": false,
     "statement": "Homem, 43a, foi admitido no pronto - socorro após queda de motocicleta. Exame físico: Abdome: palpação dolorosa e abaulamento em região suprapúbica, dor e crepitação à palpação dos trocanteres e abertura da sínfise púbica de 4 cm; Genitais: sangue em meato uretral externo e equimose perineal. Radiograma de bacia: presença de fratura. A porção da uretra lesada é:",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nPaciente com fratura de pelve (abertura da sínfise púbica) associada a sinais clássicos de lesão uretral (sangue no meato externo e equimose perineal). A fratura pélvica com deslocamento está classicamente associada à lesão da uretra posterior (membranosa ou prostatomembranosa).\n\nAnálise das Alternativas:\n• Alternativa A: Uretra posterior (membranosa / prostatomembranosa), associada a fraturas do anel pélvico.\n• Alternativa B: Sem alternativas de múltipla escolha no enunciado original.\n• Alternativa C: Sem alternativas de múltipla escolha no enunciado original.\n• Alternativa D: Sem alternativas de múltiplas escolha no enunciado original.\n\nPérola Prática para Prova:\nA tríade de lesão de uretra posterior no trauma pélvico inclui: sangue no meato uretral, incapacidade de urinar e bexigoma (ou dor suprapúbica), associada a fraturas de pelve. A passagem de sonda vesical é contraindicada antes de realizar uretrocistografia retrógrada.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "0ec01994-ffe0-4426-9f86-5c80610e4208",
@@ -43250,10 +43297,11 @@
         "text": "O diagnóstico de trauma de uretra é feito com radiografia de pelve."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa B.\n\nResumo Clínico e Diagnóstico:\nIdentificação e associação correta do trauma uretral posterior com a fratura de bacia.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta, pois a sondagem vesical é contraindicada na suspeita de lesão uretral, pois pode converter uma lesão parcial em total.\n• Alternativa B: Correta, a uretra membranosa (parte da uretra posterior) é classicamente lesionada em fraturas de bacia devido ao cisalhamento nos ligamentos puboprostáticos.\n• Alternativa C: Incorreta, a uretra peniana é anterior e geralmente afetada por trauma contuso direto (queda a cavaleiro) ou iatrogenia.\n• Alternativa D: Incorreta, o exame padrão-ouro para o diagnóstico de trauma uretral é a uretrocistografia retrógrada.\n• Alternativa E: Incorreta, a radiografia de pelve mostra a fratura óssea associada, mas o diagnóstico definitivo da lesão uretral é feito pela uretrocistografia retrógrada.\n\nPérola Prática para Prova:\nFratura de bacia + sangue no meato uretral = suspeita imediata de lesão de uretra posterior. NUNCA passe sonda sem descartar a lesão com uretrocistografia retrógrada.",
     "images": [],
-    "correct_answer": "B"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "e5c27c53-15a9-4d64-b2df-f5d813f294c5",
@@ -43625,10 +43673,11 @@
         "text": "A HBP não apresenta risco de retenção urinária aguda, ao contrário do câncer de próstata,"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "commentary": "Gabarito Oficial: Alternativa C.\n\nResumo Clínico:\nO conceito central da questão é a diferença anatômica entre HBP e câncer de próstata. A HBP é uma proliferação benigna de tecido glandular e estromal que ocorre principalmente na zona de transição e na região periuretral. Como essa região envolve a uretra prostática, o crescimento benigno pode produzir sintomas obstrutivos: hesitação, jato fraco, intermitência, sensação de esvaziamento incompleto e noctúria.O câncer de próstata, por sua vez, surge mais frequentemente na zona periférica. Por isso, alterações ao toque retal como nódulo endurecido, assimetria ou área pétrea aumentam a suspeita de câncer. Ainda assim, um toque normal não exclui neoplasia, e o PSA isolado também não confirma câncer.O PSA deve ser entendido como marcador prostático, não como marcador exclusivo de malignidade. Valores elevados podem ocorrer por câncer, mas também por HBP, prostatite, retenção urinária e outros fatores. No paciente descrito, a próstata volumosa, fibroelástica e sem nódulos favorece HBP como explicação para os sintomas, enquanto o PSA de 6,2 ng/mL deve ser avaliado em conjunto com idade, risco individual, exame físico, densidade do PSA, repetição do exame quando apropriado, imagem e eventual indicação de biópsia.Para prova, a síntese é: HBP cresce na zona de transição/periuretral e causa obstrução urinária; câncer de próstata nasce mais frequentemente na zona periférica e pode alterar toque retal e PSA. A alternativa correta é a que preserva essa divisão anatômica.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): A alternativa inverte a anatomia clássica. A HBP se desenvolve principalmente na zona de transição e na região periuretral, justamente onde pode comprimir a uretra prostática e causar sintomas de esvaziamento, como hesitação e jato fraco.O câncer de próstata, embora também possa ocorrer na zona de transição, tem origem mais frequente na zona periférica, região posterior e lateral da glândula, parcialmente acessível ao toque retal.\n• Alternativa B (Incorreta): O PSA não é marcador específico de câncer. Ele é produzido por tecido prostático normal e neoplásico, podendo se elevar em câncer de próstata, HBP, prostatite, retenção urinária e após manipulações prostáticas.No caso, há próstata volumosa, com 75 mL. Esse aumento benigno de volume pode contribuir para PSA mais alto. Portanto, PSA de 6,2 ng/mL exige avaliação contextualizada, mas não autoriza concluir que há câncer.\n• Alternativa C (Correta): Essa é a relação anatômica fundamental. Na HBP ocorre proliferação de componentes glandulares e estromais sobretudo na zona de transição e na região periuretral, o que explica a obstrução ao fluxo urinário e os sintomas de esvaziamento.Já o câncer de próstata surge mais frequentemente na zona periférica. O enunciado reforça HBP ao descrever próstata globalmente aumentada, fibroelástica, sem nódulos e sem lesões focais à ultrassonografia transretal, embora o PSA alterado ainda deva ser interpretado com cautela clínica.\n• Alternativa D (Incorreta): O toque retal é útil para avaliar tamanho, consistência, assimetria e nódulos, especialmente em lesões posteriores ou laterais da próstata. Porém, ele não é mais sensível que o PSA para detecção precoce de câncer localizado.Muitos tumores localizados são pequenos, não palpáveis ou situados em áreas pouco acessíveis ao toque. Na prática, PSA e toque retal são exames complementares na investigação, e a confirmação diagnóstica depende de biópsia quando indicada.\n• Alternativa E (Incorreta): A HBP pode causar obstrução infravesical progressiva e é uma causa clássica de retenção urinária aguda. O crescimento na zona de transição comprime a uretra prostática e pode levar a resíduo pós-miccional, infecção urinária, cálculo vesical, hidronefrose e retenção.O câncer de próstata também pode causar obstrução em doença localmente avançada, mas é incorreto afirmar que a HBP não apresenta esse risco.\n\nReferências: Instituto Nacional de Câncer. Câncer de próstata: versão para profissionais de saúde; Ministério da Saúde. Câncer de próstata; European Association of Urology. EAU Guidelines on the Management of Non-neurogenic Male LUTS: Diagnostic Evaluation; European Association of Urology. EAU Guidelines on Prostate Cancer: Diagnostic Evaluation; Ng M, Leslie SW, Baradhi KM. Benign Prostatic Hyperplasia. StatPearls, 2026; Lawrentschuk N, Ptasznik G, Ong S. Benign Prostate Disorders. Endotext, 2021; National Cancer Institute. Prostate-Specific Antigen (PSA) Test",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "is_anulada": false
   },
   {
     "id": "af806609-5165-4fbf-b515-ff267fa0a217",
@@ -44780,13 +44829,14 @@
         "text": "repouso  até  resolução  da  hematúria,  hematócrito  seriado e antibióticos."
       }
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa D.\n\nResumo Clínico e Diagnóstico:\nPaciente estável hemodinamicamente com trauma renal fechado grau III (laceração cortical > 1 cm sem extravasamento) deve ser manejado de forma conservadora.\n\nAnálise das Alternativas:\n• Alternativa A: Incorreta. A arteriografia com embolização é reservada para pacientes instáveis com sangramento arterial ativo (extravasamento de contraste na TC) refratários ou lesões de alto grau com sangramento persistente.\n• Alternativa B: Incorreta. A hematúria isolada, mesmo macroscópica, não é indicação cirúrgica absoluta em pacientes hemodinamicamente estáveis com lesão renal fechada.\n• Alternativa C: Incorreta. Sonda de três vias e irrigação são indicadas para sangramento prostático ou vesical maciço (ex: pós-operatório ou hematúria grave por causas uroteliais), não sendo o padrão para trauma renal isolado.\n• Alternativa D: Correta. A grande maioria dos traumas renais fechados (graus I a III, e muitos graus IV se estáveis) é tratada conservadoramente com repouso no leito, controle rigoroso de sinais vitais, hematócrito seriado, analgesia e antibioticoterapia profilática conforme protocolo.\n\nPérola Prática para Prova:\nNo trauma renal fechado, a estabilidade hemodinâmica é o fator determinante da conduta, e não o grau da lesão isolado ou a presença de hematúria. Paciente estável = tratamento conservador.",
     "images": [],
-    "correct_answer": "D",
+    "correct_answer": "",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Trauma Abdominal e Pélvico.pdf.json"
+    "official_book": "Trauma Abdominal e Pélvico.pdf.json",
+    "is_anulada": true
   },
   {
     "id": "a68c0f31-320b-4878-9a6f-12637ccdbbcc",
@@ -44822,10 +44872,11 @@
         "text": "terapia   expulsora   do   cálculo   com   hidratação   e   alfa- bloqueadores."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito: Alternativa A.\n\nResumo Clínico e Diagnóstico:\nCálculo de 1,2 cm em junção ureteropiélica (JUP) com alta densidade (1.500 UH) tem baixa chance de eliminação espontânea ou sucesso com LECO, sendo a ureterorrenoscopia uma excelente opção endourológica.\n\nAnálise das Alternativas:\n• Alternativa A: Correta. A ureterorrenoscopia (flexível) é altamente eficaz para cálculos renais e de JUP de tamanho moderado (~1 cm a 2 cm), especialmente com densidades elevadas onde a LECO falharia.\n• Alternativa B: Incorreta. A cirurgia aberta (pielolitotomia) é historicamente obsoleta para a maioria dos cálculos, sendo exceções extremamente raras (anatomias complexas, grandes coraliformes associados a correções de JUP simultâneas abertas, embora a via laparoscópica/robótica ou percutânea prevaleça).\n• Alternativa C: Incorreta. Cálculos com densidade superior a 1.000 - 1.200 UH (como este de 1.500 UH) e localizados na JUP/pelve inferior respondem mal à litotripsia extracorpórea por ondas de choque (LECO).\n• Alternativa D: Incorreta. A terapia expulsora com alfa-bloqueadores é indicada para cálculos ureterais distais menores que 10 mm (1 cm). Um cálculo de 1,2 cm na JUP não é candidato a tratamento clínico exclusivo.\n\nPérola Prática para Prova:\nCálculos com densidade > 1.000 UH na tomografia apresentam maior dureza e menor taxa de fragmentação por LECO. Tamanhos superiores a 10 mm (1 cm) geralmente requerem intervenção ativa (URSL ou NLP).",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "34fc04ca-b0fc-4178-8d81-7979db12f405",
@@ -45049,10 +45100,11 @@
     "isAnulada": false,
     "statement": "Um paciente com 22 anos comparece à unidade básica de saúde, sem apoio de exames laboratoriais, referindo corrimento uretral discreto, amarelado e com odor forte, acompanhado de prurido uretral e disúria há 3 dias.Considerando o caso apresentado, acerca do manejo clínico de corrimento uretral, faça o que se pede nos itens a seguir.a)\\tAponte 5 itens da história clínica do paciente que devem ser coletados durante a entrevista. (valor: 2,5 pontos)b)\\tIndique os 2 agentes etiológicos mais prováveis nessa situação. (valor: 1,0 ponto)c)\\tNa indisponibilidade para a realização de exames laboratoriais, cite qual é a primeira opção de tratamento inicial de corrimento uretral. (valor: 2,0 pontos)d)\\tSe os sintomas persistirem após 7 dias do tratamento, mesmo com uso regular da medicação prescrita, cite qual agente etiológico deve ser tratado. (valor: 1,0 ponto)e)\\tCite as 3 vacinas que devem ser averiguadas no cartão de vacinação e as 4 testagens a serem oferecidas, que são pertinentes ao caso. (valor: 3,5 pontos)",
     "options": [],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": false
   },
   {
     "id": "baf04ead-6a68-438f-8442-68a74db85f93",
@@ -45127,10 +45179,11 @@
         "text": "Solicitar cistoscopia com nova ressecção trimestral."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico:\nO ponto central é reconhecer um câncer de bexiga não músculo-invasivo: tumor urotelial ressecado por RTU, superficial e sem invasão da muscular própria. Dentro desse grupo, o alto grau histológico e a multifocalidade aumentam o risco de recorrência e progressão.Depois da RTU, a conduta não é simplesmente observar nem programar ressecções repetidas. A estratégia combina três ideias: completar adequadamente o estadiamento/ressecção quando necessário; realizar tratamento intravesical adjuvante; e manter vigilância endoscópica.Mitomicina em dose única: útil sobretudo em tumores de baixo risco ou em instilação imediata selecionada após RTU; não basta para alto grau.BCG intravesical: tratamento adjuvante clássico para tumores não músculo-invasivos de alto grau, com indução e manutenção conforme risco e disponibilidade.Cistoscopia: o controle é feito aos 3 meses e depois de forma frequente nos tumores de alto grau; ressecção só é realizada se houver indicação.A melhor resposta entre as alternativas é indicar BCG intravesical. A alternativa que fala em cistoscopia trimestral contém uma ideia verdadeira de seguimento, mas erra ao associar “nova ressecção trimestral” como conduta programada.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): A cistectomia radical é tratamento-padrão da doença músculo-invasiva ou opção precoce em situações selecionadas de muito alto risco ou falha ao BCG. O enunciado descreve carcinoma urotelial sem invasão muscular nem linfonodos, após RTU de lesões superficiais. Como primeira conduta, remover a bexiga inteira seria excessivo diante das opções conservadoras.\n• Alternativa B (Correta): O quadro é de carcinoma urotelial não músculo-invasivo de alto grau, multifocal. Após RTU, tumores de alto grau exigem tratamento adjuvante intravesical, e a opção clássica é BCG, em esquema de indução e, conforme risco e disponibilidade, manutenção. Pode haver necessidade de segunda RTU se a ressecção foi incompleta, se não houver músculo detrusor na amostra ou em T1; isso não elimina a indicação de BCG como tratamento intravesical adequado.\n• Alternativa C (Incorreta): A dose única imediata de mitomicina pós-RTU é medida voltada principalmente a tumores de baixo risco ou a cenários selecionados para reduzir recorrência inicial. Isoladamente, não é conduta suficiente para carcinoma urotelial de alto grau e multifocal, no qual o risco de recorrência/progressão exige tratamento adjuvante mais intenso, usualmente com BCG.\n• Alternativa D (Incorreta): A vigilância deve incluir cistoscopia aos 3 meses e, nos tumores de maior risco ou de alto grau, seguimento cistoscópico frequente. O erro da alternativa é transformar esse seguimento em nova ressecção trimestral: ressecção transuretral não é feita de rotina a cada 3 meses; é indicada diante de lesão visível/recidiva ou como segunda RTU em situações específicas, tipicamente em 2 a 6 semanas quando indicada.\n\nReferências: Sociedade Brasileira de Oncologia Clínica. Diretrizes de tratamentos oncológicos: Bexiga, 2026; European Association of Urology. Guidelines on Non-muscle-invasive Bladder Cancer: Disease Management, 2026; European Association of Urology. Guidelines on Non-muscle-invasive Bladder Cancer: Diagnosis, 2026; European Association of Urology. Guidelines on Non-muscle-invasive Bladder Cancer: Follow-up of Patients With NMIBC, 2026; European Association of Urology. Guidelines on Non-muscle-invasive Bladder Cancer: Summary of Changes 2023",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "21af9efa-6570-4490-98ca-6a89e3b9adcc",
@@ -45205,10 +45258,11 @@
         "text": "Tuberculose genitourinária; urocultura específica para BAAR e urografia excretora."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "",
     "commentary": "Gabarito Oficial: Alternativa A.\n\nResumo Clínico:\nO ponto decisivo da questão é reconhecer que hematúria macroscópica em idoso tabagista deve ser tratada como sinal de alerta para neoplasia urológica até prova em contrário. O tumor urotelial de bexiga é uma hipótese forte, especialmente quando há sintomas irritativos vesicais associados.A investigação precisa cobrir dois territórios: o trato urinário inferior, principalmente a bexiga, e o trato urinário superior. Para a bexiga, a cistoscopia é o exame-chave, pois permite visualização direta e obtenção de material para histologia. Para o trato urinário superior e pesquisa de lesões sincrônicas, o exame de imagem mais esperado é a urotomografia/TC com contraste em fase excretora.A ressonância magnética pode ter papel em estadiamento local selecionado, como na avaliação da invasão da parede vesical, ou quando a TC contrastada não puder ser realizada. Por isso, a alternativa A acerta a hipótese e inclui cistoscopia, mas não traz o conjunto de exames mais adequado. A alternativa B traz um exame de imagem útil, mas erra a hipótese principal e não inclui cistoscopia. Assim, a anulação é tecnicamente compreensível: faltou uma opção que combinasse tumor urotelial, cistoscopia e urotomografia.\n\nAnálise das Alternativas:\n• Alternativa A (Incorreta): A hipótese de tumor urotelial é a mais provável pelo conjunto de hematúria macroscópica intermitente, idade avançada, tabagismo importante e sintomas irritativos vesicais. O problema está no par de exames: a cistoscopia é essencial, mas a ressonância magnética não é, em geral, o exame de imagem mais adequado para a investigação inicial ampla. O exame de imagem mais esperado seria urotomografia/TC com contraste em fase excretora, reservando a RM para situações selecionadas, como contraindicação ao contraste iodado ou estadiamento local específico.\n• Alternativa B (Incorreta): O erro central é a hipótese diagnóstica. Ureterolitíase obstrutiva costuma se apresentar com cólica renal intensa em flanco, frequentemente irradiada, e não como hematúria visível por semanas em paciente idoso e tabagista pesado.A urotomografia com contraste até se aproxima do exame de imagem útil para avaliar o trato urinário, mas a alternativa não inclui cistoscopia e parte de uma hipótese menos provável.\n• Alternativa C (Incorreta): A hiperplasia prostática pode causar sintomas urinários baixos, mas não deve ser a principal explicação para hematúria macroscópica persistente em idoso tabagista sem excluir neoplasia urotelial.PSA e ultrassonografia transretal avaliam próstata; não investigam adequadamente bexiga e trato urinário superior no contexto de suspeita de tumor urotelial.\n• Alternativa D (Incorreta): Faltam elementos que sustentem tuberculose genitourinária como principal hipótese, como piúria estéril persistente, sintomas sistêmicos, história epidemiológica sugestiva ou acometimento urinário crônico típico.Além disso, urografia excretora perdeu espaço para métodos seccionais modernos. No caso apresentado, idade, tabagismo e hematúria visível apontam primeiro para investigação oncológica.\n\nReferências: INCA. Câncer de bexiga: versão para profissionais de saúde; European Association of Urology. EAU Guidelines on Non-muscle-invasive Bladder Cancer: Diagnosis; Associação Médica Brasileira e Conselho Federal de Medicina; Sociedade Brasileira de Urologia. Projeto Diretrizes: Câncer de Bexiga - Parte I",
     "images": [],
-    "correct_answer": "A"
+    "correct_answer": "",
+    "is_anulada": true
   },
   {
     "id": "bb861a94-ad7b-401d-891d-1c61fe8df62d",

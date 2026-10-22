@@ -54,6 +54,12 @@ const MockExams = dynamic(
   () => import('@/components/MockExams').then((mod) => mod.MockExams),
   { ssr: false }
 );
+
+const CadernoDeErros = dynamic(
+  () => import('@/components/CadernoDeErros').then((mod) => mod.CadernoDeErros),
+  { ssr: false }
+);
+
 import {
   UserStats,
   PerformanceFilterState,
@@ -62,7 +68,9 @@ import {
   Folder,
   QuestionList,
   UserAttempt,
-  Question
+  Question,
+  UserAnswerItem,
+  ErrorReasonType
 } from '@/types';
 import {
   fetchQuestionsFromSupabase,
@@ -238,23 +246,18 @@ export default function Home() {
     return userId ? `bancoresidencia_user_answers_${userId}` : 'bancoresidencia_user_answers_guest';
   };
 
-  type UserAnswerItem = {
-    letter: 'A' | 'B' | 'C' | 'D' | 'E';
-    isCorrect: boolean;
-    timestamp: number;
-    difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
-    isAnulada: boolean;
-    specialty?: string;
-    tema?: string;
-    foco?: string;
-    subfoco?: string;
-  };
-
   // Respostas do Usuário com metadados do item e persistência real específica da conta
   const [userAnswers, setUserAnswers] = useState<Record<string, UserAnswerItem>>({});
   const userAnswersRef = useRef(userAnswers);
   useEffect(() => {
     userAnswersRef.current = userAnswers;
+  }, [userAnswers]);
+
+  // Contagem dinâmica de erros pendentes na conta para badges e navegação
+  const pendingErrorsCount = useMemo(() => {
+    return Object.values(userAnswers).filter(
+      (a) => !a.isCorrect && a.statusRetrial !== 'recuperado'
+    ).length;
   }, [userAnswers]);
 
   // Simulação de questões extras
@@ -867,16 +870,30 @@ export default function Home() {
     const answerTimestamp = Date.now();
     const isAnuladaQuestion = Boolean(q?.isAnulada || q?.correctAnswer === 'ANULADA');
     const finalIsCorrect = isAnuladaQuestion ? true : isCorrect;
-    const answerObj = {
+
+    const prevAnswer = userAnswers[questionId];
+    const isRetrialRecovery = prevAnswer && !prevAnswer.isCorrect && finalIsCorrect;
+
+    const answerObj: UserAnswerItem = {
+      ...prevAnswer,
       letter: selectedLetter,
       isCorrect: finalIsCorrect,
       timestamp: answerTimestamp,
-      difficulty: q?.difficulty || 'Médio',
+      difficulty: q?.difficulty || prevAnswer?.difficulty || 'Médio',
       isAnulada: isAnuladaQuestion,
-      specialty: q?.especialidade,
-      tema: q?.tema,
-      foco: q?.foco,
-      subfoco: q?.subfoco
+      specialty: q?.especialidade || prevAnswer?.specialty,
+      tema: q?.tema || prevAnswer?.tema,
+      foco: q?.foco || prevAnswer?.foco,
+      subfoco: q?.subfoco || prevAnswer?.subfoco,
+      banca: q?.banca || prevAnswer?.banca,
+      year: q?.year || prevAnswer?.year,
+      code: q?.code || prevAnswer?.code,
+      statusRetrial: isRetrialRecovery
+        ? 'recuperado'
+        : finalIsCorrect
+        ? prevAnswer?.statusRetrial || undefined
+        : 'pendente',
+      lastRetriedAt: isRetrialRecovery ? answerTimestamp : prevAnswer?.lastRetriedAt
     };
 
     setUserAnswers((prev) => {
@@ -916,7 +933,6 @@ export default function Home() {
           }
         });
     }
-
     if (activeListId) {
       setLists((prev) => {
         const nextLists = prev.map((l) => {
@@ -941,6 +957,49 @@ export default function Home() {
         return nextLists;
       });
     }
+  };
+
+  // Atualização de metadados do erro no Caderno de Erros (motivo do erro e anotação pessoal)
+  const handleUpdateAnswerMeta = (
+    questionId: string,
+    meta: {
+      errorReason?: ErrorReasonType;
+      studentNotes?: string;
+      statusRetrial?: 'pendente' | 'recuperado';
+    }
+  ) => {
+    setUserAnswers((prev) => {
+      const current = prev[questionId];
+      if (!current) return prev;
+      const updated: UserAnswerItem = {
+        ...current,
+        ...meta
+      };
+      const nextAnswers = {
+        ...prev,
+        [questionId]: updated
+      };
+      if (typeof window !== 'undefined') {
+        try {
+          const storageKey = getUserAnswersStorageKey(user?.id);
+          localStorage.setItem(storageKey, JSON.stringify(nextAnswers));
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      return nextAnswers;
+    });
+  };
+
+  // Iniciar sessão de treino focada exclusivamente nos erros selecionados
+  const handleStartTreinoErros = (questionIds: string[]) => {
+    if (!questionIds || questionIds.length === 0) return;
+    setSessionQuestionIds(questionIds);
+    setSessionQuestionLimit(questionIds.length);
+    setCurrentQuestionIndex(0);
+    setQuestionsPage(1);
+    setBancoMode('resolucao');
+    setActiveTab('banco');
   };
 
   const handleSimulateDemoQuestions = (amount: number) => {
@@ -1245,6 +1304,17 @@ export default function Home() {
       especialidades: [specialty],
       temas: [tema],
       subfocos: [subfoco]
+    }));
+    setActiveTab('banco');
+    setBancoMode('filtros');
+  };
+
+  const handleNavigateToBancoFromCaderno = (specialty?: string, tema?: string, subfoco?: string) => {
+    setAdvancedFilters((prev) => ({
+      ...prev,
+      especialidades: specialty && specialty !== 'Todas' ? [specialty] : [],
+      temas: tema ? [tema] : [],
+      subfocos: subfoco ? [subfoco] : []
     }));
     setActiveTab('banco');
     setBancoMode('filtros');
@@ -1570,6 +1640,7 @@ export default function Home() {
         streakDays={stats.streakDays}
         isCollapsed={sidebarCollapsed}
         onToggleCollapse={handleToggleSidebar}
+        pendingErrorsCount={pendingErrorsCount}
       />
 
       {/* Conteúdo Principal à Direita da Sidebar */}
@@ -1777,6 +1848,7 @@ export default function Home() {
               {[
                 { id: 'home', label: 'Início' },
                 { id: 'banco', label: 'Banco de Questões' },
+                { id: 'caderno_erros', label: 'Caderno de Erros' },
                 { id: 'listas', label: 'Cadernos & Pastas' },
                 { id: 'provas', label: 'Provas na Íntegra' },
                 { id: 'simulados', label: 'Simulados' },
@@ -2713,6 +2785,17 @@ export default function Home() {
             </div>
           )}
 
+          {/* ABA: CADERNO DE ERROS & METACOGNIÇÃO */}
+          {activeTab === 'caderno_erros' && (
+            <CadernoDeErros
+              userAnswers={userAnswers}
+              onUpdateAnswerMeta={handleUpdateAnswerMeta}
+              onAnswerQuestion={handleAnswer}
+              onStartTreinoErros={handleStartTreinoErros}
+              onNavigateToBanco={handleNavigateToBancoFromCaderno}
+            />
+          )}
+
           {/* ABA 3: LISTAS DE QUESTÕES & PASTAS */}
           {activeTab === 'listas' && (
             <ListManager
@@ -2747,10 +2830,14 @@ export default function Home() {
             <StatsDashboard
               stats={stats}
               filters={performanceFilters}
+              userAnswers={userAnswers}
               onFilterChange={setPerformanceFilters}
               onResetFilters={handleResetPerformanceFilters}
               onSimulateDemoQuestions={handleSimulateDemoQuestions}
               onNavigateToBancoWithSubfoco={handleNavigateToBancoWithSubfoco}
+              onNavigateToCadernoErros={() => {
+                setActiveTab('caderno_erros');
+              }}
               onNavigateToRanking={() => setActiveTab('ranking')}
             />
           )}

@@ -31,7 +31,8 @@ import {
   History,
   Layers,
   Search,
-  ExternalLink
+  ExternalLink,
+  AlertOctagon
 } from 'lucide-react';
 import { UserStats, QuestionList, ActiveTab, Modalidade } from '@/types';
 import { getPercentileColor } from '@/utils/percentile';
@@ -291,6 +292,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       title: 'Banco de Questões',
       icon: FileQuestion,
       accentColor: accentConfig.primaryHex
+    },
+    {
+      tab: 'caderno_erros',
+      title: 'Caderno de Erros',
+      icon: AlertOctagon,
+      accentColor: '#EF4444'
     },
     {
       tab: 'listas',
@@ -1429,7 +1436,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         <h3 className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider px-1">
           Acesso Rápido
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3">
           {quickNavCards.map((card) => {
             const Icon = card.icon;
             return (

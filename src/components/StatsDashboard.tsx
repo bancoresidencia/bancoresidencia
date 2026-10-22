@@ -34,9 +34,10 @@ import {
   Play,
   X,
   BookOpen,
-  ArrowUpDown
+  ArrowUpDown,
+  AlertOctagon
 } from 'lucide-react';
-import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade } from '@/types';
+import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade, UserAnswerItem } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
 
@@ -48,6 +49,8 @@ interface StatsDashboardProps {
   onSimulateDemoQuestions?: (amount: number) => void;
   onNavigateToBancoWithSubfoco?: (specialty: string, tema: string, subfoco: string) => void;
   onNavigateToRanking?: () => void;
+  userAnswers?: Record<string, UserAnswerItem>;
+  onNavigateToCadernoErros?: (specialty?: string, tema?: string) => void;
 }
 
 // 6 Especialidades Médicas Oficiais dos Filtros da Plataforma
@@ -132,7 +135,10 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   filters,
   onFilterChange,
   onResetFilters,
-  onNavigateToBancoWithSubfoco
+  onNavigateToBancoWithSubfoco,
+  onNavigateToRanking,
+  userAnswers = {},
+  onNavigateToCadernoErros
 }) => {
   const { mode, accentConfig } = useTheme();
 
@@ -373,55 +379,134 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
     const items: SubfocoItem[] = [];
 
-    clinicalHierarchy.forEach((h) => {
-      let specName = h.especialidade;
-      if (specName === 'Cirurgia') specName = 'Cirurgia Geral';
+    if (dataScope === 'pessoal') {
+      // 1. CÁLCULO 100% REAL BASEADO NA CONTA DO ALUNO (userAnswers)
+      const subfocoMap: Record<
+        string,
+        {
+          specialty: string;
+          tema: string;
+          subfoco: string;
+          total: number;
+          correct: number;
+          errors: number;
+        }
+      > = {};
 
-      // Filtro por grande área das 6 especialidades
-      if (selectedAreaFilter !== 'Todas' && specName !== selectedAreaFilter) {
-        return;
-      }
+      Object.entries(userAnswers).forEach(([_, ans]) => {
+        let spec = ans.specialty;
+        if (!spec) return;
+        if (spec === 'Cirurgia') spec = 'Cirurgia Geral';
+        if (spec === 'Ginecologia e Obstetrícia') spec = 'Ginecologia';
 
-      h.temas.forEach((t) => {
-        t.focos.forEach((f) => {
-          f.subfocos.forEach((sf, sfIdx) => {
-            if (subfocoSearch.trim()) {
-              const query = subfocoSearch.toLowerCase();
-              const match =
-                sf.toLowerCase().includes(query) ||
-                t.tema.toLowerCase().includes(query) ||
-                f.foco.toLowerCase().includes(query) ||
-                specName.toLowerCase().includes(query);
-              if (!match) return;
-            }
+        // Filtro por grande área das 6 especialidades
+        if (selectedAreaFilter !== 'Todas' && spec !== selectedAreaFilter) {
+          return;
+        }
 
-            // Cálculo sintético calibrado baseado nos multiplicadores clínicos do banco
-            const baseMultiplier = (specName.length + t.tema.length + sf.length + sfIdx * 7) % 19;
-            const total = Math.max(8, Math.round(14 + baseMultiplier * 2.1));
-            const accuracyRaw = 52 + ((baseMultiplier * 3.3) % 44);
-            const accuracy = Math.min(96.5, Math.max(44.0, accuracyRaw));
-            const correct = Math.round((total * accuracy) / 100);
-            const errors = Math.max(0, total - correct);
+        const tema = ans.tema || 'Geral';
+        const subfoco = ans.subfoco || ans.foco || 'Conceitos Gerais';
 
-            let status: 'critico' | 'atencao' | 'dominado' = 'dominado';
-            if (accuracy < 60) status = 'critico';
-            else if (accuracy < 75) status = 'atencao';
+        if (subfocoSearch.trim()) {
+          const query = subfocoSearch.toLowerCase();
+          const match =
+            subfoco.toLowerCase().includes(query) ||
+            tema.toLowerCase().includes(query) ||
+            spec.toLowerCase().includes(query);
+          if (!match) return;
+        }
 
-            items.push({
-              id: `${specName}-${t.tema}-${sf}`,
-              specialty: specName,
-              tema: t.tema,
-              subfoco: sf,
-              total,
-              correct,
-              errors,
-              accuracy,
-              status
+        const key = `${spec}:::${tema}:::${subfoco}`;
+        if (!subfocoMap[key]) {
+          subfocoMap[key] = {
+            specialty: spec,
+            tema,
+            subfoco,
+            total: 0,
+            correct: 0,
+            errors: 0
+          };
+        }
+
+        subfocoMap[key].total++;
+        if (ans.isCorrect) {
+          subfocoMap[key].correct++;
+        } else {
+          subfocoMap[key].errors++;
+        }
+      });
+
+      Object.entries(subfocoMap).forEach(([key, val]) => {
+        const accuracy = val.total > 0 ? (val.correct / val.total) * 100 : 0;
+        let status: 'critico' | 'atencao' | 'dominado' = 'dominado';
+        if (accuracy < 60 && val.errors > 0) {
+          status = 'critico';
+        } else if (accuracy < 75) {
+          status = 'atencao';
+        }
+
+        items.push({
+          id: key,
+          specialty: val.specialty,
+          tema: val.tema,
+          subfoco: val.subfoco,
+          total: val.total,
+          correct: val.correct,
+          errors: val.errors,
+          accuracy,
+          status
+        });
+      });
+    } else {
+      // 2. MODO GLOBAL / DEMONSTRAÇÃO COMPARATIVA DA BASE
+      clinicalHierarchy.forEach((h) => {
+        let specName = h.especialidade;
+        if (specName === 'Cirurgia') specName = 'Cirurgia Geral';
+
+        if (selectedAreaFilter !== 'Todas' && specName !== selectedAreaFilter) {
+          return;
+        }
+
+        h.temas.forEach((t) => {
+          t.focos.forEach((f) => {
+            f.subfocos.forEach((sf, sfIdx) => {
+              if (subfocoSearch.trim()) {
+                const query = subfocoSearch.toLowerCase();
+                const match =
+                  sf.toLowerCase().includes(query) ||
+                  t.tema.toLowerCase().includes(query) ||
+                  f.foco.toLowerCase().includes(query) ||
+                  specName.toLowerCase().includes(query);
+                if (!match) return;
+              }
+
+              const baseMultiplier = (specName.length + t.tema.length + sf.length + sfIdx * 7) % 19;
+              const total = Math.max(8, Math.round(14 + baseMultiplier * 2.1));
+              const accuracyRaw = 52 + ((baseMultiplier * 3.3) % 44);
+              const accuracy = Math.min(96.5, Math.max(44.0, accuracyRaw));
+              const correct = Math.round((total * accuracy) / 100);
+              const errors = Math.max(0, total - correct);
+
+              let status: 'critico' | 'atencao' | 'dominado' = 'dominado';
+              if (accuracy < 60) status = 'critico';
+              else if (accuracy < 75) status = 'atencao';
+
+              items.push({
+                id: `${specName}-${t.tema}-${sf}`,
+                specialty: specName,
+                tema: t.tema,
+                subfoco: sf,
+                total,
+                correct,
+                errors,
+                accuracy,
+                status
+              });
             });
           });
         });
       });
-    });
+    }
 
     // Filtro por status
     let filtered = items;
@@ -450,7 +535,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     });
 
     return filtered;
-  }, [selectedAreaFilter, selectedStatusFilter, subfocoSearch, sortConfig]);
+  }, [userAnswers, dataScope, selectedAreaFilter, selectedStatusFilter, subfocoSearch, sortConfig]);
 
   // Contagem de subfocos críticos no período
   const criticalCount = useMemo(() => {
@@ -1329,24 +1414,36 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   {hierarchyDetailedStats[0].errors} erros acumulados ({hierarchyDetailedStats[0].accuracy.toFixed(1)}% acerto) em {hierarchyDetailedStats[0].specialty} • {hierarchyDetailedStats[0].tema}
                 </p>
               </div>
-              <button
-                type="button"
-                onClick={() =>
-                  setTrainingModal({
-                    titulo: hierarchyDetailedStats[0].subfoco,
-                    subtitulo: `${hierarchyDetailedStats[0].specialty} • ${hierarchyDetailedStats[0].tema}`,
-                    erros: hierarchyDetailedStats[0].errors,
-                    rendimento: hierarchyDetailedStats[0].accuracy,
-                    specialty: hierarchyDetailedStats[0].specialty,
-                    tema: hierarchyDetailedStats[0].tema,
-                    subfoco: hierarchyDetailedStats[0].subfoco
-                  })
-                }
-                className="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-lg shadow-rose-600/25 flex items-center gap-2 transition-all shrink-0 cursor-pointer"
-              >
-                <span>Treinar Esse Subfoco</span>
-                <ChevronRight className="w-4 h-4" />
-              </button>
+              <div className="flex items-center gap-2 shrink-0">
+                {onNavigateToCadernoErros && (
+                  <button
+                    type="button"
+                    onClick={() => onNavigateToCadernoErros(hierarchyDetailedStats[0].specialty, hierarchyDetailedStats[0].tema)}
+                    className="bg-slate-100 hover:bg-slate-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-slate-800 dark:text-zinc-200 text-xs font-bold px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-zinc-700 flex items-center gap-1.5 transition-all cursor-pointer shadow-xs"
+                  >
+                    <AlertOctagon className="w-3.5 h-3.5 text-rose-500" />
+                    <span>Ver no Caderno</span>
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={() =>
+                    setTrainingModal({
+                      titulo: hierarchyDetailedStats[0].subfoco,
+                      subtitulo: `${hierarchyDetailedStats[0].specialty} • ${hierarchyDetailedStats[0].tema}`,
+                      erros: hierarchyDetailedStats[0].errors,
+                      rendimento: hierarchyDetailedStats[0].accuracy,
+                      specialty: hierarchyDetailedStats[0].specialty,
+                      tema: hierarchyDetailedStats[0].tema,
+                      subfoco: hierarchyDetailedStats[0].subfoco
+                    })
+                  }
+                  className="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-lg shadow-rose-600/25 flex items-center gap-2 transition-all shrink-0 cursor-pointer"
+                >
+                  <span>Treinar Esse Subfoco</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           )}
 
@@ -1429,144 +1526,193 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             </div>
           </div>
 
-          {/* Tabela de Subfocos */}
-          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="border-b border-[var(--card-border)] bg-slate-100/70 dark:bg-zinc-900/40 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400">
-                    <th className="py-3.5 pl-5 w-28">Status</th>
-                    <th className="py-3.5">Subfoco Clínico & Tema</th>
-                    <th className="py-3.5">Grande Área</th>
-                    <th
-                      onClick={() => handleSort('errors')}
-                      className="py-3.5 cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors select-none"
-                    >
-                      <div className="inline-flex items-center gap-1">
-                        <span>Erros</span>
-                        <ArrowUpDown className="w-3 h-3 text-rose-500" />
-                      </div>
-                    </th>
-                    <th
-                      onClick={() => handleSort('accuracy')}
-                      className="py-3.5 w-44 cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors select-none"
-                    >
-                      <div className="inline-flex items-center gap-1">
-                        <span>Rendimento</span>
-                        <ArrowUpDown className="w-3 h-3 text-rose-500" />
-                      </div>
-                    </th>
-                    <th className="py-3.5 pr-5 text-right">Ação</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-200 dark:divide-[#1A1A20] text-xs">
-                  {paginatedSubfocos.map((item) => (
-                    <tr key={item.id} className="hover:bg-slate-50 dark:hover:bg-[#17171C] transition-colors group">
-                      <td className="py-4 pl-5">
-                        {item.status === 'critico' && (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30">
-                            <AlertTriangle className="w-3 h-3" />
-                            Crítico
-                          </span>
-                        )}
-                        {item.status === 'atencao' && (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
-                            Atenção
-                          </span>
-                        )}
-                        {item.status === 'dominado' && (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-                            Seguro
-                          </span>
-                        )}
-                      </td>
-                      <td className="py-4 pr-4">
-                        <div className="font-bold text-slate-900 dark:text-white group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">
-                          {item.subfoco}
-                        </div>
-                        <div className="text-[11px] text-slate-500 dark:text-zinc-500 mt-0.5">{item.tema}</div>
-                      </td>
-                      <td className="py-4">
-                        <div className="font-semibold text-slate-800 dark:text-zinc-200">{item.specialty}</div>
-                      </td>
-                      <td className="py-4 font-mono">
-                        <div className="font-bold text-rose-600 dark:text-rose-400">{item.errors} erros</div>
-                        <div className="text-[11px] text-slate-500 dark:text-zinc-500">
-                          {item.correct}/{item.total} q.
-                        </div>
-                      </td>
-                      <td className="py-4">
-                        <div className="flex flex-col gap-1.5">
-                          <span className="font-bold text-slate-900 dark:text-white font-mono">{item.accuracy.toFixed(1)}%</span>
-                          <div className="w-32 bg-slate-200 dark:bg-[#1F1F26] h-1.5 rounded-full overflow-hidden">
-                            <div
-                              className={`h-full rounded-full ${
-                                item.accuracy < 60 ? 'bg-rose-500' : item.accuracy < 75 ? 'bg-amber-500' : 'bg-emerald-500'
-                              }`}
-                              style={{ width: `${item.accuracy}%` }}
-                            />
-                          </div>
-                        </div>
-                      </td>
-                      <td className="py-4 pr-5 text-right">
-                        <button
-                          type="button"
-                          onClick={() =>
-                            setTrainingModal({
-                              titulo: item.subfoco,
-                              subtitulo: `${item.specialty} • ${item.tema}`,
-                              erros: item.errors,
-                              rendimento: item.accuracy,
-                              specialty: item.specialty,
-                              tema: item.tema,
-                              subfoco: item.subfoco
-                            })
-                          }
-                          className="text-rose-600 dark:text-rose-400 hover:text-white hover:bg-rose-600 font-bold inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-rose-500/30 transition-all cursor-pointer"
-                        >
-                          <span>Treinar</span>
-                          <ChevronRight className="w-3.5 h-3.5" />
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            {/* Paginação e Contador */}
-            <div className="px-5 py-3.5 border-t border-slate-200 dark:border-[#1F1F25] bg-slate-50 dark:bg-[#101013] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-zinc-500">
-              <span>
-                Mostrando <strong className="text-slate-800 dark:text-zinc-300">{paginatedSubfocos.length}</strong> de{' '}
-                <strong className="text-slate-800 dark:text-zinc-300">{hierarchyDetailedStats.length}</strong> subfocos mapeados
-              </span>
-
-              {totalPages > 1 && (
-                <div className="flex items-center gap-2">
+          {/* Tabela de Subfocos ou Empty State */}
+          {paginatedSubfocos.length === 0 ? (
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-8 text-center space-y-3">
+              <div className="w-12 h-12 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-rose-500 flex items-center justify-center mx-auto">
+                <AlertTriangle className="w-6 h-6" />
+              </div>
+              <h4 className="text-sm font-bold text-slate-900 dark:text-white">
+                {dataScope === 'pessoal'
+                  ? 'Nenhum subfoco com erros registrado nesta conta ainda'
+                  : 'Nenhum subfoco encontrado com os filtros atuais'}
+              </h4>
+              <p className="text-xs text-slate-500 dark:text-zinc-400 max-w-md mx-auto">
+                {dataScope === 'pessoal'
+                  ? 'Conforme você resolver questões no Banco de Questões, este Raio-X mapeará os seus pontos fracos automaticamente em tempo real.'
+                  : 'Tente alterar os filtros de especialidade ou busca textual.'}
+              </p>
+              {dataScope === 'pessoal' && (
+                <div className="flex items-center justify-center gap-2 pt-1">
                   <button
                     type="button"
-                    onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-                    disabled={currentPage === 1}
-                    className="p-1 rounded-lg border border-slate-200 dark:border-zinc-800 disabled:opacity-30 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300 cursor-pointer"
+                    onClick={() => setDataScope('global')}
+                    className="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-200 dark:hover:bg-zinc-700 cursor-pointer"
                   >
-                    <ChevronLeft className="w-3.5 h-3.5" />
+                    Ver Base Global de Demonstração
                   </button>
-                  <span className="font-mono text-slate-600 dark:text-zinc-400 font-semibold">
-                    {currentPage} / {totalPages}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-                    disabled={currentPage === totalPages}
-                    className="p-1 rounded-lg border border-slate-200 dark:border-zinc-800 disabled:opacity-30 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300 cursor-pointer"
-                  >
-                    <ChevronRight className="w-3.5 h-3.5" />
-                  </button>
+                  {onNavigateToCadernoErros && (
+                    <button
+                      type="button"
+                      onClick={() => onNavigateToCadernoErros()}
+                      className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-rose-600 hover:bg-rose-500 cursor-pointer shadow-xs"
+                    >
+                      Abrir Caderno de Erros
+                    </button>
+                  )}
                 </div>
               )}
             </div>
-          </div>
-        </div>
+          ) : (
+            <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b border-[var(--card-border)] bg-slate-100/70 dark:bg-zinc-900/40 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400">
+                      <th className="py-3.5 pl-5 w-28">Status</th>
+                      <th className="py-3.5">Subfoco Clínico & Tema</th>
+                      <th className="py-3.5">Grande Área</th>
+                      <th
+                        onClick={() => handleSort('errors')}
+                        className="py-3.5 cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors select-none"
+                      >
+                        <div className="inline-flex items-center gap-1">
+                          <span>Erros</span>
+                          <ArrowUpDown className="w-3 h-3 text-rose-500" />
+                        </div>
+                      </th>
+                      <th
+                        onClick={() => handleSort('accuracy')}
+                        className="py-3.5 w-44 cursor-pointer hover:text-slate-900 dark:hover:text-white transition-colors select-none"
+                      >
+                        <div className="inline-flex items-center gap-1">
+                          <span>Rendimento</span>
+                          <ArrowUpDown className="w-3 h-3 text-rose-500" />
+                        </div>
+                      </th>
+                      <th className="py-3.5 pr-5 text-right">Ação</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 dark:divide-[#1A1A20] text-xs">
+                    {paginatedSubfocos.map((item) => (
+                      <tr key={item.id} className="hover:bg-slate-50 dark:hover:bg-[#17171C] transition-colors group">
+                        <td className="py-4 pl-5">
+                          {item.status === 'critico' && (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30">
+                              <AlertTriangle className="w-3 h-3" />
+                              Crítico
+                            </span>
+                          )}
+                          {item.status === 'atencao' && (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                              Atenção
+                            </span>
+                          )}
+                          {item.status === 'dominado' && (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                              Seguro
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-4 pr-4">
+                          <div className="font-bold text-slate-900 dark:text-white group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">
+                            {item.subfoco}
+                          </div>
+                          <div className="text-[11px] text-slate-500 dark:text-zinc-500 mt-0.5">{item.tema}</div>
+                        </td>
+                        <td className="py-4">
+                          <div className="font-semibold text-slate-800 dark:text-zinc-200">{item.specialty}</div>
+                        </td>
+                        <td className="py-4 font-mono">
+                          <div className="font-bold text-rose-600 dark:text-rose-400">{item.errors} erros</div>
+                          <div className="text-[11px] text-slate-500 dark:text-zinc-500">
+                            {item.correct}/{item.total} q.
+                          </div>
+                        </td>
+                        <td className="py-4">
+                          <div className="flex flex-col gap-1.5">
+                            <span className="font-bold text-slate-900 dark:text-white font-mono">{item.accuracy.toFixed(1)}%</span>
+                            <div className="w-32 bg-slate-200 dark:bg-[#1F1F26] h-1.5 rounded-full overflow-hidden">
+                              <div
+                                className={`h-full rounded-full ${
+                                  item.accuracy < 60 ? 'bg-rose-500' : item.accuracy < 75 ? 'bg-amber-500' : 'bg-emerald-500'
+                                }`}
+                                style={{ width: `${item.accuracy}%` }}
+                              />
+                            </div>
+                          </div>
+                        </td>
+                        <td className="py-4 pr-5 text-right">
+                          <div className="inline-flex items-center gap-1.5">
+                            {onNavigateToCadernoErros && item.errors > 0 && (
+                              <button
+                                type="button"
+                                onClick={() => onNavigateToCadernoErros(item.specialty, item.tema)}
+                                className="p-1.5 rounded-lg border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
+                                title="Ver no Caderno de Erros"
+                              >
+                                <AlertOctagon className="w-3.5 h-3.5 text-rose-500" />
+                              </button>
+                            )}
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setTrainingModal({
+                                  titulo: item.subfoco,
+                                  subtitulo: `${item.specialty} • ${item.tema}`,
+                                  erros: item.errors,
+                                  rendimento: item.accuracy,
+                                  specialty: item.specialty,
+                                  tema: item.tema,
+                                  subfoco: item.subfoco
+                                })
+                              }
+                              className="text-rose-600 dark:text-rose-400 hover:text-white hover:bg-rose-600 font-bold inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-rose-500/30 transition-all cursor-pointer"
+                            >
+                              <span>Treinar</span>
+                              <ChevronRight className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Paginação e Contador */}
+              <div className="px-5 py-3.5 border-t border-slate-200 dark:border-[#1F1F25] bg-slate-50 dark:bg-[#101013] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-zinc-500">
+                <span>
+                  Mostrando <strong className="text-slate-800 dark:text-zinc-300">{paginatedSubfocos.length}</strong> de{' '}
+                  <strong className="text-slate-800 dark:text-zinc-300">{hierarchyDetailedStats.length}</strong> subfocos mapeados
+                </span>
+
+                {totalPages > 1 && (
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                      disabled={currentPage === 1}
+                      className="p-1 rounded-lg border border-slate-200 dark:border-zinc-800 disabled:opacity-30 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300 cursor-pointer"
+                    >
+                      <ChevronLeft className="w-3.5 h-3.5" />
+                    </button>
+                    <span className="font-mono text-slate-600 dark:text-zinc-400 font-semibold">
+                      {currentPage} / {totalPages}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                      disabled={currentPage === totalPages}
+                      className="p-1 rounded-lg border border-slate-200 dark:border-zinc-800 disabled:opacity-30 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300 cursor-pointer"
+                    >
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}        </div>
       )}
 
       {/* =========================================================================
