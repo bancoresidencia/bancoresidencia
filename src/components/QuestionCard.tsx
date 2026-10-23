@@ -290,7 +290,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
     // Extração de Evolução de Diretrizes
     if (!extractedGuideline) {
-      const gRegex = /(?:Evolução de Diretrizes(?:\s*(?:&|e)\s*Contexto Histórico)?|Contexto Histórico(?:\s*da Banca)?|Mudança de Diretriz(?:es)?|Diretrizes Anteriores vs Atuais|Atualização de Conduta)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Motivo de Erro|Referências|Fontes|Gabarito)|$))/i;
+      const gRegex = /(?:^|\n)\s*(?:Evolução de Diretrizes(?:\s*(?:&|e)\s*Contexto Histórico)?|Contexto Histórico(?:\s*da Banca)?|Mudança de Diretriz(?:es)?|Diretrizes Anteriores vs Atuais|Atualização de Conduta):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Motivo de Erro|Referências|Fontes|Gabarito)|$))/i;
       const gMatch = cleanedFinal.match(gRegex);
       if (gMatch) {
         extractedGuideline = gMatch[1].trim();
@@ -300,7 +300,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
     // Extração de Take-Home Message / Pérola Prática do comentário
     if (!extractedTakeHome) {
-      const thRegex = /(?:Take-Home Message|Mensagem-Chave|Pérola Prática(?: para Prova)?|Pérola Clínica|Clinical Pearl|Pérola de Prova)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Principal Motivo|Motivo de Erro|Armadilha|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
+      const thRegex = /(?:^|\n)\s*(?:Take-Home Message|Mensagem-Chave|Pérola Prática(?: para Prova)?|Pérola Clínica|Clinical Pearl|Pérola de Prova):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Principal Motivo|Motivo de Erro|Armadilha|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
       const thMatch = cleanedFinal.match(thRegex);
       if (thMatch) {
         extractedTakeHome = thMatch[1].trim();
@@ -310,7 +310,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
     // Extração do Principal Motivo de Erro / Armadilha da Questão
     if (!extractedError) {
-      const errRegex = /(?:Principal Motivo (?:de Erro|que Leva ao Erro)|Motivo de Erro|Armadilha da Questão|Pegadinha de Prova|Onde o Aluno Costuma Errar)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
+      const errRegex = /(?:^|\n)\s*(?:Principal Motivo (?:de Erro|que Leva ao Erro)|Motivo de Erro|Armadilha da Questão|Pegadinha de Prova|Onde o Aluno Costuma Errar):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
       const errMatch = cleanedFinal.match(errRegex);
       if (errMatch) {
         extractedError = errMatch[1].trim();
@@ -320,7 +320,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
     // Extração de Referências Teóricas
     if (extractedRefs.length === 0) {
-      const refRegex = /(?:Referências(?:\s+Bibliográficas)?|Fontes Bibliográficas|Base Teórica(?: Consultada)?|Diretrizes)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Evolução de Diretrizes)|$))/i;
+      const refRegex = /(?:^|\n)\s*(?:Referências(?:\s+Bibliográficas)?|Fontes Bibliográficas|Base Teórica(?: Consultada)?):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Evolução de Diretrizes)|$))/i;
       const refMatch = cleanedFinal.match(refRegex);
       if (refMatch) {
         const lines = refMatch[1]
@@ -333,7 +333,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     }
 
     // Detecta bloco "Análise das Alternativas"
-    const altBlockRegex = /(?:Análise das Alternativas|Comentário das Alternativas|Justificativa das Alternativas|Alternativas):([\s\S]*?)(?=(?:\n\s*\n\s*(?:Resumo Clínico|Pérola Prática|Clinical Pearl|Take-Home|Principal Motivo|Evolução|Referências|Gabarito Oficial)|$))/i;
+    const altBlockRegex = /(?:^|\n)\s*(?:Análise das Alternativas|Comentário das Alternativas|Justificativa das Alternativas|Alternativas):([\s\S]*?)(?=(?:\n\s*\n\s*(?:Resumo Clínico|Pérola Prática|Clinical Pearl|Take-Home|Principal Motivo|Evolução|Referências|Gabarito Oficial)|$))/i;
     const match = cleanedFinal.match(altBlockRegex);
 
     if (match) {
