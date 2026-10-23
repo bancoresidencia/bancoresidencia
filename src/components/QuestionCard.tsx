@@ -172,6 +172,37 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   // Estado de justificativas das alternativas expandidas pelo aluno
   const [expandedOptions, setExpandedOptions] = useState<Record<string, boolean>>({});
 
+  // Estado dos tópicos auxiliares do comentário (motivo de erro, take-home, diretrizes, referências)
+  const [openTopics, setOpenTopics] = useState<Record<string, boolean>>({});
+  const toggleTopic = (key: string) => {
+    setOpenTopics((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  // Helper para renderizar texto com marcações em negrito (**texto**) de forma limpa e nativa
+  const renderFormattedText = (text: string | null | undefined) => {
+    if (!text) return null;
+    const parts = text.split(/(\*\*[^*]+\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return (
+          <strong key={index} className="font-bold text-slate-900 dark:text-white">
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+      return part;
+    });
+  };
+
+  // Detecção de gabarito sob suspeita/possível erro da banca
+  const isSuspectKey = useMemo(() => {
+    const comm = question.commentary || '';
+    return (
+      comm.includes('[POSSÍVEL ERRO DE GABARITO') ||
+      comm.includes('POSSIVEL ERRO DE GABARITO')
+    );
+  }, [question.commentary]);
+
   // Estados de Marcador de Texto (Highlight)
   const [highlights, setHighlights] = useState<TextHighlight[]>([]);
   const activeHighlighterColor = propHighlighterColor || 'yellow';
@@ -215,6 +246,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setShowCommentary(!!userAnswer);
     setEliminatedOptions({});
     setExpandedOptions({});
+    setOpenTopics({});
     setHighlights([]);
     setHoveredOptionLetter(null);
   }
@@ -256,9 +288,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         .replace(/estrat[ée]gia/gi, 'Literatura Oficial');
     };
 
-    // Extração de Evolução de Diretrizes & Contexto Histórico
+    // Extração de Evolução de Diretrizes
     if (!extractedGuideline) {
-      const gRegex = /(?:Evolução de Diretrizes(?: & Contexto Histórico)?|Contexto Histórico(?: da Banca)?|Mudança de Diretriz(?:es)?|Diretrizes Anteriores vs Atuais|Atualização de Conduta)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Motivo de Erro|Referências|Fontes|Gabarito)|$))/i;
+      const gRegex = /(?:Evolução de Diretrizes(?:\s*(?:&|e)\s*Contexto Histórico)?|Contexto Histórico(?:\s*da Banca)?|Mudança de Diretriz(?:es)?|Diretrizes Anteriores vs Atuais|Atualização de Conduta)[:.]?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Motivo de Erro|Referências|Fontes|Gabarito)|$))/i;
       const gMatch = cleanedFinal.match(gRegex);
       if (gMatch) {
         extractedGuideline = gMatch[1].trim();
@@ -333,11 +365,26 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       }
     }
 
-    cleanedFinal = sanitizeText(cleanedFinal);
+    cleanedFinal = sanitizeText(cleanedFinal)
+      .replace(/^Gabarito Oficial:\s*Alternativa\s*[A-E]\.?\s*/im, '')
+      .replace(/^Resumo Clínico e Diagnóstico:\s*/im, '')
+      .replace(/^Resumo Clínico:\s*/im, '')
+      .trim();
+
     extractedError = sanitizeText(extractedError);
-    extractedTakeHome = sanitizeText(extractedTakeHome);
-    extractedGuideline = sanitizeText(extractedGuideline);
-    extractedRefs = extractedRefs.map(sanitizeText);
+
+    extractedTakeHome = sanitizeText(extractedTakeHome)
+      .replace(/^\(?\s*Pérola Prática\s*[:)]?\s*/i, '')
+      .trim();
+
+    extractedGuideline = sanitizeText(extractedGuideline)
+      .replace(/^(?:(?:&|e)\s*)?Contexto Histórico(?:\s*da Banca)?[:\s]*/i, '')
+      .replace(/^da Banca[:\s]*/i, '')
+      .trim();
+
+    extractedRefs = extractedRefs
+      .map(sanitizeText)
+      .filter((r) => !/^(te[oó]ricas?|base te[oó]rica|refer[eê]ncias?)\b/i.test(r.trim()));
 
     if (!cleanedFinal.trim() && question.correctAnswer) {
       cleanedFinal = `Gabarito Oficial: Alternativa ${question.correctAnswer}.`;
@@ -1057,17 +1104,19 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                     >
                       <div className="flex items-center gap-1.5 font-bold mb-1.5">
                         <span className={isCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}>
-                          Justificativa da Alternativa {option.letter} {isCorrect ? '(Correta)' : '(Incorreta)'}:
+                          Justificativa da Alternativa {option.letter}:
                         </span>
                       </div>
-                      <p className="font-normal whitespace-pre-line text-slate-700 dark:text-slate-300">
-                        {explanationText ||
-                          (isCorrect
-                            ? 'Alternativa correta segundo o gabarito oficial da banca examinadora.'
-                            : (question.correctAnswer
-                                ? `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${question.correctAnswer}.`
-                                : 'Gabarito oficial em processo de homologação por provas públicas.'))}
-                      </p>
+                      <div className="font-normal whitespace-pre-line text-slate-700 dark:text-slate-300">
+                        {renderFormattedText(
+                          explanationText ||
+                            (isCorrect
+                              ? 'Alternativa correta segundo o gabarito oficial da banca examinadora.'
+                              : (question.correctAnswer
+                                  ? `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${question.correctAnswer}.`
+                                  : 'Gabarito oficial em processo de homologação por provas públicas.'))
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -1226,19 +1275,34 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
           {showCommentary && (
             <div className="mt-3 space-y-3.5 animate-in fade-in duration-200">
-              {/* Card de Comentário Final / Gabarito */}
-              <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/80 dark:bg-slate-950 border border-emerald-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 space-y-2.5 shadow-inner">
-                <div className="flex items-center gap-2 text-emerald-800 dark:text-emerald-400 font-bold text-xs sm:text-sm">
-                  <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                  <span>
-                    {question.options && question.options.length > 0
-                      ? (question.correctAnswer
-                          ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
-                          : 'Gabarito Oficial: Em processo de homologação por provas públicas')
-                      : 'Padrão de Resposta Oficial:'}
-                  </span>
+              {/* Alerta de Possível Erro no Gabarito da Banca */}
+              {isSuspectKey && (
+                <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-900 dark:text-amber-300 space-y-1 shadow-xs">
+                  <div className="flex items-center gap-2 font-bold text-xs sm:text-sm text-amber-700 dark:text-amber-400">
+                    <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                    <span>Aviso aos Alunos: Possível Inconsistência no Gabarito da Banca</span>
+                  </div>
+                  <p className="text-xs sm:text-[12.5px] leading-relaxed opacity-90 pl-6">
+                    Nossos professores identificaram divergência médica relevante entre o gabarito oficial e a literatura consensual vigente na data da realização da prova. Esta questão está sob curadoria médica.
+                  </p>
                 </div>
-                <p
+              )}
+
+              {/* Card de Comentário Final / Síntese Clínica (SEMPRE ABERTO POR PADRÃO) */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/80 dark:bg-slate-950 border border-emerald-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 space-y-2.5 shadow-inner">
+                <div className="flex items-center justify-between text-emerald-800 dark:text-emerald-400 font-bold text-xs sm:text-sm">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                    <span>
+                      {question.options && question.options.length > 0
+                        ? (question.correctAnswer
+                            ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
+                            : 'Gabarito Oficial: Em processo de homologação por provas públicas')
+                        : 'Padrão de Resposta Oficial:'}
+                    </span>
+                  </div>
+                </div>
+                <div
                   className={`${
                     fontSize === 'sm'
                       ? 'text-[12.5px] sm:text-[13px] leading-relaxed'
@@ -1247,63 +1311,119 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                       : 'text-xs sm:text-sm leading-relaxed'
                   } font-normal text-slate-800 dark:text-slate-300 whitespace-pre-line`}
                 >
-                  {finalCommentary}
-                </p>
+                  {renderFormattedText(finalCommentary)}
+                </div>
               </div>
 
-              {/* Card: Principal Motivo que Poderia Levar ao Erro */}
+              {/* Card: Principal Motivo que Poderia Levar ao Erro (Abre ao Clicar) */}
               {mainErrorReason && (
-                <div className="p-4 sm:p-4.5 rounded-2xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/60 text-slate-900 dark:text-slate-200 space-y-1.5 shadow-xs">
-                  <div className="flex items-center gap-2 text-amber-800 dark:text-amber-400 font-bold text-xs sm:text-sm">
-                    <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
-                    <span>Principal Motivo de Erro (Armadilha da Questão)</span>
-                  </div>
-                  <p className="text-xs sm:text-[13px] leading-relaxed text-amber-950 dark:text-amber-200/90 whitespace-pre-line pl-6">
-                    {mainErrorReason}
-                  </p>
+                <div className="rounded-2xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/60 overflow-hidden shadow-xs transition-all">
+                  <button
+                    type="button"
+                    onClick={() => toggleTopic('error')}
+                    className="w-full p-3.5 sm:p-4 flex items-center justify-between text-left cursor-pointer hover:bg-amber-100/50 dark:hover:bg-amber-900/30 transition-colors"
+                  >
+                    <div className="flex items-center gap-2 text-amber-800 dark:text-amber-400 font-bold text-xs sm:text-sm">
+                      <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                      <span>Principal Motivo de Erro (Armadilha da Questão)</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[11px] text-amber-700 dark:text-amber-400 font-medium">
+                      <span>{openTopics['error'] ? 'Ocultar' : 'Ver Detalhes'}</span>
+                      {openTopics['error'] ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                    </div>
+                  </button>
+                  {openTopics['error'] && (
+                    <div className="px-4 pb-4 pt-1 border-t border-amber-200/60 dark:border-amber-800/40 animate-in fade-in duration-150">
+                      <div className="text-xs sm:text-[13px] leading-relaxed text-amber-950 dark:text-amber-200/90 whitespace-pre-line">
+                        {renderFormattedText(mainErrorReason)}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
-              {/* Card: Take-Home Message / Pérola Prática */}
+              {/* Card: Take-Home Message (Abre ao Clicar) */}
               {takeHomeMessage && (
-                <div className="p-4 sm:p-4.5 rounded-2xl bg-blue-50/80 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/60 text-slate-900 dark:text-slate-200 space-y-1.5 shadow-xs">
-                  <div className="flex items-center gap-2 text-blue-800 dark:text-blue-400 font-bold text-xs sm:text-sm">
-                    <Lightbulb className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
-                    <span>Take-Home Message (Pérola Prática)</span>
-                  </div>
-                  <p className="text-xs sm:text-[13px] leading-relaxed text-blue-950 dark:text-blue-200/90 font-medium whitespace-pre-line pl-6">
-                    {takeHomeMessage}
-                  </p>
+                <div className="rounded-2xl bg-blue-50/80 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/60 overflow-hidden shadow-xs transition-all">
+                  <button
+                    type="button"
+                    onClick={() => toggleTopic('takeHome')}
+                    className="w-full p-3.5 sm:p-4 flex items-center justify-between text-left cursor-pointer hover:bg-blue-100/50 dark:hover:bg-blue-900/30 transition-colors"
+                  >
+                    <div className="flex items-center gap-2 text-blue-800 dark:text-blue-400 font-bold text-xs sm:text-sm">
+                      <Lightbulb className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                      <span>Take-Home Message</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[11px] text-blue-700 dark:text-blue-400 font-medium">
+                      <span>{openTopics['takeHome'] ? 'Ocultar' : 'Ver Mensagem'}</span>
+                      {openTopics['takeHome'] ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                    </div>
+                  </button>
+                  {openTopics['takeHome'] && (
+                    <div className="px-4 pb-4 pt-1 border-t border-blue-200/60 dark:border-blue-800/40 animate-in fade-in duration-150">
+                      <div className="text-xs sm:text-[13px] leading-relaxed text-blue-950 dark:text-blue-200/90 font-medium whitespace-pre-line">
+                        {renderFormattedText(takeHomeMessage)}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
-              {/* Card: Evolução de Diretrizes & Contexto Histórico da Banca */}
+              {/* Card: Evolução de Diretrizes & Contexto Histórico (Abre ao Clicar) */}
               {guidelineEvolution && (
-                <div className="p-4 sm:p-4.5 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800/60 text-slate-900 dark:text-slate-200 space-y-1.5 shadow-xs">
-                  <div className="flex items-center gap-2 text-indigo-800 dark:text-indigo-400 font-bold text-xs sm:text-sm">
-                    <History className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
-                    <span>Evolução de Diretrizes & Contexto Histórico da Banca</span>
-                  </div>
-                  <p className="text-xs sm:text-[13px] leading-relaxed text-indigo-950 dark:text-indigo-200/90 whitespace-pre-line pl-6">
-                    {guidelineEvolution}
-                  </p>
+                <div className="rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800/60 overflow-hidden shadow-xs transition-all">
+                  <button
+                    type="button"
+                    onClick={() => toggleTopic('guidelines')}
+                    className="w-full p-3.5 sm:p-4 flex items-center justify-between text-left cursor-pointer hover:bg-indigo-100/50 dark:hover:bg-indigo-900/30 transition-colors"
+                  >
+                    <div className="flex items-center gap-2 text-indigo-800 dark:text-indigo-400 font-bold text-xs sm:text-sm">
+                      <History className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
+                      <span>Evolução de Diretrizes</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[11px] text-indigo-700 dark:text-indigo-400 font-medium">
+                      <span>{openTopics['guidelines'] ? 'Ocultar' : 'Ver Diretrizes'}</span>
+                      {openTopics['guidelines'] ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                    </div>
+                  </button>
+                  {openTopics['guidelines'] && (
+                    <div className="px-4 pb-4 pt-1 border-t border-indigo-200/60 dark:border-indigo-800/40 animate-in fade-in duration-150">
+                      <div className="text-xs sm:text-[13px] leading-relaxed text-indigo-950 dark:text-indigo-200/90 whitespace-pre-line">
+                        {renderFormattedText(guidelineEvolution)}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
-              {/* Referências e Fontes da Literatura Médica Oficial */}
+              {/* Referências Oficiais (Abre ao Clicar) */}
               {references && references.length > 0 && (
-                <div className="p-3.5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 text-[11px] text-zinc-600 dark:text-zinc-400 space-y-1">
-                  <div className="flex items-center gap-1.5 font-bold text-slate-700 dark:text-slate-300">
-                    <Library className="w-3.5 h-3.5 text-slate-500" />
-                    <span>Base Teórica & Diretrizes Médicas:</span>
-                  </div>
-                  <ul className="list-disc list-inside space-y-0.5 pl-1 text-slate-600 dark:text-slate-400">
-                    {references.map((ref, idx) => (
-                      <li key={idx} className="leading-relaxed">
-                        {ref}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-xs transition-all">
+                  <button
+                    type="button"
+                    onClick={() => toggleTopic('references')}
+                    className="w-full p-3 sm:p-3.5 flex items-center justify-between text-left cursor-pointer hover:bg-zinc-100/70 dark:hover:bg-zinc-800/50 transition-colors"
+                  >
+                    <div className="flex items-center gap-2 font-bold text-xs text-slate-700 dark:text-slate-300">
+                      <Library className="w-3.5 h-3.5 text-slate-500" />
+                      <span>Referências Oficiais ({references.length})</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+                      <span>{openTopics['references'] ? 'Ocultar' : 'Ver Fontes'}</span>
+                      {openTopics['references'] ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                    </div>
+                  </button>
+                  {openTopics['references'] && (
+                    <div className="px-3.5 pb-3.5 pt-1 border-t border-zinc-200 dark:border-zinc-800 animate-in fade-in duration-150">
+                      <ul className="list-disc list-inside space-y-1 text-[11.5px] text-slate-600 dark:text-slate-400">
+                        {references.map((ref, idx) => (
+                          <li key={idx} className="leading-relaxed">
+                            {ref}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
