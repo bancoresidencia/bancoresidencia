@@ -64,20 +64,27 @@ async function main() {
     } catch {}
   }
 
-  // Filtra pendentes (que ainda não possuem mainErrorReason gerado ou não estão no checkpoint)
-  const pending = questions.filter(q => !solvedMap.has(q.id)).slice(0, limit);
-  console.log(`⏳ Questões a processar nesta rodada: ${pending.length}\n`);
+  // Filtra ESTRITAMENTE questões com gabarito oficial homologado (A, B, C, D, E) e não anuladas
+  const VALID_ANSWERS = new Set(['A', 'B', 'C', 'D', 'E']);
+  const pending = questions
+    .filter(q => {
+      const ans = (q.correctAnswer || q.correct_answer || '').toUpperCase().trim();
+      return VALID_ANSWERS.has(ans) && !q.isAnulada && !solvedMap.has(q.id);
+    })
+    .slice(0, limit);
+  console.log(`⏳ Questões homologadas a processar nesta rodada: ${pending.length}\n`);
 
   if (pending.length === 0) {
     console.log('✨ Todas as questões desta especialidade já estão 100% resolvidas e justificadas!');
     return;
   }
 
-  const CONCURRENCY = 3; // Paralelismo equilibrado para velocidade e respeito aos limites da API
+  const CONCURRENCY = 5; // 5 contas paralelas simultâneas configuradas no pool
   let processedCount = 0;
   let batchBuffer = [];
   const startTime = Date.now();
 
+  let consecutiveFailures = 0;
   for (let i = 0; i < pending.length; i += CONCURRENCY) {
     const chunk = pending.slice(i, i + CONCURRENCY);
     const results = await Promise.all(
@@ -90,6 +97,19 @@ async function main() {
         }
       })
     );
+
+    const successfulThisChunk = results.filter(Boolean);
+    if (successfulThisChunk.length === 0) {
+      consecutiveFailures++;
+      if (consecutiveFailures >= 3) {
+        console.log('\n🛑 Atenção: Múltiplas falhas consecutivas em todas as 5 contas.');
+        console.log('📌 Provável esgotamento da cota diária do Google AI Studio nas chaves.');
+        console.log('💾 Salvando o estado com segurança no checkpoint antes de parar...');
+        break;
+      }
+    } else {
+      consecutiveFailures = 0;
+    }
 
     for (const solved of results) {
       if (solved && solved.id) {
@@ -118,24 +138,28 @@ async function main() {
     console.log(`⚡ Progresso: ${processedCount}/${pending.length} (${Math.round((processedCount / pending.length) * 100)}%) | ${rate} q/s | Tempo: ${elapsed}s`);
 
     // Sincroniza em disco e Supabase a cada 10 questões
-    if (batchBuffer.length >= 10 || processedCount === pending.length) {
-      // 1. Salva checkpoint
+    if (batchBuffer.length >= 10) {
       fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values()), null, 2));
-
-      // 2. Salva arquivo principal
       fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
-
-      // 3. Atualiza Supabase
       if (syncSupabase && batchBuffer.length > 0) {
         await updateQuestionsInSupabase(batchBuffer);
       }
-
       batchBuffer = [];
-      console.log(`💾 Checkpoint salvo em disco e sincronizado.`);
+      console.log(`💾 Checkpoint salvo em disco e sincronizado no Supabase.`);
     }
 
-    // Pequena pausa para evitar throttling
-    await new Promise(r => setTimeout(r, 600));
+    // Pausa balanceada para estabilidade das 5 conexões
+    await new Promise(r => setTimeout(r, 800));
+  }
+
+  // Flush final do buffer residual
+  if (batchBuffer.length > 0) {
+    fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values()), null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
+    if (syncSupabase) {
+      await updateQuestionsInSupabase(batchBuffer);
+    }
+    console.log(`💾 Buffer final sincronizado.`);
   }
 
   console.log('\n======================================================');

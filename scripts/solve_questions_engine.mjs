@@ -11,11 +11,15 @@ if (fs.existsSync('.env.local')) {
 }
 
 // .env.local tem precedência absoluta sobre o ambiente anterior
-const rawKeys = env.GEMINI_API_KEY || process.env.GEMINI_API_KEY || '';
-const API_KEYS = rawKeys
-  .split(',')
-  .map(k => k.trim())
-  .filter(Boolean);
+// Carrega todas as chaves disponíveis no pool para rotação paralela
+const API_KEYS = [
+  env.GEMINI_API_KEY_1,
+  env.GEMINI_API_KEY_2,
+  env.GEMINI_API_KEY_3,
+  env.GEMINI_API_KEY_4,
+  env.GEMINI_API_KEY_5,
+  env.GEMINI_API_KEY
+].filter((k, idx, self) => k && self.indexOf(k) === idx);
 
 let keyIndex = 0;
 function getNextApiKey() {
@@ -64,7 +68,8 @@ function getRelevantBookThemes(specialty, tema) {
   );
   if (!specKey) return [];
 
-  const books = catalog.specialties[specKey] || [];
+  const specObj = catalog.specialties[specKey];
+  const books = Array.isArray(specObj) ? specObj : (specObj?.books || []);
   if (!tema) return books.slice(0, 3).map(b => b.theme);
 
   const tLower = tema.toLowerCase();
@@ -79,12 +84,10 @@ function getRelevantBookThemes(specialty, tema) {
   return books.slice(0, 3).map(b => b.theme);
 }
 
-// Modelos prioritários: gemini-3.5-flash provou ser o mais rápido e compatível
+// Modelos prioritários com alta velocidade e raciocínio clínico
 const AVAILABLE_MODELS = [
   'gemini-3.5-flash',
-  'gemini-3.7-flash',
-  'gemini-3.6-flash',
-  'gemini-flash-latest'
+  'gemini-3.5-flash-lite'
 ];
 let currentModelIndex = 0;
 
@@ -141,9 +144,10 @@ ${formattedOptions}
 
 DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
 1. FUNDAMENTAÇÃO DA ALTERNATIVA CORRETA (${goldAnswer}):
-   - Justifique em detalhes os fundamentos fisiopatológicos, critérios diagnósticos, escores de gravidade ou condutas preconizadas que embasam a escolha da banca.
-2. DISSECAÇÃO DOS DISTRATORES INCORRETOS:
-   - Dissequilhe especificamente o erro de cada uma das outras opções incorretas (dose errada, tempo incorreto, contraindicação, confusão de conceitos).
+   - Justifique breve e firmemente por que ela está correta segundo as diretrizes oficiais e o gabarito da banca, sem inventar falhas.
+2. DISSECAÇÃO DAS ALTERNATIVAS INCORRETAS (REGRA DO NEGRITO CIRÚRGICO):
+   - Em toda alternativa incorreta, coloque obrigatoriamente em **negrito** o trecho exato que torna a afirmação falsa.
+   - Em seguida, explique objetivamente por que o trecho destacado está errado e apresente a correção médica fidedigna segundo a literatura oficial.
 3. EVOLUÇÃO DE DIRETRIZES & MUDANÇAS HISTÓRICAS (COMO ERA ANTES vs O QUE FICOU DEPOIS):
    - Avalie minuciosamente o ano da prova (${question.year || 2024}) e verifique se as diretrizes daquela época mudaram em relação aos dias de hoje.
    - SE HOUVE MUDANÇA DE DIRETRIZ OU CONDUTA:
