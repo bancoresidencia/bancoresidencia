@@ -143,24 +143,24 @@ ${formattedOptions}
 - Sua tarefa como preceptor é EXPLICAR e FUNDAMENTAR com a literatura médica por que a banca deu a Alternativa ${goldAnswer} como correta, dissecando os erros de todos os outros distratores.
 
 DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
-1. FUNDAMENTAÇÃO DA ALTERNATIVA CORRETA (${goldAnswer}):
-   - Justifique breve e firmemente por que ela está correta segundo as diretrizes oficiais e o gabarito da banca, sem inventar falhas.
-2. DISSECAÇÃO DAS ALTERNATIVAS INCORRETAS (REGRA DO NEGRITO CIRÚRGICO):
-   - Em toda alternativa incorreta, coloque obrigatoriamente em **negrito** o trecho exato que torna a afirmação falsa.
-   - Em seguida, explique objetivamente por que o trecho destacado está errado e apresente a correção médica fidedigna segundo a literatura oficial.
-3. EVOLUÇÃO DE DIRETRIZES & MUDANÇAS HISTÓRICAS (COMO ERA ANTES vs O QUE FICOU DEPOIS):
-   - Avalie minuciosamente o ano da prova (${question.year || 2024}) e verifique se as diretrizes daquela época mudaram em relação aos dias de hoje.
-   - SE HOUVE MUDANÇA DE DIRETRIZ OU CONDUTA:
-     * Explique claramente "COMO ERA NA ÉPOCA DA PROVA" (o motivo exato pelo qual a banca considerou a alternativa ${goldAnswer} correta naquele ano).
-     * Explique detalhadamente "O QUE MUDOU E COMO É HOJE" (as diretrizes atuais e condutas contemporâneas vigentes).
-     * Esclareça para o aluno como esse tema é cobrado atualmente nas provas de residência médica para não haver confusão no estudo.
-   - SE A DIRETRIZ PERMANECE IGUAL:
-     * Aponte expressamente que o protocolo permanece pleno e totalmente convergente com as diretrizes e literatura vigentes.
-4. COMENTÁRIO FINAL / SÍNTESE CLÍNICA: Redija um texto unificado que sintetize o raciocínio clínico completo do caso, integrando anamnese, exame físico e conduta médica.
-5. PRINCIPAL MOTIVO QUE PODERIA LEVAR O ALUNO A ERRAR: Identifique a armadilha ("pegadinha") clássica, o distrator mais tentador ou a confusão comum de raciocínio.
-6. TAKE-HOME MESSAGE: Forneça uma pérola prática/mnemônica de alto impacto em 1 a 2 frases para retenção rápida na memória.
-7. EMBASAMENTO & REFERÊNCIAS: Cite nominalmente os livros médicos clássicos de referência e/ou diretrizes oficiais de sociedades brasileiras ou mundiais (ex: Sabiston Tratado de Cirurgia, Nelson Tratado de Pediatria, Diretrizes FEBRASGO, Tratado de Medicina de Família, Protocolos do Ministério da Saúde).
-8. REGRA ABSOLUTA: JAMAIS cite nomes de cursinhos ou marcas comerciais (como "estratégiamed"). Baseie-se unicamente nas obras médicas, diretrizes oficiais e na ciência.
+1. JUSTIFICATIVAS DAS ALTERNATIVAS (DIRETO AO PONTO, SEM METARRETÓRICA):
+   - Vá DIRETO à explicação e ao porquê sem prolixidade. NUNCA use frases como "A alternativa está correta/incorreta" ou "Incorreta porque".
+   - Comece imediatamente com a justificativa médica e dados concretos (critérios, pontos de corte, doses).
+   - Em toda alternativa incorreta, coloque em **negrito** o trecho falso ou o conceito clínico que invalida a opção.
+2. VERIFICAÇÃO DE COERÊNCIA HISTÓRICA DO GABARITO DA BANCA:
+   - Avalie se a resposta oficial faz sentido segundo a literatura na época da prova (${question.year || 2024}).
+   - Se o gabarito oficial for flagrantemente absurdo ou erro manifesto da banca: marque "isAbsurdKey": true e descreva em "divergenceReason" a fundamentação para curadoria/recurso. Caso contrário, mantenha "isAbsurdKey": false.
+3. COMENTÁRIO FINAL / SÍNTESE CLÍNICA:
+   - Comece DIRETO no raciocínio clínico e conduta. NUNCA escreva títulos como "Gabarito Oficial: Alternativa X" nem "Resumo Clínico e Diagnóstico:".
+4. PRINCIPAL MOTIVO DE ERRO:
+   - Identifique a armadilha ("pegadinha") ou confusão comum de raciocínio de forma cirúrgica.
+5. TAKE-HOME MESSAGE:
+   - Mensagem-chave em 1 a 2 frases densas (NÃO inclua o prefixo "Pérola Prática").
+6. EVOLUÇÃO DE DIRETRIZES:
+   - Compare a diretriz da época com a atual (ou informe que permanece igual). NÃO use a expressão "da Banca" nem "Contexto Histórico".
+7. REFERÊNCIAS:
+   - Liste apenas nomes das diretrizes oficiais e tratados médicos clássicos (sem resumos teóricos genéricos).
+8. REGRA ABSOLUTA: JAMAIS cite nomes de cursinhos ou marcas comerciais.
 
 Responda ESTRITAMENTE em formato JSON com o seguinte schema:
 {
@@ -252,17 +252,14 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
 
       // Monta o commentary formatado completo e elegante
       const formattedCommentary = [
-        `Gabarito Oficial: Alternativa ${correctAnswer}.\n`,
-        `Resumo Clínico e Diagnóstico:\n${finalCommentary}\n`,
-        `Análise das Alternativas:\n` +
-          Object.entries(optionExplanations)
-            .map(([letra, exp]) => `• Alternativa ${letra}: ${exp}`)
-            .join('\n') +
-          '\n',
-        mainErrorReason ? `Principal Motivo que Leva ao Erro:\n${mainErrorReason}\n` : '',
-        takeHomeMessage ? `Take-Home Message (Pérola Prática):\n${takeHomeMessage}\n` : '',
-        guidelineEvolution ? `Evolução de Diretrizes & Contexto Histórico da Banca:\n${guidelineEvolution}\n` : '',
-        references.length > 0 ? `Referências Teóricas:\n` + references.map(r => `• ${r}`).join('\n') : ''
+        parsed.isAbsurdKey && parsed.divergenceReason
+          ? `[POSSÍVEL ERRO DE GABARITO / QUESTÃO PASSÍVEL DE ANULAÇÃO]\n${sanitizeText(parsed.divergenceReason)}\n`
+          : '',
+        finalCommentary ? `${finalCommentary}\n` : '',
+        mainErrorReason ? `Principal Motivo de Erro:\n${mainErrorReason}\n` : '',
+        takeHomeMessage ? `Take-Home Message:\n${takeHomeMessage}\n` : '',
+        guidelineEvolution ? `Evolução de Diretrizes:\n${guidelineEvolution}\n` : '',
+        references.length > 0 ? `Referências:\n` + references.map(r => `• ${r}`).join('\n') : ''
       ]
         .filter(Boolean)
         .join('\n')
