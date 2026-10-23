@@ -122,6 +122,10 @@ export async function solveQuestionDeep(question) {
   const themes = getRelevantBookThemes(question.especialidade, question.tema);
   const themesStr = themes.length > 0 ? themes.join(', ') : question.tema || question.especialidade;
 
+  const optionsSchemaExample = (question.options || [])
+    .map(o => `    "${o.letter}": "Justificativa da alternativa ${o.letter}..."`)
+    .join(',\n');
+
   const prompt = `Você é um preceptor médico de elite e especialista em provas oficiais de Residência Médica e Revalida no Brasil.
 Sua missão é fundamentar tecnicamente a questão e o gabarito oficial da banca examinadora com rigor acadêmico máximo, 100% de precisão e profundidade clínica.
 
@@ -144,9 +148,11 @@ ${formattedOptions}
 
 DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
 1. JUSTIFICATIVAS DAS ALTERNATIVAS (DIRETO AO PONTO, SEM METARRETÓRICA):
+   - Você DEVE fornecer justificativa médica individual para TODAS as alternativas da questão (${(question.options || []).map(o => o.letter).join(', ')}), sem omitir nenhuma.
    - Vá DIRETO à explicação e ao porquê sem prolixidade. NUNCA use frases como "A alternativa está correta/incorreta" ou "Incorreta porque".
    - Comece imediatamente com a justificativa médica e dados concretos (critérios, pontos de corte, doses).
    - Em toda alternativa incorreta, coloque em **negrito** o trecho falso ou o conceito clínico que invalida a opção.
+   - Na alternativa correta (${goldAnswer}), justifique com rigor técnico por que ela é a conduta ou diagnóstico padrão-ouro.
 2. VERIFICAÇÃO DE COERÊNCIA HISTÓRICA DO GABARITO DA BANCA:
    - Avalie se a resposta oficial faz sentido segundo a literatura na época da prova (${question.year || 2024}).
    - Se o gabarito oficial for flagrantemente absurdo ou erro manifesto da banca: marque "isAbsurdKey": true e descreva em "divergenceReason" a fundamentação para curadoria/recurso. Caso contrário, mantenha "isAbsurdKey": false.
@@ -165,11 +171,10 @@ DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
 Responda ESTRITAMENTE em formato JSON com o seguinte schema:
 {
   "optionExplanations": {
-    "A": "Justificativa da alternativa A...",
-    "B": "Justificativa da alternativa B...",
-    "C": "Justificativa da alternativa C...",
-    "D": "Justificativa da alternativa D..."
+${optionsSchemaExample}
   },
+  "isAbsurdKey": false,
+  "divergenceReason": "",
   "finalCommentary": "Síntese clínica unificada do professor...",
   "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é...",
   "takeHomeMessage": "Pérola clínica prática para memorização...",
@@ -266,12 +271,19 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
         .trim();
 
       // Atualiza as opções da questão com a propriedade explanation
-      const updatedOptions = (question.options || []).map(opt => ({
-        ...opt,
-        explanation: optionExplanations[opt.letter] || ''
-      }));
+      const updatedOptions = (question.options || []).map(opt => {
+        let exp = optionExplanations[opt.letter] || '';
+        if (!exp && opt.letter === correctAnswer) {
+          exp = finalCommentary || 'Conduta ou diagnóstico padrão-ouro respaldado pelas diretrizes oficiais de referência.';
+        }
+        return {
+          ...opt,
+          explanation: exp
+        };
+      });
 
       return {
+        ...question,
         id: question.id,
         correctAnswer,
         correct_answer: correctAnswer,
@@ -315,7 +327,7 @@ export async function updateQuestionsInSupabase(updatedQuestions) {
     commentary: q.commentary,
     institution: q.institution || q.banca || 'Oficial',
     year: q.year || 2024,
-    especialidade: q.especialidade || 'Urologia',
+    especialidade: q.especialidade || 'Medicina',
     tema: q.tema || '',
     foco: q.foco || '',
     subfoco: q.subfoco || ''

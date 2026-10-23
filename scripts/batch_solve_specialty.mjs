@@ -126,6 +126,7 @@ async function main() {
             commentary: solved.commentary,
             mainErrorReason: solved.mainErrorReason,
             takeHomeMessage: solved.takeHomeMessage,
+            guidelineEvolution: solved.guidelineEvolution,
             references: solved.references,
             options: solved.options
           };
