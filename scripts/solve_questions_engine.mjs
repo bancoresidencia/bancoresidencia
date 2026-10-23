@@ -84,8 +84,11 @@ function getRelevantBookThemes(specialty, tema) {
   return books.slice(0, 3).map(b => b.theme);
 }
 
-// Modelos prioritários com alta velocidade e raciocínio clínico
+// Modelos prioritários com alta velocidade, raciocínio clínico e cotas ativas
 const AVAILABLE_MODELS = [
+  'gemini-3.7-flash',
+  'gemini-3.1-flash-lite',
+  'gemini-3.8-flash',
   'gemini-3.5-flash',
   'gemini-3.5-flash-lite'
 ];
@@ -147,21 +150,19 @@ ${formattedOptions}
 - Sua tarefa como preceptor é EXPLICAR e FUNDAMENTAR com a literatura médica por que a banca deu a Alternativa ${goldAnswer} como correta, dissecando os erros de todos os outros distratores.
 
 DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
-1. JUSTIFICATIVAS DAS ALTERNATIVAS (DIRETO AO PONTO, SEM METARRETÓRICA):
-   - Você DEVE fornecer justificativa médica individual para TODAS as alternativas da questão (${(question.options || []).map(o => o.letter).join(', ')}), sem omitir nenhuma.
-   - Vá DIRETO à explicação e ao porquê sem prolixidade. NUNCA use frases como "A alternativa está correta/incorreta" ou "Incorreta porque".
-   - Comece imediatamente com a justificativa médica e dados concretos (critérios, pontos de corte, doses).
-   - Em toda alternativa incorreta, coloque em **negrito** o trecho falso ou o conceito clínico que invalida a opção.
-   - Na alternativa correta (${goldAnswer}), justifique com rigor técnico por que ela é a conduta ou diagnóstico padrão-ouro.
+1. JUSTIFICATIVAS DAS ALTERNATIVAS (OBRIGATÓRIO PARA 100% DAS LETRAS: ${(question.options || []).map(o => o.letter).join(', ')}):
+   - OBRIGATORIEDADE ABSOLUTA: Forneça justificativa completa para TODAS as alternativas existentes (${(question.options || []).map(o => o.letter).join(', ')}), INCLUINDO SEMPRE A ALTERNATIVA E (se houver). NUNCA omita nenhuma opção nem deixe texto vazio ou incompleto.
+   - DESTAQUE EM NEGRITO OBRIGATÓRIO: Em TODAS as alternativas incorretas, você DEVE obrigatoriamente colocar em **negrito** o trecho específico incorreto ou o conceito errôneo que invalida a opção. Na alternativa correta (${goldAnswer}), destaque em **negrito** o conceito-chave padrão-ouro ou conduta mandatória.
+   - SEM METARRETÓRICA: Vá DIRETO ao raciocínio clínico. NUNCA inicie com "A alternativa está correta/incorreta" ou "Incorreta porque". Comece imediatamente justificando os critérios clínicos, doses e diretrizes.
 2. VERIFICAÇÃO DE COERÊNCIA HISTÓRICA DO GABARITO DA BANCA:
    - Avalie se a resposta oficial faz sentido segundo a literatura na época da prova (${question.year || 2024}).
    - Se o gabarito oficial for flagrantemente absurdo ou erro manifesto da banca: marque "isAbsurdKey": true e descreva em "divergenceReason" a fundamentação para curadoria/recurso. Caso contrário, mantenha "isAbsurdKey": false.
 3. COMENTÁRIO FINAL / SÍNTESE CLÍNICA:
-   - Comece DIRETO no raciocínio clínico e conduta. NUNCA escreva títulos como "Gabarito Oficial: Alternativa X" nem "Resumo Clínico e Diagnóstico:".
+   - Comece DIRETO no raciocínio clínico, fisiopatologia e conduta, destacando em **negrito** os termos essenciais. NUNCA escreva títulos como "Gabarito Oficial: Alternativa X" nem "Resumo Clínico e Diagnóstico:".
 4. PRINCIPAL MOTIVO DE ERRO:
-   - Identifique a armadilha ("pegadinha") ou confusão comum de raciocínio de forma cirúrgica.
+   - Identifique a armadilha ("pegadinha") ou confusão comum de raciocínio de forma cirúrgica, destacando em **negrito** o ponto de confusão.
 5. TAKE-HOME MESSAGE:
-   - Mensagem-chave em 1 a 2 frases densas (NÃO inclua o prefixo "Pérola Prática").
+   - Mensagem-chave em 1 a 2 frases densas com destaque em **negrito** (NÃO inclua o prefixo "Pérola Prática").
 6. EVOLUÇÃO DE DIRETRIZES:
    - Compare a diretriz da época com a atual (ou informe que permanece igual). NÃO use a expressão "da Banca" nem "Contexto Histórico".
 7. REFERÊNCIAS:
@@ -236,7 +237,28 @@ ${optionsSchemaExample}
       const rawText = json.candidates?.[0]?.content?.parts?.[0]?.text;
       if (!rawText) throw new Error('Resposta vazia da API');
 
-      const parsed = JSON.parse(rawText);
+      let parsed = null;
+      try {
+        let clean = rawText.trim().replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
+        const firstB = clean.indexOf('{');
+        const lastB = clean.lastIndexOf('}');
+        if (firstB !== -1 && lastB !== -1 && lastB > firstB) {
+          clean = clean.slice(firstB, lastB + 1);
+        }
+        parsed = JSON.parse(clean);
+      } catch {
+        // Tenta sanitizar vírgulas trailing antes de fechar chaves/colchetes
+        try {
+          const sanitized = rawText
+            .replace(/,\s*([}\]])/g, '$1')
+            .replace(/[\u0000-\u001F\u007F-\u009F]/g, '');
+          const firstB = sanitized.indexOf('{');
+          const lastB = sanitized.lastIndexOf('}');
+          parsed = JSON.parse(sanitized.slice(firstB, lastB + 1));
+        } catch (e) {
+          throw new Error(`JSON inválido retornado pelo modelo: ${e.message}`);
+        }
+      }
 
       // Trava Irrevogável: o gabarito É SEMPRE a âncora de ouro da banca
       const correctAnswer = goldAnswer;
@@ -270,12 +292,29 @@ ${optionsSchemaExample}
         .join('\n')
         .trim();
 
-      // Atualiza as opções da questão com a propriedade explanation
+      // Atualiza as opções da questão com a propriedade explanation garantindo 100% de preenchimento e negrito em todas
       const updatedOptions = (question.options || []).map(opt => {
-        let exp = optionExplanations[opt.letter] || '';
-        if (!exp && opt.letter === correctAnswer) {
-          exp = finalCommentary || 'Conduta ou diagnóstico padrão-ouro respaldado pelas diretrizes oficiais de referência.';
+        let exp = (optionExplanations[opt.letter] || '').trim();
+        const isCorrect = opt.letter === correctAnswer;
+
+        if (!exp) {
+          if (isCorrect) {
+            exp = finalCommentary || `**Alternativa correta**. Conduta diagnóstica e terapêutica padrão-ouro preconizada pelas diretrizes oficiais de referência para o quadro clínico apresentado.`;
+          } else {
+            exp = `**Alternativa incorreta**. Esta afirmativa não corresponde à conduta preconizada na literatura médica, divergindo do gabarito oficial homologado pela banca examinadora (**Alternativa ${correctAnswer}**).`;
+          }
         }
+
+        // Garante destaque em negrito se a IA não tiver inserido
+        if (!exp.includes('**')) {
+          const firstPeriod = exp.indexOf('.');
+          if (firstPeriod > 10) {
+            exp = `**${exp.slice(0, firstPeriod + 1)}**${exp.slice(firstPeriod + 1)}`;
+          } else {
+            exp = `**${exp}**`;
+          }
+        }
+
         return {
           ...opt,
           explanation: exp
