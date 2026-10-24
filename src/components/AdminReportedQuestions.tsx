@@ -236,6 +236,21 @@ export const AdminReportedQuestions: React.FC = () => {
           })
         );
 
+        // Sincroniza em tempo real com a aba "Banco de Questões" na mesma sessão
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(
+            new CustomEvent('bancoresidencia_question_updated', {
+              detail: {
+                questionId: staging.questionId,
+                correctAnswer: staging.newLetter,
+                commentary: staging.commentary,
+                options: staging.options,
+                isAnulada: staging.newLetter === 'ANULADA'
+              }
+            })
+          );
+        }
+
         setActionSuccessMsg(`Gabarito da questão atualizado para "${staging.newLetter}" e novo comentário salvo com sucesso no Supabase!`);
         setTimeout(() => setActionSuccessMsg(null), 4000);
         setStaging(null);

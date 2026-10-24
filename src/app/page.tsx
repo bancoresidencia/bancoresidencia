@@ -686,6 +686,38 @@ export default function Home() {
     };
   }, [advancedFilters, activeListId, lists, questionsPage, sessionQuestionLimit, sessionQuestionIds, bancoMode]);
 
+  // Escuta atualizações de gabarito/comentário feitas na Auditoria e reflete na hora no Banco de Questões
+  useEffect(() => {
+    const handleQuestionUpdated = (e: Event) => {
+      const customEvent = e as CustomEvent<{
+        questionId: string;
+        correctAnswer: Question['correctAnswer'];
+        commentary?: string;
+        options?: Question['options'];
+        isAnulada?: boolean;
+      }>;
+      if (!customEvent.detail) return;
+      const { questionId, correctAnswer, commentary, options, isAnulada } = customEvent.detail;
+      setSupabaseQuestions((prev) =>
+        prev.map((q) => {
+          if (q.id === questionId || q.code === questionId) {
+            return {
+              ...q,
+              correctAnswer: correctAnswer || q.correctAnswer,
+              commentary: commentary !== undefined ? commentary : q.commentary,
+              options: options || q.options,
+              isAnulada: isAnulada !== undefined ? isAnulada : (correctAnswer === 'ANULADA')
+            };
+          }
+          return q;
+        })
+      );
+    };
+
+    window.addEventListener('bancoresidencia_question_updated', handleQuestionUpdated);
+    return () => window.removeEventListener('bancoresidencia_question_updated', handleQuestionUpdated);
+  }, []);
+
 
   // Filtragem local complementar para status (resolvidas/não vistas) e fallback
   // Filtragem local complementar para status (resolvidas/não vistas), dificuldade, formato, anuladas e revisadas
