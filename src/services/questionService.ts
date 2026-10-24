@@ -382,10 +382,12 @@ export async function fetchQuestionsFromSupabase(
   const to = from + pageSize - 1;
 
   if (filters.aleatorizar) {
-    // Modo Aleatório: distribui de forma uniforme por todos os anos e bancas utilizando UUIDv4
-    // Alterna a direção da ordenação conforme a página para maximizar a entropia e diversidade
-    const isAsc = page % 2 === 1;
-    query = query.order('id', { ascending: isAsc }).range(from, to);
+    if (questionIds && questionIds.length > 0) {
+      query = query.range(from, to);
+    } else {
+      const isAsc = page % 2 === 1;
+      query = query.order('id', { ascending: isAsc }).range(from, to);
+    }
   } else {
     // Modo Mais Recentes: estritamente por ano decrescente (2027, 2026, 2025, 2024...) com desempate determinístico por id
     query = query.order('year', { ascending: false }).order('id', { ascending: true }).range(from, to);
@@ -414,14 +416,7 @@ export async function fetchQuestionsFromSupabase(
       const q = idMap.get(id);
       if (q) reordered.push(q);
     }
-    if (filters.aleatorizar) {
-      questions = shuffleArray(reordered);
-    } else {
-      questions = reordered.sort((a, b) => {
-        const diff = (b.year || 0) - (a.year || 0);
-        return diff !== 0 ? diff : a.id.localeCompare(b.id);
-      });
-    }
+    questions = reordered;
   } else {
     if (filters.aleatorizar) {
       questions = shuffleArray(questions);
@@ -1077,7 +1072,7 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
     const questionIds = Array.from(new Set(reportsList.map((r) => r.questionId)));
     const { data: qData } = await supabase
       .from('questions')
-      .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer')
+      .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer, commentary')
       .in('id', questionIds);
 
     if (qData && qData.length > 0) {
@@ -1095,7 +1090,8 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
             tema: qRow.tema,
             statement: qRow.statement,
             options: qRow.options,
-            correctAnswer: qRow.correct_answer
+            correctAnswer: qRow.correct_answer,
+            commentary: qRow.commentary || ''
           };
         }
       });

@@ -54,7 +54,7 @@ interface AdvancedQuestionFiltersProps {
   totalFiltered: number;
   onCreateListFromFilter: () => void;
   onSelectDirectQuestion?: (questionId: string) => void;
-  onStartSequentialSolving?: (limit?: number, quotasByItem?: Record<string, number>) => void;
+  onStartSequentialSolving?: (limit?: number, quotasByItem?: Record<string, number>, currentFilters?: AdvancedFilterState) => void;
   isSidebarCollapsed?: boolean;
   embedded?: boolean;
 }
@@ -1881,7 +1881,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 type="button"
                 onClick={() => {
                   const effectiveQuotas = getEffectiveQuotas();
-                  onStartSequentialSolving?.(resolveCount, effectiveQuotas);
+                  onStartSequentialSolving?.(resolveCount, effectiveQuotas, filters);
                 }}
                 className="flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98 hover:opacity-95"
                 style={{
@@ -2030,7 +2030,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => {
                 setIsCotasDrawerOpen(false);
                 const effectiveQuotas = getEffectiveQuotas();
-                onStartSequentialSolving?.(resolveCount, effectiveQuotas);
+                onStartSequentialSolving?.(resolveCount, effectiveQuotas, filters);
               }}
               className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-white font-bold text-xs transition-colors cursor-pointer shadow-md hover:opacity-95"
               style={{

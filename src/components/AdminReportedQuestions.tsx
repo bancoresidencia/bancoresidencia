@@ -11,14 +11,45 @@ import {
   ChevronDown,
   ChevronUp,
   MessageSquare,
-  ShieldCheck
+  ShieldCheck,
+  Sparkles,
+  Eye,
+  Edit3,
+  X
 } from 'lucide-react';
-import { QuestionReport, ReportStatus } from '@/types';
+import { QuestionReport, ReportStatus, QuestionOption, Question } from '@/types';
 import {
   fetchReportedQuestionsForAdmin,
   updateQuestionReportStatus
 } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
+
+interface StagingState {
+  reportId: string;
+  questionId: string;
+  newLetter: string;
+  commentary: string;
+  options: QuestionOption[];
+  isGenerating: boolean;
+  isAiGenerated?: boolean;
+  activeTab: 'preview' | 'edit';
+  error?: string | null;
+}
+
+const renderFormattedText = (text: string) => {
+  if (!text) return null;
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={index} className="font-bold text-zinc-900 dark:text-white">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return <span key={index}>{part}</span>;
+  });
+};
 
 export const AdminReportedQuestions: React.FC = () => {
   const { accentConfig } = useTheme();
@@ -29,6 +60,10 @@ export const AdminReportedQuestions: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [expandedQuestionId, setExpandedQuestionId] = useState<string | null>(null);
   const [actionSuccessMsg, setActionSuccessMsg] = useState<string | null>(null);
+
+  // Estado de Curadoria e Homologação de Gabarito com Prévia
+  const [staging, setStaging] = useState<StagingState | null>(null);
+  const [isSavingStaging, setIsSavingStaging] = useState<boolean>(false);
 
   const loadReports = async () => {
     setIsLoading(true);
@@ -92,28 +127,125 @@ export const AdminReportedQuestions: React.FC = () => {
     }
   };
 
-  const handleApplyGabaritoFix = async (report: QuestionReport, newLetter: string) => {
+  // Inicia o processo de homologação: seleciona a nova alternativa e gera o comentário clínico
+  const handleStartGabaritoStaging = async (report: QuestionReport, newLetter: string) => {
+    const q = report.question;
+    const initialOptions = q?.options && q.options.length > 0 ? q.options.map((o) => ({ ...o })) : [];
+
+    setExpandedQuestionId(report.id);
+    setStaging({
+      reportId: report.id,
+      questionId: report.questionId,
+      newLetter,
+      commentary: q?.commentary || '',
+      options: initialOptions,
+      isGenerating: true,
+      activeTab: 'preview',
+      error: null
+    });
+
+    try {
+      const res = await fetch('/api/admin/curadoria/generate-commentary', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: report.questionId,
+          statement: q?.statement || '',
+          options: initialOptions,
+          newCorrectAnswer: newLetter,
+          institution: q?.institution || q?.banca,
+          banca: q?.banca,
+          year: q?.year,
+          especialidade: q?.especialidade,
+          tema: q?.tema,
+          studentNotes: report.details,
+          currentCommentary: q?.commentary || ''
+        })
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setStaging((prev) =>
+          prev && prev.reportId === report.id
+            ? {
+                ...prev,
+                commentary: data.commentary || prev.commentary,
+                options: data.options || prev.options,
+                isGenerating: false,
+                isAiGenerated: data.isAiGenerated
+              }
+            : prev
+        );
+      } else {
+        setStaging((prev) =>
+          prev && prev.reportId === report.id
+            ? { ...prev, isGenerating: false, error: data.error || 'Erro ao gerar comentário.' }
+            : prev
+        );
+      }
+    } catch (err: unknown) {
+      console.error('Erro ao gerar comentário:', err);
+      setStaging((prev) =>
+        prev && prev.reportId === report.id
+          ? { ...prev, isGenerating: false, error: 'Erro de conexão com o motor de comentário.' }
+          : prev
+      );
+    }
+  };
+
+  // Confirma e salva o novo gabarito, alternativas e comentário no Supabase
+  const handleConfirmAndSaveToSupabase = async () => {
+    if (!staging) return;
+    setIsSavingStaging(true);
+
     try {
       const res = await fetch('/api/admin/curadoria/update-gabarito', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          questionId: report.questionId,
-          newCorrectAnswer: newLetter,
-          justificativa: `Homologação médica de reporte do aluno: ${report.details}`
+          questionId: staging.questionId,
+          correctAnswer: staging.newLetter,
+          isAnulada: staging.newLetter === 'ANULADA',
+          commentary: staging.commentary,
+          options: staging.options,
+          reportId: staging.reportId
         })
       });
 
-      if (res.ok) {
-        // Marca o report como resolvido automaticamente
-        await handleUpdateStatus(report.id, 'resolved');
-        setActionSuccessMsg(`Gabarito da questão atualizado para "${newLetter}" e report resolvido!`);
-        setTimeout(() => setActionSuccessMsg(null), 3500);
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setReports((prev) =>
+          prev.map((r) => {
+            if (r.id === staging.reportId) {
+              return {
+                ...r,
+                status: 'resolved',
+                adminNotes: `Gabarito retificado para [${staging.newLetter}] e comentário padrão-ouro homologado pelo administrador.`,
+                resolvedAt: new Date().toISOString(),
+                question: {
+                  ...r.question,
+                  correctAnswer: staging.newLetter as Question['correctAnswer'],
+                  commentary: staging.commentary,
+                  options: staging.options,
+                  isAnulada: staging.newLetter === 'ANULADA'
+                }
+              };
+            }
+            return r;
+          })
+        );
+
+        setActionSuccessMsg(`Gabarito da questão atualizado para "${staging.newLetter}" e novo comentário salvo com sucesso no Supabase!`);
+        setTimeout(() => setActionSuccessMsg(null), 4000);
+        setStaging(null);
       } else {
-        alert('Erro ao atualizar gabarito oficial no banco.');
+        alert(data.error || 'Erro ao salvar gabarito e comentário no Supabase.');
       }
     } catch {
-      alert('Erro de conexão ao salvar gabarito.');
+      alert('Erro de conexão ao salvar gabarito no Supabase.');
+    } finally {
+      setIsSavingStaging(false);
     }
   };
 
@@ -411,26 +543,34 @@ export const AdminReportedQuestions: React.FC = () => {
 
                 {/* Ações Administrativas de Auditoria */}
                 <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-3">
-                  {/* Atalho para Alterar Gabarito Instantâneo */}
+                  {/* Seletor de Nova Alternativa Correta para Homologação */}
                   <div className="flex flex-wrap items-center gap-1.5">
                     <span className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mr-1">
                       Corrigir Gabarito:
                     </span>
-                    {(['A', 'B', 'C', 'D', 'E', 'ANULADA'] as const).map((letra) => (
-                      <button
-                        key={letra}
-                        type="button"
-                        onClick={() => handleApplyGabaritoFix(report, letra)}
-                        className={`px-2 py-1 rounded-md text-[11px] font-mono font-bold transition-all cursor-pointer ${
-                          q?.correctAnswer === letra
-                            ? 'bg-emerald-500 text-white'
-                            : 'bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700'
-                        }`}
-                        title={`Corrigir gabarito oficial para letra ${letra}`}
-                      >
-                        {letra}
-                      </button>
-                    ))}
+                    {(['A', 'B', 'C', 'D', 'E', 'ANULADA'] as const).map((letra) => {
+                      const isStaged = staging && staging.reportId === report.id && staging.newLetter === letra;
+                      const isCurrentDb = q?.correctAnswer === letra;
+
+                      return (
+                        <button
+                          key={letra}
+                          type="button"
+                          onClick={() => handleStartGabaritoStaging(report, letra)}
+                          className={`px-2.5 py-1 rounded-md text-[11px] font-mono font-bold transition-all cursor-pointer flex items-center gap-1 ${
+                            isStaged
+                              ? 'bg-amber-500 text-white ring-2 ring-amber-400 ring-offset-2 dark:ring-offset-zinc-900 shadow-sm'
+                              : isCurrentDb
+                              ? 'bg-emerald-500 text-white'
+                              : 'bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700'
+                          }`}
+                          title={`Selecionar [${letra}], recriar comentário e visualizar prévia antes de salvar`}
+                        >
+                          {isStaged && <Sparkles className="w-3 h-3 animate-pulse" />}
+                          <span>{letra}</span>
+                        </button>
+                      );
+                    })}
                   </div>
 
                   {/* Botões de Transição de Status */}
@@ -464,6 +604,250 @@ export const AdminReportedQuestions: React.FC = () => {
                     )}
                   </div>
                 </div>
+
+                {/* PAINEL DE CURADORIA, PRÉVIA DA QUESTÃO E HOMOLOGAÇÃO */}
+                {staging && staging.reportId === report.id && (
+                  <div className="mt-4 p-5 rounded-3xl bg-amber-500/5 dark:bg-[#18181b] border-2 border-amber-500/30 space-y-4 shadow-lg animate-in slide-in-from-top-3 duration-200">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-amber-500/20">
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-8 h-8 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-600 dark:text-amber-400 shrink-0">
+                          <Sparkles className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-white flex items-center gap-2">
+                            <span>Prévia de Homologação: Novo Gabarito</span>
+                            <span className="px-2 py-0.5 rounded-md bg-amber-500 text-white font-mono text-xs font-extrabold shadow-xs">
+                              [{staging.newLetter}]
+                            </span>
+                          </h4>
+                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                            {staging.isGenerating
+                              ? 'Reconstruindo raciocínio clínico e justificativas padrão-ouro...'
+                              : staging.isAiGenerated
+                              ? 'Comentário médico reconstruído automaticamente com base no novo gabarito'
+                              : 'Estrutura padrão-ouro formatada para o novo gabarito (pronta para revisão)'}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Alternador de Abas de Prévia / Edição */}
+                      {!staging.isGenerating && (
+                        <div className="flex items-center gap-1 bg-zinc-200/60 dark:bg-zinc-800 p-1 rounded-xl self-start sm:self-auto">
+                          <button
+                            type="button"
+                            onClick={() => setStaging({ ...staging, activeTab: 'preview' })}
+                            className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                              staging.activeTab === 'preview'
+                                ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-xs'
+                                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                            }`}
+                          >
+                            <Eye className="w-3.5 h-3.5" />
+                            <span>Prévia da Questão</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setStaging({ ...staging, activeTab: 'edit' })}
+                            className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                              staging.activeTab === 'edit'
+                                ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-xs'
+                                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                            }`}
+                          >
+                            <Edit3 className="w-3.5 h-3.5" />
+                            <span>Editar Comentário</span>
+                          </button>
+                        </div>
+                      )}
+                    </div>
+
+                    {staging.error && (
+                      <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-700 dark:text-red-300 text-xs flex items-center gap-2">
+                        <AlertCircle className="w-4 h-4 shrink-0" />
+                        <span>{staging.error}</span>
+                      </div>
+                    )}
+
+                    {staging.isGenerating ? (
+                      <div className="py-8 px-4 text-center space-y-3 bg-white/60 dark:bg-zinc-900/40 rounded-2xl border border-amber-500/20">
+                        <RotateCcw className="w-7 h-7 animate-spin mx-auto text-amber-500" />
+                        <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">
+                          Processando justificativas das alternativas e síntese clínica para a Alternativa [{staging.newLetter}]...
+                        </p>
+                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400 max-w-md mx-auto">
+                          Destacando trechos incorretos nos distratores e fundamentando a nova conduta correta de acordo com as diretrizes oficiais.
+                        </p>
+                      </div>
+                    ) : staging.activeTab === 'preview' ? (
+                      <div className="space-y-4">
+                        {/* Enunciado da Questão */}
+                        <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs shadow-xs">
+                          <span className="font-bold text-zinc-500 dark:text-zinc-400 block mb-1.5 uppercase text-[10px] tracking-wider">
+                            Enunciado Oficial
+                          </span>
+                          <p className="text-zinc-800 dark:text-zinc-200 whitespace-pre-wrap leading-relaxed">
+                            {q?.statement}
+                          </p>
+                        </div>
+
+                        {/* Alternativas com Destaque do Novo Gabarito e Justificativas */}
+                        <div className="space-y-2">
+                          <span className="font-bold text-zinc-500 dark:text-zinc-400 block text-[10px] uppercase tracking-wider">
+                            Alternativas & Justificativas Retificadas:
+                          </span>
+                          {staging.options.map((opt) => {
+                            const isTarget = opt.letter.toUpperCase() === staging.newLetter.toUpperCase();
+
+                            return (
+                              <div
+                                key={opt.letter}
+                                className={`p-3.5 rounded-2xl border transition-all ${
+                                  isTarget
+                                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-950 dark:text-emerald-100 shadow-xs'
+                                    : 'border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200'
+                                }`}
+                              >
+                                <div className="flex items-start gap-2.5">
+                                  <span
+                                    className={`w-6 h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 ${
+                                      isTarget
+                                        ? 'bg-emerald-600 text-white font-mono shadow-xs'
+                                        : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 font-mono'
+                                    }`}
+                                  >
+                                    {opt.letter}
+                                  </span>
+                                  <div className="flex-1 space-y-1.5 text-xs">
+                                    <div className="flex items-center justify-between gap-2">
+                                      <span className="font-medium leading-relaxed">{opt.text}</span>
+                                      <span
+                                        className={`px-2 py-0.5 rounded-md text-[10px] font-bold shrink-0 ${
+                                          isTarget
+                                            ? 'bg-emerald-500 text-white'
+                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400'
+                                        }`}
+                                      >
+                                        {isTarget ? 'NOVO GABARITO HOMOLOGADO' : 'DISTRATOR / INCORRETA'}
+                                      </span>
+                                    </div>
+
+                                    {opt.explanation && (
+                                      <div className="p-2.5 rounded-xl bg-zinc-100/80 dark:bg-zinc-800/60 border border-zinc-200/60 dark:border-zinc-700/60 text-[11.5px] leading-relaxed text-zinc-700 dark:text-zinc-300">
+                                        {renderFormattedText(opt.explanation)}
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+
+                        {/* Síntese Clínica & Comentário Unificado */}
+                        {staging.commentary && (
+                          <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-2 text-xs shadow-xs">
+                            <span className="font-bold text-zinc-500 dark:text-zinc-400 block uppercase text-[10px] tracking-wider">
+                              Comentário Clínico Padrão-Ouro (Visão do Estudante)
+                            </span>
+                            <div className="text-zinc-800 dark:text-zinc-200 whitespace-pre-wrap leading-relaxed">
+                              {renderFormattedText(staging.commentary)}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      /* Aba de Edição Manual do Comentário */
+                      <div className="space-y-4">
+                        <div>
+                          <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5">
+                            Comentário Geral e Síntese Clínica (Editável):
+                          </label>
+                          <textarea
+                            rows={8}
+                            value={staging.commentary}
+                            onChange={(e) => setStaging({ ...staging, commentary: e.target.value })}
+                            className="w-full p-3.5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-xs text-zinc-900 dark:text-white leading-relaxed focus:outline-none focus:ring-2 focus:ring-amber-500 font-sans"
+                            placeholder="Escreva ou ajuste a fundamentação clínica..."
+                          />
+                        </div>
+
+                        <div className="space-y-2.5 pt-2 border-t border-amber-500/20">
+                          <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                            Explicação Específica por Alternativa:
+                          </label>
+                          {staging.options.map((opt, oIdx) => (
+                            <div key={opt.letter} className="flex items-start gap-2.5">
+                              <span
+                                className={`w-6 h-6 mt-1 rounded-lg text-xs font-mono font-bold flex items-center justify-center shrink-0 ${
+                                  opt.letter.toUpperCase() === staging.newLetter.toUpperCase()
+                                    ? 'bg-emerald-600 text-white'
+                                    : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300'
+                                }`}
+                              >
+                                {opt.letter}
+                              </span>
+                              <input
+                                type="text"
+                                value={opt.explanation || ''}
+                                onChange={(e) => {
+                                  const newOpts = [...staging.options];
+                                  newOpts[oIdx] = { ...newOpts[oIdx], explanation: e.target.value };
+                                  setStaging({ ...staging, options: newOpts });
+                                }}
+                                placeholder={`Justificativa para alternativa ${opt.letter}...`}
+                                className="flex-1 p-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Barra de Ações Inferior de Homologação */}
+                    <div className="pt-3 border-t border-amber-500/20 flex flex-wrap items-center justify-between gap-3">
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={() => handleStartGabaritoStaging(report, staging.newLetter)}
+                          disabled={staging.isGenerating || isSavingStaging}
+                          className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer"
+                        >
+                          <RotateCcw className={`w-3.5 h-3.5 ${staging.isGenerating ? 'animate-spin' : ''}`} />
+                          <span>Regenerar Comentário</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => setStaging(null)}
+                          disabled={isSavingStaging}
+                          className="flex items-center gap-1 px-3 py-2 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-600 dark:text-zinc-400 transition-colors cursor-pointer"
+                        >
+                          <X className="w-3.5 h-3.5" />
+                          <span>Cancelar</span>
+                        </button>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={handleConfirmAndSaveToSupabase}
+                        disabled={staging.isGenerating || isSavingStaging}
+                        className="flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer disabled:opacity-50"
+                      >
+                        {isSavingStaging ? (
+                          <>
+                            <RotateCcw className="w-4 h-4 animate-spin" />
+                            <span>Salvando no Supabase...</span>
+                          </>
+                        ) : (
+                          <>
+                            <CheckCircle2 className="w-4 h-4" />
+                            <span>Confirmar e Salvar no Supabase</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}

@@ -90,7 +90,8 @@ import {
 import {
   fetchQuestionsFromSupabase,
   fetchTotalQuestionsCount,
-  fetchQuestionIdsForListCriteria
+  fetchQuestionIdsForListCriteria,
+  shuffleArray
 } from '@/services/questionService';
 import {
   loadUserFolders,
@@ -2082,8 +2083,14 @@ export default function Home() {
                       setQuestionTimer(0);
                       setBancoMode('resolucao');
                     }}
-                    onStartSequentialSolving={async (limit?: number, quotas?: Record<string, number>) => {
+                    onStartSequentialSolving={async (
+                      limit?: number,
+                      quotas?: Record<string, number>,
+                      explicitFilters?: AdvancedFilterState
+                    ) => {
                       const finalLimit = limit ? Math.min(200, Math.max(1, limit)) : 200;
+                      const activeFilters = explicitFilters || advancedFilters;
+                      setAdvancedFilters(activeFilters);
                       setActiveListId(null);
                       setSessionQuestionLimit(finalLimit);
                       setCurrentQuestionIndex(0);
@@ -2094,12 +2101,22 @@ export default function Home() {
                         const answeredIds = Object.keys(userAnswers);
                         const balancedIds = await fetchQuestionIdsForListCriteria(
                           quotas || {},
-                          advancedFilters,
+                          activeFilters,
                           finalLimit,
                           answeredIds
                         );
                         if (balancedIds && balancedIds.length > 0) {
                           setSessionQuestionIds(balancedIds);
+                          // Imediatamente busca e armazena os dados completos das questões para zero lag e renderização instantânea
+                          const fullRes = await fetchQuestionsFromSupabase(
+                            activeFilters,
+                            1,
+                            finalLimit,
+                            balancedIds
+                          );
+                          if (fullRes.questions && fullRes.questions.length > 0) {
+                            setSupabaseQuestions(fullRes.questions);
+                          }
                         } else {
                           setSessionQuestionIds(null);
                         }
@@ -2650,6 +2667,12 @@ export default function Home() {
                                     setSessionQuestionIds(null);
                                     setQuestionsPage(1);
                                     setCurrentQuestionIndex(0);
+                                    setSupabaseQuestions((prev) =>
+                                      [...prev].sort((a, b) => {
+                                        const diff = (b.year || 0) - (a.year || 0);
+                                        return diff !== 0 ? diff : a.id.localeCompare(b.id);
+                                      })
+                                    );
                                   }
                                 }}
                                 className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
@@ -2673,6 +2696,7 @@ export default function Home() {
                                     setSessionQuestionIds(null);
                                     setQuestionsPage(1);
                                     setCurrentQuestionIndex(0);
+                                    setSupabaseQuestions((prev) => shuffleArray([...prev]));
                                   }
                                 }}
                                 className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${

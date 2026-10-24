@@ -460,15 +460,13 @@ export async function generateStratifiedQuiz(
         }
       }
 
-      // Ordenação na consulta do Supabase: Aleatório distribui por UUID; Mais Recentes prioriza anos novos
-      if (filters.aleatorizar) {
-        q = q.order('id', { ascending: true });
-      } else {
+      // Ordenação na consulta do Supabase: Quando Aleatório, busca estoque amplo em ordem natural (evita index scan timeout) e embaralha em JS; Mais Recentes prioriza anos decrescentes
+      if (!filters.aleatorizar) {
         q = q.order('year', { ascending: false }).order('id', { ascending: true });
       }
 
-      // Busca um conjunto amplo de candidatos (até 1.500) para permitir estratificação
-      const { data, error } = await q.limit(1500);
+      // Busca um conjunto amplo de candidatos (até 1.000) para permitir estratificação
+      const { data, error } = await q.limit(1000);
 
       if (!error && data) {
         // Filtragem de já respondidas se solicitado por status
@@ -606,9 +604,7 @@ export async function generateStratifiedQuiz(
         .neq('especialidade', '')
         .neq('especialidade', 'Não Classificada');
 
-      if (filters.aleatorizar) {
-        qComp = qComp.order('id', { ascending: true });
-      } else {
+      if (!filters.aleatorizar) {
         qComp = qComp.order('year', { ascending: false }).order('id', { ascending: true });
       }
 

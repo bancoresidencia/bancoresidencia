@@ -20,7 +20,17 @@ export async function POST(req: NextRequest) {
   try {
     const supabaseAdmin = getSupabaseAdmin();
     const body = await req.json();
-    const { questionId, correctAnswer, isAnulada, commentary } = body;
+    const {
+      questionId,
+      correctAnswer,
+      newCorrectAnswer,
+      isAnulada,
+      commentary,
+      options,
+      reportId
+    } = body;
+
+    const targetAnswer = correctAnswer !== undefined ? correctAnswer : newCorrectAnswer;
 
     if (!questionId || typeof questionId !== 'string') {
       return NextResponse.json(
@@ -29,15 +39,15 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const normAnswer = typeof correctAnswer === 'string' ? correctAnswer.trim().toUpperCase() : '';
+    const normAnswer = typeof targetAnswer === 'string' ? targetAnswer.trim().toUpperCase() : '';
     if (!VALID_LETTERS.has(normAnswer)) {
       return NextResponse.json(
-        { success: false, error: `Alternativa inválida: "${correctAnswer}". Esperado A, B, C, D, E ou vazio.` },
+        { success: false, error: `Alternativa inválida: "${targetAnswer}". Esperado A, B, C, D, E ou vazio.` },
         { status: 400 }
       );
     }
 
-    const updatePayload: Record<string, string | boolean> = {
+    const updatePayload: Record<string, unknown> = {
       correct_answer: normAnswer
     };
 
@@ -51,7 +61,11 @@ export async function POST(req: NextRequest) {
     }
 
     if (typeof commentary === 'string') {
-      updatePayload.commentary = commentary.slice(0, 15000);
+      updatePayload.commentary = commentary.slice(0, 25000);
+    }
+
+    if (Array.isArray(options) && options.length > 0) {
+      updatePayload.options = options;
     }
 
     // Gravação direta com service role (bypassa RLS de forma segura)
@@ -59,7 +73,7 @@ export async function POST(req: NextRequest) {
       .from('questions')
       .update(updatePayload)
       .eq('id', questionId)
-      .select('id, code, correct_answer, is_anulada');
+      .select('id, code, correct_answer, is_anulada, commentary, options');
 
     let data = initialData;
 
@@ -69,7 +83,7 @@ export async function POST(req: NextRequest) {
         .from('questions')
         .update(updatePayload)
         .eq('code', questionId)
-        .select('id, code, correct_answer, is_anulada');
+        .select('id, code, correct_answer, is_anulada, commentary, options');
       if (byCodeRes.data && byCodeRes.data.length > 0) {
         data = byCodeRes.data;
       }
@@ -100,9 +114,25 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Se reportId foi fornecido, atualiza o report para resolved no Supabase
+    if (reportId && typeof reportId === 'string') {
+      try {
+        await supabaseAdmin
+          .from('question_reports')
+          .update({
+            status: 'resolved',
+            admin_notes: `Gabarito retificado para [${normAnswer}] e comentário padrão-ouro homologado pelo administrador.`,
+            resolved_at: new Date().toISOString()
+          })
+          .eq('id', reportId);
+      } catch (repErr) {
+        console.warn('[API Curadoria] Aviso ao atualizar report:', repErr);
+      }
+    }
+
     return NextResponse.json({
       success: true,
-      message: 'Gabarito salvo com sucesso no banco de dados.',
+      message: 'Gabarito e comentário salvos com sucesso no banco de dados.',
       updated: data[0]
     });
   } catch (err: unknown) {
