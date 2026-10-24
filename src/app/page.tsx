@@ -136,6 +136,7 @@ import {
   Check,
   FolderPlus,
   Clock,
+  Shuffle,
   ShieldCheck,
   Keyboard
 } from 'lucide-react';
@@ -744,7 +745,10 @@ export default function Home() {
     });
 
     if (!advancedFilters.aleatorizar) {
-      return [...filtered].sort((a, b) => (b.year || 0) - (a.year || 0));
+      return [...filtered].sort((a, b) => {
+        const diff = (b.year || 0) - (a.year || 0);
+        return diff !== 0 ? diff : a.id.localeCompare(b.id);
+      });
     }
 
     return filtered;
@@ -783,7 +787,10 @@ export default function Home() {
         .filter((q): q is Question => Boolean(q));
       if (ordered.length > 0) {
         if (!advancedFilters.aleatorizar) {
-          ordered.sort((a, b) => (b.year || 0) - (a.year || 0));
+          ordered.sort((a, b) => {
+            const diff = (b.year || 0) - (a.year || 0);
+            return diff !== 0 ? diff : a.id.localeCompare(b.id);
+          });
         }
         return ordered.slice(0, 200);
       }
@@ -794,7 +801,10 @@ export default function Home() {
       const targetCount = Math.min(filteredQuestions.length, Math.min(200, sessionQuestionLimit));
       const slice = filteredQuestions.slice(0, targetCount);
       if (!advancedFilters.aleatorizar) {
-        slice.sort((a, b) => (b.year || 0) - (a.year || 0));
+        slice.sort((a, b) => {
+          const diff = (b.year || 0) - (a.year || 0);
+          return diff !== 0 ? diff : a.id.localeCompare(b.id);
+        });
       }
       return slice;
     }
@@ -810,7 +820,10 @@ export default function Home() {
     );
     const slice = filteredQuestions.slice(0, targetCount);
     if (!advancedFilters.aleatorizar) {
-      slice.sort((a, b) => (b.year || 0) - (a.year || 0));
+      slice.sort((a, b) => {
+        const diff = (b.year || 0) - (a.year || 0);
+        return diff !== 0 ? diff : a.id.localeCompare(b.id);
+      });
     }
     return slice;
   }, [
@@ -2626,6 +2639,56 @@ export default function Home() {
                               <Keyboard className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
                               <span className="hidden sm:inline text-xs font-bold">Atalhos</span>
                             </button>
+
+                            {/* Seletor Rápido: Mais Recentes vs Aleatório */}
+                            <div className="hidden sm:inline-flex items-center rounded-xl p-0.5 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  if (advancedFilters.aleatorizar) {
+                                    setAdvancedFilters((prev) => ({ ...prev, aleatorizar: false }));
+                                    setSessionQuestionIds(null);
+                                    setQuestionsPage(1);
+                                    setCurrentQuestionIndex(0);
+                                  }
+                                }}
+                                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                                  !advancedFilters.aleatorizar
+                                    ? 'text-white shadow-xs'
+                                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                                }`}
+                                style={{
+                                  backgroundColor: !advancedFilters.aleatorizar ? accentConfig.primaryHex : undefined
+                                }}
+                                title="Modo Mais Recentes: prioriza e ordena pelas questões dos anos mais novos"
+                              >
+                                <Clock className="w-3 h-3" />
+                                <span>Recentes</span>
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  if (!advancedFilters.aleatorizar) {
+                                    setAdvancedFilters((prev) => ({ ...prev, aleatorizar: true }));
+                                    setSessionQuestionIds(null);
+                                    setQuestionsPage(1);
+                                    setCurrentQuestionIndex(0);
+                                  }
+                                }}
+                                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                                  advancedFilters.aleatorizar
+                                    ? 'text-white shadow-xs'
+                                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                                }`}
+                                style={{
+                                  backgroundColor: advancedFilters.aleatorizar ? accentConfig.primaryHex : undefined
+                                }}
+                                title="Modo Aleatório: distribui de forma uniforme por múltiplos anos e bancas"
+                              >
+                                <Shuffle className="w-3 h-3" />
+                                <span>Aleatório</span>
+                              </button>
+                            </div>
 
                             {/* Botão de Filtros (Apenas Ícones) */}
                             <button

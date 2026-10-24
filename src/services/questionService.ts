@@ -377,11 +377,19 @@ export async function fetchQuestionsFromSupabase(
     }
   }
 
-  // Paginação otimizada
+  // Paginação otimizada com ordenação dinâmica
   const from = (page - 1) * pageSize;
   const to = from + pageSize - 1;
 
-  query = query.order('year', { ascending: false }).range(from, to);
+  if (filters.aleatorizar) {
+    // Modo Aleatório: distribui de forma uniforme por todos os anos e bancas utilizando UUIDv4
+    // Alterna a direção da ordenação conforme a página para maximizar a entropia e diversidade
+    const isAsc = page % 2 === 1;
+    query = query.order('id', { ascending: isAsc }).range(from, to);
+  } else {
+    // Modo Mais Recentes: estritamente por ano decrescente (2027, 2026, 2025, 2024...) com desempate determinístico por id
+    query = query.order('year', { ascending: false }).order('id', { ascending: true }).range(from, to);
+  }
 
   const { data, error } = await query;
 
@@ -406,15 +414,22 @@ export async function fetchQuestionsFromSupabase(
       const q = idMap.get(id);
       if (q) reordered.push(q);
     }
-    if (!filters.aleatorizar) {
-      reordered.sort((a, b) => (b.year || 0) - (a.year || 0));
+    if (filters.aleatorizar) {
+      questions = shuffleArray(reordered);
+    } else {
+      questions = reordered.sort((a, b) => {
+        const diff = (b.year || 0) - (a.year || 0);
+        return diff !== 0 ? diff : a.id.localeCompare(b.id);
+      });
     }
-    questions = reordered;
   } else {
     if (filters.aleatorizar) {
       questions = shuffleArray(questions);
     } else {
-      questions.sort((a, b) => (b.year || 0) - (a.year || 0));
+      questions.sort((a, b) => {
+        const diff = (b.year || 0) - (a.year || 0);
+        return diff !== 0 ? diff : a.id.localeCompare(b.id);
+      });
     }
   }
 

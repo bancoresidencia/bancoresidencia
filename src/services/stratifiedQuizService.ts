@@ -460,9 +460,11 @@ export async function generateStratifiedQuiz(
         }
       }
 
-      // No modo Mais Recentes, ordena a consulta por ano decrescente para garantir os anos mais novos
-      if (!filters.aleatorizar) {
-        q = q.order('year', { ascending: false });
+      // Ordenação na consulta do Supabase: Aleatório distribui por UUID; Mais Recentes prioriza anos novos
+      if (filters.aleatorizar) {
+        q = q.order('id', { ascending: true });
+      } else {
+        q = q.order('year', { ascending: false }).order('id', { ascending: true });
       }
 
       // Busca um conjunto amplo de candidatos (até 1.500) para permitir estratificação
@@ -477,8 +479,13 @@ export async function generateStratifiedQuiz(
           validCandidates = validCandidates.filter((c) => answeredSet.has(c.id));
         }
 
-        if (!filters.aleatorizar) {
-          validCandidates.sort((a, b) => (b.year || 0) - (a.year || 0));
+        if (filters.aleatorizar) {
+          validCandidates = shuffleArray(validCandidates);
+        } else {
+          validCandidates.sort((a, b) => {
+            const diff = (b.year || 0) - (a.year || 0);
+            return diff !== 0 ? diff : a.id.localeCompare(b.id);
+          });
         }
 
         candidatePoolsByItem[item] = validCandidates;
@@ -547,7 +554,10 @@ export async function generateStratifiedQuiz(
 
     if (!filters.aleatorizar) {
       // MODO MAIS RECENTES: Ordena estritamente por ano decrescente e seleciona as mais novas
-      const sortedCandidates = [...candidates].sort((a, b) => (b.year || 0) - (a.year || 0));
+      const sortedCandidates = [...candidates].sort((a, b) => {
+        const diff = (b.year || 0) - (a.year || 0);
+        return diff !== 0 ? diff : a.id.localeCompare(b.id);
+      });
       const itemSelectedIds: string[] = [];
       for (const cand of sortedCandidates) {
         if (itemSelectedIds.length >= quotaCount) break;
@@ -596,8 +606,10 @@ export async function generateStratifiedQuiz(
         .neq('especialidade', '')
         .neq('especialidade', 'Não Classificada');
 
-      if (!filters.aleatorizar) {
-        qComp = qComp.order('year', { ascending: false });
+      if (filters.aleatorizar) {
+        qComp = qComp.order('id', { ascending: true });
+      } else {
+        qComp = qComp.order('year', { ascending: false }).order('id', { ascending: true });
       }
 
       if (filters.especialidades && filters.especialidades.length > 0) {
@@ -633,7 +645,12 @@ export async function generateStratifiedQuiz(
 
       const { data: compData } = await qComp.limit(remaining * 3);
       if (compData && compData.length > 0) {
-        const compCandidates = !filters.aleatorizar ? compData : shuffleArray(compData);
+        const compCandidates = !filters.aleatorizar
+          ? [...compData].sort((a, b) => {
+              const diff = (b.year || 0) - (a.year || 0);
+              return diff !== 0 ? diff : a.id.localeCompare(b.id);
+            })
+          : shuffleArray(compData);
         for (const row of compCandidates) {
           allCandidatesMap.set(row.id, row as QuestionCandidate);
           if (!globalUsedIds.has(row.id)) {
@@ -654,10 +671,12 @@ export async function generateStratifiedQuiz(
     return shuffleArray(finalOrderedIds);
   }
 
-  // Se for Mais Recentes: ordena estritamente por ano decrescente (2027, 2026, 2025, 2024...)
+  // Se for Mais Recentes: ordena estritamente por ano decrescente (2027, 2026, 2025, 2024...) com desempate determinístico por id
   return finalOrderedIds.sort((idA, idB) => {
     const yA = allCandidatesMap.get(idA)?.year || 0;
     const yB = allCandidatesMap.get(idB)?.year || 0;
-    return yB - yA;
+    const diff = yB - yA;
+    if (diff !== 0) return diff;
+    return idA.localeCompare(idB);
   });
 }
